@@ -1,6 +1,8 @@
 node_modules/
 dist/
 shots/
+perf/
+media/
 .superpowers/
 .env*
 *.log
