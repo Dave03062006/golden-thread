@@ -2,11 +2,17 @@ import 'fake-indexeddb/auto'
 import { describe, expect, it } from 'vitest'
 import { canonicalJson, checksumOf } from './checksum'
 import { upgradeSave } from './migrations'
-import { EXPORT_FORMAT, createSaveSystem } from './saves'
+import { EXPORT_FORMAT, createSaveSystem, type SlotState } from './saves'
 import { indexedDbStore, memoryStore } from './storage'
 import { SAVE_VERSION, SaveError, newSave, type SaveData } from './types'
 
 const NOW = '2026-10-15T12:00:00.000Z'
+
+/** The save in a slot, failing the test if the slot isn't readable. */
+function okData(slot: SlotState) {
+  if (slot.state !== 'ok') throw new Error(`expected a readable save, got "${slot.state}"`)
+  return slot
+}
 
 function sample(name = 'Dave'): SaveData {
   return {
@@ -34,9 +40,7 @@ describe('save slots', () => {
   it('write and load a save', async () => {
     const saves = createSaveSystem(memoryStore())
     await saves.write(1, sample())
-    const slot = await saves.load(1)
-    expect(slot.state).toBe('ok')
-    if (slot.state === 'ok') expect(slot.data).toEqual(sample())
+    expect(okData(await saves.load(1)).data).toEqual(sample())
   })
 
   it('restore the backup when the main copy is damaged', async () => {
@@ -47,15 +51,11 @@ describe('save slots', () => {
     const main = await store.get<{ data: SaveData; checksum: string }>('slot-0')
     await store.set('slot-0', { ...main, data: { ...main!.data, name: 'Tampered' } })
 
-    const slot = await saves.load(0)
-    expect(slot.state).toBe('ok')
-    if (slot.state === 'ok') {
-      expect(slot.restoredFromBackup).toBe(true)
-      expect(slot.data.name).toBe('First')
-    }
+    const slot = okData(await saves.load(0))
+    expect(slot.restoredFromBackup).toBe(true)
+    expect(slot.data.name).toBe('First')
     // The good copy was put back in place.
-    const again = await saves.load(0)
-    expect(again.state === 'ok' && !again.restoredFromBackup).toBe(true)
+    expect(okData(await saves.load(0)).restoredFromBackup).toBe(false)
   })
 
   it('report damage when no good copy is left', async () => {
@@ -76,8 +76,7 @@ describe('save slots', () => {
   it('survive a round trip through a real IndexedDB', async () => {
     const saves = createSaveSystem(indexedDbStore('golden-thread-test', 'saves'))
     await saves.write(2, sample())
-    const slot = await saves.load(2)
-    expect(slot.state === 'ok' && slot.data.name).toBe('Dave')
+    expect(okData(await saves.load(2)).data.name).toBe('Dave')
   })
 })
 

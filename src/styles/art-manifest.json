@@ -1,0 +1,47 @@
+{
+  "paperLayers": {
+    "evening-sky": {
+      "hash": "9a8cfc92"
+    },
+    "evening-clouds": {
+      "hash": "6f52ede6"
+    },
+    "far-hills": {
+      "hash": "b2c5121c"
+    },
+    "water-back": {
+      "hash": "34383848"
+    },
+    "water-mid": {
+      "hash": "6ed92068"
+    },
+    "water-front": {
+      "hash": "8057c150"
+    }
+  },
+  "paperProps": {
+    "dove": {
+      "hash": "bed5d6ae"
+    }
+  },
+  "pixelLayers": {
+    "evening-sky": {
+      "hash": "21a3e3a2"
+    },
+    "evening-clouds": {
+      "hash": "234cf008"
+    },
+    "far-hills": {
+      "hash": "029c3f0b"
+    },
+    "water-back": {
+      "hash": "84a27331"
+    },
+    "water-mid": {
+      "hash": "05f89e12"
+    },
+    "water-front": {
+      "hash": "0eff54a9"
+    }
+  }
+}

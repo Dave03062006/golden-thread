@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  background-image: var(--bg-image);
+  background-size: var(--bg-size, auto);
+  background-position: var(--bg-position, 0 0);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: var(--body-size);
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: var(--display-tracking);
+  line-height: 1.2;
+}
+
+p {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/*
+ * Hidden text in every font, so they're all ready before a style switch needs them.
+ * Its size is fixed and its layout sealed off, so a theme change never has to lay
+ * this text out again.
+ */
+.font-warmup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  contain: strict;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.font-warmup > span {
+  display: block;
+}
+
+.font-warmup .font-a { font-family: 'Cinzel Variable'; font-weight: 600; }
+.font-warmup .font-b { font-family: 'Cormorant Garamond Variable'; }
+.font-warmup .font-b-italic { font-family: 'Cormorant Garamond Variable'; font-style: italic; }
+.font-warmup .font-c { font-family: 'Pixelify Sans Variable'; }
+.font-warmup .font-d { font-family: 'Press Start 2P'; }
+.font-warmup .font-e { font-family: 'Atkinson Hyperlegible Next Variable'; }

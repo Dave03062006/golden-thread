@@ -45,8 +45,8 @@ describe('createRng', () => {
   })
 
   it('refuses impossible picks', () => {
-    expect(() => createRng(1).pick([])).toThrow()
-    expect(() => createRng(1).weighted(['a'], () => 0)).toThrow()
+    expect(() => createRng(1).pick([])).toThrow(/at least one item/)
+    expect(() => createRng(1).weighted(['a'], () => 0)).toThrow(/positive weight/)
   })
 })
 

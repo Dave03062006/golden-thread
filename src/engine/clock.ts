@@ -29,6 +29,9 @@ export interface ClockDeps {
 
 /** One frame's numbers, reported to the performance probe. */
 export interface FrameSample {
+  /** When the frame started, in milliseconds (the browser's frame timestamp). */
+  atMs: number
+  /** Milliseconds since the previous frame. */
   intervalMs: number
   workMs: number
 }
@@ -143,7 +146,7 @@ export function createClock(deps: ClockDeps): Clock {
         entry.fn(frame)
       }
       lastWorkMs = deps.now() - workStart
-      clock.onFrame?.({ intervalMs, workMs: lastWorkMs })
+      clock.onFrame?.({ atMs: timestamp, intervalMs, workMs: lastWorkMs })
     },
   }
 

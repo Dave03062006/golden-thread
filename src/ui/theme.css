@@ -1,0 +1,96 @@
+/*
+ * The game's look, as CSS variables. The <html> element carries the current art style
+ * (data-art-style) and the comfort settings (text size, contrast, readable font), and
+ * every component reads these variables, so the whole interface changes together.
+ *
+ * Any element can carry these attributes, not just <html>: the stage lays out a hidden
+ * copy of its text in the other style ahead of time (see Stage.tsx), so the first style
+ * switch is as smooth as every later one. That's why the rules for one style are written
+ *
+ *   @scope ([data-art-style='pixel']) to ([data-art-style]) {
+ *     :scope[data-art-style] .thing { ... }
+ *   }
+ *
+ * which applies to the nearest element carrying a style and stops at any element inside
+ * it that carries its own. (":scope[data-art-style]" keeps the same weight the rule had
+ * when it was written for <html> alone.)
+ */
+
+:root {
+  color-scheme: dark;
+  --focus: #ffe08a;
+  --tap: 44px;
+}
+
+[data-art-style='paper-glass'] {
+  --bg: #120f33;
+  --bg-image: radial-gradient(120% 90% at 78% 30%, #5b2e96 0%, #2a2470 42%, #120f33 78%);
+  --surface: rgb(27 22 70 / 0.88);
+  --surface-2: rgb(255 224 138 / 0.07);
+  --line: rgb(255 224 138 / 0.38);
+  --text: #fff4e3;
+  --text-2: #eadff5;
+  --text-3: #bfb1d8;
+  --accent: #ffd36e;
+  --accent-2: #ffb35c;
+  --accent-ink: #2a1240;
+  --danger: #ff9a9a;
+  --font-display: 'Cinzel Variable', 'Times New Roman', serif;
+  --font-body: 'Cormorant Garamond Variable', Georgia, serif;
+  --body-size: 1.25rem;
+  --display-tracking: 0.06em;
+  --button-radius: 999px;
+  --panel-radius: 18px;
+  --panel-border: 1px solid var(--line);
+  --panel-shadow: 0 1.5rem 3rem rgb(8 6 30 / 0.45);
+  --stage-backdrop: #0b0a1e;
+}
+
+[data-art-style='pixel'] {
+  --bg: #1a1c2c;
+  --bg-image:
+    linear-gradient(45deg, #202336 25%, transparent 25%, transparent 75%, #202336 75%),
+    linear-gradient(45deg, #202336 25%, transparent 25%, transparent 75%, #202336 75%);
+  --bg-size: 16px 16px;
+  --bg-position: 0 0, 8px 8px;
+  --surface: rgb(26 28 44 / 0.97);
+  --surface-2: #29366f;
+  --line: #f4f4f4;
+  --text: #f4f4f4;
+  --text-2: #e3e8f0;
+  --text-3: #94b0c2;
+  --accent: #ffcd75;
+  --accent-2: #ef7d57;
+  --accent-ink: #1a1c2c;
+  --danger: #ef7d57;
+  --font-display: 'Press Start 2P', ui-monospace, monospace;
+  --font-body: 'Pixelify Sans Variable', ui-monospace, monospace;
+  --body-size: 1.15rem;
+  --display-tracking: 0;
+  --button-radius: 0;
+  --panel-radius: 0;
+  --panel-border: 4px solid #f4f4f4;
+  --panel-shadow: inset 0 0 0 3px #566c86, 0 0 0 3px #1a1c2c;
+  --stage-backdrop: #13141f;
+}
+
+/* Comfort settings. */
+:root[data-text-size='large'] {
+  font-size: 112.5%;
+}
+
+:root[data-text-size='larger'] {
+  font-size: 125%;
+}
+
+[data-readable-font='true'] {
+  --font-body: 'Atkinson Hyperlegible Next Variable', system-ui, sans-serif;
+  --body-size: 1.1rem;
+}
+
+[data-contrast='high'] {
+  --surface: #05040f;
+  --text-2: #ffffff;
+  --text-3: #f2f2f2;
+  --line: #ffffff;
+}

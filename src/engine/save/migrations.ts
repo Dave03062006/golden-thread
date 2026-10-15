@@ -1,5 +1,5 @@
 import { isStyleId } from '../../styles/ids'
-import { SAVE_VERSION, SaveError, type SaveData } from './types'
+import { SAVE_VERSION, SaveError, type Position, type SaveData } from './types'
 
 type Raw = Record<string, unknown>
 
@@ -16,6 +16,15 @@ function isObject(value: unknown): value is Raw {
 
 const stringArray = (value: unknown): string[] =>
   Array.isArray(value) ? value.filter((v): v is string => typeof v === 'string') : []
+
+function readPosition(value: unknown): Position | null {
+  if (!isObject(value)) return null
+  const { level, episode, scene, minigame } = value
+  if (typeof level !== 'string' || typeof episode !== 'string' || typeof scene !== 'string') return null
+  const position: Position = { level, episode, scene }
+  if (minigame === 'start' || minigame === 'half') position.minigame = minigame
+  return position
+}
 
 /**
  * Checks a save read from storage or a file, upgrades it to the current version, and
@@ -36,19 +45,7 @@ export function upgradeSave(raw: unknown, upgrades = UPGRADES, current = SAVE_VE
     save = { ...step(save), version: v + 1 }
   }
 
-  const position = isObject(save.position) &&
-    typeof save.position.level === 'string' &&
-    typeof save.position.episode === 'string' &&
-    typeof save.position.scene === 'string'
-    ? {
-        level: save.position.level,
-        episode: save.position.episode,
-        scene: save.position.scene,
-        ...(save.position.minigame === 'start' || save.position.minigame === 'half'
-          ? { minigame: save.position.minigame }
-          : {}),
-      }
-    : null
+  const position = readPosition(save.position)
 
   return {
     version: current,

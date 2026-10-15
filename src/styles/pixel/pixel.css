@@ -1,0 +1,20 @@
+/* The pixel frame: the canvas, enlarged by a whole number, centered on a patterned border. */
+.pixel-frame {
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  contain: strict;
+  background-color: #1a1c2c;
+  background-image:
+    linear-gradient(45deg, #222539 25%, transparent 25%, transparent 75%, #222539 75%),
+    linear-gradient(45deg, #222539 25%, transparent 25%, transparent 75%, #222539 75%);
+  background-size: 16px 16px;
+  background-position: 0 0, 8px 8px;
+}
+
+.pixel-canvas {
+  display: block;
+  image-rendering: pixelated;
+  box-shadow: 0 0 0 3px #1a1c2c, 0 0 0 6px #566c86;
+}
