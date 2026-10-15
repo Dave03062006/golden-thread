@@ -22,17 +22,21 @@ export const demoScene: SceneDescription = {
       prop: 'dove',
       above: 'water-mid',
       size: 0.1,
-      loopSeconds: 16,
-      x: [
-        { at: 0, value: 1.15 },
-        { at: 14, value: -0.15, ease: 'linear' },
-      ],
-      y: [
-        { at: 0, value: 0.34 },
-        { at: 4.5, value: 0.27 },
-        { at: 9, value: 0.33 },
-        { at: 14, value: 0.29 },
-      ],
+      x: 0,
+      y: 0,
+      path: {
+        loopSeconds: 16,
+        x: [
+          { at: 0, value: 1.15 },
+          { at: 14, value: -0.15, ease: 'linear' },
+        ],
+        y: [
+          { at: 0, value: 0.34 },
+          { at: 4.5, value: 0.27 },
+          { at: 9, value: 0.33 },
+          { at: 14, value: 0.29 },
+        ],
+      },
     },
   ],
   camera: {
