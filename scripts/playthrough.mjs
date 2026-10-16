@@ -20,6 +20,7 @@ const EPISODES = [
   { number: 1, lines: 34, plays: 9 }, // src/content/levels/01-creation-and-fall/episode-1.ts
   { number: 2, lines: 21, plays: 1 }, // episode-2.ts
   { number: 3, lines: 19, plays: 1 }, // episode-3.ts
+  { number: 4, lines: 16, plays: 1 }, // episode-4.ts
 ]
 
 const server = await startPreview()

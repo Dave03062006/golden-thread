@@ -22,7 +22,7 @@ const onlyScreen = value('screen')
 const SCREENS = ['title', 'menu', 'settings', 'scene', 'music', 'credits']
 
 /** Every scene of the finished episodes (src/content/levels/01-creation-and-fall/). */
-const STORY_SCENES = [...Array.from({ length: 8 }, (_, i) => `l01-e1-s${i + 1}`), ...Array.from({ length: 5 }, (_, i) => `l01-e2-s${i + 1}`), ...Array.from({ length: 6 }, (_, i) => `l01-e3-s${i + 1}`)]
+const STORY_SCENES = [...Array.from({ length: 8 }, (_, i) => `l01-e1-s${i + 1}`), ...Array.from({ length: 5 }, (_, i) => `l01-e2-s${i + 1}`), ...Array.from({ length: 6 }, (_, i) => `l01-e3-s${i + 1}`), ...Array.from({ length: 5 }, (_, i) => `l01-e4-s${i + 1}`)]
 
 /** Opens the story at a scene, past the episode's title card, and lets the first line settle in. */
 async function openStory(page, url, style, scene) {

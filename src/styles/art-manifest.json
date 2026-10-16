@@ -89,6 +89,21 @@
     },
     "eden-dusk": {
       "hash": "43df3196"
+    },
+    "east-sky": {
+      "hash": "c73ee1a6"
+    },
+    "east-hills": {
+      "hash": "bfab7c68"
+    },
+    "east-land": {
+      "hash": "69096d6c"
+    },
+    "east-path": {
+      "hash": "5764fffc"
+    },
+    "eden-grey": {
+      "hash": "1d9f2b02"
     }
   },
   "paperProps": {
@@ -126,10 +141,10 @@
       "hash": "0c3e5e0d"
     },
     "man": {
-      "hash": "0b276868"
+      "hash": "198383d2"
     },
     "woman": {
-      "hash": "e0a133ba"
+      "hash": "b6c4134c"
     },
     "whale": {
       "hash": "c25a63bb"
@@ -175,6 +190,18 @@
     },
     "fruit": {
       "hash": "481fafec"
+    },
+    "thorns": {
+      "hash": "5fe1d656"
+    },
+    "cherub": {
+      "hash": "85b81472"
+    },
+    "flaming-sword": {
+      "hash": "bba1352e"
+    },
+    "sign": {
+      "hash": "56566000"
     }
   },
   "pixelLayers": {
@@ -267,6 +294,21 @@
     },
     "eden-dusk": {
       "hash": "5161df55"
+    },
+    "east-sky": {
+      "hash": "870a8ecd"
+    },
+    "east-hills": {
+      "hash": "e14ad8d4"
+    },
+    "east-land": {
+      "hash": "07acbab2"
+    },
+    "east-path": {
+      "hash": "a525dc89"
+    },
+    "eden-grey": {
+      "hash": "8bd50605"
     }
   }
 }

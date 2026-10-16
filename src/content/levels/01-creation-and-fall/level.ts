@@ -3,11 +3,12 @@ import type { Episode, Level, WhereWhen } from '../../types'
 import { episode1 } from './episode-1'
 import { episode2 } from './episode-2'
 import { episode3 } from './episode-3'
+import { episode4 } from './episode-4'
 import { level1Music } from './music'
 
 /**
  * Level 1 · Creation and the Fall (Genesis 1–5), from the approved Level 1 script
- * (docs/scripts/level-01-creation-and-fall.md). Episodes 1 to 3 are built; the others
+ * (docs/scripts/level-01-creation-and-fall.md). Episodes 1 to 4 are built; the others
  * follow in milestone 4 and are listed here with everything except their scenes.
  */
 
@@ -80,7 +81,7 @@ export const level1: Level = {
       ]),
       read: ['GEN 3:1-13'],
     }),
-    planned({
+    built(episode4, {
       id: 'l01-e4',
       number: 4,
       title: 'The Promise and the Exile',

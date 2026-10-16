@@ -5,11 +5,13 @@ import type { Painter } from './frame'
 import { people } from './characters/people'
 import { creationLayers } from './layers/creation'
 import { demoLayers } from './layers/demo'
+import { exileLayers } from './layers/exile'
 import { fallLayers } from './layers/fall'
 import { gardenLayers } from './layers/garden'
 import { animals } from './props/animals'
 import { creationProps } from './props/creation'
 import { dove } from './props/dove'
+import { exileProps } from './props/exile'
 import { fallProps } from './props/fall'
 import { gardenProps } from './props/garden'
 
@@ -77,9 +79,9 @@ export interface PixelDrawnArt {
 
 export type PixelPropArt = PixelSpriteArt | PixelDrawnArt
 
-export const pixelLayers: Record<string, PixelLayerArt> = { ...demoLayers, ...creationLayers, ...gardenLayers, ...fallLayers }
+export const pixelLayers: Record<string, PixelLayerArt> = { ...demoLayers, ...creationLayers, ...gardenLayers, ...fallLayers, ...exileLayers }
 
-export const pixelProps: Record<string, PixelPropArt> = { dove, ...creationProps, ...animals, ...gardenProps, ...fallProps, ...people }
+export const pixelProps: Record<string, PixelPropArt> = { dove, ...creationProps, ...animals, ...gardenProps, ...fallProps, ...exileProps, ...people }
 
 export function posesOf(art: PixelPropArt): string[] {
   return art.kind === 'sprite' ? Object.keys(art.poses) : art.poses

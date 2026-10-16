@@ -20,7 +20,9 @@ function breathing(part: string, _pose: string, time: number): PartMotion {
 }
 
 /** The poses after the Fall, when they have covered themselves with fig leaves (Genesis 3:7). */
-const COVERED = new Set(['ashamed', 'hide', 'point'])
+const COVERED = new Set(['ashamed', 'hide', 'point', 'toil'])
+/** The poses once God has clothed them in garments of skins (Genesis 3:21). */
+const CLOTHED = new Set(['clothed'])
 
 /**
  * How the man and the woman move. Both face left, so turning the arm forward (toward the
@@ -29,15 +31,42 @@ const COVERED = new Set(['ashamed', 'hide', 'point'])
  * - ashamed: covered, the arm drawn in across the body, a little bowed.
  * - hide: covered, crouched low among the trees.
  * - point: covered, the arm straight out, blaming.
+ * - toil: covered, bent over the hard ground, the arm reaching down to it.
+ * - clothed: in the garments of skins; changing into it, the fig leaves fall away.
  */
 function moving(part: string, pose: string, time: number): PartMotion {
-  if (part === 'leaves') return COVERED.has(pose) ? { opacity: 1, y: pose === 'hide' ? 40 : 0 } : { opacity: 0 }
+  if (part === 'leaves') {
+    if (!COVERED.has(pose)) return { opacity: 0 }
+    if (pose === 'toil') return { opacity: 1, rotate: -9, y: 3 }
+    return { opacity: 1, y: pose === 'hide' ? 40 : 0 }
+  }
+  if (part === 'skins') return CLOTHED.has(pose) ? { opacity: 1, ...breathing('body', pose, time) } : { opacity: 0 }
   const rest = breathing(part, pose, time)
+  if (pose === 'toil') {
+    // Bending forward turns the body about its middle, which carries the shoulder forward and down.
+    const effort = Math.sin(time * TAU * 0.4)
+    return part === 'arm' ? { x: -5, y: 5 + effort, rotate: 48 + 6 * effort } : { rotate: -9 + effort, y: 3 }
+  }
   if (pose === 'reach') return part === 'arm' ? { rotate: 120 + 3 * Math.sin(time * TAU * 0.3) } : rest
   if (pose === 'point') return part === 'arm' ? { rotate: 88 } : rest
   if (pose === 'ashamed') return part === 'arm' ? { x: 6, y: 1, rotate: -14 } : { y: 1 + (rest.y ?? 0) }
   if (pose === 'hide') return part === 'arm' ? { x: 5, y: 40, rotate: 35 } : { y: 40 + (rest.y ?? 0) }
   return rest
+}
+
+/**
+ * A garment of skins from the shoulders to the knees, from x0 to x1 and down to `hem`:
+ * soft brown hide with a ragged hem and a few stitches.
+ */
+function skins(x0: number, x1: number, top: number, hem: number): string {
+  const w = x1 - x0
+  let edge = ''
+  for (let i = 0; i <= 6; i++) edge += `L${(x1 - (w * i) / 6).toFixed(1)} ${(hem + (i % 2 ? 3 : 0)).toFixed(1)}`
+  return `
+    <path d="M${x0 + 1} ${top + 1}C${x0 + 5} ${top - 2} ${x1 - 5} ${top - 2} ${x1 - 1} ${top + 1}L${x1 + 1} ${top + 16}L${x1 + 1.5} ${hem}${edge}L${x0 - 1.5} ${hem}L${x0 - 1} ${top + 16}Z" fill="#8a6440"/>
+    <path d="M${x0 + 2} ${top + 14}C${x0 + w * 0.4} ${top + 17} ${x1 - w * 0.4} ${top + 17} ${x1 - 2} ${top + 14}" stroke="#5e4028" stroke-width="1.2" fill="none" stroke-dasharray="2 2"/>
+    <path d="M${x0 + 3} ${top + 30}L${x0 + 6} ${top + 44}M${x1 - 4} ${top + 26}L${x1 - 6} ${top + 40}" stroke="#a88058" stroke-width="1" opacity=".7"/>
+    <path d="M${x0 - 1} ${top + 16}L${x0 - 1.5} ${hem}" stroke="${RIM}" stroke-width="1.2" opacity=".8"/>`
 }
 
 /** A girdle of fig leaves sewn together, across the hips from x0 to x1 at height y. */
@@ -69,7 +98,7 @@ function manMotion(part: string, pose: string, time: number): PartMotion {
 const man: PaperPropArt = {
   box: { x: 0, y: 0, w: 40, h: 120 },
   facing: -1,
-  poses: ['idle', 'sleep', 'reach', 'ashamed', 'hide', 'point'],
+  poses: ['idle', 'sleep', 'reach', 'ashamed', 'hide', 'point', 'toil', 'clothed'],
   anchor: 'base',
   parts: [
     {
@@ -93,6 +122,7 @@ const man: PaperPropArt = {
         </g>`,
     },
     { id: 'leaves', svg: figLeaves(10.5, 29.5, 57) },
+    { id: 'skins', svg: skins(9, 30.5, 25, 88) },
     {
       id: 'arm',
       pivot: { x: 11.5, y: 27 },
@@ -107,7 +137,7 @@ const man: PaperPropArt = {
 const woman: PaperPropArt = {
   box: { x: 0, y: 0, w: 40, h: 114 },
   facing: -1,
-  poses: ['idle', 'reach', 'ashamed', 'hide', 'point'],
+  poses: ['idle', 'reach', 'ashamed', 'hide', 'point', 'toil', 'clothed'],
   anchor: 'base',
   parts: [
     {
@@ -133,6 +163,7 @@ const woman: PaperPropArt = {
         </g>`,
     },
     { id: 'leaves', svg: figLeaves(11.5, 28.5, 55) },
+    { id: 'skins', svg: skins(11, 28.5, 25, 86) },
     {
       id: 'arm',
       pivot: { x: 13.4, y: 27.4 },

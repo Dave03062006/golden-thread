@@ -102,6 +102,20 @@ export const TRACKS: Track[] = [
     credit:
       'Allegri, Miserere mei, Deus. Ensamble Escénico Vocal of the Sistema Nacional de Fomento Musical, recorded in the Cathedral of Tlaxcala, Mexico (2021). CC BY 3.0, via Wikimedia Commons.',
   },
+  // Episode 4, in place of the chant Ave Maris Stella, for which no recording under an
+  // allowed license was found: like the chant, it greets Mary, the new Eve.
+  {
+    id: 'parsons-ave-maria',
+    title: 'Ave Maria',
+    composer: 'Robert Parsons',
+    performer: 'St. Paul’s Episcopal Church, Indianapolis',
+    year: 2024,
+    license: 'cc0',
+    licenseNote: 'Dedicated to the public domain (CC0) by its publisher, as stated on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:Ave_Maria_-_Parsons.ogg',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Ave_Maria_-_Parsons.ogg',
+    credit: 'Parsons, Ave Maria. St. Paul’s Episcopal Church, Indianapolis (2024). CC0, via Wikimedia Commons.',
+  },
 ]
 
 const BY_ID = new Map(TRACKS.map((track) => [track.id, track]))

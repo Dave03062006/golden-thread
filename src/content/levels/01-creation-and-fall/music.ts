@@ -6,11 +6,13 @@ import type { LevelMusic } from '../../types'
  * `music` in episode-1.ts), and the great chord on "and there was light" lands as the
  * light breaks.
  *
- * Episode 3 has Allegri's Miserere (Psalm 51) in place of the chant Attende Domine, by the
- * script's fallback rule: no recording of the chant under an allowed license was found.
+ * Episode 3 has Allegri's Miserere (Psalm 51) in place of the chant Attende Domine, and
+ * Episode 4 Robert Parsons's Ave Maria in place of the chant Ave Maris Stella (both turn
+ * "Eva" into "Ave"), by the script's fallback rule: no recording of either chant under an
+ * allowed license was found.
  *
- * Still to come (milestones 4 and 5): the chants the script names for Episodes 4–5 and for
- * reflection (Ave Maris Stella, Parce Domine, Salve Regina) and Bach's chorale for Episode
+ * Still to come (milestones 4 and 5): the chants the script names for Episode 5 and for
+ * reflection (Parce Domine, Salve Regina) and Bach's chorale for Episode
  * 6, or fitting substitutes where no allowed recording exists.
  */
 export const level1Music: LevelMusic = {
@@ -30,6 +32,7 @@ export const level1Music: LevelMusic = {
     'creation-glorious-work',
     'creation-fairest',
     'allegri-miserere',
+    'parsons-ave-maria',
   ],
   minigame: ['creation-awake-the-harp', 'creation-heavens-telling'],
   reflection: ['creation-by-thee'],

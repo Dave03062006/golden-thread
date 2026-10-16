@@ -7,6 +7,7 @@
 //   npm run perf
 //   npm run perf -- --slowdown=6      slow the processor down more (default 4)
 //   npm run perf -- --only=story      only the story scenes (or: demo)
+//   npm run perf -- --scenes=l01-e4   only the story scenes whose id starts with this
 //
 // The story runs start at each scene of Episode 1 and move on every two seconds, so
 // lines change, transitions run and the interactions are played (Space is their
@@ -39,8 +40,9 @@ const SECONDS = 10
 const STORY_SECONDS = 8
 
 /** Every scene of the finished episodes (src/content/levels/01-creation-and-fall/). */
-const STORY_SCENES = [...Array.from({ length: 8 }, (_, i) => `l01-e1-s${i + 1}`), ...Array.from({ length: 5 }, (_, i) => `l01-e2-s${i + 1}`), ...Array.from({ length: 6 }, (_, i) => `l01-e3-s${i + 1}`)]
+const STORY_SCENES = [...Array.from({ length: 8 }, (_, i) => `l01-e1-s${i + 1}`), ...Array.from({ length: 5 }, (_, i) => `l01-e2-s${i + 1}`), ...Array.from({ length: 6 }, (_, i) => `l01-e3-s${i + 1}`), ...Array.from({ length: 5 }, (_, i) => `l01-e4-s${i + 1}`)]
 const only = args.find((a) => a.startsWith('--only='))?.split('=')[1]
+const scenes = args.find((a) => a.startsWith('--scenes='))?.split('=')[1]
 
 const percentile = (values, p) => {
   const sorted = [...values].sort((a, b) => a - b)
@@ -67,7 +69,9 @@ const scenarios = [
   ...STYLES.map((style) => ({ name: `demo scene · ${style}`, style, switchAt: null })),
   ...STYLES.map((style) => ({ name: `demo scene · switching from ${style}`, style, switchAt: SECONDS / 2 })),
   ...STORY_SCENES.flatMap((scene) => STYLES.map((style) => ({ name: `${scene} · ${style}`, style, scene, switchAt: null }))),
-].filter((s) => !only || (only === 'story' ? s.scene : !s.scene))
+]
+  .filter((s) => !only || (only === 'story' ? s.scene : !s.scene))
+  .filter((s) => !scenes || s.scene?.startsWith(scenes))
 
 await mkdir('perf', { recursive: true })
 const server = await startPreview()

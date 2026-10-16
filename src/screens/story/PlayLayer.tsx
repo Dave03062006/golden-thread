@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from 'react'
 import { gameClock } from '../../engine/clock'
-import type { Choice, Compare, GameKey, Hint } from '../../minigames/framework'
+import type { Choice, Compare, GameKey, GameView, Hint } from '../../minigames/framework'
 import type { GameRunner } from '../../minigames/runner'
 import { Button } from '../../ui/components'
 import { CompareCard } from './CompareCard'
+import { Scripture } from './Line'
 
 /** Keys the interactions understand. */
 const KEYS: Record<string, GameKey> = {
@@ -38,6 +39,7 @@ export function PlayLayer({ runner, gentle }: { runner: GameRunner; gentle: bool
   const [hintDue, setHintDue] = useState(gentle)
   const [choice, setChoice] = useState<Choice | null>(runner.view.choice ?? null)
   const [compare, setCompare] = useState<Compare | null>(runner.view.compare ?? null)
+  const [message, setMessage] = useState<GameView['message']>(runner.view.message ?? null)
 
   // The instruction waits a moment, so a player who already knows what to do isn't told.
   useEffect(() => {
@@ -52,6 +54,7 @@ export function PlayLayer({ runner, gentle }: { runner: GameRunner; gentle: bool
     let shownReady = false
     let shownChoice = runner.view.choice ?? null
     let shownCompare = runner.view.compare ?? null
+    let shownMessage = runner.view.message ?? null
     const pool: HTMLSpanElement[] = []
     return gameClock.subscribe(
       () => {
@@ -63,6 +66,10 @@ export function PlayLayer({ runner, gentle }: { runner: GameRunner; gentle: bool
         if ((view.choice ?? null) !== shownChoice) {
           shownChoice = view.choice ?? null
           setChoice(shownChoice)
+        }
+        if ((view.message ?? null) !== shownMessage) {
+          shownMessage = view.message ?? null
+          setMessage(shownMessage)
         }
         if ((view.compare ?? null) !== shownCompare) {
           shownCompare = view.compare ?? null
@@ -150,6 +157,17 @@ export function PlayLayer({ runner, gentle }: { runner: GameRunner; gentle: bool
         </output>
       )}
       {choice && <ChoiceCard choice={choice} choose={(option) => runner.queue({ kind: 'choose', option })} />}
+      {message && (
+        <output className="play-message" aria-live="polite">
+          <span className="play-message-title">
+            {message.title}
+            {message.reference && <small>{message.reference}</small>}
+          </span>
+          <span className="play-message-text">
+            <Scripture text={message.text} />
+          </span>
+        </output>
+      )}
       {compare && (
         <CompareCard
           compare={compare}

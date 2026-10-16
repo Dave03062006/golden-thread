@@ -11,14 +11,18 @@ import { sprite, type Grid } from '../shapes'
  * middle, so an arm can reach out in front without the body shifting between poses.
  */
 
-const COLORS = { S: C.wood1, H: C.wood0, R: C.gold, L: C.green, l: C.teal }
+const COLORS = { S: C.wood1, H: C.wood0, R: C.gold, L: C.green, l: C.teal, K: C.wood3, k: C.wood2 }
 
 /** What changes between their poses. */
 interface Look {
-  /** The front arm: hanging, reaching up and out, pointing straight out, or drawn in. */
-  arm: 'down' | 'reach' | 'point' | 'in'
+  /** The front arm: hanging, reaching up and out, pointing straight out, drawn in, or down to the ground. */
+  arm: 'down' | 'reach' | 'point' | 'in' | 'ground'
   /** Covered with fig leaves (Genesis 3:7). */
   leaves: boolean
+  /** Clothed in garments of skins (Genesis 3:21). */
+  skins: boolean
+  /** How far the head and shoulders bend forward, toiling. */
+  bend: number
   /** How far the whole figure sinks, crouching to hide. */
   crouch: number
   /** The head bowed, in shame. */
@@ -26,11 +30,13 @@ interface Look {
 }
 
 const LOOKS: Record<string, Look> = {
-  idle: { arm: 'down', leaves: false, crouch: 0, bowed: false },
-  reach: { arm: 'reach', leaves: false, crouch: 0, bowed: false },
-  ashamed: { arm: 'in', leaves: true, crouch: 0, bowed: true },
-  hide: { arm: 'in', leaves: true, crouch: 10, bowed: true },
-  point: { arm: 'point', leaves: true, crouch: 0, bowed: false },
+  idle: { arm: 'down', leaves: false, skins: false, crouch: 0, bowed: false, bend: 0 },
+  reach: { arm: 'reach', leaves: false, skins: false, crouch: 0, bowed: false, bend: 0 },
+  ashamed: { arm: 'in', leaves: true, skins: false, crouch: 0, bowed: true, bend: 0 },
+  hide: { arm: 'in', leaves: true, skins: false, crouch: 10, bowed: true, bend: 0 },
+  point: { arm: 'point', leaves: true, skins: false, crouch: 0, bowed: false, bend: 0 },
+  toil: { arm: 'ground', leaves: true, skins: false, crouch: 0, bowed: true, bend: 2 },
+  clothed: { arm: 'down', leaves: false, skins: true, crouch: 0, bowed: false, bend: 0 },
 }
 
 /** Where the body starts across the grid. */
@@ -42,6 +48,14 @@ function arm(g: Grid, look: Look, x: number, y: number, length: number) {
   if (look.arm === 'down') g.rect(x, y, 1, length, 'S')
   else if (look.arm === 'reach') g.line(x, y, x - 4, y - 5, 'S').set(x - 4, y - 6, 'S')
   else if (look.arm === 'point') g.line(x, y + 1, x - 5, y + 1, 'S')
+  else if (look.arm === 'ground') g.line(x, y, x - 3, y + length + 3, 'S')
+}
+
+/** A garment of skins from the shoulders at `top` down to the knees, ragged at the hem. */
+function garment(g: Grid, x: number, top: number, w: number, hem: number) {
+  g.rect(x, top, w, hem - top, 'K')
+  for (let i = 0; i < w; i += 2) g.set(x + i, hem, 'K')
+  g.rect(x, top + 6, w, 1, 'k')
 }
 
 /** Fig leaves sewn across the hips. */
@@ -63,17 +77,22 @@ function person(draw: (g: Grid, up: number, look: Look) => void, height: number)
 const man = person((g, up, look) => {
   const c = look.crouch
   const bow = look.bowed ? 1 : 0
+  // Bending forward carries the head and shoulders forward and down.
+  const bx = X - look.bend
+  const by = up + look.bend
   // Legs and feet, shorter when crouching (the thicket hides the rest).
   g.rect(X + 3, 18 + c, 2, 12 - c, 'S').rect(X + 6, 18 + c, 2, 12 - c, 'S')
   g.rect(X + 2, 30, 3, 1, 'S').rect(X + 5, 30, 3, 1, 'S')
   // Body, the back arm, neck and head.
-  g.rect(X + 3, 8 + up, 5, 10 - up + c, 'S').rect(X + 2, 8 + up, 7, 2, 'S')
-  g.rect(X + 8, 9 + up, 1, 7, 'S')
-  g.rect(X + 5, 6 + up, 2, 2, 'S')
-  g.ellipse(X + 5.5 - bow * 0.5, 3.6 + up + bow, 2.6, 2.7, 'S')
-  g.set(X + 2 - bow, 4 + up + bow, 'S')
-  g.ellipse(X + 6.2, 2.4 + up + bow, 2.2, 1.6, 'H')
-  arm(g, look, X + 2, 9 + up, 8)
+  g.rect(X + 3, 12 + up, 5, 6 - up + c, 'S')
+  g.rect(bx + 3, 8 + by, 5, 5, 'S').rect(bx + 2, 8 + by, 7, 2, 'S')
+  g.rect(bx + 8, 9 + by, 1, 7, 'S')
+  g.rect(bx + 5, 6 + by, 2, 2, 'S')
+  g.ellipse(bx + 5.5 - bow * 0.5, 3.6 + by + bow, 2.6, 2.7, 'S')
+  g.set(bx + 2 - bow, 4 + by + bow, 'S')
+  g.ellipse(bx + 6.2, 2.4 + by + bow, 2.2, 1.6, 'H')
+  if (look.skins) garment(g, X + 2, 8 + up, 7, 24)
+  arm(g, look, bx + 2, 9 + by, 8)
   // The light, from the left.
   g.rim('S', 'R', 'left')
   if (look.leaves) leaves(g, X + 2, 16 + c, 7)
@@ -91,6 +110,7 @@ const woman = person((g, up, look) => {
   g.ellipse(X + 5.4 - bow * 0.5, 3.6 + up + bow, 2.4, 2.6, 'S')
   g.set(X + 2 - bow, 4 + up + bow, 'S')
   g.ellipse(X + 6, 2.3 + up + bow, 2.2, 1.5, 'H')
+  if (look.skins) garment(g, X + 2, 8 + up, 6, 23)
   arm(g, look, X + 2, 9 + up, 7)
   g.rim('S', 'R', 'left')
   if (look.leaves) leaves(g, X + 2, 15 + c, 6)
