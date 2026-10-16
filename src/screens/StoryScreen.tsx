@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
+import { cueMusic, duckMusic, pauseMusic, prepareCue, sceneMusic, setMusicPlace, soundEffect } from '../app/audio'
 import { launch } from '../app/params'
 import { useApp } from '../app/store'
 import { formatReference } from '../content/bible/books'
@@ -19,6 +20,7 @@ import { Button, Choice, Dialog } from '../ui/components'
 import { useReducedMotion } from '../ui/useReducedMotion'
 import { EpisodeEndDialog, HistoryDialog, ThreadDialog, WhereWhenDialog } from './story/dialogs'
 import { Line } from './story/Line'
+import { ListenAlongCard } from '../ui/MusicCards'
 import { PlayLayer } from './story/PlayLayer'
 import { spokenText } from './story/speech'
 import { ThreadSpot } from './story/ThreadSpot'
@@ -80,7 +82,7 @@ export function StoryScreen() {
   const openSettings = useApp((s) => s.openSettings)
   const closeSave = useApp((s) => s.closeSave)
   const updateSettings = useSettings((s) => s.update)
-  const { gentleMode, autoAdvance, readAloud, voiceVolume } = useSettings()
+  const { gentleMode, autoAdvance, readAloud, voiceVolume, musicMode } = useSettings()
   const reducedMotion = useReducedMotion()
 
   const [session, setSession] = useState(() => startingSession(useApp.getState().save?.position ?? null))
@@ -110,6 +112,7 @@ export function StoryScreen() {
     const active = runnerRef.current
     if (active && active.advanceTo(time).done) {
       runnerRef.current = null
+      soundEffect('done')
       director.finishPlay(time)
     }
     const frame = director.frame(time)
@@ -117,20 +120,31 @@ export function StoryScreen() {
     return frame
   }, [])
 
+  // The level's music, beginning with the first scene's piece.
+  useEffect(() => {
+    setMusicPlace({ kind: 'story', level }, episode.scenes[session.firstScene]?.music)
+  }, [level, episode, session.firstScene])
+
   // Listen to the director: checkpoints, new beats, and the end.
   useEffect(() => {
+    let lines = 0
     return director.subscribe((event) => {
       if (event.type === 'checkpoint') {
         void checkpoint({ level: level.id, episode: episode.id, scene: event.scene.id })
         setSceneTitle({ title: event.scene.title, index: event.index })
+        sceneMusic(event.scene.music)
+        // Cues in this scene are loaded now, so they can land the moment they're needed.
+        for (const beat of event.scene.beats) for (const name of beat.events ?? []) if (name.startsWith('music:')) prepareCue(level, name.slice(6))
       } else if (event.type === 'beat') {
+        if (event.beat.kind !== 'play' && lines++ > 0) soundEffect('advance')
         const game = event.beat.kind === 'play' ? GAMES[event.beat.game] : undefined
         const next = game ? new GameRunner(game, { gentle: gentleRef.current, frame: () => director.frame(getTime()) }, director.timeline, getTime()) : null
         runnerRef.current = next
         setRunner(next)
         setCurrent({ beat: event.beat, position: event.position })
       } else if (event.type === 'event') {
-        // Music cues, like Haydn's chord on "and there was light", are played from milestone 3.
+        // A moment of music lands on this beat, like Haydn's chord on "and there was light".
+        if (event.name.startsWith('music:')) cueMusic(level, event.name.slice(6))
       } else if (event.type === 'end') {
         const now = useApp.getState().save
         if (now && !now.completedEpisodes.includes(episode.id)) changeSave({ completedEpisodes: [...now.completedEpisodes, episode.id] })
@@ -167,10 +181,16 @@ export function StoryScreen() {
   }, [advance, introOpen, panel])
 
   // Any card over the story pauses it; the pause menu's style switch still crossfades.
+  // The music pauses with the pause menu, and plays on under the other cards.
   useEffect(() => {
     if (panel) gameClock.pause()
     else gameClock.resume()
-    return () => gameClock.resume()
+    if (panel === 'where' || panel === 'history' || panel === 'end') soundEffect('open')
+    pauseMusic(panel === 'pause')
+    return () => {
+      gameClock.resume()
+      pauseMusic(false)
+    }
   }, [panel])
 
   // When a card closes, the keyboard goes back to the story itself, so Space carries on
@@ -207,9 +227,15 @@ export function StoryScreen() {
     const utterance = new SpeechSynthesisUtterance(lineText)
     utterance.rate = 0.95
     utterance.volume = voiceVolume
+    // The music softens under the voice.
+    utterance.onstart = () => duckMusic(true)
+    utterance.onend = () => duckMusic(false)
     speechSynthesis.cancel()
     speechSynthesis.speak(utterance)
-    return () => speechSynthesis.cancel()
+    return () => {
+      speechSynthesis.cancel()
+      duckMusic(false)
+    }
   }, [readAloud, lineText, voiceVolume])
 
   // Move on by itself, if the player turned auto-advance on. Never by default (spec §9.7).
@@ -255,7 +281,15 @@ export function StoryScreen() {
       <Stage key={session.id} scene={episode.set} style={save.style} reducedMotion={reducedMotion} getTime={getTime} frameAt={frameAt}>
         {runner && <PlayLayer key={`${current?.position.scene}-${current?.position.beat}`} runner={runner} gentle={gentleMode} />}
 
-        <ThreadSpot lastFrame={lastFrame} actorId={episode.thread.spot} enabled={spotEnabled} onFind={() => setPanel('thread')} />
+        <ThreadSpot
+          lastFrame={lastFrame}
+          actorId={episode.thread.spot}
+          enabled={spotEnabled}
+          onFind={() => {
+            soundEffect('find')
+            setPanel('thread')
+          }}
+        />
 
         <div className="story-hud">
           <Button variant="quiet" className="hud-button hud-extra" onClick={() => setPanel('where')}>
@@ -303,6 +337,8 @@ export function StoryScreen() {
         )}
       </Stage>
 
+      <ListenAlongCard key={level.id} level={level.number} levelTitle={level.title} />
+
       <div className="rotate-prompt" role="alert">
         <p>Turn your phone sideways to play.</p>
       </div>
@@ -315,6 +351,16 @@ export function StoryScreen() {
           <Button onClick={() => setPanel('where')}>Where &amp; when</Button>
           <Button onClick={() => setPanel('history')}>The story so far</Button>
           <Choice legend="Art style" value={save.style} options={STYLE_IDS.map((id) => ({ value: id, label: STYLE_NAMES[id] }))} onChange={setStyle} />
+          <Choice
+            legend="Music"
+            value={musicMode}
+            options={[
+              { value: 'sacred', label: 'Sacred' },
+              { value: 'worship', label: 'Worship' },
+              { value: 'off', label: 'Off' },
+            ]}
+            onChange={(next) => updateSettings({ musicMode: next })}
+          />
           <Button onClick={() => openSettings()}>Settings</Button>
           <Button
             onClick={async () => {

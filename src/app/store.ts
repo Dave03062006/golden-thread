@@ -9,7 +9,7 @@ export const saves: SaveSystem = createSaveSystem(
   launch.test || typeof indexedDB === 'undefined' ? memoryStore() : indexedDbStore('golden-thread', 'saves'),
 )
 
-export type Screen = 'title' | 'menu' | 'settings' | 'scene' | 'story'
+export type Screen = 'title' | 'menu' | 'settings' | 'scene' | 'story' | 'music' | 'credits'
 
 interface AppState {
   screen: Screen
@@ -22,6 +22,8 @@ interface AppState {
 
   go(screen: Screen): void
   openSettings(): void
+  /** Opens a screen that has a Back button, remembering where to go back to. */
+  openScreen(screen: Screen): void
   openSave(slot: SlotIndex, save: SaveData): void
   closeSave(): Promise<void>
   /** Changes the open save in memory. Call `commit` to write it. */
@@ -43,6 +45,8 @@ export const useApp = create<AppState>()((set, get) => ({
   go: (screen) => set({ screen }),
 
   openSettings: () => set((state) => ({ screen: 'settings', returnTo: state.screen === 'settings' ? state.returnTo : state.screen })),
+
+  openScreen: (screen) => set((state) => ({ screen, returnTo: state.screen === screen ? state.returnTo : state.screen })),
 
   openSave: (slot, save) => set({ slot, save, screen: 'menu', unsavedSeconds: 0 }),
 

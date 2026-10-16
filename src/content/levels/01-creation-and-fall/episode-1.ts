@@ -210,6 +210,7 @@ const scenes: StoryScene[] = [
   {
     id: 'l01-e1-s1',
     title: 'Before the beginning',
+    music: 'creation-chaos',
     beats: [
       say('Before mountains, before stars, before time itself, there was God, and God alone.', camera({ zoom: 1.08, y: 0.03 }, { seconds: 12, ease: 'inOutSine' })),
       say('Then God began to create.'),
@@ -249,6 +250,7 @@ const scenes: StoryScene[] = [
   {
     id: 'l01-e1-s3',
     title: 'Day two: the sky',
+    music: 'creation-marvelous-work',
     beats: [
       say(
         'On the second day God made a great dome, the firmament, to separate the waters below from the waters above.',
@@ -263,6 +265,7 @@ const scenes: StoryScene[] = [
   {
     id: 'l01-e1-s4',
     title: 'Day three: land, seas and plants',
+    music: 'creation-rolling-billows',
     beats: [
       say('God gathered the waters under the sky into one place, and the dry land appeared. He called the land Earth, and the gathered waters Seas.'),
       play('land', {
@@ -278,6 +281,7 @@ const scenes: StoryScene[] = [
   {
     id: 'l01-e1-s5',
     title: 'Day four: sun, moon and stars',
+    music: 'creation-splendour',
     beats: [
       say(
         'God set lights in the firmament to separate the day from the night, and to mark signs and seasons, days and years.',
@@ -299,6 +303,7 @@ const scenes: StoryScene[] = [
   {
     id: 'l01-e1-s6',
     title: 'Day five: fish and birds',
+    music: 'creation-mighty-pens',
     beats: [
       say('God said, let the waters swarm with living creatures, and let birds fly above the earth across the sky.'),
       play('creatures', {
@@ -315,6 +320,7 @@ const scenes: StoryScene[] = [
   {
     id: 'l01-e1-s7',
     title: 'Day six: animals, and man and woman',
+    music: 'creation-earth-bring-forth',
     beats: [
       say(
         'God said, let the earth bring forth living creatures: cattle, creeping things and wild beasts, each according to its kind. And so it was.',
@@ -347,6 +353,7 @@ const scenes: StoryScene[] = [
   {
     id: 'l01-e1-s8',
     title: 'Day seven: God rests',
+    music: 'creation-glorious-work',
     beats: [
       say('So the heavens and the earth were finished, in all their array.', layer('light-rays', { opacity: 0.85 }, { seconds: 6, ease: 'inOutSine' })),
       say('On the seventh day God rested from all the work he had done. He blessed the seventh day and made it holy.'),

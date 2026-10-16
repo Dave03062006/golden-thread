@@ -127,5 +127,7 @@ export type Beat =
 export interface StoryScene {
   id: string
   title: string
+  /** The piece of music the scene begins with (a track id); otherwise the music plays on. */
+  music?: string
   beats: Beat[]
 }

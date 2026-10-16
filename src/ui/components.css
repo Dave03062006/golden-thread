@@ -216,6 +216,24 @@
   }
 }
 
+/* Sliders */
+.ui-slider {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.ui-slider-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.ui-slider input {
+  width: 100%;
+  min-height: var(--tap);
+  accent-color: var(--accent);
+}
+
 /* Dialogs */
 .ui-dialog {
   width: min(32rem, calc(100vw - 2rem));

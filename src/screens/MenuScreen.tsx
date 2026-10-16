@@ -16,6 +16,7 @@ export function MenuScreen() {
   const save = useApp((s) => s.save)
   const go = useApp((s) => s.go)
   const openSettings = useApp((s) => s.openSettings)
+  const openScreen = useApp((s) => s.openScreen)
   const closeSave = useApp((s) => s.closeSave)
   if (!save) return null
 
@@ -36,7 +37,9 @@ export function MenuScreen() {
               {item.label}
             </Button>
           ))}
+          <Button onClick={() => openScreen('music')}>Music</Button>
           <Button onClick={openSettings}>Settings</Button>
+          <Button onClick={() => openScreen('credits')}>Credits</Button>
           <Button variant="quiet" onClick={closeSave}>
             Back to title
           </Button>

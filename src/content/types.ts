@@ -65,6 +65,23 @@ export interface Episode {
   read: string[]
 }
 
+/**
+ * A level's free sacred music (spec §11.5): pieces for each part of the level, by track id
+ * (see music/catalog.ts), and the moments a story lands on.
+ */
+export interface LevelMusic {
+  /** Under the story, in the order they play on. A scene can ask for one by name. */
+  story: string[]
+  /** Livelier, for minigames. */
+  minigame: string[]
+  /** Calm, for reflection and prayer. */
+  reflection: string[]
+  /** Light, for the quiz. */
+  quiz: string[]
+  /** Story events (`music:<name>`) that land a moment of a piece. */
+  cues: Record<string, { track: string; cue: string }>
+}
+
 export interface Level {
   id: string
   number: number
@@ -73,4 +90,5 @@ export interface Level {
   age: string
   passage: string
   episodes: Episode[]
+  music: LevelMusic
 }

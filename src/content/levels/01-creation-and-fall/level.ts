@@ -1,6 +1,7 @@
 import type { SceneDescription } from '../../../scene/types'
 import type { Episode, Level, WhereWhen } from '../../types'
 import { episode1 } from './episode-1'
+import { level1Music } from './music'
 
 /**
  * Level 1 · Creation and the Fall (Genesis 1–5), from the approved Level 1 script
@@ -32,6 +33,7 @@ export const level1: Level = {
   title: 'Creation and the Fall',
   age: 'I · The Beginning',
   passage: 'GEN 1:1-5:32',
+  music: level1Music,
   episodes: [
     episode1,
     planned({

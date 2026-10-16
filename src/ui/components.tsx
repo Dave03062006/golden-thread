@@ -50,6 +50,30 @@ export function Toggle({
   )
 }
 
+/** A volume or other amount from 0 to 1, shown as a percentage. A real range input underneath. */
+export function Slider({ label, value, onChange }: { label: string; value: number; onChange: (value: number) => void }) {
+  const id = useId()
+  const percent = Math.round(value * 100)
+  return (
+    <div className="ui-slider">
+      <label htmlFor={id} className="ui-slider-label">
+        {label}
+        <span className="ui-note">{percent}%</span>
+      </label>
+      <input
+        id={id}
+        type="range"
+        min={0}
+        max={100}
+        step={5}
+        value={percent}
+        aria-valuetext={`${percent} percent`}
+        onChange={(e) => onChange(Number(e.target.value) / 100)}
+      />
+    </div>
+  )
+}
+
 /** Pick one of a few options. Real radio buttons underneath, shown as segments. */
 export function Choice<T extends string>({
   legend,

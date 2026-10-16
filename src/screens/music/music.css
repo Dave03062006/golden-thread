@@ -1,0 +1,129 @@
+/* The Music Library and Credits screens. */
+
+.music-panel,
+.credits-panel {
+  width: min(48rem, 100%);
+}
+
+.screen-credits,
+.screen-music {
+  overflow-y: auto;
+}
+
+.drop-zone {
+  display: grid;
+  justify-items: center;
+  gap: 0.8rem;
+  padding: 1.4rem 1rem;
+  border: 2px dashed var(--line);
+  border-radius: calc(var(--panel-radius) / 1.5);
+  text-align: center;
+}
+
+.drop-zone[data-dragging] {
+  border-color: var(--accent);
+  background: var(--surface-2);
+}
+
+.drop-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.music-report {
+  display: block;
+  font-weight: 600;
+}
+
+.music-matches,
+.music-question,
+.music-unplaced {
+  display: grid;
+  gap: 0.6rem;
+  padding: 0.8rem 1rem;
+  border-radius: calc(var(--panel-radius) / 2);
+  background: var(--surface-2);
+}
+
+.music-question {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.music-question p {
+  flex: 1 1 18rem;
+}
+
+.music-matches ul,
+.music-unplaced ul,
+.music-skipped ul,
+.credits-list,
+.coverage-levels {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.music-unplaced li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.music-unplaced select {
+  min-height: var(--tap);
+  max-width: 100%;
+}
+
+.coverage-age summary {
+  padding: 0.5rem 0;
+  font-family: var(--font-display);
+  cursor: pointer;
+}
+
+.coverage-levels {
+  padding: 0 0 0.8rem;
+  list-style: none;
+}
+
+.coverage-title {
+  font-weight: 600;
+}
+
+.coverage-mark {
+  color: var(--accent);
+}
+
+.coverage-song {
+  margin-left: 0.8rem;
+}
+
+.coverage-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.8rem;
+  font-size: 0.9em;
+}
+
+.coverage-links a,
+.credits-list a,
+.playlist-field a {
+  color: var(--accent);
+}
+
+.playlist-field {
+  display: grid;
+  gap: 0.3rem;
+  margin: 0.4rem 0 0.4rem 0.8rem;
+}
+
+.credits-list {
+  list-style: none;
+  padding: 0;
+}

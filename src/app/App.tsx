@@ -1,10 +1,14 @@
 import { useEffect } from 'react'
+import { installAudio, setMusicPlace } from './audio'
 import { FrameMeter } from '../dev/FrameMeter'
 import { gameClock } from '../engine/clock'
 import { useSettings } from '../engine/settings'
 import { MenuScreen } from '../screens/MenuScreen'
 import { SceneScreen } from '../screens/SceneScreen'
+import { CreditsScreen } from '../screens/CreditsScreen'
+import { MusicLibraryScreen } from '../screens/MusicLibraryScreen'
 import { SettingsScreen } from '../screens/SettingsScreen'
+import { NowPlaying } from '../ui/MusicCards'
 import { StoryScreen } from '../screens/StoryScreen'
 import { TitleScreen } from '../screens/TitleScreen'
 import { launch } from './params'
@@ -32,6 +36,8 @@ const SCREENS = {
   settings: SettingsScreen,
   scene: SceneScreen,
   story: StoryScreen,
+  music: MusicLibraryScreen,
+  credits: CreditsScreen,
 } as const
 
 /**
@@ -52,17 +58,26 @@ export function App() {
     root.dataset.readableFont = String(readableFont)
   }, [style, textSize, highContrast, readableFont])
 
-  // The master clock runs for as long as the game is open.
+  // The master clock runs for as long as the game is open, and so does the sound.
   useEffect(() => {
     gameClock.start()
+    installAudio()
     return () => gameClock.stop()
   }, [])
+
+  // Away from a story, the calm music of the menus plays (a story sets its own).
+  const returnTo = useApp((s) => s.returnTo)
+  const inStory = screen === 'story' || (returnTo === 'story' && (screen === 'settings' || screen === 'music'))
+  useEffect(() => {
+    if (!inStory) setMusicPlace({ kind: 'hub' })
+  }, [inStory])
 
   const Current = SCREENS[screen]
   return (
     <>
       <Current />
       <FontWarmup />
+      <NowPlaying />
       {(import.meta.env.DEV || launch.meter) && <FrameMeter initiallyVisible={launch.meter} />}
     </>
   )

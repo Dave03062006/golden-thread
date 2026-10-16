@@ -1,7 +1,7 @@
 import { useApp } from '../app/store'
 import { useSettings, type DeviceSettings } from '../engine/settings'
 import { STYLE_IDS, STYLE_NAMES, type StyleId } from '../styles/ids'
-import { Button, Choice, Panel, Toggle } from '../ui/components'
+import { Button, Choice, Panel, Slider, Toggle } from '../ui/components'
 import './screens.css'
 
 /** Settings: the art style (kept in the save) and comfort options (kept on this device). */
@@ -12,6 +12,7 @@ export function SettingsScreen() {
   const commit = useApp((s) => s.commit)
   const go = useApp((s) => s.go)
   const returnTo = useApp((s) => s.returnTo)
+  const openScreen = useApp((s) => s.openScreen)
   const style = save?.style ?? settings.lastStyle
 
   const setStyle = (next: StyleId) => {
@@ -78,6 +79,24 @@ export function SettingsScreen() {
             checked={settings.readAloud}
             onChange={(readAloud) => settings.update({ readAloud })}
           />
+        </section>
+
+        <section className="settings-group" aria-labelledby="settings-sound">
+          <h2 id="settings-sound">Sound and music</h2>
+          <Choice<DeviceSettings['musicMode']>
+            legend="Music"
+            value={settings.musicMode}
+            options={[
+              { value: 'sacred', label: 'Sacred music (free)' },
+              { value: 'worship', label: 'Worship songs (your copies)' },
+              { value: 'off', label: 'Off' },
+            ]}
+            onChange={(musicMode) => settings.update({ musicMode })}
+          />
+          <Button onClick={() => openScreen('music')}>Music Library</Button>
+          <Slider label="Music volume" value={settings.musicVolume} onChange={(musicVolume) => settings.update({ musicVolume })} />
+          <Slider label="Sound effects" value={settings.soundVolume} onChange={(soundVolume) => settings.update({ soundVolume })} />
+          <Slider label="Read-aloud voice" value={settings.voiceVolume} onChange={(voiceVolume) => settings.update({ voiceVolume })} />
         </section>
 
         <section className="settings-group" aria-labelledby="settings-motion">

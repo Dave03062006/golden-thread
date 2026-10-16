@@ -8,7 +8,13 @@
 import AxeBuilder from '@axe-core/playwright'
 import { STYLES, launchEdge, screenUrl, startPreview, waitForFonts } from './lib/browser.mjs'
 
-const SCREENS = ['title', 'menu', 'settings', 'scene']
+const SCREENS = ['title', 'menu', 'settings', 'scene', 'music', 'credits']
+
+/** The Music Library in its worship modes, set up before the page loads. */
+const MUSIC_STATES = [
+  { name: 'music · your own songs', settings: { musicMode: 'worship', worshipWay: 'files' } },
+  { name: 'music · listening along', settings: { musicMode: 'worship', worshipWay: 'listen-along', musicApp: 'spotify' } },
+]
 
 /**
  * The story is checked in several states: its title card, a line of narration, and each
@@ -49,6 +55,20 @@ try {
       await waitForFonts(page)
       await page.waitForTimeout(600)
       await check(page, `${screen} · ${style}`)
+      await page.close()
+    }
+
+    for (const state of MUSIC_STATES) {
+      const page = await context.newPage()
+      await page.addInitScript((settings) => {
+        localStorage.setItem('golden-thread-settings', JSON.stringify({ state: settings, version: 1 }))
+      }, state.settings)
+      await page.goto(screenUrl(server.url, { screen: 'music', style }))
+      await waitForFonts(page)
+      // Open every Age, so the whole checklist is checked.
+      for (const details of await page.locator('details').all()) await details.evaluate((d) => (d.open = true))
+      await page.waitForTimeout(400)
+      await check(page, `${state.name} · ${style}`)
       await page.close()
     }
 

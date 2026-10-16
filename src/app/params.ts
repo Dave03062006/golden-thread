@@ -5,7 +5,7 @@ import { isStyleId, type StyleId } from '../styles/ids'
  * accessibility scripts to open any screen directly. They are harmless for players.
  *
  *   ?test          use a throwaway in-memory save (nothing is stored on the device)
- *   ?screen=menu   start on a screen: title, menu, settings, scene (the demo) or story
+ *   ?screen=menu   start on a screen: title, menu, settings, scene (the demo), story, music or credits
  *   ?scene=l01-e1-s3  with ?screen=story, start at this scene
  *   ?style=pixel   art style for the throwaway save
  *   ?perf          record frame timings for the performance script
@@ -13,7 +13,7 @@ import { isStyleId, type StyleId } from '../styles/ids'
  */
 export interface LaunchParams {
   test: boolean
-  screen: 'title' | 'menu' | 'settings' | 'scene' | 'story' | null
+  screen: 'title' | 'menu' | 'settings' | 'scene' | 'story' | 'music' | 'credits' | null
   /** A scene to start the story at. */
   scene: string | null
   style: StyleId | null
@@ -27,7 +27,7 @@ export function readParams(search: string): LaunchParams {
   const style = params.get('style')
   return {
     test: params.has('test'),
-    screen: screen === 'title' || screen === 'menu' || screen === 'settings' || screen === 'scene' || screen === 'story' ? screen : null,
+    screen: (['title', 'menu', 'settings', 'scene', 'story', 'music', 'credits'] as const).find((s) => s === screen) ?? null,
     scene: params.get('scene'),
     style: isStyleId(style) ? style : null,
     perf: params.has('perf'),

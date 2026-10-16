@@ -19,7 +19,7 @@ const value = (name) => args.find((a) => a.startsWith(`--${name}=`))?.split('=')
 const only = value('only')
 const onlyScreen = value('screen')
 
-const SCREENS = ['title', 'menu', 'settings', 'scene']
+const SCREENS = ['title', 'menu', 'settings', 'scene', 'music', 'credits']
 
 /** Every scene of Episode 1 (src/content/levels/01-creation-and-fall/episode-1.ts). */
 const STORY_SCENES = Array.from({ length: 8 }, (_, i) => `l01-e1-s${i + 1}`)

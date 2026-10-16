@@ -20,7 +20,17 @@ export interface DeviceSettings {
   soundVolume: number
   voiceVolume: number
   lastStyle: StyleId
+  /** Sacred music (free, built in), the player's worship songs, or no music (spec §11.2). */
+  musicMode: 'sacred' | 'worship' | 'off'
+  /** For worship songs: play the player's own files, or listen along in their music app (spec §11.4). */
+  worshipWay: 'files' | 'listen-along' | null
+  /** The music app for listening along. */
+  musicApp: MusicApp | null
+  /** Worship songs in menus, minigames, the quiz and reflection; free instrumental music under the story. */
+  keepStoryInstrumental: boolean
 }
+
+export type MusicApp = 'spotify' | 'apple-music' | 'youtube-music' | 'youtube'
 
 export const DEFAULT_SETTINGS: DeviceSettings = {
   textSize: 'normal',
@@ -34,6 +44,10 @@ export const DEFAULT_SETTINGS: DeviceSettings = {
   soundVolume: 0.8,
   voiceVolume: 1,
   lastStyle: 'paper-glass',
+  musicMode: 'sacred',
+  worshipWay: null,
+  musicApp: null,
+  keepStoryInstrumental: true,
 }
 
 interface SettingsStore extends DeviceSettings {
