@@ -24,6 +24,7 @@ const EPISODES = [
   { number: 3, lines: 19, plays: 1 }, // episode-3.ts
   { number: 4, lines: 16, plays: 1 }, // episode-4.ts
   { number: 5, lines: 24, plays: 1 }, // episode-5.ts
+  { number: 6, lines: 21, plays: 1 }, // episode-6.ts
 ]
 
 /** `--from=N` starts at episode N instead of the beginning. */
@@ -196,4 +197,5 @@ if (failures) {
   console.error(`${failures} playthrough check(s) failed.`)
   process.exit(1)
 }
-console.log(`Episodes ${from}–${EPISODES.length} play from start to finish.`)
+const last = EPISODES.length
+console.log(`${from === last ? `Episode ${last} plays` : `Episodes ${from}–${last} play`} from start to finish.`)

@@ -131,6 +131,21 @@ export const TRACKS: Track[] = [
     download: 'https://commons.wikimedia.org/wiki/Special:FilePath/J.S._Bach_-_Ich_ruf%27_zu_dir,_Herr,_BWV_639_(for_piano_-_Busoni).ogg',
     credit: 'Bach, Ich ruf zu dir, Herr Jesu Christ, BWV 639, arranged by Busoni. Chiara Bertoglio, piano (Musopen). CC BY 3.0, via Wikimedia Commons.',
   },
+  // Episode 6: the chorale the script names, trust in God handed down the generations.
+  {
+    id: 'bach-wer-nur',
+    title: 'Wer nur den lieben Gott lässt walten',
+    work: 'Chorale by Georg Neumark, in Bach’s four-part setting',
+    composer: 'Georg Neumark, harmonized by Johann Sebastian Bach',
+    performer: 'Gloria-Kirchenchor',
+    // First released before 1936; the exact year isn't known.
+    year: 1935,
+    license: 'public-domain',
+    licenseNote: 'A recording first released before 1936, in the public domain, published by the Swiss Public Domain Project on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:Gloria-go-13319a-bi-666.ogg',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gloria-go-13319a-bi-666.ogg',
+    credit: 'Neumark, Wer nur den lieben Gott lässt walten, in Bach’s setting. Gloria-Kirchenchor (released before 1936). Public domain, via the Public Domain Project and Wikimedia Commons.',
+  },
 ]
 
 const BY_ID = new Map(TRACKS.map((track) => [track.id, track]))

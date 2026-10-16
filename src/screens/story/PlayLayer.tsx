@@ -202,19 +202,40 @@ function ChoiceCard({ choice, choose }: { choice: Choice; choose: (option: strin
   }, [choice.id])
 
   return (
-    <fieldset className="play-choice" onPointerDown={(event) => event.stopPropagation()}>
+    <fieldset className="play-choice" data-compact={choice.compact || undefined} onPointerDown={(event) => event.stopPropagation()}>
       <legend className="play-choice-question">{choice.question}</legend>
+      {choice.trail && choice.trail.length > 0 && (
+        <ol className="play-choice-trail" aria-label="So far">
+          {choice.trail.map((item) => (
+            <li key={item.title}>
+              {item.title}
+              {item.note && (
+                <small>
+                  <Scripture text={item.note} />
+                </small>
+              )}
+            </li>
+          ))}
+        </ol>
+      )}
       {!answered && (
         <div className="play-choice-options">
           {choice.options.map((option, i) => (
-            <button key={option.id} ref={i === 0 ? first : undefined} type="button" className="play-choice-option" onClick={() => choose(option.id)}>
+            <button
+              key={option.id}
+              ref={i === 0 ? first : undefined}
+              type="button"
+              className="play-choice-option"
+              data-glow={choice.glow === option.id || undefined}
+              onClick={() => choose(option.id)}
+            >
               {option.text}
             </button>
           ))}
         </div>
       )}
       <output className="play-choice-feedback" data-right={answered || undefined} aria-live="polite">
-        {choice.feedback?.text}
+        {choice.feedback && <Scripture text={choice.feedback.text} />}
       </output>
     </fieldset>
   )

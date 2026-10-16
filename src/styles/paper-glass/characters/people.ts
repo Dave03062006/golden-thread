@@ -22,7 +22,9 @@ function breathing(part: string, _pose: string, time: number): PartMotion {
 /** The poses after the Fall, when they have covered themselves with fig leaves (Genesis 3:7). */
 const COVERED = new Set(['ashamed', 'hide', 'point', 'toil'])
 /** The poses once God has clothed them in garments of skins (Genesis 3:21). */
-const CLOTHED = new Set(['clothed'])
+const CLOTHED = new Set(['clothed', 'hold', 'lift', 'pray'])
+/** The poses with a newborn in their arms. */
+const HOLDING = new Set(['hold', 'lift'])
 
 /**
  * How the man and the woman move. Both face left, so turning the arm forward (toward the
@@ -33,8 +35,18 @@ const CLOTHED = new Set(['clothed'])
  * - point: covered, the arm straight out, blaming.
  * - toil: covered, bent over the hard ground, the arm reaching down to it.
  * - clothed: in the garments of skins; changing into it, the fig leaves fall away.
+ * - hold: clothed, a newborn held close in the arm.
+ * - lift: clothed, a newborn lifted up high toward the sky.
+ * - pray: clothed, the arm raised, calling on the name of the LORD (Genesis 4:26).
  */
 function moving(part: string, pose: string, time: number): PartMotion {
+  if (part === 'baby') {
+    if (!HOLDING.has(pose)) return { opacity: 0 }
+    return pose === 'lift' ? { x: -6, y: -40 + Math.sin(time * TAU * 0.3) } : { y: 0.45 * Math.sin(time * TAU * 0.24) }
+  }
+  if (part === 'arm' && pose === 'hold') return { x: 4, y: 2, rotate: -30 }
+  if (part === 'arm' && pose === 'lift') return { rotate: 165 + Math.sin(time * TAU * 0.3) }
+  if (part === 'arm' && pose === 'pray') return { rotate: 150 + 3 * Math.sin(time * TAU * 0.2) }
   if (part === 'leaves') {
     if (!COVERED.has(pose)) return { opacity: 0 }
     if (pose === 'toil') return { opacity: 1, rotate: -9, y: 3 }
@@ -69,6 +81,15 @@ function skins(x0: number, x1: number, top: number, hem: number): string {
     <path d="M${x0 - 1} ${top + 16}L${x0 - 1.5} ${hem}" stroke="${RIM}" stroke-width="1.2" opacity=".8"/>`
 }
 
+/** A newborn wrapped in swaddling, held at the chest at (x, y). */
+function baby(x: number, y: number): string {
+  return `
+    <ellipse cx="${x}" cy="${y}" rx="7.5" ry="4.6" fill="#efe4cc"/>
+    <path d="M${x - 5} ${y - 1}L${x + 6} ${y + 1}M${x - 4} ${y + 2}L${x + 5} ${y + 3}" stroke="#c8b898" stroke-width=".8"/>
+    <circle cx="${x - 7}" cy="${y - 1}" r="3.4" fill="#5a4252"/>
+    <path d="M${x - 10} ${y - 2}C${x - 10} ${y - 4} ${x - 8} ${y - 5} ${x - 6} ${y - 4.6}" stroke="${RIM}" stroke-width=".9" fill="none"/>`
+}
+
 /** A girdle of fig leaves sewn together, across the hips from x0 to x1 at height y. */
 function figLeaves(x0: number, x1: number, y: number): string {
   const count = 5
@@ -98,7 +119,7 @@ function manMotion(part: string, pose: string, time: number): PartMotion {
 const man: PaperPropArt = {
   box: { x: 0, y: 0, w: 40, h: 120 },
   facing: -1,
-  poses: ['idle', 'sleep', 'reach', 'ashamed', 'hide', 'point', 'toil', 'clothed'],
+  poses: ['idle', 'sleep', 'reach', 'ashamed', 'hide', 'point', 'toil', 'clothed', 'lift', 'pray'],
   anchor: 'base',
   parts: [
     {
@@ -130,6 +151,7 @@ const man: PaperPropArt = {
         <path d="M9 26.4C11 25 14.4 26 14.4 29L13.2 58.4C12.6 61.4 9.6 61.4 9.6 58.4Z" fill="${SKIN}"/>
         <path d="M9.8 30L9.9 57.6" stroke="${RIM}" stroke-width="1.4" stroke-linecap="round" opacity=".92"/>`,
     },
+    { id: 'baby', svg: baby(16, 42) },
   ],
   animate: manMotion,
 }
@@ -137,7 +159,7 @@ const man: PaperPropArt = {
 const woman: PaperPropArt = {
   box: { x: 0, y: 0, w: 40, h: 114 },
   facing: -1,
-  poses: ['idle', 'reach', 'ashamed', 'hide', 'point', 'toil', 'clothed'],
+  poses: ['idle', 'reach', 'ashamed', 'hide', 'point', 'toil', 'clothed', 'hold', 'pray'],
   anchor: 'base',
   parts: [
     {
@@ -171,6 +193,7 @@ const woman: PaperPropArt = {
         <path d="M11.4 26.8C13.2 25.6 16 26.4 16 29.2L14.8 54.4C14.2 57.2 11.6 57.2 11.6 54.4Z" fill="${SKIN}"/>
         <path d="M11.9 30.2L11.9 53.8" stroke="${RIM}" stroke-width="1.3" stroke-linecap="round" opacity=".92"/>`,
     },
+    { id: 'baby', svg: baby(17, 40) },
   ],
   animate: moving,
 }

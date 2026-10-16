@@ -13,8 +13,10 @@ import type { LevelMusic } from '../../types'
  * Jesus Christ" in place of the chant Parce Domine: the only recordings of that chant found
  * are CC BY-SA, which the spec doesn't allow.
  *
- * Still to come (milestones 4 and 5): the chant the script names for reflection
- * (Salve Regina) and Bach's chorale for Episode
+ * Episode 6 has the piece the script names: Bach's setting of the chorale "Wer nur den
+ * lieben Gott lässt walten", in a public domain recording from the 1930s.
+ *
+ * Still to come (milestone 5): the chant the script names for reflection (Salve Regina) and Bach's chorale for Episode
  * 6, or fitting substitutes where no allowed recording exists.
  */
 export const level1Music: LevelMusic = {
@@ -36,6 +38,7 @@ export const level1Music: LevelMusic = {
     'allegri-miserere',
     'parsons-ave-maria',
     'bach-ich-ruf',
+    'bach-wer-nur',
   ],
   minigame: ['creation-awake-the-harp', 'creation-heavens-telling'],
   reflection: ['creation-by-thee'],

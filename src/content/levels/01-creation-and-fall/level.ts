@@ -1,29 +1,16 @@
-import type { SceneDescription } from '../../../scene/types'
 import type { Episode, Level, WhereWhen } from '../../types'
 import { episode1 } from './episode-1'
 import { episode2 } from './episode-2'
 import { episode3 } from './episode-3'
 import { episode4 } from './episode-4'
 import { episode5 } from './episode-5'
+import { episode6 } from './episode-6'
 import { level1Music } from './music'
 
 /**
  * Level 1 · Creation and the Fall (Genesis 1–5), from the approved Level 1 script
- * (docs/scripts/level-01-creation-and-fall.md). Episodes 1 to 5 are built; the others
- * follow in milestone 4 and are listed here with everything except their scenes.
+ * (docs/scripts/level-01-creation-and-fall.md). All six episodes are built.
  */
-
-/** An episode that's written but not built yet: no set and no scenes. */
-function planned(fields: Omit<Episode, 'set' | 'scenes'>): Episode {
-  const set: SceneDescription = {
-    id: `${fields.id}-set`,
-    title: fields.title,
-    layers: [],
-    actors: [],
-    camera: { loop: 'hold', x: [{ at: 0, value: 0 }], y: [{ at: 0, value: 0 }], zoom: [{ at: 0, value: 1 }] },
-  }
-  return { ...fields, set, scenes: [] }
-}
 
 /** An episode that's built: its written details, with its set and scenes. */
 function built(story: Pick<Episode, 'set' | 'scenes'>, fields: Omit<Episode, 'set' | 'scenes'>): Episode {
@@ -116,13 +103,13 @@ export const level1: Level = {
       ),
       read: ['GEN 4:1-16'],
     }),
-    planned({
+    built(episode6, {
       id: 'l01-e6',
       number: 6,
       title: 'From Adam to Noah',
       passage: 'GEN 4:17-5:32',
       minutes: 6,
-      thread: { id: 'from-adam-to-jesus', spot: 'tree-root', fromScene: 'l01-e6-s1' },
+      thread: { id: 'from-adam-to-jesus', spot: 'tree-root', fromScene: 'l01-e6-s3' },
       whereWhen: where('Before recorded history', [
         ['The first civilization', 'Genesis credits Cain’s line with the first cities, herding, music and metalwork.'],
         ['Ten generations', 'Ancient family lists often used ten generations to cover a whole age. The list from Shem to Abraham in Genesis 11 has ten as well.'],

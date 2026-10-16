@@ -116,6 +116,9 @@
     },
     "home-fold": {
       "hash": "099283b5"
+    },
+    "enoch-path": {
+      "hash": "63e45cb7"
     }
   },
   "paperProps": {
@@ -153,10 +156,10 @@
       "hash": "0c3e5e0d"
     },
     "man": {
-      "hash": "198383d2"
+      "hash": "024aaf1c"
     },
     "woman": {
-      "hash": "b6c4134c"
+      "hash": "79f58b48"
     },
     "whale": {
       "hash": "c25a63bb"
@@ -238,6 +241,27 @@
     },
     "abel": {
       "hash": "c7e4b4e7"
+    },
+    "city": {
+      "hash": "5a85c50e"
+    },
+    "lyre": {
+      "hash": "1c9c6f47"
+    },
+    "forge": {
+      "hash": "c6451b02"
+    },
+    "family-tree": {
+      "hash": "65dadad4"
+    },
+    "tree-root": {
+      "hash": "9ef21a77"
+    },
+    "tree-branch": {
+      "hash": "5ab97ad3"
+    },
+    "name-leaf": {
+      "hash": "25c7ecec"
     }
   },
   "pixelLayers": {
@@ -357,6 +381,9 @@
     },
     "home-fold": {
       "hash": "a066fbd8"
+    },
+    "enoch-path": {
+      "hash": "2a3d82b4"
     }
   }
 }

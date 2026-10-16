@@ -11,12 +11,14 @@ import { sprite, type Grid } from '../shapes'
  * middle, so an arm can reach out in front without the body shifting between poses.
  */
 
-const COLORS = { S: C.wood1, H: C.wood0, R: C.gold, L: C.green, l: C.teal, K: C.wood3, k: C.wood2 }
+const COLORS = { S: C.wood1, H: C.wood0, R: C.gold, L: C.green, l: C.teal, K: C.wood3, k: C.wood2, B: C.white, b: C.pale }
 
 /** What changes between their poses. */
 interface Look {
-  /** The front arm: hanging, reaching up and out, pointing straight out, drawn in, or down to the ground. */
-  arm: 'down' | 'reach' | 'point' | 'in' | 'ground'
+  /** The front arm: hanging, reaching up and out, pointing straight out, drawn in, down to the ground, or raised high. */
+  arm: 'down' | 'reach' | 'point' | 'in' | 'ground' | 'up'
+  /** A newborn: held at the chest, or lifted up toward the sky. */
+  baby?: 'chest' | 'up'
   /** Covered with fig leaves (Genesis 3:7). */
   leaves: boolean
   /** Clothed in garments of skins (Genesis 3:21). */
@@ -37,6 +39,9 @@ const LOOKS: Record<string, Look> = {
   point: { arm: 'point', leaves: true, skins: false, crouch: 0, bowed: false, bend: 0 },
   toil: { arm: 'ground', leaves: true, skins: false, crouch: 0, bowed: true, bend: 2 },
   clothed: { arm: 'down', leaves: false, skins: true, crouch: 0, bowed: false, bend: 0 },
+  hold: { arm: 'in', leaves: false, skins: true, crouch: 0, bowed: true, bend: 0, baby: 'chest' },
+  lift: { arm: 'up', leaves: false, skins: true, crouch: 0, bowed: false, bend: 0, baby: 'up' },
+  pray: { arm: 'up', leaves: false, skins: true, crouch: 0, bowed: false, bend: 0 },
 }
 
 /** Where the body starts across the grid. */
@@ -49,6 +54,9 @@ function arm(g: Grid, look: Look, x: number, y: number, length: number) {
   else if (look.arm === 'reach') g.line(x, y, x - 4, y - 5, 'S').set(x - 4, y - 6, 'S')
   else if (look.arm === 'point') g.line(x, y + 1, x - 5, y + 1, 'S')
   else if (look.arm === 'ground') g.line(x, y, x - 3, y + length + 3, 'S')
+  else if (look.arm === 'up') g.line(x, y, x - 3, y - 7, 'S')
+  if (look.baby === 'chest') g.rect(x + 1, y + 3, 4, 2, 'B').set(x, y + 3, 'S').set(x + 4, y + 5, 'b')
+  else if (look.baby === 'up') g.rect(x - 6, y - 10, 4, 2, 'B').set(x - 6, y - 10, 'S').set(x - 3, y - 8, 'b')
 }
 
 /** A garment of skins from the shoulders at `top` down to the knees, ragged at the hem. */

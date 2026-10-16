@@ -49,6 +49,12 @@ export interface Choice {
   options: { id: string; text: string }[]
   /** What the last answer brought: a gentle "Not quite", or the answer that fits. */
   feedback: { right: boolean; text: string } | null
+  /** What has been answered so far, in order, each with an optional note (the family tree's names). */
+  trail?: { title: string; note?: string }[]
+  /** Gentle mode: the option that fits glows softly. */
+  glow?: string
+  /** Many short options, shown as a row of chips rather than a list. */
+  compact?: boolean
 }
 
 /** A piece of a quoted passage: words to tap, the words that bend God's word, or punctuation. */

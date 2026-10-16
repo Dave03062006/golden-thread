@@ -31,6 +31,8 @@ const STORY_STATES = [
   { name: 'story · naming question', scene: 'l01-e2-s4', begin: true, lines: 3, choice: true },
   // One line in, "Spot the twist": two passages with phrases to tap.
   { name: 'story · spot the twist', scene: 'l01-e3-s2', begin: true, lines: 1, compare: true },
+  // One line in, the family tree: names to place in order, and the trail so far.
+  { name: 'story · family tree', scene: 'l01-e6-s3', begin: true, lines: 1, choice: true },
 ]
 
 async function check(page, label) {
