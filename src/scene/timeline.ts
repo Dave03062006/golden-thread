@@ -76,6 +76,9 @@ export class Timeline {
   private readonly scene: SceneDescription
   private readonly numbers = new Map<string, Transition[]>()
   private readonly poses = new Map<string, PoseChange[]>()
+  /** Starting values, looked up in the scene once per channel and remembered. */
+  private readonly initials = new Map<string, number>()
+  private readonly initialPoses = new Map<string, string>()
   /** Values an interaction is setting right now, which win over everything else. */
   readonly live = new Map<string, number>()
 
@@ -88,7 +91,7 @@ export class Timeline {
     const live = this.live.get(channel)
     if (live !== undefined) return live
     const list = this.numbers.get(channel)
-    if (!list || list.length === 0) return initialValue(this.scene, channel)
+    if (!list || list.length === 0) return this.initial(channel)
     for (let i = list.length - 1; i >= 0; i--) {
       const tr = list[i]!
       if (tr.start <= t) return lerp(tr.from, tr.to, ease[tr.ease](progress(tr.start, tr.seconds, t)))
@@ -96,14 +99,30 @@ export class Timeline {
     return list[0]!.from
   }
 
+  private initial(channel: string): number {
+    let value = this.initials.get(channel)
+    if (value === undefined) {
+      value = initialValue(this.scene, channel)
+      this.initials.set(channel, value)
+    }
+    return value
+  }
+
   /** An actor's pose at time `t`, with the blend from its previous pose. */
   pose(actorId: string, t: number): PoseValue {
-    const initial = this.scene.actors.find((a) => a.id === actorId)?.pose ?? 'idle'
+    let initial = this.initialPoses.get(actorId)
+    if (initial === undefined) {
+      initial = this.scene.actors.find((a) => a.id === actorId)?.pose ?? 'idle'
+      this.initialPoses.set(actorId, initial)
+    }
     const list = this.poses.get(actorId)
     if (list) {
       for (let i = list.length - 1; i >= 0; i--) {
         const change = list[i]!
-        if (change.start <= t) return { pose: change.to, previous: change.from, blend: progress(change.start, change.seconds, t) }
+        if (change.start > t) continue
+        const blend = progress(change.start, change.seconds, t)
+        // Once the blend is over, there's nothing left to blend from.
+        return { pose: change.to, previous: blend >= 1 ? change.to : change.from, blend }
       }
     }
     return { pose: initial, previous: initial, blend: 1 }

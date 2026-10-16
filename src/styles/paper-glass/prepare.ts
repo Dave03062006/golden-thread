@@ -3,7 +3,7 @@ import type { SceneDescription } from '../../scene/types'
 import manifest from '../art-manifest.json'
 import { PAPER_FRAME_WIDTHS, PAPER_PART_WIDTHS, paperLayerFile, paperPartFile, pickSize } from '../bake-config'
 import { loadArt } from '../load-image'
-import { paperLayers, paperProps } from './art'
+import { paperLayers, paperProps, type PaperPropArt } from './art'
 import { rasterize } from './raster'
 
 type Art = HTMLImageElement | HTMLCanvasElement
@@ -26,6 +26,11 @@ const cache = new Map<string, Promise<PreparedPaperScene>>()
 const useBaked = import.meta.env.PROD
 
 const nextFrame = () => new Promise<void>((resolve) => requestAnimationFrame(() => resolve()))
+
+/** The soft shadow under a puppet part drawn `widthPx` wide. Lights cast none. */
+export function partShadow(art: PaperPropArt, widthPx: number): number {
+  return art.shadow === false ? 0 : Math.max(2, widthPx * 0.025)
+}
 
 /**
  * Gets a scene's paper art ready: baked images when available (decoded off the main
@@ -62,8 +67,9 @@ export function preparePaperScene(scene: SceneDescription, width: number, height
       scene.actors.flatMap((actor) => {
         const art = paperProps[actor.prop]
         if (!art) return []
-        // Parts are drawn a little larger than needed, so they stay sharp when the camera moves in.
-        const needed = Math.round(actor.size * width * dpr * 1.15)
+        // Parts are drawn a little larger than needed, so they stay sharp when the camera moves
+        // in. Soft art (a glow) is drawn smaller and enlarged, which loses nothing.
+        const needed = Math.max(16, Math.round(actor.size * width * dpr * 1.15 * (art.resolution ?? 1)))
         return art.parts.map(async (part) => {
           const key = `${actor.id}/${part.id}`
           if (useBaked && actor.prop in manifest.paperProps) {
@@ -72,7 +78,7 @@ export function preparePaperScene(scene: SceneDescription, width: number, height
           }
           await nextFrame()
           const heightPx = Math.round(needed * (art.box.h / art.box.w))
-          parts.set(key, await rasterize(part.svg, art.box, { widthPx: needed, heightPx, shadowPx: Math.max(2, needed * 0.025) }))
+          parts.set(key, await rasterize(part.svg, art.box, { widthPx: needed, heightPx, shadowPx: partShadow(art, needed) }))
         })
       }),
     )

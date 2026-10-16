@@ -1,6 +1,7 @@
-import { useCallback, useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 'react'
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { gameClock } from '../engine/clock'
 import { ease, progress, timing } from '../engine/motion'
+import { evaluateScene, type SceneFrame } from '../scene/evaluate'
 import type { SceneDescription } from '../scene/types'
 import { STYLE_IDS, otherStyle, type StyleId } from '../styles/ids'
 import { PaperRenderer } from '../styles/paper-glass/PaperRenderer'
@@ -29,6 +30,10 @@ interface StageProps {
   scene: SceneDescription
   style: StyleId
   reducedMotion: boolean
+  /** The scene's clock, in seconds. Without one, the stage keeps its own, starting when it appears. */
+  getTime?: () => number
+  /** Where everything is at a moment: a story passes its director's frames. Without one, the scene simply plays. */
+  frameAt?: (time: number) => SceneFrame
   /** Things drawn on top of the scene, like the pause button. */
   children?: ReactNode
 }
@@ -45,7 +50,7 @@ interface Fade {
  * paused, its art already on the graphics card, so a switch only has to start drawing
  * it and fade it in over the current one, at the very same moment of the scene.
  */
-export function Stage({ scene, style, reducedMotion, children }: StageProps) {
+export function Stage({ scene, style, reducedMotion, getTime: externalTime, frameAt, children }: StageProps) {
   const boxRef = useRef<HTMLDivElement>(null)
   const [frame, setFrame] = useState({ width: 0, height: 0 })
   const [dpr, setDpr] = useState(() => (typeof window === 'undefined' ? 1 : window.devicePixelRatio || 1))
@@ -65,12 +70,20 @@ export function Stage({ scene, style, reducedMotion, children }: StageProps) {
     return () => observer.disconnect()
   }, [])
 
-  // The scene's own clock starts when the stage appears.
+  // The scene's own clock starts when the stage appears, unless the story keeps its own.
   const startRef = useRef(gameClock.time)
   useEffect(() => {
     startRef.current = gameClock.time
   }, [scene])
-  const getTime = useCallback(() => gameClock.time - startRef.current, [])
+  const sources = useRef({ externalTime, frameAt, scene })
+  useEffect(() => {
+    sources.current = { externalTime, frameAt, scene }
+  })
+  const getFrame = useCallback(() => {
+    const { externalTime, frameAt, scene } = sources.current
+    const time = externalTime ? externalTime() : gameClock.time - startRef.current
+    return frameAt ? frameAt(time) : evaluateScene(scene, time)
+  }, [])
 
   // Which styles have their art ready, whether the first-time work is done, and the
   // fade in progress. The scene starts with a fade in from the dark backdrop.
@@ -93,6 +106,9 @@ export function Stage({ scene, style, reducedMotion, children }: StageProps) {
   const handleReady = useCallback((which: StyleId) => {
     setReady((current) => (current.includes(which) ? current : [...current, which]))
   }, [])
+  // One unchanging callback per style, so the renderers (which skip re-rendering when their
+  // props are the same) aren't re-rendered by a new function every time.
+  const readyCallbacks = useMemo(() => Object.fromEntries(STYLE_IDS.map((id) => [id, () => handleReady(id)])) as Record<StyleId, () => void>, [handleReady])
 
   // Draw every ready style faintly for a few frames, with the text copy, then hide them all again.
   const shownReady = ready.includes(style)
@@ -199,12 +215,12 @@ export function Stage({ scene, style, reducedMotion, children }: StageProps) {
               >
                 <Renderer
                   scene={scene}
-                  getTime={getTime}
+                  getFrame={getFrame}
                   width={frame.width}
                   height={frame.height}
                   dpr={dpr}
                   active={active}
-                  onReady={() => handleReady(which)}
+                  onReady={readyCallbacks[which]}
                 />
               </div>
             )

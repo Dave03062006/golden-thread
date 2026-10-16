@@ -226,6 +226,15 @@
   color: var(--text);
 }
 
+.ui-dialog-wide {
+  width: min(52rem, calc(100vw - 2rem));
+}
+
+.ui-dialog .ui-panel {
+  max-height: calc(100dvh - 2rem);
+  overflow-y: auto;
+}
+
 .ui-dialog::backdrop {
   background: rgb(6 5 20 / 0.62);
   backdrop-filter: blur(3px);

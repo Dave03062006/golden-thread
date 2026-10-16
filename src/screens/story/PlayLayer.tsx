@@ -1,0 +1,149 @@
+import { useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from 'react'
+import { gameClock } from '../../engine/clock'
+import type { GameKey, Hint } from '../../minigames/framework'
+import type { GameRunner } from '../../minigames/runner'
+import { Button } from '../../ui/components'
+
+/** Keys the interactions understand. */
+const KEYS: Record<string, GameKey> = {
+  ArrowUp: 'up',
+  ArrowDown: 'down',
+  ArrowLeft: 'left',
+  ArrowRight: 'right',
+  w: 'up',
+  s: 'down',
+  a: 'left',
+  d: 'right',
+  ' ': 'primary',
+  Enter: 'primary',
+}
+
+/** How long before a hint appears, unless gentle mode shows it straight away. */
+const HINT_DELAY_MS = 1400
+
+/**
+ * The layer over the scene during an interactive moment. It turns touch, mouse and keys
+ * into the game's input, shows the instruction (for both touch and keys), and draws the
+ * small things that belong to the gesture rather than to the world: the sparkles left by
+ * a sweeping hand, and the quiet "Rest" of the seventh day.
+ */
+export function PlayLayer({ runner, gentle }: { runner: GameRunner; gentle: boolean }) {
+  const layerRef = useRef<HTMLDivElement>(null)
+  const marksRef = useRef<HTMLDivElement>(null)
+  const pressed = useRef(false)
+  const [hint, setHint] = useState<Hint | null>(runner.view.hint)
+  const [restReady, setRestReady] = useState(false)
+  const [hintDue, setHintDue] = useState(gentle)
+
+  // The instruction waits a moment, so a player who already knows what to do isn't told.
+  useEffect(() => {
+    if (gentle) return
+    const timer = setTimeout(() => setHintDue(true), HINT_DELAY_MS)
+    return () => clearTimeout(timer)
+  }, [gentle])
+
+  // Each frame, follow what the game shows.
+  useEffect(() => {
+    let shownHint = runner.view.hint
+    let shownReady = false
+    const pool: HTMLSpanElement[] = []
+    return gameClock.subscribe(
+      () => {
+        const view = runner.view
+        if (view.hint !== shownHint) {
+          shownHint = view.hint
+          setHint(view.hint)
+        }
+        if (!!view.restReady !== shownReady) {
+          shownReady = !!view.restReady
+          setRestReady(shownReady)
+        }
+        const box = marksRef.current
+        const marks = view.marks ?? []
+        if (!box) return
+        while (pool.length < marks.length) {
+          const span = document.createElement('span')
+          span.className = 'play-mark'
+          box.append(span)
+          pool.push(span)
+        }
+        pool.forEach((span, i) => {
+          const mark = marks[i]
+          span.hidden = !mark
+          if (!mark) return
+          span.style.left = `${mark.x * 100}%`
+          span.style.top = `${mark.y * 100}%`
+          span.style.opacity = String(Math.max(0, 1 - mark.age / 0.8))
+        })
+      },
+      { whilePaused: true },
+    )
+  }, [runner])
+
+  // Keys go to the game while it's on.
+  useEffect(() => {
+    const onKey = (down: boolean) => (event: KeyboardEvent) => {
+      const key = KEYS[event.key] ?? KEYS[event.key.toLowerCase()]
+      if (!key || event.altKey || event.ctrlKey || event.metaKey) return
+      if (event.target instanceof HTMLElement && ['BUTTON', 'INPUT', 'TEXTAREA', 'SELECT', 'A'].includes(event.target.tagName)) return
+      event.preventDefault()
+      if (down && event.repeat) return
+      runner.queue({ kind: 'key', key, down })
+    }
+    const keyDown = onKey(true)
+    const keyUp = onKey(false)
+    window.addEventListener('keydown', keyDown)
+    window.addEventListener('keyup', keyUp)
+    return () => {
+      window.removeEventListener('keydown', keyDown)
+      window.removeEventListener('keyup', keyUp)
+    }
+  }, [runner])
+
+  const pointer = (phase: 'down' | 'move' | 'up') => (event: ReactPointerEvent<HTMLDivElement>) => {
+    const layer = layerRef.current
+    if (!layer || !event.isPrimary) return
+    if (phase === 'move' && !pressed.current) return
+    if (phase === 'down') {
+      pressed.current = true
+      layer.setPointerCapture(event.pointerId)
+    }
+    if (phase === 'up') pressed.current = false
+    const rect = layer.getBoundingClientRect()
+    runner.queue({ kind: 'pointer', phase, x: (event.clientX - rect.left) / rect.width, y: (event.clientY - rect.top) / rect.height })
+  }
+
+  const resting = hint?.gesture === 'rest'
+
+  return (
+    <div
+      className="play-layer"
+      ref={layerRef}
+      onPointerDown={pointer('down')}
+      onPointerMove={pointer('move')}
+      onPointerUp={pointer('up')}
+      onPointerCancel={pointer('up')}
+    >
+      <div className="play-marks" ref={marksRef} aria-hidden="true" />
+      {hint && !resting && (hintDue || gentle) && (
+        <output className="play-hint" data-gentle={gentle || undefined}>
+          <span className="play-gesture" data-gesture={hint.gesture} aria-hidden="true" />
+          <span className="play-hint-text">
+            {hint.pointer}
+            <small>{hint.keys}</small>
+          </span>
+        </output>
+      )}
+      {resting && (
+        <div className="rest">
+          <p className="rest-word">Rest</p>
+          {restReady && (
+            <Button variant="quiet" className="rest-continue" onClick={() => runner.queue({ kind: 'key', key: 'primary', down: true })}>
+              Continue
+            </Button>
+          )}
+        </div>
+      )}
+    </div>
+  )
+}

@@ -30,7 +30,8 @@
   inset: 0;
 }
 
-.paper-part:not(:first-child) {
+/* Parts that move get a layer of their own, so moving them never repaints the rest. */
+.paper-part[data-moves] {
   will-change: transform;
 }
 

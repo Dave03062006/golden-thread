@@ -60,6 +60,46 @@ export interface SceneFrame {
   actors: ActorState[]
 }
 
+/** The names of every channel a scene's layers and actors have, built once per scene. */
+interface ChannelNames {
+  layers: { opacity: string; offsetY: string }[]
+  actors: { x: string; y: string; facing: string; size: string; opacity: string; grow: string; spread: string }[]
+}
+const channelNames = new WeakMap<SceneDescription, ChannelNames>()
+function namesOf(scene: SceneDescription): ChannelNames {
+  let names = channelNames.get(scene)
+  if (!names) {
+    names = {
+      layers: scene.layers.map((l) => ({ opacity: `layer:${l.id}.opacity`, offsetY: `layer:${l.id}.offsetY` })),
+      actors: scene.actors.map((a) => {
+        const key = `actor:${a.id}`
+        return {
+          x: `${key}.x`,
+          y: `${key}.y`,
+          facing: `${key}.facing`,
+          size: `${key}.size`,
+          opacity: `${key}.opacity`,
+          grow: `${key}.grow`,
+          spread: `${key}.spread`,
+        }
+      }),
+    }
+    channelNames.set(scene, names)
+  }
+  return names
+}
+
+/** Each layer's depth by id, built once per scene. */
+const depths = new WeakMap<SceneDescription, Map<string, number>>()
+function depthsOf(scene: SceneDescription): Map<string, number> {
+  let map = depths.get(scene)
+  if (!map) {
+    map = new Map(scene.layers.map((layer) => [layer.id, layer.depth]))
+    depths.set(scene, map)
+  }
+  return map
+}
+
 /** Where each member of a group sits, scattered the same way every time. */
 const groupLayouts = new WeakMap<SceneActor, { x: number; y: number; scale: number; phase: number }[]>()
 function groupLayout(actor: SceneActor) {
@@ -87,7 +127,8 @@ export function evaluateScene(scene: SceneDescription, time: number, timeline?: 
   const camTime = camera.loop === 'pingpong' ? pingPong(time, camLength) : time
   const value = (channel: string, fallback: number) => (timeline ? timeline.value(channel, time) : fallback)
 
-  const depthOf = new Map(scene.layers.map((layer) => [layer.id, layer.depth]))
+  const depthOf = depthsOf(scene)
+  const names = namesOf(scene)
 
   return {
     time,
@@ -96,8 +137,9 @@ export function evaluateScene(scene: SceneDescription, time: number, timeline?: 
       y: value('camera.y', 0) + sampleTrack(camera.y, camTime),
       zoom: value('camera.zoom', 1) * (sampleTrack(camera.zoom, camTime) || 1),
     },
-    layers: scene.layers.map((layer) => {
-      let opacity = value(`layer:${layer.id}.opacity`, layer.opacity ?? 1)
+    layers: scene.layers.map((layer, i) => {
+      const channel = names.layers[i]!
+      let opacity = value(channel.opacity, layer.opacity ?? 1)
       if (layer.pulse) {
         const wave = 0.5 + 0.5 * Math.sin(((time / layer.pulse.seconds) + (layer.pulse.phase ?? 0)) * Math.PI * 2)
         opacity *= layer.pulse.min + (1 - layer.pulse.min) * wave
@@ -107,14 +149,14 @@ export function evaluateScene(scene: SceneDescription, time: number, timeline?: 
         depth: layer.depth,
         swayX: layer.sway ? layer.sway.x * Math.sin((time / layer.sway.seconds) * Math.PI * 2) : 0,
         opacity,
-        offsetY: value(`layer:${layer.id}.offsetY`, layer.offsetY ?? 0),
+        offsetY: value(channel.offsetY, layer.offsetY ?? 0),
       }
     }),
-    actors: scene.actors.map((actor) => {
-      const key = `actor:${actor.id}`
-      let x = value(`${key}.x`, actor.x)
-      let y = value(`${key}.y`, actor.y)
-      let facing: -1 | 1 = value(`${key}.facing`, actor.facing ?? 1) < 0 ? -1 : 1
+    actors: scene.actors.map((actor, i) => {
+      const channel = names.actors[i]!
+      let x = value(channel.x, actor.x)
+      let y = value(channel.y, actor.y)
+      let facing: -1 | 1 = value(channel.facing, actor.facing ?? 1) < 0 ? -1 : 1
       if (actor.path) {
         const t = actor.path.loopSeconds ? time % actor.path.loopSeconds : time
         const px = sampleTrack(actor.path.x, t)
@@ -133,16 +175,16 @@ export function evaluateScene(scene: SceneDescription, time: number, timeline?: 
         x,
         y,
         facing,
-        size: value(`${key}.size`, actor.size),
-        opacity: value(`${key}.opacity`, actor.opacity ?? 1),
-        grow: value(`${key}.grow`, actor.grow ?? 1),
+        size: value(channel.size, actor.size),
+        opacity: value(channel.opacity, actor.opacity ?? 1),
+        grow: value(channel.grow, actor.grow ?? 1),
         pose: pose.pose,
         previousPose: pose.previous,
         poseBlend: pose.blend,
         time,
       }
       if (actor.group) {
-        const spread = value(`${key}.spread`, 1)
+        const spread = value(channel.spread, 1)
         const { w, h, bob = 0 } = actor.group
         state.instances = groupLayout(actor).map((m) => ({
           dx: m.x * w * spread,

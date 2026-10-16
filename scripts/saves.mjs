@@ -32,16 +32,30 @@ try {
   await page.getByRole('navigation', { name: 'Main menu' }).waitFor()
   check(true, 'a new game starts and opens the menu')
 
-  // Into the scene, where a checkpoint is written, then a style switch.
+  // Into the story: a checkpoint is written at the first scene. Then a style switch, from the pause menu.
   await page.getByRole('navigation', { name: 'Main menu' }).getByRole('button').first().click()
   await waitForScene(page)
+  await page.getByRole('button', { name: 'Begin', exact: true }).click()
+  await page.getByRole('region', { name: 'The story' }).waitFor()
   const before = await page.evaluate(() => document.documentElement.dataset.artStyle)
-  await page.getByRole('button', { name: /^Switch to/ }).click()
+  await page.getByRole('button', { name: 'Pause' }).click()
+  const paused = page.getByRole('dialog', { name: 'Paused' })
+  await paused.getByRole('radio', { name: before === 'pixel' ? 'Paper & Glass' : 'Pixel' }).check()
+  await paused.getByRole('button', { name: 'Resume' }).click()
   await waitForScene(page)
   await page.waitForTimeout(500)
   const after = await page.evaluate(() => document.documentElement.dataset.artStyle)
-  check(before !== after, `the style switches mid-scene (${before} → ${after})`)
+  check(before !== after, `the style switches mid-story (${before} → ${after})`)
+  check(await page.getByRole('region', { name: 'The story' }).isVisible(), 'the story keeps its place through the switch')
   const afterName = after === 'pixel' ? 'Pixel' : 'Paper & Glass'
+
+  // Read on into the next scene, the second checkpoint.
+  for (let line = 0; line < 5; line++) {
+    await page.waitForTimeout(350)
+    await page.keyboard.press('Space')
+  }
+  await page.getByText('Then God spoke.').waitFor()
+  check(true, 'reading on reaches the next scene')
 
   // Everything is still there after a reload.
   await page.reload()
@@ -49,7 +63,17 @@ try {
   await card.getByRole('heading', { name: NAME }).waitFor()
   check(true, 'the save is still there after a reload')
   check((await card.textContent()).includes(afterName), `the save remembers the new style (${afterName})`)
-  check((await card.textContent()).includes('Demo · '), 'the save remembers where the player was (its checkpoint)')
+  check((await card.textContent()).includes('Day one: light'), 'the save remembers the scene the player reached (its checkpoint)')
+
+  // Continue returns to that very scene.
+  await card.getByRole('button', { name: 'Play' }).click()
+  await page.getByRole('navigation', { name: 'Main menu' }).getByRole('button', { name: 'Continue' }).click()
+  await waitForScene(page)
+  await page.getByText('Then God spoke.').waitFor({ timeout: 5000 })
+  check(true, 'Continue returns to the exact scene')
+  await page.getByRole('button', { name: 'Pause' }).click()
+  await page.getByRole('dialog', { name: 'Paused' }).getByRole('button', { name: 'Save & quit' }).click()
+  await card.getByRole('heading', { name: NAME }).waitFor()
 
   // Export, delete, and import it back.
   const downloading = page.waitForEvent('download')

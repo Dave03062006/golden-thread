@@ -6,6 +6,11 @@
 //   npm run build
 //   npm run perf
 //   npm run perf -- --slowdown=6      slow the processor down more (default 4)
+//   npm run perf -- --only=story      only the story scenes (or: demo)
+//
+// The story runs start at each scene of Episode 1 and move on every two seconds, so
+// lines change, transitions run and the interactions are played (Space is their
+// one-button way to play).
 //
 // A JSON report is saved in the `perf/` folder, which git ignores.
 
@@ -20,11 +25,22 @@ const WORK_BUDGET_MS = 8
 /** At most this share of frames may arrive late. */
 const MAX_LATE_SHARE = 0.01
 /**
+ * A frame is late if a 60 Hz screen would have had to skip a refresh waiting for it.
+ * (Headless Edge isn't tied to a real screen and runs much faster than 60 Hz, so
+ * comparing against its own typical frame would count harmless 8 ms frames as late.)
+ */
+const LATE_MS = (1000 / 60) * 1.25
+/**
  * A style switch may hold up one frame a little, the first time only (the browser sets up
  * the new fonts for real use). At 4× slower, this is about 25 ms on an ordinary laptop.
  */
 const SWITCH_MAX_FRAME_MS = 100
 const SECONDS = 10
+const STORY_SECONDS = 8
+
+/** Every scene of Episode 1 (src/content/levels/01-creation-and-fall/episode-1.ts). */
+const STORY_SCENES = Array.from({ length: 8 }, (_, i) => `l01-e1-s${i + 1}`)
+const only = args.find((a) => a.startsWith('--only='))?.split('=')[1]
 
 const percentile = (values, p) => {
   const sorted = [...values].sort((a, b) => a - b)
@@ -34,8 +50,7 @@ const percentile = (values, p) => {
 function summarize(samples) {
   const intervals = samples.map((s) => s.intervalMs).filter((ms) => ms > 0)
   const work = samples.map((s) => s.workMs)
-  const typical = percentile(intervals, 0.5)
-  const late = intervals.filter((ms) => ms > typical * 1.5).length
+  const late = intervals.filter((ms) => ms > LATE_MS).length
   return {
     frames: samples.length,
     fps: Math.round(1000 / (intervals.reduce((a, b) => a + b, 0) / Math.max(1, intervals.length))),
@@ -51,7 +66,8 @@ function summarize(samples) {
 const scenarios = [
   ...STYLES.map((style) => ({ name: `demo scene · ${style}`, style, switchAt: null })),
   ...STYLES.map((style) => ({ name: `demo scene · switching from ${style}`, style, switchAt: SECONDS / 2 })),
-]
+  ...STORY_SCENES.flatMap((scene) => STYLES.map((style) => ({ name: `${scene} · ${style}`, style, scene, switchAt: null }))),
+].filter((s) => !only || (only === 'story' ? s.scene : !s.scene))
 
 await mkdir('perf', { recursive: true })
 const server = await startPreview()
@@ -64,13 +80,24 @@ try {
     const context = await browser.newContext({ viewport: { width: 1280, height: 720 } })
     const page = await context.newPage()
     const cdp = await context.newCDPSession(page)
-    await page.goto(screenUrl(server.url, { screen: 'scene', style: scenario.style, extra: '&perf' }))
+    const screen = scenario.scene ? 'story' : 'scene'
+    await page.goto(screenUrl(server.url, { screen, style: scenario.style, extra: `&perf${scenario.scene ? `&scene=${scenario.scene}` : ''}` }))
     await waitForScene(page)
+    if (scenario.scene) {
+      const begin = page.getByRole('button', { name: 'Begin', exact: true })
+      if (await begin.count()) await begin.click()
+      await page.getByRole('region', { name: 'The story' }).waitFor()
+    }
     await page.waitForTimeout(500)
     await cdp.send('Emulation.setCPUThrottlingRate', { rate: slowdown })
     await page.evaluate(() => window.__goldenThreadPerf.reset())
 
-    if (scenario.switchAt) {
+    if (scenario.scene) {
+      for (let t = 0; t < STORY_SECONDS; t += 2) {
+        await page.waitForTimeout(2000)
+        await page.keyboard.press('Space')
+      }
+    } else if (scenario.switchAt) {
       await page.waitForTimeout(scenario.switchAt * 1000)
       await page.getByRole('button', { name: /^Switch to/ }).click()
       await page.waitForTimeout((SECONDS - scenario.switchAt) * 1000)

@@ -102,11 +102,14 @@ export function Dialog({
   open,
   title,
   onClose,
+  wide = false,
   children,
 }: {
   open: boolean
   title: string
   onClose: () => void
+  /** For cards with more to show side by side, like a golden thread. */
+  wide?: boolean
   children: ReactNode
 }) {
   const ref = useRef<HTMLDialogElement>(null)
@@ -120,7 +123,7 @@ export function Dialog({
   }, [open])
 
   return (
-    <dialog ref={ref} className="ui-dialog" aria-labelledby={titleId} onClose={onClose}>
+    <dialog ref={ref} className={wide ? 'ui-dialog ui-dialog-wide' : 'ui-dialog'} aria-labelledby={titleId} onClose={onClose}>
       {open && (
         <Panel>
           <h2 id={titleId}>{title}</h2>

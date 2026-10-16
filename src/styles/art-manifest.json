@@ -17,11 +17,104 @@
     },
     "water-front": {
       "hash": "8057c150"
+    },
+    "void": {
+      "hash": "54d56bfe"
+    },
+    "sky-light": {
+      "hash": "14473bb1"
+    },
+    "sky-blue": {
+      "hash": "4a44d112"
+    },
+    "stars-a": {
+      "hash": "2e910b0b"
+    },
+    "stars-b": {
+      "hash": "c45bd9ba"
+    },
+    "firmament": {
+      "hash": "dab465c4"
+    },
+    "sea-far": {
+      "hash": "3b8ef095"
+    },
+    "land": {
+      "hash": "9c5d63fb"
+    },
+    "grass": {
+      "hash": "1f8f8b9e"
+    },
+    "sea-mid": {
+      "hash": "82734405"
+    },
+    "sea-near": {
+      "hash": "f39cd2dc"
+    },
+    "light-rays": {
+      "hash": "a01c5fb0"
+    },
+    "night-veil": {
+      "hash": "14e886bd"
+    },
+    "darkness": {
+      "hash": "750f82b3"
     }
   },
   "paperProps": {
     "dove": {
-      "hash": "bed5d6ae"
+      "hash": "76e50342"
+    },
+    "sun": {
+      "hash": "7b261d7d"
+    },
+    "moon": {
+      "hash": "e37fad6f"
+    },
+    "fruit-tree": {
+      "hash": "f155f144"
+    },
+    "seed-plant": {
+      "hash": "7c8d57c3"
+    },
+    "bird": {
+      "hash": "f216bc86"
+    },
+    "lion": {
+      "hash": "66e1e7b9"
+    },
+    "deer": {
+      "hash": "198dbb80"
+    },
+    "sheep": {
+      "hash": "33b4cea9"
+    },
+    "elephant": {
+      "hash": "a671d90d"
+    },
+    "halo": {
+      "hash": "0c3e5e0d"
+    },
+    "man": {
+      "hash": "b0293ee6"
+    },
+    "woman": {
+      "hash": "929e3949"
+    },
+    "whale": {
+      "hash": "c25a63bb"
+    },
+    "fish": {
+      "hash": "2673c413"
+    },
+    "spirit": {
+      "hash": "d398ecbb"
+    },
+    "light-flood": {
+      "hash": "390c8efb"
+    },
+    "first-light": {
+      "hash": "1bf73b2a"
     }
   },
   "pixelLayers": {
@@ -42,6 +135,48 @@
     },
     "water-front": {
       "hash": "0eff54a9"
+    },
+    "void": {
+      "hash": "0e13bfb5"
+    },
+    "sky-light": {
+      "hash": "2060c147"
+    },
+    "sky-blue": {
+      "hash": "9f0e1874"
+    },
+    "stars-a": {
+      "hash": "265bcebb"
+    },
+    "stars-b": {
+      "hash": "47b85de9"
+    },
+    "firmament": {
+      "hash": "26a04f71"
+    },
+    "sea-far": {
+      "hash": "e385292d"
+    },
+    "land": {
+      "hash": "5987b8f9"
+    },
+    "grass": {
+      "hash": "714cc402"
+    },
+    "sea-mid": {
+      "hash": "13906252"
+    },
+    "sea-near": {
+      "hash": "5440e2a5"
+    },
+    "light-rays": {
+      "hash": "379531a5"
+    },
+    "night-veil": {
+      "hash": "157020bc"
+    },
+    "darkness": {
+      "hash": "821247c5"
     }
   }
 }

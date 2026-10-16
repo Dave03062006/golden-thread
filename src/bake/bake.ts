@@ -8,6 +8,7 @@ import {
   pixelLayerFile,
 } from '../styles/bake-config'
 import { paperLayers, paperProps } from '../styles/paper-glass/art'
+import { partShadow } from '../styles/paper-glass/prepare'
 import { rasterize } from '../styles/paper-glass/raster'
 import { LAYER_H, LAYER_W, pixelLayers } from '../styles/pixel/art'
 import { PixelBuffer } from '../styles/pixel/buffer'
@@ -77,7 +78,7 @@ async function bake(): Promise<{ files: BakedFile[]; manifest: ArtManifest }> {
     for (const width of PAPER_PART_WIDTHS) {
       const height = Math.round(width * (art.box.h / art.box.w))
       for (const part of art.parts) {
-        const canvas = await rasterize(part.svg, art.box, { widthPx: width, heightPx: height, shadowPx: Math.max(2, width * 0.025) })
+        const canvas = await rasterize(part.svg, art.box, { widthPx: width, heightPx: height, shadowPx: partShadow(art, width) })
         files.push({ path: paperPartFile(prop, part.id, width), base64: await encode(canvas, 'image/webp') })
       }
     }

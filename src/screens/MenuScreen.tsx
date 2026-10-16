@@ -28,7 +28,7 @@ export function MenuScreen() {
           {describePosition(save.position)} · {formatPlayTime(save.playSeconds)}
         </p>
         <nav className="menu-list" aria-label="Main menu">
-          <Button variant="primary" onClick={() => go('scene')}>
+          <Button variant="primary" onClick={() => go('story')}>
             {save.position ? 'Continue' : 'Begin'}
           </Button>
           {LATER.map((item) => (

@@ -5,6 +5,7 @@ import { useSettings } from '../engine/settings'
 import { MenuScreen } from '../screens/MenuScreen'
 import { SceneScreen } from '../screens/SceneScreen'
 import { SettingsScreen } from '../screens/SettingsScreen'
+import { StoryScreen } from '../screens/StoryScreen'
 import { TitleScreen } from '../screens/TitleScreen'
 import { launch } from './params'
 import { useApp } from './store'
@@ -30,6 +31,7 @@ const SCREENS = {
   menu: MenuScreen,
   settings: SettingsScreen,
   scene: SceneScreen,
+  story: StoryScreen,
 } as const
 
 /**

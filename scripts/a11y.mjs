@@ -10,6 +10,32 @@ import { STYLES, launchEdge, screenUrl, startPreview, waitForFonts } from './lib
 
 const SCREENS = ['title', 'menu', 'settings', 'scene']
 
+/**
+ * The story is checked in several states: its title card, a line of narration, and each
+ * of the cards that open over it.
+ */
+const STORY_STATES = [
+  { name: 'story · title card', scene: 'l01-e1-s1' },
+  { name: 'story · narration', scene: 'l01-e1-s2', begin: true },
+  { name: 'story · paused', scene: 'l01-e1-s2', begin: true, open: 'Pause' },
+  { name: 'story · where and when', scene: 'l01-e1-s2', begin: true, open: 'Where & when' },
+  { name: 'story · history', scene: 'l01-e1-s3', begin: true, open: 'History' },
+  { name: 'story · golden thread', scene: 'l01-e1-s3', begin: true, thread: true },
+]
+
+async function check(page, label) {
+  const results = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'best-practice']).analyze()
+  if (results.violations.length === 0) {
+    console.log(`ok   ${label}`)
+    return
+  }
+  for (const v of results.violations) {
+    problems++
+    console.log(`FAIL ${label}: ${v.id} (${v.impact}) ${v.help}`)
+    for (const node of v.nodes.slice(0, 3)) console.log(`       ${node.target.join(' ')}`)
+  }
+}
+
 const server = await startPreview()
 const browser = await launchEdge()
 let problems = 0
@@ -22,17 +48,24 @@ try {
       await page.goto(screenUrl(server.url, { screen, style }))
       await waitForFonts(page)
       await page.waitForTimeout(600)
-      const results = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'best-practice']).analyze()
-      const label = `${screen} · ${style}`
-      if (results.violations.length === 0) {
-        console.log(`ok   ${label}`)
-      } else {
-        for (const v of results.violations) {
-          problems++
-          console.log(`FAIL ${label}: ${v.id} (${v.impact}) ${v.help}`)
-          for (const node of v.nodes.slice(0, 3)) console.log(`       ${node.target.join(' ')}`)
-        }
+      await check(page, `${screen} · ${style}`)
+      await page.close()
+    }
+
+    for (const state of STORY_STATES) {
+      const page = await context.newPage()
+      await page.goto(screenUrl(server.url, { screen: 'story', style, extra: `&scene=${state.scene}` }))
+      await waitForFonts(page)
+      await page.locator('.stage[data-settled="true"]').waitFor({ timeout: 15000 })
+      if (state.begin) {
+        const begin = page.getByRole('button', { name: 'Begin', exact: true })
+        if (await begin.count()) await begin.click()
+        await page.getByRole('region', { name: 'The story' }).waitFor()
       }
+      if (state.open) await page.getByRole('button', { name: state.open, exact: true }).click()
+      if (state.thread) await page.getByRole('button', { name: /Something here is glowing/ }).click()
+      await page.waitForTimeout(700)
+      await check(page, `${state.name} · ${style}`)
       await page.close()
     }
   }

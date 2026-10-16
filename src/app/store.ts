@@ -9,7 +9,7 @@ export const saves: SaveSystem = createSaveSystem(
   launch.test || typeof indexedDB === 'undefined' ? memoryStore() : indexedDbStore('golden-thread', 'saves'),
 )
 
-export type Screen = 'title' | 'menu' | 'settings' | 'scene'
+export type Screen = 'title' | 'menu' | 'settings' | 'scene' | 'story'
 
 interface AppState {
   screen: Screen

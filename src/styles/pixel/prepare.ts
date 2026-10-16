@@ -4,11 +4,20 @@ import { pixelLayerFile } from '../bake-config'
 import { loadArt } from '../load-image'
 import { LAYER_H, LAYER_W, pixelLayers, pixelProps } from './art'
 import { PixelBuffer } from './buffer'
+import { prepareFades } from './dither-fade'
 import { buildSprite } from './sprites'
+
+/** A sprite's frames for one pose, drawn facing right and facing left. */
+export interface PoseFrames {
+  right: HTMLCanvasElement[]
+  left: HTMLCanvasElement[]
+  fps: number
+}
 
 export interface PreparedPixelScene {
   layers: Map<string, CanvasImageSource>
-  sprites: Map<string, { right: HTMLCanvasElement[]; left: HTMLCanvasElement[] }>
+  /** Sprite frames by prop, then by pose. Drawn props need nothing prepared. */
+  sprites: Map<string, Map<string, PoseFrames>>
 }
 
 const cache = new Map<string, Promise<PreparedPixelScene>>()
@@ -41,14 +50,20 @@ export function preparePixelScene(scene: SceneDescription): Promise<PreparedPixe
       }),
     )
 
+    prepareFades(LAYER_W, LAYER_H)
+
     // Sprites are tiny, so they're always built on the spot.
-    const sprites = new Map<string, { right: HTMLCanvasElement[]; left: HTMLCanvasElement[] }>()
+    const sprites = new Map<string, Map<string, PoseFrames>>()
     for (const prop of new Set(scene.actors.map((a) => a.prop))) {
       const def = pixelProps[prop]
-      if (!def) continue
-      const natural = def.frames.map((f) => buildSprite(f, def.colors))
-      const mirrored = def.frames.map((f) => buildSprite(f, def.colors, { mirror: true }))
-      sprites.set(prop, def.facing === 1 ? { right: natural, left: mirrored } : { right: mirrored, left: natural })
+      if (!def || def.kind !== 'sprite') continue
+      const poses = new Map<string, PoseFrames>()
+      for (const [pose, { frames, fps }] of Object.entries(def.poses)) {
+        const natural = frames.map((f) => buildSprite(f, def.colors))
+        const mirrored = frames.map((f) => buildSprite(f, def.colors, { mirror: true }))
+        poses.set(pose, def.facing === 1 ? { right: natural, left: mirrored, fps } : { right: mirrored, left: natural, fps })
+      }
+      sprites.set(prop, poses)
     }
     return { layers, sprites }
   })()
