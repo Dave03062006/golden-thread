@@ -1,4 +1,4 @@
-import { useEffect, useId, useRef, type ButtonHTMLAttributes, type HTMLAttributes, type ReactNode } from 'react'
+import { useEffect, useId, useRef, type ComponentProps, type HTMLAttributes, type ReactNode } from 'react'
 import './components.css'
 
 type ButtonVariant = 'primary' | 'secondary' | 'quiet' | 'danger'
@@ -8,7 +8,7 @@ export function Button({
   className,
   type = 'button',
   ...props
-}: ButtonHTMLAttributes<HTMLButtonElement> & { variant?: ButtonVariant }) {
+}: ComponentProps<'button'> & { variant?: ButtonVariant }) {
   return <button type={type} className={['ui-button', className].filter(Boolean).join(' ')} data-variant={variant} {...props} />
 }
 

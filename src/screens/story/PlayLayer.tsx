@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from 'react'
 import { gameClock } from '../../engine/clock'
-import type { Choice, GameKey, Hint } from '../../minigames/framework'
+import type { Choice, Compare, GameKey, Hint } from '../../minigames/framework'
 import type { GameRunner } from '../../minigames/runner'
 import { Button } from '../../ui/components'
+import { CompareCard } from './CompareCard'
 
 /** Keys the interactions understand. */
 const KEYS: Record<string, GameKey> = {
@@ -26,7 +27,7 @@ const HINT_DELAY_MS = 1400
  * into the game's input, shows the instruction (for both touch and keys), and draws the
  * small things that belong to the gesture rather than to the world: the sparkles left by
  * a sweeping hand, the quiet "Rest" of the seventh day, and the answers to pick from in
- * the games played by choosing.
+ * the games played by choosing, and the passages compared in "Spot the twist".
  */
 export function PlayLayer({ runner, gentle }: { runner: GameRunner; gentle: boolean }) {
   const layerRef = useRef<HTMLDivElement>(null)
@@ -36,6 +37,7 @@ export function PlayLayer({ runner, gentle }: { runner: GameRunner; gentle: bool
   const [restReady, setRestReady] = useState(false)
   const [hintDue, setHintDue] = useState(gentle)
   const [choice, setChoice] = useState<Choice | null>(runner.view.choice ?? null)
+  const [compare, setCompare] = useState<Compare | null>(runner.view.compare ?? null)
 
   // The instruction waits a moment, so a player who already knows what to do isn't told.
   useEffect(() => {
@@ -49,6 +51,7 @@ export function PlayLayer({ runner, gentle }: { runner: GameRunner; gentle: bool
     let shownHint = runner.view.hint
     let shownReady = false
     let shownChoice = runner.view.choice ?? null
+    let shownCompare = runner.view.compare ?? null
     const pool: HTMLSpanElement[] = []
     return gameClock.subscribe(
       () => {
@@ -60,6 +63,10 @@ export function PlayLayer({ runner, gentle }: { runner: GameRunner; gentle: bool
         if ((view.choice ?? null) !== shownChoice) {
           shownChoice = view.choice ?? null
           setChoice(shownChoice)
+        }
+        if ((view.compare ?? null) !== shownCompare) {
+          shownCompare = view.compare ?? null
+          setCompare(shownCompare)
         }
         if (!!view.restReady !== shownReady) {
           shownReady = !!view.restReady
@@ -92,7 +99,8 @@ export function PlayLayer({ runner, gentle }: { runner: GameRunner; gentle: bool
     const onKey = (down: boolean) => (event: KeyboardEvent) => {
       const key = KEYS[event.key] ?? KEYS[event.key.toLowerCase()]
       if (!key || event.altKey || event.ctrlKey || event.metaKey) return
-      if (event.target instanceof HTMLElement && ['BUTTON', 'INPUT', 'TEXTAREA', 'SELECT', 'A'].includes(event.target.tagName)) return
+      // Keys pressed on a control (a button, a phrase to tap) belong to that control.
+      if (event.target instanceof HTMLElement && event.target.closest('button, input, textarea, select, a, [role="button"]')) return
       event.preventDefault()
       if (down && event.repeat) return
       runner.queue({ kind: 'key', key, down })
@@ -142,6 +150,13 @@ export function PlayLayer({ runner, gentle }: { runner: GameRunner; gentle: bool
         </output>
       )}
       {choice && <ChoiceCard choice={choice} choose={(option) => runner.queue({ kind: 'choose', option })} />}
+      {compare && (
+        <CompareCard
+          compare={compare}
+          choose={(option) => runner.queue({ kind: 'choose', option })}
+          finish={() => runner.queue({ kind: 'key', key: 'primary', down: true })}
+        />
+      )}
       {resting && (
         <div className="rest">
           <p className="rest-word">Rest</p>

@@ -19,6 +19,7 @@ const KEYS = {
 const EPISODES = [
   { number: 1, lines: 34, plays: 9 }, // src/content/levels/01-creation-and-fall/episode-1.ts
   { number: 2, lines: 21, plays: 1 }, // episode-2.ts
+  { number: 3, lines: 19, plays: 1 }, // episode-3.ts
 ]
 
 const server = await startPreview()
@@ -48,6 +49,7 @@ async function playEpisode(page, style, { number, lines: expected, plays: expect
   let lines = 0
   let plays = 0
   let thread = false
+  let tapped = 0
   const started = Date.now()
 
   while (!(await end.isVisible())) {
@@ -74,6 +76,22 @@ async function playEpisode(page, style, { number, lines: expected, plays: expect
       const go = page.getByRole('button', { name: 'Continue', exact: true })
       await go.waitFor({ timeout: 20_000 })
       await go.click()
+      plays++
+      continue
+    }
+    // Two passages to compare: tap every phrase in turn (the ones true to God's word only
+    // say so), then go on.
+    if (await page.locator('.play-compare').count()) {
+      const go = page.locator('.play-compare-continue')
+      // The card may already be closing as the story moves on: then there's nothing to click.
+      if (await go.count()) await go.click({ timeout: 3000 }).catch(() => {})
+      else {
+        // Each phrase in turn, true or twisted, as a player reading along would.
+        const part = page.locator('.play-compare-part').nth(tapped++)
+        await part.focus()
+        await page.keyboard.press('Enter')
+        await page.waitForTimeout(200)
+      }
       plays++
       continue
     }
@@ -122,9 +140,16 @@ async function play(style) {
   await waitForScene(page)
 
   const results = []
-  for (const [i, episode] of EPISODES.entries()) {
-    if (i > 0) await waitForScene(page)
-    results.push(...(await playEpisode(page, style, episode, i === EPISODES.length - 1)))
+  try {
+    for (const [i, episode] of EPISODES.entries()) {
+      if (i > 0) await waitForScene(page)
+      results.push(...(await playEpisode(page, style, episode, i === EPISODES.length - 1)))
+    }
+  } catch (error) {
+    // Show where it stopped, and what had passed so far.
+    await page.screenshot({ path: `shots/failed-${style}.png` })
+    for (const [ok, what] of results) console.log(`${ok ? 'ok  ' : 'FAIL'} ${style}: ${what}`)
+    throw new Error(`${error.message} (see shots/failed-${style}.png)`)
   }
   await page.getByRole('navigation', { name: 'Main menu' }).waitFor()
   results.push([errors.length === 0, `no errors in the page${errors.length ? `: ${errors.join(' | ')}` : ''}`])
@@ -137,12 +162,13 @@ async function play(style) {
 }
 
 try {
-  for (const style of STYLES) {
+  const only = process.argv.find((a) => a.startsWith('--style='))?.split('=')[1]
+  for (const style of STYLES.filter((s) => !only || s === only)) {
     try {
       await play(style)
     } catch (error) {
       failures++
-      console.log(`FAIL ${style}: ${error.message.split('\n')[0]}`)
+      console.log(`FAIL ${style}: ${error.message.split('\n').slice(0, 4).join(' / ')}`)
     }
   }
 } finally {

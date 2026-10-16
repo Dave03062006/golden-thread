@@ -1,7 +1,7 @@
 import type { PaperPropArt, PartMotion } from '../art'
 
 /**
- * The man and the woman of day six. They are shown as cut-paper silhouettes, standing
+ * The man and the woman of day six, and of the garden. They are shown as cut-paper silhouettes, standing
  * in the light and turned toward it: the light catches their outline in gold, and no
  * more detail than that is drawn (spec §6). Both face left, toward the first light.
  */
@@ -19,12 +19,48 @@ function breathing(part: string, _pose: string, time: number): PartMotion {
   return {}
 }
 
+/** The poses after the Fall, when they have covered themselves with fig leaves (Genesis 3:7). */
+const COVERED = new Set(['ashamed', 'hide', 'point'])
+
+/**
+ * How the man and the woman move. Both face left, so turning the arm forward (toward the
+ * way they face) is a positive turn at the shoulder.
+ * - reach: the arm stretched out and up, toward the fruit.
+ * - ashamed: covered, the arm drawn in across the body, a little bowed.
+ * - hide: covered, crouched low among the trees.
+ * - point: covered, the arm straight out, blaming.
+ */
+function moving(part: string, pose: string, time: number): PartMotion {
+  if (part === 'leaves') return COVERED.has(pose) ? { opacity: 1, y: pose === 'hide' ? 40 : 0 } : { opacity: 0 }
+  const rest = breathing(part, pose, time)
+  if (pose === 'reach') return part === 'arm' ? { rotate: 120 + 3 * Math.sin(time * TAU * 0.3) } : rest
+  if (pose === 'point') return part === 'arm' ? { rotate: 88 } : rest
+  if (pose === 'ashamed') return part === 'arm' ? { x: 6, y: 1, rotate: -14 } : { y: 1 + (rest.y ?? 0) }
+  if (pose === 'hide') return part === 'arm' ? { x: 5, y: 40, rotate: 35 } : { y: 40 + (rest.y ?? 0) }
+  return rest
+}
+
+/** A girdle of fig leaves sewn together, across the hips from x0 to x1 at height y. */
+function figLeaves(x0: number, x1: number, y: number): string {
+  const count = 5
+  let out = `<path d="M${x0} ${y}L${x1} ${y}" stroke="#3c5a2a" stroke-width="1.2"/>`
+  for (let i = 0; i < count; i++) {
+    const x = x0 + ((x1 - x0) * (i + 0.5)) / count
+    const tilt = (i - (count - 1) / 2) * 9
+    out += `<g transform="translate(${x.toFixed(1)} ${y}) rotate(${tilt})">
+      <path d="M0 0C-4 2 -5.5 6 -4 9C-5 11 -3 13.5 0 14C3 13.5 5 11 4 9C5.5 6 4 2 0 0Z" fill="${i % 2 ? '#5a8c3e' : '#4a7c34'}"/>
+      <path d="M0 1L0 12.5M0 6L-2.6 8.4M0 6L2.6 8.4" stroke="#2e4a20" stroke-width=".6" fill="none"/>
+    </g>`
+  }
+  return out
+}
+
 /**
  * The man in the deep sleep the LORD God cast upon him (Genesis 2:21): lying on his side
  * on the ground, his arm along him, breathing slowly.
  */
 function manMotion(part: string, pose: string, time: number): PartMotion {
-  if (pose !== 'sleep') return breathing(part, pose, time)
+  if (pose !== 'sleep') return moving(part, pose, time)
   const breath = Math.sin(time * TAU * 0.16)
   if (part === 'body') return { rotate: -90, y: 48 + 0.6 * breath }
   return { opacity: 0 }
@@ -33,7 +69,7 @@ function manMotion(part: string, pose: string, time: number): PartMotion {
 const man: PaperPropArt = {
   box: { x: 0, y: 0, w: 40, h: 120 },
   facing: -1,
-  poses: ['idle', 'sleep'],
+  poses: ['idle', 'sleep', 'reach', 'ashamed', 'hide', 'point'],
   anchor: 'base',
   parts: [
     {
@@ -56,6 +92,7 @@ const man: PaperPropArt = {
           <path d="M9.4 118.6L12 118.6"/>
         </g>`,
     },
+    { id: 'leaves', svg: figLeaves(10.5, 29.5, 57) },
     {
       id: 'arm',
       pivot: { x: 11.5, y: 27 },
@@ -70,7 +107,7 @@ const man: PaperPropArt = {
 const woman: PaperPropArt = {
   box: { x: 0, y: 0, w: 40, h: 114 },
   facing: -1,
-  poses: ['idle'],
+  poses: ['idle', 'reach', 'ashamed', 'hide', 'point'],
   anchor: 'base',
   parts: [
     {
@@ -95,6 +132,7 @@ const woman: PaperPropArt = {
           <path d="M10.8 112.8L13.2 112.8"/>
         </g>`,
     },
+    { id: 'leaves', svg: figLeaves(11.5, 28.5, 55) },
     {
       id: 'arm',
       pivot: { x: 13.4, y: 27.4 },
@@ -103,7 +141,7 @@ const woman: PaperPropArt = {
         <path d="M11.9 30.2L11.9 53.8" stroke="${RIM}" stroke-width="1.3" stroke-linecap="round" opacity=".92"/>`,
     },
   ],
-  animate: breathing,
+  animate: moving,
 }
 
 export const people: Record<string, PaperPropArt> = { man, woman }

@@ -3,14 +3,12 @@ import { ANIMALS_TO_NAME, BEFORE_THE_MAN, episode2 } from '../../content/levels/
 import { Director } from '../../scene/director'
 import type { SceneFrame } from '../../scene/evaluate'
 import { STEP, type GameContext } from '../framework'
+import { playThrough } from '../playthrough'
 import { GAMES } from '../registry'
 import { GameRunner } from '../runner'
 import { ARRIVE, GO, NAMED, naming } from '.'
 
 const FRAME = 1 / 60
-
-/** Frames compared to six decimal places, so rounding differences don't count. */
-const rounded = (frame: SceneFrame) => JSON.parse(JSON.stringify(frame, (_key, value: unknown) => (typeof value === 'number' ? Math.round(value * 1e6) / 1e6 : value)))
 
 /** Plays the rules alone, with no scene, for `seconds`. */
 function run(gentle: boolean, seconds: number, chooseAt: (state: { index: number; phase: string }, t: number) => string | null) {
@@ -71,50 +69,20 @@ describe('naming the animals', () => {
 
   it('plays through Episode 2, leaving the world exactly as a checkpoint rebuilds it', () => {
     for (const gentle of [false, true]) {
-      const director = new Director(episode2)
-      let now = 0
-      const comparisons: { scene: number; played: unknown; rebuilt: unknown }[] = []
-      const reached: number[] = []
-      director.subscribe((event) => {
-        if (event.type === 'checkpoint' && event.index > 0) reached.push(event.index)
-      })
-      const compare = () => {
-        for (const scene of reached.splice(0)) {
-          const rebuilt = new Director(episode2, scene)
-          rebuilt.start(now)
-          comparisons.push({ scene: scene + 1, played: rounded(director.frame(now + 20)), rebuilt: rounded(rebuilt.frame(now + 20)) })
-        }
-      }
-      director.start(now)
-      while (!director.ended) {
-        const beat = director.beat!
-        if (beat.kind !== 'play') {
-          now += 0.5
-          director.advance(now)
-          compare()
-          continue
-        }
-        const runner = new GameRunner(GAMES[beat.game]!, { gentle, frame: () => director.frame(now) }, director.timeline, now)
-        const startedAt = now
-        let answered = ''
-        let done = false
-        while (!done) {
-          now += FRAME
-          expect(now - startedAt, `"${beat.game}" should finish`).toBeLessThan(80)
+      let answered = ''
+      const comparisons = playThrough(episode2, {
+        gentle,
+        player(runner) {
           const choice = runner.view.choice
           // Try a wrong answer first, then the right one.
           if (choice && !choice.feedback && answered !== choice.id) {
-            const wrong = choice.options.find((o) => o.id !== choice.id)!
-            runner.queue({ kind: 'choose', option: wrong.id })
+            runner.queue({ kind: 'choose', option: choice.options.find((o) => o.id !== choice.id)!.id })
             answered = choice.id
           } else if (choice?.feedback?.right === false) {
             runner.queue({ kind: 'choose', option: choice.id })
           }
-          done = runner.advanceTo(now).done
-        }
-        director.finishPlay(now)
-        compare()
-      }
+        },
+      })
       expect(comparisons).toHaveLength(episode2.scenes.length - 1)
       for (const { scene, played, rebuilt } of comparisons) expect(played, `the world at the start of scene ${scene}`).toEqual(rebuilt)
     }

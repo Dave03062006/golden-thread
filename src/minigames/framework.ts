@@ -51,6 +51,33 @@ export interface Choice {
   feedback: { right: boolean; text: string } | null
 }
 
+/** A piece of a quoted passage: words to tap, the words that bend God's word, or punctuation. */
+export interface PassagePart {
+  id: string
+  text: string
+  kind: 'words' | 'twist' | 'mark'
+}
+
+/**
+ * Two passages side by side, for spotting what one changes in the other: on the left the
+ * words as given, on the right the words as twisted, whose parts the player taps. Kept the
+ * same object while nothing about it changes, like `Choice`.
+ */
+export interface Compare {
+  instruction: string
+  left: { title: string; reference: string; text: string }
+  right: { title: string; reference: string; lines: { speaker: string; parts: PassagePart[] }[] }
+  /** The twists found so far, by part id. */
+  found: readonly string[]
+  total: number
+  /** What the last tap brought: the explanation of a twist found, or a gentle "not that". */
+  note: { right: boolean; text: string } | null
+  /** Gentle mode: the twists are faintly underlined. */
+  showTwists: boolean
+  /** Everything is found: the player moves on when ready. */
+  finished: boolean
+}
+
 /** What a game shows at one moment. */
 export interface GameView {
   /** Values for scene channels (see scene/timeline.ts), blended smoothly between steps. */
@@ -61,6 +88,8 @@ export interface GameView {
   marks?: { x: number; y: number; age: number }[]
   /** A question to answer by choosing, shown over the scene. */
   choice?: Choice | null
+  /** Two passages to compare, shown over the scene. */
+  compare?: Compare | null
   /** For a quiet moment of rest: whether the player may now move on. */
   restReady?: boolean
   /** Whether the interaction is finished. */

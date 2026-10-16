@@ -108,8 +108,9 @@ export const PixelRenderer = memo(function PixelRenderer({ scene, getFrame, widt
           const left = Math.round((t.dx * PX_W - MARGIN_X) * scale)
           const top = Math.round(((t.dy + layer.offsetY) * PX_H - MARGIN_Y) * scale)
           const image = art.layers.get(layer.id)
-          if (image) ctx.drawImage(step >= FADE_STEPS ? image : fadedCopy(image as HTMLCanvasElement, step), left, top, LAYER_W * scale, LAYER_H * scale)
-          const animate = pixelLayers[layer.id]?.animate
+          const look = pixelLayers[layer.id]
+          if (image) ctx.drawImage(step >= FADE_STEPS ? image : fadedCopy(image as HTMLCanvasElement, step, look?.fade), left, top, LAYER_W * scale, LAYER_H * scale)
+          const animate = look?.animate
           if (animate) animate(painterAt(ctx, left, top, scale, layer.opacity), frame.time)
         }
         for (const actor of frame.actors) if (actor.above === layer.id) drawActor(actor, camera)

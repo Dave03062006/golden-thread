@@ -83,6 +83,12 @@
     },
     "eden-front": {
       "hash": "05af7699"
+    },
+    "eden-dim": {
+      "hash": "232bca67"
+    },
+    "eden-dusk": {
+      "hash": "43df3196"
     }
   },
   "paperProps": {
@@ -120,10 +126,10 @@
       "hash": "0c3e5e0d"
     },
     "man": {
-      "hash": "a58bf65d"
+      "hash": "0b276868"
     },
     "woman": {
-      "hash": "929e3949"
+      "hash": "e0a133ba"
     },
     "whale": {
       "hash": "c25a63bb"
@@ -160,6 +166,15 @@
     },
     "breath": {
       "hash": "94fd6857"
+    },
+    "serpent": {
+      "hash": "18f3c12e"
+    },
+    "thicket": {
+      "hash": "02546c1c"
+    },
+    "fruit": {
+      "hash": "481fafec"
     }
   },
   "pixelLayers": {
@@ -246,6 +261,12 @@
     },
     "eden-front": {
       "hash": "832a5f4d"
+    },
+    "eden-dim": {
+      "hash": "9f0e0b75"
+    },
+    "eden-dusk": {
+      "hash": "5161df55"
     }
   }
 }

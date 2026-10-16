@@ -87,6 +87,21 @@ export const TRACKS: Track[] = [
     download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Air.ogg',
     credit: 'Bach, Air from the Orchestral Suite No. 3, BWV 1068. United States Air Force Strings, Keith H. Bland, conductor (2000). Public domain.',
   },
+  // Episode 3, in place of the chant Attende Domine, for which no recording under an
+  // allowed license was found: Psalm 51, the great psalm of repentance.
+  {
+    id: 'allegri-miserere',
+    title: 'Miserere mei, Deus',
+    composer: 'Gregorio Allegri',
+    performer: 'Ensamble Escénico Vocal, Sistema Nacional de Fomento Musical',
+    year: 2021,
+    license: 'cc-by',
+    licenseNote: 'Published by the ensemble under the Creative Commons Attribution 3.0 license, as reviewed on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:Allegri_-_Miserere_Mei,_Deus_-_Ensamble_Esc%C3%A9nico_Vocal_(audio).ogg',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Allegri_-_Miserere_Mei,_Deus_-_Ensamble_Esc%C3%A9nico_Vocal_(audio).ogg',
+    credit:
+      'Allegri, Miserere mei, Deus. Ensamble Escénico Vocal of the Sistema Nacional de Fomento Musical, recorded in the Cathedral of Tlaxcala, Mexico (2021). CC BY 3.0, via Wikimedia Commons.',
+  },
 ]
 
 const BY_ID = new Map(TRACKS.map((track) => [track.id, track]))

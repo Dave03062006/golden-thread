@@ -7,7 +7,13 @@ import { dither, hash } from './palette'
  * games fade between scenes. (An ordered pattern would leave a regular grid of dots
  * at the faintest steps.) Sixteen steps are plenty, and each faded copy is made once
  * and kept. Drawn shading still uses the ordered pattern, below.
+ *
+ * A layer that is itself a veil of ordered shading (dusk, a dimming) fades with the
+ * ordered pattern instead: a random dissolve of an ordered pattern looks like static.
  */
+
+/** How a picture fades: scattered at random, or in the ordered pattern. */
+export type FadeOrder = 'dissolve' | 'ordered'
 
 /** Each pixel's own moment to appear in a dissolve, from 0 to 1. */
 const dissolve = (x: number, y: number) => hash(x * 12.9898 + y * 78.233)
@@ -22,8 +28,8 @@ export function fadeStep(opacity: number): number {
 const masks = new Map<string, HTMLCanvasElement>()
 
 /** The pixels that are drawn at a fade step, for a picture of a given size: shared by every picture that size. */
-function dissolveMask(width: number, height: number, step: number): HTMLCanvasElement {
-  const key = `${width}x${height}/${step}`
+function dissolveMask(width: number, height: number, step: number, order: FadeOrder = 'dissolve'): HTMLCanvasElement {
+  const key = `${width}x${height}/${step}/${order}`
   let mask = masks.get(key)
   if (!mask) {
     mask = document.createElement('canvas')
@@ -32,8 +38,9 @@ function dissolveMask(width: number, height: number, step: number): HTMLCanvasEl
     const ctx = mask.getContext('2d')!
     const image = ctx.createImageData(width, height)
     const level = step / FADE_STEPS
+    const appears = order === 'ordered' ? dither : dissolve
     for (let y = 0; y < height; y++) {
-      for (let x = 0; x < width; x++) if (dissolve(x, y) < level) image.data[(y * width + x) * 4 + 3] = 255
+      for (let x = 0; x < width; x++) if (appears(x, y) < level) image.data[(y * width + x) * 4 + 3] = 255
     }
     ctx.putImageData(image, 0, 0)
     masks.set(key, mask)
@@ -49,14 +56,16 @@ export function prepareFades(width: number, height: number) {
 const copies = new WeakMap<object, Map<number, HTMLCanvasElement>>()
 
 /** A copy of `source` with only the pixels that belong at this fade step. */
-export function fadedCopy(source: CanvasImageSource & { width: number; height: number }, step: number): HTMLCanvasElement | CanvasImageSource {
+export function fadedCopy(source: CanvasImageSource & { width: number; height: number }, step: number, order: FadeOrder = 'dissolve'): HTMLCanvasElement | CanvasImageSource {
   if (step >= FADE_STEPS) return source
   let byStep = copies.get(source)
   if (!byStep) {
     byStep = new Map()
     copies.set(source, byStep)
   }
-  let copy = byStep.get(step)
+  // Steps of an ordered fade are kept apart from those of a dissolve.
+  const key = order === 'ordered' ? -step : step
+  let copy = byStep.get(key)
   if (!copy) {
     // Keep the picture only where the mask has pixels: one step for the graphics card.
     copy = document.createElement('canvas')
@@ -65,8 +74,8 @@ export function fadedCopy(source: CanvasImageSource & { width: number; height: n
     const ctx = copy.getContext('2d')!
     ctx.drawImage(source, 0, 0)
     ctx.globalCompositeOperation = 'destination-in'
-    ctx.drawImage(dissolveMask(source.width, source.height, step), 0, 0)
-    byStep.set(step, copy)
+    ctx.drawImage(dissolveMask(source.width, source.height, step, order), 0, 0)
+    byStep.set(key, copy)
   }
   return copy
 }

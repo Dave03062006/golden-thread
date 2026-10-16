@@ -12,7 +12,7 @@ import { animal } from './animals'
 const TAU = Math.PI * 2
 
 /** A filled disc, one run per row. */
-function disc(paint: Painter, cx: number, cy: number, r: number, color: string, level = 1) {
+export function disc(paint: Painter, cx: number, cy: number, r: number, color: string, level = 1) {
   const runs: [number, number, number][] = []
   for (let y = Math.ceil(-r); y <= Math.floor(r); y++) {
     const o = Math.floor(Math.sqrt(Math.max(0, r * r - y * y)))

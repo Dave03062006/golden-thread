@@ -22,7 +22,9 @@ export function ThreadSpot({
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
-    let shown = false
+    // Unknown at first, so the first frame always sets it: when the spot is turned off
+    // (an interaction begins), a ring still showing must be hidden.
+    let shown: boolean | null = null
     return gameClock.subscribe(
       () => {
         const frame = lastFrame.current

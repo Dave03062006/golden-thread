@@ -29,6 +29,8 @@ const STORY_STATES = [
   { name: 'story · golden thread', scene: 'l01-e1-s3', begin: true, thread: true },
   // Three lines in, the animals come to be named: a question with answers to choose.
   { name: 'story · naming question', scene: 'l01-e2-s4', begin: true, lines: 3, choice: true },
+  // One line in, "Spot the twist": two passages with phrases to tap.
+  { name: 'story · spot the twist', scene: 'l01-e3-s2', begin: true, lines: 1, compare: true },
 ]
 
 async function check(page, label) {
@@ -89,6 +91,7 @@ try {
         await page.keyboard.press('Space')
       }
       if (state.choice) await page.locator('.play-choice-option').first().waitFor({ timeout: 15000 })
+      if (state.compare) await page.locator('.play-compare-part').first().waitFor({ timeout: 15000 })
       if (state.open) await page.getByRole('button', { name: state.open, exact: true }).click()
       if (state.thread) await page.getByRole('button', { name: /Something here is glowing/ }).click()
       await page.waitForTimeout(700)

@@ -1,13 +1,16 @@
 import type { StyleArtIndex } from '../contract'
 import type { PixelBuffer } from './buffer'
+import type { FadeOrder } from './dither-fade'
 import type { Painter } from './frame'
 import { people } from './characters/people'
 import { creationLayers } from './layers/creation'
 import { demoLayers } from './layers/demo'
+import { fallLayers } from './layers/fall'
 import { gardenLayers } from './layers/garden'
 import { animals } from './props/animals'
 import { creationProps } from './props/creation'
 import { dove } from './props/dove'
+import { fallProps } from './props/fall'
 import { gardenProps } from './props/garden'
 
 export { LAYER_H, LAYER_W, MARGIN_X, MARGIN_Y, PX_H, PX_W, type Painter } from './frame'
@@ -22,6 +25,8 @@ export interface PixelLayerArt {
   draw(buf: PixelBuffer): void
   /** Draws the moving bits (glints, twinkles) every frame, in layer-canvas coordinates. */
   animate?(paint: Painter, time: number): void
+  /** How it fades in and out: a veil of shading fades in the ordered pattern (see dither-fade.ts). */
+  fade?: FadeOrder
 }
 
 /**
@@ -72,9 +77,9 @@ export interface PixelDrawnArt {
 
 export type PixelPropArt = PixelSpriteArt | PixelDrawnArt
 
-export const pixelLayers: Record<string, PixelLayerArt> = { ...demoLayers, ...creationLayers, ...gardenLayers }
+export const pixelLayers: Record<string, PixelLayerArt> = { ...demoLayers, ...creationLayers, ...gardenLayers, ...fallLayers }
 
-export const pixelProps: Record<string, PixelPropArt> = { dove, ...creationProps, ...animals, ...gardenProps, ...people }
+export const pixelProps: Record<string, PixelPropArt> = { dove, ...creationProps, ...animals, ...gardenProps, ...fallProps, ...people }
 
 export function posesOf(art: PixelPropArt): string[] {
   return art.kind === 'sprite' ? Object.keys(art.poses) : art.poses
