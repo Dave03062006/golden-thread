@@ -138,16 +138,29 @@ export function Dialog({
 }) {
   const ref = useRef<HTMLDialogElement>(null)
   const titleId = useId()
+  /** Set while the page itself closes the dialog, whose "close" event comes a moment later. */
+  const closingItself = useRef(false)
 
   useEffect(() => {
     const dialog = ref.current
     if (!dialog || typeof dialog.showModal !== 'function') return
     if (open && !dialog.open) dialog.showModal()
-    if (!open && dialog.open) dialog.close()
+    if (!open && dialog.open) {
+      closingItself.current = true
+      dialog.close()
+    }
   }, [open])
 
+  // Only the player closing it (with Escape) counts. When the page closes it, whatever
+  // closed it has already acted: answering again with the next screen's handler would
+  // act twice, like going on past the next episode.
+  const closed = () => {
+    if (closingItself.current) closingItself.current = false
+    else onClose()
+  }
+
   return (
-    <dialog ref={ref} className={wide ? 'ui-dialog ui-dialog-wide' : 'ui-dialog'} aria-labelledby={titleId} onClose={onClose}>
+    <dialog ref={ref} className={wide ? 'ui-dialog ui-dialog-wide' : 'ui-dialog'} aria-labelledby={titleId} onClose={closed}>
       {open && (
         <Panel>
           <h2 id={titleId}>{title}</h2>

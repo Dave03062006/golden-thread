@@ -34,7 +34,7 @@ export const light: GameRules<State> = {
           }
         }
         if (input.phase === 'up') holding = false
-      } else if (input.key === 'primary') {
+      } else if (input.kind === 'key' && input.key === 'primary') {
         holding = input.down
         if (input.down && grow < 0.03) {
           x = 0.5

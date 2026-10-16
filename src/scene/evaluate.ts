@@ -184,7 +184,7 @@ export function evaluateScene(scene: SceneDescription, time: number, timeline?: 
         time,
       }
       if (actor.group) {
-        const spread = value(channel.spread, 1)
+        const spread = value(channel.spread, actor.group.spread ?? 1)
         const { w, h, bob = 0 } = actor.group
         state.instances = groupLayout(actor).map((m) => ({
           dx: m.x * w * spread,

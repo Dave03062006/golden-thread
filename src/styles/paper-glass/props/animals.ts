@@ -10,7 +10,7 @@ import type { PaperPropArt, PartMotion } from '../art'
 const TAU = Math.PI * 2
 
 /** A leg hanging from its hip joint at (x, top) down to the ground, a little tapered, with a foot. */
-function leg(x: number, top: number, ground: number, width: number, color: string, foot = color): string {
+export function leg(x: number, top: number, ground: number, width: number, color: string, foot = color): string {
   const h = width / 2
   return `
     <circle cx="${x}" cy="${top + h * 0.6}" r="${h}" fill="${color}"/>
@@ -33,7 +33,7 @@ function mane(cx: number, cy: number, outer: number, inner: number, points: numb
  * How a four-legged puppet moves. Walking: diagonal leg pairs swing together and the body
  * rises a little with each step. Standing: it breathes, and its tail swishes.
  */
-function fourLegged(stepsPerSecond: number, swing: number, extra?: (part: string, pose: string, time: number) => PartMotion | undefined) {
+export function fourLegged(stepsPerSecond: number, swing: number, extra?: (part: string, pose: string, time: number) => PartMotion | undefined) {
   return (part: string, pose: string, time: number): PartMotion => {
     const own = extra?.(part, pose, time)
     if (own) return own

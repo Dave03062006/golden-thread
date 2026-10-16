@@ -12,7 +12,7 @@ import { sprite, type Grid } from '../shapes'
 const STRIDE = [1.6, 0, -1.6, 0]
 
 /** Four walking frames and two standing ones, from one drawing function. */
-function animal(draw: (g: Grid, stride: number, idle: number) => void, width: number, height: number, walkFps: number, idleFps: number) {
+export function animal(draw: (g: Grid, stride: number, idle: number) => void, width: number, height: number, walkFps: number, idleFps: number) {
   return {
     walk: { frames: STRIDE.map((s) => sprite(width, height, (g) => draw(g, s, 0))), fps: walkFps },
     idle: { frames: [0, 1].map((i) => sprite(width, height, (g) => draw(g, 0, i))), fps: idleFps },

@@ -63,13 +63,14 @@ export class Grid {
   }
 
   /** Recolors pixels of one color that sit on a given edge (the side facing the light). */
-  rim(from: string, to: string, side: 'left' | 'right'): this {
-    const dx = side === 'left' ? -1 : 1
+  rim(from: string, to: string, side: 'left' | 'right' | 'top'): this {
+    const dx = side === 'left' ? -1 : side === 'right' ? 1 : 0
+    const dy = side === 'top' ? -1 : 0
     const snapshot = this.cells.map((row) => [...row])
     for (let y = 0; y < this.height; y++) {
       for (let x = 0; x < this.width; x++) {
         if (snapshot[y]![x] !== from) continue
-        const beside = snapshot[y]![x + dx]
+        const beside = snapshot[y + dy]?.[x + dx]
         if (beside === undefined || beside === '.') this.cells[y]![x] = to
       }
     }

@@ -1,7 +1,7 @@
-// Plays all of Episode 1 in a real browser, in both art styles, the way a keyboard
-// player would: reading every line, doing every "Let there be…" interaction with the
-// keys, finding the golden thread, marking "I've read it", and finishing at the menu.
-// Fails if the story gets stuck anywhere or something it needs is missing.
+// Plays every finished episode in a real browser, in both art styles, the way a keyboard
+// player would: reading every line, doing every interaction with the keys, finding each
+// golden thread, marking "I've read it", going on to the next episode, and finishing at
+// the menu. Fails if the story gets stuck anywhere or something it needs is missing.
 //
 // Usage (build first):
 //   npm run build
@@ -15,32 +15,47 @@ const KEYS = {
   'Sweep across the night sky.': { hold: 'ArrowRight', seconds: 3.6 },
 }
 
-/** Lines of narration and Scripture in Episode 1 (src/content/levels/01-creation-and-fall/episode-1.ts). */
-const LINES = 34
+/** The finished episodes, in order, with their lines of narration and Scripture and how many interactions they have. */
+const EPISODES = [
+  { number: 1, lines: 34, plays: 9 }, // src/content/levels/01-creation-and-fall/episode-1.ts
+  { number: 2, lines: 21, plays: 1 }, // episode-2.ts
+]
 
 const server = await startPreview()
 const browser = await launchEdge()
 let failures = 0
 
-async function play(style) {
-  const page = await (await browser.newContext({ viewport: { width: 1280, height: 720 } })).newPage()
-  const errors = []
-  page.on('pageerror', (e) => errors.push(e.message))
-  await page.goto(screenUrl(server.url, { screen: 'story', style }))
-  await waitForScene(page)
+/** Answers a question by trying each answer with the keyboard until the right one. */
+async function answer(page) {
+  const options = page.locator('.play-choice-option')
+  const count = await options.count()
+  for (let i = 0; i < count; i++) {
+    await options.nth(i).focus()
+    await page.keyboard.press('Enter')
+    await page.waitForTimeout(300)
+    if ((await page.locator('.play-choice-feedback[data-right]').count()) || !(await options.count())) return
+  }
+  throw new Error('no answer to a question was taken as right')
+}
+
+/** Plays one episode from its title card to its end card, then goes on from the end card. */
+async function playEpisode(page, style, { number, lines: expected, plays: expectedPlays }, last) {
   await page.getByRole('button', { name: 'Begin', exact: true }).click()
 
   const story = page.getByRole('region', { name: 'The story' })
   const hint = page.locator('.play-hint-text')
-  const end = page.getByRole('dialog', { name: /Episode 1 complete/ })
+  const end = page.getByRole('dialog', { name: new RegExp(`Episode ${number} complete`) })
   let lines = 0
   let plays = 0
   let thread = false
   const started = Date.now()
 
   while (!(await end.isVisible())) {
-    if (Date.now() - started > 6 * 60_000) throw new Error('the episode took too long: it seems stuck')
-    // The golden thread glows once day one has come; find it the first time it shows.
+    if (Date.now() - started > 6 * 60_000) {
+      await page.screenshot({ path: `shots/stuck-${style}.png` })
+      throw new Error(`Episode ${number} took too long: it seems stuck (see shots/stuck-${style}.png)`)
+    }
+    // The golden thread glows from a certain scene on; find it the first time it shows.
     const spot = page.getByRole('button', { name: /Something here is glowing/ })
     if (!thread && (await spot.isVisible())) {
       await spot.click()
@@ -51,10 +66,10 @@ async function play(style) {
     if (await story.isVisible()) {
       lines++
       await page.keyboard.press('Space')
-      await page.waitForTimeout(250)
+      // Until the golden thread is found, read slowly enough for its glow to come up.
+      await page.waitForTimeout(thread ? 250 : 1200)
       continue
     }
-    // An interaction: its hint appears after a moment.
     if (await page.locator('.rest').isVisible()) {
       const go = page.getByRole('button', { name: 'Continue', exact: true })
       await go.waitFor({ timeout: 20_000 })
@@ -62,34 +77,58 @@ async function play(style) {
       plays++
       continue
     }
+    // A question to answer, in the games played by choosing.
+    if (await page.locator('.play-choice-option').count()) {
+      await answer(page)
+      plays++
+      continue
+    }
+    // An interaction: its hint appears after a moment.
     const text = (await hint.count()) ? await hint.first().innerText() : ''
     const way = Object.entries(KEYS).find(([start]) => text.startsWith(start))?.[1]
     if (way) {
       await page.keyboard.down(way.hold)
       await page.waitForTimeout(way.seconds * 1000)
       await page.keyboard.up(way.hold)
+      plays++
     } else {
+      // Space alone does most interactions, often before their hint has even appeared.
       await page.keyboard.press('Space')
+      plays++
     }
-    plays++
     await page.waitForTimeout(700)
   }
 
-  const toggle = end.getByRole('switch', { name: /I’ve read Genesis 1:1–2:3/ })
+  const toggle = end.getByRole('switch', { name: /I’ve read/ })
   await toggle.check()
   const marked = await toggle.isChecked()
   const found = (await end.textContent()).includes('You found this episode’s golden thread')
-  await end.getByRole('button', { name: 'Back to the menu' }).click()
-  await page.getByRole('navigation', { name: 'Main menu' }).waitFor()
+  await end.getByRole('button', { name: last ? 'Back to the menu' : `On to Episode ${number + 1}` }).click()
 
-  const results = [
+  return [
     // The end card only opens after the last line, so reaching it means every line was read.
-    [lines > LINES * 0.8, `read every line to the end card (${lines} of the ${LINES} lines moved on by hand)`],
-    [plays >= 9, `did every interaction (${plays} steps)`],
-    [thread && found, 'found the golden thread, and the episode remembers it'],
-    [marked, 'marked “I’ve read it”'],
-    [errors.length === 0, `no errors in the page${errors.length ? `: ${errors.join(' | ')}` : ''}`],
+    [lines > expected * 0.8, `Episode ${number}: read every line to the end card (${lines} of the ${expected} lines moved on by hand)`],
+    [plays >= expectedPlays, `Episode ${number}: did every interaction (${plays} steps)`],
+    [thread && found, `Episode ${number}: found the golden thread, and the episode remembers it`],
+    [marked, `Episode ${number}: marked “I’ve read it”`],
   ]
+}
+
+async function play(style) {
+  const page = await (await browser.newContext({ viewport: { width: 1280, height: 720 } })).newPage()
+  const errors = []
+  page.on('pageerror', (e) => errors.push(e.message))
+  await page.goto(screenUrl(server.url, { screen: 'story', style }))
+  await waitForScene(page)
+
+  const results = []
+  for (const [i, episode] of EPISODES.entries()) {
+    if (i > 0) await waitForScene(page)
+    results.push(...(await playEpisode(page, style, episode, i === EPISODES.length - 1)))
+  }
+  await page.getByRole('navigation', { name: 'Main menu' }).waitFor()
+  results.push([errors.length === 0, `no errors in the page${errors.length ? `: ${errors.join(' | ')}` : ''}`])
+
   for (const [ok, what] of results) {
     console.log(`${ok ? 'ok  ' : 'FAIL'} ${style}: ${what}`)
     if (!ok) failures++
@@ -115,4 +154,4 @@ if (failures) {
   console.error(`${failures} playthrough check(s) failed.`)
   process.exit(1)
 }
-console.log('Episode 1 plays from start to finish in both styles.')
+console.log(`Episodes 1–${EPISODES.length} play from start to finish in both styles.`)

@@ -39,6 +39,11 @@ export function Quote({ refText, as = 'p' }: { refText: string; as?: 'p' | 'bloc
 /** One line of the story: our retelling, or an exact quotation. */
 export function Line({ beat }: { beat: Beat }) {
   if (beat.kind === 'verse') return <Quote refText={beat.ref} />
-  if (beat.kind === 'say') return <p className="narration-text">{beat.text}</p>
+  if (beat.kind === 'say')
+    return (
+      <p className="narration-text">
+        <Scripture text={beat.text} />
+      </p>
+    )
   return null
 }

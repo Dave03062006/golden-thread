@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from 'react'
 import { gameClock } from '../../engine/clock'
-import type { GameKey, Hint } from '../../minigames/framework'
+import type { Choice, GameKey, Hint } from '../../minigames/framework'
 import type { GameRunner } from '../../minigames/runner'
 import { Button } from '../../ui/components'
 
@@ -25,7 +25,8 @@ const HINT_DELAY_MS = 1400
  * The layer over the scene during an interactive moment. It turns touch, mouse and keys
  * into the game's input, shows the instruction (for both touch and keys), and draws the
  * small things that belong to the gesture rather than to the world: the sparkles left by
- * a sweeping hand, and the quiet "Rest" of the seventh day.
+ * a sweeping hand, the quiet "Rest" of the seventh day, and the answers to pick from in
+ * the games played by choosing.
  */
 export function PlayLayer({ runner, gentle }: { runner: GameRunner; gentle: boolean }) {
   const layerRef = useRef<HTMLDivElement>(null)
@@ -34,6 +35,7 @@ export function PlayLayer({ runner, gentle }: { runner: GameRunner; gentle: bool
   const [hint, setHint] = useState<Hint | null>(runner.view.hint)
   const [restReady, setRestReady] = useState(false)
   const [hintDue, setHintDue] = useState(gentle)
+  const [choice, setChoice] = useState<Choice | null>(runner.view.choice ?? null)
 
   // The instruction waits a moment, so a player who already knows what to do isn't told.
   useEffect(() => {
@@ -46,6 +48,7 @@ export function PlayLayer({ runner, gentle }: { runner: GameRunner; gentle: bool
   useEffect(() => {
     let shownHint = runner.view.hint
     let shownReady = false
+    let shownChoice = runner.view.choice ?? null
     const pool: HTMLSpanElement[] = []
     return gameClock.subscribe(
       () => {
@@ -53,6 +56,10 @@ export function PlayLayer({ runner, gentle }: { runner: GameRunner; gentle: bool
         if (view.hint !== shownHint) {
           shownHint = view.hint
           setHint(view.hint)
+        }
+        if ((view.choice ?? null) !== shownChoice) {
+          shownChoice = view.choice ?? null
+          setChoice(shownChoice)
         }
         if (!!view.restReady !== shownReady) {
           shownReady = !!view.restReady
@@ -134,6 +141,7 @@ export function PlayLayer({ runner, gentle }: { runner: GameRunner; gentle: bool
           </span>
         </output>
       )}
+      {choice && <ChoiceCard choice={choice} choose={(option) => runner.queue({ kind: 'choose', option })} />}
       {resting && (
         <div className="rest">
           <p className="rest-word">Rest</p>
@@ -145,5 +153,36 @@ export function PlayLayer({ runner, gentle }: { runner: GameRunner; gentle: bool
         </div>
       )}
     </div>
+  )
+}
+
+/**
+ * A question with its answers, as buttons. A new question takes the keyboard's focus, so
+ * Tab and Enter answer it; after the right answer only the answer stays.
+ */
+function ChoiceCard({ choice, choose }: { choice: Choice; choose: (option: string) => void }) {
+  const first = useRef<HTMLButtonElement>(null)
+  const answered = choice.feedback?.right ?? false
+
+  useEffect(() => {
+    first.current?.focus({ preventScroll: true })
+  }, [choice.id])
+
+  return (
+    <fieldset className="play-choice" onPointerDown={(event) => event.stopPropagation()}>
+      <legend className="play-choice-question">{choice.question}</legend>
+      {!answered && (
+        <div className="play-choice-options">
+          {choice.options.map((option, i) => (
+            <button key={option.id} ref={i === 0 ? first : undefined} type="button" className="play-choice-option" onClick={() => choose(option.id)}>
+              {option.text}
+            </button>
+          ))}
+        </div>
+      )}
+      <output className="play-choice-feedback" data-right={answered || undefined} aria-live="polite">
+        {choice.feedback?.text}
+      </output>
+    </fieldset>
   )
 }

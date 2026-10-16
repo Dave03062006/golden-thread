@@ -19,6 +19,8 @@ export type GameInput =
   /** A finger or the mouse, at a point in the frame (0–1 across and down). */
   | { kind: 'pointer'; phase: 'down' | 'move' | 'up'; x: number; y: number }
   | { kind: 'key'; key: GameKey; down: boolean }
+  /** One of the choices the game is offering was picked (see `GameView.choice`). */
+  | { kind: 'choose'; option: string }
 
 export interface GameContext {
   /** Gentle mode: slower and more forgiving, so nobody gets stuck (spec §9.7). */
@@ -35,6 +37,20 @@ export interface Hint {
   gesture: 'hold' | 'swipe-up' | 'swipe-down' | 'drag' | 'sweep' | 'tap' | 'rest'
 }
 
+/**
+ * A question with a few answers to pick from, for the games played by choosing (naming
+ * the animals, spotting the twist). The same object is kept while nothing about it
+ * changes, so the screen only redraws it when it does.
+ */
+export interface Choice {
+  /** Which question this is; a new id is a new question. */
+  id: string
+  question: string
+  options: { id: string; text: string }[]
+  /** What the last answer brought: a gentle "Not quite", or the answer that fits. */
+  feedback: { right: boolean; text: string } | null
+}
+
 /** What a game shows at one moment. */
 export interface GameView {
   /** Values for scene channels (see scene/timeline.ts), blended smoothly between steps. */
@@ -43,6 +59,8 @@ export interface GameView {
   hint: Hint | null
   /** Little sparkles to show where the player's hand has passed, in frame coordinates. */
   marks?: { x: number; y: number; age: number }[]
+  /** A question to answer by choosing, shown over the scene. */
+  choice?: Choice | null
   /** For a quiet moment of rest: whether the player may now move on. */
   restReady?: boolean
   /** Whether the interaction is finished. */

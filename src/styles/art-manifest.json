@@ -59,6 +59,30 @@
     },
     "darkness": {
       "hash": "750f82b3"
+    },
+    "eden-sky": {
+      "hash": "5abfd937"
+    },
+    "eden-hills": {
+      "hash": "c967c5e2"
+    },
+    "eden-trees": {
+      "hash": "2d1064c5"
+    },
+    "eden-ground": {
+      "hash": "118d5507"
+    },
+    "eden-meadow": {
+      "hash": "73399f41"
+    },
+    "eden-river": {
+      "hash": "7999032a"
+    },
+    "eden-mist": {
+      "hash": "f0f6b9c4"
+    },
+    "eden-front": {
+      "hash": "05af7699"
     }
   },
   "paperProps": {
@@ -96,7 +120,7 @@
       "hash": "0c3e5e0d"
     },
     "man": {
-      "hash": "b0293ee6"
+      "hash": "a58bf65d"
     },
     "woman": {
       "hash": "929e3949"
@@ -115,6 +139,27 @@
     },
     "first-light": {
       "hash": "1bf73b2a"
+    },
+    "tree-knowledge": {
+      "hash": "61b86fe4"
+    },
+    "tree-of-life": {
+      "hash": "fa95d440"
+    },
+    "eagle": {
+      "hash": "f585818e"
+    },
+    "horse": {
+      "hash": "1bfab1db"
+    },
+    "hare": {
+      "hash": "54faa3ce"
+    },
+    "glory": {
+      "hash": "390b28bf"
+    },
+    "breath": {
+      "hash": "94fd6857"
     }
   },
   "pixelLayers": {
@@ -177,6 +222,30 @@
     },
     "darkness": {
       "hash": "821247c5"
+    },
+    "eden-sky": {
+      "hash": "9a4ff83a"
+    },
+    "eden-hills": {
+      "hash": "e2315def"
+    },
+    "eden-trees": {
+      "hash": "939ab6bd"
+    },
+    "eden-ground": {
+      "hash": "0a33f659"
+    },
+    "eden-meadow": {
+      "hash": "3e37f3af"
+    },
+    "eden-river": {
+      "hash": "722a6d0d"
+    },
+    "eden-mist": {
+      "hash": "96451e65"
+    },
+    "eden-front": {
+      "hash": "832a5f4d"
     }
   }
 }

@@ -19,10 +19,21 @@ function breathing(part: string, _pose: string, time: number): PartMotion {
   return {}
 }
 
+/**
+ * The man in the deep sleep the LORD God cast upon him (Genesis 2:21): lying on his side
+ * on the ground, his arm along him, breathing slowly.
+ */
+function manMotion(part: string, pose: string, time: number): PartMotion {
+  if (pose !== 'sleep') return breathing(part, pose, time)
+  const breath = Math.sin(time * TAU * 0.16)
+  if (part === 'body') return { rotate: -90, y: 48 + 0.6 * breath }
+  return { opacity: 0 }
+}
+
 const man: PaperPropArt = {
   box: { x: 0, y: 0, w: 40, h: 120 },
   facing: -1,
-  poses: ['idle'],
+  poses: ['idle', 'sleep'],
   anchor: 'base',
   parts: [
     {
@@ -53,7 +64,7 @@ const man: PaperPropArt = {
         <path d="M9.8 30L9.9 57.6" stroke="${RIM}" stroke-width="1.4" stroke-linecap="round" opacity=".92"/>`,
     },
   ],
-  animate: breathing,
+  animate: manMotion,
 }
 
 const woman: PaperPropArt = {

@@ -249,6 +249,81 @@
   font-size: 0.8em;
 }
 
+/* The answers to pick from, beside the man and the animal before him. */
+.play-choice {
+  position: absolute;
+  left: 3%;
+  bottom: 6%;
+  display: grid;
+  gap: 0.6rem;
+  width: min(40%, 26rem);
+  min-width: 0;
+  margin: 0;
+  padding: 0.9rem 1rem 1rem;
+  border: 0;
+  border-radius: 1rem;
+  background: rgb(16 12 48 / 0.72);
+  box-shadow: 0 0 0 1px rgb(255 224 138 / 0.4);
+  color: var(--text);
+  animation: intro-in 0.5s ease-out;
+}
+
+.play-choice-question {
+  float: left;
+  margin: 0;
+  padding: 0;
+  color: var(--text-2);
+  font-size: 0.9em;
+}
+
+.play-choice-options {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.play-choice-option {
+  padding: 0.6rem 0.8rem;
+  border: 0;
+  border-radius: 0.6rem;
+  background: rgb(255 255 255 / 0.1);
+  box-shadow: inset 0 0 0 1px rgb(255 224 138 / 0.3);
+  color: inherit;
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.play-choice-option:hover {
+  background: rgb(255 255 255 / 0.18);
+}
+
+.play-choice-option:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.play-choice-feedback {
+  min-height: 1.3em;
+  color: var(--text-2);
+  font-style: italic;
+}
+
+.play-choice-feedback[data-right] {
+  color: #ffe08a;
+  font-size: 1.4em;
+  font-style: normal;
+}
+
+@media (max-width: 40rem) {
+  .play-choice {
+    top: 3%;
+    right: 3%;
+    bottom: auto;
+    width: auto;
+  }
+}
+
 /* A small guide showing the gesture: a dot that moves the way the hand should. */
 .play-gesture {
   position: relative;
@@ -618,6 +693,35 @@
     box-shadow:
       inset 0 0 0 3px #566c86,
       0 0 0 3px #f4f4f4;
+  }
+
+  :scope[data-art-style] .play-choice {
+    border-radius: 0;
+    background: #1a1c2c;
+    box-shadow:
+      inset 0 0 0 3px #566c86,
+      0 0 0 3px #f4f4f4;
+    line-height: 1.5;
+  }
+
+  :scope[data-art-style] .play-choice-option {
+    border-radius: 0;
+    background: #333c57;
+    box-shadow: inset 0 0 0 2px #566c86;
+    transition: none;
+  }
+
+  :scope[data-art-style] .play-choice-option:hover {
+    background: #29366f;
+  }
+
+  :scope[data-art-style] .play-choice-feedback {
+    font-style: normal;
+  }
+
+  :scope[data-art-style] .play-choice-feedback[data-right] {
+    color: #ffcd75;
+    font-size: 1em;
   }
 
   :scope[data-art-style] .play-gesture {

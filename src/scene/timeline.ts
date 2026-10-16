@@ -62,6 +62,8 @@ export function initialValue(scene: SceneDescription, channel: string): number {
       return actor?.grow ?? 1
     case 'facing':
       return actor?.facing ?? 1
+    case 'spread':
+      return actor?.group?.spread ?? 1
     default:
       return 1
   }

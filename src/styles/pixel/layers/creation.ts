@@ -13,7 +13,7 @@ import { drawWater, glints } from './demo'
 const LIGHT = { x: 24, y: 18 }
 
 /** Colors a pixel from a list of bands by a value from 0 to 1, dithering between neighbors. */
-function bandColor(bands: readonly string[], value: number, x: number, y: number): string {
+export function bandColor(bands: readonly string[], value: number, x: number, y: number): string {
   const t = Math.min(0.9999, Math.max(0, value)) * (bands.length - 1)
   const i = Math.floor(t)
   const f = Math.max(0, Math.min(1, (t - i - 0.3) / 0.4))
@@ -21,7 +21,7 @@ function bandColor(bands: readonly string[], value: number, x: number, y: number
 }
 
 /** Fills the whole layer, pixel by pixel, from a function of frame coordinates. */
-function fill(buf: PixelBuffer, colorAt: (x: number, y: number, lx: number, ly: number) => string | null) {
+export function fill(buf: PixelBuffer, colorAt: (x: number, y: number, lx: number, ly: number) => string | null) {
   for (let ly = 0; ly < LAYER_H; ly++) {
     for (let lx = 0; lx < LAYER_W; lx++) {
       const color = colorAt(lx - MARGIN_X, ly - MARGIN_Y, lx, ly)
@@ -37,7 +37,7 @@ const fromLight = (x: number, y: number) => Math.min(1, Math.hypot(x - LIGHT.x, 
 const LAND = [104.4, 94.8, 90.4, 95.6, 101.2, 94.8, 90.4, 94, 99.6, 94, 89.6, 93.6, 103.2]
 
 /** The crest height at frame x, smoothly between the listed points. */
-function crest(heights: readonly number[], x: number): number {
+export function crest(heights: readonly number[], x: number): number {
   const span = (PX_W + MARGIN_X * 4) / (heights.length - 1)
   const t = (x + MARGIN_X * 2) / span
   const i = Math.max(0, Math.min(heights.length - 2, Math.floor(t)))
@@ -47,7 +47,7 @@ function crest(heights: readonly number[], x: number): number {
 }
 
 /** Hills: a lit rim along the crest where the slope faces the light, a body, and a darker lower band. */
-function drawHills(buf: PixelBuffer, heights: readonly number[], lift: number, rimLit: string, rimShade: string, body: string, deep: string) {
+export function drawHills(buf: PixelBuffer, heights: readonly number[], lift: number, rimLit: string, rimShade: string, body: string, deep: string) {
   for (let x = -MARGIN_X; x < PX_W + MARGIN_X; x++) {
     const top = Math.round(crest(heights, x) + lift)
     const facingLight = crest(heights, x + 1) >= crest(heights, x - 1)

@@ -3,10 +3,12 @@ import type { StyleArtIndex } from '../contract'
 import type { Box } from './frame'
 import { creationLayers } from './layers/creation'
 import { demoLayers } from './layers/demo'
+import { gardenLayers } from './layers/garden'
 import { creationProps } from './props/creation'
 import { dove } from './props/dove'
 import { people } from './characters/people'
 import { animals } from './props/animals'
+import { gardenProps } from './props/garden'
 
 export { FRAME_H, FRAME_W, type Box } from './frame'
 
@@ -63,9 +65,9 @@ export interface PaperPropArt {
   shadow?: boolean
 }
 
-export const paperLayers: Record<string, PaperLayerArt> = { ...demoLayers, ...creationLayers }
+export const paperLayers: Record<string, PaperLayerArt> = { ...demoLayers, ...creationLayers, ...gardenLayers }
 
-export const paperProps: Record<string, PaperPropArt> = { dove, ...creationProps, ...animals, ...people }
+export const paperProps: Record<string, PaperPropArt> = { dove, ...creationProps, ...animals, ...gardenProps, ...people }
 
 /**
  * Where a part is at `time`, blending from the previous pose into the current one, so

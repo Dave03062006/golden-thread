@@ -60,4 +60,21 @@ const woman = standing(
   29,
 )
 
+/**
+ * The man in the deep sleep the LORD God cast upon him (Genesis 2:21): lying on the
+ * ground with his head to the left, his chest rising and falling.
+ */
+man.poses.sleep = {
+  frames: [0, 1].map((lift) =>
+    sprite(31, 7, (g) => {
+      g.ellipse(3.6, 3.6, 2.7, 2.6, 'S').ellipse(2.6, 3, 1.6, 2.3, 'H')
+      g.rect(6, 4, 2, 2, 'S')
+      g.rect(8, 3, 10, 4, 'S').rect(10, 3 - lift, 6, 1, 'S')
+      g.rect(18, 4, 11, 3, 'S').rect(29, 2, 2, 5, 'S')
+      g.rim('S', 'R', 'top')
+    }),
+  ),
+  fps: 0.32,
+}
+
 export const people: Record<string, PixelSpriteArt> = { man, woman }

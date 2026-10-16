@@ -69,6 +69,8 @@ export interface ActorGroup {
   seed: number
   /** Each one bobs up and down by this much, out of step with the others. */
   bob?: number
+  /** How far they have spread from the middle at first, from 0 (all in one spot) to 1. */
+  spread?: number
 }
 
 export interface CameraTrack {

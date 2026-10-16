@@ -1,12 +1,13 @@
 import type { SceneDescription } from '../../../scene/types'
 import type { Episode, Level, WhereWhen } from '../../types'
 import { episode1 } from './episode-1'
+import { episode2 } from './episode-2'
 import { level1Music } from './music'
 
 /**
  * Level 1 · Creation and the Fall (Genesis 1–5), from the approved Level 1 script
- * (docs/scripts/level-01-creation-and-fall.md). Episode 1 is built; the others follow
- * in milestone 4 and are listed here with everything except their scenes.
+ * (docs/scripts/level-01-creation-and-fall.md). Episodes 1 and 2 are built; the others
+ * follow in milestone 4 and are listed here with everything except their scenes.
  */
 
 /** An episode that's written but not built yet: no set and no scenes. */
@@ -19,6 +20,11 @@ function planned(fields: Omit<Episode, 'set' | 'scenes'>): Episode {
     camera: { loop: 'hold', x: [{ at: 0, value: 0 }], y: [{ at: 0, value: 0 }], zoom: [{ at: 0, value: 1 }] },
   }
   return { ...fields, set, scenes: [] }
+}
+
+/** An episode that's built: its written details, with its set and scenes. */
+function built(story: Pick<Episode, 'set' | 'scenes'>, fields: Omit<Episode, 'set' | 'scenes'>): Episode {
+  return { ...fields, ...story }
 }
 
 const where = (when: string, notes: [string, string][], places: string[] = []): WhereWhen => ({
@@ -36,13 +42,13 @@ export const level1: Level = {
   music: level1Music,
   episodes: [
     episode1,
-    planned({
+    built(episode2, {
       id: 'l01-e2',
       number: 2,
       title: 'The Garden of Eden',
       passage: 'GEN 2:4-25',
       minutes: 8,
-      thread: { id: 'marriage-christ-and-the-church', spot: 'sleeping-light', fromScene: 'l01-e2-s5' },
+      thread: { id: 'marriage-christ-and-the-church', spot: 'sleep-light', fromScene: 'l01-e2-s5' },
       whereWhen: where(
         'Before recorded history',
         [

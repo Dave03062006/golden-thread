@@ -27,6 +27,8 @@ const STORY_STATES = [
   { name: 'story · where and when', scene: 'l01-e1-s2', begin: true, open: 'Where & when' },
   { name: 'story · history', scene: 'l01-e1-s3', begin: true, open: 'History' },
   { name: 'story · golden thread', scene: 'l01-e1-s3', begin: true, thread: true },
+  // Three lines in, the animals come to be named: a question with answers to choose.
+  { name: 'story · naming question', scene: 'l01-e2-s4', begin: true, lines: 3, choice: true },
 ]
 
 async function check(page, label) {
@@ -82,6 +84,11 @@ try {
         if (await begin.count()) await begin.click()
         await page.getByRole('region', { name: 'The story' }).waitFor()
       }
+      for (let i = 0; i < (state.lines ?? 0); i++) {
+        await page.waitForTimeout(400)
+        await page.keyboard.press('Space')
+      }
+      if (state.choice) await page.locator('.play-choice-option').first().waitFor({ timeout: 15000 })
       if (state.open) await page.getByRole('button', { name: state.open, exact: true }).click()
       if (state.thread) await page.getByRole('button', { name: /Something here is glowing/ }).click()
       await page.waitForTimeout(700)

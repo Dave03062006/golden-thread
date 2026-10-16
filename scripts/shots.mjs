@@ -7,7 +7,7 @@
 //   npm run shots -- --only=phone       one viewport (laptop | phone | phone-upright)
 //   npm run shots -- --screen=story     one screen (title | menu | settings | scene | story)
 //
-// The story is shot at the start of every scene of Episode 1, after its first line.
+// The story is shot at the start of every scene of the finished episodes, after its first line.
 //
 // Screenshots are saved in the `shots/` folder, which git ignores.
 
@@ -21,8 +21,8 @@ const onlyScreen = value('screen')
 
 const SCREENS = ['title', 'menu', 'settings', 'scene', 'music', 'credits']
 
-/** Every scene of Episode 1 (src/content/levels/01-creation-and-fall/episode-1.ts). */
-const STORY_SCENES = Array.from({ length: 8 }, (_, i) => `l01-e1-s${i + 1}`)
+/** Every scene of the finished episodes (src/content/levels/01-creation-and-fall/). */
+const STORY_SCENES = [...Array.from({ length: 8 }, (_, i) => `l01-e1-s${i + 1}`), ...Array.from({ length: 5 }, (_, i) => `l01-e2-s${i + 1}`)]
 
 /** Opens the story at a scene, past the episode's title card, and lets the first line settle in. */
 async function openStory(page, url, style, scene) {
