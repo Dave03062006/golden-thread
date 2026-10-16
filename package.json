@@ -21,7 +21,8 @@
     "saves": "node scripts/saves.mjs",
     "playthrough": "node scripts/playthrough.mjs",
     "bake": "node scripts/bake-art.mjs",
-    "media": "node scripts/media.mjs"
+    "media": "node scripts/media.mjs",
+    "media:upload": "node scripts/upload-media.mjs"
   },
   "dependencies": {
     "@fontsource-variable/atkinson-hyperlegible-next": "^5.3.0",

@@ -5,6 +5,7 @@ perf/
 media/
 .superpowers/
 .env*
+!.env.example
 *.log
 .DS_Store
 Thumbs.db
