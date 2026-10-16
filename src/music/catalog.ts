@@ -116,6 +116,21 @@ export const TRACKS: Track[] = [
     download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Ave_Maria_-_Parsons.ogg',
     credit: 'Parsons, Ave Maria. St. Paul’s Episcopal Church, Indianapolis (2024). CC0, via Wikimedia Commons.',
   },
+  // Episode 5, in place of the chant Parce Domine: a prayer for mercy, "I call to you".
+  {
+    id: 'bach-ich-ruf',
+    title: 'Ich ruf zu dir, Herr Jesu Christ',
+    work: 'Orgelbüchlein, BWV 639, arranged for piano by Ferruccio Busoni',
+    composer: 'Johann Sebastian Bach',
+    performer: 'Chiara Bertoglio, piano',
+    // The recording's own year isn't given; this is the year it was published on Wikimedia Commons.
+    year: 2016,
+    license: 'cc-by',
+    licenseNote: 'Released by Musopen under the Creative Commons Attribution 3.0 license, as stated on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:J.S._Bach_-_Ich_ruf%27_zu_dir,_Herr,_BWV_639_(for_piano_-_Busoni).ogg',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/J.S._Bach_-_Ich_ruf%27_zu_dir,_Herr,_BWV_639_(for_piano_-_Busoni).ogg',
+    credit: 'Bach, Ich ruf zu dir, Herr Jesu Christ, BWV 639, arranged by Busoni. Chiara Bertoglio, piano (Musopen). CC BY 3.0, via Wikimedia Commons.',
+  },
 ]
 
 const BY_ID = new Map(TRACKS.map((track) => [track.id, track]))

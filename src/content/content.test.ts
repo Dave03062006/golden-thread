@@ -77,4 +77,11 @@ describe.each(built.map((e) => [e.id, e] as const))('episode %s', (_id, episode)
     expect(actors.has(episode.thread.spot)).toBe(true)
     expect(episode.scenes.some((s) => s.id === episode.thread.fromScene)).toBe(true)
   })
+
+  it('keeps its golden thread above the story panel, where it can be tapped', () => {
+    // The panel covers roughly the bottom fifth of the frame; the spot sits on the actor's place.
+    const spot = episode.thread.spot
+    const heights = [actors.get(spot)!.y, ...cues.filter((c) => c.target === `actor:${spot}` && c.to.y !== undefined).map((c) => c.to.y!)]
+    expect(heights.filter((y) => y > 0.74)).toEqual([])
+  })
 })

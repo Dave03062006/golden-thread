@@ -104,6 +104,18 @@
     },
     "eden-grey": {
       "hash": "1d9f2b02"
+    },
+    "home-sky": {
+      "hash": "00b6106a"
+    },
+    "home-hills": {
+      "hash": "32d80097"
+    },
+    "home-land": {
+      "hash": "13318c7e"
+    },
+    "home-fold": {
+      "hash": "099283b5"
     }
   },
   "paperProps": {
@@ -202,6 +214,30 @@
     },
     "sign": {
       "hash": "56566000"
+    },
+    "tent": {
+      "hash": "02ea981f"
+    },
+    "altar": {
+      "hash": "790eddda"
+    },
+    "smoke": {
+      "hash": "18fe838a"
+    },
+    "sin": {
+      "hash": "fbf81768"
+    },
+    "ground-glow": {
+      "hash": "7c39d275"
+    },
+    "staff": {
+      "hash": "515ef8a4"
+    },
+    "cain": {
+      "hash": "b694c234"
+    },
+    "abel": {
+      "hash": "c7e4b4e7"
     }
   },
   "pixelLayers": {
@@ -309,6 +345,18 @@
     },
     "eden-grey": {
       "hash": "8bd50605"
+    },
+    "home-sky": {
+      "hash": "e297fc8d"
+    },
+    "home-hills": {
+      "hash": "7c1050c6"
+    },
+    "home-land": {
+      "hash": "898eef12"
+    },
+    "home-fold": {
+      "hash": "a066fbd8"
     }
   }
 }

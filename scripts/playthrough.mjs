@@ -6,6 +6,8 @@
 // Usage (build first):
 //   npm run build
 //   npm run playthrough
+//   npm run playthrough -- --style=pixel     one style only
+//   npm run playthrough -- --from=5          from Episode 5 on
 
 import { STYLES, launchEdge, screenUrl, startPreview, waitForScene } from './lib/browser.mjs'
 
@@ -21,7 +23,11 @@ const EPISODES = [
   { number: 2, lines: 21, plays: 1 }, // episode-2.ts
   { number: 3, lines: 19, plays: 1 }, // episode-3.ts
   { number: 4, lines: 16, plays: 1 }, // episode-4.ts
+  { number: 5, lines: 24, plays: 1 }, // episode-5.ts
 ]
+
+/** `--from=N` starts at episode N instead of the beginning. */
+const from = Number(process.argv.find((a) => a.startsWith('--from='))?.split('=')[1] ?? 1)
 
 const server = await startPreview()
 const browser = await launchEdge()
@@ -88,9 +94,16 @@ async function playEpisode(page, style, { number, lines: expected, plays: expect
       if (await go.count()) await go.click({ timeout: 3000 }).catch(() => {})
       else {
         // Each phrase in turn, true or twisted, as a player reading along would.
-        const part = page.locator('.play-compare-part').nth(tapped++)
-        await part.focus()
-        await page.keyboard.press('Enter')
+        // (The card may be closing just as the last find is made: then there's nothing to tap.)
+        const parts = page.locator('.play-compare-part')
+        if (tapped < (await parts.count())) {
+          const focused = await parts
+            .nth(tapped++)
+            .focus({ timeout: 3000 })
+            .then(() => true)
+            .catch(() => false)
+          if (focused) await page.keyboard.press('Enter')
+        }
         await page.waitForTimeout(200)
       }
       plays++
@@ -137,14 +150,16 @@ async function play(style) {
   const page = await (await browser.newContext({ viewport: { width: 1280, height: 720 } })).newPage()
   const errors = []
   page.on('pageerror', (e) => errors.push(e.message))
-  await page.goto(screenUrl(server.url, { screen: 'story', style }))
+  // Starting from a later episode opens the story at its first scene.
+  const playing = EPISODES.filter((e) => e.number >= from)
+  await page.goto(screenUrl(server.url, { screen: 'story', style, extra: from > 1 ? `&scene=l01-e${from}-s1` : '' }))
   await waitForScene(page)
 
   const results = []
   try {
-    for (const [i, episode] of EPISODES.entries()) {
+    for (const [i, episode] of playing.entries()) {
       if (i > 0) await waitForScene(page)
-      results.push(...(await playEpisode(page, style, episode, i === EPISODES.length - 1)))
+      results.push(...(await playEpisode(page, style, episode, i === playing.length - 1)))
     }
   } catch (error) {
     // Show where it stopped, and what had passed so far.
@@ -181,4 +196,4 @@ if (failures) {
   console.error(`${failures} playthrough check(s) failed.`)
   process.exit(1)
 }
-console.log(`Episodes 1–${EPISODES.length} play from start to finish in both styles.`)
+console.log(`Episodes ${from}–${EPISODES.length} play from start to finish.`)

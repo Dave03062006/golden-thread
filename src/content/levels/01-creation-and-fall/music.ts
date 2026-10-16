@@ -9,10 +9,12 @@ import type { LevelMusic } from '../../types'
  * Episode 3 has Allegri's Miserere (Psalm 51) in place of the chant Attende Domine, and
  * Episode 4 Robert Parsons's Ave Maria in place of the chant Ave Maris Stella (both turn
  * "Eva" into "Ave"), by the script's fallback rule: no recording of either chant under an
- * allowed license was found.
+ * allowed license was found. Episode 5 has Bach's chorale prelude "I call to you, Lord
+ * Jesus Christ" in place of the chant Parce Domine: the only recordings of that chant found
+ * are CC BY-SA, which the spec doesn't allow.
  *
- * Still to come (milestones 4 and 5): the chants the script names for Episode 5 and for
- * reflection (Parce Domine, Salve Regina) and Bach's chorale for Episode
+ * Still to come (milestones 4 and 5): the chant the script names for reflection
+ * (Salve Regina) and Bach's chorale for Episode
  * 6, or fitting substitutes where no allowed recording exists.
  */
 export const level1Music: LevelMusic = {
@@ -33,6 +35,7 @@ export const level1Music: LevelMusic = {
     'creation-fairest',
     'allegri-miserere',
     'parsons-ave-maria',
+    'bach-ich-ruf',
   ],
   minigame: ['creation-awake-the-harp', 'creation-heavens-telling'],
   reflection: ['creation-by-thee'],

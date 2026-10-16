@@ -40,7 +40,7 @@ const SECONDS = 10
 const STORY_SECONDS = 8
 
 /** Every scene of the finished episodes (src/content/levels/01-creation-and-fall/). */
-const STORY_SCENES = [...Array.from({ length: 8 }, (_, i) => `l01-e1-s${i + 1}`), ...Array.from({ length: 5 }, (_, i) => `l01-e2-s${i + 1}`), ...Array.from({ length: 6 }, (_, i) => `l01-e3-s${i + 1}`), ...Array.from({ length: 5 }, (_, i) => `l01-e4-s${i + 1}`)]
+const STORY_SCENES = [...Array.from({ length: 8 }, (_, i) => `l01-e1-s${i + 1}`), ...Array.from({ length: 5 }, (_, i) => `l01-e2-s${i + 1}`), ...Array.from({ length: 6 }, (_, i) => `l01-e3-s${i + 1}`), ...Array.from({ length: 5 }, (_, i) => `l01-e4-s${i + 1}`), ...Array.from({ length: 6 }, (_, i) => `l01-e5-s${i + 1}`)]
 const only = args.find((a) => a.startsWith('--only='))?.split('=')[1]
 const scenes = args.find((a) => a.startsWith('--scenes='))?.split('=')[1]
 
@@ -90,7 +90,8 @@ try {
     if (scenario.scene) {
       const begin = page.getByRole('button', { name: 'Begin', exact: true })
       if (await begin.count()) await begin.click()
-      await page.getByRole('region', { name: 'The story' }).waitFor()
+      // The story's first line, or an interaction if the scene opens with one.
+      await page.locator('section.story-panel, .play-layer').first().waitFor()
     }
     await page.waitForTimeout(500)
     await cdp.send('Emulation.setCPUThrottlingRate', { rate: slowdown })
