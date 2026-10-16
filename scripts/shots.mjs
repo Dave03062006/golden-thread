@@ -5,7 +5,7 @@
 //   npm run build
 //   npm run shots                       everything
 //   npm run shots -- --only=phone       one viewport (laptop | phone | phone-upright)
-//   npm run shots -- --screen=story     one screen (title | menu | settings | scene | story)
+//   npm run shots -- --screen=story     one screen (title | menu | settings | scene | story | quiz | …)
 //
 // The story is shot at the start of every scene of the finished episodes, after its first line.
 //
@@ -19,7 +19,7 @@ const value = (name) => args.find((a) => a.startsWith(`--${name}=`))?.split('=')
 const only = value('only')
 const onlyScreen = value('screen')
 
-const SCREENS = ['title', 'menu', 'settings', 'scene', 'music', 'credits']
+const SCREENS = ['title', 'menu', 'settings', 'scene', 'music', 'credits', 'quiz-menu', 'quiz', 'reflection', 'journal', 'ceremony']
 
 /** Every scene of the finished episodes (src/content/levels/01-creation-and-fall/). */
 const STORY_SCENES = [...Array.from({ length: 8 }, (_, i) => `l01-e1-s${i + 1}`), ...Array.from({ length: 5 }, (_, i) => `l01-e2-s${i + 1}`), ...Array.from({ length: 6 }, (_, i) => `l01-e3-s${i + 1}`), ...Array.from({ length: 5 }, (_, i) => `l01-e4-s${i + 1}`), ...Array.from({ length: 6 }, (_, i) => `l01-e5-s${i + 1}`), ...Array.from({ length: 5 }, (_, i) => `l01-e6-s${i + 1}`)]

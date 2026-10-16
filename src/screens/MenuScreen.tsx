@@ -8,8 +8,6 @@ import './screens.css'
 const LATER = [
   { label: 'Cathedral', when: 'Milestone 6' },
   { label: 'World Map', when: 'Milestone 6' },
-  { label: 'Quiz', when: 'Milestone 5' },
-  { label: 'Journal', when: 'Milestone 5' },
 ]
 
 export function MenuScreen() {
@@ -32,6 +30,8 @@ export function MenuScreen() {
           <Button variant="primary" onClick={() => go('story')}>
             {save.position ? 'Continue' : 'Begin'}
           </Button>
+          <Button onClick={() => go('quiz-menu')}>Quiz</Button>
+          <Button onClick={() => openScreen('journal')}>Journal</Button>
           {LATER.map((item) => (
             <Button key={item.label} disabled aria-describedby="menu-later">
               {item.label}
@@ -45,7 +45,7 @@ export function MenuScreen() {
           </Button>
         </nav>
         <p id="menu-later" className="ui-note">
-          Cathedral, World Map, Quiz and Journal arrive in later milestones.
+          The Cathedral and the World Map arrive in the next milestone.
         </p>
       </Panel>
     </main>

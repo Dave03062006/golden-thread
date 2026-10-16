@@ -37,6 +37,29 @@ describe('save slots', () => {
     expect(slots.map((s) => s.state)).toEqual(['empty', 'empty', 'empty'])
   })
 
+  it('keep the journal and the quiz history through a reload, an export and an import', async () => {
+    const store = indexedDbStore('golden-thread-journal-test', 'saves')
+    const played: SaveData = {
+      ...sample(),
+      completedLevels: ['l01'],
+      journal: [{ id: 'l01-reflection', level: 'l01', question: 'Where are you with God today?', text: 'Learning to stop hiding.' + String.fromCharCode(10) + 'Coming back.', at: NOW }],
+      quiz: {
+        l01: {
+          best: 8,
+          runs: [{ seed: 42, score: 8, at: NOW, total: 10, questions: ['l01-q01', 'l01-q14'], answers: ['Day 4', ['tigris', 'euphrates']] }],
+          missed: { 'l01-q27': 1 },
+        },
+      },
+    }
+    await createSaveSystem(store).write(0, played)
+    // A fresh save system on the same database, as after reloading the page.
+    const reloaded = createSaveSystem(store)
+    expect(okData(await reloaded.load(0)).data).toEqual(played)
+    const imported = await reloaded.importText(reloaded.exportText(played, NOW), 2)
+    expect(imported).toEqual(played)
+    expect(okData(await reloaded.load(2)).data).toEqual(played)
+  })
+
   it('write and load a save', async () => {
     const saves = createSaveSystem(memoryStore())
     await saves.write(1, sample())

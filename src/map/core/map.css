@@ -1,0 +1,206 @@
+/* The map picker: a drawing of the Bible lands, and the same places as buttons. */
+
+.map-picker {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.map-view {
+  display: block;
+  width: 100%;
+  max-height: 46vh;
+  border-radius: 0.6rem;
+  box-shadow: 0 0 0 1px rgb(255 224 138 / 0.35);
+}
+
+.map-land {
+  fill: #e8d8b0;
+}
+
+.map-sea {
+  fill: #8fbcd4;
+  stroke: #6a98b4;
+  stroke-width: 1.5;
+}
+
+.map-sea-label {
+  fill: #3e6a88;
+  font-size: 15px;
+  font-style: italic;
+  pointer-events: none;
+}
+
+.map-river-line {
+  fill: none;
+  stroke: #5a98c8;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.map-river[data-target] .map-river-line {
+  stroke-width: 5;
+}
+
+/* A wide invisible line, so a river is easy to tap. */
+.map-river-hit {
+  fill: none;
+  stroke: transparent;
+  stroke-width: 26;
+  stroke-linecap: round;
+  cursor: pointer;
+}
+
+.map-area {
+  fill: rgb(201 145 70 / 0.18);
+  stroke: #a07040;
+  stroke-width: 2;
+  stroke-dasharray: 6 4;
+  cursor: pointer;
+  transition: fill 0.2s;
+}
+
+.map-area:hover {
+  fill: rgb(201 145 70 / 0.32);
+}
+
+.map-area[data-state='selected'] {
+  fill: rgb(255 200 90 / 0.5);
+  stroke: #c88a20;
+  stroke-dasharray: none;
+}
+
+.map-river[data-state='selected'] .map-river-line {
+  stroke: #e0a020;
+  stroke-width: 7;
+}
+
+.map-area[data-state='right'] {
+  fill: rgb(110 190 110 / 0.5);
+  stroke: #3a8a3a;
+  stroke-dasharray: none;
+}
+
+.map-river[data-state='right'] .map-river-line {
+  stroke: #3a9a4a;
+  stroke-width: 7;
+}
+
+.map-area[data-state='wrong'] {
+  fill: rgb(200 100 100 / 0.4);
+  stroke: #a04040;
+}
+
+.map-river[data-state='wrong'] .map-river-line {
+  stroke: #b04848;
+  stroke-width: 7;
+}
+
+.map-eden circle {
+  fill: none;
+  stroke: #7a4a8a;
+  stroke-width: 2;
+  stroke-dasharray: 4 4;
+}
+
+.map-eden text {
+  fill: #5a2e6a;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.map-choices {
+  display: flex;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.map-choice {
+  padding: 0.4rem 0.8rem;
+  border: 0;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.1);
+  box-shadow: inset 0 0 0 1px rgb(255 224 138 / 0.3);
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.map-choice[aria-pressed='true'] {
+  background: rgb(255 200 90 / 0.3);
+  box-shadow: inset 0 0 0 2px var(--accent);
+}
+
+.map-choice[data-state='right'] {
+  background: rgb(110 190 110 / 0.3);
+  box-shadow: inset 0 0 0 2px #6ac06a;
+}
+
+.map-choice[data-state='wrong'] {
+  background: rgb(200 100 100 / 0.3);
+  box-shadow: inset 0 0 0 2px #d07070;
+}
+
+.map-choice:disabled {
+  cursor: default;
+}
+
+.map-choice:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* In pixel art: flat palette colors, hard edges, square corners. */
+@scope ([data-art-style='pixel']) to ([data-art-style]) {
+  :scope[data-art-style] .map-view {
+    border-radius: 0;
+    box-shadow: 0 0 0 3px #f4f4f4;
+    shape-rendering: crispEdges;
+  }
+
+  :scope[data-art-style] .map-land {
+    fill: #e0b46e;
+  }
+
+  :scope[data-art-style] .map-sea {
+    fill: #3b5dc9;
+    stroke: #29366f;
+    stroke-width: 3;
+  }
+
+  :scope[data-art-style] .map-sea-label {
+    fill: #73eff7;
+    font-style: normal;
+  }
+
+  :scope[data-art-style] .map-river-line {
+    stroke: #41a6f6;
+    stroke-linecap: square;
+    stroke-linejoin: miter;
+  }
+
+  :scope[data-art-style] .map-choice {
+    border-radius: 0;
+    background: #333c57;
+    box-shadow: inset 0 0 0 2px #566c86;
+  }
+
+  :scope[data-art-style] .map-choice[aria-pressed='true'] {
+    background: #29366f;
+    box-shadow: inset 0 0 0 2px #ffcd75;
+  }
+
+  :scope[data-art-style] .map-choice[data-state='right'] {
+    background: #257179;
+    box-shadow: inset 0 0 0 2px #a7f070;
+  }
+
+  :scope[data-art-style] .map-choice[data-state='wrong'] {
+    background: #5d275d;
+    box-shadow: inset 0 0 0 2px #ef7d57;
+  }
+}

@@ -5,7 +5,12 @@ import { gameClock } from '../engine/clock'
 import { useSettings } from '../engine/settings'
 import { MenuScreen } from '../screens/MenuScreen'
 import { SceneScreen } from '../screens/SceneScreen'
+import { CeremonyScreen } from '../screens/CeremonyScreen'
 import { CreditsScreen } from '../screens/CreditsScreen'
+import { JournalScreen } from '../screens/JournalScreen'
+import { QuizMenuScreen } from '../screens/QuizMenuScreen'
+import { QuizScreen } from '../screens/QuizScreen'
+import { ReflectionScreen } from '../screens/ReflectionScreen'
 import { MusicLibraryScreen } from '../screens/MusicLibraryScreen'
 import { SettingsScreen } from '../screens/SettingsScreen'
 import { NowPlaying } from '../ui/MusicCards'
@@ -38,6 +43,11 @@ const SCREENS = {
   story: StoryScreen,
   music: MusicLibraryScreen,
   credits: CreditsScreen,
+  'quiz-menu': QuizMenuScreen,
+  quiz: QuizScreen,
+  reflection: ReflectionScreen,
+  journal: JournalScreen,
+  ceremony: CeremonyScreen,
 } as const
 
 /**
@@ -65,12 +75,13 @@ export function App() {
     return () => gameClock.stop()
   }, [])
 
-  // Away from a story, the calm music of the menus plays (a story sets its own).
+  // Away from a story, the quiz and reflection, the calm music of the menus plays (those set their own).
   const returnTo = useApp((s) => s.returnTo)
-  const inStory = screen === 'story' || (returnTo === 'story' && (screen === 'settings' || screen === 'music'))
+  const ownMusic =
+    screen === 'story' || screen === 'quiz' || screen === 'reflection' || (returnTo === 'story' && (screen === 'settings' || screen === 'music' || screen === 'journal'))
   useEffect(() => {
-    if (!inStory) setMusicPlace({ kind: 'hub' })
-  }, [inStory])
+    if (!ownMusic) setMusicPlace({ kind: 'hub' })
+  }, [ownMusic])
 
   const Current = SCREENS[screen]
   return (

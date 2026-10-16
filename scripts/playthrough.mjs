@@ -1,7 +1,8 @@
 // Plays every finished episode in a real browser, in both art styles, the way a keyboard
 // player would: reading every line, doing every interaction with the keys, finding each
-// golden thread, marking "I've read it", going on to the next episode, and finishing at
-// the menu. Fails if the story gets stuck anywhere or something it needs is missing.
+// golden thread, marking "I've read it", going on to the next episode, then the level's
+// end (the quiz, reflection and prayer, the ceremony), and finishing at the menu. Fails
+// if the story gets stuck anywhere or something it needs is missing.
 //
 // Usage (build first):
 //   npm run build
@@ -136,7 +137,8 @@ async function playEpisode(page, style, { number, lines: expected, plays: expect
   await toggle.check()
   const marked = await toggle.isChecked()
   const found = (await end.textContent()).includes('You found this episode’s golden thread')
-  await end.getByRole('button', { name: last ? 'Back to the menu' : `On to Episode ${number + 1}` }).click()
+  // After the level's last episode comes its end: the quiz first.
+  await end.getByRole('button', { name: number === LAST ? 'On to the quiz' : last ? 'Back to the menu' : `On to Episode ${number + 1}` }).click()
 
   return [
     // The end card only opens after the last line, so reaching it means every line was read.
@@ -144,6 +146,53 @@ async function playEpisode(page, style, { number, lines: expected, plays: expect
     [plays >= expectedPlays, `Episode ${number}: did every interaction (${plays} steps)`],
     [thread && found, `Episode ${number}: found the golden thread, and the episode remembers it`],
     [marked, `Episode ${number}: marked “I’ve read it”`],
+  ]
+}
+
+/** Level 1's last episode, after which the level's end follows (spec §3.3). */
+const LAST = 6
+const REFLECTION = 'I want to stop hiding, and walk with God.'
+
+/**
+ * The end of Level 1: the quiz (each question answered as it comes, right or not), its
+ * review, reflection and prayer with a few words for the journal, the window ceremony, and
+ * the journal keeping what was written.
+ */
+async function levelEnd(page) {
+  let answered = 0
+  const results = page.locator('.quiz-results')
+  while (!(await results.isVisible())) {
+    await page.locator('.quiz-card').waitFor()
+    const check = page.getByRole('button', { name: /^(Check|Choose \d)$/ })
+    if (await page.locator('.quiz-where').count()) {
+      const need = (await page.getByRole('button', { name: /Choose 2/ }).count()) ? 2 : 1
+      for (let c = 0; c < need; c++) await page.locator('.map-choice').nth(c).click()
+      await check.click()
+    } else if (await page.locator('.quiz-finish').count()) {
+      for (const group of await page.locator('.quiz-words').all()) await group.locator('.quiz-option').first().click()
+      await check.click()
+    } else if (await page.locator('.quiz-order').count()) await check.click()
+    else await page.locator('.quiz-option').first().click()
+    await page.locator('.quiz-next').click()
+    answered++
+    await page.waitForTimeout(150)
+  }
+  await page.getByRole('button', { name: 'Review your answers' }).click()
+  const reviewed = await page.locator('.quiz-review-list > li').count()
+  await page.getByRole('button', { name: 'Back to your score' }).click()
+  await page.getByRole('button', { name: 'On to reflection and prayer' }).click()
+  await page.getByRole('textbox').fill(REFLECTION)
+  await page.getByText('Saved to your journal.').waitFor()
+  await page.getByRole('button', { name: 'Amen' }).click()
+  await page.getByText('Level 1 complete').waitFor()
+  await page.getByRole('button', { name: 'Back to the menu' }).click()
+  await page.getByRole('navigation', { name: 'Main menu' }).getByRole('button', { name: 'Journal' }).click()
+  const kept = await page.getByText(REFLECTION).isVisible()
+  await page.getByRole('button', { name: 'Back' }).click()
+  return [
+    [answered === 10, `Level 1 quiz: answered all ten questions (${answered})`],
+    [reviewed === 10, `Level 1 quiz: "Review your answers" shows the run (${reviewed} answers)`],
+    [kept, 'Level 1 reflection: what was written is kept in the journal'],
   ]
 }
 
@@ -162,6 +211,7 @@ async function play(style) {
       if (i > 0) await waitForScene(page)
       results.push(...(await playEpisode(page, style, episode, i === playing.length - 1)))
     }
+    if (playing.at(-1)?.number === LAST) results.push(...(await levelEnd(page)))
   } catch (error) {
     // Show where it stopped, and what had passed so far.
     await page.screenshot({ path: `shots/failed-${style}.png` })

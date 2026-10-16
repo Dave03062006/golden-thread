@@ -20,6 +20,12 @@ export interface QuizRun {
   seed: number
   score: number
   at: string
+  /** How many questions it asked. */
+  total?: number
+  /** The questions asked, in order, so "Review your answers" can show the run again exactly. */
+  questions?: string[]
+  /** The answers given, in the same order (null for a question left unanswered). */
+  answers?: (string | boolean | string[] | null)[]
 }
 
 export interface QuizRecord {

@@ -80,6 +80,8 @@ export function StoryScreen() {
   const addPlayTime = useApp((s) => s.addPlayTime)
   const go = useApp((s) => s.go)
   const openSettings = useApp((s) => s.openSettings)
+  const openScreen = useApp((s) => s.openScreen)
+  const startLevelEnd = useApp((s) => s.startLevelEnd)
   const closeSave = useApp((s) => s.closeSave)
   const updateSettings = useSettings((s) => s.update)
   const { gentleMode, autoAdvance, readAloud, voiceVolume, musicMode } = useSettings()
@@ -365,6 +367,15 @@ export function StoryScreen() {
           <Button
             onClick={async () => {
               setPanel(null)
+              await commit()
+              openScreen('journal')
+            }}
+          >
+            Journal
+          </Button>
+          <Button
+            onClick={async () => {
+              setPanel(null)
               await closeSave()
             }}
           >
@@ -397,8 +408,9 @@ export function StoryScreen() {
         }}
         onShowThread={() => setPanel('thread')}
         onReplay={() => replay(episode)}
-        onContinue={() => (following ? replay(following) : go('menu'))}
-        continueLabel={following ? `On to Episode ${following.number}` : 'Back to the menu'}
+        // After a level's last episode, its end: the quiz, reflection and prayer, the window ceremony.
+        onContinue={() => (following ? replay(following) : startLevelEnd(level.id))}
+        continueLabel={following ? `On to Episode ${following.number}` : 'On to the quiz'}
       />
     </main>
   )

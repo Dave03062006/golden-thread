@@ -9,7 +9,7 @@ export const saves: SaveSystem = createSaveSystem(
   launch.test || typeof indexedDB === 'undefined' ? memoryStore() : indexedDbStore('golden-thread', 'saves'),
 )
 
-export type Screen = 'title' | 'menu' | 'settings' | 'scene' | 'story' | 'music' | 'credits'
+export type Screen = 'title' | 'menu' | 'settings' | 'scene' | 'story' | 'music' | 'credits' | 'quiz-menu' | 'quiz' | 'reflection' | 'journal' | 'ceremony'
 
 interface AppState {
   screen: Screen
@@ -19,6 +19,15 @@ interface AppState {
   save: SaveData | null
   /** Seconds played since the save was last written. */
   unsavedSeconds: number
+  /** The quiz being taken: a level's id, an Age's ("age:I"), or "all" (see quiz/scopes.ts). */
+  quizScope: string | null
+  /**
+   * At the end of a level (spec §3.3), the level whose quiz, reflection and window ceremony
+   * come in turn. Null when the quiz is taken from the menu.
+   */
+  levelEnd: string | null
+  /** A level's reflection opened again from the journal, outside a level's end. */
+  reflectionLevel: string | null
 
   go(screen: Screen): void
   openSettings(): void
@@ -33,6 +42,12 @@ interface AppState {
   checkpoint(position: Position): Promise<void>
   /** Writes the open save to its slot. */
   commit(): Promise<void>
+  /** Opens a quiz from the menu. */
+  openQuiz(scope: string): void
+  /** The last episode of a level is done: its quiz, then reflection, then the ceremony. */
+  startLevelEnd(level: string): void
+  /** Opens a level's reflection again, to write more (from the journal). */
+  openReflection(level: string): void
 }
 
 export const useApp = create<AppState>()((set, get) => ({
@@ -41,8 +56,22 @@ export const useApp = create<AppState>()((set, get) => ({
   slot: null,
   save: null,
   unsavedSeconds: 0,
+  quizScope: null,
+  levelEnd: null,
+  reflectionLevel: null,
 
   go: (screen) => set({ screen }),
+
+  openReflection: (level) => set({ screen: 'reflection', reflectionLevel: level, levelEnd: null }),
+
+  openQuiz: (scope) => set({ screen: 'quiz', quizScope: scope, levelEnd: null }),
+
+  startLevelEnd: (level) => {
+    const save = get().save
+    if (save && !save.completedLevels.includes(level)) get().changeSave({ completedLevels: [...save.completedLevels, level] })
+    void get().commit()
+    set({ screen: 'quiz', quizScope: level, levelEnd: level })
+  },
 
   openSettings: () => set((state) => ({ screen: 'settings', returnTo: state.screen === 'settings' ? state.returnTo : state.screen })),
 
@@ -78,8 +107,13 @@ export const useApp = create<AppState>()((set, get) => ({
   },
 }))
 
-/** For scripted tests: open a throwaway save straight away. */
+/**
+ * For scripted tests: open a throwaway save straight away. The screens of a level's end
+ * open as if Level 1 has just been finished.
+ */
 export function openTestSave(style: SaveData['style'], screen: Screen) {
   const save = newSave('Test pilgrim', style, new Date().toISOString())
-  useApp.setState({ slot: 0, save, screen, returnTo: 'menu', unsavedSeconds: 0 })
+  const levelEnd = ['quiz-menu', 'quiz', 'reflection', 'ceremony'].includes(screen)
+  if (levelEnd) save.completedLevels = ['l01']
+  useApp.setState({ slot: 0, save, screen, returnTo: 'menu', unsavedSeconds: 0, quizScope: levelEnd ? 'l01' : null, levelEnd: screen === 'quiz-menu' ? null : levelEnd ? 'l01' : null })
 }

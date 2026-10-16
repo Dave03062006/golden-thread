@@ -1,3 +1,4 @@
+import type { Question } from '../quiz/types'
 import type { SceneDescription, StoryScene } from '../scene/types'
 
 /**
@@ -91,4 +92,19 @@ export interface Level {
   passage: string
   episodes: Episode[]
   music: LevelMusic
+  /** The quiz bank: at least 40 questions, every episode with some (spec §5). */
+  quiz: Question[]
+  /** The end of the level's reflection and prayer (spec §3.3). */
+  reflection: Reflection
+}
+
+/** A quiet moment at the end of a level: a verse, a question for one's own life, a prayer. */
+export interface Reflection {
+  /** The verse to ponder. */
+  verse: string
+  question: string
+  /** An original prayer, a line at a time. */
+  prayer: string[]
+  /** A traditional prayer that follows it, like the Glory Be. */
+  traditional?: { name: string; lines: string[] }
 }

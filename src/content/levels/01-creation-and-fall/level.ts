@@ -6,6 +6,7 @@ import { episode4 } from './episode-4'
 import { episode5 } from './episode-5'
 import { episode6 } from './episode-6'
 import { level1Music } from './music'
+import { level1Quiz } from './quiz'
 
 /**
  * Level 1 · Creation and the Fall (Genesis 1–5), from the approved Level 1 script
@@ -30,6 +31,27 @@ export const level1: Level = {
   age: 'I · The Beginning',
   passage: 'GEN 1:1-5:32',
   music: level1Music,
+  quiz: level1Quiz,
+  // From the approved script's "Reflection and prayer".
+  reflection: {
+    verse: 'GEN 3:9',
+    question: 'God came looking for Adam and Eve even after they hid. Where are you with God today? Is there anything you’re hiding from him?',
+    prayer: [
+      'Lord God, Creator of heaven and earth,',
+      'you made me from the dust and filled me with your breath.',
+      'You made all things good, and you made me in your image.',
+      'When I hide from you, come looking for me,',
+      'as you did in the garden.',
+      'Thank you for the promise you spoke on the darkest day:',
+      'that the Woman’s Son would crush the serpent’s head.',
+      'Help me to walk with you, as Enoch did.',
+      'Amen.',
+    ],
+    traditional: {
+      name: 'Glory Be',
+      lines: ['Glory be to the Father, and to the Son, and to the Holy Spirit.', 'As it was in the beginning, is now, and ever shall be, world without end. Amen.'],
+    },
+  },
   episodes: [
     episode1,
     built(episode2, {

@@ -1,0 +1,510 @@
+/* The quiz, reflection and prayer, the journal and the window ceremony. Panels and buttons
+   take their look from the art style (ui/components.css); this sets their layout. */
+
+.quiz-panel,
+.reflection-panel,
+.journal-panel,
+.ceremony-panel {
+  display: grid;
+  gap: 1rem;
+  width: min(46rem, 100%);
+}
+
+.quiz-title {
+  margin: 0;
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.quiz-card {
+  display: grid;
+  gap: 1rem;
+}
+
+.quiz-kicker {
+  color: var(--text-3);
+  font-size: 0.9rem;
+}
+
+.quiz-prompt {
+  /* Whole sentences read best in the body font, not the display capitals. */
+  font-family: var(--font-body);
+  font-size: clamp(1.25rem, 2.8vw, 1.7rem);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.quiz-options {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.quiz-words {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.quiz-option {
+  padding: 0.7rem 1rem;
+  border: 0;
+  border-radius: 0.7rem;
+  background: rgb(255 255 255 / 0.08);
+  box-shadow: inset 0 0 0 1px rgb(255 224 138 / 0.3);
+  color: inherit;
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.quiz-option:hover:not(:disabled) {
+  background: rgb(255 255 255 / 0.15);
+}
+
+.quiz-option:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.quiz-option[aria-pressed='true'] {
+  box-shadow: inset 0 0 0 2px var(--accent);
+}
+
+.quiz-option:disabled {
+  cursor: default;
+}
+
+/* Right and wrong are marked with a sign as well as a color. */
+.quiz-option[data-state='right'],
+.quiz-order-item[data-state='right'] {
+  background: rgb(110 190 110 / 0.25);
+  box-shadow: inset 0 0 0 2px #6ac06a;
+}
+
+.quiz-option[data-state='right']::after,
+.quiz-order-item[data-state='right']::after {
+  content: ' ✓';
+}
+
+.quiz-option[data-state='wrong'],
+.quiz-order-item[data-state='wrong'] {
+  background: rgb(200 100 100 / 0.22);
+  box-shadow: inset 0 0 0 2px #d07070;
+}
+
+.quiz-option[data-state='wrong']::after,
+.quiz-order-item[data-state='wrong']::after {
+  content: ' ✗';
+}
+
+.quiz-feedback {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1rem 1.1rem;
+  border-radius: 0.8rem;
+  background: rgb(255 255 255 / 0.06);
+  box-shadow: inset 0 0 0 1px rgb(255 224 138 / 0.3);
+  animation: quiz-unfold 0.4s ease-out;
+}
+
+@keyframes quiz-unfold {
+  from {
+    opacity: 0;
+    transform: translateY(-0.4rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .quiz-feedback {
+    animation: none;
+  }
+}
+
+.quiz-verdict {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.quiz-feedback[data-right] .quiz-verdict {
+  color: #9ee09e;
+}
+
+.quiz-explanation {
+  color: var(--text-2);
+  font-style: italic;
+}
+
+.quiz-ref {
+  color: var(--accent);
+  font-size: 0.92em;
+}
+
+.quiz-next {
+  justify-self: end;
+}
+
+.quiz-verse {
+  font-size: 1.15em;
+  line-height: 1.7;
+}
+
+.quiz-blank {
+  display: inline-block;
+  min-width: 4.5em;
+  margin: 0 0.2em;
+  padding: 0 0.4em;
+  border-bottom: 2px solid var(--accent);
+  color: var(--accent);
+  text-align: center;
+}
+
+.quiz-order,
+.quiz-where,
+.quiz-finish {
+  display: grid;
+  gap: 0.75rem;
+  justify-items: start;
+}
+
+.quiz-order-list {
+  display: grid;
+  gap: 0.4rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: order;
+  touch-action: none;
+}
+
+.quiz-order-item {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.6rem;
+  background: rgb(255 255 255 / 0.08);
+  box-shadow: inset 0 0 0 1px rgb(255 224 138 / 0.25);
+  counter-increment: order;
+}
+
+.quiz-order-item::before {
+  content: counter(order) '.';
+  color: var(--text-3);
+}
+
+.quiz-order-item[data-dragging] {
+  background: rgb(255 211 110 / 0.22);
+}
+
+.quiz-order-handle {
+  cursor: grab;
+  color: var(--text-3);
+  touch-action: none;
+}
+
+.quiz-order-text {
+  flex: 1;
+}
+
+.quiz-order-moves {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.quiz-order-moves button {
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  border-radius: 0.4rem;
+  background: rgb(255 255 255 / 0.1);
+  color: inherit;
+  cursor: pointer;
+}
+
+.quiz-order-moves button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.quiz-where {
+  justify-items: stretch;
+}
+
+.quiz-where > .ui-button {
+  justify-self: start;
+}
+
+.quiz-results,
+.quiz-review {
+  display: grid;
+  gap: 1rem;
+}
+
+.quiz-results h2,
+.quiz-review h2 {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+}
+
+.quiz-results h2:focus,
+.quiz-review h2:focus {
+  outline: none;
+}
+
+.quiz-stars {
+  font-size: 2.4rem;
+  letter-spacing: 0.15em;
+  color: rgb(255 255 255 / 0.2);
+}
+
+.quiz-stars [data-on] {
+  color: var(--accent);
+  text-shadow: 0 0 1rem rgb(255 211 110 / 0.6);
+}
+
+.quiz-scope .quiz-stars {
+  font-size: 1rem;
+}
+
+.quiz-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.quiz-review-list {
+  display: grid;
+  gap: 0.8rem;
+  padding-left: 1.4rem;
+}
+
+.quiz-review-list li {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.quiz-review-verdict {
+  color: #e8a0a0;
+  font-weight: 600;
+}
+
+.quiz-review-list li[data-right] .quiz-review-verdict {
+  color: #9ee09e;
+}
+
+.quiz-review-prompt {
+  font-size: 1.05em;
+}
+
+.quiz-scopes {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.quiz-scope {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  text-align: start;
+}
+
+.quiz-scope small {
+  color: var(--text-3);
+}
+
+.quiz-locked-title {
+  font-size: 1rem;
+  color: var(--text-2);
+}
+
+.quiz-locked {
+  display: grid;
+  gap: 0.3rem;
+  padding-left: 1.2rem;
+}
+
+/* Reflection and prayer: quiet, roomy, centred on the verse. */
+.reflection-verse {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: clamp(1.5rem, 3.6vw, 2.2rem);
+  line-height: 1.35;
+  font-style: italic;
+  text-align: center;
+}
+
+.reflection-verse:focus {
+  outline: none;
+}
+
+.reflection-ref {
+  color: var(--text-3);
+  text-align: center;
+}
+
+.reflection-question {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.reflection-question label {
+  font-size: 1.1em;
+}
+
+.reflection-question textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 0;
+  border-radius: 0.6rem;
+  background: rgb(255 255 255 / 0.08);
+  box-shadow: inset 0 0 0 1px rgb(255 224 138 / 0.3);
+  color: inherit;
+  font: inherit;
+  resize: vertical;
+}
+
+.reflection-question textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.reflection-prayer {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.reflection-prayer h2 {
+  font-size: 1rem;
+  color: var(--accent);
+}
+
+.reflection-prayer blockquote {
+  margin: 0;
+  padding-left: 1rem;
+  border-left: 2px solid rgb(255 224 138 / 0.4);
+  line-height: 1.6;
+}
+
+/* The journal. */
+.journal-list {
+  display: grid;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.journal-list article {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.journal-list h2 {
+  font-size: 1rem;
+  color: var(--accent);
+}
+
+.journal-question {
+  color: var(--text-2);
+  font-style: italic;
+}
+
+.journal-text {
+  white-space: pre-wrap;
+}
+
+.journal-edit {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* The window ceremony's stand-in: a softly glowing arch. */
+.ceremony-panel {
+  justify-items: center;
+  text-align: center;
+}
+
+.ceremony-panel h1:focus {
+  outline: none;
+}
+
+.ceremony-window {
+  width: 8rem;
+  height: 12rem;
+  border-radius: 4rem 4rem 0.4rem 0.4rem;
+  background: radial-gradient(circle at 50% 35%, #fff4d0, #ffd27a 40%, #6a4a9a 75%, #2a1a4a);
+  box-shadow: 0 0 2.5rem rgb(255 211 110 / 0.5);
+}
+
+/* In pixel art: square corners, flat fills, the pixel palette. */
+@scope ([data-art-style='pixel']) to ([data-art-style]) {
+  :scope[data-art-style] .quiz-title {
+    font-size: 0.6rem;
+    letter-spacing: 0.05em;
+  }
+
+  :scope[data-art-style] .quiz-option,
+  :scope[data-art-style] .quiz-order-item,
+  :scope[data-art-style] .quiz-feedback,
+  :scope[data-art-style] .reflection-question textarea,
+  :scope[data-art-style] .quiz-order-moves button {
+    border-radius: 0;
+    background: #333c57;
+    box-shadow: inset 0 0 0 2px #566c86;
+    transition: none;
+  }
+
+  :scope[data-art-style] .quiz-option[data-state='right'],
+  :scope[data-art-style] .quiz-order-item[data-state='right'] {
+    background: #257179;
+    box-shadow: inset 0 0 0 2px #a7f070;
+  }
+
+  :scope[data-art-style] .quiz-option[data-state='wrong'],
+  :scope[data-art-style] .quiz-order-item[data-state='wrong'] {
+    background: #5d275d;
+    box-shadow: inset 0 0 0 2px #ef7d57;
+  }
+
+  :scope[data-art-style] .quiz-feedback {
+    animation-timing-function: steps(3);
+  }
+
+  :scope[data-art-style] .quiz-explanation,
+  :scope[data-art-style] .reflection-verse,
+  :scope[data-art-style] .journal-question {
+    font-style: normal;
+  }
+
+  :scope[data-art-style] .quiz-stars [data-on] {
+    color: #ffcd75;
+    text-shadow: 3px 3px 0 #b13e53;
+  }
+
+  :scope[data-art-style] .reflection-prayer blockquote {
+    border-left: 4px solid #566c86;
+  }
+
+  :scope[data-art-style] .ceremony-window {
+    border-radius: 0;
+    clip-path: polygon(0 30%, 10% 15%, 30% 4%, 50% 0, 70% 4%, 90% 15%, 100% 30%, 100% 100%, 0 100%);
+    background: linear-gradient(#ffcd75, #ef7d57 45%, #5d275d 75%, #1a1c2c);
+    box-shadow: none;
+  }
+}

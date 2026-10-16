@@ -8,7 +8,7 @@
 import AxeBuilder from '@axe-core/playwright'
 import { STYLES, launchEdge, screenUrl, startPreview, waitForFonts } from './lib/browser.mjs'
 
-const SCREENS = ['title', 'menu', 'settings', 'scene', 'music', 'credits']
+const SCREENS = ['title', 'menu', 'settings', 'scene', 'music', 'credits', 'quiz-menu', 'quiz', 'reflection', 'journal', 'ceremony']
 
 /** The Music Library in its worship modes, set up before the page loads. */
 const MUSIC_STATES = [
@@ -61,6 +61,36 @@ try {
       await waitForFonts(page)
       await page.waitForTimeout(600)
       await check(page, `${screen} · ${style}`)
+      await page.close()
+    }
+
+    // A quiz question once answered (its explanation showing), then the review of a whole run.
+    {
+      const page = await context.newPage()
+      await page.goto(screenUrl(server.url, { screen: 'quiz', style }))
+      await waitForFonts(page)
+      for (let i = 0; i < 10; i++) {
+        await page.locator('.quiz-card').waitFor()
+        const checkButton = page.getByRole('button', { name: /^(Check|Choose \d)$/ })
+        if (await page.locator('.quiz-where').count()) {
+          const need = (await page.getByRole('button', { name: /Choose 2/ }).count()) ? 2 : 1
+          for (let c = 0; c < need; c++) await page.locator('.map-choice').nth(c).click()
+          await checkButton.click()
+        } else if (await page.locator('.quiz-finish').count()) {
+          for (const group of await page.locator('.quiz-words').all()) await group.locator('.quiz-option').first().click()
+          await checkButton.click()
+        } else if (await page.locator('.quiz-order').count()) await checkButton.click()
+        else await page.locator('.quiz-option').first().click()
+        await page.locator('.quiz-feedback').waitFor()
+        if (i === 0) {
+          await page.waitForTimeout(500)
+          await check(page, `quiz · answered · ${style}`)
+        }
+        await page.locator('.quiz-next').click()
+      }
+      await page.getByRole('button', { name: 'Review your answers' }).click()
+      await page.waitForTimeout(300)
+      await check(page, `quiz · review · ${style}`)
       await page.close()
     }
 
