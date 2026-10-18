@@ -1,4 +1,7 @@
-// Runs automated accessibility checks (axe) on every screen in both art styles.
+// Runs automated accessibility checks (axe) on every screen in both art styles, then
+// again with the comfort settings all on (the largest text, high contrast and the
+// readable font) on a phone held sideways, where it also checks that nothing runs off
+// the side of the screen.
 // Fails if anything is found.
 //
 // Usage (build first):
@@ -35,6 +38,23 @@ const STORY_STATES = [
   { name: 'story · family tree', scene: 'l01-e6-s3', begin: true, lines: 1, choice: true },
 ]
 
+/** The comfort settings, all on together: the hardest case for every layout. */
+const COMFORT = { textSize: 'larger', highContrast: true, readableFont: true }
+
+/** Whether the page is wider than the window, which with large text means something spilled out. */
+async function checkFits(page, label) {
+  const applied = await page.evaluate(() => ({ ...document.documentElement.dataset }))
+  if (applied.textSize !== 'larger' || applied.contrast !== 'high' || applied.readableFont !== 'true') {
+    problems++
+    console.log(`FAIL ${label}: the comfort settings weren't applied (${JSON.stringify(applied)})`)
+  }
+  const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)
+  if (overflow > 1) {
+    problems++
+    console.log(`FAIL ${label}: the page is ${overflow}px wider than the window`)
+  }
+}
+
 async function check(page, label) {
   const results = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'best-practice']).analyze()
   if (results.violations.length === 0) {
@@ -54,6 +74,8 @@ let problems = 0
 
 try {
   const context = await browser.newContext({ viewport: { width: 1280, height: 800 } })
+  // The comfort pass runs on a phone held sideways, where large text has the least room.
+  const phone = await browser.newContext({ viewport: { width: 844, height: 390 }, isMobile: true, hasTouch: true })
   for (const style of STYLES) {
     for (const screen of SCREENS) {
       const page = await context.newPage()
@@ -128,6 +150,24 @@ try {
       if (state.thread) await page.getByRole('button', { name: /Something here is glowing/ }).click()
       await page.waitForTimeout(700)
       await check(page, `${state.name} · ${style}`)
+      await page.close()
+    }
+
+    for (const screen of [...SCREENS, 'story']) {
+      const page = await phone.newPage()
+      await page.addInitScript((settings) => {
+        localStorage.setItem('golden-thread-settings', JSON.stringify({ state: settings, version: 1 }))
+      }, COMFORT)
+      await page.goto(screenUrl(server.url, { screen, style, extra: screen === 'story' ? '&scene=l01-e1-s2' : '' }))
+      await waitForFonts(page)
+      if (screen === 'story') {
+        await page.locator('.stage[data-settled="true"]').waitFor({ timeout: 15000 })
+        const begin = page.getByRole('button', { name: 'Begin', exact: true })
+        if (await begin.count()) await begin.click()
+      }
+      await page.waitForTimeout(700)
+      await check(page, `${screen} · comfort settings · ${style}`)
+      await checkFits(page, `${screen} · comfort settings · ${style}`)
       await page.close()
     }
   }

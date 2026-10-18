@@ -346,3 +346,71 @@ Current npm versions (npm on this machine uses the npmmirror registry, which mir
 - **Media outside git.** Audio is compressed by `scripts/media.mjs` into the git-ignored `media/` folder and served from `VITE_MEDIA_URL`.
 - **The Level 1 script comes first,** so Dave's review overlaps with the Task 1 build, and nothing is built from unapproved content.
 - **No subagents.** I do the work in this session, as the session guidelines require.
+
+## Results (2026-10-18)
+
+The first build is done: the engine, both art styles, both music modes, saves, the quiz,
+the cathedral and the world map, and Level 1, *Creation and the Fall*, playable from the
+first scene to the window ceremony. Work began on 2026-10-15; each milestone is a commit
+(`git log`).
+
+### What was built
+
+| Milestone | Result |
+|---|---|
+| M1 Skeleton | The clock, input, motion, saves and settings; the stage holding both styles with a live crossfade; title, menu, settings and credits |
+| M2 Story player | The director and timeline, the story screen and Episode 1 with "Let there be…" woven through the six days |
+| M3 Music and sound | Free sacred music with crossfades, cues (Haydn's chord on "and there was light") and ducking; worship songs from the player's files or listen-along links; sounds made by the game itself |
+| M4 Level 1 | Episodes 2–6, each with its interaction: naming the animals, spotting the twist, lights in the dark, Abel's flock, the family tree |
+| M5 Quiz, reflection, journal | 54 questions of seven types, seeded and weighted runs with an exact review, reflection and prayer, the journal |
+| M6 Cathedral and map | The nave of 14 bays and 53 windows, panels set by the window ceremony, golden threads, light by time of day, "Step inside"; the world map as paper relief and pixel map |
+| M7 Polish | The style chooser with live previews, the backup reminder, the accessibility and keyboard passes, code splitting, screenshot baselines, the README and the code tour, `vercel.json` |
+
+### The checks
+
+| Check | Result |
+|---|---|
+| `npm run check` | passes |
+| `npm test` | 487 tests pass |
+| `npm run build` | passes; the first download is 259 kB of script (84 kB compressed), down from 628 kB, with the rest loaded while the title shows |
+| `npm run playthrough` | Level 1 plays from start to finish in both styles, with every interaction, the quiz, reflection, the ceremony and a replay (60 checks) |
+| `npm run a11y` | no problems on any screen in either style, including with the largest text, high contrast and the readable font on a phone held sideways |
+| `npm run keyboard` | every control on every screen can be reached and shows its focus; a game can be started and played with keys only |
+| `npm run saves` | saves survive reloading, exporting and importing |
+| `npm run shots` | 242 screenshots: every screen and scene in both styles, at laptop size, phone landscape and phone upright, plus reduced motion. Their baselines (2.4 MB) are in `baselines/`, waiting for Dave's approval |
+| `npm run perf` | the story scenes, the demo and the map stay within budget. The cathedral was borderline, and this computer's measurements varied too much to tell (two identical runs gave 2.8% and 16% late frames, while other programs were busy); its moving lights were rebuilt to run on the graphics card. To be re-measured on a quiet computer and on Dave's phone |
+
+### Changes from the plan
+
+- **Music substitutes**, by the script's fallback rule, where no recording under an allowed
+  license exists: Allegri's Miserere for *Attende Domine* (Episode 3), Parsons's Ave Maria
+  for *Ave Maris Stella* (Episode 4), Bach's "Ich ruf zu dir" for *Parce Domine* (Episode 5),
+  and Haydn's "By thee with bliss" for the *Salve Regina* (reflection).
+- **RSV-2CE wording** is still to be checked against a printed Ignatius Bible; the
+  verses that may differ are marked `unconfirmed` in `src/content/bible/verses.ts`.
+- **Finish-the-verse questions** use authored wrong words, as the script's own examples
+  did.
+- **The style chooser** appears in every new game, not only the first, since each save
+  keeps its own style.
+- **Code splitting** moved from M6 to M7.
+
+### What two styles cost (for the Level 1 checkpoint, spec §16.2)
+
+- **Code:** each style's art is about as large as the other: about 3,300 lines for
+  Paper & Glass and 2,750 for Pixel (props, layers, characters, cathedral and map),
+  against about 17,000 lines shared by both. Two styles add roughly 12% to the code.
+- **Where the cost is:** every new prop, character and pose is drawn twice, and the
+  bigger moments (the river of Eden, the glory column, the veils of the Fall, the
+  windows) needed tuning separately in each style. The engine, content, games, quiz,
+  saves and every check are shared and cost nothing extra.
+- **What it buys:** the switch at any moment works everywhere, and the tests keep the
+  two in step (every scene's art and poses must exist in both).
+
+### Still to do with Dave
+
+- Approve the screenshot baselines (`shots/index.html` shows them all) and play Level 1
+  from start to finish.
+- Deploy: a GitHub repository and a Vercel project (README, "Publishing"), and the
+  music on Cloudflare R2 (`docs/hosting-music.md`).
+- Check the RSV-2CE verses against a printed Ignatius Bible.
+- The Level 1 checkpoint: whether to continue with both styles.

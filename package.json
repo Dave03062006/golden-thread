@@ -18,6 +18,7 @@
     "shots": "node scripts/shots.mjs",
     "perf": "node scripts/perf.mjs",
     "a11y": "node scripts/a11y.mjs",
+    "keyboard": "node scripts/keyboard.mjs",
     "saves": "node scripts/saves.mjs",
     "playthrough": "node scripts/playthrough.mjs",
     "bake": "node scripts/bake-art.mjs",

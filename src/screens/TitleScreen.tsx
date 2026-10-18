@@ -1,4 +1,5 @@
-import { useCallback, useEffect, useState } from 'react'
+import { Suspense, lazy, useCallback, useEffect, useState } from 'react'
+import { downloadBackup } from '../app/backup'
 import { saves, useApp } from '../app/store'
 import { useSettings } from '../engine/settings'
 import type { SlotState } from '../engine/save/saves'
@@ -6,14 +7,18 @@ import { requestPersistentStorage } from '../engine/save/storage'
 import { SaveError, newSave, type SaveData, type SlotIndex } from '../engine/save/types'
 import { STYLE_NAMES } from '../styles/ids'
 import { Button, Dialog, Panel } from '../ui/components'
-import { downloadText, formatDate, formatPlayTime } from '../ui/format'
-import { describePosition } from './places'
+import { formatDate, formatPlayTime } from '../ui/format'
+import { Whereabouts } from './places'
 import './screens.css'
+
+/** The style chooser draws live scenes, so its code (the renderers and art) loads when it opens. */
+const StyleChooser = lazy(() => import('./StyleChooser').then((m) => ({ default: m.StyleChooser })))
 
 /** The title screen: the game's name and the three save files. */
 export function TitleScreen() {
   const openSave = useApp((s) => s.openSave)
   const lastStyle = useSettings((s) => s.lastStyle)
+  const updateSettings = useSettings((s) => s.update)
   const [slots, setSlots] = useState<SlotState[] | null>(null)
   const [message, setMessage] = useState<string | null>(null)
   const [creating, setCreating] = useState<SlotIndex | null>(null)
@@ -52,9 +57,11 @@ export function TitleScreen() {
     refresh()
   }
 
-  const exportSave = (data: SaveData) => {
-    const safeName = data.name.replace(/[^\w-]+/g, '-').toLowerCase() || 'save'
-    downloadText(`golden-thread-${safeName}.json`, saves.exportText(data, new Date().toISOString()))
+  // The save remembers it was backed up, so the menu's reminder waits.
+  const exportSave = async (slot: SlotIndex, data: SaveData) => {
+    const at = downloadBackup(data)
+    await saves.write(slot, { ...data, lastBackupAt: at })
+    refresh()
   }
 
   const confirmDelete = async () => {
@@ -104,7 +111,9 @@ export function TitleScreen() {
                 <dl className="slot-facts">
                   <div>
                     <dt>Where</dt>
-                    <dd>{describePosition(slot.data.position)}</dd>
+                    <dd>
+                      <Whereabouts position={slot.data.position} />
+                    </dd>
                   </div>
                   <div>
                     <dt>Played</dt>
@@ -124,7 +133,7 @@ export function TitleScreen() {
                   <Button variant="primary" onClick={() => openSave(slot.slot, slot.data)}>
                     Play
                   </Button>
-                  <Button variant="quiet" onClick={() => exportSave(slot.data)}>
+                  <Button variant="quiet" onClick={() => exportSave(slot.slot, slot.data)}>
                     Export
                   </Button>
                   <Button variant="quiet" onClick={() => setDeleting(slot.slot)}>
@@ -151,7 +160,7 @@ export function TitleScreen() {
         <output className="title-message">{message}</output>
       )}
 
-      <Dialog open={creating !== null} title="A new journey" onClose={() => setCreating(null)}>
+      <Dialog open={creating !== null} title="A new journey" wide onClose={() => setCreating(null)}>
         <form
           className="ui-dialog-form"
           onSubmit={(e) => {
@@ -163,7 +172,11 @@ export function TitleScreen() {
             Your name
             <input value={name} maxLength={24} autoComplete="off" onChange={(e) => setName(e.target.value)} />
           </label>
-          <p className="ui-note">You can change the art style at any time in Settings.</p>
+          {/* Choosing shows the whole page in that style too, as a preview. */}
+          <Suspense fallback={<p className="ui-note">Preparing the previews…</p>}>
+            <StyleChooser value={lastStyle} onChange={(style) => updateSettings({ lastStyle: style })} />
+          </Suspense>
+          <p className="ui-note">You can change the art style at any time, even in the middle of a story.</p>
           <div className="ui-dialog-actions">
             <Button variant="quiet" onClick={() => setCreating(null)}>
               Cancel

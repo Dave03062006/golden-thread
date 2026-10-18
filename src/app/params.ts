@@ -9,7 +9,8 @@ type Screen = (typeof SCREENS)[number]
  *
  *   ?test          use a throwaway in-memory save (nothing is stored on the device)
  *   ?screen=menu   start on a screen: title, menu, settings, scene (the demo), story, music, credits,
- *                  quiz-menu, quiz, reflection, journal or ceremony (the last ones as if Level 1 were just finished)
+ *                  quiz-menu, quiz, reflection, journal or ceremony (as if Level 1 were just finished),
+ *                  cathedral or map (partway through Level 1)
  *   ?scene=l01-e1-s3  with ?screen=story, start at this scene
  *   ?style=pixel   art style for the throwaway save
  *   ?perf          record frame timings for the performance script

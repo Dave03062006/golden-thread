@@ -12,7 +12,7 @@
 // The story runs start at each scene of Episode 1 and move on every two seconds, so
 // lines change, transitions run and the interactions are played (Space is their
 // one-button way to play). The hub runs open the cathedral, scrolling its nave from Age to
-// Age, and the world map with its threads flowing.
+// Age, the world map with its threads flowing, and the window ceremony setting its panels.
 //
 // A JSON report is saved in the `perf/` folder, which git ignores.
 
@@ -70,7 +70,7 @@ const scenarios = [
   ...STYLES.map((style) => ({ name: `demo scene · ${style}`, style, switchAt: null })),
   ...STYLES.map((style) => ({ name: `demo scene · switching from ${style}`, style, switchAt: SECONDS / 2 })),
   ...STORY_SCENES.flatMap((scene) => STYLES.map((style) => ({ name: `${scene} · ${style}`, style, scene, switchAt: null }))),
-  ...['cathedral', 'map'].flatMap((hub) => STYLES.map((style) => ({ name: `${hub} · ${style}`, style, hub, switchAt: null }))),
+  ...['cathedral', 'map', 'ceremony'].flatMap((hub) => STYLES.map((style) => ({ name: `${hub} · ${style}`, style, hub, switchAt: null }))),
 ]
   .filter((s) => !only || (only === 'story' ? s.scene : only === 'hub' ? s.hub : !s.scene && !s.hub))
   .filter((s) => !scenes || s.scene?.startsWith(scenes))

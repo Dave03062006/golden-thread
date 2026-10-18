@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { setMusicPlace } from '../app/audio'
+import { launch } from '../app/params'
 import { useApp } from '../app/store'
 import { LEVELS } from '../content/catalog'
 import { isRight, newRun, recordRun, rightAnswer, starsFor, type Run } from '../quiz/engine'
@@ -12,8 +13,12 @@ import { Scripture } from './story/Line'
 import './quiz/quiz.css'
 import './screens.css'
 
-/** A fresh seed for each run. */
-const newSeed = () => (crypto.getRandomValues(new Uint32Array(1))[0] ?? Date.now()) >>> 0
+/**
+ * A fresh seed for each run. With a throwaway test save (`?test`), the first run is always
+ * the same, so screenshots of the quiz can be compared from one day to the next.
+ */
+let testRuns = 0
+const newSeed = () => (launch.test && testRuns++ === 0 ? 2026 : (crypto.getRandomValues(new Uint32Array(1))[0] ?? Date.now()) >>> 0)
 
 /** How an answer reads in the review. */
 function answerText(answer: Answer | undefined): string {

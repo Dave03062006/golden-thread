@@ -1,23 +1,11 @@
-import { useEffect } from 'react'
+import { Suspense, lazy, useEffect, type ComponentType } from 'react'
 import { installAudio, setMusicPlace } from './audio'
 import { FrameMeter } from '../dev/FrameMeter'
 import { gameClock } from '../engine/clock'
 import { useSettings } from '../engine/settings'
 import { MenuScreen } from '../screens/MenuScreen'
-import { SceneScreen } from '../screens/SceneScreen'
-import { CathedralScreen } from '../screens/CathedralScreen'
-import { CeremonyScreen } from '../screens/CeremonyScreen'
-import { CreditsScreen } from '../screens/CreditsScreen'
-import { JournalScreen } from '../screens/JournalScreen'
-import { QuizMenuScreen } from '../screens/QuizMenuScreen'
-import { QuizScreen } from '../screens/QuizScreen'
-import { ReflectionScreen } from '../screens/ReflectionScreen'
-import { MusicLibraryScreen } from '../screens/MusicLibraryScreen'
-import { SettingsScreen } from '../screens/SettingsScreen'
 import { NowPlaying } from '../ui/MusicCards'
-import { StoryScreen } from '../screens/StoryScreen'
 import { TitleScreen } from '../screens/TitleScreen'
-import { WorldMapScreen } from '../screens/WorldMapScreen'
 import { launch } from './params'
 import { useApp } from './store'
 
@@ -37,22 +25,43 @@ function FontWarmup() {
   )
 }
 
-const SCREENS = {
-  title: TitleScreen,
-  menu: MenuScreen,
-  settings: SettingsScreen,
-  scene: SceneScreen,
-  story: StoryScreen,
-  music: MusicLibraryScreen,
-  credits: CreditsScreen,
-  'quiz-menu': QuizMenuScreen,
-  quiz: QuizScreen,
-  reflection: ReflectionScreen,
-  journal: JournalScreen,
-  ceremony: CeremonyScreen,
-  cathedral: CathedralScreen,
-  map: WorldMapScreen,
+/**
+ * The other screens are loaded the first time they're needed, so the title appears
+ * quickly (spec §10). Once the title is showing, they're fetched in the background (see
+ * `preloadScreens`), so opening one later doesn't wait.
+ */
+const LOADERS = {
+  settings: () => import('../screens/SettingsScreen').then((m) => m.SettingsScreen),
+  scene: () => import('../screens/SceneScreen').then((m) => m.SceneScreen),
+  story: () => import('../screens/StoryScreen').then((m) => m.StoryScreen),
+  music: () => import('../screens/MusicLibraryScreen').then((m) => m.MusicLibraryScreen),
+  credits: () => import('../screens/CreditsScreen').then((m) => m.CreditsScreen),
+  'quiz-menu': () => import('../screens/QuizMenuScreen').then((m) => m.QuizMenuScreen),
+  quiz: () => import('../screens/QuizScreen').then((m) => m.QuizScreen),
+  reflection: () => import('../screens/ReflectionScreen').then((m) => m.ReflectionScreen),
+  journal: () => import('../screens/JournalScreen').then((m) => m.JournalScreen),
+  ceremony: () => import('../screens/CeremonyScreen').then((m) => m.CeremonyScreen),
+  cathedral: () => import('../screens/CathedralScreen').then((m) => m.CathedralScreen),
+  map: () => import('../screens/WorldMapScreen').then((m) => m.WorldMapScreen),
 } as const
+
+/** Each loader as a component React can wait for. */
+function lazyScreens<K extends string>(loaders: Record<K, () => Promise<ComponentType>>): Record<K, ComponentType> {
+  const screens = {} as Record<K, ComponentType>
+  for (const name in loaders) screens[name] = lazy(() => loaders[name]().then((component) => ({ default: component })))
+  return screens
+}
+
+const SCREENS = { title: TitleScreen, menu: MenuScreen, ...lazyScreens(LOADERS) }
+
+/** Fetches every screen's code while the player is on the title screen, the story first. */
+function preloadScreens() {
+  const idle = (then: () => void) => ('requestIdleCallback' in window ? requestIdleCallback(then, { timeout: 4000 }) : setTimeout(then, 1500))
+  idle(() => {
+    void LOADERS.story()
+    for (const load of Object.values(LOADERS)) void load()
+  })
+}
 
 /**
  * The game's top level. It shows the current screen, and puts the art style and comfort
@@ -87,10 +96,14 @@ export function App() {
     if (!ownMusic) setMusicPlace({ kind: 'hub' })
   }, [ownMusic])
 
+  useEffect(preloadScreens, [])
+
   const Current = SCREENS[screen]
   return (
     <>
-      <Current />
+      <Suspense fallback={<main className="screen" aria-busy="true" />}>
+        <Current />
+      </Suspense>
       <FontWarmup />
       <NowPlaying />
       {(import.meta.env.DEV || launch.meter) && <FrameMeter initiallyVisible={launch.meter} />}

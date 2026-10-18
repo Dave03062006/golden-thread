@@ -63,5 +63,7 @@ export function upgradeSave(raw: unknown, upgrades = UPGRADES, current = SAVE_VE
     readMarks: stringArray(save.readMarks),
     // Saves from before the cathedral have no panels set yet: they're set when it's first seen.
     panelsSet: stringArray(save.panelsSet),
+    lastBackupAt: typeof save.lastBackupAt === 'string' ? save.lastBackupAt : null,
+    backupReminderAfter: typeof save.backupReminderAfter === 'string' ? save.backupReminderAfter : null,
   }
 }

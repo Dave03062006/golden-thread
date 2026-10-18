@@ -63,6 +63,10 @@ export interface SaveData {
    * finished episode whose panel isn't set yet is set the next time the cathedral is seen.
    */
   panelsSet: string[]
+  /** When this save was last exported as a backup file, if ever. */
+  lastBackupAt: string | null
+  /** "Not now" on the backup reminder: it waits until this time. */
+  backupReminderAfter: string | null
 }
 
 /** A save as it's stored: the data plus a checksum that reveals damage. */
@@ -87,6 +91,8 @@ export function newSave(name: string, style: StyleId, nowIso: string): SaveData 
     journal: [],
     readMarks: [],
     panelsSet: [],
+    lastBackupAt: null,
+    backupReminderAfter: null,
   }
 }
 

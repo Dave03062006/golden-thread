@@ -209,7 +209,13 @@ async function levelEnd(page, played) {
   await page.getByRole('heading', { name: 'The Cathedral' }).waitFor()
   await page.getByRole('button', { name: 'Back', exact: true }).click()
   await page.getByRole('navigation', { name: 'Main menu' }).getByRole('button', { name: 'Journal' }).click()
-  const kept = await page.getByText(REFLECTION).isVisible()
+  const kept = await page
+    .getByText(REFLECTION)
+    .waitFor({ timeout: 10_000 })
+    .then(
+      () => true,
+      () => false,
+    )
   await page.getByRole('button', { name: 'Back' }).click()
   return [
     [answered === 10, `Level 1 quiz: answered all ten questions (${answered})`],

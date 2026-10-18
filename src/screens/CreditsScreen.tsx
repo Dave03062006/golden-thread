@@ -40,7 +40,7 @@ export function CreditsScreen() {
                 <p>{track.credit}</p>
                 <p className="ui-note">
                   {LICENSE_NAMES[track.license]}: {track.licenseNote}{' '}
-                  <a href={track.source} target="_blank" rel="noreferrer">
+                  <a href={track.source} target="_blank" rel="noreferrer" aria-label={`Source of “${track.title}” (opens in a new tab)`}>
                     Source
                   </a>
                 </p>
@@ -69,6 +69,14 @@ export function CreditsScreen() {
             <li>The pixel art’s colors begin from the Sweetie 16 palette by GrafxKid.</li>
             <li>The sound effects are made by the game itself, as it plays.</li>
           </ul>
+        </section>
+
+        <section className="settings-group" aria-labelledby="credits-code">
+          <h2 id="credits-code">Built with</h2>
+          <p>
+            React, Vite, Zustand, music-metadata and Fontsource, under the MIT license, and idb-keyval, under the Apache License 2.0: open-source
+            software, with thanks to everyone who makes it.
+          </p>
         </section>
       </Panel>
     </main>

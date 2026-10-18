@@ -16,8 +16,9 @@ import type { LevelMusic } from '../../types'
  * Episode 6 has the piece the script names: Bach's setting of the chorale "Wer nur den
  * lieben Gott lässt walten", in a public domain recording from the 1930s.
  *
- * Still to come (milestone 5): the chant the script names for reflection (Salve Regina) and Bach's chorale for Episode
- * 6, or fitting substitutes where no allowed recording exists.
+ * Reflection and prayer has Haydn's duet "By thee with bliss" from The Creation in place of
+ * the chant the script names (Salve Regina): no recording of it under an allowed license
+ * was found.
  */
 export const level1Music: LevelMusic = {
   story: [
