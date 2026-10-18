@@ -1,0 +1,322 @@
+/* The cathedral, shared by both styles: the scrolling nave, its labels, threads and buttons,
+   and the light of the time of day. */
+
+.nave-viewport {
+  position: relative;
+  height: min(72vh, 46rem);
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 0 0 1px rgb(255 224 138 / 0.25);
+  scrollbar-color: rgb(255 224 138 / 0.4) transparent;
+}
+
+.nave-viewport:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.nave-content {
+  position: relative;
+  height: 100%;
+  transition: transform 1.1s cubic-bezier(0.6, 0, 0.3, 1);
+}
+
+/* "Step inside": the view flies into the medallion. */
+.nave-content[data-flying] {
+  transform: scale(7);
+}
+
+.nave-fly-light {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, #fff8e4, #ffe7b0 60%, #f6d6a0);
+  animation: nave-fly-light 1.1s ease-in forwards;
+  pointer-events: none;
+}
+
+@keyframes nave-fly-light {
+  from {
+    opacity: 0;
+  }
+  55% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.nave-bay-label {
+  position: absolute;
+  bottom: 3%;
+  color: var(--text-3);
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-align: center;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.nave-bay-label span {
+  color: var(--accent);
+}
+
+.nave-window {
+  position: absolute;
+}
+
+.nave-window-label {
+  position: absolute;
+  top: calc(100% + 0.6rem);
+  left: -20%;
+  width: 140%;
+  padding: 0.2rem;
+  border: 0;
+  border-radius: 0.4rem;
+  background: none;
+  color: var(--text-2);
+  font: inherit;
+  font-size: 0.82rem;
+  line-height: 1.25;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nave-window-label:hover,
+.nave-window-label:focus-visible {
+  color: var(--text);
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+/* A button over each medallion, the size of its ring. */
+.nave-medallion {
+  position: absolute;
+  width: calc(44 / 120 * 100%);
+  aspect-ratio: 1;
+  translate: -50% -50%;
+  border: 0;
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+}
+
+.nave-medallion:hover,
+.nave-medallion:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  box-shadow: 0 0 1.2rem rgb(255 224 138 / 0.6);
+}
+
+/* On short screens the nave is small, so its names shrink to one line each. */
+@media (max-height: 520px) {
+  .nave-window-label {
+    overflow: hidden;
+    font-size: 0.7rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .nave-bay-label {
+    bottom: 1.5%;
+    font-size: 0.62rem;
+    white-space: nowrap;
+  }
+}
+
+/* Golden threads: a glow, a fine line, and light flowing along it. */
+.nave-threads {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.nave-thread path {
+  fill: none;
+  stroke-linecap: round;
+}
+
+.nave-thread-glow {
+  stroke: #ffd36e;
+  stroke-width: 9;
+  opacity: 0.18;
+}
+
+.nave-thread-line {
+  stroke: #ffd36e;
+  stroke-width: 1.4;
+  opacity: 0.85;
+}
+
+.nave-thread-lights {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+  pointer-events: none;
+}
+
+/* A bead of light travelling the thread (moved by NaveView's ThreadBead). */
+.nave-thread-bead {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fffbe6 0 25%, rgb(255 211 110 / 0.55) 50%, transparent 70%);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+/* Where a thread points ahead to a window not reached yet, it glimmers there. */
+.nave-thread-glimmer {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgb(255 211 110 / 0.9), transparent 70%);
+  opacity: 0.35;
+  animation: nave-glimmer 2.4s ease-in-out infinite alternate;
+}
+
+@keyframes nave-glimmer {
+  to {
+    opacity: 0.7;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nave-thread-bead {
+    display: none;
+  }
+
+  .nave-thread-glimmer {
+    animation: none;
+  }
+
+  .nave-content {
+    transition: none;
+  }
+}
+
+/* The light through the glass follows the time of day. */
+.screen-cathedral[data-light='dawn'],
+.screen-ceremony[data-light='dawn'] {
+  --glass-filter: brightness(0.95) saturate(1.05) sepia(0.12);
+  --glass-glow: rgb(255 160 170 / 0.45);
+  --floor-light: 0.7;
+}
+
+.screen-cathedral[data-light='day'],
+.screen-ceremony[data-light='day'] {
+  --glass-filter: brightness(1.12) saturate(1.1);
+  --glass-glow: rgb(150 170 255 / 0.5);
+  --floor-light: 1;
+}
+
+.screen-cathedral[data-light='dusk'],
+.screen-ceremony[data-light='dusk'] {
+  --glass-filter: brightness(0.9) saturate(1.05) sepia(0.25);
+  --glass-glow: rgb(255 150 90 / 0.45);
+  --floor-light: 0.6;
+}
+
+.screen-cathedral[data-light='night'],
+.screen-ceremony[data-light='night'] {
+  --glass-filter: brightness(0.62) saturate(0.85);
+  --glass-glow: rgb(255 200 120 / 0.3);
+  --floor-light: 0.3;
+}
+
+.cathedral-panel {
+  display: grid;
+  gap: 1rem;
+  width: min(80rem, 100%);
+}
+
+.cathedral-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cathedral-light {
+  color: var(--text-3);
+  font-size: 0.9rem;
+}
+
+.cathedral-ages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.cathedral-ages button[aria-current='true'] {
+  box-shadow: inset 0 0 0 2px var(--accent);
+}
+
+.cathedral-detail {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.cathedral-detail h2 {
+  font-size: 1.2rem;
+}
+
+/* In pixel art: square corners and pixel steps. */
+@scope ([data-art-style='pixel']) to ([data-art-style]) {
+  :scope[data-art-style] .nave-viewport {
+    border-radius: 0;
+    box-shadow: 0 0 0 3px #f4f4f4;
+  }
+
+  :scope[data-art-style] .nave-medallion {
+    border-radius: 0;
+  }
+
+  :scope[data-art-style] .nave-bay-label {
+    font-size: 0.55rem;
+    letter-spacing: 0.04em;
+  }
+
+  :scope[data-art-style] .nave-thread-glow {
+    opacity: 0;
+  }
+
+  :scope[data-art-style] .nave-thread-line {
+    stroke: #ffcd75;
+    stroke-width: 3;
+    stroke-dasharray: 3 3;
+    stroke-linecap: butt;
+  }
+
+  :scope[data-art-style] .nave-thread-bead {
+    top: -4px;
+    left: -4px;
+    width: 9px;
+    height: 9px;
+    border-radius: 0;
+    background: #f4f4f4;
+    box-shadow: 0 0 0 3px #ffcd75;
+  }
+
+  :scope[data-art-style] .nave-thread-glimmer {
+    border-radius: 0;
+    background: repeating-conic-gradient(#ffcd75 0 25%, transparent 0 50%) 0 0 / 6px 6px;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    animation-timing-function: steps(2);
+  }
+
+  :scope[data-art-style] .nave-fly-light {
+    background: repeating-conic-gradient(#ffcd75 0 25%, #f4f4f4 0 50%) 0 0 / 8px 8px;
+  }
+}

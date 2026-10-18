@@ -1,0 +1,147 @@
+/* The glass cathedral in Paper & Glass: stone, pillars, glass and the light through it. */
+
+.glass-nave {
+  position: relative;
+  height: 100%;
+  background:
+    linear-gradient(to bottom, transparent 82%, rgb(0 0 0 / 0.35) 82%, rgb(0 0 0 / 0.55)),
+    linear-gradient(#120e1a, #1c1628 60%, #15101d);
+}
+
+.glass-pillar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #1a1424, #2c2339 30%, #1d1727 70%, #110d18);
+  box-shadow: 0 0 1.5rem rgb(0 0 0 / 0.6);
+}
+
+.glass-bay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.glass-window {
+  position: absolute;
+}
+
+.glass-window-image {
+  /* The picture has a margin of 10 units around the window, for its stone frame. */
+  position: absolute;
+  width: calc(140 / 120 * 100%);
+  height: calc(420 / 400 * 100%);
+  left: calc(-10 / 120 * 100%);
+  top: calc(-10 / 400 * 100%);
+  user-select: none;
+  filter: var(--glass-filter, none);
+}
+
+.glass-window-loading {
+  background: #1c1628;
+}
+
+.glass-window[data-lit] .glass-window-image {
+  filter: var(--glass-filter, none) drop-shadow(0 0 1.2rem var(--glass-glow, rgb(140 120 255 / 0.35)));
+}
+
+/* Colored light the lit glass throws onto the floor. */
+.glass-floor-light {
+  position: absolute;
+  left: -40%;
+  right: -40%;
+  top: 112%;
+  height: 22%;
+  background: radial-gradient(closest-side, rgb(90 120 255 / 0.35), rgb(255 110 150 / 0.18) 55%, transparent);
+  filter: blur(8px);
+  opacity: var(--floor-light, 0.8);
+  pointer-events: none;
+}
+
+/* A panel being set. */
+.glass-setting {
+  position: absolute;
+  left: calc(-10 / 120 * 100%);
+  top: calc(-10 / 400 * 100%);
+  width: calc(140 / 120 * 100%);
+  height: calc(420 / 400 * 100%);
+  overflow: visible;
+  pointer-events: none;
+}
+
+.set-ring {
+  animation: set-fade 0.8s ease-out both;
+}
+
+.set-piece {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: set-piece 1.3s cubic-bezier(0.2, 0.8, 0.25, 1) var(--delay) both;
+}
+
+@keyframes set-piece {
+  from {
+    opacity: 0;
+    transform: translate(var(--dx), var(--dy)) rotate(var(--rot)) scale(0.6);
+  }
+  60% {
+    opacity: 1;
+  }
+}
+
+@keyframes set-fade {
+  from {
+    opacity: 0;
+  }
+}
+
+.set-leads path,
+.set-rim {
+  fill: none;
+  stroke: #100d14;
+  stroke-width: 1;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: set-lead 0.9s ease-in-out 1.5s forwards;
+}
+
+.set-rim {
+  stroke-width: 1.6;
+}
+
+@keyframes set-lead {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.set-flood {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: set-flood 1.4s ease-out 2.3s forwards;
+}
+
+@keyframes set-flood {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  35% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+}
+
+.glass-setting[data-reduced] * {
+  animation: none !important;
+  opacity: 1;
+  stroke-dashoffset: 0;
+}
+
+.glass-setting[data-reduced] .set-flood {
+  opacity: 0;
+}

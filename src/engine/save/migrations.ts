@@ -61,5 +61,7 @@ export function upgradeSave(raw: unknown, upgrades = UPGRADES, current = SAVE_VE
     quiz: isObject(save.quiz) ? (save.quiz as SaveData['quiz']) : {},
     journal: Array.isArray(save.journal) ? (save.journal as SaveData['journal']) : [],
     readMarks: stringArray(save.readMarks),
+    // Saves from before the cathedral have no panels set yet: they're set when it's first seen.
+    panelsSet: stringArray(save.panelsSet),
   }
 }

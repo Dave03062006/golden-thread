@@ -434,8 +434,9 @@
   cursor: pointer;
 }
 
-/* The window ceremony's stand-in: a softly glowing arch. */
+/* The window ceremony: the level's bay of the cathedral, centred in a wider panel. */
 .ceremony-panel {
+  width: min(56rem, 100%);
   justify-items: center;
   text-align: center;
 }
@@ -444,12 +445,13 @@
   outline: none;
 }
 
-.ceremony-window {
-  width: 8rem;
-  height: 12rem;
-  border-radius: 4rem 4rem 0.4rem 0.4rem;
-  background: radial-gradient(circle at 50% 35%, #fff4d0, #ffd27a 40%, #6a4a9a 75%, #2a1a4a);
-  box-shadow: 0 0 2.5rem rgb(255 211 110 / 0.5);
+.ceremony-panel .nave-viewport {
+  width: 100%;
+  height: min(62vh, 36rem);
+}
+
+.ceremony-panel .nave-content {
+  margin-inline: auto;
 }
 
 /* In pixel art: square corners, flat fills, the pixel palette. */
@@ -499,12 +501,5 @@
 
   :scope[data-art-style] .reflection-prayer blockquote {
     border-left: 4px solid #566c86;
-  }
-
-  :scope[data-art-style] .ceremony-window {
-    border-radius: 0;
-    clip-path: polygon(0 30%, 10% 15%, 30% 4%, 50% 0, 70% 4%, 90% 15%, 100% 30%, 100% 100%, 0 100%);
-    background: linear-gradient(#ffcd75, #ef7d57 45%, #5d275d 75%, #1a1c2c);
-    box-shadow: none;
   }
 }

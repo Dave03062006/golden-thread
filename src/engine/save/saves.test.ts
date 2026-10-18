@@ -134,6 +134,8 @@ describe('upgradeSave', () => {
     expect(save.threadsFound).toEqual(['x'])
     expect(save.position).toBeNull()
     expect(save.journal).toEqual([])
+    // Saves from before the cathedral have no panels set yet; the next visit sets them.
+    expect(save.panelsSet).toEqual([])
   })
 
   it('applies upgrade steps in order', () => {

@@ -155,10 +155,11 @@ const REFLECTION = 'I want to stop hiding, and walk with God.'
 
 /**
  * The end of Level 1: the quiz (each question answered as it comes, right or not), its
- * review, reflection and prayer with a few words for the journal, the window ceremony, and
- * the journal keeping what was written.
+ * review, reflection and prayer with a few words for the journal, the window ceremony
+ * setting all six panels, the cathedral showing them, "Step inside" replaying an episode
+ * (and leaving it again from the pause menu), and the journal keeping what was written.
  */
-async function levelEnd(page) {
+async function levelEnd(page, played) {
   let answered = 0
   const results = page.locator('.quiz-results')
   while (!(await results.isVisible())) {
@@ -185,13 +186,36 @@ async function levelEnd(page) {
   await page.getByText('Saved to your journal.').waitFor()
   await page.getByRole('button', { name: 'Amen' }).click()
   await page.getByText('Level 1 complete').waitFor()
-  await page.getByRole('button', { name: 'Back to the menu' }).click()
+  // The ceremony sets the window's panels one by one.
+  await page.getByText('Its window in the cathedral is complete.').waitFor({ timeout: 60_000 })
+  await page.getByRole('button', { name: 'Visit the cathedral' }).click()
+  const nave = page.getByRole('region', { name: 'The nave of the cathedral' })
+  await nave.waitFor()
+  const panels = await nave.getByRole('button', { name: /^Episode \d, .*: set$/ }).count()
+  // Step inside the last panel: its episode plays again, from its title card.
+  await nave.getByRole('button', { name: new RegExp(`^Episode ${LAST}, `) }).click()
+  await page.getByRole('button', { name: 'Step inside' }).click()
+  await waitForScene(page)
+  const replayed = await page
+    .getByRole('button', { name: 'Begin', exact: true })
+    .waitFor({ timeout: 10_000 })
+    .then(
+      () => true,
+      () => false,
+    )
+  if (replayed) await page.getByRole('button', { name: 'Begin', exact: true }).click()
+  await page.getByRole('button', { name: 'Pause' }).click()
+  await page.getByRole('button', { name: 'Back to the cathedral' }).click()
+  await page.getByRole('heading', { name: 'The Cathedral' }).waitFor()
+  await page.getByRole('button', { name: 'Back', exact: true }).click()
   await page.getByRole('navigation', { name: 'Main menu' }).getByRole('button', { name: 'Journal' }).click()
   const kept = await page.getByText(REFLECTION).isVisible()
   await page.getByRole('button', { name: 'Back' }).click()
   return [
     [answered === 10, `Level 1 quiz: answered all ten questions (${answered})`],
     [reviewed === 10, `Level 1 quiz: "Review your answers" shows the run (${reviewed} answers)`],
+    [panels === played, `Window ceremony: the panels of the ${played} episodes played are set (${panels})`],
+    [replayed, `Cathedral: "Step inside" plays Episode ${LAST} again`],
     [kept, 'Level 1 reflection: what was written is kept in the journal'],
   ]
 }
@@ -211,7 +235,7 @@ async function play(style) {
       if (i > 0) await waitForScene(page)
       results.push(...(await playEpisode(page, style, episode, i === playing.length - 1)))
     }
-    if (playing.at(-1)?.number === LAST) results.push(...(await levelEnd(page)))
+    if (playing.at(-1)?.number === LAST) results.push(...(await levelEnd(page, playing.length)))
   } catch (error) {
     // Show where it stopped, and what had passed so far.
     await page.screenshot({ path: `shots/failed-${style}.png` })

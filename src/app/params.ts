@@ -1,6 +1,6 @@
 import { isStyleId, type StyleId } from '../styles/ids'
 
-const SCREENS = ['title', 'menu', 'settings', 'scene', 'story', 'music', 'credits', 'quiz-menu', 'quiz', 'reflection', 'journal', 'ceremony'] as const
+const SCREENS = ['title', 'menu', 'settings', 'scene', 'story', 'music', 'credits', 'quiz-menu', 'quiz', 'reflection', 'journal', 'ceremony', 'cathedral', 'map'] as const
 type Screen = (typeof SCREENS)[number]
 
 /**

@@ -367,6 +367,7 @@ const scenes: StoryScene[] = [
 export const episode1: Episode = {
   id: 'l01-e1',
   number: 1,
+  emblem: 'creation',
   title: 'In the Beginning',
   passage: 'GEN 1:1-2:3',
   minutes: 12,

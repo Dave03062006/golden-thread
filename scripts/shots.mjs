@@ -19,7 +19,7 @@ const value = (name) => args.find((a) => a.startsWith(`--${name}=`))?.split('=')
 const only = value('only')
 const onlyScreen = value('screen')
 
-const SCREENS = ['title', 'menu', 'settings', 'scene', 'music', 'credits', 'quiz-menu', 'quiz', 'reflection', 'journal', 'ceremony']
+const SCREENS = ['title', 'menu', 'settings', 'scene', 'music', 'credits', 'quiz-menu', 'quiz', 'reflection', 'journal', 'ceremony', 'cathedral', 'map']
 
 /** Every scene of the finished episodes (src/content/levels/01-creation-and-fall/). */
 const STORY_SCENES = [...Array.from({ length: 8 }, (_, i) => `l01-e1-s${i + 1}`), ...Array.from({ length: 5 }, (_, i) => `l01-e2-s${i + 1}`), ...Array.from({ length: 6 }, (_, i) => `l01-e3-s${i + 1}`), ...Array.from({ length: 5 }, (_, i) => `l01-e4-s${i + 1}`), ...Array.from({ length: 6 }, (_, i) => `l01-e5-s${i + 1}`), ...Array.from({ length: 5 }, (_, i) => `l01-e6-s${i + 1}`)]
@@ -63,6 +63,13 @@ try {
           if (screen === 'scene' && name !== 'phone-upright') {
             await waitForScene(page)
             await page.waitForTimeout(1500)
+          } else if (screen === 'ceremony') {
+            // Once every panel of the window has been set.
+            await page.getByText('Its window in the cathedral is complete.').waitFor({ timeout: 40_000 })
+            await page.waitForTimeout(600)
+          } else if (screen === 'cathedral' || screen === 'map') {
+            // The glass and the relief are drawn into pictures as they open.
+            await page.waitForTimeout(1800)
           } else {
             await page.waitForTimeout(400)
           }

@@ -5,6 +5,7 @@ import { gameClock } from '../engine/clock'
 import { useSettings } from '../engine/settings'
 import { MenuScreen } from '../screens/MenuScreen'
 import { SceneScreen } from '../screens/SceneScreen'
+import { CathedralScreen } from '../screens/CathedralScreen'
 import { CeremonyScreen } from '../screens/CeremonyScreen'
 import { CreditsScreen } from '../screens/CreditsScreen'
 import { JournalScreen } from '../screens/JournalScreen'
@@ -16,6 +17,7 @@ import { SettingsScreen } from '../screens/SettingsScreen'
 import { NowPlaying } from '../ui/MusicCards'
 import { StoryScreen } from '../screens/StoryScreen'
 import { TitleScreen } from '../screens/TitleScreen'
+import { WorldMapScreen } from '../screens/WorldMapScreen'
 import { launch } from './params'
 import { useApp } from './store'
 
@@ -48,6 +50,8 @@ const SCREENS = {
   reflection: ReflectionScreen,
   journal: JournalScreen,
   ceremony: CeremonyScreen,
+  cathedral: CathedralScreen,
+  map: WorldMapScreen,
 } as const
 
 /**

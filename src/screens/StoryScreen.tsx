@@ -3,7 +3,7 @@ import { cueMusic, duckMusic, pauseMusic, prepareCue, sceneMusic, setMusicPlace,
 import { launch } from '../app/params'
 import { useApp } from '../app/store'
 import { formatReference } from '../content/bible/books'
-import { LEVELS, findScene, nextEpisode } from '../content/catalog'
+import { LEVELS, findEpisode, findScene, nextEpisode } from '../content/catalog'
 import type { Episode, Level } from '../content/types'
 import { gameClock } from '../engine/clock'
 import { createInput } from '../engine/input'
@@ -62,6 +62,13 @@ function startingSession(position: Position | null): Session {
   return newSession(level, level.episodes[0]!, 0)
 }
 
+/** A finished episode played again from its start. */
+function replaySession(episodeId: string): Session {
+  const found = findEpisode(episodeId)
+  if (found) return newSession(found.level, found.episode, 0)
+  return startingSession(null)
+}
+
 /** How long to leave a line before moving on by itself, when auto-advance is on. */
 const readingSeconds = (text: string) => 3 + text.length * 0.055
 
@@ -87,7 +94,9 @@ export function StoryScreen() {
   const { gentleMode, autoAdvance, readAloud, voiceVolume, musicMode } = useSettings()
   const reducedMotion = useReducedMotion()
 
-  const [session, setSession] = useState(() => startingSession(useApp.getState().save?.position ?? null))
+  // A replay starts its episode from the beginning, and never moves the player's place in the story.
+  const [replaying] = useState(() => useApp.getState().replay)
+  const [session, setSession] = useState(() => (replaying ? replaySession(replaying.episode) : startingSession(useApp.getState().save?.position ?? null)))
   const { level, episode, director } = session
   const [current, setCurrent] = useState<{ beat: Beat; position: StoryPosition } | null>(null)
   const [runner, setRunner] = useState<GameRunner | null>(null)
@@ -132,7 +141,7 @@ export function StoryScreen() {
     let lines = 0
     return director.subscribe((event) => {
       if (event.type === 'checkpoint') {
-        void checkpoint({ level: level.id, episode: episode.id, scene: event.scene.id })
+        if (!replaying) void checkpoint({ level: level.id, episode: episode.id, scene: event.scene.id })
         setSceneTitle({ title: event.scene.title, index: event.index })
         sceneMusic(event.scene.music)
         // Cues in this scene are loaded now, so they can land the moment they're needed.
@@ -154,7 +163,10 @@ export function StoryScreen() {
         setPanel('end')
       }
     })
-  }, [director, level, episode, checkpoint, changeSave, commit, getTime])
+  }, [director, level, episode, checkpoint, changeSave, commit, getTime, replaying])
+
+  // Leaving a replay ends it.
+  useEffect(() => () => useApp.setState({ replay: null }), [])
 
   // The story begins once the episode's title card is put away (or at once, when resuming).
   useEffect(() => {
@@ -373,6 +385,16 @@ export function StoryScreen() {
           >
             Journal
           </Button>
+          {replaying && (
+            <Button
+              onClick={() => {
+                setPanel(null)
+                go(replaying.from)
+              }}
+            >
+              Back to the {replaying.from === 'map' ? 'map' : 'cathedral'}
+            </Button>
+          )}
           <Button
             onClick={async () => {
               setPanel(null)
@@ -409,8 +431,8 @@ export function StoryScreen() {
         onShowThread={() => setPanel('thread')}
         onReplay={() => replay(episode)}
         // After a level's last episode, its end: the quiz, reflection and prayer, the window ceremony.
-        onContinue={() => (following ? replay(following) : startLevelEnd(level.id))}
-        continueLabel={following ? `On to Episode ${following.number}` : 'On to the quiz'}
+        onContinue={() => (replaying ? go(replaying.from) : following ? replay(following) : startLevelEnd(level.id))}
+        continueLabel={replaying ? `Back to the ${replaying.from === 'map' ? 'map' : 'cathedral'}` : following ? `On to Episode ${following.number}` : 'On to the quiz'}
       />
     </main>
   )

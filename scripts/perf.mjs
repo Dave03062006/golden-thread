@@ -6,12 +6,13 @@
 //   npm run build
 //   npm run perf
 //   npm run perf -- --slowdown=6      slow the processor down more (default 4)
-//   npm run perf -- --only=story      only the story scenes (or: demo)
+//   npm run perf -- --only=story      only the story scenes (or: demo, hub)
 //   npm run perf -- --scenes=l01-e4   only the story scenes whose id starts with this
 //
 // The story runs start at each scene of Episode 1 and move on every two seconds, so
 // lines change, transitions run and the interactions are played (Space is their
-// one-button way to play).
+// one-button way to play). The hub runs open the cathedral, scrolling its nave from Age to
+// Age, and the world map with its threads flowing.
 //
 // A JSON report is saved in the `perf/` folder, which git ignores.
 
@@ -69,8 +70,9 @@ const scenarios = [
   ...STYLES.map((style) => ({ name: `demo scene · ${style}`, style, switchAt: null })),
   ...STYLES.map((style) => ({ name: `demo scene · switching from ${style}`, style, switchAt: SECONDS / 2 })),
   ...STORY_SCENES.flatMap((scene) => STYLES.map((style) => ({ name: `${scene} · ${style}`, style, scene, switchAt: null }))),
+  ...['cathedral', 'map'].flatMap((hub) => STYLES.map((style) => ({ name: `${hub} · ${style}`, style, hub, switchAt: null }))),
 ]
-  .filter((s) => !only || (only === 'story' ? s.scene : !s.scene))
+  .filter((s) => !only || (only === 'story' ? s.scene : only === 'hub' ? s.hub : !s.scene && !s.hub))
   .filter((s) => !scenes || s.scene?.startsWith(scenes))
 
 await mkdir('perf', { recursive: true })
@@ -84,9 +86,10 @@ try {
     const context = await browser.newContext({ viewport: { width: 1280, height: 720 } })
     const page = await context.newPage()
     const cdp = await context.newCDPSession(page)
-    const screen = scenario.scene ? 'story' : 'scene'
+    const screen = scenario.hub ?? (scenario.scene ? 'story' : 'scene')
     await page.goto(screenUrl(server.url, { screen, style: scenario.style, extra: `&perf${scenario.scene ? `&scene=${scenario.scene}` : ''}` }))
-    await waitForScene(page)
+    if (scenario.hub) await page.waitForTimeout(1500)
+    else await waitForScene(page)
     if (scenario.scene) {
       const begin = page.getByRole('button', { name: 'Begin', exact: true })
       if (await begin.count()) await begin.click()
@@ -97,7 +100,15 @@ try {
     await cdp.send('Emulation.setCPUThrottlingRate', { rate: slowdown })
     await page.evaluate(() => window.__goldenThreadPerf.reset())
 
-    if (scenario.scene) {
+    if (scenario.hub === 'cathedral') {
+      // Along the nave and back, an Age at a time.
+      for (const age of ['III', 'VI', 'IX', 'XII', 'XIV', 'VII', 'I']) {
+        await page.getByRole('navigation', { name: 'The Ages' }).getByRole('button', { name: age, exact: true }).click()
+        await page.waitForTimeout(1400)
+      }
+    } else if (scenario.hub) {
+      await page.waitForTimeout(SECONDS * 1000)
+    } else if (scenario.scene) {
       for (let t = 0; t < STORY_SECONDS; t += 2) {
         await page.waitForTimeout(2000)
         await page.keyboard.press('Space')

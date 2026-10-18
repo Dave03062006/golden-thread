@@ -22,6 +22,11 @@ export interface GoldenThread {
   explanation: string
   /** Where the connection comes from: Scripture, the Catechism, the Church Fathers. */
   sources: string[]
+  /**
+   * Where it's fulfilled: the Age whose windows it points to in the cathedral, and the
+   * place on the map, if it has one (see geography.ts).
+   */
+  fulfilled: { age: string; place?: string }
 }
 
 /** A place on the map (spec §13.3). Coordinates are latitude and longitude. */
@@ -64,6 +69,8 @@ export interface Episode {
   whereWhen: WhereWhen
   /** "Read it in your Bible": the passages to read. */
   read: string[]
+  /** The picture in its medallion in the level's cathedral window (see the styles' cathedral art). */
+  emblem: string
 }
 
 /**
@@ -96,6 +103,8 @@ export interface Level {
   quiz: Question[]
   /** The end of the level's reflection and prayer (spec §3.3). */
   reflection: Reflection
+  /** Where the level's region is on the world map, and its name there. */
+  map: { at: { lat: number; lon: number }; label: string }
 }
 
 /** A quiet moment at the end of a level: a verse, a question for one's own life, a prayer. */

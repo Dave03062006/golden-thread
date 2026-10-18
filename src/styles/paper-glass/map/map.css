@@ -1,0 +1,13 @@
+/* The world map's paper relief. */
+
+.paper-map-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+.paper-map-loading {
+  background: linear-gradient(#9ac4d8, #6e9fbe);
+}

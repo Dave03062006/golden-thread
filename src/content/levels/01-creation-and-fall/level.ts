@@ -32,6 +32,8 @@ export const level1: Level = {
   passage: 'GEN 1:1-5:32',
   music: level1Music,
   quiz: level1Quiz,
+  // The region around Eden, at the head of the Persian Gulf, where tradition looks for it.
+  map: { at: { lat: 31.2, lon: 47.0 }, label: 'Eden' },
   // From the approved script's "Reflection and prayer".
   reflection: {
     verse: 'GEN 3:9',
@@ -57,6 +59,7 @@ export const level1: Level = {
     built(episode2, {
       id: 'l01-e2',
       number: 2,
+      emblem: 'garden',
       title: 'The Garden of Eden',
       passage: 'GEN 2:4-25',
       minutes: 8,
@@ -78,6 +81,7 @@ export const level1: Level = {
     built(episode3, {
       id: 'l01-e3',
       number: 3,
+      emblem: 'fruit',
       title: 'The Serpent and the Fall',
       passage: 'GEN 3:1-13',
       minutes: 7,
@@ -94,6 +98,7 @@ export const level1: Level = {
     built(episode4, {
       id: 'l01-e4',
       number: 4,
+      emblem: 'promise',
       title: 'The Promise and the Exile',
       passage: 'GEN 3:14-24',
       minutes: 8,
@@ -110,6 +115,7 @@ export const level1: Level = {
     built(episode5, {
       id: 'l01-e5',
       number: 5,
+      emblem: 'lamb',
       title: 'Cain and Abel',
       passage: 'GEN 4:1-16',
       minutes: 9,
@@ -128,6 +134,7 @@ export const level1: Level = {
     built(episode6, {
       id: 'l01-e6',
       number: 6,
+      emblem: 'family-tree',
       title: 'From Adam to Noah',
       passage: 'GEN 4:17-5:32',
       minutes: 6,

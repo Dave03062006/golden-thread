@@ -4,12 +4,6 @@ import { formatPlayTime } from '../ui/format'
 import { describePosition } from './places'
 import './screens.css'
 
-/** Things that arrive in later milestones, shown so the menu's shape is clear. */
-const LATER = [
-  { label: 'Cathedral', when: 'Milestone 6' },
-  { label: 'World Map', when: 'Milestone 6' },
-]
-
 export function MenuScreen() {
   const save = useApp((s) => s.save)
   const go = useApp((s) => s.go)
@@ -32,11 +26,8 @@ export function MenuScreen() {
           </Button>
           <Button onClick={() => go('quiz-menu')}>Quiz</Button>
           <Button onClick={() => openScreen('journal')}>Journal</Button>
-          {LATER.map((item) => (
-            <Button key={item.label} disabled aria-describedby="menu-later">
-              {item.label}
-            </Button>
-          ))}
+          <Button onClick={() => go('cathedral')}>Cathedral</Button>
+          <Button onClick={() => go('map')}>World Map</Button>
           <Button onClick={() => openScreen('music')}>Music</Button>
           <Button onClick={openSettings}>Settings</Button>
           <Button onClick={() => openScreen('credits')}>Credits</Button>
@@ -44,9 +35,6 @@ export function MenuScreen() {
             Back to title
           </Button>
         </nav>
-        <p id="menu-later" className="ui-note">
-          The Cathedral and the World Map arrive in the next milestone.
-        </p>
       </Panel>
     </main>
   )

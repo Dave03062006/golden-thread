@@ -1,0 +1,47 @@
+/* The pixel cathedral: flat stone in the pixel palette, hard-edged glass. */
+
+.pixel-nave {
+  position: relative;
+  height: 100%;
+  background:
+    linear-gradient(to bottom, transparent 82%, #1a1c2c 82%, #1a1c2c 83%, #333c57 83%, #1a1c2c),
+    repeating-linear-gradient(to bottom, #1a1c2c 0 var(--px), #29366f22 var(--px) calc(var(--px) * 8)),
+    #1a1c2c;
+}
+
+.pixel-pillar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #333c57 0 20%, #566c86 20% 30%, #333c57 30% 80%, #1a1c2c 80%);
+}
+
+.pixel-window {
+  position: absolute;
+}
+
+.pixel-window-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+  filter: var(--glass-filter, none);
+}
+
+.pixel-setting {
+  filter: none;
+}
+
+.pixel-floor-light {
+  position: absolute;
+  left: -30%;
+  right: -30%;
+  top: 112%;
+  height: 16%;
+  background:
+    repeating-linear-gradient(90deg, #3b5dc955 0 var(--px), transparent var(--px) calc(var(--px) * 2)),
+    repeating-linear-gradient(90deg, transparent 0 var(--px), #b13e5344 var(--px) calc(var(--px) * 2));
+  opacity: var(--floor-light, 0.8);
+  pointer-events: none;
+}

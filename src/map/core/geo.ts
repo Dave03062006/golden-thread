@@ -1,7 +1,7 @@
 /**
  * The shared core of the game's maps (spec §13): turning real latitude and longitude into
  * drawing units, and the outlines of the lands and seas of the Bible world. The quiz's
- * "Where did it happen?" picker draws with it now; the world map (milestone 6) builds on it.
+ * "Where did it happen?" picker and the world map both draw with it.
  *
  * Outlines are simplified by hand from real coordinates: close enough to recognise the
  * coasts and rivers, with no claim to survey accuracy.

@@ -58,6 +58,11 @@ export interface SaveData {
   quiz: Record<string, QuizRecord>
   journal: JournalEntry[]
   readMarks: string[]
+  /**
+   * The episodes whose cathedral panel has been set, with its animation (spec §9.1). A
+   * finished episode whose panel isn't set yet is set the next time the cathedral is seen.
+   */
+  panelsSet: string[]
 }
 
 /** A save as it's stored: the data plus a checksum that reveals damage. */
@@ -81,6 +86,7 @@ export function newSave(name: string, style: StyleId, nowIso: string): SaveData 
     quiz: {},
     journal: [],
     readMarks: [],
+    panelsSet: [],
   }
 }
 

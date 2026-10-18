@@ -8,7 +8,7 @@
 import AxeBuilder from '@axe-core/playwright'
 import { STYLES, launchEdge, screenUrl, startPreview, waitForFonts } from './lib/browser.mjs'
 
-const SCREENS = ['title', 'menu', 'settings', 'scene', 'music', 'credits', 'quiz-menu', 'quiz', 'reflection', 'journal', 'ceremony']
+const SCREENS = ['title', 'menu', 'settings', 'scene', 'music', 'credits', 'quiz-menu', 'quiz', 'reflection', 'journal', 'ceremony', 'cathedral', 'map']
 
 /** The Music Library in its worship modes, set up before the page loads. */
 const MUSIC_STATES = [

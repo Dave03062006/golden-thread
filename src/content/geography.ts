@@ -2,7 +2,7 @@ import type { Place } from './types'
 
 /**
  * Places in the Bible, with real coordinates where they can be found (spec §13.3). The
- * world map (milestone 6) draws them; the "Where and when" card names them.
+ * world map draws them; the "Where and when" card names them.
  */
 export const PLACES: Place[] = [
   // Level 1 · Creation and the Fall
@@ -84,6 +84,13 @@ export const PLACES: Place[] = [
       { lat: 31.76, lon: 35.55 },
     ],
     note: 'From the Sea of Galilee down to the Dead Sea.',
+  },
+  {
+    id: 'jerusalem',
+    name: 'Jerusalem',
+    kind: 'city',
+    at: { lat: 31.78, lon: 35.23 },
+    note: 'Where Jesus prayed in the garden of Gethsemane, died on the cross and rose again.',
   },
   { id: 'pishon', name: 'Pishon', kind: 'river', unknown: true, note: 'It flowed around the land of Havilah, “where there is gold.” Nobody knows which river it was.' },
   { id: 'gihon', name: 'Gihon', kind: 'river', unknown: true, note: 'It flowed around the land of Cush. Nobody knows which river it was.' },

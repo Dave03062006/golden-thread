@@ -9,7 +9,7 @@ export const saves: SaveSystem = createSaveSystem(
   launch.test || typeof indexedDB === 'undefined' ? memoryStore() : indexedDbStore('golden-thread', 'saves'),
 )
 
-export type Screen = 'title' | 'menu' | 'settings' | 'scene' | 'story' | 'music' | 'credits' | 'quiz-menu' | 'quiz' | 'reflection' | 'journal' | 'ceremony'
+export type Screen = 'title' | 'menu' | 'settings' | 'scene' | 'story' | 'music' | 'credits' | 'quiz-menu' | 'quiz' | 'reflection' | 'journal' | 'ceremony' | 'cathedral' | 'map'
 
 interface AppState {
   screen: Screen
@@ -28,6 +28,8 @@ interface AppState {
   levelEnd: string | null
   /** A level's reflection opened again from the journal, outside a level's end. */
   reflectionLevel: string | null
+  /** A finished episode being played again, and the screen to go back to after it. */
+  replay: { episode: string; from: Screen } | null
 
   go(screen: Screen): void
   openSettings(): void
@@ -48,6 +50,8 @@ interface AppState {
   startLevelEnd(level: string): void
   /** Opens a level's reflection again, to write more (from the journal). */
   openReflection(level: string): void
+  /** Plays a finished episode again, without changing where the player is in the story. */
+  startReplay(episode: string, from: Screen): void
 }
 
 export const useApp = create<AppState>()((set, get) => ({
@@ -59,8 +63,11 @@ export const useApp = create<AppState>()((set, get) => ({
   quizScope: null,
   levelEnd: null,
   reflectionLevel: null,
+  replay: null,
 
   go: (screen) => set({ screen }),
+
+  startReplay: (episode, from) => set({ screen: 'story', replay: { episode, from } }),
 
   openReflection: (level) => set({ screen: 'reflection', reflectionLevel: level, levelEnd: null }),
 
@@ -109,11 +116,21 @@ export const useApp = create<AppState>()((set, get) => ({
 
 /**
  * For scripted tests: open a throwaway save straight away. The screens of a level's end
- * open as if Level 1 has just been finished.
+ * open as if Level 1 has just been finished; the cathedral and the map, partway through it.
  */
 export function openTestSave(style: SaveData['style'], screen: Screen) {
   const save = newSave('Test pilgrim', style, new Date().toISOString())
   const levelEnd = ['quiz-menu', 'quiz', 'reflection', 'ceremony'].includes(screen)
-  if (levelEnd) save.completedLevels = ['l01']
+  const episodes = ['l01-e1', 'l01-e2', 'l01-e3', 'l01-e4', 'l01-e5', 'l01-e6']
+  if (levelEnd) {
+    save.completedLevels = ['l01']
+    save.completedEpisodes = episodes
+  }
+  // The cathedral and the map partway through Level 1: two panels set, a third waiting to be.
+  if (screen === 'cathedral' || screen === 'map') {
+    save.completedEpisodes = episodes.slice(0, 3)
+    save.panelsSet = episodes.slice(0, 2)
+    save.threadsFound = ['creation-by-the-word', 'obedience-in-a-garden']
+  }
   useApp.setState({ slot: 0, save, screen, returnTo: 'menu', unsavedSeconds: 0, quizScope: levelEnd ? 'l01' : null, levelEnd: screen === 'quiz-menu' ? null : levelEnd ? 'l01' : null })
 }
