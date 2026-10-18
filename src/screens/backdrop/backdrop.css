@@ -1,0 +1,142 @@
+/*
+ * The main background: heaven and earth. It sits behind every screen but the story,
+ * covering the window. The picture is 16:9; the scene box is the picture's size, as big
+ * as needed to cover the window, and placed so the column of light (62.5% across) stays
+ * in view on narrow screens, without leaving gaps at the edges.
+ */
+.main-backdrop {
+  --light-x: 0.625;
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  background: var(--bg);
+  pointer-events: none;
+}
+
+.main-backdrop-scene {
+  --w: max(100vw, calc(100dvh * 16 / 9));
+  position: absolute;
+  bottom: 0;
+  left: clamp(calc(100vw - var(--w)), calc(50vw - var(--w) * var(--light-x)), 0px);
+  width: var(--w);
+  aspect-ratio: 16 / 9;
+}
+
+.main-backdrop-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  user-select: none;
+}
+
+.main-backdrop-image[data-ready] {
+  opacity: 1;
+}
+
+.main-backdrop[data-style='pixel'] .main-backdrop-image {
+  image-rendering: pixelated;
+  transition-timing-function: steps(4);
+}
+
+/* Behind most screens the picture rests, dimmed, so their words are easy to read. */
+.main-backdrop[data-mode='dim']::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgb(14 10 40 / 0.62), rgb(10 8 30 / 0.78));
+  content: '';
+}
+
+/* The light breathing around the cross. */
+.main-backdrop-glow {
+  position: absolute;
+  left: calc(var(--light-x) * 100%);
+  top: 59%;
+  width: 34%;
+  aspect-ratio: 1;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgb(255 246 214 / 0.5), rgb(255 226 160 / 0.18) 45%, transparent 70%);
+  opacity: 0.35;
+  animation: main-backdrop-breathe 7s ease-in-out infinite alternate;
+  will-change: opacity;
+}
+
+@keyframes main-backdrop-breathe {
+  to {
+    opacity: 0.85;
+  }
+}
+
+/*
+ * A small light falling along the column, from below the rose window to the cross. The
+ * outer element spans the whole fall and moves by its own height, so the movement is a
+ * transform, and the light rides at its foot.
+ */
+.main-backdrop-mote {
+  position: absolute;
+  left: calc(var(--light-x) * 100%);
+  top: 24%;
+  width: 0.5%;
+  height: 48%;
+  translate: calc(-50% + var(--spread) * 1400%) 0;
+  animation: main-backdrop-fall linear infinite;
+  will-change: transform, opacity;
+}
+
+.main-backdrop-mote > span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fffdf2 0 30%, rgb(255 226 160 / 0.6) 55%, transparent 72%);
+}
+
+@keyframes main-backdrop-fall {
+  from {
+    transform: translateY(-100%) scaleX(0.55);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  to {
+    transform: translateY(0) scaleX(1.6);
+    opacity: 0;
+  }
+}
+
+/* In pixel art: square lights that move in steps. */
+.main-backdrop[data-style='pixel'] .main-backdrop-mote > span {
+  border-radius: 0;
+  background: #f4f4f4;
+  box-shadow: 0 0 0 0.25vw #ffcd75;
+  width: 60%;
+}
+
+.main-backdrop[data-style='pixel'] .main-backdrop-mote {
+  animation-timing-function: steps(24);
+}
+
+.main-backdrop[data-style='pixel'] .main-backdrop-glow {
+  animation-timing-function: steps(5);
+}
+
+/* Reduced motion (the device's or the game's own setting): the light stays still. */
+.main-backdrop[data-still] .main-backdrop-glow {
+  animation: none;
+  opacity: 0.6;
+}
+
+/* High contrast: a plain, dark background behind everything. */
+[data-contrast='high'] .main-backdrop-scene {
+  display: none;
+}

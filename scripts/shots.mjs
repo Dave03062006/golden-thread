@@ -183,7 +183,9 @@ try {
             // The glass and the relief are drawn into pictures as they open.
             await page.waitForTimeout(1800)
           } else {
-            await page.waitForTimeout(400)
+            // The background picture fades in as it loads (the demo scene has its own world instead).
+            if (screen !== 'scene') await page.locator('.main-backdrop-image[data-ready]').waitFor({ timeout: 10_000 })
+            await page.waitForTimeout(700)
           }
           await capture(page, `${name}-${screen}-${style}${reduced ? '-reduced' : ''}`)
           if (screen === 'title' && !reduced) {

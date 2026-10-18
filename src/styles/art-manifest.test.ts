@@ -3,7 +3,11 @@ import { describe, expect, it } from 'vitest'
 import { ALL_SCENES } from '../scene/registry'
 import manifest from './art-manifest.json'
 import { paperLayerHash, paperPropHash, pixelLayerHash } from './art-hashes'
-import { PAPER_FRAME_WIDTHS, PAPER_PART_WIDTHS, paperLayerFile, paperPartFile, pixelLayerFile } from './bake-config'
+import { fnv1a } from '../engine/save/checksum'
+import { BACKDROP_WIDTHS, PAPER_FRAME_WIDTHS, PAPER_PART_WIDTHS, paperBackdropFile, paperLayerFile, paperPartFile, pixelBackdropFile, pixelLayerFile } from './bake-config'
+import { pixelsHash } from './art-hashes'
+import { heavenAndEarthSvg } from './paper-glass/backdrop/heaven-and-earth'
+import { drawHeavenAndEarth } from './pixel/backdrop/heaven-and-earth'
 import { paperLayers, paperProps } from './paper-glass/art'
 import { pixelLayers } from './pixel/art'
 
@@ -27,5 +31,12 @@ describe('baked art is up to date (if not, run `npm run bake`)', () => {
     const art = paperProps[id]!
     expect(manifest.paperProps[id as keyof typeof manifest.paperProps]?.hash).toBe(paperPropHash(art))
     for (const width of PAPER_PART_WIDTHS) for (const part of art.parts) expect(baked(paperPartFile(id, part.id, width))).toBe(true)
+  })
+
+  it('the main background, in both styles', () => {
+    expect(manifest.backdrop?.paper).toBe(fnv1a(heavenAndEarthSvg()))
+    for (const width of BACKDROP_WIDTHS) expect(baked(paperBackdropFile(width))).toBe(true)
+    expect(manifest.backdrop?.pixel).toBe(pixelsHash(drawHeavenAndEarth()))
+    expect(baked(pixelBackdropFile)).toBe(true)
   })
 })

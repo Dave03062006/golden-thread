@@ -385,5 +385,9 @@
     "enoch-path": {
       "hash": "2a3d82b4"
     }
+  },
+  "backdrop": {
+    "paper": "8f6002bf",
+    "pixel": "546f5933"
   }
 }

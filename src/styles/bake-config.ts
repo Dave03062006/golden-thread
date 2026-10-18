@@ -18,6 +18,14 @@ export const paperLayerFile = (id: string, frameWidth: number) => `paper/layers/
 export const paperPartFile = (prop: string, part: string, width: number) => `paper/props/${prop}/${part}@${width}.webp`
 export const pixelLayerFile = (id: string) => `pixel/layers/${id}.png`
 
+/**
+ * The main background behind the menus (heaven and earth), baked at a few widths for
+ * Paper & Glass; it covers the whole screen, so a phone held upright needs the widest.
+ */
+export const BACKDROP_WIDTHS = [1280, 1920, 2560, 3200] as const
+export const paperBackdropFile = (width: number) => `paper/backdrop/heaven-and-earth@${width}.webp`
+export const pixelBackdropFile = 'pixel/backdrop/heaven-and-earth.png'
+
 /** The smallest baked size that is at least `needed`, or the biggest there is. */
 export function pickSize(sizes: readonly number[], needed: number): number {
   return sizes.find((size) => size >= needed) ?? sizes[sizes.length - 1]!

@@ -1,12 +1,18 @@
 import { ALL_SCENES } from '../scene/registry'
-import { paperLayerHash, paperPropHash, pixelLayerHash } from '../styles/art-hashes'
+import { paperLayerHash, paperPropHash, pixelLayerHash, pixelsHash } from '../styles/art-hashes'
 import {
+  BACKDROP_WIDTHS,
   PAPER_FRAME_WIDTHS,
   PAPER_PART_WIDTHS,
   paperLayerFile,
   paperPartFile,
+  paperBackdropFile,
+  pixelBackdropFile,
   pixelLayerFile,
 } from '../styles/bake-config'
+import { BACKDROP_H, BACKDROP_W, heavenAndEarthSvg } from '../styles/paper-glass/backdrop/heaven-and-earth'
+import { drawHeavenAndEarth } from '../styles/pixel/backdrop/heaven-and-earth'
+import { fnv1a } from '../engine/save/checksum'
 import { paperLayers, paperProps } from '../styles/paper-glass/art'
 import { partShadow } from '../styles/paper-glass/prepare'
 import { rasterize } from '../styles/paper-glass/raster'
@@ -29,6 +35,7 @@ export interface ArtManifest {
   paperLayers: Record<string, { hash: string }>
   paperProps: Record<string, { hash: string }>
   pixelLayers: Record<string, { hash: string }>
+  backdrop: { paper: string; pixel: string }
 }
 
 async function encode(canvas: HTMLCanvasElement, type: 'image/webp' | 'image/png'): Promise<string> {
@@ -43,7 +50,7 @@ async function encode(canvas: HTMLCanvasElement, type: 'image/webp' | 'image/png
 
 async function bake(): Promise<{ files: BakedFile[]; manifest: ArtManifest }> {
   const files: BakedFile[] = []
-  const manifest: ArtManifest = { paperLayers: {}, paperProps: {}, pixelLayers: {} }
+  const manifest: ArtManifest = { paperLayers: {}, paperProps: {}, pixelLayers: {}, backdrop: { paper: '', pixel: '' } }
   const layerIds = new Set(ALL_SCENES.flatMap((scene) => scene.layers.map((l) => l.id)))
   const propIds = new Set(ALL_SCENES.flatMap((scene) => scene.actors.map((a) => a.prop)))
 
@@ -84,6 +91,16 @@ async function bake(): Promise<{ files: BakedFile[]; manifest: ArtManifest }> {
     }
     manifest.paperProps[prop] = { hash: paperPropHash(art) }
   }
+
+  // The main background, heaven and earth.
+  const svg = heavenAndEarthSvg()
+  for (const width of BACKDROP_WIDTHS) {
+    const canvas = await rasterize(svg, { x: 0, y: 0, w: BACKDROP_W, h: BACKDROP_H }, { widthPx: width, heightPx: Math.round((width * BACKDROP_H) / BACKDROP_W), shadowPx: 0 })
+    files.push({ path: paperBackdropFile(width), base64: await encode(canvas, 'image/webp') })
+  }
+  const pixels = drawHeavenAndEarth()
+  files.push({ path: pixelBackdropFile, base64: await encode(pixels.toCanvas(), 'image/png') })
+  manifest.backdrop = { paper: fnv1a(svg), pixel: pixelsHash(pixels) }
 
   return { files, manifest }
 }

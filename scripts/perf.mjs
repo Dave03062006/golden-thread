@@ -70,7 +70,7 @@ const scenarios = [
   ...STYLES.map((style) => ({ name: `demo scene · ${style}`, style, switchAt: null })),
   ...STYLES.map((style) => ({ name: `demo scene · switching from ${style}`, style, switchAt: SECONDS / 2 })),
   ...STORY_SCENES.flatMap((scene) => STYLES.map((style) => ({ name: `${scene} · ${style}`, style, scene, switchAt: null }))),
-  ...['cathedral', 'map', 'ceremony'].flatMap((hub) => STYLES.map((style) => ({ name: `${hub} · ${style}`, style, hub, switchAt: null }))),
+  ...['menu', 'cathedral', 'map', 'ceremony'].flatMap((hub) => STYLES.map((style) => ({ name: `${hub} · ${style}`, style, hub, switchAt: null }))),
 ]
   .filter((s) => !only || (only === 'story' ? s.scene : only === 'hub' ? s.hub : !s.scene && !s.hub))
   .filter((s) => !scenes || s.scene?.startsWith(scenes))

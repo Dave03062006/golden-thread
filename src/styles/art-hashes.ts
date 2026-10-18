@@ -20,6 +20,10 @@ export function paperPropHash(art: PaperPropArt): string {
 export function pixelLayerHash(art: PixelLayerArt): string {
   const buf = new PixelBuffer(LAYER_W, LAYER_H)
   art.draw(buf)
+  return pixelsHash(buf)
+}
+
+export function pixelsHash(buf: PixelBuffer): string {
   let text = ''
   // Sample every pixel's color into the fingerprint, compactly.
   for (let i = 0; i < buf.data.length; i += 4) {

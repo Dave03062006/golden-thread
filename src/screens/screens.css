@@ -9,7 +9,28 @@
 
 /* Title */
 .title-header {
+  padding: 2.5rem 6rem 2.8rem;
+  /* A soft shade behind the name, so it reads against the bright glass of heaven. */
+  background: radial-gradient(farthest-side, rgb(16 10 44 / 0.8), rgb(16 10 44 / 0.55) 45%, rgb(16 10 44 / 0.2) 75%, transparent);
   text-align: center;
+  text-shadow: 0 1px 0.6rem rgb(16 10 44 / 0.9);
+}
+
+.title-header .title-kicker {
+  text-shadow:
+    0 0 0.3rem rgb(16 10 44),
+    0 0 0.8rem rgb(16 10 44 / 0.9);
+}
+
+@scope ([data-art-style='pixel']) to ([data-art-style]) {
+  :scope[data-art-style] .title-header {
+    padding: 1rem 1.6rem 1.2rem;
+    text-shadow: none;
+    background: #1a1c2c;
+    box-shadow:
+      0 0 0 3px #f4f4f4,
+      6px 6px 0 3px rgb(0 0 0 / 0.5);
+  }
 }
 
 .title-kicker {
@@ -131,6 +152,14 @@
   gap: 1rem;
   width: min(26rem, 100%);
   text-align: center;
+}
+
+/* On wide screens the menu stands to the left, so the light and the cross behind it show. */
+@media (min-width: 56rem) {
+  .screen-menu {
+    justify-items: start;
+    padding-inline: clamp(2rem, 7vw, 7rem);
+  }
 }
 
 .menu-name {

@@ -5,6 +5,7 @@ import { gameClock } from '../engine/clock'
 import { useSettings } from '../engine/settings'
 import { MenuScreen } from '../screens/MenuScreen'
 import { NowPlaying } from '../ui/MusicCards'
+import { MainBackdrop } from '../screens/backdrop/MainBackdrop'
 import { TitleScreen } from '../screens/TitleScreen'
 import { launch } from './params'
 import { useApp } from './store'
@@ -101,6 +102,8 @@ export function App() {
   const Current = SCREENS[screen]
   return (
     <>
+      {/* The story and the demo scene have their own world; every other screen stands before heaven and earth. */}
+      {screen !== 'story' && screen !== 'scene' && <MainBackdrop style={style} mode={screen === 'title' || screen === 'menu' ? 'full' : 'dim'} />}
       <Suspense fallback={<main className="screen" aria-busy="true" />}>
         <Current />
       </Suspense>

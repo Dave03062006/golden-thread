@@ -10,7 +10,7 @@ import type { CathedralWindow, PanelState } from '../../../cathedral/model'
  * picture for the nave, or animated piece by piece when a panel is set.
  */
 
-type Pt = [number, number]
+export type Pt = [number, number]
 
 export interface Piece {
   d: string
@@ -68,7 +68,7 @@ function clip(poly: Pt[], a: number, b: number, c: number): Pt[] {
 }
 
 /** The mosaic: each site's Voronoi cell within a box. */
-function cells(sites: Pt[], box: [number, number, number, number]): Pt[][] {
+export function cells(sites: Pt[], box: [number, number, number, number]): Pt[][] {
   return sites
     .map((s, i) => {
       let poly: Pt[] = [
