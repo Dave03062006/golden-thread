@@ -8,6 +8,13 @@ import { exileLayers } from './layers/exile'
 import { fallLayers } from './layers/fall'
 import { generationsLayers } from './layers/generations'
 import { gardenLayers } from './layers/garden'
+import { worldGoneWrongLayers } from './layers/world-gone-wrong'
+import { buildingTheArkLayers } from './layers/building-the-ark'
+import { arkProps } from './props/ark'
+import { theFloodLayers } from './layers/the-flood'
+import { theFloodProps } from './props/the-flood'
+import { worldGoneWrongProps } from './props/world-gone-wrong'
+import { familyOfNoah } from './characters/family-of-noah'
 import { creationProps } from './props/creation'
 import { dove } from './props/dove'
 import { homeProps } from './props/home'
@@ -74,9 +81,9 @@ export interface PaperPropArt {
   shadow?: boolean
 }
 
-export const paperLayers: Record<string, PaperLayerArt> = { ...demoLayers, ...creationLayers, ...gardenLayers, ...fallLayers, ...exileLayers, ...homeLayers, ...generationsLayers }
+export const paperLayers: Record<string, PaperLayerArt> = { ...demoLayers, ...creationLayers, ...gardenLayers, ...fallLayers, ...exileLayers, ...homeLayers, ...generationsLayers, ...worldGoneWrongLayers, ...buildingTheArkLayers, ...theFloodLayers }
 
-export const paperProps: Record<string, PaperPropArt> = { dove, ...creationProps, ...animals, ...gardenProps, ...fallProps, ...exileProps, ...homeProps, ...generationsProps, ...people, ...brothers }
+export const paperProps: Record<string, PaperPropArt> = { dove, ...creationProps, ...animals, ...gardenProps, ...fallProps, ...exileProps, ...homeProps, ...generationsProps, ...people, ...brothers, ...worldGoneWrongProps, ...familyOfNoah, ...arkProps, ...theFloodProps }
 
 /**
  * Where a part is at `time`, blending from the previous pose into the current one, so

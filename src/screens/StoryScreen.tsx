@@ -42,6 +42,9 @@ interface Session {
 
 let sessions = 0
 
+/** The scene the page address opened the story at (`?scene=`): only the first story opened follows it, and after that the save leads. */
+let launchScene = launch.scene
+
 function newSession(level: Level, episode: Episode, scene: number): Session {
   return {
     id: ++sessions,
@@ -55,10 +58,10 @@ function newSession(level: Level, episode: Episode, scene: number): Session {
 
 /** Where to begin: the save's checkpoint, or the start of Level 1. */
 function startingSession(position: Position | null, completedLevels: string[] = []): Session {
-  const sceneId = launch.scene ?? position?.scene
+  const sceneId = launchScene ?? position?.scene
   const found = sceneId ? findScene(sceneId) : undefined
   // A save left at the end of a finished level (from before the story went on by itself) goes on to the next.
-  const onward = !launch.scene && found && completedLevels.includes(found.level.id) ? nextLevel(found.level.id) : undefined
+  const onward = !launchScene && found && completedLevels.includes(found.level.id) ? nextLevel(found.level.id) : undefined
   if (onward) return newSession(onward, onward.episodes[0]!, 0)
   if (found) return newSession(found.level, found.episode, found.index)
   const level = LEVELS[0]!
@@ -168,8 +171,14 @@ export function StoryScreen() {
     })
   }, [director, level, episode, checkpoint, changeSave, commit, getTime, replaying])
 
-  // Leaving a replay ends it.
-  useEffect(() => () => useApp.setState({ replay: null }), [])
+  // Leaving a replay ends it, and leaving the story lets the save lead from then on.
+  useEffect(
+    () => () => {
+      useApp.setState({ replay: null })
+      launchScene = null
+    },
+    [],
+  )
 
   // The story begins once the episode's title card is put away (or at once, when resuming).
   useEffect(() => {

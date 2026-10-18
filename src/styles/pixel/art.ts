@@ -19,6 +19,13 @@ import { exileProps } from './props/exile'
 import { fallProps } from './props/fall'
 import { generationsProps } from './props/generations'
 import { gardenProps } from './props/garden'
+import { worldGoneWrongLayers } from './layers/world-gone-wrong'
+import { buildingTheArkLayers } from './layers/building-the-ark'
+import { arkProps } from './props/ark'
+import { theFloodLayers } from './layers/the-flood'
+import { theFloodProps } from './props/the-flood'
+import { worldGoneWrongProps } from './props/world-gone-wrong'
+import { familyOfNoah } from './characters/family-of-noah'
 
 export { LAYER_H, LAYER_W, MARGIN_X, MARGIN_Y, PX_H, PX_W, type Painter } from './frame'
 
@@ -84,9 +91,9 @@ export interface PixelDrawnArt {
 
 export type PixelPropArt = PixelSpriteArt | PixelDrawnArt
 
-export const pixelLayers: Record<string, PixelLayerArt> = { ...demoLayers, ...creationLayers, ...gardenLayers, ...fallLayers, ...exileLayers, ...homeLayers, ...generationsLayers }
+export const pixelLayers: Record<string, PixelLayerArt> = { ...demoLayers, ...creationLayers, ...gardenLayers, ...fallLayers, ...exileLayers, ...homeLayers, ...generationsLayers, ...worldGoneWrongLayers, ...buildingTheArkLayers, ...theFloodLayers }
 
-export const pixelProps: Record<string, PixelPropArt> = { dove, ...creationProps, ...animals, ...gardenProps, ...fallProps, ...exileProps, ...homeProps, ...generationsProps, ...people, ...brothers }
+export const pixelProps: Record<string, PixelPropArt> = { dove, ...creationProps, ...animals, ...gardenProps, ...fallProps, ...exileProps, ...homeProps, ...generationsProps, ...people, ...brothers, ...worldGoneWrongProps, ...familyOfNoah, ...arkProps, ...theFloodProps }
 
 export function posesOf(art: PixelPropArt): string[] {
   return art.kind === 'sprite' ? Object.keys(art.poses) : art.poses

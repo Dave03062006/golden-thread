@@ -8,7 +8,8 @@
 //   npm run build
 //   npm run playthrough
 //   npm run playthrough -- --style=pixel     one style only
-//   npm run playthrough -- --from=5          from Episode 5 on
+//   npm run playthrough -- --level=2         one level only
+//   npm run playthrough -- --from=5          from Episode 5 on (of the first level played)
 
 import { STYLES, launchEdge, screenUrl, startPreview, waitForScene } from './lib/browser.mjs'
 
@@ -16,20 +17,44 @@ import { STYLES, launchEdge, screenUrl, startPreview, waitForScene } from './lib
 const KEYS = {
   'Press and hold anywhere to call the light.': { hold: ' ', seconds: 4.2 },
   'Sweep across the night sky.': { hold: 'ArrowRight', seconds: 3.6 },
+  'Hold to walk with Noah': { hold: ' ', seconds: 15 },
 }
 
-/** The finished episodes, in order, with their lines of narration and Scripture and how many interactions they have. */
-const EPISODES = [
-  { number: 1, lines: 34, plays: 9 }, // src/content/levels/01-creation-and-fall/episode-1.ts
-  { number: 2, lines: 21, plays: 1 }, // episode-2.ts
-  { number: 3, lines: 19, plays: 1 }, // episode-3.ts
-  { number: 4, lines: 16, plays: 1 }, // episode-4.ts
-  { number: 5, lines: 24, plays: 1 }, // episode-5.ts
-  { number: 6, lines: 21, plays: 1 }, // episode-6.ts
+/**
+ * The levels to play, each with its finished episodes in order: their lines of narration
+ * and Scripture, and how many interactions they have. A level still being made ends at
+ * its last built episode, which leads back to the menu.
+ */
+const LEVELS = [
+  {
+    number: 1,
+    complete: true,
+    episodes: [
+      { number: 1, lines: 34, plays: 9 }, // src/content/levels/01-creation-and-fall/episode-1.ts
+      { number: 2, lines: 21, plays: 1 }, // episode-2.ts
+      { number: 3, lines: 19, plays: 1 }, // episode-3.ts
+      { number: 4, lines: 16, plays: 1 }, // episode-4.ts
+      { number: 5, lines: 24, plays: 1 }, // episode-5.ts
+      { number: 6, lines: 21, plays: 1 }, // episode-6.ts
+    ],
+  },
+  {
+    number: 2,
+    complete: false,
+    episodes: [
+      { number: 1, lines: 16, plays: 1 }, // src/content/levels/02-noah-and-the-nations/episode-1.ts
+      { number: 2, lines: 18, plays: 1 }, // episode-2.ts
+      { number: 3, lines: 14, plays: 1 }, // episode-3.ts
+    ],
+  },
 ]
 
-/** `--from=N` starts at episode N instead of the beginning. */
-const from = Number(process.argv.find((a) => a.startsWith('--from='))?.split('=')[1] ?? 1)
+const value = (name) => process.argv.find((a) => a.startsWith(`--${name}=`))?.split('=')[1]
+/** `--level=N` plays one level; `--from=N` starts at its episode N instead of the beginning. */
+const onlyLevel = value('level') ? Number(value('level')) : null
+const from = Number(value('from') ?? 1)
+const PLAYED = LEVELS.filter((l) => onlyLevel === null || l.number === onlyLevel)
+const code = (n) => `l${String(n).padStart(2, '0')}`
 
 const server = await startPreview()
 const browser = await launchEdge()
@@ -48,8 +73,8 @@ async function answer(page) {
   throw new Error('no answer to a question was taken as right')
 }
 
-/** Plays one episode from its title card to its end card, then goes on from the end card. */
-async function playEpisode(page, style, { number, lines: expected, plays: expectedPlays }, last) {
+/** Plays one episode from its title card to its end card, then goes on from the end card with `next`. */
+async function playEpisode(page, style, { number, lines: expected, plays: expectedPlays }, next) {
   await page.getByRole('button', { name: 'Begin', exact: true }).click()
 
   const story = page.getByRole('region', { name: 'The story' })
@@ -133,19 +158,19 @@ async function playEpisode(page, style, { number, lines: expected, plays: expect
     await page.waitForTimeout(700)
   }
 
+  const label = `Level ${page.level} · Episode`
   const toggle = end.getByRole('switch', { name: /I’ve read/ })
   await toggle.check()
   const marked = await toggle.isChecked()
   const found = (await end.textContent()).includes('You found this episode’s golden thread')
-  // After the level's last episode comes its end: the quiz first.
-  await end.getByRole('button', { name: number === LAST ? 'On to the quiz' : last ? 'Back to the menu' : `On to Episode ${number + 1}` }).click()
+  await end.getByRole('button', { name: next }).click()
 
   return [
     // The end card only opens after the last line, so reaching it means every line was read.
-    [lines > expected * 0.8, `Episode ${number}: read every line to the end card (${lines} of the ${expected} lines moved on by hand)`],
-    [plays >= expectedPlays, `Episode ${number}: did every interaction (${plays} steps)`],
-    [thread && found, `Episode ${number}: found the golden thread, and the episode remembers it`],
-    [marked, `Episode ${number}: marked “I’ve read it”`],
+    [lines > expected * 0.8, `${label} ${number}: read every line to the end card (${lines} of the ${expected} lines moved on by hand)`],
+    [plays >= expectedPlays, `${label} ${number}: did every interaction (${plays} steps)`],
+    [thread && found, `${label} ${number}: found the golden thread, and the episode remembers it`],
+    [marked, `${label} ${number}: marked “I’ve read it”`],
   ]
 }
 
@@ -191,9 +216,9 @@ async function levelEnd(page, played) {
   await page.getByRole('button', { name: 'Visit the cathedral' }).click()
   const nave = page.getByRole('region', { name: 'The nave of the cathedral' })
   await nave.waitFor()
-  const panels = await nave.getByRole('button', { name: /^Episode \d, .*: set$/ }).count()
+  const panels = await nave.getByRole('button', { name: /^Level 1, episode \d, .*: set$/ }).count()
   // Step inside the last panel: its episode plays again, from its title card.
-  await nave.getByRole('button', { name: new RegExp(`^Episode ${LAST}, `) }).click()
+  await nave.getByRole('button', { name: new RegExp(`^Level 1, episode ${LAST}, `) }).click()
   await page.getByRole('button', { name: 'Step inside' }).click()
   await waitForScene(page)
   const replayed = await page
@@ -230,18 +255,31 @@ async function play(style) {
   const page = await (await browser.newContext({ viewport: { width: 1280, height: 720 } })).newPage()
   const errors = []
   page.on('pageerror', (e) => errors.push(e.message))
-  // Starting from a later episode opens the story at its first scene.
-  const playing = EPISODES.filter((e) => e.number >= from)
-  await page.goto(screenUrl(server.url, { screen: 'story', style, extra: from > 1 ? `&scene=l01-e${from}-s1` : '' }))
+  // Starting from a later level or episode opens the story at its first scene.
+  const first = PLAYED[0]
+  const startAt = onlyLevel || from > 1 ? `&scene=${code(first.number)}-e${from}-s1` : ''
+  await page.goto(screenUrl(server.url, { screen: 'story', style, extra: startAt }))
   await waitForScene(page)
 
   const results = []
   try {
-    for (const [i, episode] of playing.entries()) {
-      if (i > 0) await waitForScene(page)
-      results.push(...(await playEpisode(page, style, episode, i === playing.length - 1)))
+    for (const [l, level] of PLAYED.entries()) {
+      page.level = level.number
+      if (l > 0) {
+        // The next level goes on from the menu, where Continue now leads to it.
+        await page.getByRole('navigation', { name: 'Main menu' }).getByRole('button', { name: 'Continue' }).click()
+        await waitForScene(page)
+      }
+      const playing = level.episodes.filter((e) => l > 0 || e.number >= from)
+      for (const [i, episode] of playing.entries()) {
+        if (i > 0) await waitForScene(page)
+        const last = i === playing.length - 1
+        // After a finished level's last episode comes its end: the quiz first.
+        const next = !last ? `On to Episode ${episode.number + 1}` : level.complete ? 'On to the quiz' : 'Back to the menu'
+        results.push(...(await playEpisode(page, style, episode, next)))
+      }
+      if (level.number === 1 && playing.at(-1)?.number === LAST) results.push(...(await levelEnd(page, playing.length)))
     }
-    if (playing.at(-1)?.number === LAST) results.push(...(await levelEnd(page, playing.length)))
   } catch (error) {
     // Show where it stopped, and what had passed so far.
     await page.screenshot({ path: `shots/failed-${style}.png` })
@@ -277,5 +315,4 @@ if (failures) {
   console.error(`${failures} playthrough check(s) failed.`)
   process.exit(1)
 }
-const last = EPISODES.length
-console.log(`${from === last ? `Episode ${last} plays` : `Episodes ${from}–${last} play`} from start to finish.`)
+console.log(`${PLAYED.map((l) => `Level ${l.number}${l.complete ? '' : ' (so far)'}`).join(' and ')} play${PLAYED.length > 1 ? '' : 's'} from start to finish.`)

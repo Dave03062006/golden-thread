@@ -213,7 +213,7 @@ export const NaveView = memo(
                           left: `${(c.x / WINDOW.w) * 100}%`,
                           top: `${(c.y / WINDOW.h) * 100}%`,
                         }}
-                        aria-label={`Episode ${i + 1}, ${panel.title}: ${panel.state === 'dark' ? 'not set yet' : 'set'}`}
+                        aria-label={`Level ${win.number}, episode ${i + 1}, ${panel.title}: ${panel.state === 'dark' ? 'not set yet' : 'set'}`}
                         onClick={() => onChoose(win, panel)}
                       />
                     )

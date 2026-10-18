@@ -1,5 +1,8 @@
 import type { SceneDescription } from '../../../scene/types'
 import type { Episode, Level, WhereWhen } from '../../types'
+import { episode1 } from './episode-1'
+import { episode2 } from './episode-2'
+import { episode3 } from './episode-3'
 import { level2Music } from './music'
 import { level2Quiz } from './quiz'
 
@@ -69,7 +72,7 @@ export const level2: Level = {
     },
   },
   episodes: [
-    built(pending('l02-e1'), {
+    built(episode1, {
       id: 'l02-e1',
       number: 1,
       emblem: 'walk',
@@ -89,14 +92,14 @@ export const level2: Level = {
       ]),
       read: ['GEN 6:1-13'],
     }),
-    built(pending('l02-e2'), {
+    built(episode2, {
       id: 'l02-e2',
       number: 2,
       emblem: 'ark',
       title: 'Building the Ark',
       passage: 'GEN 6:14-7:5',
       minutes: 7,
-      thread: { id: 'the-ark-and-the-church', spot: 'ark-door', fromScene: 'l02-e2-s1' },
+      thread: { id: 'the-ark-and-the-church', spot: 'ark-door', fromScene: 'l02-e2-s2' },
       whereWhen: where(BEFORE_HISTORY, [
         ['Gopher wood', 'No one knows for sure what tree “gopher wood” was. It may have been cypress, which shipbuilders long prized because it resists rot.'],
         ['The shape of a barge', 'Six times longer than it was wide, the ark had the proportions of a stable barge. It had no sails and no rudder: it only needed to float. God would steer it.'],
@@ -104,7 +107,7 @@ export const level2: Level = {
       ]),
       read: ['GEN 6:14-7:5'],
     }),
-    built(pending('l02-e3'), {
+    built(episode3, {
       id: 'l02-e3',
       number: 3,
       emblem: 'storm',

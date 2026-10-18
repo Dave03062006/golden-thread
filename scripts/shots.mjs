@@ -104,8 +104,8 @@ async function capture(page, name) {
 
 const SCREENS = ['title', 'menu', 'settings', 'scene', 'music', 'credits', 'quiz-menu', 'quiz', 'reflection', 'journal', 'ceremony', 'cathedral', 'map']
 
-/** Every scene of the finished episodes (src/content/levels/01-creation-and-fall/). */
-const STORY_SCENES = [...Array.from({ length: 8 }, (_, i) => `l01-e1-s${i + 1}`), ...Array.from({ length: 5 }, (_, i) => `l01-e2-s${i + 1}`), ...Array.from({ length: 6 }, (_, i) => `l01-e3-s${i + 1}`), ...Array.from({ length: 5 }, (_, i) => `l01-e4-s${i + 1}`), ...Array.from({ length: 6 }, (_, i) => `l01-e5-s${i + 1}`), ...Array.from({ length: 5 }, (_, i) => `l01-e6-s${i + 1}`)]
+/** Every scene of the finished episodes (src/content/levels/). */
+const STORY_SCENES = [...Array.from({ length: 8 }, (_, i) => `l01-e1-s${i + 1}`), ...Array.from({ length: 5 }, (_, i) => `l01-e2-s${i + 1}`), ...Array.from({ length: 6 }, (_, i) => `l01-e3-s${i + 1}`), ...Array.from({ length: 5 }, (_, i) => `l01-e4-s${i + 1}`), ...Array.from({ length: 6 }, (_, i) => `l01-e5-s${i + 1}`), ...Array.from({ length: 5 }, (_, i) => `l01-e6-s${i + 1}`), ...Array.from({ length: 4 }, (_, i) => `l02-e1-s${i + 1}`), ...Array.from({ length: 4 }, (_, i) => `l02-e2-s${i + 1}`), ...Array.from({ length: 4 }, (_, i) => `l02-e3-s${i + 1}`)]
 
 /** Opens the story at a scene, past the episode's title card, and lets the first line settle in. */
 async function openStory(page, url, style, scene) {
