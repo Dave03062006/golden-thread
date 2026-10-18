@@ -75,6 +75,32 @@ function person(look: Look): PixelSpriteArt {
   }
 }
 
+/** A child born after the Flood: the same figure, smaller, in a short robe, standing or walking. */
+function child(look: Look): PixelSpriteArt {
+  const frame = (step: number, up: number) =>
+    sprite(12, 20, (g) => {
+      g.rect(3 - step, 18, 2, 2, 'S').rect(6 + step, 18, 2, 2, 'S')
+      g.rect(3, 7 + up, 6, 11 - up, 'K')
+      g.rect(5, 5 + up, 2, 2, 'S')
+      g.ellipse(5.5, 3 + up, 2.2, 2.2, 'S')
+      g.ellipse(6, 2 + up, 2, 1.3, 'H')
+      if (look.veil) g.rect(6, 1 + up, 3, 2, 'V').rect(7, 3 + up, 2, 4, 'V')
+      g.rect(2, 8 + up, 1, 6, 'S')
+      g.rim('S', 'R', 'left')
+      g.rim('K', 'R', 'left')
+    })
+  return {
+    kind: 'sprite',
+    facing: -1,
+    anchor: 'base',
+    colors: { S: C.wood1, H: look.hair, V: look.veil ?? C.pale, K: look.robe, R: C.gold },
+    poses: {
+      idle: { frames: [frame(0, 0), frame(0, -1)], fps: 0.5 },
+      walk: { frames: [frame(1, 0), frame(-1, 0)], fps: 3.4 },
+    },
+  }
+}
+
 export const familyOfNoah: Record<string, PixelSpriteArt> = {
   noah: person({ robe: C.slate, hair: C.white, beard: C.white, sash: C.gold }),
   'noahs-wife': person({ robe: C.purple, hair: C.pale, veil: C.sand }),
@@ -86,4 +112,6 @@ export const familyOfNoah: Record<string, PixelSpriteArt> = {
   abram: person({ robe: C.purple, hair: C.wood0, beard: C.wood0, sash: C.gold }),
   sarai: person({ robe: C.blue, hair: C.wood0, veil: C.white }),
   lot: person({ robe: C.green, hair: C.wood0 }),
+  boy: child({ robe: C.wood3, hair: C.wood0 }),
+  girl: child({ robe: C.rose, hair: C.wood0, veil: C.white }),
 }

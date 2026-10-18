@@ -96,8 +96,12 @@ export interface GameView {
   choice?: Choice | null
   /** Two passages to compare, shown over the scene. */
   compare?: Compare | null
-  /** A verse or a line to read for a moment, like the one a found sign recalls. Kept the same object while it shows. */
-  message?: { title: string; reference?: string; text: string } | null
+  /**
+   * A verse or a line to read for a moment, like the one a found sign recalls. Kept the same
+   * object while it shows. It shows at the top of the scene, or low, above the hint, when the
+   * top is where the play happens (the rainbow).
+   */
+  message?: { title: string; reference?: string; text: string; low?: boolean } | null
   /** For a quiet moment of rest: whether the player may now move on. */
   restReady?: boolean
   /** Whether the interaction is finished. */

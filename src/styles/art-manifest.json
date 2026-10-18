@@ -155,11 +155,53 @@
     },
     "open-sea": {
       "hash": "6d659ce7"
+    },
+    "parting-clouds": {
+      "hash": "9ff416c0"
+    },
+    "far-peaks": {
+      "hash": "c01d806e"
+    },
+    "green-hills": {
+      "hash": "32c78fca"
+    },
+    "ararat-slope": {
+      "hash": "a13ccce8"
+    },
+    "ararat-grass": {
+      "hash": "0d48ddac"
+    },
+    "vineyard-sky": {
+      "hash": "4da68868"
+    },
+    "rainbow-1": {
+      "hash": "00e1a34f"
+    },
+    "rainbow-2": {
+      "hash": "662b1a0b"
+    },
+    "rainbow-3": {
+      "hash": "8e5393f6"
+    },
+    "rainbow-4": {
+      "hash": "9a587e0e"
+    },
+    "rainbow-5": {
+      "hash": "44ac7ba3"
+    },
+    "rainbow-6": {
+      "hash": "b7bea4b3"
+    },
+    "rainbow-7": {
+      "hash": "4c1be215"
+    },
+    "vineyard": {
+      "hash": "15ce5d3e"
     }
   },
   "paperProps": {
     "dove": {
-      "hash": "76e50342"
+      "hash": "e56cc595"
     },
     "sun": {
       "hash": "7b261d7d"
@@ -358,6 +400,33 @@
     },
     "rain": {
       "hash": "8e065025"
+    },
+    "treetop": {
+      "hash": "2dca9b92"
+    },
+    "raven": {
+      "hash": "268ddfbe"
+    },
+    "smoke-column": {
+      "hash": "22aa0490"
+    },
+    "noah-altar": {
+      "hash": "236314c3"
+    },
+    "field": {
+      "hash": "8be5d0e6"
+    },
+    "striped-tent": {
+      "hash": "895d2acc"
+    },
+    "boy": {
+      "hash": "e3979649"
+    },
+    "girl": {
+      "hash": "86922804"
+    },
+    "cloak": {
+      "hash": "1d2f443c"
     }
   },
   "pixelLayers": {
@@ -516,6 +585,48 @@
     },
     "open-sea": {
       "hash": "71e16049"
+    },
+    "parting-clouds": {
+      "hash": "68c1c26e"
+    },
+    "far-peaks": {
+      "hash": "db3cbbc9"
+    },
+    "green-hills": {
+      "hash": "7c3a78b1"
+    },
+    "ararat-slope": {
+      "hash": "0f46d8c1"
+    },
+    "ararat-grass": {
+      "hash": "0c5a6fe7"
+    },
+    "vineyard-sky": {
+      "hash": "21c78adc"
+    },
+    "rainbow-1": {
+      "hash": "0bdd07b9"
+    },
+    "rainbow-2": {
+      "hash": "d9f0fccd"
+    },
+    "rainbow-3": {
+      "hash": "51344ac1"
+    },
+    "rainbow-4": {
+      "hash": "664840a9"
+    },
+    "rainbow-5": {
+      "hash": "84104db5"
+    },
+    "rainbow-6": {
+      "hash": "2fa7cd7d"
+    },
+    "rainbow-7": {
+      "hash": "95248e85"
+    },
+    "vineyard": {
+      "hash": "7d70861d"
     }
   },
   "backdrop": {

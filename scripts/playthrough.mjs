@@ -45,6 +45,8 @@ const LEVELS = [
       { number: 1, lines: 16, plays: 1 }, // src/content/levels/02-noah-and-the-nations/episode-1.ts
       { number: 2, lines: 18, plays: 1 }, // episode-2.ts
       { number: 3, lines: 14, plays: 1 }, // episode-3.ts
+      { number: 4, lines: 14, plays: 3 }, // episode-4.ts
+      { number: 5, lines: 19, plays: 1 }, // episode-5.ts
     ],
   },
 ]

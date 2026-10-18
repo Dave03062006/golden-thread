@@ -3,6 +3,8 @@ import type { Episode, Level, WhereWhen } from '../../types'
 import { episode1 } from './episode-1'
 import { episode2 } from './episode-2'
 import { episode3 } from './episode-3'
+import { episode4 } from './episode-4'
+import { episode5 } from './episode-5'
 import { level2Music } from './music'
 import { level2Quiz } from './quiz'
 
@@ -123,7 +125,7 @@ export const level2: Level = {
       ]),
       read: ['GEN 7:6-24'],
     }),
-    built(pending('l02-e4'), {
+    built(episode4, {
       id: 'l02-e4',
       number: 4,
       emblem: 'olive-dove',
@@ -142,7 +144,7 @@ export const level2: Level = {
       ),
       read: ['GEN 8:1-19'],
     }),
-    built(pending('l02-e5'), {
+    built(episode5, {
       id: 'l02-e5',
       number: 5,
       emblem: 'rainbow',

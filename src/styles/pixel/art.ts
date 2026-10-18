@@ -24,6 +24,10 @@ import { buildingTheArkLayers } from './layers/building-the-ark'
 import { arkProps } from './props/ark'
 import { theFloodLayers } from './layers/the-flood'
 import { theFloodProps } from './props/the-flood'
+import { theDoveReturnsLayers } from './layers/the-dove-returns'
+import { theDoveReturnsProps } from './props/the-dove-returns'
+import { theRainbowCovenantLayers } from './layers/the-rainbow-covenant'
+import { theRainbowCovenantProps } from './props/the-rainbow-covenant'
 import { worldGoneWrongProps } from './props/world-gone-wrong'
 import { familyOfNoah } from './characters/family-of-noah'
 
@@ -91,9 +95,45 @@ export interface PixelDrawnArt {
 
 export type PixelPropArt = PixelSpriteArt | PixelDrawnArt
 
-export const pixelLayers: Record<string, PixelLayerArt> = { ...demoLayers, ...creationLayers, ...gardenLayers, ...fallLayers, ...exileLayers, ...homeLayers, ...generationsLayers, ...worldGoneWrongLayers, ...buildingTheArkLayers, ...theFloodLayers }
+/** Each module's layers, kept apart so a test can check that no two use the same name (a later one would quietly replace an earlier one). */
+export const pixelLayerSets: Record<string, PixelLayerArt>[] = [
+  demoLayers,
+  creationLayers,
+  gardenLayers,
+  fallLayers,
+  exileLayers,
+  homeLayers,
+  generationsLayers,
+  worldGoneWrongLayers,
+  buildingTheArkLayers,
+  theFloodLayers,
+  theDoveReturnsLayers,
+  theRainbowCovenantLayers,
+]
 
-export const pixelProps: Record<string, PixelPropArt> = { dove, ...creationProps, ...animals, ...gardenProps, ...fallProps, ...exileProps, ...homeProps, ...generationsProps, ...people, ...brothers, ...worldGoneWrongProps, ...familyOfNoah, ...arkProps, ...theFloodProps }
+export const pixelLayers: Record<string, PixelLayerArt> = Object.assign({}, ...pixelLayerSets)
+
+/** Each module's props, kept apart so a test can check that no two use the same name (a later one would quietly replace an earlier one). */
+export const pixelPropSets: Record<string, PixelPropArt>[] = [
+  { dove },
+  creationProps,
+  animals,
+  gardenProps,
+  fallProps,
+  exileProps,
+  homeProps,
+  generationsProps,
+  people,
+  brothers,
+  worldGoneWrongProps,
+  familyOfNoah,
+  arkProps,
+  theFloodProps,
+  theDoveReturnsProps,
+  theRainbowCovenantProps,
+]
+
+export const pixelProps: Record<string, PixelPropArt> = Object.assign({}, ...pixelPropSets)
 
 export function posesOf(art: PixelPropArt): string[] {
   return art.kind === 'sprite' ? Object.keys(art.poses) : art.poses

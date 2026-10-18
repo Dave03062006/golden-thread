@@ -487,6 +487,12 @@
   animation: intro-in 0.6s ease-out;
 }
 
+/* Low, just above the hint, when the play happens at the top of the scene. */
+.play-message-low {
+  top: auto;
+  bottom: 22%;
+}
+
 .play-message-title {
   display: flex;
   gap: 0.6rem;

@@ -158,7 +158,7 @@ export function PlayLayer({ runner, gentle }: { runner: GameRunner; gentle: bool
       )}
       {choice && <ChoiceCard choice={choice} choose={(option) => runner.queue({ kind: 'choose', option })} />}
       {message && (
-        <output className="play-message" aria-live="polite">
+        <output className={message.low ? 'play-message play-message-low' : 'play-message'} aria-live="polite">
           <span className="play-message-title">
             {message.title}
             {message.reference && <small>{message.reference}</small>}

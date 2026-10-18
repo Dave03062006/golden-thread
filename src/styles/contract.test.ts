@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vitest'
 import { artIdsOf } from '../scene/evaluate'
 import { ALL_SCENES } from '../scene/registry'
-import { paperArtIndex } from './paper-glass/art'
-import { pixelArtIndex } from './pixel/art'
+import { paperArtIndex, paperLayerSets, paperPropSets } from './paper-glass/art'
+import { pixelArtIndex, pixelLayerSets, pixelPropSets } from './pixel/art'
 
 // Every scene may only use art that BOTH styles provide (spec §13.4).
 describe.each(ALL_SCENES.map((scene) => [scene.id, scene] as const))('scene %s', (_id, scene) => {
@@ -15,5 +15,18 @@ describe.each(ALL_SCENES.map((scene) => [scene.id, scene] as const))('scene %s',
 
   it('places every actor above one of its own layers', () => {
     for (const actor of scene.actors) expect(layers).toContain(actor.above)
+  })
+})
+
+// Art is gathered from many modules; a name used twice would quietly replace the earlier art.
+describe.each([
+  ['paper-glass layers', paperLayerSets],
+  ['paper-glass props', paperPropSets],
+  ['pixel layers', pixelLayerSets],
+  ['pixel props', pixelPropSets],
+] as const)('%s', (_name, sets) => {
+  it('never use the same name twice', () => {
+    const names = sets.flatMap((set) => Object.keys(set))
+    expect(names.filter((name, i) => names.indexOf(name) !== i)).toEqual([])
   })
 })

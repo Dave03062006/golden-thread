@@ -13,6 +13,10 @@ import { buildingTheArkLayers } from './layers/building-the-ark'
 import { arkProps } from './props/ark'
 import { theFloodLayers } from './layers/the-flood'
 import { theFloodProps } from './props/the-flood'
+import { theDoveReturnsLayers } from './layers/the-dove-returns'
+import { theDoveReturnsProps } from './props/the-dove-returns'
+import { theRainbowCovenantLayers } from './layers/the-rainbow-covenant'
+import { theRainbowCovenantProps } from './props/the-rainbow-covenant'
 import { worldGoneWrongProps } from './props/world-gone-wrong'
 import { familyOfNoah } from './characters/family-of-noah'
 import { creationProps } from './props/creation'
@@ -81,9 +85,45 @@ export interface PaperPropArt {
   shadow?: boolean
 }
 
-export const paperLayers: Record<string, PaperLayerArt> = { ...demoLayers, ...creationLayers, ...gardenLayers, ...fallLayers, ...exileLayers, ...homeLayers, ...generationsLayers, ...worldGoneWrongLayers, ...buildingTheArkLayers, ...theFloodLayers }
+/** Each module's layers, kept apart so a test can check that no two use the same name (a later one would quietly replace an earlier one). */
+export const paperLayerSets: Record<string, PaperLayerArt>[] = [
+  demoLayers,
+  creationLayers,
+  gardenLayers,
+  fallLayers,
+  exileLayers,
+  homeLayers,
+  generationsLayers,
+  worldGoneWrongLayers,
+  buildingTheArkLayers,
+  theFloodLayers,
+  theDoveReturnsLayers,
+  theRainbowCovenantLayers,
+]
 
-export const paperProps: Record<string, PaperPropArt> = { dove, ...creationProps, ...animals, ...gardenProps, ...fallProps, ...exileProps, ...homeProps, ...generationsProps, ...people, ...brothers, ...worldGoneWrongProps, ...familyOfNoah, ...arkProps, ...theFloodProps }
+export const paperLayers: Record<string, PaperLayerArt> = Object.assign({}, ...paperLayerSets)
+
+/** Each module's props, kept apart so a test can check that no two use the same name (a later one would quietly replace an earlier one). */
+export const paperPropSets: Record<string, PaperPropArt>[] = [
+  { dove },
+  creationProps,
+  animals,
+  gardenProps,
+  fallProps,
+  exileProps,
+  homeProps,
+  generationsProps,
+  people,
+  brothers,
+  worldGoneWrongProps,
+  familyOfNoah,
+  arkProps,
+  theFloodProps,
+  theDoveReturnsProps,
+  theRainbowCovenantProps,
+]
+
+export const paperProps: Record<string, PaperPropArt> = Object.assign({}, ...paperPropSets)
 
 /**
  * Where a part is at `time`, blending from the previous pose into the current one, so

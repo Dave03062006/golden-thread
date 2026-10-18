@@ -8,6 +8,8 @@ import { twist } from './twist'
 import { walkWithGod } from './walk-with-god'
 import { buildTheArk } from './build-the-ark'
 import { throughTheStorm } from './through-the-storm'
+import { theDove } from './the-dove'
+import { colorsOfThePromise } from './colors-of-the-promise'
 
 /** Every interactive moment, by the name a story's `play` beat uses. */
-export const GAMES: Record<string, AnyGameRules> = { ...letThereBe, naming, twist, 'lights-in-the-dark': lightsInTheDark, 'abels-flock': abelsFlock, 'family-tree': familyTree, 'walk-with-god': walkWithGod, 'build-the-ark': buildTheArk, 'through-the-storm': throughTheStorm }
+export const GAMES: Record<string, AnyGameRules> = { ...letThereBe, naming, twist, 'lights-in-the-dark': lightsInTheDark, 'abels-flock': abelsFlock, 'family-tree': familyTree, 'walk-with-god': walkWithGod, 'build-the-ark': buildTheArk, 'through-the-storm': throughTheStorm, ...theDove, 'colors-of-the-promise': colorsOfThePromise }
