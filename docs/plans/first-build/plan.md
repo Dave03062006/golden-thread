@@ -281,6 +281,58 @@ Current npm versions (npm on this machine uses the npmmirror registry, which mir
 
 **Dependencies:** Tasks 1–6
 
+### Task 8: Level 2, *Noah and the Nations* (M8)
+
+After the first build, each level follows the spec's way of making a level (§15): script, art, build, checks, play-test. Level 2 completes Age I.
+
+**1. Script (written; waiting for Dave):** `docs/scripts/level-02-noah-and-the-nations.md`. It has 7 episodes and 30 scenes (and one optional), plus the threads, *Where and when*, a quiz bank of 51 questions, reflection and prayer, both playlists, and a table of all 59 quotations in both translations. Each quotation was checked word for word against the downloaded texts. **For Dave:** approve or change it, decide on Noah's vineyard (Genesis 9:18–29, optional scene 5.5), and confirm the two verses marked ⚠ verify.
+
+**2. Art, in both styles:**
+- **Sets:**
+  - the violent city at dusk, and Noah's home;
+  - the clearing where the ark is built;
+  - the flood sea, in storm and in calm;
+  - the mountainside of Ararat, with its altar and the rainbow sky;
+  - the plain of Shinar and its tower;
+  - the tapestry map of the nations;
+  - Ur, the road to Haran, and Haran at night.
+- **Characters:**
+  - Noah, at two ages;
+  - Noah's wife, his three sons and their wives;
+  - crowds and builders, in silhouette;
+  - Terah, Abram, Sarai and Lot.
+- **Animals:** the raven. Level 1's lion, deer, sheep, elephant, birds and dove are reused, and a few more pairs are added for the boarding.
+- **Props:**
+  - the ark in its stages (frame, hull, pitch, door);
+  - the olive tree and leaf, the altar, and the rainbow;
+  - bricks and kilns, and the tower's terraces;
+  - tents, camels and the cloak.
+
+**3. Build:**
+- **Content:** the seven episodes as scenes, the quiz bank, the level's music, its reflection, and its threads. The threads are fulfilled in these Ages:
+  - Mary, the Spirit like a dove: XI;
+  - the new covenant: XII;
+  - the Church, Baptism, Pentecost, all nations blessed: XIII.
+- **New games, as pure rules with tests:**
+  - walk with God (quiet);
+  - building the ark (building);
+  - through the storm (steering);
+  - the dove (flight);
+  - colors of the promise (light and reveal);
+  - the tower (stacking, then courier routes on the map).
+  - The family tree is reused, from Shem to Abram.
+- **Map:** the Level 2 marker at Ararat; regions for Ararat, Shinar, Ur and Haran (for the WHERE questions); and the route on to Ur and Haran.
+- **Cathedral:** Level 2's window, with 7 medallions and their emblems in both styles. With it, the bay of Age I is complete.
+- **Music:** the tracks in the script's table, found and license-checked (`npm run media`), with substitutes where none is allowed.
+
+**4. Checks:** all of them: `check`, `test`, `build`, `bake`, `playthrough` (extended to Level 2), `a11y`, `keyboard`, `perf` (on a quiet computer), `saves`, and `shots` with new baselines for the Level 2 scenes.
+
+**5. Play-test:** Dave plays Level 2 from start to finish, and what he finds is fixed.
+
+**Done when:** Level 2 plays from start to finish in both styles, every check passes, Dave approves it, and the cathedral's Age I bay and the map up to Haran are complete.
+
+**Dependencies:** Dave's approval of the script; the Level 1 checkpoint decision (spec §16.2), since it decides whether the art is made in both styles.
+
 ## Parallelization
 
 - **Code tasks run in order.** Each one builds on the last, and running them in order keeps the code consistent for the code tour. I do the work in this session, without subagents, as the session guidelines require.
