@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useApp } from '../app/store'
 import { dayLight, nave } from '../cathedral/model'
-import { LEVELS } from '../content/catalog'
+import { LEVELS, nextLevel } from '../content/catalog'
 import { Button, Panel } from '../ui/components'
 import { NaveView } from './cathedral/NaveView'
 import './quiz/quiz.css'
@@ -19,6 +19,7 @@ export function CeremonyScreen() {
   const save = useApp((s) => s.save)
   const levelEnd = useApp((s) => s.levelEnd)
   const go = useApp((s) => s.go)
+  const checkpoint = useApp((s) => s.checkpoint)
   const level = LEVELS.find((l) => l.id === levelEnd) ?? LEVELS[0]!
   const heading = useRef<HTMLHeadingElement>(null)
   const [complete, setComplete] = useState(false)
@@ -30,6 +31,14 @@ export function CeremonyScreen() {
   const allSet = useCallback(() => setComplete(true), [])
 
   useEffect(() => heading.current?.focus(), [])
+
+  // The story goes on from the next level's first scene: that's where Continue now leads.
+  const next = nextLevel(level.id)
+  useEffect(() => {
+    if (!next) return
+    const episode = next.episodes[0]!
+    void checkpoint({ level: next.id, episode: episode.id, scene: episode.scenes[0]!.id })
+  }, [next, checkpoint])
   // Once the window is complete, the way on takes the focus (and comes into view on small screens).
   useEffect(() => {
     if (complete) actions.current?.querySelector('button')?.focus()
@@ -54,6 +63,11 @@ export function CeremonyScreen() {
           <Button variant="primary" onClick={() => go('cathedral')} disabled={!complete}>
             Visit the cathedral
           </Button>
+          {next && (
+            <Button onClick={() => go('story')} disabled={!complete}>
+              On to Level {next.number}
+            </Button>
+          )}
           <Button onClick={() => go('menu')}>Back to the menu</Button>
         </div>
       </Panel>

@@ -99,7 +99,28 @@ const AREAS: MapRegion[] = [
     kind: 'area',
     shape: pairs([[29.2, 44.4], [28.8, 47.6], [27.0, 49.4], [25.4, 47.8], [25.6, 44.6], [27.4, 43.0]]),
   },
+
+  // Level 2 · Noah and the Nations: mountain ranges, lands and cities.
+  { id: 'ararat-mountains', name: 'The mountains of Ararat', kind: 'area', shape: pairs([[40.4, 42.8], [40.4, 45.4], [39.4, 45.6], [38.9, 44.4], [39.2, 42.9]]) },
+  { id: 'sinai-mountains', name: 'Mount Sinai', kind: 'area', shape: pairs([[29.0, 33.4], [29.1, 34.2], [28.4, 34.5], [28.0, 34.1], [28.3, 33.5]]) },
+  { id: 'lebanon-mountains', name: 'The mountains of Lebanon', kind: 'area', shape: pairs([[34.7, 35.9], [34.5, 36.6], [33.4, 36.0], [33.5, 35.5], [34.2, 35.6]]) },
+  { id: 'taurus-mountains', name: 'The Taurus mountains', kind: 'area', shape: pairs([[37.6, 31.0], [38.8, 35.5], [38.8, 39.6], [37.8, 39.8], [36.9, 35.0], [36.6, 31.6]]) },
+  { id: 'shinar', name: 'Shinar', kind: 'area', shape: pairs([[33.6, 43.4], [33.2, 45.4], [31.6, 47.4], [30.5, 47.7], [30.7, 46.0], [31.8, 44.4], [32.9, 43.3]]) },
+  { id: 'canaan', name: 'Canaan', kind: 'area', shape: pairs([[33.3, 35.15], [33.2, 35.9], [31.4, 35.6], [31.1, 34.9], [31.5, 34.4], [32.6, 34.9]]) },
+  { id: 'anatolia', name: 'Anatolia', kind: 'area', shape: pairs([[40.4, 28.4], [40.4, 35.6], [39.4, 37.4], [38.4, 36.6], [37.6, 32.0], [38.2, 28.6]]) },
+  ...[
+    ['ur', 'Ur of the Chaldeans', 30.96, 46.1],
+    ['haran', 'Haran', 36.86, 39.03],
+    ['nineveh', 'Nineveh', 36.36, 43.15],
+    ['babel', 'Babel', 32.54, 44.42],
+  ].map(([id, name, lat, lon]) => city(id as string, name as string, { lat: lat as number, lon: lon as number })),
 ]
+
+/** A city on the map: a small square around it, big enough to tap. */
+function city(id: string, name: string, at: LatLon): MapRegion {
+  const r = 0.45
+  return { id, name, kind: 'area', shape: pairs([[at.lat + r, at.lon - r], [at.lat + r, at.lon + r], [at.lat - r, at.lon + r], [at.lat - r, at.lon - r]]) }
+}
 
 export const MAP_REGIONS: MapRegion[] = [...RIVERS.map((r) => ({ id: r.id, name: `The ${r.name}`, kind: 'river' as const, shape: r.course })), ...AREAS]
 

@@ -103,8 +103,11 @@ export interface Level {
   quiz: Question[]
   /** The end of the level's reflection and prayer (spec §3.3). */
   reflection: Reflection
-  /** Where the level's region is on the world map, and its name there. */
-  map: { at: { lat: number; lon: number }; label: string }
+  /**
+   * Where the level's region is on the world map, and its name there; and the places the
+   * story passes through after it, in order, which the route follows.
+   */
+  map: { at: { lat: number; lon: number }; label: string; route?: { at: { lat: number; lon: number }; label: string }[] }
 }
 
 /** A quiet moment at the end of a level: a verse, a question for one's own life, a prayer. */

@@ -146,6 +146,125 @@ export const TRACKS: Track[] = [
     download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gloria-go-13319a-bi-666.ogg',
     credit: 'Neumark, Wer nur den lieben Gott lässt walten, in Bach’s setting. Gloria-Kirchenchor (released before 1936). Public domain, via the Public Domain Project and Wikimedia Commons.',
   },
+
+  // Level 2 · Noah and the Nations
+  // Episode 1: the chorale the script names, Psalm 130, "Out of the depths I cry to you."
+  {
+    id: 'bach-aus-tiefer-not',
+    title: 'Aus tiefer Not schrei ich zu dir',
+    work: 'Clavier-Übung III, BWV 686',
+    composer: 'Johann Sebastian Bach',
+    performer: 'Alexandre Cellier, organ of Saint-Nicolas-des-Champs, Paris',
+    year: 1935,
+    license: 'public-domain',
+    licenseNote: 'A recording first released in 1935, in the public domain, published by the Swiss Public Domain Project on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:Disques_lumen-32026-yl52.ogg',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Disques_lumen-32026-yl52.ogg',
+    credit: 'Bach, Aus tiefer Not schrei ich zu dir, BWV 686. Alexandre Cellier, organ (1935). Public domain, via the Public Domain Project and Wikimedia Commons.',
+  },
+  // Episode 2: the sailors’ hymn the script names.
+  {
+    id: 'navy-hymn',
+    title: 'Eternal Father, Strong to Save',
+    work: 'The Navy Hymn, arranged by Claude T. Smith',
+    composer: 'John B. Dykes',
+    performer: '“The President’s Own” United States Marine Band, Col. John R. Bourgeois, conductor',
+    year: 1992,
+    license: 'public-domain',
+    licenseNote: 'A work of the United States government (a military band), in the public domain, as stated on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:%22Eternal_Father,_Strong_to_Save%22_(1992),_performed_by_the_United_States_Marine_Band.oga',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/%22Eternal_Father,_Strong_to_Save%22_(1992),_performed_by_the_United_States_Marine_Band.oga',
+    credit: 'Dykes, Eternal Father, Strong to Save. “The President’s Own” United States Marine Band, John R. Bourgeois, conductor (1992). Public domain.',
+  },
+  // Episode 3: the storm.
+  {
+    id: 'vivaldi-summer-presto',
+    title: 'Summer: Presto',
+    work: 'The Four Seasons, RV 315',
+    composer: 'Antonio Vivaldi',
+    performer: 'The Modena Chamber Orchestra',
+    year: 2020,
+    license: 'public-domain',
+    licenseNote: 'Dedicated to the public domain by the orchestra through Musopen, as stated on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:The_Modena_Chamber_Orchestra_-_Vivaldi%27s_Summer,_RV_315_-_III._Presto.ogg',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/The_Modena_Chamber_Orchestra_-_Vivaldi%27s_Summer,_RV_315_-_III._Presto.ogg',
+    credit: 'Vivaldi, The Four Seasons, Summer: Presto. The Modena Chamber Orchestra (Musopen). Public domain, via Wikimedia Commons.',
+  },
+  // Episode 4, in place of the chant Veni Creator Spiritus (no full recording under an
+  // allowed license was found): the chorale "Come, Holy Spirit, Lord God," on a psalmodikon.
+  {
+    id: 'komm-heiliger-geist',
+    title: 'Kom, helge Ande, Herre god',
+    work: 'Chorale no. 134 from Johan Dillner’s chorale book (1832), “Komm, Heiliger Geist, Herre Gott”',
+    composer: 'Traditional chorale',
+    performer: 'Played on a psalmodikon, for the Swedish Performing Arts Agency',
+    // The recording's own year isn't given; this is the year it was published on Wikimedia Commons.
+    year: 2023,
+    license: 'cc0',
+    licenseNote: 'Dedicated to the public domain (CC0) by the Swedish Performing Arts Agency, as stated on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:Kom_helge_Ande_herre_god_-_Koral_nr_134_-_SMV_-_MMF7_0542_20.wav',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kom_helge_Ande_herre_god_-_Koral_nr_134_-_SMV_-_MMF7_0542_20.wav',
+    credit: 'Chorale “Come, Holy Spirit, Lord God” (Kom, helge Ande, Herre god), on a psalmodikon. Swedish Performing Arts Agency. CC0, via Wikimedia Commons.',
+  },
+  // Episode 6: the Pentecost Sequence the script names.
+  {
+    id: 'veni-sancte-spiritus',
+    title: 'Veni Sancte Spiritus',
+    work: 'The Sequence of Pentecost',
+    composer: 'Gregorian chant',
+    performer: 'Membeth',
+    year: 2010,
+    license: 'public-domain',
+    licenseNote: 'Released into the public domain by its performer, as stated on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:Veni.sancte.spiritus.ogg',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Veni.sancte.spiritus.ogg',
+    credit: 'Veni Sancte Spiritus, the Sequence of Pentecost, Gregorian chant. Sung by Membeth (2010). Public domain, via Wikimedia Commons.',
+  },
+  // Reflection and prayer, in place of the chant Vidi aquam (none under an allowed license
+  // was found): Psalm 117, "Praise the LORD, all nations," set by Mozart, calm and prayerful.
+  {
+    id: 'mozart-laudate-dominum',
+    title: 'Laudate Dominum',
+    work: 'Vesperae solennes de confessore, K. 339',
+    composer: 'Wolfgang Amadeus Mozart',
+    performer: 'The “Cooke” recording, shared on the Internet Archive',
+    year: 2004,
+    license: 'cc0',
+    licenseNote: 'Dedicated to the public domain (CC0), as stated on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:Mozart_-_Vesper%C3%A6_Solennes_de_Confessore_(Cooke)_-_5_Laudate_Dominum.ogg',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mozart_-_Vesper%C3%A6_Solennes_de_Confessore_(Cooke)_-_5_Laudate_Dominum.ogg',
+    credit: 'Mozart, Vesperae solennes de confessore, K. 339: Laudate Dominum. Internet Archive recording (2004). CC0, via Wikimedia Commons.',
+  },
+  // Minigames: bright and moving.
+  {
+    id: 'vivaldi-spring-allegro',
+    title: 'Spring: Allegro (Danza pastorale)',
+    work: 'The Four Seasons, RV 269',
+    composer: 'Antonio Vivaldi',
+    performer: 'The Modena Chamber Orchestra',
+    year: 2020,
+    license: 'public-domain',
+    licenseNote: 'Dedicated to the public domain by the orchestra through Musopen, as stated on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:The_Modena_Chamber_Orchestra_-_Vivaldi%27s_Spring,_RV_269_-_III._Allegro.ogg',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/The_Modena_Chamber_Orchestra_-_Vivaldi%27s_Spring,_RV_269_-_III._Allegro.ogg',
+    credit: 'Vivaldi, The Four Seasons, Spring: Allegro. The Modena Chamber Orchestra (Musopen). Public domain, via Wikimedia Commons.',
+  },
+  // The quiz: the piece the script names, Handel's Water Music.
+  {
+    id: 'handel-water-music-air',
+    title: 'Air and Bourrée',
+    work: 'Water Music, Suite in F major, HWV 348, arranged by Hamilton Harty',
+    composer: 'George Frideric Handel',
+    performer: 'The Hallé, Malcolm Sargent, conductor',
+    year: 1942,
+    license: 'public-domain',
+    licenseNote: 'A recording first released in 1942, in the public domain, published by the Swiss Public Domain Project on Wikimedia Commons.',
+    source:
+      'https://commons.wikimedia.org/wiki/File:PDP-CH_-_The_Hall%C3%A9_-_Malcolm_Sargent_-_Water_Music,_HWV_348-350_-_Suite_in_F_major,_HWV_348_-_Air,_Bourr%C3%A9e_-_Handel_-_Harty_-_Hmv-c3306-2er623.flac',
+    download:
+      'https://commons.wikimedia.org/wiki/Special:FilePath/PDP-CH_-_The_Hall%C3%A9_-_Malcolm_Sargent_-_Water_Music,_HWV_348-350_-_Suite_in_F_major,_HWV_348_-_Air,_Bourr%C3%A9e_-_Handel_-_Harty_-_Hmv-c3306-2er623.flac',
+    credit: 'Handel, Water Music, Air and Bourrée, arranged by Harty. The Hallé, Malcolm Sargent, conductor (1942). Public domain, via the Public Domain Project and Wikimedia Commons.',
+  },
 ]
 
 const BY_ID = new Map(TRACKS.map((track) => [track.id, track]))

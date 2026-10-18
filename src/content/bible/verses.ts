@@ -243,6 +243,260 @@ export const VERSES: Record<string, Verse> = {
     dra: '…that old serpent, who is called the devil and Satan…',
     partial: true,
   },
+
+  // Level 2 · Noah and the Nations: Genesis 6–12, and the passages its golden threads quote.
+  // Downloaded from Bible Gateway (RSVCE and DRA) and extracted by script, not retyped.
+  'GEN 6:5': {
+    rsv: 'The LORD saw that the wickedness of man was great in the earth, and that every imagination of the thoughts of his heart was only evil continually.',
+    dra: 'And God seeing that the wickedness of men was great on the earth, and that all the thought of their heart was bent upon evil at all times,',
+  },
+  'GEN 6:6': {
+    rsv: 'And the LORD was sorry that he had made man on the earth, and it grieved him to his heart.',
+    dra: 'It repented him that he had made man on the earth. And being touched inwardly with sorrow of heart,',
+  },
+  'GEN 6:8': {
+    rsv: 'But Noah found favor in the eyes of the LORD.',
+    dra: 'But Noe found grace before the Lord.',
+  },
+  'GEN 6:9': {
+    rsv: 'These are the generations of Noah. Noah was a righteous man, blameless in his generation; Noah walked with God.',
+    dra: 'These are the generations of Noe: Noe was a just and perfect man in his generations, he walked with God.',
+  },
+  'GEN 6:10': {
+    rsv: 'And Noah had three sons, Shem, Ham, and Japheth.',
+    dra: 'And he begot three sons, Sem, Cham, and Japheth.',
+  },
+  'GEN 6:11': {
+    rsv: 'Now the earth was corrupt in God’s sight, and the earth was filled with violence.',
+    dra: 'And the earth was corrupted before God, and was filled with iniquity.',
+  },
+  'GEN 6:13': {
+    rsv: '…I have determined to make an end of all flesh; for the earth is filled with violence through them…',
+    dra: '…The end of all flesh is come before me, the earth is filled with iniquity through them…',
+    partial: true,
+  },
+  'GEN 6:14': {
+    rsv: 'Make yourself an ark of gopher wood…',
+    dra: 'Make thee an ark of timber planks…',
+    partial: true,
+  },
+  'LUK 1:30': {
+    rsv: '…Do not be afraid, Mary, for you have found favor with God.',
+    dra: '…Fear not, Mary, for thou hast found grace with God.',
+    partial: true,
+    unconfirmed: true,
+  },
+  'GEN 6:15': {
+    rsv: 'This is how you are to make it: the length of the ark three hundred cubits, its breadth fifty cubits, and its height thirty cubits.',
+    dra: 'And thus shalt thou make it: The length of the ark shall be three hundred cubits: the breadth of it fifty cubits, and the height of it thirty cubits.',
+  },
+  'GEN 6:17': {
+    rsv: 'For behold, I will bring a flood of waters upon the earth…',
+    dra: 'Behold I will bring the waters of a great flood upon the earth…',
+    partial: true,
+  },
+  'GEN 6:18': {
+    rsv: 'But I will establish my covenant with you; and you shall come into the ark, you, your sons, your wife, and your sons’ wives with you.',
+    dra: 'And I will establish my covenant with thee, and thou shalt enter into the ark, thou and thy sons, and thy wife, and the wives of thy sons with thee.',
+  },
+  'GEN 6:22': {
+    rsv: 'Noah did this; he did all that God commanded him.',
+    dra: 'And Noe did all things which God commanded him.',
+  },
+  'HEB 11:7': {
+    rsv: 'By faith Noah, being warned by God concerning events as yet unseen, took heed and constructed an ark for the saving of his household…',
+    dra: 'By faith Noe, having received an answer concerning those things which as yet were not seen, moved with fear, framed the ark for the saving of his house…',
+    partial: true,
+  },
+  'GEN 6:19': {
+    rsv: 'And of every living thing of all flesh, you shall bring two of every sort into the ark, to keep them alive with you; they shall be male and female.',
+    dra: 'And of every living creature of all flesh, thou shalt bring two of a sort into the ark, that they may live with thee: of the male sex, and the female.',
+  },
+  'GEN 7:5': {
+    rsv: 'And Noah did all that the LORD had commanded him.',
+    dra: 'And Noe did all things which the Lord had commanded him.',
+  },
+  '1PE 3:20': {
+    rsv: '…during the building of the ark, in which a few, that is, eight persons, were saved through water.',
+    dra: '…when the ark was a building: wherein a few, that is, eight souls, were saved by water.',
+    partial: true,
+  },
+  'GEN 7:9': {
+    rsv: 'two and two, male and female, went into the ark with Noah, as God had commanded Noah.',
+    dra: 'Two and two went in to Noe into the ark, male and female, as the Lord had commanded Noe.',
+  },
+  'GEN 7:16': {
+    rsv: '…and the LORD shut him in.',
+    dra: '…and the Lord shut him in on the outside.',
+    partial: true,
+  },
+  'GEN 7:11': {
+    rsv: 'In the six hundredth year of Noah’s life, in the second month, on the seventeenth day of the month, on that day all the fountains of the great deep burst forth, and the windows of the heavens were opened.',
+    dra: 'In the six hundredth year of the life of Noe, in the second month, in the seventeenth day of the month, all the fountains of the great deep were broken up, and the flood gates of heaven were opened:',
+  },
+  'GEN 7:12': {
+    rsv: 'And rain fell upon the earth forty days and forty nights.',
+    dra: 'And the rain fell upon the earth forty days and forty nights.',
+  },
+  'GEN 7:17': {
+    rsv: 'The flood continued forty days upon the earth; and the waters increased, and bore up the ark, and it rose high above the earth.',
+    dra: 'And the flood was forty days upon the earth, and the waters increased, and lifted up the ark on high from the earth.',
+  },
+  'GEN 7:18': {
+    rsv: 'The waters prevailed and increased greatly upon the earth; and the ark floated on the face of the waters.',
+    dra: 'For they overflowed exceedingly: and filled all on the face of the earth: and the ark was carried upon the waters.',
+  },
+  'GEN 7:23': {
+    rsv: '…Only Noah was left, and those that were with him in the ark.',
+    dra: '…and Noe only remained, and they that were with him in the ark.',
+    partial: true,
+  },
+  'GEN 7:24': {
+    rsv: 'And the waters prevailed upon the earth a hundred and fifty days.',
+    dra: 'And the waters prevailed upon the earth a hundred and fifty days.',
+  },
+  '1PE 3:21': {
+    rsv: 'Baptism, which corresponds to this, now saves you…',
+    dra: 'Whereunto baptism being of the like form, now saveth you also…',
+    partial: true,
+  },
+  'GEN 8:1': {
+    rsv: 'But God remembered Noah and all the beasts and all the cattle that were with him in the ark. And God made a wind blow over the earth, and the waters subsided;',
+    dra: 'And God remembered Noe, and all the living creatures, and all the cattle which were with him in the ark, and brought a wind upon the earth, and the waters were abated.',
+  },
+  'GEN 8:4': {
+    rsv: 'and in the seventh month, on the seventeenth day of the month, the ark came to rest upon the mountains of Ararat.',
+    dra: 'And the ark rested in the seventh month, the seven and twentieth day of the month, upon the mountains of Armenia.',
+  },
+  'GEN 8:8': {
+    rsv: 'Then he sent forth a dove from him, to see if the waters had subsided from the face of the ground;',
+    dra: 'He sent forth also a dove after him, to see if the waters had now ceased upon the face of the earth.',
+  },
+  'GEN 8:9': {
+    rsv: 'but the dove found no place to set her foot, and she returned to him to the ark…',
+    dra: 'But she, not finding where her foot might rest, returned to him into the ark…',
+    partial: true,
+  },
+  'GEN 8:11': {
+    rsv: 'and the dove came back to him in the evening, and lo, in her mouth a freshly plucked olive leaf; so Noah knew that the waters had subsided from the earth.',
+    dra: 'And she came to him in the evening, carrying a bough of an olive tree, with green leaves, in her mouth. Noe therefore understood that the waters were ceased upon the earth.',
+  },
+  'GEN 8:16': {
+    rsv: '“Go forth from the ark, you and your wife, and your sons and your sons’ wives with you.',
+    dra: 'Go out of the ark, thou and thy wife, thy sons, and the wives of thy sons with thee.',
+  },
+  'GEN 8:19': {
+    rsv: 'And every beast, every creeping thing, and every bird, everything that moves upon the earth, went forth by families out of the ark.',
+    dra: 'And all living things, and cattle, and creeping things that creep upon the earth, according to their kinds, went out of the ark.',
+  },
+  'MAT 3:16': {
+    rsv: 'And when Jesus was baptized, he went up immediately from the water, and behold, the heavens were opened and he saw the Spirit of God descending like a dove, and alighting on him;',
+    dra: 'And Jesus being baptized, forthwith came out of the water: and lo, the heavens were opened to him: and he saw the Spirit of God descending as a dove, and coming upon him.',
+  },
+  'GEN 8:20': {
+    rsv: 'Then Noah built an altar to the LORD, and took of every clean animal and of every clean bird, and offered burnt offerings on the altar.',
+    dra: 'And Noe built an altar unto the Lord: and taking of all cattle and fowls that were clean, offered holocausts upon the altar.',
+  },
+  'GEN 8:22': {
+    rsv: 'While the earth remains, seedtime and harvest, cold and heat, summer and winter, day and night, shall not cease.”',
+    dra: 'All the days of the earth, seedtime and harvest, cold and heat, summer and winter, night and day, shall not cease.',
+  },
+  'GEN 9:1': {
+    rsv: 'And God blessed Noah and his sons, and said to them, “Be fruitful and multiply, and fill the earth.',
+    dra: 'And God blessed Noe and his sons. And he said to them: Increase and multiply, and fill the earth.',
+  },
+  'GEN 9:6': {
+    rsv: 'Whoever sheds the blood of man, by man shall his blood be shed; for God made man in his own image.',
+    dra: 'Whosoever shall shed man\'s blood, his blood shall be shed: for man was made to the image of God.',
+  },
+  'GEN 9:11': {
+    rsv: 'I establish my covenant with you, that never again shall all flesh be cut off by the waters of a flood, and never again shall there be a flood to destroy the earth.”',
+    dra: 'I will establish my covenant with you, and all flesh shall be no more destroyed with the waters of a flood, neither shall there be from henceforth a flood to waste the earth.',
+  },
+  'GEN 9:13': {
+    rsv: 'I set my bow in the cloud, and it shall be a sign of the covenant between me and the earth.',
+    dra: 'I will set my bow in the clouds, and it shall be the sign of a covenant between me, and between the earth.',
+  },
+  'GEN 9:15': {
+    rsv: 'I will remember my covenant which is between me and you and every living creature of all flesh; and the waters shall never again become a flood to destroy all flesh.',
+    dra: 'And I will remember my covenant with you, and with every living soul that beareth flesh: and there shall no more be waters of a flood to destroy all flesh.',
+  },
+  'GEN 9:29': {
+    rsv: 'All the days of Noah were nine hundred and fifty years; and he died.',
+    dra: 'And all his days were in the whole nine hundred and fifty years: and he died.',
+  },
+  'LUK 22:20': {
+    rsv: '…This cup which is poured out for you is the new covenant in my blood.',
+    dra: '…This is the chalice, the new testament in my blood, which shall be shed for you.',
+    partial: true,
+    unconfirmed: true,
+  },
+  'GEN 10:32': {
+    rsv: 'These are the families of the sons of Noah, according to their genealogies, in their nations; and from these the nations spread abroad on the earth after the flood.',
+    dra: 'These are the families of Noe, according to their peoples and nations. By these were the nations divided on the earth after the flood.',
+  },
+  'GEN 11:1': {
+    rsv: 'Now the whole earth had one language and few words.',
+    dra: 'And the earth was of one tongue, and of the same speech.',
+  },
+  'GEN 11:2': {
+    rsv: 'And as men migrated from the east, they found a plain in the land of Shinar and settled there.',
+    dra: 'And when they removed from the east, they found a plain in the land of Sennaar, and dwelt in it.',
+  },
+  'GEN 11:4': {
+    rsv: 'Then they said, “Come, let us build ourselves a city, and a tower with its top in the heavens, and let us make a name for ourselves, lest we be scattered abroad upon the face of the whole earth.”',
+    dra: 'And they said: Come, let us make a city and a tower, the top whereof may reach to heaven: and let us make our name famous before we be scattered abroad into all lands.',
+  },
+  'GEN 11:5': {
+    rsv: 'And the LORD came down to see the city and the tower, which the sons of men had built.',
+    dra: 'And the Lord came down to see the city and the tower, which the children of Adam were building.',
+  },
+  'GEN 11:7': {
+    rsv: 'Come, let us go down, and there confuse their language, that they may not understand one another’s speech.”',
+    dra: 'Come ye, therefore, let us go down, and there confound their tongue, that they may not understand one another\'s speech.',
+  },
+  'GEN 11:8': {
+    rsv: 'So the LORD scattered them abroad from there over the face of all the earth, and they left off building the city.',
+    dra: 'And so the Lord scattered them from that place into all lands, and they ceased to build the city.',
+  },
+  'GEN 11:9': {
+    rsv: 'Therefore its name was called Babel, because there the LORD confused the language of all the earth…',
+    dra: 'And therefore the name thereof was called Babel, because there the language of the whole earth was confounded…',
+    partial: true,
+  },
+  'ACT 2:6': {
+    rsv: 'And at this sound the multitude came together, and they were bewildered, because each one heard them speaking in his own language.',
+    dra: 'And when this was noised abroad, the multitude came together, and were confounded in mind, because that every man heard them speak in his own tongue.',
+  },
+  'GEN 11:10': {
+    rsv: 'These are the descendants of Shem.…',
+    dra: 'These are the generations of Sem…',
+    partial: true,
+  },
+  'GEN 11:26': {
+    rsv: 'When Terah had lived seventy years, he became the father of Abram, Nahor, and Haran.',
+    dra: 'And Thare lived seventy years, and begot Abram, and Nachor, and Aran.',
+  },
+  'GEN 11:30': {
+    rsv: 'Now Sarai was barren; she had no child.',
+    dra: 'And Sarai was barren, and had no children.',
+  },
+  'GEN 11:31': {
+    rsv: 'Terah took Abram his son and Lot the son of Haran, his grandson, and Sarai his daughter-in-law, his son Abram’s wife, and they went forth together from Ur of the Chaldeans to go into the land of Canaan; but when they came to Haran, they settled there.',
+    dra: 'And Thare took Abram, his son, and Lot the son of Aran, his son\'s son, and Sarai his daughter in law, the wife of Abram his son, and brought them out of Ur of the Chaldees, to go into the land of Chanaan: and they came as far as Haran, and dwelt there.',
+  },
+  'GEN 11:32': {
+    rsv: 'The days of Terah were two hundred and five years; and Terah died in Haran.',
+    dra: 'And the days of Thare were two hundred and five years, and he died in Haran.',
+  },
+  'GEN 12:1': {
+    rsv: 'Now the LORD said to Abram, “Go from your country and your kindred and your father’s house to the land that I will show you.',
+    dra: 'And the Lord said to Abram: Go forth out of thy country, and from thy kindred, and out of thy father\'s house, and come into the land which I shall shew thee.',
+  },
+  'GAL 3:8': {
+    rsv: 'And the scripture, foreseeing that God would justify the Gentiles by faith, preached the gospel beforehand to Abraham, saying, “In you shall all the nations be blessed.”',
+    dra: 'And the scripture, foreseeing, that God justifieth the Gentiles by faith, told unto Abraham before: In thee shall all nations be blessed.',
+  },
 }
 
 /** A verse's words in the active translation. Throws for a verse that isn't in the list (a content check catches these first). */

@@ -161,10 +161,66 @@ export const EMBLEMS: Record<string, () => Piece[]> = {
       { d: circ(10, y - 7, 2.6, 10), color: i % 2 ? '#e0b040' : '#f4d06a' },
     ]),
   ],
+
+  // Level 2 · Noah and the Nations
+  // Walking with God: a path rising toward a lamp of light.
+  walk: () => [
+    { d: P([[-12, 15], [12, 15], [3, -2], [-3, -2]]), color: '#c8a46a' },
+    { d: P([[-7, 15], [-3, 15], [-1, 2], [-2, 2]]), color: '#e8cf94' },
+    { d: circ(0, -8, 6, 12), color: '#ffe48a' },
+    { d: circ(0, -8, 2.6, 10), color: '#ffffff' },
+  ],
+  // The ark on the waters.
+  ark: () => [
+    { d: P([[-14, 2], [14, 2], [10, 9], [-10, 9]]), color: '#8a5a2a' },
+    { d: P([[-8, -6], [8, -6], [8, 2], [-8, 2]]), color: '#a8743a' },
+    { d: P([[-10, -6], [0, -12], [10, -6]]), color: '#6a4220' },
+    { d: P([[-2, -3], [2, -3], [2, 2], [-2, 2]]), color: '#ffd36e' },
+    { d: P([[-17, 9], [17, 9], [17, 15], [-17, 15]]), color: '#2f6fb8' },
+  ],
+  // The storm: rain over the waves.
+  storm: () => [
+    { d: circ(-5, -9, 7, 12), color: '#5a6278' },
+    { d: circ(5, -10, 6, 12), color: '#6a7290' },
+    ...[-9, -3, 3, 9].map((x) => ({ d: P([[x, -2], [x + 1.4, -2], [x - 1, 5], [x - 2.4, 5]]), color: '#8ab8e8' })),
+    { d: P([[-17, 8], [-10, 5], [-3, 8], [4, 5], [11, 8], [17, 6], [17, 15], [-17, 15]]), color: '#1f5a9a' },
+  ],
+  // The dove with the olive leaf in her beak.
+  'olive-dove': () => [
+    { d: P([[-12, 2], [-2, -2], [8, -6], [12, -4], [6, 2], [-4, 6]]), color: '#f6f6fa' },
+    { d: P([[-3, -1], [-9, -12], [1, -3]]), color: '#e2e6f0' },
+    { d: P([[12, -4], [16, -4], [13, -2]]), color: '#e0a040' },
+    { d: P([[15, -3], [19, 0], [15, 1]]), color: '#5aa84a' },
+  ],
+  // The rainbow over the hills.
+  rainbow: () => [
+    ...['#d8303a', '#f08a2a', '#f6d43a', '#4aa84a', '#3a7ad0', '#7a4ac0'].map((color, i) => {
+      const outer = 16 - i * 2.2
+      const inner = outer - 2.2
+      const arc = (r: number) => Array.from({ length: 13 }, (_, k) => [Math.cos(Math.PI + (k / 12) * Math.PI) * r, 6 + Math.sin(Math.PI + (k / 12) * Math.PI) * r] as Pt)
+      return { d: P([...arc(outer), ...arc(inner).reverse()]), color }
+    }),
+    { d: P([[-17, 9], [-6, 5], [6, 7], [17, 4], [17, 15], [-17, 15]]), color: '#3e8a46' },
+  ],
+  // The tower of Babel: a stepped ziggurat of brick.
+  tower: () => [
+    { d: P([[-14, 15], [14, 15], [14, 9], [-14, 9]]), color: '#b8743a' },
+    { d: P([[-10, 9], [10, 9], [10, 3], [-10, 3]]), color: '#c8844a' },
+    { d: P([[-6, 3], [6, 3], [6, -3], [-6, -3]]), color: '#d8945a' },
+    { d: P([[-3, -3], [3, -3], [3, -9], [-3, -9]]), color: '#e8a86a' },
+    { d: P([[-2, -9], [2, -9], [1, -13], [-1, -13]]), color: '#f0c080' },
+  ],
+  // The star over Abram's tent.
+  star: () => [
+    { d: star8(0, -5, 11), color: '#fff2c0' },
+    { d: circ(0, -5, 3, 10), color: '#ffffff' },
+    { d: P([[-12, 15], [0, 6], [12, 15]]), color: '#c8a46a' },
+    { d: P([[-2, 15], [0, 10], [2, 15]]), color: '#5a3a1a' },
+  ],
 }
 
 /** The medallions' backgrounds: deep blue, with one ruby for the darkest story. */
-const MEDALLION_BG: Record<string, string> = { lamb: '#7a1a2a' }
+const MEDALLION_BG: Record<string, string> = { lamb: '#7a1a2a', storm: '#2a2a4a' }
 
 /** A window of a built level, or one standing dark and waiting for its level. */
 export function windowArt(window: CathedralWindow, seed: number): WindowArt {

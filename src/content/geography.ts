@@ -95,6 +95,26 @@ export const PLACES: Place[] = [
   { id: 'pishon', name: 'Pishon', kind: 'river', unknown: true, note: 'It flowed around the land of Havilah, “where there is gold.” Nobody knows which river it was.' },
   { id: 'gihon', name: 'Gihon', kind: 'river', unknown: true, note: 'It flowed around the land of Cush. Nobody knows which river it was.' },
   { id: 'nod', name: 'Nod', kind: 'region', unknown: true, note: '“East of Eden.” Its name sounds like the Hebrew word for wandering.' },
+
+  // Level 2 · Noah and the Nations
+  {
+    id: 'ararat',
+    name: 'The mountains of Ararat',
+    kind: 'mountain',
+    at: { lat: 39.7, lon: 44.3 },
+    note: 'The land the Assyrians called Urartu, where Turkey, Armenia and Iran meet today. Its highest peak rises over 5,000 meters.',
+  },
+  {
+    id: 'shinar',
+    name: 'Shinar',
+    kind: 'region',
+    at: { lat: 32.0, lon: 45.2 },
+    note: 'The plain between the Tigris and the Euphrates in the south of Mesopotamia, in modern Iraq: the land of Babylon.',
+  },
+  { id: 'babel', name: 'Babel', kind: 'city', at: { lat: 32.54, lon: 44.42 }, note: 'Babylon, on the Euphrates, in modern Iraq. Its great ziggurat rose about 90 meters high.' },
+  { id: 'ur', name: 'Ur of the Chaldeans', kind: 'city', at: { lat: 30.96, lon: 46.1 }, note: 'One of the greatest cities of its time, near where the Euphrates met the Persian Gulf.' },
+  { id: 'haran', name: 'Haran', kind: 'city', at: { lat: 36.86, lon: 39.03 }, note: 'A trading city on the road from Mesopotamia to Canaan, in southern Turkey today.' },
+  { id: 'nazareth', name: 'Nazareth', kind: 'city', at: { lat: 32.7, lon: 35.3 }, note: 'The village in Galilee where the angel Gabriel came to Mary.' },
 ]
 
 const BY_ID = new Map(PLACES.map((place) => [place.id, place]))

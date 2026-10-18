@@ -60,7 +60,7 @@ export function WorldMapView({ onChoose }: { onChoose: (marker: LevelMarker) => 
   if (!save) return null
   const current = markers.find((m) => !m.finished)
   // The route: from one level's region to the next, then on to where the story goes next.
-  const stops = [...markers.map((m) => ({ at: m.at, done: m.finished })), ...AHEAD.map((a) => ({ at: a.at, done: false }))]
+  const stops = [...markers.flatMap((m) => [{ at: m.at, done: m.finished }, ...m.route.map((p) => ({ at: p.at, done: m.finished }))]), ...AHEAD.map((a) => ({ at: a.at, done: false }))]
   const legs = stops.slice(1).map((stop, i) => ({ d: arc(stops[i]!.at, stop.at, 0.12), done: stops[i]!.done && stop.done }))
 
   return (
@@ -99,6 +99,14 @@ export function WorldMapView({ onChoose }: { onChoose: (marker: LevelMarker) => 
           )
         })}
       </svg>
+      {/* The places the route passes through. */}
+      {markers.flatMap((m) =>
+        m.route.map((p) => (
+          <span key={`${m.id}-${p.label}`} className="world-map-waypoint" style={pct(p.at)}>
+            {p.label}
+          </span>
+        )),
+      )}
       {/* The places threads reach, named once each. */}
       {[...new Map(threads.map((t) => [t.toName, t.to])).entries()].map(([name, at]) => (
         <span key={name} className="world-map-place" style={pct(at)}>

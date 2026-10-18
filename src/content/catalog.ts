@@ -1,8 +1,9 @@
 import { level1 } from './levels/01-creation-and-fall/level'
+import { level2 } from './levels/02-noah-and-the-nations/level'
 import type { Episode, Level } from './types'
 
 /** Every level built so far, in order. */
-export const LEVELS: Level[] = [level1]
+export const LEVELS: Level[] = [level1, level2]
 
 /** Finds an episode and its level by the episode's id, like "l01-e1". */
 export function findEpisode(episodeId: string): { level: Level; episode: Episode } | undefined {
@@ -22,6 +23,17 @@ export function findScene(sceneId: string): { level: Level; episode: Episode; in
     }
   }
   return undefined
+}
+
+/** Whether a level still has episodes being made (they have no scenes yet). */
+export function stillBeingMade(level: Level): boolean {
+  return level.episodes.some((e) => e.scenes.length === 0)
+}
+
+/** The level after this one, if it has a first episode to play. */
+export function nextLevel(levelId: string): Level | undefined {
+  const next = LEVELS[LEVELS.findIndex((l) => l.id === levelId) + 1]
+  return next && next.episodes[0]!.scenes.length > 0 ? next : undefined
 }
 
 /** The episode after this one, if it's built. */

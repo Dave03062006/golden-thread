@@ -22,7 +22,7 @@ export const MOUNTAINS: { name: string; peaks: LatLon[] }[] = [
 export const ARARAT: LatLon = { lat: 39.7, lon: 44.3 }
 
 /** Where the levels still to come begin on the map, as far as the route is drawn ahead. */
-export const AHEAD: { number: number; title: string; at: LatLon; label: string }[] = [{ number: 2, title: 'Noah and the Nations', at: ARARAT, label: 'Ararat' }]
+export const AHEAD: { number: number; title: string; at: LatLon; label: string }[] = [{ number: 3, title: 'Abraham, Father of Faith', at: { lat: 36.86, lon: 39.03 }, label: 'Haran' }]
 
 export interface LevelMarker {
   id: string
@@ -31,6 +31,8 @@ export interface LevelMarker {
   at: LatLon
   label: string
   finished: boolean
+  /** The places the story passes through after this one. */
+  route: { at: LatLon; label: string }[]
 }
 
 export function levelMarkers(save: Pick<SaveData, 'completedLevels' | 'completedEpisodes'>): LevelMarker[] {
@@ -40,6 +42,7 @@ export function levelMarkers(save: Pick<SaveData, 'completedLevels' | 'completed
     title: l.title,
     at: l.map.at,
     label: l.map.label,
+    route: l.map.route ?? [],
     finished: save.completedLevels.includes(l.id) || l.episodes.every((e) => save.completedEpisodes.includes(e.id)),
   }))
 }

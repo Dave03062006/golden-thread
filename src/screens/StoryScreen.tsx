@@ -3,7 +3,7 @@ import { cueMusic, duckMusic, pauseMusic, prepareCue, sceneMusic, setMusicPlace,
 import { launch } from '../app/params'
 import { useApp } from '../app/store'
 import { formatReference } from '../content/bible/books'
-import { LEVELS, findEpisode, findScene, nextEpisode } from '../content/catalog'
+import { LEVELS, findEpisode, findScene, nextEpisode, nextLevel, stillBeingMade } from '../content/catalog'
 import type { Episode, Level } from '../content/types'
 import { gameClock } from '../engine/clock'
 import { createInput } from '../engine/input'
@@ -54,9 +54,12 @@ function newSession(level: Level, episode: Episode, scene: number): Session {
 }
 
 /** Where to begin: the save's checkpoint, or the start of Level 1. */
-function startingSession(position: Position | null): Session {
+function startingSession(position: Position | null, completedLevels: string[] = []): Session {
   const sceneId = launch.scene ?? position?.scene
   const found = sceneId ? findScene(sceneId) : undefined
+  // A save left at the end of a finished level (from before the story went on by itself) goes on to the next.
+  const onward = !launch.scene && found && completedLevels.includes(found.level.id) ? nextLevel(found.level.id) : undefined
+  if (onward) return newSession(onward, onward.episodes[0]!, 0)
   if (found) return newSession(found.level, found.episode, found.index)
   const level = LEVELS[0]!
   return newSession(level, level.episodes[0]!, 0)
@@ -96,7 +99,7 @@ export function StoryScreen() {
 
   // A replay starts its episode from the beginning, and never moves the player's place in the story.
   const [replaying] = useState(() => useApp.getState().replay)
-  const [session, setSession] = useState(() => (replaying ? replaySession(replaying.episode) : startingSession(useApp.getState().save?.position ?? null)))
+  const [session, setSession] = useState(() => (replaying ? replaySession(replaying.episode) : startingSession(useApp.getState().save?.position ?? null, useApp.getState().save?.completedLevels)))
   const { level, episode, director } = session
   const [current, setCurrent] = useState<{ beat: Beat; position: StoryPosition } | null>(null)
   const [runner, setRunner] = useState<GameRunner | null>(null)
@@ -431,8 +434,17 @@ export function StoryScreen() {
         onShowThread={() => setPanel('thread')}
         onReplay={() => replay(episode)}
         // After a level's last episode, its end: the quiz, reflection and prayer, the window ceremony.
-        onContinue={() => (replaying ? go(replaying.from) : following ? replay(following) : startLevelEnd(level.id))}
-        continueLabel={replaying ? `Back to the ${replaying.from === 'map' ? 'map' : 'cathedral'}` : following ? `On to Episode ${following.number}` : 'On to the quiz'}
+        // While a level is still being made, its last built episode leads back to the menu.
+        onContinue={() => (replaying ? go(replaying.from) : following ? replay(following) : stillBeingMade(level) ? go('menu') : startLevelEnd(level.id))}
+        continueLabel={
+          replaying
+            ? `Back to the ${replaying.from === 'map' ? 'map' : 'cathedral'}`
+            : following
+              ? `On to Episode ${following.number}`
+              : stillBeingMade(level)
+                ? 'Back to the menu'
+                : 'On to the quiz'
+        }
       />
     </main>
   )
