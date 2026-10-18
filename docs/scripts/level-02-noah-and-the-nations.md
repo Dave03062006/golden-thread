@@ -3,7 +3,7 @@
 **Bible:** Genesis 6–11
 **Age:** I · The Beginning (Level 2 completes it)
 **Length:** about 50–55 minutes (7 episodes, then the quiz, then reflection and prayer)
-**Status:** draft for Dave's approval (spec §15). Nothing in this level is built from unapproved text.
+**Status:** approved by Dave on 2026-10-18, with Noah's vineyard included (scene 5.5).
 
 ## How to read this script
 
@@ -12,7 +12,6 @@
 - **[Q]** marks an exact quotation from the Bible. Its wording in both translations is in the verse table at the end. Everything else is our own retelling.
 - **Play** is the episode's interactive moment. **Thread** is its golden thread. **Read** is the passage the game sends the player to.
 - "LORD" in capitals stands for God's holy name, printed in small capitals in the RSV.
-- **For Dave** marks a choice for you to make before the level is built.
 
 ### What this level is about
 
@@ -265,7 +264,7 @@ The threads point forward to Mary, the Church, Baptism, the Holy Spirit, the new
 
 ## Episode 5 · The Rainbow Covenant
 
-**Genesis 8:20–9:17 · about 7 minutes · 4 scenes**
+**Genesis 8:20–9:29 · about 8 minutes · 5 scenes**
 
 ### Scene 5.1 · The altar
 *On screen:* On the mountainside, Noah builds an altar of stones. Smoke rises straight into a clear sky while his family kneels.
@@ -297,7 +296,15 @@ The threads point forward to Mary, the Church, Baptism, the Holy Spirit, the new
 
 1. **[Q] Genesis 9:15** "I will remember my covenant which is between me and you and every living creature of all flesh; and the waters shall never again become a flood to destroy all flesh."
 2. Every time we see a rainbow, God's promise is shining in the sky.
-3. **For Dave:** see the note below about Noah's vineyard (Genesis 9:18–29).
+
+### Scene 5.5 · Even Noah
+*On screen:* Years later. A vineyard on the hillside, ripe with grapes. A tent at evening. The scene is shown from outside: the closed tent, then two brothers walking backward with a cloak, faces turned away.
+
+1. Noah became a farmer and planted a vineyard.
+2. One day he drank too much of its wine and fell asleep uncovered in his tent.
+3. His son Ham saw him and told his brothers, mocking his father. But Shem and Japheth took a cloak and walked in backward, faces turned away, and covered him.
+4. Even Noah, who walked with God, was not without sin. Only one man would ever be without sin, and he would come from the line of Shem.
+5. **[Q] Genesis 9:29** "All the days of Noah were nine hundred and fifty years; and he died."
 
 ### Play: colors of the promise
 - **What it is:** the light-and-reveal kind of play (spec §13.7, kind 11).
@@ -314,25 +321,9 @@ The threads point forward to Mary, the Church, Baptism, the Holy Spirit, the new
 **Where and when:**
 - **God's bow.** The Hebrew word for "bow" is the word for a warrior's bow. Many readers have seen in the rainbow God hanging up his bow of war in the sky, pointed away from the earth, as a sign of peace.
 - **A covenant with everyone.** God's covenant with Noah was made with all of humanity and every living thing. The Catechism says it remains in force for all the nations until the Gospel reaches them (Catechism 58).
+- **A curse misused.** When Noah woke, he spoke a curse on Canaan, Ham's son, and blessed Shem and Japheth. Centuries later, some people twisted these words to claim that God approved of slavery for whole peoples. That was a terrible misreading: the curse was about the land of Canaan in Israel's later history, not about any race, and the Church teaches that every human being has equal dignity (Catechism 1935).
 
-### For Dave: Noah's vineyard (Genesis 9:18–29)
-
-After the covenant, Genesis tells a hard story. Noah planted a vineyard, drank too much wine, and lay uncovered in his tent. His son Ham saw him and told his brothers mockingly; Shem and Japheth walked in backward and covered their father without looking. When Noah woke, he cursed Ham's son, Canaan.
-
-**My suggestion:** include it as a short, gentle scene (5.5, below), because it's honest about the fact that even a righteous man sins, and it teaches respect for parents. But the "curse of Canaan" was later twisted to defend slavery, a grave misuse the Church condemns, so if it's included, a *Where and when* note should say so. **You might prefer to leave it out**, as many children's Bibles do; the level works without it.
-
-#### Scene 5.5 (optional) · Even Noah
-*On screen:* Years later. A vineyard on the hillside, ripe with grapes. A tent at evening. The scene is shown from outside: the closed tent, then two brothers walking backward with a cloak, faces turned away.
-
-1. Noah became a farmer and planted a vineyard.
-2. One day he drank too much of its wine and fell asleep uncovered in his tent.
-3. His son Ham saw him and told his brothers, mocking his father. But Shem and Japheth took a cloak and walked in backward, faces turned away, and covered him.
-4. Even Noah, who walked with God, was not without sin. Only one man would ever be without sin, and he would come from the line of Shem.
-5. **[Q] Genesis 9:29** "All the days of Noah were nine hundred and fifty years; and he died."
-
-*Where and when (if included):* **A curse misused.** When Noah woke, he spoke a curse on Canaan, Ham's son, and blessed Shem and Japheth. Centuries later, some people twisted these words to claim that God approved of slavery for whole peoples. That was a terrible misreading: the curse was about the land of Canaan in Israel's later history, not about any race, and the Church teaches that every human being has equal dignity (Catechism 1935).
-
-**Read:** Genesis 8:20–9:17 (and 9:18–29).
+**Read:** Genesis 8:20–9:29.
 
 ---
 
