@@ -342,6 +342,27 @@ After the first build, each level follows the spec's way of making a level (§15
   - The tower game starts with its first terrace already built, so the tower can be seen before the first brick.
 - **A new safeguard:** a contract test stops two art modules from using the same name. Before it existed, one name quietly replaced another's art.
 
+### Task 9: Level 3, *Abraham, Father of Faith* (M9)
+
+The same way as Level 2: script, art, build, checks, play-test. Level 3 opens Age II, the Patriarchs.
+
+**Status (October 2026):** steps 1–4 are done; step 5 is Dave's.
+- **Script:** `docs/scripts/level-03-abraham-father-of-faith.md`, approved by Dave. It has 10 episodes and 39 scenes, 85 quotations checked word for word, and a 68-question quiz.
+- **Build:** all ten episodes are built in both styles, each with its own play:
+  - the journey on the map;
+  - dividing the flocks;
+  - by night;
+  - counting the stars;
+  - the well in the wilderness;
+  - new names;
+  - serving the guests;
+  - Abraham's pleading;
+  - the feast;
+  - the climb.
+- **Cathedral and map:** the Level 3 window has ten medallions, zigzagging so they fit, and opens the bay of Age II. The map traces Abraham's route from Haran to Moriah.
+- **Music:** twelve new recordings, all public domain, CC0 or CC BY. Five pieces had no allowed recording and were replaced; `music.ts` lists them.
+- **Checks:** the playthrough runs Level 3 from start to finish in both styles, through its quiz, reflection and window ceremony.
+
 **Done when:** Level 2 plays from start to finish in both styles, every check passes, Dave approves it, and the cathedral's Age I bay and the map up to Haran are complete.
 
 **Dependencies:** Dave's approval of the script; the Level 1 checkpoint decision (spec §16.2), since it decides whether the art is made in both styles.

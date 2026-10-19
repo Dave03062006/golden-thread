@@ -40,6 +40,14 @@ import { melchizedekLayers } from './layers/melchizedek'
 import { melchizedekProps } from './props/melchizedek'
 import { countTheStarsLayers } from './layers/count-the-stars'
 import { countTheStarsProps } from './props/count-the-stars'
+import { hagarLayers } from './layers/hagar'
+import { hagarProps } from './props/hagar'
+import { mamreProps } from './props/mamre'
+import { sodomLayers } from './layers/sodom'
+import { sodomProps } from './props/sodom'
+import { isaacBornProps } from './props/isaac-born'
+import { moriahLayers } from './layers/moriah'
+import { moriahProps } from './props/moriah'
 import { worldGoneWrongProps } from './props/world-gone-wrong'
 import { familyOfNoah } from './characters/family-of-noah'
 
@@ -127,6 +135,9 @@ export const pixelLayerSets: Record<string, PixelLayerArt>[] = [
   lotChoosesLayers,
   melchizedekLayers,
   countTheStarsLayers,
+  hagarLayers,
+  sodomLayers,
+  moriahLayers,
 ]
 
 export const pixelLayers: Record<string, PixelLayerArt> = Object.assign({}, ...pixelLayerSets)
@@ -155,6 +166,11 @@ export const pixelPropSets: Record<string, PixelPropArt>[] = [
   lotChoosesProps,
   melchizedekProps,
   countTheStarsProps,
+  hagarProps,
+  mamreProps,
+  sodomProps,
+  isaacBornProps,
+  moriahProps,
 ]
 
 export const pixelProps: Record<string, PixelPropArt> = Object.assign({}, ...pixelPropSets)

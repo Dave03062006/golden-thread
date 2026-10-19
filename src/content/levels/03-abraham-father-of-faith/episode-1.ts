@@ -36,7 +36,7 @@ const person = (id: string, prop: string, x: number, y: number, extra: Partial<S
 })
 
 /** Where the family stands at Shechem, by the altar under the oak. */
-const SHECHEM = { altar: { x: 0.46, y: 0.83 }, staff: { x: 0.425, y: 0.83 } }
+const SHECHEM = { altar: { x: 0.46, y: 0.79 }, staff: { x: 0.425, y: 0.78 } }
 
 export const theCallSet: SceneDescription = {
   id: 'l03-the-call',
@@ -67,7 +67,7 @@ export const theCallSet: SceneDescription = {
     { id: 'oak', prop: 'great-oak', above: 'canaan-hills', x: 0.27, y: 0.84, size: 0.3, opacity: 0 },
     { id: 'altar', prop: 'noah-altar', above: 'canaan-hills', ...SHECHEM.altar, size: 0.07, pose: 'idle', opacity: 0 },
     { id: 'staff', prop: 'walking-staff', above: 'canaan-hills', ...SHECHEM.staff, size: 0.014, opacity: 0 },
-    { id: 'abram-staff', prop: 'halo', above: 'canaan-hills', x: SHECHEM.staff.x + 0.004, y: 0.735, size: 0.05, opacity: 0 },
+    { id: 'abram-staff', prop: 'halo', above: 'canaan-hills', x: SHECHEM.staff.x + 0.004, y: 0.695, size: 0.05, opacity: 0 },
     // The second altar, far off on the mountain east of Bethel.
     { id: 'bethel-altar', prop: 'noah-altar', above: 'canaan-hills', x: 0.78, y: 0.62, size: 0.035, pose: 'lit', opacity: 0 },
     // On the map: the caravan, and the next stop glowing.

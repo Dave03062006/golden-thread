@@ -1,28 +1,25 @@
-import type { SceneDescription } from '../../../scene/types'
 import type { Episode, Level, WhereWhen } from '../../types'
 import { episode1 } from './episode-1'
 import { episode2 } from './episode-2'
 import { episode3 } from './episode-3'
 import { episode4 } from './episode-4'
+import { episode5 } from './episode-5'
+import { episode6 } from './episode-6'
+import { episode7 } from './episode-7'
+import { episode8 } from './episode-8'
+import { episode9 } from './episode-9'
+import { episode10 } from './episode-10'
 import { level3Music } from './music'
 import { level3Quiz } from './quiz'
 
 /**
  * Level 3 · Abraham, Father of Faith (Genesis 12–23), from the approved Level 3 script
- * (docs/scripts/level-03-abraham-father-of-faith.md). Episodes are added as they're built;
- * one still being made has no scenes yet, and the game stops before it.
+ * (docs/scripts/level-03-abraham-father-of-faith.md).
  */
 
 /** An episode that's built: its written details, with its set and scenes. */
 function built(story: Pick<Episode, 'set' | 'scenes'>, fields: Omit<Episode, 'set' | 'scenes'>): Episode {
   return { ...fields, ...story }
-}
-
-/** An episode still being made: an empty set and no scenes. */
-function pending(id: string): Pick<Episode, 'set' | 'scenes'> {
-  const still = [{ at: 0, value: 0 }]
-  const set: SceneDescription = { id: `${id}-pending`, title: '', layers: [], actors: [], camera: { loop: 'hold', x: still, y: still, zoom: [{ at: 0, value: 1 }] } }
-  return { set, scenes: [] }
 }
 
 const where = (notes: [string, string][], places: string[] = []): WhereWhen => ({
@@ -146,7 +143,7 @@ export const level3: Level = {
       ),
       read: ['GEN 15:1-21'],
     }),
-    built(pending('l03-e5'), {
+    built(episode5, {
       id: 'l03-e5',
       number: 5,
       emblem: 'well',
@@ -164,7 +161,7 @@ export const level3: Level = {
       ),
       read: ['GEN 16:1-16', 'GEN 21:8-21'],
     }),
-    built(pending('l03-e6'), {
+    built(episode6, {
       id: 'l03-e6',
       number: 6,
       emblem: 'new-name',
@@ -182,7 +179,7 @@ export const level3: Level = {
       ),
       read: ['GEN 17:1-27'],
     }),
-    built(pending('l03-e7'), {
+    built(episode7, {
       id: 'l03-e7',
       number: 7,
       emblem: 'visitors',
@@ -200,7 +197,7 @@ export const level3: Level = {
       ),
       read: ['GEN 18:1-15'],
     }),
-    built(pending('l03-e8'), {
+    built(episode8, {
       id: 'l03-e8',
       number: 8,
       emblem: 'pleading',
@@ -219,7 +216,7 @@ export const level3: Level = {
       ),
       read: ['GEN 18:16-19:29'],
     }),
-    built(pending('l03-e9'), {
+    built(episode9, {
       id: 'l03-e9',
       number: 9,
       emblem: 'laughter',
@@ -237,7 +234,7 @@ export const level3: Level = {
       ),
       read: ['GEN 21:1-8'],
     }),
-    built(pending('l03-e10'), {
+    built(episode10, {
       id: 'l03-e10',
       number: 10,
       emblem: 'ram',

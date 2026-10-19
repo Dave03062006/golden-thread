@@ -45,7 +45,7 @@ const ABOVE = 'salem-hill'
 const person = (id: string, prop: string, x: number, y: number, extra: Partial<SceneActor> = {}): SceneActor => ({ id, prop, above: ABOVE, x, y, size: 0.042, facing: 1, ...extra })
 
 /** Where Melchizedek sets down his gift, and where its glow shows. */
-const GIFT = { x: 0.5, y: 0.8 }
+const GIFT = { x: 0.5, y: 0.77 }
 
 export const melchizedekSet: SceneDescription = {
   id: 'l03-melchizedek',
@@ -76,7 +76,7 @@ export const melchizedekSet: SceneDescription = {
     // Melchizedek, coming down from Salem with bread and wine: the golden thread.
     person('melchizedek', 'melchizedek', 0.72, 0.62, { facing: -1, opacity: 0 }),
     { id: 'gift', prop: 'bread-and-wine', above: ABOVE, x: 0.7, y: 0.6, size: 0.04, opacity: 0 },
-    { id: 'bread-and-wine', prop: 'halo', above: ABOVE, x: GIFT.x, y: 0.735, size: 0.055, opacity: 0 },
+    { id: 'bread-and-wine', prop: 'halo', above: ABOVE, x: GIFT.x, y: 0.7, size: 0.055, opacity: 0 },
     { id: 'glory', prop: 'glory', above: ABOVE, x: 0.55, y: 0.35, size: 0.3, opacity: 0 },
     // The king of Sodom, with carts of riches.
     person('king', 'king-of-sodom', 0.8, 0.83, { facing: -1, opacity: 0 }),

@@ -248,6 +248,24 @@
     },
     "milky-way": {
       "hash": "8d616cad"
+    },
+    "desert": {
+      "hash": "85e5926e"
+    },
+    "heat-haze": {
+      "hash": "e1a53d0d"
+    },
+    "sodom-gate": {
+      "hash": "780f51f7"
+    },
+    "moriah-far": {
+      "hash": "3c38d2b0"
+    },
+    "moriah-path": {
+      "hash": "387c7454"
+    },
+    "moriah-top": {
+      "hash": "83fea5bd"
     }
   },
   "paperProps": {
@@ -562,6 +580,66 @@
     },
     "flaming-torch": {
       "hash": "1ab6c8b0"
+    },
+    "desert-bush": {
+      "hash": "e4822576"
+    },
+    "hagar": {
+      "hash": "865ef314"
+    },
+    "angel": {
+      "hash": "b063401d"
+    },
+    "feast-mat": {
+      "hash": "af9cb6e3"
+    },
+    "water-jar": {
+      "hash": "d23829bf"
+    },
+    "cakes": {
+      "hash": "84ef6353"
+    },
+    "calf": {
+      "hash": "05efa576"
+    },
+    "milk-bowls": {
+      "hash": "8d81698b"
+    },
+    "lots-wife": {
+      "hash": "acbfa7e2"
+    },
+    "lots-daughter": {
+      "hash": "f0f23ee4"
+    },
+    "salt-pillar": {
+      "hash": "53f860c8"
+    },
+    "oil-lamp": {
+      "hash": "315c1f63"
+    },
+    "hand-drum": {
+      "hash": "11c08b31"
+    },
+    "swaddled-baby": {
+      "hash": "f53a85dd"
+    },
+    "ram-in-thicket": {
+      "hash": "4b02f092"
+    },
+    "cave-tomb": {
+      "hash": "b08032f1"
+    },
+    "donkey": {
+      "hash": "28a364f6"
+    },
+    "servant": {
+      "hash": "f8df530a"
+    },
+    "isaac": {
+      "hash": "a444cf9c"
+    },
+    "wood-bundle": {
+      "hash": "19dd88a0"
     }
   },
   "pixelLayers": {
@@ -813,6 +891,24 @@
     },
     "milky-way": {
       "hash": "8bbc1743"
+    },
+    "desert": {
+      "hash": "966a8e59"
+    },
+    "heat-haze": {
+      "hash": "82a37aa0"
+    },
+    "sodom-gate": {
+      "hash": "c710de48"
+    },
+    "moriah-far": {
+      "hash": "a4a3e1a1"
+    },
+    "moriah-path": {
+      "hash": "970e81d3"
+    },
+    "moriah-top": {
+      "hash": "2f360603"
     }
   },
   "backdrop": {

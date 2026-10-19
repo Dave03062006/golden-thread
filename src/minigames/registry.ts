@@ -15,6 +15,12 @@ import { theJourney } from './the-journey'
 import { dividingTheFlocks } from './dividing-the-flocks'
 import { byNight } from './by-night'
 import { countTheStars } from './count-the-stars'
+import { theWell } from './the-well'
+import { newNames } from './new-names'
+import { servingTheGuests } from './serving-the-guests'
+import { abrahamPleads } from './abraham-pleads'
+import { theFeast } from './the-feast'
+import { theClimb } from './the-climb'
 
 /** Every interactive moment, by the name a story's `play` beat uses. */
-export const GAMES: Record<string, AnyGameRules> = { ...letThereBe, naming, twist, 'lights-in-the-dark': lightsInTheDark, 'abels-flock': abelsFlock, 'family-tree': familyTree, 'walk-with-god': walkWithGod, 'build-the-ark': buildTheArk, 'through-the-storm': throughTheStorm, ...theDove, 'colors-of-the-promise': colorsOfThePromise, 'the-tower': theTower, scatter, 'family-tree-shem': familyTreeShem, 'the-journey': theJourney, 'dividing-the-flocks': dividingTheFlocks, 'by-night': byNight, 'count-the-stars': countTheStars }
+export const GAMES: Record<string, AnyGameRules> = { ...letThereBe, naming, twist, 'lights-in-the-dark': lightsInTheDark, 'abels-flock': abelsFlock, 'family-tree': familyTree, 'walk-with-god': walkWithGod, 'build-the-ark': buildTheArk, 'through-the-storm': throughTheStorm, ...theDove, 'colors-of-the-promise': colorsOfThePromise, 'the-tower': theTower, scatter, 'family-tree-shem': familyTreeShem, 'the-journey': theJourney, 'dividing-the-flocks': dividingTheFlocks, 'by-night': byNight, 'count-the-stars': countTheStars, 'the-well': theWell, 'new-names': newNames, 'serving-the-guests': servingTheGuests, 'abraham-pleads': abrahamPleads, 'the-feast': theFeast, 'the-climb': theClimb }

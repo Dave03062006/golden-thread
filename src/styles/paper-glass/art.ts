@@ -29,6 +29,14 @@ import { melchizedekLayers } from './layers/melchizedek'
 import { melchizedekProps } from './props/melchizedek'
 import { countTheStarsLayers } from './layers/count-the-stars'
 import { countTheStarsProps } from './props/count-the-stars'
+import { hagarLayers } from './layers/hagar'
+import { hagarProps } from './props/hagar'
+import { mamreProps } from './props/mamre'
+import { sodomLayers } from './layers/sodom'
+import { sodomProps } from './props/sodom'
+import { isaacBornProps } from './props/isaac-born'
+import { moriahLayers } from './layers/moriah'
+import { moriahProps } from './props/moriah'
 import { worldGoneWrongProps } from './props/world-gone-wrong'
 import { familyOfNoah } from './characters/family-of-noah'
 import { creationProps } from './props/creation'
@@ -117,6 +125,9 @@ export const paperLayerSets: Record<string, PaperLayerArt>[] = [
   lotChoosesLayers,
   melchizedekLayers,
   countTheStarsLayers,
+  hagarLayers,
+  sodomLayers,
+  moriahLayers,
 ]
 
 export const paperLayers: Record<string, PaperLayerArt> = Object.assign({}, ...paperLayerSets)
@@ -145,6 +156,11 @@ export const paperPropSets: Record<string, PaperPropArt>[] = [
   lotChoosesProps,
   melchizedekProps,
   countTheStarsProps,
+  hagarProps,
+  mamreProps,
+  sodomProps,
+  isaacBornProps,
+  moriahProps,
 ]
 
 export const paperProps: Record<string, PaperPropArt> = Object.assign({}, ...paperPropSets)

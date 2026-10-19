@@ -53,12 +53,18 @@ const LEVELS = [
   },
   {
     number: 3,
-    complete: false,
+    complete: true,
     episodes: [
       { number: 1, lines: 11, plays: 1 }, // src/content/levels/03-abraham-father-of-faith/episode-1.ts
       { number: 2, lines: 14, plays: 1 }, // episode-2.ts
       { number: 3, lines: 12, plays: 1 }, // episode-3.ts
       { number: 4, lines: 11, plays: 1 }, // episode-4.ts
+      { number: 5, lines: 14, plays: 1 }, // episode-5.ts
+      { number: 6, lines: 13, plays: 1 }, // episode-6.ts
+      { number: 7, lines: 8, plays: 1 }, // episode-7.ts (a line can be passed by the Space pressed for its play)
+      { number: 8, lines: 13, plays: 1 }, // episode-8.ts
+      { number: 9, lines: 7, plays: 1 }, // episode-9.ts
+      { number: 10, lines: 18, plays: 1 }, // episode-10.ts
     ],
   },
 ]
@@ -173,9 +179,10 @@ async function playEpisode(page, style, { number, lines: expected, plays: expect
   }
 
   const label = `Level ${page.level} · Episode`
-  const toggle = end.getByRole('switch', { name: /I’ve read/ })
-  await toggle.check()
-  const marked = await toggle.isChecked()
+  // One switch for each passage the episode sends the reader to.
+  const toggles = await end.getByRole('switch', { name: /I’ve read/ }).all()
+  for (const toggle of toggles) await toggle.check()
+  const marked = toggles.length > 0 && (await Promise.all(toggles.map((t) => t.isChecked()))).every(Boolean)
   const found = (await end.textContent()).includes('You found this episode’s golden thread')
   await end.getByRole('button', { name: next }).click()
 
@@ -189,7 +196,7 @@ async function playEpisode(page, style, { number, lines: expected, plays: expect
 }
 
 /** What the player writes in each level's reflection, different each time so the journal can tell them apart. */
-const REFLECTIONS = { 1: 'I want to stop hiding, and walk with God.', 2: 'Help me trust you when I cannot see, like Noah.' }
+const REFLECTIONS = { 1: 'I want to stop hiding, and walk with God.', 2: 'Help me trust you when I cannot see, like Noah.', 3: 'Lord, help me go where you call me, even when I cannot see the way.' }
 
 /**
  * The end of a finished level (spec §3.3): the quiz (each question answered as it comes,
@@ -232,7 +239,7 @@ async function levelEnd(page, level, played) {
   await page.getByRole('button', { name: 'Visit the cathedral' }).click()
   const nave = page.getByRole('region', { name: 'The nave of the cathedral' })
   await nave.waitFor()
-  const panels = await nave.getByRole('button', { name: new RegExp(`^Level ${level.number}, episode \\d, .*: set$`) }).count()
+  const panels = await nave.getByRole('button', { name: new RegExp(`^Level ${level.number}, episode \\d+, .*: set$`) }).count()
   // Step inside the last panel: its episode plays again, from its title card.
   await nave.getByRole('button', { name: new RegExp(`^Level ${level.number}, episode ${LAST}, `) }).click()
   await page.getByRole('button', { name: 'Step inside' }).click()
