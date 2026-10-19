@@ -27,8 +27,8 @@ export const GENERATIONS = [
   { name: 'Noah', note: 'this one shall bring us relief' },
 ].map((g, i) => ({ ...g, leaf: `leaf-${i + 1}`, branch: `branch-${i + 1}` }))
 
-/** Where the family tree stands: to the right of the card the names are chosen on. */
-const TREE = { x: 0.66, base: 0.74, size: 0.22 }
+/** Where the family tree stands: to the right of the card the names are chosen on. (Level 2's tree of Shem's line grows in the same place.) */
+export const TREE = { x: 0.66, base: 0.74, size: 0.22 }
 /** The tree's drawing is 200 × 300 units; this many frame units each. */
 const UNIT = (TREE.size * 1600) / 200
 
@@ -38,7 +38,7 @@ const UNIT = (TREE.size * 1600) / 200
  * reaching 50 to 66 of the tree's units. A branch's drawing reaches 60 units out and 20
  * up within a box 140 wide, from its middle (see the 'tree-branch' prop).
  */
-function branchOf(i: number) {
+export function branchOf(i: number) {
   const side: -1 | 1 = i % 2 ? 1 : -1
   const reach = 50 + (i % 3) * 8
   const joint = { x: TREE.x, y: TREE.base - ((300 - (260 - 24 * i)) * UNIT) / 900 }

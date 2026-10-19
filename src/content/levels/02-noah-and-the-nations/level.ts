@@ -1,29 +1,22 @@
-import type { SceneDescription } from '../../../scene/types'
 import type { Episode, Level, WhereWhen } from '../../types'
 import { episode1 } from './episode-1'
 import { episode2 } from './episode-2'
 import { episode3 } from './episode-3'
 import { episode4 } from './episode-4'
 import { episode5 } from './episode-5'
+import { episode6 } from './episode-6'
+import { episode7 } from './episode-7'
 import { level2Music } from './music'
 import { level2Quiz } from './quiz'
 
 /**
  * Level 2 · Noah and the Nations (Genesis 6–11), from the approved Level 2 script
- * (docs/scripts/level-02-noah-and-the-nations.md). Episodes are added as they're built;
- * one still being made has no scenes yet, and the game stops before it.
+ * (docs/scripts/level-02-noah-and-the-nations.md).
  */
 
 /** An episode that's built: its written details, with its set and scenes. */
 function built(story: Pick<Episode, 'set' | 'scenes'>, fields: Omit<Episode, 'set' | 'scenes'>): Episode {
   return { ...fields, ...story }
-}
-
-/** An episode still being made: an empty set and no scenes. */
-function pending(id: string): Pick<Episode, 'set' | 'scenes'> {
-  const still = [{ at: 0, value: 0 }]
-  const set: SceneDescription = { id: `${id}-pending`, title: '', layers: [], actors: [], camera: { loop: 'hold', x: still, y: still, zoom: [{ at: 0, value: 1 }] } }
-  return { set, scenes: [] }
 }
 
 const where = (when: string, notes: [string, string][], places: string[] = []): WhereWhen => ({
@@ -166,7 +159,7 @@ export const level2: Level = {
       ),
       read: ['GEN 8:20-9:29'],
     }),
-    built(pending('l02-e6'), {
+    built(episode6, {
       id: 'l02-e6',
       number: 6,
       emblem: 'tower',
@@ -185,7 +178,7 @@ export const level2: Level = {
       ),
       read: ['GEN 10:1-11:9'],
     }),
-    built(pending('l02-e7'), {
+    built(episode7, {
       id: 'l02-e7',
       number: 7,
       emblem: 'star',

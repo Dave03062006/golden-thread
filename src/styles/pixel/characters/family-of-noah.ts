@@ -112,6 +112,8 @@ export const familyOfNoah: Record<string, PixelSpriteArt> = {
   abram: person({ robe: C.purple, hair: C.wood0, beard: C.wood0, sash: C.gold }),
   sarai: person({ robe: C.blue, hair: C.wood0, veil: C.white }),
   lot: person({ robe: C.green, hair: C.wood0 }),
+  nahor: person({ robe: C.teal, hair: C.wood0, beard: C.wood0 }),
+  haran: person({ robe: C.rose, hair: C.wood0, beard: C.wood0 }),
   boy: child({ robe: C.wood3, hair: C.wood0 }),
   girl: child({ robe: C.rose, hair: C.wood0, veil: C.white }),
 }

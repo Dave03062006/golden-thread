@@ -6,7 +6,11 @@ import { C, hash } from '../palette'
  * nights, and the great swells rolling toward the ark in the storm.
  */
 
-/** Rain over the whole frame, its streaks falling and slanting, drawn fresh each frame. */
+/**
+ * Rain over the whole frame, its streaks falling and slanting, drawn fresh each frame. The
+ * streaks of each color are filled together in one go, which keeps it quick when the rain
+ * is faded (each fill at a fade sets up its own pattern).
+ */
 const rain: PixelDrawnArt = {
   kind: 'drawn',
   poses: ['idle'],
@@ -14,13 +18,16 @@ const rain: PixelDrawnArt = {
   anchor: 'center',
   draw(paint, { time, width }) {
     const h = Math.round((width * 9) / 16)
+    const runs: [number, number, number][][] = [[], []]
     for (let i = 0; i < 150; i++) {
       const x0 = Math.floor(hash(i * 3.7) * (width + 20)) - width / 2 - 10
       const fall = (hash(i * 9.1) + time / 1.3) % 1
       const y = Math.round(fall * (h + 10)) - h / 2 - 5
       const x = Math.round(x0 - fall * 8)
-      paint.rect(x, y, 1, 4, i % 4 ? C.pale : C.white)
+      for (let k = 0; k < 4; k++) runs[i % 4 ? 0 : 1]!.push([y + k, x, x])
     }
+    paint.spans(runs[0]!, C.pale, 1)
+    paint.spans(runs[1]!, C.white, 1)
   },
 }
 

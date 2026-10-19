@@ -197,6 +197,24 @@
     },
     "vineyard": {
       "hash": "15ce5d3e"
+    },
+    "shinar-sky": {
+      "hash": "3c32761a"
+    },
+    "high-clouds": {
+      "hash": "83817638"
+    },
+    "babel-city": {
+      "hash": "deea3142"
+    },
+    "shinar-plain": {
+      "hash": "04fba835"
+    },
+    "nations-tapestry": {
+      "hash": "6b580c0a"
+    },
+    "ur-city": {
+      "hash": "6d1a135b"
     }
   },
   "paperProps": {
@@ -427,6 +445,48 @@
     },
     "cloak": {
       "hash": "1d2f443c"
+    },
+    "ziggurat": {
+      "hash": "09663122"
+    },
+    "kiln": {
+      "hash": "33fb299d"
+    },
+    "brick-pile": {
+      "hash": "c4835653"
+    },
+    "brick": {
+      "hash": "1bb16941"
+    },
+    "brick-load": {
+      "hash": "b227ca23"
+    },
+    "script-words": {
+      "hash": "1b8d601b"
+    },
+    "family-band": {
+      "hash": "4e7b9927"
+    },
+    "terah": {
+      "hash": "b0bcd5ee"
+    },
+    "abram": {
+      "hash": "3155daff"
+    },
+    "nahor": {
+      "hash": "f4c28e18"
+    },
+    "haran": {
+      "hash": "390500c0"
+    },
+    "sarai": {
+      "hash": "df82007e"
+    },
+    "lot": {
+      "hash": "3be115eb"
+    },
+    "camel": {
+      "hash": "f03e2d4d"
     }
   },
   "pixelLayers": {
@@ -627,6 +687,24 @@
     },
     "vineyard": {
       "hash": "7d70861d"
+    },
+    "shinar-sky": {
+      "hash": "bf0f7858"
+    },
+    "high-clouds": {
+      "hash": "f2a900cd"
+    },
+    "babel-city": {
+      "hash": "5c459b07"
+    },
+    "shinar-plain": {
+      "hash": "48556f46"
+    },
+    "nations-tapestry": {
+      "hash": "973fa1a2"
+    },
+    "ur-city": {
+      "hash": "c62c7576"
     }
   },
   "backdrop": {

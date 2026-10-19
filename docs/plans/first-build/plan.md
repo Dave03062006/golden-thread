@@ -329,6 +329,19 @@ After the first build, each level follows the spec's way of making a level (§15
 
 **5. Play-test:** Dave plays Level 2 from start to finish, and what he finds is fixed.
 
+**Status (October 2026):** steps 1–4 are done; step 5 is Dave's.
+- **Script:** approved, with Noah's vineyard included (scene 5.5, told only from outside the tent).
+- **Build:** all seven episodes are built in both styles, with their six new games and the family tree from Shem to Abram.
+- **Checks:** all pass.
+  - The playthrough runs Level 2 from start to finish in both styles, through its quiz, reflection and window ceremony.
+  - Also `check`, `test`, `a11y`, `keyboard` and `saves`.
+  - `perf` is within budget for every Level 2 scene, after a fix that fills the pixel rain's streaks together. The demo's style switch and the cathedral sometimes go over on this busy computer, as before.
+  - New `shots` baselines cover the Level 2 scenes. The quiz menu and the ceremony baselines were updated, since both now show Level 2. Dave still needs to look them over.
+- **Two ways the scenes differ from this plan:**
+  - The rainbow is seven sky layers, one per band, so it can be drawn a band at a time.
+  - The tower game starts with its first terrace already built, so the tower can be seen before the first brick.
+- **A new safeguard:** a contract test stops two art modules from using the same name. Before it existed, one name quietly replaced another's art.
+
 **Done when:** Level 2 plays from start to finish in both styles, every check passes, Dave approves it, and the cathedral's Age I bay and the map up to Haran are complete.
 
 **Dependencies:** Dave's approval of the script; the Level 1 checkpoint decision (spec §16.2), since it decides whether the art is made in both styles.

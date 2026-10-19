@@ -40,13 +40,15 @@ const LEVELS = [
   },
   {
     number: 2,
-    complete: false,
+    complete: true,
     episodes: [
       { number: 1, lines: 16, plays: 1 }, // src/content/levels/02-noah-and-the-nations/episode-1.ts
       { number: 2, lines: 18, plays: 1 }, // episode-2.ts
       { number: 3, lines: 14, plays: 1 }, // episode-3.ts
       { number: 4, lines: 14, plays: 3 }, // episode-4.ts
       { number: 5, lines: 19, plays: 1 }, // episode-5.ts
+      { number: 6, lines: 16, plays: 2 }, // episode-6.ts
+      { number: 7, lines: 14, plays: 1 }, // episode-7.ts
     ],
   },
 ]
@@ -176,17 +178,19 @@ async function playEpisode(page, style, { number, lines: expected, plays: expect
   ]
 }
 
-/** Level 1's last episode, after which the level's end follows (spec §3.3). */
-const LAST = 6
-const REFLECTION = 'I want to stop hiding, and walk with God.'
+/** What the player writes in each level's reflection, different each time so the journal can tell them apart. */
+const REFLECTIONS = { 1: 'I want to stop hiding, and walk with God.', 2: 'Help me trust you when I cannot see, like Noah.' }
 
 /**
- * The end of Level 1: the quiz (each question answered as it comes, right or not), its
- * review, reflection and prayer with a few words for the journal, the window ceremony
- * setting all six panels, the cathedral showing them, "Step inside" replaying an episode
- * (and leaving it again from the pause menu), and the journal keeping what was written.
+ * The end of a finished level (spec §3.3): the quiz (each question answered as it comes,
+ * right or not), its review, reflection and prayer with a few words for the journal, the
+ * window ceremony setting the panels of the episodes played, the cathedral showing them,
+ * "Step inside" replaying the last episode (and leaving it again from the pause menu),
+ * and the journal keeping what was written.
  */
-async function levelEnd(page, played) {
+async function levelEnd(page, level, played) {
+  const LAST = level.episodes.at(-1).number
+  const REFLECTION = REFLECTIONS[level.number]
   let answered = 0
   const results = page.locator('.quiz-results')
   while (!(await results.isVisible())) {
@@ -212,15 +216,15 @@ async function levelEnd(page, played) {
   await page.getByRole('textbox').fill(REFLECTION)
   await page.getByText('Saved to your journal.').waitFor()
   await page.getByRole('button', { name: 'Amen' }).click()
-  await page.getByText('Level 1 complete').waitFor()
+  await page.getByText(`Level ${level.number} complete`).waitFor()
   // The ceremony sets the window's panels one by one.
   await page.getByText('Its window in the cathedral is complete.').waitFor({ timeout: 60_000 })
   await page.getByRole('button', { name: 'Visit the cathedral' }).click()
   const nave = page.getByRole('region', { name: 'The nave of the cathedral' })
   await nave.waitFor()
-  const panels = await nave.getByRole('button', { name: /^Level 1, episode \d, .*: set$/ }).count()
+  const panels = await nave.getByRole('button', { name: new RegExp(`^Level ${level.number}, episode \\d, .*: set$`) }).count()
   // Step inside the last panel: its episode plays again, from its title card.
-  await nave.getByRole('button', { name: new RegExp(`^Level 1, episode ${LAST}, `) }).click()
+  await nave.getByRole('button', { name: new RegExp(`^Level ${level.number}, episode ${LAST}, `) }).click()
   await page.getByRole('button', { name: 'Step inside' }).click()
   await waitForScene(page)
   const replayed = await page
@@ -245,11 +249,11 @@ async function levelEnd(page, played) {
     )
   await page.getByRole('button', { name: 'Back' }).click()
   return [
-    [answered === 10, `Level 1 quiz: answered all ten questions (${answered})`],
-    [reviewed === 10, `Level 1 quiz: "Review your answers" shows the run (${reviewed} answers)`],
+    [answered === 10, `Level ${level.number} quiz: answered all ten questions (${answered})`],
+    [reviewed === 10, `Level ${level.number} quiz: "Review your answers" shows the run (${reviewed} answers)`],
     [panels === played, `Window ceremony: the panels of the ${played} episodes played are set (${panels})`],
     [replayed, `Cathedral: "Step inside" plays Episode ${LAST} again`],
-    [kept, 'Level 1 reflection: what was written is kept in the journal'],
+    [kept, `Level ${level.number} reflection: what was written is kept in the journal`],
   ]
 }
 
@@ -280,7 +284,7 @@ async function play(style) {
         const next = !last ? `On to Episode ${episode.number + 1}` : level.complete ? 'On to the quiz' : 'Back to the menu'
         results.push(...(await playEpisode(page, style, episode, next)))
       }
-      if (level.number === 1 && playing.at(-1)?.number === LAST) results.push(...(await levelEnd(page, playing.length)))
+      if (level.complete && playing.at(-1)?.number === level.episodes.at(-1).number) results.push(...(await levelEnd(page, level, playing.length)))
     }
   } catch (error) {
     // Show where it stopped, and what had passed so far.

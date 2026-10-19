@@ -1,4 +1,5 @@
 import { GENERATIONS as LEVEL_1_LINE } from '../../content/levels/01-creation-and-fall/episode-6'
+import { SHEM_LINE } from '../../content/levels/02-noah-and-the-nations/episode-7'
 import { STEP, type Choice, type GameRules } from '../framework'
 
 /**
@@ -123,3 +124,6 @@ export function makeFamilyTree(id: string, line: Generation[]): GameRules<TreeSt
 
 /** Level 1: from Adam to Noah. */
 export const familyTree = makeFamilyTree('family-tree', LEVEL_1_LINE)
+
+/** Level 2: from Shem to Abram. */
+export const familyTreeShem = makeFamilyTree('family-tree-shem', SHEM_LINE)

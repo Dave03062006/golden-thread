@@ -2,7 +2,8 @@ import type { PaperPropArt, PartMotion } from '../art'
 
 /**
  * The people of Level 2 (Noah and the Nations): Noah and his wife, their three sons and
- * their sons' wives and the children born to them, and later Terah, Abram, Sarai and Lot. Like the first family, they
+ * their sons' wives and the children born to them, and later Terah, his sons Abram, Nahor
+ * and Haran, Sarai and Lot. Like the first family, they
  * are cut-paper silhouettes with the light catching their outline in gold; now they wear
  * long robes, each in its own color, so the family can be told apart. All face left.
  *
@@ -122,6 +123,9 @@ export const familyOfNoah: Record<string, PaperPropArt> = {
   abram: person({ robe: '#4a3a6a', fold: '#2e2448', hair: '#241a18', beard: '#241a18', sash: '#c89a4a' }),
   sarai: person({ robe: '#2e4a7a', fold: '#1c3054', hair: '#241a18', veil: '#e2d6bc' }),
   lot: person({ robe: '#6a7a3a', fold: '#4a5824', hair: '#3a2618' }),
+  // Terah's other sons, Abram's brothers.
+  nahor: person({ robe: '#4a6a7a', fold: '#2e4a58', hair: '#2a1e1a', beard: '#2a1e1a' }),
+  haran: person({ robe: '#8a4a3a', fold: '#643026', hair: '#2a1e1a', beard: '#2a1e1a' }),
   // The children born after the Flood, drawn smaller in the scene.
   boy: person({ robe: '#b0843e', fold: '#82602a', hair: '#2a1e1a' }),
   girl: person({ robe: '#a8505a', fold: '#7a343c', hair: '#2a1e1a', veil: '#e8d8b8' }),

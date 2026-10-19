@@ -17,6 +17,10 @@ import { theDoveReturnsLayers } from './layers/the-dove-returns'
 import { theDoveReturnsProps } from './props/the-dove-returns'
 import { theRainbowCovenantLayers } from './layers/the-rainbow-covenant'
 import { theRainbowCovenantProps } from './props/the-rainbow-covenant'
+import { theTowerOfBabelLayers } from './layers/the-tower-of-babel'
+import { theTowerOfBabelProps } from './props/the-tower-of-babel'
+import { fromShemToAbramLayers } from './layers/from-shem-to-abram'
+import { fromShemToAbramProps } from './props/from-shem-to-abram'
 import { worldGoneWrongProps } from './props/world-gone-wrong'
 import { familyOfNoah } from './characters/family-of-noah'
 import { creationProps } from './props/creation'
@@ -99,6 +103,8 @@ export const paperLayerSets: Record<string, PaperLayerArt>[] = [
   theFloodLayers,
   theDoveReturnsLayers,
   theRainbowCovenantLayers,
+  theTowerOfBabelLayers,
+  fromShemToAbramLayers,
 ]
 
 export const paperLayers: Record<string, PaperLayerArt> = Object.assign({}, ...paperLayerSets)
@@ -121,6 +127,8 @@ export const paperPropSets: Record<string, PaperPropArt>[] = [
   theFloodProps,
   theDoveReturnsProps,
   theRainbowCovenantProps,
+  theTowerOfBabelProps,
+  fromShemToAbramProps,
 ]
 
 export const paperProps: Record<string, PaperPropArt> = Object.assign({}, ...paperPropSets)
