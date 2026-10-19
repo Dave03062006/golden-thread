@@ -233,6 +233,21 @@
     },
     "jordan-valley": {
       "hash": "86e82050"
+    },
+    "salem-hill": {
+      "hash": "9d728db4"
+    },
+    "star-field-1": {
+      "hash": "3c4bc5ec"
+    },
+    "star-field-2": {
+      "hash": "0dc2691b"
+    },
+    "star-field-3": {
+      "hash": "f920fc38"
+    },
+    "milky-way": {
+      "hash": "8d616cad"
     }
   },
   "paperProps": {
@@ -517,6 +532,36 @@
     },
     "goat": {
       "hash": "46e03dee"
+    },
+    "cart": {
+      "hash": "b7184e14"
+    },
+    "campfire": {
+      "hash": "555f1452"
+    },
+    "torches": {
+      "hash": "ba485638"
+    },
+    "melchizedek": {
+      "hash": "8022811c"
+    },
+    "bread-and-wine": {
+      "hash": "f1a57dd8"
+    },
+    "king-of-sodom": {
+      "hash": "edf09c4a"
+    },
+    "counted-star": {
+      "hash": "a45141dc"
+    },
+    "covenant-pieces": {
+      "hash": "7904c1d9"
+    },
+    "fire-pot": {
+      "hash": "6882301c"
+    },
+    "flaming-torch": {
+      "hash": "1ab6c8b0"
     }
   },
   "pixelLayers": {
@@ -753,6 +798,21 @@
     },
     "jordan-valley": {
       "hash": "6d34f71a"
+    },
+    "salem-hill": {
+      "hash": "619b4ec5"
+    },
+    "star-field-1": {
+      "hash": "c49b28f2"
+    },
+    "star-field-2": {
+      "hash": "607eaedc"
+    },
+    "star-field-3": {
+      "hash": "be7db64a"
+    },
+    "milky-way": {
+      "hash": "8bbc1743"
     }
   },
   "backdrop": {

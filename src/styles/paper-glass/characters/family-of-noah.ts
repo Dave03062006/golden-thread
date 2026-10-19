@@ -126,6 +126,9 @@ export const familyOfNoah: Record<string, PaperPropArt> = {
   // Terah's other sons, Abram's brothers.
   nahor: person({ robe: '#4a6a7a', fold: '#2e4a58', hair: '#2a1e1a', beard: '#2a1e1a' }),
   haran: person({ robe: '#8a4a3a', fold: '#643026', hair: '#2a1e1a', beard: '#2a1e1a' }),
+  // Melchizedek, priest-king of Salem, in white and gold; and the king of Sodom, in rich red.
+  melchizedek: person({ robe: '#efe8d8', fold: '#c8bca4', hair: '#f4f0e8', beard: '#f4f0e8', sash: '#d4a840' }),
+  'king-of-sodom': person({ robe: '#8a2a3a', fold: '#5e1a26', hair: '#1e1614', beard: '#1e1614', sash: '#e0b850' }),
   // The children born after the Flood, drawn smaller in the scene.
   boy: person({ robe: '#b0843e', fold: '#82602a', hair: '#2a1e1a' }),
   girl: person({ robe: '#a8505a', fold: '#7a343c', hair: '#2a1e1a', veil: '#e8d8b8' }),

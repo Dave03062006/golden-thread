@@ -25,6 +25,10 @@ import { theCallLayers } from './layers/the-call'
 import { theCallProps } from './props/the-call'
 import { lotChoosesLayers } from './layers/lot-chooses'
 import { lotChoosesProps } from './props/lot-chooses'
+import { melchizedekLayers } from './layers/melchizedek'
+import { melchizedekProps } from './props/melchizedek'
+import { countTheStarsLayers } from './layers/count-the-stars'
+import { countTheStarsProps } from './props/count-the-stars'
 import { worldGoneWrongProps } from './props/world-gone-wrong'
 import { familyOfNoah } from './characters/family-of-noah'
 import { creationProps } from './props/creation'
@@ -111,6 +115,8 @@ export const paperLayerSets: Record<string, PaperLayerArt>[] = [
   fromShemToAbramLayers,
   theCallLayers,
   lotChoosesLayers,
+  melchizedekLayers,
+  countTheStarsLayers,
 ]
 
 export const paperLayers: Record<string, PaperLayerArt> = Object.assign({}, ...paperLayerSets)
@@ -137,6 +143,8 @@ export const paperPropSets: Record<string, PaperPropArt>[] = [
   fromShemToAbramProps,
   theCallProps,
   lotChoosesProps,
+  melchizedekProps,
+  countTheStarsProps,
 ]
 
 export const paperProps: Record<string, PaperPropArt> = Object.assign({}, ...paperPropSets)

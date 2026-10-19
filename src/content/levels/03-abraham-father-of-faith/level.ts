@@ -2,6 +2,8 @@ import type { SceneDescription } from '../../../scene/types'
 import type { Episode, Level, WhereWhen } from '../../types'
 import { episode1 } from './episode-1'
 import { episode2 } from './episode-2'
+import { episode3 } from './episode-3'
+import { episode4 } from './episode-4'
 import { level3Music } from './music'
 import { level3Quiz } from './quiz'
 
@@ -108,7 +110,7 @@ export const level3: Level = {
       ),
       read: ['GEN 12:10-13:18'],
     }),
-    built(pending('l03-e3'), {
+    built(episode3, {
       id: 'l03-e3',
       number: 3,
       emblem: 'bread-wine',
@@ -126,7 +128,7 @@ export const level3: Level = {
       ),
       read: ['GEN 14:1-24'],
     }),
-    built(pending('l03-e4'), {
+    built(episode4, {
       id: 'l03-e4',
       number: 4,
       emblem: 'stars',

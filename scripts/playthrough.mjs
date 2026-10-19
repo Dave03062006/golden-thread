@@ -57,6 +57,8 @@ const LEVELS = [
     episodes: [
       { number: 1, lines: 11, plays: 1 }, // src/content/levels/03-abraham-father-of-faith/episode-1.ts
       { number: 2, lines: 14, plays: 1 }, // episode-2.ts
+      { number: 3, lines: 12, plays: 1 }, // episode-3.ts
+      { number: 4, lines: 11, plays: 1 }, // episode-4.ts
     ],
   },
 ]
