@@ -12,11 +12,19 @@ const WINDOW_GAP = 46
 const BAY_PAD = 70
 export const PILLAR = 34
 
-/** The medallion centres in a window, bottom to top, relative to the window's top-left. */
+/**
+ * The medallion centres in a window, bottom to top, relative to the window's top-left. Up
+ * to seven stand in one column; more than that (Level 3 has ten) zigzag from side to side,
+ * so the rounds don't overlap.
+ */
 export function medallionCentres(count: number): { x: number; y: number }[] {
   const top = 92
   const bottom = WINDOW.h - 34
-  return Array.from({ length: count }, (_, i) => ({ x: WINDOW.w / 2, y: bottom - (i * (bottom - top)) / Math.max(1, count - 1) }))
+  const zigzag = count > 7
+  return Array.from({ length: count }, (_, i) => ({
+    x: WINDOW.w / 2 + (zigzag ? (i % 2 ? 1 : -1) * 27 : 0),
+    y: bottom - (i * (bottom - top)) / Math.max(1, count - 1),
+  }))
 }
 
 export interface PlacedWindow {

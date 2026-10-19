@@ -1,9 +1,10 @@
 import { level1 } from './levels/01-creation-and-fall/level'
 import { level2 } from './levels/02-noah-and-the-nations/level'
+import { level3 } from './levels/03-abraham-father-of-faith/level'
 import type { Episode, Level } from './types'
 
 /** Every level built so far, in order. */
-export const LEVELS: Level[] = [level1, level2]
+export const LEVELS: Level[] = [level1, level2, level3]
 
 /** Finds an episode and its level by the episode's id, like "l01-e1". */
 export function findEpisode(episodeId: string): { level: Level; episode: Episode } | undefined {

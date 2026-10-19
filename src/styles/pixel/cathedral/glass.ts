@@ -55,6 +55,17 @@ export const EMBLEMS: Record<string, { rows: string[]; colors: Record<string, st
   rainbow: { rows: ['..rrrrr..', '.roooooo.', 'roYYYYYor', 'oYgggggYo', 'Ygb...bgY', 'gb.....bg', 'b.......b', 'GGG.GGGGG', 'GGGGGGGGG'], colors: { r: C.rose, o: C.orange, Y: C.gold, g: C.green, b: C.blue, G: C.teal } },
   tower: { rows: ['....y....', '...yyy...', '...ooo...', '..ooooo..', '..wwwww..', '.wwwwwww.', '.kkkkkkk.', 'kkkkkkkkk', 'kkkkkkkkk'], colors: { y: C.gold, o: C.sand, w: C.wood3, k: C.wood2 } },
   star: { rows: ['....W....', '...WYW...', '..WYWYW..', '...WYW...', '....W....', '.........', '...ttt...', '..ttTtt..', '.ttTTTtt.'], colors: { W: C.white, Y: C.gold, t: C.sand2, T: C.wood1 } },
+  // Level 3 · Abraham, Father of Faith
+  call: { rows: ['......yy.', '.b...yyy.', '.bb...yy.', '.b.......', '.b..gg.gg', 'gbggssggg', 'gbgsssggg', 'ggsssssgg', 'gssssssgg'], colors: { y: C.gold, b: C.wood1, g: C.green, s: C.sand } },
+  'altar-hill': { rows: ['....o....', '...ooo...', '...oyo...', '..WWWWW..', '..PPPPP..', '..WWWWW..', '.ggggggg.', 'ggggggggg', 'ggggggggg'], colors: { o: C.orange, y: C.gold, W: C.pale, P: C.slate, g: C.green } },
+  'bread-wine': { rows: ['......yyy', '......rrr', '......yry', '.ttt...y.', 'tTTTt..y.', 'tTTTt..y.', '.ttt...y.', '......yyy', '.........'], colors: { y: C.gold, r: C.rose, t: C.wood2, T: C.wood3 } },
+  stars: { rows: ['nnnnnnnnn', 'nYnnnnnYn', 'nnnnWnnnn', 'nnnWYWnnn', 'nYnnWnnnn', 'nnnnnnnYn', 'nnYnnnnnn', 'nnnnnYnnn', 'nnnnnnnnn'], colors: { n: C.navy, Y: C.gold, W: C.white } },
+  well: { rows: ['......gg.', '.....g.b.', '.......b.', '..ppppp..', '..pbbbp..', '..ppppp..', '..ppppp..', 'sssssssss', 'sssssssss'], colors: { g: C.green, b: C.blue, p: C.pale, s: C.sand } },
+  'new-name': { rows: ['.........', '.yyyyyyy.', '.yyyyyyy.', '......yy.', '.yy.W.yy.', '.yy...yy.', '.yy...yy.', '.yy...yy.', '.........'], colors: { y: C.gold, W: C.white } },
+  visitors: { rows: ['..ggggg..', '.ggggggg.', '..ggggg..', '.W..W..W.', '.W..W..W.', 'WWWWWWWWW', '.W..W..W.', '.W..W..W.', '.W..W..W.'], colors: { g: C.green, W: C.white } },
+  pleading: { rows: ['....y....', 'a.a...a.a', 'aaa...aaa', '.aa...aa.', '.aa...aa.', '..a...a..', '..a...a..', '..a...a..', '..a...a..'], colors: { y: C.gold, a: C.sand } },
+  laughter: { rows: ['.......y.', '......yyy', '.......y.', '..ss.....', '.sssWWWW.', 'bbbbbbbbb', '.bbbbbbb.', '..bbbbb..', '.b.....b.'], colors: { y: C.gold, s: C.sand, W: C.white, b: C.wood2 } },
+  ram: { rows: ['.........', 'hh.hh....', 'h.WWh....', '.WWWWWWW.', '.kWWWWWWW', '..WWWWWW.', 'g.W.g.W.g', 'gggggggGg', 'GgGgggGgg'], colors: { h: C.sand2, W: C.white, k: C.ink, g: C.green, G: C.teal } },
 }
 
 /** The pointed outline of a window, inside which the glass is: whether a pixel is in it. */

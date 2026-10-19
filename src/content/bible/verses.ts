@@ -497,6 +497,343 @@ export const VERSES: Record<string, Verse> = {
     rsv: 'And the scripture, foreseeing that God would justify the Gentiles by faith, preached the gospel beforehand to Abraham, saying, “In you shall all the nations be blessed.”',
     dra: 'And the scripture, foreseeing, that God justifieth the Gentiles by faith, told unto Abraham before: In thee shall all nations be blessed.',
   },
+  // Level 3 · Abraham, Father of Faith
+  'GEN 12:2': {
+    rsv: 'And I will make of you a great nation, and I will bless you, and make your name great, so that you will be a blessing.',
+    dra: 'And I will make of thee a great nation, and I will bless thee, and magnify thy name, and thou shalt be blessed.',
+  },
+  'GEN 12:3': {
+    rsv: 'I will bless those who bless you, and him who curses you I will curse; and by you all the families of the earth shall bless themselves.”',
+    dra: 'I will bless them that bless thee, and curse them that curse thee, and IN THEE shall all the kindred of the earth be blessed:',
+  },
+  'GEN 12:4': {
+    rsv: 'So Abram went, as the LORD had told him; and Lot went with him. Abram was seventy-five years old when he departed from Haran.',
+    dra: 'So Abram went out as the Lord had commanded him, and Lot went with him: Abram was seventy-five years old when he went forth from Haran.',
+  },
+  'GEN 12:7': {
+    rsv: 'Then the LORD appeared to Abram, and said, “To your descendants I will give this land.” So he built there an altar to the LORD, who had appeared to him.',
+    dra: 'And the Lord appeared to Abram, and said to him: To thy seed will I give this land. And he built there an altar to the Lord, who had appeared to him.',
+  },
+  'GEN 12:8': {
+    rsv: 'Thence he removed to the mountain on the east of Bethel, and pitched his tent, with Bethel on the west and Ai on the east; and there he built an altar to the LORD and called on the name of the LORD.',
+    dra: 'And passing on from thence to a mountain, that was on the east side of Bethel, he there pitched his tent, having Bethel on the west, and Hai on the east; he built there also an altar to the Lord, and called upon his name.',
+  },
+  'MAT 4:19': {
+    rsv: 'And he said to them, “Follow me, and I will make you fishers of men.”',
+    dra: 'And he saith to them: Come ye after me, and I will make you to be fishers of men.',
+  },
+  'GEN 12:10': {
+    rsv: 'Now there was a famine in the land. So Abram went down to Egypt to sojourn there, for the famine was severe in the land.',
+    dra: 'And there came a famine in the country; and Abram went down into Egypt, to sojourn there: for the famine was very grievous in the land.',
+  },
+  'GEN 13:6': {
+    rsv: 'so that the land could not support both of them dwelling together; for their possessions were so great that they could not dwell together,',
+    dra: 'Neither was the land able to bear them, that they might dwell together: for their substance was great, and they could not dwell together.',
+  },
+  'GEN 13:8': {
+    rsv: 'Then Abram said to Lot, “Let there be no strife between you and me, and between your herdsmen and my herdsmen; for we are kinsmen.',
+    dra: 'Abram therefore said to Lot: Let there be no quarrel, I beseech thee, between me and thee, and between my herdsmen and thy herdsmen: for we are brethren.',
+  },
+  'GEN 13:10': {
+    rsv: 'And Lot lifted up his eyes, and saw that the Jordan valley was well watered everywhere like the garden of the LORD, like the land of Egypt, in the direction of Zoar; this was before the LORD destroyed Sodom and Gomorrah.',
+    dra: 'And Lot, lifting up his eyes, saw all the country about the Jordan, which was watered throughout, before the Lord destroyed Sodom and Gomorrha, as the paradise of the Lord, and like Egypt as one comes to Segor.',
+  },
+  'GEN 13:13': {
+    rsv: 'Now the men of Sodom were wicked, great sinners against the LORD.',
+    dra: 'And the men of Sodom were very wicked, and sinners before the face of the Lord, beyond measure.',
+  },
+  'GEN 13:14': {
+    rsv: 'The LORD said to Abram, after Lot had separated from him, “Lift up your eyes, and look from the place where you are, northward and southward and eastward and westward;',
+    dra: 'And the Lord said to Abram, after Lot was separated from him: Lift up thy eyes, and look from the place wherein thou now art, to the north and to the south, to the east and to the west.',
+  },
+  'GEN 13:15': {
+    rsv: 'for all the land which you see I will give to you and to your descendants for ever.',
+    dra: 'All the land which thou seest, I will give to thee, and to thy seed for ever.',
+  },
+  'GEN 13:18': {
+    rsv: 'So Abram moved his tent, and came and dwelt by the oaks of Mamre, which are at Hebron; and there he built an altar to the LORD.',
+    dra: 'So Abram removing his tent came and dwelt by the vale of Mambre, which is in Hebron: and he built there an altar to the Lord.',
+  },
+  'MAT 6:33': {
+    rsv: 'But seek first his kingdom and his righteousness, and all these things shall be yours as well.',
+    dra: 'Seek ye therefore first the kingdom of God, and his justice, and all these things shall be added unto you.',
+  },
+  'GEN 14:12': {
+    rsv: 'they also took Lot, the son of Abram’s brother, who dwelt in Sodom, and his goods, and departed.',
+    dra: 'And Lot also, the son of Abram\'s brother, who dwelt in Sodom, and his substance.',
+  },
+  'GEN 14:14': {
+    rsv: 'When Abram heard that his kinsman had been taken captive, he led forth his trained men, born in his house, three hundred and eighteen of them, and went in pursuit as far as Dan.',
+    dra: 'Which when Abram had heard, to wit, that his brother Lot was taken, he numbered of the servants born in his house, three hundred and eighteen well appointed: and pursued them to Dan.',
+  },
+  'GEN 14:16': {
+    rsv: 'Then he brought back all the goods, and also brought back his kinsman Lot with his goods, and the women and the people.',
+    dra: 'And he brought back all the substance, and Lot his brother, with his substance, the women also and the people.',
+  },
+  'GEN 14:18': {
+    rsv: 'And Melchizedek king of Salem brought out bread and wine; he was priest of God Most High.',
+    dra: 'But Melchisedech the king of Salem, bringing forth bread and wine, for he was the priest of the most high God,',
+  },
+  'GEN 14:19': {
+    rsv: 'And he blessed him and said, “Blessed be Abram by God Most High, maker of heaven and earth;',
+    dra: 'Blessed him, and said: Blessed be Abram by the most high God, who created heaven and earth.',
+  },
+  'GEN 14:20': {
+    rsv: 'and blessed be God Most High, who has delivered your enemies into your hand!” And Abram gave him a tenth of everything.',
+    dra: 'And blessed be the most high God, by whose protection the enemies are in thy hands. And he gave him the tithes of all.',
+  },
+  'GEN 14:23': {
+    rsv: 'that I would not take a thread or a sandal-thong or anything that is yours, lest you should say, ‘I have made Abram rich.’',
+    dra: 'That from the very woof thread unto the shoe latchet, I will not take of any things that are thine, lest thou say I have enriched Abram:',
+  },
+  'PSA 110:4': {
+    rsv: 'The LORD has sworn and will not change his mind, “You are a priest for ever after the order of Melchizedek.”',
+    dra: 'The Lord hath sworn, and he will not repent: Thou art a priest for ever according to the order of Melchisedech.',
+  },
+  'GEN 15:1': {
+    rsv: 'After these things the word of the LORD came to Abram in a vision, “Fear not, Abram, I am your shield; your reward shall be very great.”',
+    dra: 'Now when these things were done, the word of the Lord came to Abram by a vision, saying: Fear not, Abram, I am thy protector, and thy reward exceeding great.',
+  },
+  'GEN 15:3': {
+    rsv: 'And Abram said, “Behold, thou hast given me no offspring; and a slave born in my house will be my heir.”',
+    dra: 'And Abram added: But to me thou hast not given seed: and lo my servant, born in my house, shall be my heir.',
+  },
+  'GEN 15:5': {
+    rsv: 'And he brought him outside and said, “Look toward heaven, and number the stars, if you are able to number them.” Then he said to him, “So shall your descendants be.”',
+    dra: 'And he brought him forth abroad, and said to him: Look up to heaven and number the stars, if thou canst. And he said to him: So shall thy seed be.',
+  },
+  'GEN 15:6': {
+    rsv: 'And he believed the LORD; and he reckoned it to him as righteousness.',
+    dra: 'Abram believed God, and it was reputed to him unto justice.',
+  },
+  'GEN 15:17': {
+    rsv: 'When the sun had gone down and it was dark, behold, a smoking fire pot and a flaming torch passed between these pieces.',
+    dra: 'And when the sun was set, there arose a dark mist, and there appeared a smoking furnace and a lamp of fire passing between those divisions.',
+  },
+  'GEN 15:18': {
+    rsv: 'On that day the LORD made a covenant with Abram, saying, “To your descendants I give this land, from the river of Egypt to the great river, the river Euphrates,',
+    dra: 'That day God made a covenant with Abram, saying: To thy seed will I give this land, from the river of Egypt even to the great river Euphrates.',
+  },
+  'GAL 3:29': {
+    rsv: 'And if you are Christ’s, then you are Abraham’s offspring, heirs according to promise.',
+    dra: 'And if you be Christ\'s, then are you the seed of Abraham, heirs according to the promise.',
+  },
+  'GEN 16:2': {
+    rsv: 'and Sarai said to Abram, “Behold now, the LORD has prevented me from bearing children; go in to my maid; it may be that I shall obtain children by her.” And Abram hearkened to the voice of Sarai.',
+    dra: 'She said to her husband: Behold, the Lord hath restrained me from bearing: go in unto my handmaid, it may be I may have children of her at least. And when he agreed to her request,',
+  },
+  'GEN 16:7': {
+    rsv: 'The angel of the LORD found her by a spring of water in the wilderness, the spring on the way to Shur.',
+    dra: 'And the angel of the Lord having found her, by a fountain of water in the wilderness, which is in the way to Sur in the desert,',
+  },
+  'GEN 16:11': {
+    rsv: 'And the angel of the LORD said to her, “Behold, you are with child, and shall bear a son; you shall call his name Ishmael; because the LORD has given heed to your affliction.',
+    dra: 'And again: Behold, said he, thou art with child, and thou shalt bring forth a son: and thou shalt call his name Ismael, because the Lord hath heard thy affliction.',
+  },
+  'GEN 16:13': {
+    rsv: 'So she called the name of the LORD who spoke to her, “Thou art a God of seeing”; for she said, “Have I really seen God and remained alive after seeing him?”',
+    dra: 'And she called the name of the Lord that spoke unto her: Thou the God who hast seen me. For she said: Verily here have I seen the hinder parts of him that seeth me.',
+  },
+  'GEN 21:14': {
+    rsv: 'So Abraham rose early in the morning, and took bread and a skin of water, and gave it to Hagar, putting it on her shoulder, along with the child, and sent her away. And she departed, and wandered in the wilderness of Beer-sheba.',
+    dra: 'So Abraham rose up in the morning, and taking bread and a bottle of water, put it upon her shoulder, and delivered the boy, and sent her away. And she departed, and wandered in the wilderness of Bersabee.',
+  },
+  'GEN 21:17': {
+    rsv: 'And God heard the voice of the lad; and the angel of God called to Hagar from heaven, and said to her, “What troubles you, Hagar? Fear not; for God has heard the voice of the lad where he is.',
+    dra: 'And God heard the voice of the boy: and an angel of God called to Agar from heaven, saying: What art thou doing, Agar? fear not: for God hath heard the voice of the boy, from the place wherein he is.',
+  },
+  'GEN 21:19': {
+    rsv: 'Then God opened her eyes, and she saw a well of water; and she went, and filled the skin with water, and gave the lad a drink.',
+    dra: 'And God opened her eyes: and she saw a well of water, and went and filled the bottle, and gave the boy to drink.',
+  },
+  'GEN 21:20': {
+    rsv: 'And God was with the lad, and he grew up; he lived in the wilderness, and became an expert with the bow.',
+    dra: 'And God was with him: and he grew, and dwelt in the wilderness, and became a young man, an archer.',
+  },
+  'JHN 4:14': {
+    rsv: 'but whoever drinks of the water that I shall give him will never thirst; the water that I shall give him will become in him a spring of water welling up to eternal life.”',
+    dra: 'But the water that I will give him, shall become in him a fountain of water, springing up into life everlasting.',
+  },
+  'GEN 17:1': {
+    rsv: 'When Abram was ninety-nine years old the LORD appeared to Abram, and said to him, “I am God Almighty; walk before me, and be blameless.',
+    dra: 'And after he began to be ninety and nine years old, the Lord appeared to him: and said unto him: I am the Almighty God: walk before me, and be perfect.',
+  },
+  'GEN 17:7': {
+    rsv: 'And I will establish my covenant between me and you and your descendants after you throughout their generations for an everlasting covenant, to be God to you and to your descendants after you.',
+    dra: 'And I will establish my covenant between me and thee, and between thy seed after thee in their generations, by a perpetual covenant: to be a God to thee, and to thy seed after thee.',
+  },
+  'GEN 17:5': {
+    rsv: 'No longer shall your name be Abram, but your name shall be Abraham; for I have made you the father of a multitude of nations.',
+    dra: 'Neither shall thy name be called any more Abram: but thou shalt be called Abraham: because I have made thee a father of many nations.',
+  },
+  'GEN 17:15': {
+    rsv: 'And God said to Abraham, “As for Sarai your wife, you shall not call her name Sarai, but Sarah shall be her name.',
+    dra: 'God said also to Abraham: Sarai thy wife thou shalt not call Sarai, but Sara.',
+  },
+  'GEN 17:10': {
+    rsv: 'This is my covenant, which you shall keep, between me and you and your descendants after you: Every male among you shall be circumcised.',
+    dra: 'This is my covenant which you shall observe, between me and you, and thy seed after thee: All the male kind of you shall be circumcised:',
+  },
+  'GEN 17:17': {
+    rsv: 'Then Abraham fell on his face and laughed, and said to himself, “Shall a child be born to a man who is a hundred years old? Shall Sarah, who is ninety years old, bear a child?”',
+    dra: 'Abraham fell upon his face, and laughed, saying in his heart: Shall a son, thinkest thou, be born to him that is a hundred years old? and shall Sara that is ninety years old bring forth?',
+  },
+  'GEN 17:21': {
+    rsv: 'But I will establish my covenant with Isaac, whom Sarah shall bear to you at this season next year.”',
+    dra: 'But my covenant I will establish with Isaac, whom Sara shall bring forth to thee at this time in the next year.',
+  },
+  'MAT 16:18': {
+    rsv: 'And I tell you, you are Peter, and on this rock I will build my church, and the powers of death shall not prevail against it.',
+    dra: 'And I say to thee: That thou art Peter; and upon this rock I will build my church, and the gates of hell shall not prevail against it.',
+  },
+  'GEN 18:1': {
+    rsv: 'And the LORD appeared to him by the oaks of Mamre, as he sat at the door of his tent in the heat of the day.',
+    dra: 'And the Lord appeared to him in the vale of Mambre as he was sitting at the door of his tent, in the very heat of the day.',
+  },
+  'GEN 18:2': {
+    rsv: 'He lifted up his eyes and looked, and behold, three men stood in front of him. When he saw them, he ran from the tent door to meet them, and bowed himself to the earth,',
+    dra: 'And when he had lifted up his eyes, there appeared to him three men standing near him: and as soon as he saw them he ran to meet them from the door of his tent, and adored down to the ground.',
+  },
+  'GEN 18:6': {
+    rsv: 'And Abraham hastened into the tent to Sarah, and said, “Make ready quickly three measures of fine meal, knead it, and make cakes.”',
+    dra: 'Abraham made haste into the tent to Sara, and said to her: Make haste, temper together three measures of flour, and make cakes upon the hearth.',
+  },
+  'GEN 18:8': {
+    rsv: 'Then he took curds, and milk, and the calf which he had prepared, and set it before them; and he stood by them under the tree while they ate.',
+    dra: 'He took also butter and milk, and the calf which he had boiled, and set before them: but he stood by them under the tree.',
+  },
+  'GEN 18:10': {
+    rsv: 'The LORD said, “I will surely return to you in the spring, and Sarah your wife shall have a son.” And Sarah was listening at the tent door behind him.',
+    dra: 'And he said to him: I will return and come to thee at this time, life accompanying and Sara thy wife shall have a son. Which when Sara heard, she laughed behind the door of the tent.',
+  },
+  'GEN 18:12': {
+    rsv: 'So Sarah laughed to herself, saying, “After I have grown old, and my husband is old, shall I have pleasure?”',
+    dra: 'And she laughed secretly, saying: After I am grown old and my lord is an old man, shall I give myself to pleasure?',
+  },
+  'GEN 18:14': {
+    rsv: 'Is anything too hard for the LORD? At the appointed time I will return to you, in the spring, and Sarah shall have a son.”',
+    dra: 'Is there any thing hard to God? According to appointment I will return to thee at this same time, life accompanying, and Sara shall have a son.',
+  },
+  'LUK 1:37': {
+    rsv: 'For with God nothing will be impossible.”',
+    dra: 'Because no word shall be impossible with God.',
+  },
+  'GEN 18:20': {
+    rsv: 'Then the LORD said, “Because the outcry against Sodom and Gomorrah is great and their sin is very grave,',
+    dra: 'And the Lord said: The cry of Sodom and Gomorrha is multiplied, and their sin is become exceedingly grievous.',
+  },
+  'GEN 18:23': {
+    rsv: 'Then Abraham drew near, and said, “Wilt thou indeed destroy the righteous with the wicked?',
+    dra: 'And drawing nigh he said: Wilt thou destroy the just with the wicked?',
+  },
+  'GEN 18:25': {
+    rsv: 'Far be it from thee to do such a thing, to slay the righteous with the wicked, so that the righteous fare as the wicked! Far be that from thee! Shall not the Judge of all the earth do right?”',
+    dra: 'Far be it from thee to do this thing, and to slay the just with the wicked, and for the just to be in like case as the wicked, this is not beseeming thee: thou who judgest all the earth, wilt not make this judgment.',
+  },
+  'GEN 18:32': {
+    rsv: 'Then he said, “Oh let not the Lord be angry, and I will speak again but this once. Suppose ten are found there.” He answered, “For the sake of ten I will not destroy it.”',
+    dra: 'I beseech thee, saith he, be not angry, Lord, if I speak yet once more: What if ten should be found there? And he said: I will not destroy it for the sake of ten.',
+  },
+  'GEN 19:16': {
+    rsv: 'But he lingered; so the men seized him and his wife and his two daughters by the hand, the LORD being merciful to him, and they brought him forth and set him outside the city.',
+    dra: 'And as he lingered, they took his hand, and the hand of his wife, and of his two daughters, because the Lord spared him.',
+  },
+  'GEN 19:17': {
+    rsv: 'And when they had brought them forth, they said, “Flee for your life; do not look back or stop anywhere in the valley; flee to the hills, lest you be consumed.”',
+    dra: 'And they brought him forth, and set him without the city: and there they spoke to him, saying: Save thy life: look not back, neither stay thou in all the country about: but save thyself in the mountain, lest thou be also consumed.',
+  },
+  'GEN 19:26': {
+    rsv: 'But Lot’s wife behind him looked back, and she became a pillar of salt.',
+    dra: 'And his wife looking behind her, was turned into a statue of salt.',
+  },
+  'GEN 19:28': {
+    rsv: 'and he looked down toward Sodom and Gomorrah and toward all the land of the valley, and beheld, and lo, smoke of the land went up like the smoke of a furnace.',
+    dra: 'He looked towards Sodom and Gomorrha, and the whole land of that country: and he saw the ashes rise up from the earth as the smoke of a furnace.',
+  },
+  'GEN 19:29': {
+    rsv: 'So it was that, when God destroyed the cities of the valley, God remembered Abraham, and sent Lot out of the midst of the overthrow, when he overthrew the cities in which Lot dwelt.',
+    dra: 'Now when God destroyed the cities of that country, remembering Abraham, he delivered Lot out of the destruction of the cities wherein he had dwelt.',
+  },
+  'HEB 7:25': {
+    rsv: 'Consequently he is able for all time to save those who draw near to God through him, since he always lives to make intercession for them.',
+    dra: 'Whereby he is able also to save for ever them that come to God by him; always living to make intercession for us.',
+  },
+  'GEN 21:1': {
+    rsv: 'The LORD visited Sarah as he had said, and the LORD did to Sarah as he had promised.',
+    dra: 'And the Lord visited Sara, as he had promised: and fulfilled what he had spoken.',
+  },
+  'GEN 21:2': {
+    rsv: 'And Sarah conceived, and bore Abraham a son in his old age at the time of which God had spoken to him.',
+    dra: 'And she conceived and bore a son in her old age, at the time that God had foretold her.',
+  },
+  'GEN 21:3': {
+    rsv: 'Abraham called the name of his son who was born to him, whom Sarah bore him, Isaac.',
+    dra: 'And Abraham called the name of his son, whom Sara bore him, Isaac.',
+  },
+  'GEN 21:6': {
+    rsv: 'And Sarah said, “God has made laughter for me; every one who hears will laugh over me.”',
+    dra: 'And Sara said: God hath made a laughter for me: whosoever shall hear of it will laugh with me.',
+  },
+  'GEN 21:8': {
+    rsv: 'And the child grew, and was weaned; and Abraham made a great feast on the day that Isaac was weaned.',
+    dra: 'And the child grew and was weaned: and Abraham made a great feast on the day of his weaning.',
+  },
+  'GAL 4:28': {
+    rsv: 'Now we, brethren, like Isaac, are children of promise.',
+    dra: 'Now we, brethren, as Isaac was, are the children of promise.',
+  },
+  'GEN 22:1': {
+    rsv: 'After these things God tested Abraham, and said to him, “Abraham!” And he said, “Here am I.”',
+    dra: 'After these things, God tempted Abraham, and said to him: Abraham, Abraham. And he answered: Here I am.',
+  },
+  'GEN 22:2': {
+    rsv: 'He said, “Take your son, your only son Isaac, whom you love, and go to the land of Moriah, and offer him there as a burnt offering upon one of the mountains of which I shall tell you.”',
+    dra: 'He said to him: Take thy only begotten son Isaac, whom thou lovest, and go into the land of vision: and there thou shalt offer him for an holocaust upon one of the mountains which I will shew thee.',
+  },
+  'GEN 22:6': {
+    rsv: 'And Abraham took the wood of the burnt offering, and laid it on Isaac his son; and he took in his hand the fire and the knife. So they went both of them together.',
+    dra: 'And he took the wood for the holocaust, and laid it upon Isaac his son: and he himself carried in his hands fire and a sword. And as they two went on together,',
+  },
+  'GEN 22:7': {
+    rsv: 'And Isaac said to his father Abraham, “My father!” And he said, “Here am I, my son.” He said, “Behold, the fire and the wood; but where is the lamb for a burnt offering?”',
+    dra: 'Isaac said to his father: My father. And he answered: What wilt thou, son? Behold, saith he, fire and wood: where is the victim for the holocaust?',
+  },
+  'GEN 22:8': {
+    rsv: 'Abraham said, “God will provide himself the lamb for a burnt offering, my son.” So they went both of them together.',
+    dra: 'And Abraham said: God will provide himself a victim for an holocaust, my son. So they went on together.',
+  },
+  'GEN 22:11': {
+    rsv: 'But the angel of the LORD called to him from heaven, and said, “Abraham, Abraham!” And he said, “Here am I.”',
+    dra: 'And behold an angel of the Lord from heaven called to him, saying: Abraham, Abraham. And he answered: Here I am.',
+  },
+  'GEN 22:12': {
+    rsv: 'He said, “Do not lay your hand on the lad or do anything to him; for now I know that you fear God, seeing you have not withheld your son, your only son, from me.”',
+    dra: 'And he said to him: Lay not thy hand upon the boy, neither do thou any thing to him: now I know that thou fearest God, and hast not spared thy only begotten son for my sake.',
+  },
+  'GEN 22:13': {
+    rsv: 'And Abraham lifted up his eyes and looked, and behold, behind him was a ram, caught in a thicket by his horns; and Abraham went and took the ram, and offered it up as a burnt offering instead of his son.',
+    dra: 'Abraham lifted up his eyes, and saw behind his back a ram amongst the briers sticking fast by the horns, which he took and offered for a holocaust instead of his son.',
+  },
+  'GEN 22:14': {
+    rsv: 'So Abraham called the name of that place The LORD will provide; as it is said to this day, “On the mount of the LORD it shall be provided.”',
+    dra: 'And he called the name of that place, The Lord seeth. Whereupon even to this day it is said: In the mountain the Lord will see.',
+  },
+  'GEN 22:17': {
+    rsv: 'I will indeed bless you, and I will multiply your descendants as the stars of heaven and as the sand which is on the seashore. And your descendants shall possess the gate of their enemies,',
+    dra: 'I will bless thee, and I will multiply thy seed as the stars of heaven, and as the sand that is by the sea shore: thy seed shall possess the gates of their enemies.',
+  },
+  'GEN 22:18': {
+    rsv: 'and by your descendants shall all the nations of the earth bless themselves, because you have obeyed my voice.”',
+    dra: 'And in thy seed shall all the nations of the earth be blessed, because thou hast obeyed my voice.',
+  },
+  'GEN 23:19': {
+    rsv: 'After this, Abraham buried Sarah his wife in the cave of the field of Mach-pelah east of Mamre (that is, Hebron) in the land of Canaan.',
+    dra: 'And so Abraham buried Sara his wife, in a double cave of the field, that looked towards Mambre, this is Hebron in the land of Chanaan.',
+  },
+  'JHN 1:29': {
+    rsv: 'The next day he saw Jesus coming toward him, and said, “Behold, the Lamb of God, who takes away the sin of the world!',
+    dra: 'The next day, John saw Jesus coming to him, and he saith: Behold the Lamb of God, behold him who taketh away the sin of the world.',
+  },
 }
 
 /** A verse's words in the active translation. Throws for a verse that isn't in the list (a content check catches these first). */

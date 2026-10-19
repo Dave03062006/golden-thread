@@ -151,6 +151,117 @@ export const THREADS: GoldenThread[] = [
     sources: ['Galatians 3:8', 'Genesis 12:3', 'Catechism 59–60'],
     fulfilled: { age: 'XIII' },
   },
+  // Level 3 · Abraham, Father of Faith
+  {
+    id: 'the-call-to-follow',
+    episode: 'l03-e1',
+    title: 'The call of Abram → the call to follow Jesus',
+    from: ['GEN 12:1'],
+    to: ['MAT 4:19'],
+    explanation:
+      'God called Abram to leave home and go where he would show him. Jesus called Peter and Andrew in the same way, and they left their nets at once. Every Christian is called like Abraham: to leave something behind and follow.',
+    sources: ['Hebrews 11:8', 'Matthew 4:19–20', 'Catechism 59, 145'],
+    fulfilled: { age: 'XI', place: 'galilee' },
+  },
+  {
+    id: 'seek-first-the-kingdom',
+    episode: 'l03-e2',
+    title: 'Abram lets Lot choose → “seek first his kingdom”',
+    from: ['GEN 13:14'],
+    to: ['MAT 6:33'],
+    explanation:
+      'Lot chose by what his eyes could see, and moved toward Sodom. Abram put God first and peace first, and God gave him the whole land. Jesus teaches the same: seek God first, and trust him with the rest.',
+    sources: ['Matthew 6:33', 'Catechism 2830'],
+    fulfilled: { age: 'XI', place: 'galilee' },
+  },
+  {
+    id: 'melchizedek-and-the-eucharist',
+    episode: 'l03-e3',
+    title: 'Melchizedek’s bread and wine → the Eucharist',
+    from: ['GEN 14:18'],
+    to: ['PSA 110:4'],
+    explanation:
+      'Melchizedek, king of Salem and priest of God Most High, offered bread and wine and blessed Abram. Jesus is “a priest for ever after the order of Melchizedek”: at the Last Supper he took bread and wine and made them his Body and Blood.',
+    sources: ['Hebrews 7:1–3', 'Matthew 26:26–28', 'Catechism 1333, 1350', 'the Roman Canon'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'children-of-abraham-by-faith',
+    episode: 'l03-e4',
+    title: 'The stars of Abraham → all who believe are his children',
+    from: ['GEN 15:5'],
+    to: ['GAL 3:29'],
+    explanation:
+      'Abraham’s children are not only his family by blood. Everyone who believes in Christ becomes a child of Abraham, so the stars God showed him include us. The Church calls him “our father in faith.”',
+    sources: ['Romans 4:3, 18–21', 'Galatians 3:6–9, 29', 'Catechism 145–146'],
+    fulfilled: { age: 'XIII' },
+  },
+  {
+    id: 'living-water',
+    episode: 'l03-e5',
+    title: 'The well in the wilderness → living water',
+    from: ['GEN 21:19'],
+    to: ['JHN 4:14'],
+    explanation:
+      'God found Hagar, a foreign woman alone in the desert, and opened her eyes to a well of water. Jesus sat by a well with another foreign woman, the Samaritan, and offered her living water that would never run dry: the grace of the Holy Spirit.',
+    sources: ['John 4:5–14', 'Catechism 694, 2560'],
+    fulfilled: { age: 'XI', place: 'sychar' },
+  },
+  {
+    id: 'a-new-name',
+    episode: 'l03-e6',
+    title: 'A new name, a new mission → “You are Peter”',
+    from: ['GEN 17:5'],
+    to: ['MAT 16:18'],
+    explanation:
+      'God renamed Abram “father of a multitude,” and from him came God’s people. Jesus renamed Simon “Peter,” the rock, and built his Church on him. In Baptism and Confirmation, Christians are called by name too, and given a mission.',
+    sources: ['Matthew 16:17–18', 'Colossians 2:11–12', 'Catechism 2156–2159'],
+    fulfilled: { age: 'XI', place: 'caesarea-philippi' },
+  },
+  {
+    id: 'nothing-is-impossible',
+    episode: 'l03-e7',
+    title: '“Is anything too hard for the LORD?” → the Annunciation',
+    from: ['GEN 18:14'],
+    to: ['LUK 1:37'],
+    explanation:
+      'God promised a son to Sarah, who was old and barren. The angel Gabriel gave the same answer to Mary, a virgin, when he announced the birth of Jesus: with God nothing is impossible. Isaac’s birth prepares for a greater one.',
+    sources: ['Luke 1:26–38', 'Catechism 489, 2571'],
+    fulfilled: { age: 'XI', place: 'nazareth' },
+  },
+  {
+    id: 'christ-intercedes',
+    episode: 'l03-e8',
+    title: 'Abraham intercedes for Sodom → Christ intercedes for us',
+    from: ['GEN 18:23'],
+    to: ['HEB 7:25'],
+    explanation:
+      'Abraham, God’s friend, pleaded for sinners, and God listened. Jesus, the Son, risen and ascended, pleads for us always before the Father, and his prayer saves. Every time we pray for someone else, we share in that prayer.',
+    sources: ['Hebrews 7:25', 'Romans 8:34', 'Catechism 2571, 2634–2636'],
+    fulfilled: { age: 'XIII' },
+  },
+  {
+    id: 'children-of-promise',
+    episode: 'l03-e9',
+    title: 'Isaac, the child of promise → we are children of promise',
+    from: ['GEN 21:2'],
+    to: ['GAL 4:28'],
+    explanation:
+      'Isaac was born not by human strength but by God’s promise and power. St Paul says Christians are like him: we become God’s children not by our own effort but by his grace, through faith and Baptism.',
+    sources: ['Galatians 4:22–28', 'Romans 4:18–21', 'Catechism 1265'],
+    fulfilled: { age: 'XIII' },
+  },
+  {
+    id: 'the-lamb-god-provides',
+    episode: 'l03-e10',
+    title: 'Isaac carries the wood; God provides the lamb → the Lamb of God',
+    from: ['GEN 22:8'],
+    to: ['JHN 1:29'],
+    explanation:
+      'Isaac, the beloved only son, carried the wood up the mountain, and God provided a lamb in his place. Near the same hills, God did not spare his own Son: Jesus carried the wood of his cross up Calvary, and he himself was the Lamb God provided.',
+    sources: ['John 1:29', 'John 3:16', 'John 19:17', 'Romans 8:32', 'Hebrews 11:17–19', 'Catechism 2572'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
 ]
 
 const BY_ID = new Map(THREADS.map((thread) => [thread.id, thread]))

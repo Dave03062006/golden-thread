@@ -3,7 +3,7 @@
 **Bible:** Genesis 12–23
 **Age:** II · The Patriarchs (Level 3 opens it)
 **Length:** about 65 minutes (10 episodes, then the quiz, then reflection and prayer)
-**Status:** draft, waiting for Dave's approval.
+**Status:** approved by Dave on 2026-10-19 ("I'll approve as you see fit").
 
 ## How to read this script
 
@@ -648,7 +648,7 @@ The types are MC (multiple choice), TF (true or false), WHO (who said it?), ORDE
 12. **WHERE** · Where did Abram go during the famine?
     **Egypt** (region: egypt)
     *The Nile made Egypt rich in grain.* (Genesis 12:10)
-13. **FINISH** · "Let there be no ___ between you and me … for we are ___."
+13. **FINISH** · "Let there be no ___ between you and me, and between your herdsmen and my herdsmen; for we are ___."
     **strife · kinsmen** (wrong words: water, wall, war · strangers, enemies, shepherds)
     *Abram, the elder, chose peace.* (Genesis 13:8)
 14. **THREAD** · Abram put God first and let Lot choose the land → ?
@@ -677,7 +677,7 @@ The types are MC (multiple choice), TF (true or false), WHO (who said it?), ORDE
     *The priest-king of Salem blessed Abram.* (Genesis 14:19)
 21. **THREAD** · Melchizedek, priest of God Most High, offered bread and wine → ?
     **"You are a priest for ever after the order of Melchizedek."** · "Follow me." · "Behold, the Lamb of God." · "You are Peter."
-    *Jesus, our High Priest, gives us his Body and Blood under the signs of bread and wine.* (Psalm 110:4; Hebrews 7)
+    *Jesus, our High Priest, gives us his Body and Blood under the signs of bread and wine.* (Psalm 110:4; Hebrews 7:1–3)
 
 ### Episode 4 · Count the Stars
 
@@ -774,8 +774,8 @@ The types are MC (multiple choice), TF (true or false), WHO (who said it?), ORDE
 
 ### Episode 8 · Sodom and Gomorrah
 
-49. **ORDER** · Put Abraham's pleas for Sodom in order.
-    **Fifty → Forty-five → Forty → Thirty → Twenty → Ten**
+49. **ORDER** · Put Abraham's pleas for Sodom in order:
+    suppose there are fifty · forty-five · forty · thirty · twenty · ten
     *Abraham asked again and again, and God listened each time.* (Genesis 18:24–32)
 50. **WHO** · "Shall not the Judge of all the earth do right?"
     **Abraham** · Lot · The LORD · The king of Sodom

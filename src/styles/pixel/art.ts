@@ -32,6 +32,10 @@ import { theTowerOfBabelLayers } from './layers/the-tower-of-babel'
 import { theTowerOfBabelProps } from './props/the-tower-of-babel'
 import { fromShemToAbramLayers } from './layers/from-shem-to-abram'
 import { fromShemToAbramProps } from './props/from-shem-to-abram'
+import { theCallLayers } from './layers/the-call'
+import { theCallProps } from './props/the-call'
+import { lotChoosesLayers } from './layers/lot-chooses'
+import { lotChoosesProps } from './props/lot-chooses'
 import { worldGoneWrongProps } from './props/world-gone-wrong'
 import { familyOfNoah } from './characters/family-of-noah'
 
@@ -115,6 +119,8 @@ export const pixelLayerSets: Record<string, PixelLayerArt>[] = [
   theRainbowCovenantLayers,
   theTowerOfBabelLayers,
   fromShemToAbramLayers,
+  theCallLayers,
+  lotChoosesLayers,
 ]
 
 export const pixelLayers: Record<string, PixelLayerArt> = Object.assign({}, ...pixelLayerSets)
@@ -139,6 +145,8 @@ export const pixelPropSets: Record<string, PixelPropArt>[] = [
   theRainbowCovenantProps,
   theTowerOfBabelProps,
   fromShemToAbramProps,
+  theCallProps,
+  lotChoosesProps,
 ]
 
 export const pixelProps: Record<string, PixelPropArt> = Object.assign({}, ...pixelPropSets)

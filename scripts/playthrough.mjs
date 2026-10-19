@@ -51,6 +51,14 @@ const LEVELS = [
       { number: 7, lines: 14, plays: 1 }, // episode-7.ts
     ],
   },
+  {
+    number: 3,
+    complete: false,
+    episodes: [
+      { number: 1, lines: 11, plays: 1 }, // src/content/levels/03-abraham-father-of-faith/episode-1.ts
+      { number: 2, lines: 14, plays: 1 }, // episode-2.ts
+    ],
+  },
 ]
 
 const value = (name) => process.argv.find((a) => a.startsWith(`--${name}=`))?.split('=')[1]

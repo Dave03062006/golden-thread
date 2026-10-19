@@ -215,6 +215,24 @@
     },
     "ur-city": {
       "hash": "6d1a135b"
+    },
+    "dawn-sky": {
+      "hash": "640ebe0b"
+    },
+    "haran-hills": {
+      "hash": "a74ecaa9"
+    },
+    "canaan-hills": {
+      "hash": "901ab075"
+    },
+    "dry-hills": {
+      "hash": "39437d40"
+    },
+    "egypt-nile": {
+      "hash": "5690d3f7"
+    },
+    "jordan-valley": {
+      "hash": "86e82050"
     }
   },
   "paperProps": {
@@ -487,6 +505,18 @@
     },
     "camel": {
       "hash": "f03e2d4d"
+    },
+    "great-oak": {
+      "hash": "219e7161"
+    },
+    "walking-staff": {
+      "hash": "b801a13a"
+    },
+    "stone-well": {
+      "hash": "b0820483"
+    },
+    "goat": {
+      "hash": "46e03dee"
     }
   },
   "pixelLayers": {
@@ -705,6 +735,24 @@
     },
     "ur-city": {
       "hash": "c62c7576"
+    },
+    "dawn-sky": {
+      "hash": "eb8ee9d8"
+    },
+    "haran-hills": {
+      "hash": "925f69c3"
+    },
+    "canaan-hills": {
+      "hash": "ba1d4fe4"
+    },
+    "dry-hills": {
+      "hash": "1cd2f6ea"
+    },
+    "egypt-nile": {
+      "hash": "09f6982d"
+    },
+    "jordan-valley": {
+      "hash": "6d34f71a"
     }
   },
   "backdrop": {

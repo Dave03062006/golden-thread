@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { newSave } from '../engine/save/types'
-import { threadPoints } from './layout'
+import { WINDOW, medallionCentres, threadPoints } from './layout'
 import { dayLight, nave, panelsToSet, threadLines } from './model'
 
 const save = (changes: Partial<ReturnType<typeof newSave>> = {}) => ({ ...newSave('Test', 'paper-glass', ''), ...changes })
@@ -51,5 +51,17 @@ describe('a golden thread across the nave', () => {
     for (let i = 1; i < points.length; i++) expect(points[i]!.along).toBeGreaterThan(points[i - 1]!.along)
     // It arcs up over the nave between them.
     expect(Math.min(...points.map((p) => p.y))).toBeLessThan(250)
+  })
+})
+
+describe('the medallions', () => {
+  it('stand apart, in one column or zigzagging, for windows of up to ten episodes', () => {
+    for (const count of [6, 7, 10]) {
+      const centres = medallionCentres(count)
+      for (const [i, a] of centres.entries())
+        for (const b of centres.slice(i + 1)) expect(Math.hypot(a.x - b.x, a.y - b.y), `${count} medallions`).toBeGreaterThan(44)
+      // Every round (radius 22) stays inside the window.
+      for (const c of centres) expect(c.x - 22 >= 0 && c.x + 22 <= WINDOW.w).toBe(true)
+    }
   })
 })

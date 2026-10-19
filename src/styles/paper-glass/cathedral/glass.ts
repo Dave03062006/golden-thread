@@ -217,6 +217,86 @@ export const EMBLEMS: Record<string, () => Piece[]> = {
     { d: P([[-12, 15], [0, 6], [12, 15]]), color: '#c8a46a' },
     { d: P([[-2, 15], [0, 10], [2, 15]]), color: '#5a3a1a' },
   ],
+  // Level 3 · Abraham, Father of Faith
+  // The call: a road into the hills, a shepherd's staff, the sun rising.
+  call: () => [
+    { d: circ(7, -8, 5, 12), color: '#ffd36e' },
+    { d: P([[-17, 15], [17, 15], [17, 4], [8, 0], [0, 3], [-9, -1], [-17, 3]]), color: '#7a9a5a' },
+    { d: P([[-4, 15], [4, 15], [1, 2], [-1, 2]]), color: '#e0c48a' },
+    { d: P([[-11, 13], [-9, 13], [-9, -8], [-11, -8]]), color: '#7a4a22' },
+    { d: P([[-11, -8], [-11, -12], [-6, -13], [-5, -9], [-7, -9], [-7, -11], [-9, -10], [-9, -8]]), color: '#7a4a22' },
+  ],
+  // An altar of stones on a hilltop, its fire burning.
+  'altar-hill': () => [
+    { d: P([[-17, 15], [-10, 4], [0, 1], [10, 4], [17, 15]]), color: '#6a8a4a' },
+    { d: P([[-6, 2], [6, 2], [6, -3], [-6, -3]]), color: '#a8a090' },
+    { d: P([[-6, -3], [6, -3], [6, -7], [-6, -7]]), color: '#c0b8a6' },
+    { d: P([[-4, -7], [-2, -14], [0, -9], [2, -15], [4, -7]]), color: '#f08a3a' },
+    { d: P([[-2, -7], [0, -11], [2, -7]]), color: '#ffd27a' },
+  ],
+  // Melchizedek's bread and wine.
+  'bread-wine': () => [
+    { d: circ(-6, 4, 8, 16), color: '#c8904a' },
+    { d: P([[-11, 2], [-1, 2], [-1, 3], [-11, 3]]), color: '#e0b070' },
+    { d: P([[3, -12], [13, -12], [11, -2], [5, -2]]), color: '#e8c060' },
+    { d: P([[4, -11], [12, -11], [11, -6], [5, -6]]), color: '#8a1a3a' },
+    { d: P([[7, -2], [9, -2], [9, 9], [7, 9]]), color: '#e8c060' },
+    { d: P([[3, 9], [13, 9], [13, 11], [3, 11]]), color: '#e8c060' },
+  ],
+  // The stars Abram was told to count.
+  stars: () => [
+    { d: circ(0, 0, 18, 20), color: '#1a2050' },
+    { d: star8(-3, -4, 6), color: '#fff2c0' },
+    ...[[-10, 6], [8, -10], [10, 5], [-11, -10], [3, 10], [12, -2], [-6, 12], [-14, 0], [6, 1]].map(([x, y]) => ({ d: circ(x!, y!, 1.3, 6), color: '#f4e4a0' })),
+  ],
+  // The well in the wilderness.
+  well: () => [
+    { d: P([[-17, 15], [17, 15], [17, 6], [-17, 6]]), color: '#d8b070' },
+    { d: P([[-9, 8], [9, 8], [9, -2], [-9, -2]]), color: '#a89a86' },
+    { d: P([[-7, -2], [7, -2], [7, 0], [-7, 0]]), color: '#3a8ad0' },
+    { d: P([[8, -2], [9, -2], [11, -15], [10, -15]]), color: '#7a5a32' },
+    { d: P([[10, -15], [16, -11], [10, -13], [4, -11]]), color: '#4a8a4a' },
+  ],
+  // A new name: the letter of God's breath, shining.
+  'new-name': () => [
+    { d: P([[-10, -10], [10, -10], [10, -6], [-10, -6]]), color: '#ffe48a' },
+    { d: P([[6, -6], [10, -6], [10, 12], [6, 12]]), color: '#ffe48a' },
+    { d: P([[-10, -1], [-6, -1], [-6, 12], [-10, 12]]), color: '#ffe48a' },
+    { d: circ(0, 0, 3, 10), color: '#ffffff' },
+  ],
+  // The three visitors under the oak at Mamre.
+  visitors: () => [
+    { d: circ(0, -9, 10, 16), color: '#3e7a40' },
+    ...[-9, 0, 9].flatMap((x) => [
+      { d: circ(x, -1, 2.6, 10), color: '#fff6dc' },
+      { d: P([[x - 3, 14], [x + 3, 14], [x + 2, 2], [x - 2, 2]]), color: '#f6e6b8' },
+    ]),
+  ],
+  // Abraham pleading for Sodom: hands lifted up.
+  pleading: () => [
+    { d: P([[-8, 15], [-3, 15], [-4, -2], [-9, -6]]), color: '#e8b890' },
+    { d: P([[8, 15], [3, 15], [4, -2], [9, -6]]), color: '#e8b890' },
+    ...[[-12, -10], [-9, -12], [-6, -11]].map(([x, y]) => ({ d: P([[x!, y!], [x! + 2, y! - 1], [x! + 3, y! + 6], [x! + 1, y! + 7]]), color: '#e8b890' })),
+    ...[[12, -10], [9, -12], [6, -11]].map(([x, y]) => ({ d: P([[x!, y!], [x! - 2, y! - 1], [x! - 3, y! + 6], [x! - 1, y! + 7]]), color: '#e8b890' })),
+    { d: circ(0, -14, 3, 10), color: '#ffe48a' },
+  ],
+  // Laughter: the child of promise in his cradle.
+  laughter: () => [
+    { d: P([[-13, 2], [13, 2], [10, 11], [-10, 11]]), color: '#a8743a' },
+    { d: P([[-8, 13], [-6, 11], [6, 11], [8, 13]]), color: '#7a4a22' },
+    { d: circ(-3, -3, 5, 12), color: '#e8b890' },
+    { d: P([[0, -2], [11, -2], [11, 2], [0, 2]]), color: '#f6f0e4' },
+    { d: star8(9, -11, 4), color: '#ffe48a' },
+  ],
+  // The ram caught in the thicket by its horns.
+  ram: () => [
+    { d: P([[-17, 15], [-12, 4], [-6, 8], [0, 2], [6, 7], [12, 3], [17, 15]]), color: '#3e6a34' },
+    { d: P([[-8, 0], [8, 0], [9, 8], [-9, 8]]), color: '#efe6d4' },
+    { d: circ(-9, -3, 4.5, 12), color: '#efe6d4' },
+    { d: P([[-12, -6], [-16, -10], [-17, -4], [-14, -1], [-13, -4]]), color: '#a88a5a' },
+    { d: P([[-6, -6], [-3, -11], [1, -8], [-1, -4], [-3, -6]]), color: '#a88a5a' },
+    { d: circ(-10, -3, 0.9, 6), color: '#2a1e1a' },
+  ],
 }
 
 /** The medallions' backgrounds: deep blue, with one ruby for the darkest story. */

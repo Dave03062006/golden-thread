@@ -114,11 +114,19 @@ const AREAS: MapRegion[] = [
     ['nineveh', 'Nineveh', 36.36, 43.15],
     ['babel', 'Babel', 32.54, 44.42],
   ].map(([id, name, lat, lon]) => city(id as string, name as string, { lat: lat as number, lon: lon as number })),
+  // The towns of Canaan stand close together: smaller squares, so each can be told apart.
+  ...[
+    ['shechem', 'Shechem', 32.21, 35.28],
+    ['jerusalem', 'Jerusalem (Mount Moriah)', 31.78, 35.23],
+    ['hebron', 'Hebron (Mamre)', 31.53, 35.1],
+    ['beersheba', 'Beer-sheba', 31.25, 34.79],
+  ].map(([id, name, lat, lon]) => city(id as string, name as string, { lat: lat as number, lon: lon as number }, 0.12)),
+  // Where most scholars place Sodom and Gomorrah: the southern end of the Dead Sea.
+  { id: 'dead-sea', name: 'The southern Dead Sea', kind: 'area', shape: pairs([[31.25, 35.35], [31.25, 35.6], [30.9, 35.55], [30.9, 35.35]]) },
 ]
 
-/** A city on the map: a small square around it, big enough to tap. */
-function city(id: string, name: string, at: LatLon): MapRegion {
-  const r = 0.45
+/** A city on the map: a small square around it, big enough to tap (smaller where towns stand close). */
+function city(id: string, name: string, at: LatLon, r = 0.45): MapRegion {
   return { id, name, kind: 'area', shape: pairs([[at.lat + r, at.lon - r], [at.lat + r, at.lon + r], [at.lat - r, at.lon + r], [at.lat - r, at.lon - r]]) }
 }
 

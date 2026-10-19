@@ -115,6 +115,23 @@ export const PLACES: Place[] = [
   { id: 'ur', name: 'Ur of the Chaldeans', kind: 'city', at: { lat: 30.96, lon: 46.1 }, note: 'One of the greatest cities of its time, near where the Euphrates met the Persian Gulf.' },
   { id: 'haran', name: 'Haran', kind: 'city', at: { lat: 36.86, lon: 39.03 }, note: 'A trading city on the road from Mesopotamia to Canaan, in southern Turkey today.' },
   { id: 'nazareth', name: 'Nazareth', kind: 'city', at: { lat: 32.7, lon: 35.3 }, note: 'The village in Galilee where the angel Gabriel came to Mary.' },
+  // Level 3 · Abraham, Father of Faith
+  { id: 'shechem', name: 'Shechem', kind: 'city', at: { lat: 32.21, lon: 35.28 }, note: 'Among the hills of Samaria, by the oak of Moreh: Abram’s first altar in Canaan.' },
+  { id: 'bethel', name: 'Bethel', kind: 'city', at: { lat: 31.93, lon: 35.22 }, note: '“House of God.” Abram built an altar on the mountain east of it; Jacob will dream of a ladder here.' },
+  { id: 'egypt', name: 'Egypt', kind: 'region', at: { lat: 29.85, lon: 31.25 }, note: 'Fed by the Nile, the breadbasket of the ancient world, where families from Canaan went in famines.' },
+  { id: 'hebron', name: 'Hebron (Mamre)', kind: 'city', at: { lat: 31.53, lon: 35.1 }, note: 'The oaks of Mamre, where Abraham lived and welcomed three visitors; the cave of Machpelah, where he buried Sarah.' },
+  { id: 'beersheba', name: 'Beer-sheba', kind: 'city', at: { lat: 31.25, lon: 34.79 }, note: '“Well of the oath,” at the edge of the desert in the south, the Negeb.' },
+  { id: 'dan', name: 'Dan', kind: 'city', at: { lat: 33.25, lon: 35.65 }, note: 'At the far north of the land, near the springs of the Jordan, where Abram caught up with the kings.' },
+  {
+    id: 'sodom',
+    name: 'Sodom and Gomorrah',
+    kind: 'region',
+    unknown: true,
+    note: 'Somewhere near the southern end of the Dead Sea, most scholars think. No one knows the exact place.',
+  },
+  { id: 'galilee', name: 'The Sea of Galilee', kind: 'region', at: { lat: 32.82, lon: 35.59 }, note: 'Where Jesus called Peter and Andrew from their fishing nets, and taught the crowds.' },
+  { id: 'sychar', name: 'Sychar (Jacob’s well)', kind: 'city', at: { lat: 32.21, lon: 35.29 }, note: 'Near ancient Shechem, where Jesus met the Samaritan woman at Jacob’s well.' },
+  { id: 'caesarea-philippi', name: 'Caesarea Philippi', kind: 'city', at: { lat: 33.25, lon: 35.69 }, note: 'At the springs of the Jordan, where Jesus renamed Simon “Peter.”' },
 ]
 
 const BY_ID = new Map(PLACES.map((place) => [place.id, place]))
