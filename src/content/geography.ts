@@ -132,6 +132,24 @@ export const PLACES: Place[] = [
   { id: 'galilee', name: 'The Sea of Galilee', kind: 'region', at: { lat: 32.82, lon: 35.59 }, note: 'Where Jesus called Peter and Andrew from their fishing nets, and taught the crowds.' },
   { id: 'sychar', name: 'Sychar (Jacob’s well)', kind: 'city', at: { lat: 32.21, lon: 35.29 }, note: 'Near ancient Shechem, where Jesus met the Samaritan woman at Jacob’s well.' },
   { id: 'caesarea-philippi', name: 'Caesarea Philippi', kind: 'city', at: { lat: 33.25, lon: 35.69 }, note: 'At the springs of the Jordan, where Jesus renamed Simon “Peter.”' },
+  // Level 4 · Isaac and Jacob
+  {
+    id: 'jabbok',
+    name: 'Jabbok',
+    kind: 'river',
+    // From its springs near Amman, north-east, then west through its deep valley into the Jordan.
+    course: [
+      { lat: 31.95, lon: 35.93 },
+      { lat: 32.07, lon: 36.08 },
+      { lat: 32.17, lon: 35.95 },
+      { lat: 32.2, lon: 35.8 },
+      { lat: 32.12, lon: 35.62 },
+      { lat: 32.1, lon: 35.55 },
+    ],
+    note: 'A stream east of the Jordan, in a deep, rocky valley, where Jacob wrestled until dawn. Today it is called the Zarqa.',
+  },
+  { id: 'edom', name: 'Edom (Seir)', kind: 'region', at: { lat: 30.6, lon: 35.5 }, note: 'The mountains south of the Dead Sea, where Esau and his descendants lived. “Edom” means “red.”' },
+  { id: 'bethlehem', name: 'Bethlehem (Ephrath)', kind: 'city', at: { lat: 31.7, lon: 35.2 }, note: 'Where Rachel was buried on the road south, and where, centuries later, Jesus was born.' },
 ]
 
 const BY_ID = new Map(PLACES.map((place) => [place.id, place]))

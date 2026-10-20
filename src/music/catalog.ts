@@ -436,6 +436,105 @@ export const TRACKS: Track[] = [
     download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Enrico_Caruso,_George_Frideric_Handel,_Ombra_mai_fu_(Serse).ogg',
     credit: 'Handel, Serse: Ombra mai fu. Enrico Caruso (Victor, 1920). Public domain.',
   },
+  // Level 4 · Isaac and Jacob
+  // Episode 1: wells, camels and flocks, a peaceful pastoral journey.
+  {
+    id: 'bach-sheep-may-safely-graze',
+    title: 'Sheep May Safely Graze',
+    work: 'Cantata 208, BWV 208',
+    composer: 'Johann Sebastian Bach',
+    performer: 'Kevin MacLeod',
+    year: 2011,
+    license: 'cc-by',
+    licenseNote: 'Published by the performer under the Creative Commons Attribution 3.0 license, as stated on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:Kevin_MacLeod_-_J_S_Bach_Sheep_May_Safely_Graze_-_BWV_208.ogg',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kevin_MacLeod_-_J_S_Bach_Sheep_May_Safely_Graze_-_BWV_208.ogg',
+    credit: 'Bach, Sheep May Safely Graze, BWV 208. Kevin MacLeod (2011). CC BY 3.0, via Wikimedia Commons.',
+  },
+  // Episode 4, in place of the spiritual “We Are Climbing Jacob’s Ladder”, for which no
+  // recording under an allowed license was found: a hymn that retells Jacob’s dream.
+  {
+    id: 'nearer-my-god',
+    title: 'Nearer, My God, to Thee',
+    composer: 'Lowell Mason (tune Bethany), words by Sarah Flower Adams',
+    performer: 'The United States Air Force Band, Concert Band',
+    year: 1997,
+    license: 'public-domain',
+    licenseNote: 'A work of the United States Air Force, made as part of official duties, so it is in the public domain.',
+    source: 'https://commons.wikimedia.org/wiki/File:Nearer_My_God_to_Thee_-_Concert_Band_-_United_States_Air_Force_Band.mp3',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nearer_My_God_to_Thee_-_Concert_Band_-_United_States_Air_Force_Band.mp3',
+    credit: 'Nearer, My God, to Thee. The Concert Band of the United States Air Force Band (1997). Public domain.',
+  },
+  // Episode 5: seven years of love, and a wedding.
+  {
+    id: 'pachelbel-canon',
+    title: 'Canon in D',
+    composer: 'Johann Pachelbel, arranged by Frank Hudson',
+    performer: 'The United States Air Force Band, Strolling Strings',
+    year: 2004,
+    license: 'public-domain',
+    licenseNote: 'A work of the United States Air Force, made as part of official duties, so it is in the public domain.',
+    source: 'https://commons.wikimedia.org/wiki/File:Canon_(2004)_-_Strolling_Strings_-_United_States_Air_Force_Band.mp3',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Canon_(2004)_-_Strolling_Strings_-_United_States_Air_Force_Band.mp3',
+    credit: 'Pachelbel, Canon in D. The Strolling Strings of the United States Air Force Band (2004). Public domain.',
+  },
+  // Episode 6: the road home, and the long night by the Jabbok.
+  {
+    id: 'dvorak-largo',
+    title: 'Largo',
+    work: 'Symphony No. 9, “From the New World”, Op. 95',
+    composer: 'Antonín Dvořák',
+    performer: 'Musopen',
+    year: 2012,
+    license: 'public-domain',
+    licenseNote: 'Released into the public domain through Musopen, as stated on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:Antonin_Dvorak_-_symphony_no._9_in_e_minor_%27from_the_new_world%27,_op._95_-_ii._largo.ogg',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Antonin_Dvorak_-_symphony_no._9_in_e_minor_%27from_the_new_world%27,_op._95_-_ii._largo.ogg',
+    credit: 'Dvořák, Symphony No. 9, Largo. Musopen. Public domain, via Wikimedia Commons.',
+  },
+  // Episode 7, in place of the chant Ubi caritas, for which no recording under an allowed
+  // license was found: “I once was lost, but now am found,” for the brothers reconciled.
+  {
+    id: 'amazing-grace',
+    title: 'Amazing Grace',
+    composer: 'Traditional (tune New Britain), words by John Newton',
+    performer: 'The United States Air Force Band, Strolling Strings',
+    year: 2004,
+    license: 'public-domain',
+    licenseNote: 'A work of the United States Air Force, made as part of official duties, so it is in the public domain.',
+    source: 'https://commons.wikimedia.org/wiki/File:Amazing_Grace_(USAFB_strings).ogg',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Amazing_Grace_(USAFB_strings).ogg',
+    credit: 'Amazing Grace. The Strolling Strings of the United States Air Force Band (2004). Public domain.',
+  },
+  // Reflection and prayer, in place of “Nearer, My God, to Thee”, which moved to Episode 4:
+  // “Abide with me”, as God promised Jacob, “I am with you.”
+  {
+    id: 'abide-with-me',
+    title: 'Abide with Me',
+    work: 'The Army and Navy Hymnal, Hymn 9',
+    composer: 'William Henry Monk (tune Eventide), words by Henry Francis Lyte',
+    performer: 'Ruth Golding (LibriVox)',
+    year: 2013,
+    license: 'public-domain',
+    licenseNote: 'A LibriVox recording, dedicated to the public domain by its reader, as stated on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:Army_and_Navy_Hymnal-0009.ogg',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Army_and_Navy_Hymnal-0009.ogg',
+    credit: 'Abide with Me, from The Army and Navy Hymnal. Ruth Golding, LibriVox (2013). Public domain.',
+  },
+  // The quiz: gentle and unhurried.
+  {
+    id: 'mozart-romanze',
+    title: 'Romanze',
+    work: 'Eine kleine Nachtmusik (Serenade No. 13), K. 525',
+    composer: 'Wolfgang Amadeus Mozart',
+    performer: 'Musopen',
+    year: 2014,
+    license: 'public-domain',
+    licenseNote: 'Released into the public domain through Musopen, as stated on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:Mozart_-_Serenade_No._13_for_strings_in_G_major,_K._525_-_Romanze.ogg',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mozart_-_Serenade_No._13_for_strings_in_G_major,_K._525_-_Romanze.ogg',
+    credit: 'Mozart, Eine kleine Nachtmusik: Romanze. Musopen. Public domain, via Wikimedia Commons.',
+  },
 ]
 
 const BY_ID = new Map(TRACKS.map((track) => [track.id, track]))

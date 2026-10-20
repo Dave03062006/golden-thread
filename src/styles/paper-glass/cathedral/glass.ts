@@ -297,6 +297,67 @@ export const EMBLEMS: Record<string, () => Piece[]> = {
     { d: P([[-6, -6], [-3, -11], [1, -8], [-1, -4], [-3, -6]]), color: '#a88a5a' },
     { d: circ(-10, -3, 0.9, 6), color: '#2a1e1a' },
   ],
+  // Level 4 · Isaac and Jacob
+  // Rebekah's jar, pouring water into the trough for the camels.
+  jar: () => [
+    { d: P([[-17, 15], [17, 15], [17, 8], [-17, 8]]), color: '#a89a86' },
+    { d: P([[-15, 8], [15, 8], [15, 11], [-15, 11]]), color: '#3a8ad0' },
+    { d: P([[-12, -12], [-2, -14], [4, -8], [2, -2], [-8, 0], [-13, -5]]), color: '#c8784a' },
+    { d: P([[4, -8], [9, -9], [10, -6], [5, -5]]), color: '#a85a32' },
+    { d: P([[9, -7], [11, -7], [12, 8], [10, 8]]), color: '#8ad0f8' },
+  ],
+  // The bowl of red stew Esau sold his birthright for, steaming.
+  stew: () => [
+    { d: P([[-15, 0], [15, 0], [10, 11], [-10, 11]]), color: '#8a5a32' },
+    { d: P([[-14, 0], [14, 0], [13, -3], [-13, -3]]), color: '#c0402a' },
+    { d: P([[-6, 14], [6, 14], [5, 11], [-5, 11]]), color: '#6a4224' },
+    ...[-6, 0, 6].map((x) => ({ d: P([[x - 1, -5], [x + 1, -5], [x + 2, -10], [x, -15], [x - 1, -10]]), color: '#e8e0d0' })),
+  ],
+  // The blessing: an old man's hand laid on a bowed head, over the borrowed robe.
+  blessing: () => [
+    { d: P([[-14, 15], [14, 15], [10, 3], [-10, 3]]), color: '#3c6a4a' },
+    { d: circ(0, -2, 6, 14), color: '#e8b890' },
+    { d: P([[-17, -12], [2, -13], [6, -10], [2, -7], [-17, -7]]), color: '#d8a880' },
+    { d: star8(11, -12, 4), color: '#ffe48a' },
+  ],
+  // The ladder set up on the earth, its top reaching to heaven.
+  ladder: () => {
+    const left = (y: number) => -7.5 + ((16 - y) / 30) * 4.5
+    return [
+      { d: P([[-9, 16], [-6, 16], [-2, -14], [-4, -14]]), color: '#ffe48a' },
+      { d: P([[6, 16], [9, 16], [4, -14], [2, -14]]), color: '#ffe48a' },
+      ...[11, 5, -1, -7].map((y) => ({ d: P([[left(y), y], [-left(y), y], [-left(y + 1.6), y + 1.6], [left(y + 1.6), y + 1.6]]), color: '#f4d070' })),
+      { d: star8(0, -13, 5.5), color: '#ffffff' },
+    ]
+  },
+  // The Lion of the tribe of Judah.
+  lion: () => [
+    { d: P([[-17, 15], [17, 15], [17, 11], [-17, 11]]), color: '#6a8a4a' },
+    { d: P([[-12, 11], [7, 11], [7, 0], [-10, -1]]), color: '#d8a040' },
+    { d: P([[-12, 0], [-16, -7], [-14, -8], [-10, -2]]), color: '#d8a040' },
+    { d: circ(7, -4, 8, 16), color: '#a8602a' },
+    { d: circ(8, -4, 4.5, 12), color: '#e8b050' },
+    { d: star8(-6, -12, 3.5), color: '#ffe48a' },
+  ],
+  // Dawn breaking over the hills by the Jabbok.
+  dawn: () => [
+    ...Array.from({ length: 5 }, (_, i) => {
+      const a = Math.PI + ((i + 0.5) / 5) * Math.PI
+      return { d: P([[Math.cos(a - 0.18) * 10, 4 + Math.sin(a - 0.18) * 10], [Math.cos(a) * 17, 4 + Math.sin(a) * 17], [Math.cos(a + 0.18) * 10, 4 + Math.sin(a + 0.18) * 10]]), color: '#f3a93b' }
+    }),
+    { d: circ(0, 4, 8, 16), color: '#ffd27a' },
+    { d: P([[-17, 15], [-17, 6], [-8, 2], [0, 6], [8, 1], [17, 6], [17, 15]]), color: '#3a3050' },
+    { d: P([[-17, 11], [17, 9], [17, 12], [-17, 14]]), color: '#3a8ad0' },
+  ],
+  // The brothers in each other's arms.
+  embrace: () => [
+    { d: P([[-12, 15], [-3, 15], [-1, -2], [-7, -4]]), color: '#3c6a4a' },
+    { d: P([[12, 15], [3, 15], [1, -2], [7, -4]]), color: '#8a2a2a' },
+    { d: circ(-4, -8, 4, 12), color: '#e8b890' },
+    { d: circ(4, -8, 4, 12), color: '#d89870' },
+    { d: P([[-7, -2], [7, -2], [7, 1], [-7, 1]]), color: '#e0a880' },
+    { d: star8(0, -15, 3), color: '#ffe48a' },
+  ],
 }
 
 /** The medallions' backgrounds: deep blue, with one ruby for the darkest story. */

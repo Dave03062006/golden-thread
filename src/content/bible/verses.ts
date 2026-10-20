@@ -834,6 +834,356 @@ export const VERSES: Record<string, Verse> = {
     rsv: 'The next day he saw Jesus coming toward him, and said, “Behold, the Lamb of God, who takes away the sin of the world!',
     dra: 'The next day, John saw Jesus coming to him, and he saith: Behold the Lamb of God, behold him who taketh away the sin of the world.',
   },
+  // Level 4 · Isaac and Jacob
+  'GEN 24:1': {
+    rsv: 'Now Abraham was old, well advanced in years; and the LORD had blessed Abraham in all things.',
+    dra: 'Now Abraham was old; and advanced in age: and the Lord had blessed him in all things.',
+  },
+  'GEN 24:4': {
+    rsv: 'but will go to my country and to my kindred, and take a wife for my son Isaac.”',
+    dra: 'But that thou go to my own country and kindred, and take a wife from thence for my son Isaac.',
+  },
+  'GEN 24:10': {
+    rsv: 'Then the servant took ten of his master’s camels and departed, taking all sorts of choice gifts from his master; and he arose, and went to Mesopotamia, to the city of Nahor.',
+    dra: 'And he took ten camels of his master\'s herd, and departed, carrying something of all his goods with him, and he set forward and went on to Mesopotamia to the city of Nachor.',
+  },
+  'GEN 24:12': {
+    rsv: 'And he said, “O LORD, God of my master Abraham, grant me success today, I pray thee, and show steadfast love to my master Abraham.',
+    dra: 'O Lord the God of my master Abraham, meet me to day, I beseech thee, and shew kindness to my master Abraham.',
+  },
+  'GEN 24:15': {
+    rsv: 'Before he had done speaking, behold, Rebekah, who was born to Bethuel the son of Milcah, the wife of Nahor, Abraham’s brother, came out with her water jar upon her shoulder.',
+    dra: 'He had not yet ended these words within himself, and behold Rebecca came out, the daughter of Bathuel, son of Melcha, wife to Nachor the brother of Abraham, having a pitcher on her shoulder:',
+  },
+  'GEN 24:18': {
+    rsv: 'She said, “Drink, my lord”; and she quickly let down her jar upon her hand, and gave him a drink.',
+    dra: 'And she answered: Drink, my lord. And quickly she let down the pitcher upon her arm, and gave him drink.',
+  },
+  'GEN 24:19': {
+    rsv: 'When she had finished giving him a drink, she said, “I will draw for your camels also, until they have done drinking.”',
+    dra: 'And when he had drunk, she said: I will draw water for thy camels also, till they all drink.',
+  },
+  'GEN 24:58': {
+    rsv: 'And they called Rebekah, and said to her, “Will you go with this man?” She said, “I will go.”',
+    dra: 'And they called her, and when she was come, they asked: Wilt thou go with this man? She said: I will go.',
+  },
+  'GEN 24:63': {
+    rsv: 'And Isaac went out to meditate in the field in the evening; and he lifted up his eyes and looked, and behold, there were camels coming.',
+    dra: 'And he was gone forth to meditate in the field, the day being now well spent: and when he had lifted up his eyes, he saw camels coming afar off.',
+  },
+  'GEN 24:67': {
+    rsv: 'Then Isaac brought her into the tent, and took Rebekah, and she became his wife; and he loved her. So Isaac was comforted after his mother’s death.',
+    dra: 'Who brought her into the tent of Sara his mother, and took her to wife: and he loved her so much, that it moderated the sorrow which was occasioned by his mother\'s death.',
+  },
+  'LUK 1:38': {
+    rsv: 'And Mary said, “Behold, I am the handmaid of the Lord; let it be to me according to your word.” And the angel departed from her.',
+    dra: 'And Mary said: Behold the handmaid of the Lord; be it done to me according to thy word. And the angel departed from her.',
+  },
+  'GEN 25:8': {
+    rsv: 'Abraham breathed his last and died in a good old age, an old man and full of years, and was gathered to his people.',
+    dra: 'And decaying he died in a good old age, and having lived a long time, and being full of days: and was gathered to his people.',
+  },
+  'GEN 25:21': {
+    rsv: 'And Isaac prayed to the LORD for his wife, because she was barren; and the LORD granted his prayer, and Rebekah his wife conceived.',
+    dra: 'And Isaac besought the Lord for his wife, because she was barren; and he heard him, and made Rebecca to conceive.',
+  },
+  'GEN 25:23': {
+    rsv: 'And the LORD said to her, “Two nations are in your womb, and two peoples, born of you, shall be divided; the one shall be stronger than the other, the elder shall serve the younger.”',
+    dra: 'And he answering said: Two nations are in thy womb, and two peoples shall be divided out of thy womb, and one people shall overcome the other, and the elder shall serve the younger.',
+  },
+  'GEN 25:25': {
+    rsv: 'The first came forth red, all his body like a hairy mantle; so they called his name Esau.',
+    dra: 'He that came forth first was red, and hairy like a skin: and his name was called Esau. Immediately the other coming forth, held his brother\'s foot in his hand, and therefore he was called Jacob.',
+  },
+  'GEN 25:26': {
+    rsv: 'Afterward his brother came forth, and his hand had taken hold of Esau’s heel; so his name was called Jacob. Isaac was sixty years old when she bore them.',
+    dra: 'Isaac was threescore years old when the children were born unto him.',
+  },
+  'GEN 25:27': {
+    rsv: 'When the boys grew up, Esau was a skilful hunter, a man of the field, while Jacob was a quiet man, dwelling in tents.',
+    dra: 'And when they were grown up, Esau became a skillful hunter, and a husbandman, but Jacob a plain man dwelt in tents.',
+  },
+  'GEN 25:28': {
+    rsv: 'Isaac loved Esau, because he ate of his game; but Rebekah loved Jacob.',
+    dra: 'Isaac loved Esau, because he ate of his hunting: and Rebecca loved Jacob.',
+  },
+  'GEN 25:30': {
+    rsv: 'And Esau said to Jacob, “Let me eat some of that red pottage, for I am famished!” (Therefore his name was called Edom.)',
+    dra: 'Said: Give me of this red pottage, for I am exceeding faint. For which reason his name was called Edom.',
+  },
+  'GEN 25:31': {
+    rsv: 'Jacob said, “First sell me your birthright.”',
+    dra: 'And Jacob said to him: Sell me thy first birthright.',
+  },
+  'GEN 25:32': {
+    rsv: 'Esau said, “I am about to die; of what use is a birthright to me?”',
+    dra: 'He answered: Lo I die, what will the first birthright avail me?',
+  },
+  'GEN 25:34': {
+    rsv: 'Then Jacob gave Esau bread and pottage of lentils, and he ate and drank, and rose and went his way. Thus Esau despised his birthright.',
+    dra: 'And so taking bread and the pottage of lentils, he ate, and drank, and went his way; making little account of having sold his first birthright.',
+  },
+  'MAT 4:4': {
+    rsv: 'But he answered, “It is written, ‘Man shall not live by bread alone, but by every word that proceeds from the mouth of God.’”',
+    dra: 'Who answered and said: It is written, Not in bread alone doth man live, but in every word that proceedeth from the mouth of God.',
+  },
+  'GEN 27:1': {
+    rsv: 'When Isaac was old and his eyes were dim so that he could not see, he called Esau his older son, and said to him, “My son”; and he answered, “Here I am.”',
+    dra: 'Now Isaac was old, and his eyes were dim, and he could not see: and he called Esau, his elder son, and said to him: My son? And he answered: Here I am.',
+  },
+  'GEN 27:4': {
+    rsv: 'and prepare for me savory food, such as I love, and bring it to me that I may eat; that I may bless you before I die.”',
+    dra: 'Make me savoury meat thereof, as thou knowest I like, and bring it, that I may eat: and my soul may bless thee before I die.',
+  },
+  'GEN 27:16': {
+    rsv: 'and the skins of the kids she put upon his hands and upon the smooth part of his neck;',
+    dra: 'And the little skins of the kids she put about his hands, and covered the bare of his neck.',
+  },
+  'GEN 27:22': {
+    rsv: 'So Jacob went near to Isaac his father, who felt him and said, “The voice is Jacob’s voice, but the hands are the hands of Esau.”',
+    dra: 'He came near to his father, and when he had felt him, Isaac said: The voice indeed is the voice of Jacob; but the hands are the hands of Esau.',
+  },
+  'GEN 27:27': {
+    rsv: 'So he came near and kissed him; and he smelled the smell of his garments, and blessed him, and said, “See, the smell of my son is as the smell of a field which the LORD has blessed!',
+    dra: 'He came near, and kissed him. And immediately as he smelled the fragrant smell of his garments, blessing him, he said: Behold the smell of my son is as the smell of a plentiful field, which the Lord hath blessed.',
+  },
+  'GEN 27:28': {
+    rsv: 'May God give you of the dew of heaven, and of the fatness of the earth, and plenty of grain and wine.',
+    dra: 'God give thee the dew of heaven, and of the fatness of the earth, abundance of corn and wine.',
+  },
+  'GEN 27:29': {
+    rsv: 'Let peoples serve you, and nations bow down to you. Be lord over your brothers, and may your mother’s sons bow down to you. Cursed be every one who curses you, and blessed be every one who blesses you!”',
+    dra: 'And let peoples serve thee, and tribes worship thee: be thou lord of thy brethren, and let thy mother\'s children bow down before thee. Cursed be he that curseth thee: and let him that blesseth thee be filled with blessings.',
+  },
+  'GEN 27:34': {
+    rsv: 'When Esau heard the words of his father, he cried out with an exceedingly great and bitter cry, and said to his father, “Bless me, even me also, O my father!”',
+    dra: 'Esau having heard his father\'s words, roared out with a great cry: and being in a great consternation, said: Bless me also, my father.',
+  },
+  'GEN 27:43': {
+    rsv: 'Now therefore, my son, obey my voice; arise, flee to Laban my brother in Haran,',
+    dra: 'Now therefore, my son, hear my voice: arise and flee to Laban my brother to Haran:',
+  },
+  'GAL 3:27': {
+    rsv: 'For as many of you as were baptized into Christ have put on Christ.',
+    dra: 'For as many of you as have been baptized in Christ, have put on Christ.',
+  },
+  'GEN 28:10': {
+    rsv: 'Jacob left Beer-sheba, and went toward Haran.',
+    dra: 'But Jacob being departed from Bersabee, went on to Haran.',
+  },
+  'GEN 28:11': {
+    rsv: 'And he came to a certain place, and stayed there that night, because the sun had set. Taking one of the stones of the place, he put it under his head and lay down in that place to sleep.',
+    dra: 'And when he was come to a certain place, and would rest in it after sunset, he took of the stones that lay there, and putting under his head, slept in the same place.',
+  },
+  'GEN 28:12': {
+    rsv: 'And he dreamed that there was a ladder set up on the earth, and the top of it reached to heaven; and behold, the angels of God were ascending and descending on it!',
+    dra: 'And he saw in his sleep a ladder standing upon the earth, and the top thereof touching heaven: the angels also of God ascending and descending by it;',
+  },
+  'GEN 28:13': {
+    rsv: 'And behold, the LORD stood above it and said, “I am the LORD, the God of Abraham your father and the God of Isaac; the land on which you lie I will give to you and to your descendants;',
+    dra: 'And the Lord leaning upon the ladder, saying to him: I am the Lord God of Abraham thy father, and the God of Isaac; the land, wherein thou sleepest, I will give to thee and to thy seed.',
+  },
+  'GEN 28:15': {
+    rsv: 'Behold, I am with you and will keep you wherever you go, and will bring you back to this land; for I will not leave you until I have done that of which I have spoken to you.”',
+    dra: 'And I will be thy keeper whithersoever thou goest, and will bring thee back into this land: neither will I leave thee, till I shall have accomplished all that I have said.',
+  },
+  'GEN 28:16': {
+    rsv: 'Then Jacob awoke from his sleep and said, “Surely the LORD is in this place; and I did not know it.”',
+    dra: 'And when Jacob awaked out of sleep, he said: Indeed the Lord is in this place, and I knew it not.',
+  },
+  'GEN 28:17': {
+    rsv: 'And he was afraid, and said, “How awesome is this place! This is none other than the house of God, and this is the gate of heaven.”',
+    dra: 'And trembling he said: How terrible is this place! this is no other but the house of God, and the gate of heaven.',
+  },
+  'GEN 28:18': {
+    rsv: 'So Jacob rose early in the morning, and he took the stone which he had put under his head and set it up for a pillar and poured oil on the top of it.',
+    dra: 'And Jacob, arising in the morning, took the stone, which he had laid under his head, and set it up for a title, pouring oil upon the top of it.',
+  },
+  'GEN 28:19': {
+    rsv: 'He called the name of that place Bethel; but the name of the city was Luz at the first.',
+    dra: 'And he called the name of the city Bethel, which before was called Luza.',
+  },
+  'JHN 1:51': {
+    rsv: 'And he said to him, “Truly, truly, I say to you, you will see heaven opened, and the angels of God ascending and descending upon the Son of man.”',
+    dra: 'And he saith to him: Amen, amen I say to you, you shall see the heaven opened, and the angels of God ascending and descending upon the Son of man.',
+  },
+  'GEN 29:2': {
+    rsv: 'As he looked, he saw a well in the field, and lo, three flocks of sheep lying beside it; for out of that well the flocks were watered. The stone on the well’s mouth was large,',
+    dra: 'And he saw a well in the field, and three flocks of sheep lying by it: for the beasts were watered out of it, and the mouth thereof was closed with a great stone.',
+  },
+  'GEN 29:9': {
+    rsv: 'While he was still speaking with them, Rachel came with her father’s sheep; for she kept them.',
+    dra: 'They were yet speaking, and behold Rachel came with her father\'s sheep: for she fed the flock.',
+  },
+  'GEN 29:10': {
+    rsv: 'Now when Jacob saw Rachel the daughter of Laban his mother’s brother, and the sheep of Laban his mother’s brother, Jacob went up and rolled the stone from the well’s mouth, and watered the flock of Laban his mother’s brother.',
+    dra: 'And when Jacob saw her, and knew her to be his cousin-german, and that they were the sheep of Laban, his uncle: he removed the stone wherewith the well was closed.',
+  },
+  'GEN 29:11': {
+    rsv: 'Then Jacob kissed Rachel, and wept aloud.',
+    dra: 'And having watered the flock, he kissed her: and lifting up his voice, wept.',
+  },
+  'GEN 29:17': {
+    rsv: 'Leah’s eyes were weak, but Rachel was beautiful and lovely.',
+    dra: 'But Lia was blear eyed: Rachel was well favoured, and of a beautiful countenance.',
+  },
+  'GEN 29:18': {
+    rsv: 'Jacob loved Rachel; and he said, “I will serve you seven years for your younger daughter Rachel.”',
+    dra: 'And Jacob being in love with her, said: I will serve thee seven years for Rachel thy younger daughter.',
+  },
+  'GEN 29:20': {
+    rsv: 'So Jacob served seven years for Rachel, and they seemed to him but a few days because of the love he had for her.',
+    dra: 'So Jacob served seven years for Rachel: and they seemed but a few days, because of the greatness of his love.',
+  },
+  'GEN 29:25': {
+    rsv: 'And in the morning, behold, it was Leah; and Jacob said to Laban, “What is this you have done to me? Did I not serve with you for Rachel? Why then have you deceived me?”',
+    dra: 'And he said to his father in law: What is it that thou didst mean to do? did not I serve thee for Rachel? why hast thou deceived me?',
+  },
+  'GEN 29:26': {
+    rsv: 'Laban said, “It is not so done in our country, to give the younger before the first-born.',
+    dra: 'Laban answered: It is not the custom in this place, to give the younger in marriage first.',
+  },
+  'GEN 29:30': {
+    rsv: 'So Jacob went in to Rachel also, and he loved Rachel more than Leah, and served Laban for another seven years.',
+    dra: 'And having at length obtained the marriage he wished for, he preferred the love of the latter before the former, and served with him other seven years.',
+  },
+  'GEN 29:31': {
+    rsv: 'When the LORD saw that Leah was hated, he opened her womb; but Rachel was barren.',
+    dra: 'And the Lord seeing that he despised Lia, opened her womb, but her sister remained barren.',
+  },
+  'GEN 29:35': {
+    rsv: 'And she conceived again and bore a son, and said, “This time I will praise the LORD”; therefore she called his name Judah; then she ceased bearing.',
+    dra: 'The fourth time she conceived and bore a son, and said: now will I praise the Lord: and for this she called him Juda. And she left bearing.',
+  },
+  'GEN 30:22': {
+    rsv: 'Then God remembered Rachel, and God hearkened to her and opened her womb.',
+    dra: 'The Lord also remembering Rachel, heard her, and opened her womb.',
+  },
+  'GEN 30:24': {
+    rsv: 'and she called his name Joseph, saying, “May the LORD add to me another son!”',
+    dra: 'And she called his name Joseph, saying: The Lord give me also another son.',
+  },
+  'REV 5:5': {
+    rsv: 'Then one of the elders said to me, “Weep not; lo, the Lion of the tribe of Judah, the Root of David, has conquered, so that he can open the scroll and its seven seals.”',
+    dra: 'And one of the ancients said to me: Weep not; behold the lion of the tribe of Juda, the root of David, hath prevailed to open the book, and to loose the seven seals thereof.',
+  },
+  'GEN 31:3': {
+    rsv: 'Then the LORD said to Jacob, “Return to the land of your fathers and to your kindred, and I will be with you.”',
+    dra: 'Especially the Lord saying to him: Return into the land of thy fathers, and to thy kindred, and I will be with thee.',
+  },
+  'GEN 32:6': {
+    rsv: 'And the messengers returned to Jacob, saying, “We came to your brother Esau, and he is coming to meet you, and four hundred men with him.”',
+    dra: 'And the messengers returned to Jacob, saying: We came to Esau thy brother, and behold he cometh with speed to meet thee with four hundred men.',
+  },
+  'GEN 32:7': {
+    rsv: 'Then Jacob was greatly afraid and distressed; and he divided the people that were with him, and the flocks and herds and camels, into two companies,',
+    dra: 'Then Jacob was greatly afraid; and in his fear divided the people that was with him, and the flocks, and the sheep, and the oxen, and the camels, into two companies,',
+  },
+  'GEN 32:10': {
+    rsv: 'I am not worthy of the least of all the steadfast love and all the faithfulness which thou hast shown to thy servant, for with only my staff I crossed this Jordan; and now I have become two companies.',
+    dra: 'I am not worthy of the least of all thy mercies, and of thy truth which thou hast fulfilled to thy servant. With my staff I passed over this Jordan; and now I return with two companies.',
+  },
+  'GEN 32:11': {
+    rsv: 'Deliver me, I pray thee, from the hand of my brother, from the hand of Esau, for I fear him, lest he come and slay us all, the mothers with the children.',
+    dra: 'Deliver me from the hand of my brother Esau, for I am greatly afraid of him: lest perhaps he come, and kill the mother with the children.',
+  },
+  'GEN 32:22': {
+    rsv: 'The same night he arose and took his two wives, his two maids, and his eleven children, and crossed the ford of the Jabbok.',
+    dra: 'And rising early he took his two wives, and his two handmaids, with his eleven sons, and passed over the ford of Jaboc.',
+  },
+  'GEN 32:24': {
+    rsv: 'And Jacob was left alone; and a man wrestled with him until the breaking of the day.',
+    dra: 'He remained alone: and behold a man wrestled with him till morning.',
+  },
+  'GEN 32:25': {
+    rsv: 'When the man saw that he did not prevail against Jacob, he touched the hollow of his thigh; and Jacob’s thigh was put out of joint as he wrestled with him.',
+    dra: 'And when he saw that he could not overcome him, he touched the sinew of his thigh, and forthwith it shrank.',
+  },
+  'GEN 32:26': {
+    rsv: 'Then he said, “Let me go, for the day is breaking.” But Jacob said, “I will not let you go, unless you bless me.”',
+    dra: 'And he said to him: Let me go, for it is break of day. He answered: I will not let thee go except thou bless me.',
+  },
+  'GEN 32:27': {
+    rsv: 'And he said to him, “What is your name?” And he said, “Jacob.”',
+    dra: 'And he said: What is thy name? He answered: Jacob.',
+  },
+  'GEN 32:28': {
+    rsv: 'Then he said, “Your name shall no more be called Jacob, but Israel, for you have striven with God and with men, and have prevailed.”',
+    dra: 'But he said: Thy name shall not be called Jacob, but Israel: for if thou hast been strong against God, how much more shalt thou prevail against men?',
+  },
+  'GEN 32:30': {
+    rsv: 'So Jacob called the name of the place Peniel, saying, “For I have seen God face to face, and yet my life is preserved.”',
+    dra: 'And Jacob called the name of the place Phanuel, saying: I have seen God face to face, and my soul has been saved.',
+  },
+  'GEN 32:31': {
+    rsv: 'The sun rose upon him as he passed Penuel, limping because of his thigh.',
+    dra: 'And immediately the sun rose upon him, after he was past Phanuel; but he halted on his foot.',
+  },
+  'LUK 18:1': {
+    rsv: 'And he told them a parable, to the effect that they ought always to pray and not lose heart.',
+    dra: 'And he spoke also a parable to them, that we ought always to pray, and not to faint,',
+  },
+  'GEN 33:1': {
+    rsv: 'And Jacob lifted up his eyes and looked, and behold, Esau was coming, and four hundred men with him. So he divided the children among Leah and Rachel and the two maids.',
+    dra: 'And Jacob lifting up his eyes, saw Esau coming, and with him four hundred men: and he divided the children of Lia, and of Rachel, and of the two handmaids:',
+  },
+  'GEN 33:3': {
+    rsv: 'He himself went on before them, bowing himself to the ground seven times, until he came near to his brother.',
+    dra: 'And he went forward and bowed down with his face to the ground seven times until his brother came near.',
+  },
+  'GEN 33:4': {
+    rsv: 'But Esau ran to meet him, and embraced him, and fell on his neck and kissed him, and they wept.',
+    dra: 'Then Esau ran to meet his brother, and embraced him: and clasping him fast about the neck, and kissing him, wept.',
+  },
+  'GEN 33:9': {
+    rsv: 'But Esau said, “I have enough, my brother; keep what you have for yourself.”',
+    dra: 'But he said: I have plenty, my brother, keep what is thine for thyself.',
+  },
+  'GEN 33:10': {
+    rsv: 'Jacob said, “No, I pray you, if I have found favor in your sight, then accept my present from my hand; for truly to see your face is like seeing the face of God, with such favor have you received me.',
+    dra: 'And Jacob said: Do not so I beseech thee, but if I have found favour in thy eyes, receive a little present at my hands: for I have seen thy face, as if I should have seen the countenance of God: be gracious to me,',
+  },
+  'GEN 35:1': {
+    rsv: 'God said to Jacob, “Arise, go up to Bethel, and dwell there; and make there an altar to the God who appeared to you when you fled from your brother Esau.”',
+    dra: 'In the meantime God said to Jacob: Arise, and go up to Bethel, and dwell there, and make there an altar to God, who appeared to thee when thou didst flee from Esau thy brother.',
+  },
+  'GEN 35:2': {
+    rsv: 'So Jacob said to his household and to all who were with him, “Put away the foreign gods that are among you, and purify yourselves, and change your garments;',
+    dra: 'And Jacob having called together all his household, said: Cast away the strange gods that are among you, and be cleansed and change your garments.',
+  },
+  'GEN 35:10': {
+    rsv: 'And God said to him, “Your name is Jacob; no longer shall your name be called Jacob, but Israel shall be your name.” So his name was called Israel.',
+    dra: 'Saying: Thou shalt not be called any more Jacob, but Israel shall be thy name. And he called him Israel.',
+  },
+  'GEN 35:11': {
+    rsv: 'And God said to him, “I am God Almighty: be fruitful and multiply; a nation and a company of nations shall come from you, and kings shall spring from you.',
+    dra: 'And said to him: I am God Almighty, increase thou and be multiplied. Nations and peoples of nations shall be from thee, and kings shall come out of thy loins.',
+  },
+  'GEN 35:18': {
+    rsv: 'And as her soul was departing (for she died), she called his name Ben-oni; but his father called his name Benjamin.',
+    dra: 'And when her soul was departing for pain, and death was now at hand, she called the name of her son Benoni, that is, The son of my pain: but his father called him Benjamin, that is, The son of the right hand.',
+  },
+  'GEN 35:19': {
+    rsv: 'So Rachel died, and she was buried on the way to Ephrath (that is, Bethlehem),',
+    dra: 'So Rachel died, and was buried in the highway that leadeth to Ephrata, this is Bethlehem.',
+  },
+  'GEN 35:20': {
+    rsv: 'and Jacob set up a pillar upon her grave; it is the pillar of Rachel’s tomb, which is there to this day.',
+    dra: 'And Jacob erected a pillar over her sepulchre: this is the pillar of Rachel\'s monument, to this day.',
+  },
+  'GEN 35:22': {
+    rsv: '…Now the sons of Jacob were twelve.',
+    dra: '…Now the sons of Jacob were twelve.',
+    partial: true,
+  },
+  'GEN 35:29': {
+    rsv: 'And Isaac breathed his last; and he died and was gathered to his people, old and full of days; and his sons Esau and Jacob buried him.',
+    dra: 'And being spent with age he died, and was gathered to his people, being old and full of days: and his sons Esau and Jacob buried him.',
+  },
+  'LUK 15:20': {
+    rsv: 'And he arose and came to his father. But while he was yet at a distance, his father saw him and had compassion, and ran and embraced him and kissed him.',
+    dra: 'And rising up he came to his father. And when he was yet a great way off, his father saw him, and was moved with compassion, and running to him fell upon his neck, and kissed him.',
+  },
 }
 
 /** A verse's words in the active translation. Throws for a verse that isn't in the list (a content check catches these first). */

@@ -49,6 +49,15 @@ import { isaacBornProps } from './props/isaac-born'
 import { moriahLayers } from './layers/moriah'
 import { moriahProps } from './props/moriah'
 import { worldGoneWrongProps } from './props/world-gone-wrong'
+import { aBrideProps } from './props/a-bride'
+import { birthrightProps } from './props/birthright'
+import { blessingLayers } from './layers/blessing'
+import { bethelLayers } from './layers/bethel'
+import { bethelProps } from './props/bethel'
+import { rachelAndLeahProps } from './props/rachel-and-leah'
+import { jabbokLayers } from './layers/jabbok'
+import { jabbokProps } from './props/jabbok'
+import { reconciledProps } from './props/reconciled'
 import { familyOfNoah } from './characters/family-of-noah'
 
 export { LAYER_H, LAYER_W, MARGIN_X, MARGIN_Y, PX_H, PX_W, type Painter } from './frame'
@@ -138,6 +147,9 @@ export const pixelLayerSets: Record<string, PixelLayerArt>[] = [
   hagarLayers,
   sodomLayers,
   moriahLayers,
+  blessingLayers,
+  bethelLayers,
+  jabbokLayers,
 ]
 
 export const pixelLayers: Record<string, PixelLayerArt> = Object.assign({}, ...pixelLayerSets)
@@ -171,6 +183,12 @@ export const pixelPropSets: Record<string, PixelPropArt>[] = [
   sodomProps,
   isaacBornProps,
   moriahProps,
+  aBrideProps,
+  birthrightProps,
+  bethelProps,
+  rachelAndLeahProps,
+  jabbokProps,
+  reconciledProps,
 ]
 
 export const pixelProps: Record<string, PixelPropArt> = Object.assign({}, ...pixelPropSets)

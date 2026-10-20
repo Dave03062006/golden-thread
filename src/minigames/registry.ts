@@ -21,6 +21,13 @@ import { servingTheGuests } from './serving-the-guests'
 import { abrahamPleads } from './abraham-pleads'
 import { theFeast } from './the-feast'
 import { theClimb } from './the-climb'
+import { wateringTheCamels } from './watering-the-camels'
+import { whatIsItWorth } from './what-is-it-worth'
+import { theBlessing } from './the-blessing'
+import { theLadder } from './the-ladder'
+import { theSonsNames } from './the-sons-names'
+import { holdOn } from './hold-on'
+import { sevenBows } from './seven-bows'
 
 /** Every interactive moment, by the name a story's `play` beat uses. */
-export const GAMES: Record<string, AnyGameRules> = { ...letThereBe, naming, twist, 'lights-in-the-dark': lightsInTheDark, 'abels-flock': abelsFlock, 'family-tree': familyTree, 'walk-with-god': walkWithGod, 'build-the-ark': buildTheArk, 'through-the-storm': throughTheStorm, ...theDove, 'colors-of-the-promise': colorsOfThePromise, 'the-tower': theTower, scatter, 'family-tree-shem': familyTreeShem, 'the-journey': theJourney, 'dividing-the-flocks': dividingTheFlocks, 'by-night': byNight, 'count-the-stars': countTheStars, 'the-well': theWell, 'new-names': newNames, 'serving-the-guests': servingTheGuests, 'abraham-pleads': abrahamPleads, 'the-feast': theFeast, 'the-climb': theClimb }
+export const GAMES: Record<string, AnyGameRules> = { ...letThereBe, naming, twist, 'lights-in-the-dark': lightsInTheDark, 'abels-flock': abelsFlock, 'family-tree': familyTree, 'walk-with-god': walkWithGod, 'build-the-ark': buildTheArk, 'through-the-storm': throughTheStorm, ...theDove, 'colors-of-the-promise': colorsOfThePromise, 'the-tower': theTower, scatter, 'family-tree-shem': familyTreeShem, 'the-journey': theJourney, 'dividing-the-flocks': dividingTheFlocks, 'by-night': byNight, 'count-the-stars': countTheStars, 'the-well': theWell, 'new-names': newNames, 'serving-the-guests': servingTheGuests, 'abraham-pleads': abrahamPleads, 'the-feast': theFeast, 'the-climb': theClimb, 'watering-the-camels': wateringTheCamels, 'what-is-it-worth': whatIsItWorth, 'the-blessing': theBlessing, 'the-ladder': theLadder, 'the-sons-names': theSonsNames, 'hold-on': holdOn, 'seven-bows': sevenBows }

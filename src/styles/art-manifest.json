@@ -266,6 +266,15 @@
     },
     "moriah-top": {
       "hash": "83fea5bd"
+    },
+    "tent-inside": {
+      "hash": "cd8928af"
+    },
+    "bethel-stones": {
+      "hash": "a8d2db9b"
+    },
+    "jabbok-gorge": {
+      "hash": "a9672fbc"
     }
   },
   "paperProps": {
@@ -537,7 +546,7 @@
       "hash": "3be115eb"
     },
     "camel": {
-      "hash": "f03e2d4d"
+      "hash": "3c1ed397"
     },
     "great-oak": {
       "hash": "219e7161"
@@ -640,6 +649,84 @@
     },
     "wood-bundle": {
       "hash": "19dd88a0"
+    },
+    "trough": {
+      "hash": "f9936288"
+    },
+    "trough-water": {
+      "hash": "6c51ee52"
+    },
+    "water-stream": {
+      "hash": "d709cb6a"
+    },
+    "abraham-old": {
+      "hash": "cd4ccd8b"
+    },
+    "rebekah": {
+      "hash": "15c019eb"
+    },
+    "laban": {
+      "hash": "a185f49e"
+    },
+    "bethuel": {
+      "hash": "cbabf817"
+    },
+    "stew-pot": {
+      "hash": "8e340ab6"
+    },
+    "stew-bowl": {
+      "hash": "6c335ac5"
+    },
+    "scales": {
+      "hash": "7bf4d607"
+    },
+    "ishmael": {
+      "hash": "e566bc57"
+    },
+    "esau": {
+      "hash": "f16fde00"
+    },
+    "jacob": {
+      "hash": "a9e33226"
+    },
+    "isaac-old": {
+      "hash": "948044ef"
+    },
+    "ladder": {
+      "hash": "85f000cc"
+    },
+    "stone-pillar": {
+      "hash": "cd9573f4"
+    },
+    "jacob-asleep": {
+      "hash": "47c4bdbb"
+    },
+    "well-stone": {
+      "hash": "210fbef9"
+    },
+    "rachel": {
+      "hash": "0dca19a0"
+    },
+    "leah": {
+      "hash": "28151710"
+    },
+    "maid": {
+      "hash": "ce8536cf"
+    },
+    "stranger": {
+      "hash": "7ea7fd6b"
+    },
+    "wrestlers": {
+      "hash": "c8048a34"
+    },
+    "jacob-grown": {
+      "hash": "9839ca3d"
+    },
+    "dust-cloud": {
+      "hash": "c0a621bb"
+    },
+    "twelve-sons": {
+      "hash": "ffd2b94d"
     }
   },
   "pixelLayers": {
@@ -909,6 +996,15 @@
     },
     "moriah-top": {
       "hash": "2f360603"
+    },
+    "tent-inside": {
+      "hash": "c799656d"
+    },
+    "bethel-stones": {
+      "hash": "42e09be1"
+    },
+    "jabbok-gorge": {
+      "hash": "e23e1329"
     }
   },
   "backdrop": {

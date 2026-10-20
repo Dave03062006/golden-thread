@@ -137,6 +137,22 @@ export const familyOfNoah: Record<string, PaperPropArt> = {
   servant: person({ robe: '#8a7a62', fold: '#665a46', hair: '#2a1e1a', beard: '#2a1e1a' }),
   hagar: person({ robe: '#e8e0cc', fold: '#c0b496', hair: '#1a1210', veil: '#2a6a8a' }),
   'king-of-sodom': person({ robe: '#8a2a3a', fold: '#5e1a26', hair: '#1e1614', beard: '#1e1614', sash: '#e0b850' }),
+  // Level 4 · Isaac and Jacob: Abraham, very old; Rebekah, and her brother Laban and father
+  // Bethuel; Ishmael grown; Isaac old and blind; the twins, Esau the red-haired hunter and
+  // Jacob, young and later grown; Rachel and Leah, and a maid; and the stranger at the Jabbok.
+  'abraham-old': person({ robe: '#4a3a6a', fold: '#2e2448', hair: '#ece6dc', beard: '#ece6dc', sash: '#c89a4a' }),
+  rebekah: person({ robe: '#2a6a6a', fold: '#184a4a', hair: '#241a18', veil: '#e8c8a0' }),
+  laban: person({ robe: '#7a6a2a', fold: '#5a4c18', hair: '#3a2a1a', beard: '#3a2a1a', sash: '#b03a3a' }),
+  bethuel: person({ robe: '#5a5a4a', fold: '#3e3e30', hair: '#d8d0c0', beard: '#d8d0c0' }),
+  ishmael: person({ robe: '#e0d4b8', fold: '#b8aa8a', hair: '#1a1210', beard: '#1a1210', sash: '#2a6a8a' }),
+  'isaac-old': person({ robe: '#c8843a', fold: '#9a6024', hair: '#e8e2d6', beard: '#e8e2d6', sash: '#f0d080' }),
+  esau: person({ robe: '#8a3a2a', fold: '#64261a', hair: '#b4482a', beard: '#b4482a', sash: '#5a3a1a' }),
+  jacob: person({ robe: '#3c5a8a', fold: '#263e64', hair: '#2a1e1a', sash: '#d0b060' }),
+  'jacob-grown': person({ robe: '#3c5a8a', fold: '#263e64', hair: '#3a2a22', beard: '#3a2a22', sash: '#d0b060' }),
+  rachel: person({ robe: '#a84a6a', fold: '#7a3048', hair: '#241a18', veil: '#f0dcc0' }),
+  leah: person({ robe: '#5a6aa8', fold: '#3a4a80', hair: '#2a1e1a', veil: '#d8d0e8' }),
+  maid: person({ robe: '#8a7a5a', fold: '#665a40', hair: '#2a1e1a', veil: '#c8b890' }),
+  stranger: person({ robe: '#2a2a4a', fold: '#1a1a30', hair: '#1a1a30', beard: '#1a1a30' }),
   // The children born after the Flood, drawn smaller in the scene.
   boy: person({ robe: '#b0843e', fold: '#82602a', hair: '#2a1e1a' }),
   girl: person({ robe: '#a8505a', fold: '#7a343c', hair: '#2a1e1a', veil: '#e8d8b8' }),

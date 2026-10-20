@@ -18,6 +18,10 @@ const KEYS = {
   'Press and hold anywhere to call the light.': { hold: ' ', seconds: 4.2 },
   'Sweep across the night sky.': { hold: 'ArrowRight', seconds: 3.6 },
   'Hold to walk with Noah': { hold: ' ', seconds: 15 },
+  // Each hold draws a jar and carries it; the next one pours it (repeated while the hint shows).
+  'Hold to draw water': { hold: ' ', seconds: 1.6 },
+  // Held right through the night: when the grip slips, Jacob catches hold again.
+  'Hold on through the night.': { hold: ' ', seconds: 32 },
 }
 
 /**
@@ -65,6 +69,19 @@ const LEVELS = [
       { number: 8, lines: 13, plays: 1 }, // episode-8.ts
       { number: 9, lines: 7, plays: 1 }, // episode-9.ts
       { number: 10, lines: 18, plays: 1 }, // episode-10.ts
+    ],
+  },
+  {
+    number: 4,
+    complete: true,
+    episodes: [
+      { number: 1, lines: 14, plays: 1 }, // src/content/levels/04-isaac-and-jacob/episode-1.ts
+      { number: 2, lines: 14, plays: 1 }, // episode-2.ts
+      { number: 3, lines: 14, plays: 1 }, // episode-3.ts
+      { number: 4, lines: 13, plays: 1 }, // episode-4.ts
+      { number: 5, lines: 19, plays: 1 }, // episode-5.ts
+      { number: 6, lines: 17, plays: 1 }, // episode-6.ts
+      { number: 7, lines: 20, plays: 1 }, // episode-7.ts
     ],
   },
 ]
@@ -196,7 +213,7 @@ async function playEpisode(page, style, { number, lines: expected, plays: expect
 }
 
 /** What the player writes in each level's reflection, different each time so the journal can tell them apart. */
-const REFLECTIONS = { 1: 'I want to stop hiding, and walk with God.', 2: 'Help me trust you when I cannot see, like Noah.', 3: 'Lord, help me go where you call me, even when I cannot see the way.' }
+const REFLECTIONS = { 1: 'I want to stop hiding, and walk with God.', 2: 'Help me trust you when I cannot see, like Noah.', 3: 'Lord, help me go where you call me, even when I cannot see the way.', 4: 'Help me make peace with my brother, and hold on to you in prayer.' }
 
 /**
  * The end of a finished level (spec §3.3): the quiz (each question answered as it comes,

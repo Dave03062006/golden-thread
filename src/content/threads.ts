@@ -262,6 +262,85 @@ export const THREADS: GoldenThread[] = [
     sources: ['John 1:29', 'John 3:16', 'John 19:17', 'Romans 8:32', 'Hebrews 11:17–19', 'Catechism 2572'],
     fulfilled: { age: 'XII', place: 'jerusalem' },
   },
+
+  // Level 4 · Isaac and Jacob
+  {
+    id: 'i-will-go',
+    episode: 'l04-e1',
+    title: 'Rebekah’s “I will go” → Mary’s “let it be”',
+    from: ['GEN 24:58'],
+    to: ['LUK 1:38'],
+    explanation:
+      'Rebekah said yes to a journey she had not planned, to marry a man she had never met, because she saw God’s hand in it. Mary said yes to God’s messenger, and the Son of God came into the world. The Church prays for the same readiness: to say “I will go” when God calls.',
+    sources: ['Luke 1:26–38', 'Catechism 148, 494'],
+    fulfilled: { age: 'XI', place: 'nazareth' },
+  },
+  {
+    id: 'not-by-bread-alone',
+    episode: 'l04-e2',
+    title: 'Esau sells his birthright for a meal → “Man shall not live by bread alone”',
+    from: ['GEN 25:34'],
+    to: ['MAT 4:4'],
+    explanation:
+      'Esau, starving, gave up God’s promise for one meal. Jesus, starving after forty days in the desert, was tempted to turn stones into bread, and refused: God’s word mattered more than his hunger. The Letter to the Hebrews warns us not to be like Esau, “who sold his birthright for a single meal.”',
+    sources: ['Matthew 4:1–4', 'Hebrews 12:16', 'Catechism 538–540'],
+    fulfilled: { age: 'XI' },
+  },
+  {
+    id: 'clothed-in-christ',
+    episode: 'l04-e3',
+    title: 'Jacob blessed in his elder brother’s clothes → clothed in Christ',
+    from: ['GEN 27:27'],
+    to: ['GAL 3:27'],
+    explanation:
+      'Jacob received the blessing meant for the firstborn because he wore his elder brother’s clothes. That was a lie. But it points to something true: we receive the Father’s blessing not by our own goodness, but because in Baptism we are clothed in Christ, the true firstborn, and the Father sees his Son in us. St Ambrose saw this long ago.',
+    sources: ['Galatians 3:26–29', 'Romans 8:28–29', 'St Ambrose, On Jacob and the Happy Life 2.2.9', 'Catechism 1227, 1243'],
+    fulfilled: { age: 'XIII' },
+  },
+  {
+    id: 'the-ladder-to-heaven',
+    episode: 'l04-e4',
+    title: 'The ladder between heaven and earth → the Son of man',
+    from: ['GEN 28:12'],
+    to: ['JHN 1:51'],
+    explanation:
+      'Jesus told Nathanael that Jacob’s dream would come true in Jesus himself. Jesus is the ladder: the one place where heaven and earth meet, God made man, through whom we can climb to the Father. Every church is a “Bethel,” a house of God and a gate of heaven, because Christ is there.',
+    sources: ['John 1:47–51', 'Catechism 2795', 'The Rite of Dedication of a Church'],
+    fulfilled: { age: 'XI', place: 'galilee' },
+  },
+  {
+    id: 'the-lion-of-judah',
+    episode: 'l04-e5',
+    title: 'Leah, the unloved, becomes the mother of Judah → the Lion of the tribe of Judah',
+    from: ['GEN 29:35'],
+    to: ['REV 5:5'],
+    explanation:
+      'Leah was the wife no one chose. Yet God looked on her, and from her son Judah came King David, and from David’s family, Jesus. Matthew’s Gospel begins with this family. As Mary sang, God “has put down the mighty from their thrones, and exalted those of low degree.”',
+    sources: ['Matthew 1:2', 'Luke 1:52', 'Genesis 49:10', 'Catechism 2575'],
+    fulfilled: { age: 'XIV' },
+  },
+  {
+    id: 'pray-and-not-lose-heart',
+    episode: 'l04-e6',
+    title: 'Jacob would not let go until God blessed him → “pray and not lose heart”',
+    from: ['GEN 32:26'],
+    to: ['LUK 18:1'],
+    explanation:
+      'Jacob held on through the long night and would not let go until he was blessed. Jesus told the parable of the widow who kept asking the judge, to teach us to pray like that: to keep praying when the answer is slow and the night is long. The Church has always seen Jacob’s wrestling as a picture of prayer: a battle of faith, and the victory of perseverance.',
+    sources: ['Luke 18:1–8', 'Hosea 12:4', 'Catechism 2573'],
+    fulfilled: { age: 'XI' },
+  },
+  {
+    id: 'the-father-runs',
+    episode: 'l04-e7',
+    title: 'Esau ran to meet his brother → the father ran to meet his son',
+    from: ['GEN 33:4'],
+    to: ['LUK 15:20'],
+    explanation:
+      'Jacob came with gifts, rehearsed words and seven bows, afraid of what he deserved. But Esau ran to him first. Jesus told the parable of the prodigal son with the same words: the father “ran and embraced him and kissed him,” before his son could finish his apology. This is how God receives us when we come back to him, above all in the sacrament of Reconciliation, and how we are to forgive one another.',
+    sources: ['Luke 15:11–32', 'Matthew 5:23–24', 'Catechism 1439, 2843'],
+    fulfilled: { age: 'XI' },
+  },
 ]
 
 const BY_ID = new Map(THREADS.map((thread) => [thread.id, thread]))

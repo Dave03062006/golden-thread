@@ -367,6 +367,32 @@ The same way as Level 2: script, art, build, checks, play-test. Level 3 opens Ag
 
 **Dependencies:** Dave's approval of the script; the Level 1 checkpoint decision (spec §16.2), since it decides whether the art is made in both styles.
 
+### Task 10: Level 4, *Isaac and Jacob* (M10)
+
+The same way again: script, art, build, checks, play-test. Level 4 continues Age II.
+
+**Status (October 2026):** steps 1–4 are done; step 5 is Dave's.
+- **Script:** `docs/scripts/level-04-isaac-and-jacob.md`, approved by Dave. It has 7 episodes and 29 scenes, 87 quotations checked word for word, and a 50-question quiz.
+- **Build:** all seven episodes are built in both styles, each with its own play:
+  - watering the camels;
+  - what is it worth? (the scales);
+  - the blessing;
+  - the ladder;
+  - the sons' names;
+  - hold on;
+  - seven bows.
+- **Cathedral and map:** the Level 4 window has seven medallions in the bay of Age II. The map traces Jacob's journeys from Beer-sheba to Haran and home to Mamre, with new places for Bethel, the Jabbok and Bethlehem. The road ahead now points to Level 5 at Dothan.
+- **Music:** seven new recordings, all public domain or CC BY. Three pieces had no allowed recording and were replaced; `music.ts` lists them.
+- **Checks:** all pass.
+  - The playthrough runs Level 4 from start to finish in both styles, through its quiz, reflection and window ceremony (68 checks).
+  - `check`, `test` (1,354 tests), `a11y`, `keyboard` and `saves` pass.
+  - `perf` is within budget for every Level 4 scene in both styles; the busiest averages 1.8 ms of work a frame.
+  - New `shots` baselines cover the Level 4 scenes. The quiz menu, cathedral, ceremony and map baselines were updated, since they now show Level 4. Dave still needs to look them over.
+- **Two ways the scenes differ from the script:**
+  - Episode 5's play shows baby Joseph in Rachel's arms when his name comes up, a little before the verse that tells of his birth.
+  - Episode 6's dawn comes as the sun rising over the hills while Jacob holds on; the sky turns fully to dawn when the next scene begins.
+- **Small framework changes:** the camel can now drink and kneel; the pixel ladder is drawn straight onto the screen, because it is taller than a kept picture allows.
+
 ## Parallelization
 
 - **Code tasks run in order.** Each one builds on the last, and running them in order keeps the code consistent for the code tour. I do the work in this session, without subagents, as the session guidelines require.
