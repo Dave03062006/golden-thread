@@ -409,7 +409,11 @@ The same way again: script, art, build, checks, play-test. Level 5 continues Age
   - the twelve blessings (matching).
 - **Cathedral and map:** the Level 5 window has seven medallions in the bay of Age II. The map traces Joseph's road from Hebron by Shechem and Dothan into Egypt, and his family's to Goshen, with new places for Dothan and Goshen. The road ahead now points to Level 6, *Job*, in the land of Uz.
 - **Music:** eight new recordings, all public domain, CC0 or CC BY. Six pieces had no allowed recording and were replaced (two by tracks from Level 1); `music.ts` lists them.
-- **Checks:** CHECKS
+- **Checks:** all pass.
+  - The playthrough runs Level 5 from start to finish in both styles, through its quiz, reflection and window ceremony (68 checks).
+  - `check`, `test` (1,628 tests), `a11y`, `keyboard` and `saves` pass.
+  - `perf` is within budget for every Level 5 scene in both styles; the busiest averages 1.1 ms of work a frame.
+  - New `shots` baselines cover the Level 5 scenes; the screens that list the levels (menu, quiz menu, cathedral, ceremony, map) now show Level 5. Dave still needs to look them over.
 - **A fix worth remembering:** art drawn with unrounded `Math.cos` or `Math.sin` can differ in its last digit between the browser that bakes it and the tests that fingerprint it. The chariot's spokes are now rounded.
 
 ## Parallelization
