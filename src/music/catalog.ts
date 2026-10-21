@@ -535,6 +535,121 @@ export const TRACKS: Track[] = [
     download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mozart_-_Serenade_No._13_for_strings_in_G_major,_K._525_-_Romanze.ogg',
     credit: 'Mozart, Eine kleine Nachtmusik: Romanze. Musopen. Public domain, via Wikimedia Commons.',
   },
+  // Level 5 · Joseph and His Brothers
+  // Episode 1, in place of Handel’s oratorio Joseph and His Brethren, for which no recording
+  // under an allowed license was found: the overture of another of his oratorios.
+  {
+    id: 'handel-messiah-overture',
+    title: 'Overture',
+    work: 'Messiah, HWV 56',
+    composer: 'George Frideric Handel',
+    performer: 'The Royal Liverpool Philharmonic, Malcolm Sargent, conductor',
+    year: 1947,
+    license: 'public-domain',
+    licenseNote: 'Recorded in 1947 and in the public domain, as stated on Wikimedia Commons (from the Public Domain Project).',
+    source: 'https://commons.wikimedia.org/wiki/File:PDP-CH_-_Royal_Liverpool_Philharmonic_-_Malcolm_Sargent_-_Messiah_-_No.01-_Overture_-_George_Frideric_Handel_-_Columbia-dx1283-cax9602.flac',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/PDP-CH_-_Royal_Liverpool_Philharmonic_-_Malcolm_Sargent_-_Messiah_-_No.01-_Overture_-_George_Frideric_Handel_-_Columbia-dx1283-cax9602.flac',
+    credit: 'Handel, Messiah: Overture. The Royal Liverpool Philharmonic, Malcolm Sargent (1947). Public domain.',
+  },
+  // Episode 2: Joseph in prison, innocent and faithful.
+  {
+    id: 'nobody-knows',
+    title: 'Nobody Knows de Trouble I’ve Seen',
+    composer: 'Traditional spiritual',
+    performer: 'Marian Anderson',
+    year: 1924,
+    license: 'public-domain',
+    licenseNote: 'Recorded in 1924, in the public domain, as stated on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:Marian_Anderson_-_Nobody_Knows_de_Trouble_I%27ve_Seen.mp3',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Marian_Anderson_-_Nobody_Knows_de_Trouble_I%27ve_Seen.mp3',
+    credit: 'Nobody Knows de Trouble I’ve Seen (spiritual). Marian Anderson (1924). Public domain.',
+  },
+  // Episode 3: a coronation anthem, for Joseph raised over all Egypt.
+  {
+    id: 'handel-zadok',
+    title: 'Zadok the Priest',
+    work: 'Coronation Anthem, HWV 258',
+    composer: 'George Frideric Handel',
+    performer: 'St Matthew’s Concert Choir, Damien Giromella, director',
+    year: 2013,
+    license: 'public-domain',
+    licenseNote: 'Dedicated to the public domain by the performers, as stated on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:Handel_-_Zadok_the_Priest,_HWV_258_(St_Matthew%27s_Concert_Choir,_Giromella).oga',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Handel_-_Zadok_the_Priest,_HWV_258_(St_Matthew%27s_Concert_Choir,_Giromella).oga',
+    credit: 'Handel, Zadok the Priest, HWV 258. St Matthew’s Concert Choir, Damien Giromella (2013). Public domain.',
+  },
+  // Episode 4, in place of “Let All Mortal Flesh Keep Silence”, for which no recording under
+  // an allowed license was found: another chant of the Eucharist, from the Eastern liturgy.
+  {
+    id: 'alyabyev-cherubic-hymn',
+    title: 'Cherubic Hymn',
+    composer: 'Alexander Alyabyev',
+    performer: 'Daniel Johnson (Mutopia Project)',
+    year: 2008,
+    license: 'public-domain',
+    licenseNote: 'Dedicated to the public domain by its maker, as stated on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:Cherubic_Hymn_by_Alexander_Alyabyev.ogg',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Cherubic_Hymn_by_Alexander_Alyabyev.ogg',
+    credit: 'Alyabyev, Cherubic Hymn. Daniel Johnson, Mutopia Project (2008). Public domain.',
+  },
+  // Episode 6: tears and reunion.
+  {
+    id: 'elgar-nimrod',
+    title: 'Nimrod',
+    work: 'Enigma Variations, Op. 36: Variation IX',
+    composer: 'Edward Elgar',
+    performer: 'The Hallé Orchestra, John Barbirolli, conductor',
+    year: 1947,
+    license: 'public-domain',
+    licenseNote: 'An old recording, in the public domain, as stated on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:Elgar;_Enigma_variations,_Theme_IX._Nimrod.ogg',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Elgar;_Enigma_variations,_Theme_IX._Nimrod.ogg',
+    credit: 'Elgar, Enigma Variations: Nimrod. The Hallé Orchestra, John Barbirolli (1947). Public domain.',
+  },
+  // Episode 7: the blessing on Judah, and the kingdom to come.
+  {
+    id: 'handel-glory-of-the-lord',
+    title: 'And the glory of the Lord',
+    work: 'Messiah, HWV 56',
+    composer: 'George Frideric Handel',
+    performer: 'The London Philharmonic Choir and London Symphony Orchestra, Hermann Scherchen, conductor',
+    year: 1953,
+    license: 'public-domain',
+    licenseNote: 'An old recording, in the public domain, as stated on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:Handel_-_Messiah,_Part_1_(Scherchen)_-_04._And_the_glory_of_the_Lord.ogg',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Handel_-_Messiah,_Part_1_(Scherchen)_-_04._And_the_glory_of_the_Lord.ogg',
+    credit: 'Handel, Messiah: And the glory of the Lord. London Philharmonic Choir, London Symphony Orchestra, Hermann Scherchen (1953). Public domain.',
+  },
+  // The minigames, in place of Handel’s “Arrival of the Queen of Sheba”, for which no
+  // recording under an allowed license was found: more of Handel’s bright, royal music.
+  {
+    id: 'handel-water-music-hornpipe',
+    title: 'Alla hornpipe',
+    work: 'Water Music, Suite No. 2, HWV 349',
+    composer: 'George Frideric Handel',
+    performer: 'The Marine Chamber Orchestra, United States Marine Band, Michelle Rakers, conductor',
+    year: 2017,
+    license: 'public-domain',
+    licenseNote: 'A work of the United States Marine Band, made as part of official duties, so it is in the public domain.',
+    source: 'https://commons.wikimedia.org/wiki/File:Handel%27s_Water_Music_-_12._Alla_hornpipe_-_Chamber_Orchestra_-_United_States_Marine_Band.opus',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Handel%27s_Water_Music_-_12._Alla_hornpipe_-_Chamber_Orchestra_-_United_States_Marine_Band.opus',
+    credit: 'Handel, Water Music: Alla hornpipe. The Marine Chamber Orchestra of the United States Marine Band (2017). Public domain.',
+  },
+  // The quiz, in place of Boccherini’s Minuet, for which no recording under an allowed license
+  // was found: light and graceful.
+  {
+    id: 'handel-harmonious-blacksmith',
+    title: 'The Harmonious Blacksmith',
+    work: 'Suite No. 5 in E major, HWV 430',
+    composer: 'George Frideric Handel',
+    performer: 'Musopen',
+    year: 2013,
+    license: 'cc0',
+    licenseNote: 'Dedicated to the public domain (CC0) through Musopen, as stated on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:Handel_-_Suites_for_Harpsichord_-_No.5_in_E_major_-_The_Harmonious_Blacksmith.ogg',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Handel_-_Suites_for_Harpsichord_-_No.5_in_E_major_-_The_Harmonious_Blacksmith.ogg',
+    credit: 'Handel, The Harmonious Blacksmith. Musopen. CC0, via Wikimedia Commons.',
+  },
 ]
 
 const BY_ID = new Map(TRACKS.map((track) => [track.id, track]))

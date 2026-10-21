@@ -153,6 +153,27 @@ export const familyOfNoah: Record<string, PaperPropArt> = {
   leah: person({ robe: '#5a6aa8', fold: '#3a4a80', hair: '#2a1e1a', veil: '#d8d0e8' }),
   maid: person({ robe: '#8a7a5a', fold: '#665a40', hair: '#2a1e1a', veil: '#c8b890' }),
   stranger: person({ robe: '#2a2a4a', fold: '#1a1a30', hair: '#1a1a30', beard: '#1a1a30' }),
+  // Level 5 · Joseph and His Brothers: Joseph young in his long robe, as a slave, as
+  // governor of Egypt in white linen and a headcloth, and old; Jacob grown old; the brothers;
+  // and the Egyptians: Potiphar, the prison keeper and a prisoner, Pharaoh's butler and
+  // baker, Pharaoh in his striped headcloth, and Joseph's steward.
+  'joseph-young': person({ robe: '#8a3aa0', fold: '#e0b040', hair: '#2a1e1a', sash: '#3a9ad0' }),
+  'joseph-slave': person({ robe: '#d8ccb0', fold: '#b0a486', hair: '#2a1e1a' }),
+  'joseph-egypt': person({ robe: '#f4f0e6', fold: '#d0c8b4', hair: '#2a1e1a', veil: '#3a6aa8', sash: '#d8a840' }),
+  'joseph-old': person({ robe: '#f4f0e6', fold: '#d0c8b4', hair: '#e8e2d6', veil: '#3a6aa8', sash: '#d8a840' }),
+  'jacob-old': person({ robe: '#3c5a8a', fold: '#263e64', hair: '#e8e2d6', beard: '#e8e2d6', sash: '#d0b060' }),
+  reuben: person({ robe: '#6a7a3a', fold: '#4a5824', hair: '#3a2a1e', beard: '#3a2a1e' }),
+  judah: person({ robe: '#8a3a3a', fold: '#642626', hair: '#2a1e1a', beard: '#2a1e1a', sash: '#e0b850' }),
+  simeon: person({ robe: '#4a6a7a', fold: '#2e4a58', hair: '#2a1e1a', beard: '#2a1e1a' }),
+  benjamin: person({ robe: '#a85a3a', fold: '#7a3e26', hair: '#2a1e1a', sash: '#f0d080' }),
+  brother: person({ robe: '#7a6a4a', fold: '#58492e', hair: '#2a1e1a', beard: '#2a1e1a' }),
+  potiphar: person({ robe: '#efe6cc', fold: '#c8bc9a', hair: '#1a1210', sash: '#c03a3a' }),
+  keeper: person({ robe: '#8a7a62', fold: '#665a46', hair: '#1a1210', sash: '#5a4030' }),
+  prisoner: person({ robe: '#6a6058', fold: '#4a423c', hair: '#2a1e1a', beard: '#2a1e1a' }),
+  butler: person({ robe: '#c8a050', fold: '#9a7834', hair: '#1a1210', sash: '#8a2a3a' }),
+  baker: person({ robe: '#e8d8b8', fold: '#c0ae8a', hair: '#1a1210', sash: '#a8743a' }),
+  pharaoh: person({ robe: '#f4f0e6', fold: '#d0c8b4', hair: '#1a1210', veil: '#e0b040', sash: '#2a5aa0' }),
+  steward: person({ robe: '#d8ccb0', fold: '#b0a486', hair: '#1a1210', sash: '#3a8a8a' }),
   // The children born after the Flood, drawn smaller in the scene.
   boy: person({ robe: '#b0843e', fold: '#82602a', hair: '#2a1e1a' }),
   girl: person({ robe: '#a8505a', fold: '#7a343c', hair: '#2a1e1a', veil: '#e8d8b8' }),

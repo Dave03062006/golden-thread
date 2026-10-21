@@ -3,7 +3,7 @@
 **Bible:** Genesis 37–50
 **Age:** II · The Patriarchs
 **Length:** about 55 minutes (7 episodes, then the quiz, then reflection and prayer)
-**Status:** draft, waiting for Dave's approval.
+**Status:** approved by Dave on 2026-10-20 ("Approved").
 
 ## How to read this script
 

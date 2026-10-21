@@ -393,6 +393,25 @@ The same way again: script, art, build, checks, play-test. Level 4 continues Age
   - Episode 6's dawn comes as the sun rising over the hills while Jacob holds on; the sky turns fully to dawn when the next scene begins.
 - **Small framework changes:** the camel can now drink and kneel; the pixel ladder is drawn straight onto the screen, because it is taller than a kept picture allows.
 
+### Task 11: Level 5, *Joseph and His Brothers* (M11)
+
+The same way again: script, art, build, checks, play-test. Level 5 continues Age II.
+
+**Status (October 2026):** steps 1–4 are done; step 5 is Dave's.
+- **Script:** `docs/scripts/level-05-joseph-and-his-brothers.md`, approved by Dave. It has 7 episodes and 28 scenes, 107 quotations checked word for word, and a 50-question quiz.
+- **Build:** all seven episodes are built in both styles, each with a different kind of play from the spec's library:
+  - to Dothan (pathfinding, on a cloth map);
+  - caring for the prisoners (serving);
+  - Pharaoh's dreams (decoding);
+  - filling the sacks (stacking);
+  - the silver cup (searching);
+  - come near to me (quiet);
+  - the twelve blessings (matching).
+- **Cathedral and map:** the Level 5 window has seven medallions in the bay of Age II. The map traces Joseph's road from Hebron by Shechem and Dothan into Egypt, and his family's to Goshen, with new places for Dothan and Goshen. The road ahead now points to Level 6, *Job*, in the land of Uz.
+- **Music:** eight new recordings, all public domain, CC0 or CC BY. Six pieces had no allowed recording and were replaced (two by tracks from Level 1); `music.ts` lists them.
+- **Checks:** CHECKS
+- **A fix worth remembering:** art drawn with unrounded `Math.cos` or `Math.sin` can differ in its last digit between the browser that bakes it and the tests that fingerprint it. The chariot's spokes are now rounded.
+
 ## Parallelization
 
 - **Code tasks run in order.** Each one builds on the last, and running them in order keeps the code consistent for the code tour. I do the work in this session, without subagents, as the session guidelines require.

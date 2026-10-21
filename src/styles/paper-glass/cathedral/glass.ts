@@ -358,6 +358,54 @@ export const EMBLEMS: Record<string, () => Piece[]> = {
     { d: P([[-7, -2], [7, -2], [7, 1], [-7, 1]]), color: '#e0a880' },
     { d: star8(0, -15, 3), color: '#ffe48a' },
   ],
+  // Level 5 · Joseph and His Brothers
+  // The twenty pieces of silver, spilled from a purse.
+  silver: () => [
+    { d: P([[-14, 4], [-4, -6], [2, -4], [0, 8], [-10, 12]]), color: '#8a5a32' },
+    ...[[-4, 10], [5, 7], [12, 11], [8, 2], [13, -2], [3, 13]].map(([x, y]) => ({ d: circ(x!, y!, 3.4, 12), color: '#e8eef4' })),
+    { d: star8(-9, -12, 3), color: '#ffffff' },
+  ],
+  // The prison window, and the light that came in: the LORD was with Joseph.
+  'prison-window': () => [
+    { d: P([[-10, -14], [10, -14], [10, 8], [-10, 8]]), color: '#ffe8a8' },
+    ...[-5, 0, 5].map((x) => ({ d: P([[x - 1, -14], [x + 1, -14], [x + 1, 8], [x - 1, 8]]), color: '#3a3a4a' })),
+    { d: P([[-10, 8], [10, 8], [16, 16], [-16, 16]]), color: '#e8c870' },
+  ],
+  // Pharaoh's dream: full ears of grain.
+  'grain-ears': () => [
+    ...[-8, 0, 8].flatMap((x, i) => [
+      { d: P([[x - 0.8, 16], [x + 0.8, 16], [x + 0.8, -2], [x - 0.8, -2]]), color: '#a8843a' },
+      ...[0, 1, 2, 3].map((k) => ({ d: circ(x + (k % 2 ? 2 : -2), -4 - k * 3 - (i === 1 ? 2 : 0), 2.4, 10), color: '#f0c850' })),
+    ]),
+  ],
+  // A sack of grain, tied at the neck, spilling over.
+  'grain-sack': () => [
+    { d: P([[-10, -6], [10, -6], [13, 14], [-13, 14]]), color: '#c8a070' },
+    { d: P([[-6, -10], [6, -10], [4, -6], [-4, -6]]), color: '#a8804a' },
+    ...[[-3, -12], [1, -13], [4, -12], [-1, -15]].map(([x, y]) => ({ d: circ(x!, y!, 1.6, 8), color: '#f0c850' })),
+  ],
+  // Joseph's silver cup.
+  'silver-cup': () => [
+    { d: P([[-10, -12], [10, -12], [6, 0], [-6, 0]]), color: '#dfe6ee' },
+    { d: P([[-1.5, 0], [1.5, 0], [1.5, 10], [-1.5, 10]]), color: '#c8d0da' },
+    { d: P([[-8, 10], [8, 10], [8, 13], [-8, 13]]), color: '#dfe6ee' },
+    { d: star8(7, -10, 3.5), color: '#ffffff' },
+  ],
+  // Joseph's open arms: "Come near to me."
+  'open-arms': () => [
+    { d: P([[-5, 15], [5, 15], [4, -2], [-4, -2]]), color: '#efe6d4' },
+    { d: circ(0, -6, 4, 12), color: '#d8a880' },
+    { d: P([[-4, -1], [-16, -10], [-15, -12], [-3, -4]]), color: '#d8a880' },
+    { d: P([[4, -1], [16, -10], [15, -12], [3, -4]]), color: '#d8a880' },
+    { d: star8(0, -15, 3), color: '#ffe48a' },
+  ],
+  // The scepter of Judah.
+  scepter: () => [
+    { d: P([[-1.5, -8], [1.5, -8], [2, 16], [-2, 16]]), color: '#e8c060' },
+    { d: circ(0, -11, 5, 14), color: '#f0d070' },
+    { d: P([[-6, -14], [-3, -20], [0, -15], [3, -20], [6, -14]]), color: '#f8e08a' },
+    { d: circ(0, -11, 2, 8), color: '#c03a3a' },
+  ],
 }
 
 /** The medallions' backgrounds: deep blue, with one ruby for the darkest story. */

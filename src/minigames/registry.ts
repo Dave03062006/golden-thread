@@ -28,6 +28,13 @@ import { theLadder } from './the-ladder'
 import { theSonsNames } from './the-sons-names'
 import { holdOn } from './hold-on'
 import { sevenBows } from './seven-bows'
+import { toDothan } from './to-dothan'
+import { caringForPrisoners } from './caring-for-prisoners'
+import { pharaohsDreams } from './pharaohs-dreams'
+import { fillingTheSacks } from './filling-the-sacks'
+import { theSilverCup } from './the-silver-cup'
+import { comeNear } from './come-near'
+import { twelveBlessings } from './twelve-blessings'
 
 /** Every interactive moment, by the name a story's `play` beat uses. */
-export const GAMES: Record<string, AnyGameRules> = { ...letThereBe, naming, twist, 'lights-in-the-dark': lightsInTheDark, 'abels-flock': abelsFlock, 'family-tree': familyTree, 'walk-with-god': walkWithGod, 'build-the-ark': buildTheArk, 'through-the-storm': throughTheStorm, ...theDove, 'colors-of-the-promise': colorsOfThePromise, 'the-tower': theTower, scatter, 'family-tree-shem': familyTreeShem, 'the-journey': theJourney, 'dividing-the-flocks': dividingTheFlocks, 'by-night': byNight, 'count-the-stars': countTheStars, 'the-well': theWell, 'new-names': newNames, 'serving-the-guests': servingTheGuests, 'abraham-pleads': abrahamPleads, 'the-feast': theFeast, 'the-climb': theClimb, 'watering-the-camels': wateringTheCamels, 'what-is-it-worth': whatIsItWorth, 'the-blessing': theBlessing, 'the-ladder': theLadder, 'the-sons-names': theSonsNames, 'hold-on': holdOn, 'seven-bows': sevenBows }
+export const GAMES: Record<string, AnyGameRules> = { ...letThereBe, naming, twist, 'lights-in-the-dark': lightsInTheDark, 'abels-flock': abelsFlock, 'family-tree': familyTree, 'walk-with-god': walkWithGod, 'build-the-ark': buildTheArk, 'through-the-storm': throughTheStorm, ...theDove, 'colors-of-the-promise': colorsOfThePromise, 'the-tower': theTower, scatter, 'family-tree-shem': familyTreeShem, 'the-journey': theJourney, 'dividing-the-flocks': dividingTheFlocks, 'by-night': byNight, 'count-the-stars': countTheStars, 'the-well': theWell, 'new-names': newNames, 'serving-the-guests': servingTheGuests, 'abraham-pleads': abrahamPleads, 'the-feast': theFeast, 'the-climb': theClimb, 'watering-the-camels': wateringTheCamels, 'what-is-it-worth': whatIsItWorth, 'the-blessing': theBlessing, 'the-ladder': theLadder, 'the-sons-names': theSonsNames, 'hold-on': holdOn, 'seven-bows': sevenBows, 'to-dothan': toDothan, 'caring-for-prisoners': caringForPrisoners, 'pharaohs-dreams': pharaohsDreams, 'filling-the-sacks': fillingTheSacks, 'the-silver-cup': theSilverCup, 'come-near': comeNear, 'twelve-blessings': twelveBlessings }

@@ -22,6 +22,8 @@ const KEYS = {
   'Hold to draw water': { hold: ' ', seconds: 1.6 },
   // Held right through the night: when the grip slips, Jacob catches hold again.
   'Hold on through the night.': { hold: ' ', seconds: 32 },
+  // Each hold fills a sack; the next press loads it (repeated while the hint shows).
+  'Hold to fill the sack': { hold: ' ', seconds: 1.4 },
 }
 
 /**
@@ -82,6 +84,19 @@ const LEVELS = [
       { number: 5, lines: 19, plays: 1 }, // episode-5.ts
       { number: 6, lines: 17, plays: 1 }, // episode-6.ts
       { number: 7, lines: 20, plays: 1 }, // episode-7.ts
+    ],
+  },
+  {
+    number: 5,
+    complete: true,
+    episodes: [
+      { number: 1, lines: 18, plays: 1 }, // src/content/levels/05-joseph-and-his-brothers/episode-1.ts
+      { number: 2, lines: 16, plays: 1 }, // episode-2.ts
+      { number: 3, lines: 20, plays: 1 }, // episode-3.ts
+      { number: 4, lines: 15, plays: 1 }, // episode-4.ts
+      { number: 5, lines: 12, plays: 1 }, // episode-5.ts
+      { number: 6, lines: 15, plays: 1 }, // episode-6.ts
+      { number: 7, lines: 19, plays: 1 }, // episode-7.ts
     ],
   },
 ]
@@ -213,7 +228,7 @@ async function playEpisode(page, style, { number, lines: expected, plays: expect
 }
 
 /** What the player writes in each level's reflection, different each time so the journal can tell them apart. */
-const REFLECTIONS = { 1: 'I want to stop hiding, and walk with God.', 2: 'Help me trust you when I cannot see, like Noah.', 3: 'Lord, help me go where you call me, even when I cannot see the way.', 4: 'Help me make peace with my brother, and hold on to you in prayer.' }
+const REFLECTIONS = { 1: 'I want to stop hiding, and walk with God.', 2: 'Help me trust you when I cannot see, like Noah.', 3: 'Lord, help me go where you call me, even when I cannot see the way.', 4: 'Help me make peace with my brother, and hold on to you in prayer.', 5: 'Help me forgive, and trust that you can bring good out of what is hard.' }
 
 /**
  * The end of a finished level (spec §3.3): the quiz (each question answered as it comes,

@@ -275,6 +275,27 @@
     },
     "jabbok-gorge": {
       "hash": "a9672fbc"
+    },
+    "wheat-field": {
+      "hash": "42973366"
+    },
+    "field-map": {
+      "hash": "8d126d58"
+    },
+    "egypt-house": {
+      "hash": "65f75108"
+    },
+    "prison": {
+      "hash": "30bd208a"
+    },
+    "pharaoh-hall": {
+      "hash": "891cc8da"
+    },
+    "storehouse-hall": {
+      "hash": "889c3260"
+    },
+    "goshen-fields": {
+      "hash": "1cc8c81a"
     }
   },
   "paperProps": {
@@ -727,6 +748,111 @@
     },
     "twelve-sons": {
       "hash": "ffd2b94d"
+    },
+    "sheaf": {
+      "hash": "3916a1de"
+    },
+    "map-token": {
+      "hash": "f4ad748e"
+    },
+    "pit": {
+      "hash": "658d4263"
+    },
+    "silver-coins": {
+      "hash": "fb23c944"
+    },
+    "jacob-old": {
+      "hash": "74f4b7c9"
+    },
+    "joseph-young": {
+      "hash": "6d274f8c"
+    },
+    "reuben": {
+      "hash": "7330300c"
+    },
+    "simeon": {
+      "hash": "f4c28e18"
+    },
+    "judah": {
+      "hash": "4a56886b"
+    },
+    "brother": {
+      "hash": "96b95794"
+    },
+    "prisoner": {
+      "hash": "0e49823c"
+    },
+    "butler": {
+      "hash": "7d1a11c1"
+    },
+    "baker": {
+      "hash": "108f8ff1"
+    },
+    "need": {
+      "hash": "6d1a5c8a"
+    },
+    "vine": {
+      "hash": "c442d3fa"
+    },
+    "bread-baskets": {
+      "hash": "de9f6ad8"
+    },
+    "golden-cup": {
+      "hash": "c140f984"
+    },
+    "potiphar": {
+      "hash": "85d6a4f5"
+    },
+    "joseph-slave": {
+      "hash": "bc328b9f"
+    },
+    "keeper": {
+      "hash": "f488c28e"
+    },
+    "cow": {
+      "hash": "123bd5d9"
+    },
+    "grain-stalk": {
+      "hash": "1d0d263f"
+    },
+    "throne": {
+      "hash": "fe026b84"
+    },
+    "granary": {
+      "hash": "9bf6fc45"
+    },
+    "pharaoh": {
+      "hash": "b4b32e57"
+    },
+    "joseph-egypt": {
+      "hash": "84873a28"
+    },
+    "chariot": {
+      "hash": "561b4454"
+    },
+    "grain-heap": {
+      "hash": "1ed57d08"
+    },
+    "sack": {
+      "hash": "cbafab9b"
+    },
+    "benjamin": {
+      "hash": "dee2d0ea"
+    },
+    "steward": {
+      "hash": "1edf2c77"
+    },
+    "silver-cup": {
+      "hash": "a1d059b2"
+    },
+    "wagon": {
+      "hash": "67902574"
+    },
+    "blessing-sign": {
+      "hash": "db4815aa"
+    },
+    "joseph-old": {
+      "hash": "31191cc3"
     }
   },
   "pixelLayers": {
@@ -1005,6 +1131,27 @@
     },
     "jabbok-gorge": {
       "hash": "e23e1329"
+    },
+    "wheat-field": {
+      "hash": "5efb11e1"
+    },
+    "field-map": {
+      "hash": "61ece6ff"
+    },
+    "egypt-house": {
+      "hash": "7a195cb5"
+    },
+    "prison": {
+      "hash": "7da3266a"
+    },
+    "pharaoh-hall": {
+      "hash": "1cb898f0"
+    },
+    "storehouse-hall": {
+      "hash": "51d442d2"
+    },
+    "goshen-fields": {
+      "hash": "b369cb25"
     }
   },
   "backdrop": {

@@ -150,6 +150,9 @@ export const PLACES: Place[] = [
   },
   { id: 'edom', name: 'Edom (Seir)', kind: 'region', at: { lat: 30.6, lon: 35.5 }, note: 'The mountains south of the Dead Sea, where Esau and his descendants lived. “Edom” means “red.”' },
   { id: 'bethlehem', name: 'Bethlehem (Ephrath)', kind: 'city', at: { lat: 31.7, lon: 35.2 }, note: 'Where Rachel was buried on the road south, and where, centuries later, Jesus was born.' },
+  // Level 5 · Joseph and His Brothers
+  { id: 'dothan', name: 'Dothan', kind: 'city', at: { lat: 32.42, lon: 35.24 }, note: 'A town on the trade road north of Shechem, where Joseph found his brothers and they sold him to traders bound for Egypt.' },
+  { id: 'goshen', name: 'Goshen', kind: 'region', at: { lat: 30.6, lon: 31.9 }, note: 'Green land in the eastern Nile delta, good for flocks, where Jacob’s family settled in Egypt.' },
 ]
 
 const BY_ID = new Map(PLACES.map((place) => [place.id, place]))

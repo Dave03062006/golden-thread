@@ -1184,6 +1184,435 @@ export const VERSES: Record<string, Verse> = {
     rsv: 'And he arose and came to his father. But while he was yet at a distance, his father saw him and had compassion, and ran and embraced him and kissed him.',
     dra: 'And rising up he came to his father. And when he was yet a great way off, his father saw him, and was moved with compassion, and running to him fell upon his neck, and kissed him.',
   },
+  // Level 5 · Joseph and His Brothers (the Douay-Rheims numbers Genesis 49:33 and 50:24–26 one lower)
+  'GEN 37:3': {
+    rsv: 'Now Israel loved Joseph more than any other of his children, because he was the son of his old age; and he made him a long robe with sleeves.',
+    dra: 'Now Israel loved Joseph above all his sons, because he had him in his old age: and he made him a coat of divers colours.',
+  },
+  'GEN 37:4': {
+    rsv: 'But when his brothers saw that their father loved him more than all his brothers, they hated him, and could not speak peaceably to him.',
+    dra: 'And his brethren seeing that he was loved by his father, more than all his sons, hated him, and could not speak peaceably to him.',
+  },
+  'GEN 37:5': {
+    rsv: 'Now Joseph had a dream, and when he told it to his brothers they only hated him the more.',
+    dra: 'Now it fell out also that he told his brethren a dream, that he had dreamed: which occasioned them to hate him the more.',
+  },
+  'GEN 37:7': {
+    rsv: 'behold, we were binding sheaves in the field, and lo, my sheaf arose and stood upright; and behold, your sheaves gathered round it, and bowed down to my sheaf.”',
+    dra: 'I thought we were binding sheaves in the field: and my sheaf arose as it were, and stood, and your sheaves standing about, bowed down before my sheaf.',
+  },
+  'GEN 37:8': {
+    rsv: 'His brothers said to him, “Are you indeed to reign over us? Or are you indeed to have dominion over us?” So they hated him yet more for his dreams and for his words.',
+    dra: 'His brethren answered: Shalt thou be our king? or shall we be subject to thy dominion? Therefore this matter of his dreams and words ministered nourishment to their envy and hatred.',
+  },
+  'GEN 37:9': {
+    rsv: 'Then he dreamed another dream, and told it to his brothers, and said, “Behold, I have dreamed another dream; and behold, the sun, the moon, and eleven stars were bowing down to me.”',
+    dra: 'He dreamed also another dream, which he told his brethren, saying: I saw in a dream, as it were the sun, and the moon, and eleven stars worshipping me.',
+  },
+  'GEN 37:11': {
+    rsv: 'And his brothers were jealous of him, but his father kept the saying in mind.',
+    dra: 'His brethren therefore envied him: but his father considered the thing with himself.',
+  },
+  'GEN 37:13': {
+    rsv: 'And Israel said to Joseph, “Are not your brothers pasturing the flock at Shechem? Come, I will send you to them.” And he said to him, “Here I am.”',
+    dra: 'Israel said to him: Thy brethren feed the sheep in Sichem: come, I will send thee to them. And when he answered:',
+  },
+  'GEN 37:15': {
+    rsv: 'And a man found him wandering in the fields; and the man asked him, “What are you seeking?”',
+    dra: 'And a man found him there wandering in the field, and asked what he sought.',
+  },
+  'GEN 37:16': {
+    rsv: '“I am seeking my brothers,” he said, “tell me, I pray you, where they are pasturing the flock.”',
+    dra: 'But he answered: I seek my brethren; tell me where they feed the flocks.',
+  },
+  'GEN 37:17': {
+    rsv: 'And the man said, “They have gone away, for I heard them say, ‘Let us go to Dothan.’” So Joseph went after his brothers, and found them at Dothan.',
+    dra: 'And the man said to him: They are departed from this place: for I heard them say: Let us go to Dothain. And Joseph went forward after his brethren, and found them in Dothain.',
+  },
+  'GEN 37:18': {
+    rsv: 'They saw him afar off, and before he came near to them they conspired against him to kill him.',
+    dra: 'And when they saw him afar off, before he came nigh them, they thought to kill him.',
+  },
+  'GEN 37:19': {
+    rsv: 'They said to one another, “Here comes this dreamer.',
+    dra: 'And said one to another: Behold the dreamer cometh.',
+  },
+  'GEN 37:21': {
+    rsv: 'But when Reuben heard it, he delivered him out of their hands, saying, “Let us not take his life.”',
+    dra: 'And Ruben hearing this, endeavoured to deliver him out of their hands, and said:',
+  },
+  'GEN 37:24': {
+    rsv: 'and they took him and cast him into a pit. The pit was empty, there was no water in it.',
+    dra: 'And cast him into an old pit, where there was no water.',
+  },
+  'GEN 37:28': {
+    rsv: 'Then Midianite traders passed by; and they drew Joseph up and lifted him out of the pit, and sold him to the Ishmaelites for twenty shekels of silver; and they took Joseph to Egypt.',
+    dra: 'And when the Madianite merchants passed by, they drew him out of the pit, and sold him to the Ismaelites, for twenty pieces of silver: and they led him into Egypt.',
+  },
+  'GEN 37:35': {
+    rsv: 'All his sons and all his daughters rose up to comfort him; but he refused to be comforted, and said, “No, I shall go down to Sheol to my son, mourning.” Thus his father wept for him.',
+    dra: 'And all his children being gathered together to comfort their father in his sorrow, he would not receive comfort, but said: I will go down to my son into hell, mourning. And whilst he continued weeping,',
+  },
+  'MAT 26:15': {
+    rsv: 'and said, “What will you give me if I deliver him to you?” And they paid him thirty pieces of silver.',
+    dra: 'And said to them: What will you give me, and I will deliver him unto you? But they appointed him thirty pieces of silver.',
+  },
+  'GEN 39:1': {
+    rsv: 'Now Joseph was taken down to Egypt, and Poti-phar, an officer of Pharaoh, the captain of the guard, an Egyptian, bought him from the Ishmaelites who had brought him down there.',
+    dra: 'And Joseph was brought into Egypt, and Putiphar an eunuch of Pharao, chief captain of the army, an Egyptian, bought him of the Ismaelites, by whom he was brought.',
+  },
+  'GEN 39:2': {
+    rsv: 'The LORD was with Joseph, and he became a successful man; and he was in the house of his master the Egyptian,',
+    dra: 'And the Lord was with him, and he was a prosperous man in all things: and he dwelt in his master\'s house,',
+  },
+  'GEN 39:5': {
+    rsv: 'From the time that he made him overseer in his house and over all that he had the LORD blessed the Egyptian’s house for Joseph’s sake; the blessing of the LORD was upon all that he had, in house and field.',
+    dra: 'And the Lord blessed the house of the Egyptian for Joseph\'s sake, and multiplied all his substance, both at home, and in the fields.',
+  },
+  'GEN 39:9': {
+    rsv: 'he is not greater in this house than I am; nor has he kept back anything from me except yourself, because you are his wife; how then can I do this great wickedness, and sin against God?”',
+    dra: 'Neither is there any thing which is not in my power, or that he hath not delivered to me, but thee, who art his wife: how then can I do this wicked thing, and sin against my God?',
+  },
+  'GEN 39:20': {
+    rsv: 'And Joseph’s master took him and put him into the prison, the place where the king’s prisoners were confined, and he was there in prison.',
+    dra: 'And cast Joseph into the prison, where the king\'s prisoners were kept, and he was there shut up.',
+  },
+  'GEN 39:21': {
+    rsv: 'But the LORD was with Joseph and showed him steadfast love, and gave him favor in the sight of the keeper of the prison.',
+    dra: 'But the Lord was with Joseph and having mercy upon him gave him favour in the sight of the chief keeper of the prison:',
+  },
+  'GEN 39:22': {
+    rsv: 'And the keeper of the prison committed to Joseph’s care all the prisoners who were in the prison; and whatever was done there, he was the doer of it;',
+    dra: 'Who delivered into his hand all the prisoners that were kept in custody: and whatsoever was done was under him.',
+  },
+  'GEN 40:8': {
+    rsv: 'They said to him, “We have had dreams, and there is no one to interpret them.” And Joseph said to them, “Do not interpretations belong to God? Tell them to me, I pray you.”',
+    dra: 'They answered: We have dreamed a dream, and there is nobody to interpret it to us. And Joseph said to them: Doth not interpretation belong to God? Tell me what you have dreamed.',
+  },
+  'GEN 40:14': {
+    rsv: 'But remember me, when it is well with you, and do me the kindness, I pray you, to make mention of me to Pharaoh, and so get me out of this house.',
+    dra: 'Only remember me, when it shall be well with thee, and do me this kindness: to put Pharao in mind to take me out of this prison:',
+  },
+  'GEN 40:21': {
+    rsv: 'He restored the chief butler to his butlership, and he placed the cup in Pharaoh’s hand;',
+    dra: 'And he restored the one to his place to present him the cup:',
+  },
+  'GEN 40:23': {
+    rsv: 'Yet the chief butler did not remember Joseph, but forgot him.',
+    dra: 'But the chief butler, when things prospered with him, forgot his interpreter.',
+  },
+  'LUK 23:42': {
+    rsv: 'And he said, “Jesus, remember me when you come in your kingly power.”',
+    dra: 'And he said to Jesus: Lord, remember me when thou shalt come into thy kingdom.',
+  },
+  'LUK 23:43': {
+    rsv: 'And he said to him, “Truly, I say to you, today you will be with me in Paradise.”',
+    dra: 'And Jesus said to him: Amen I say to thee, this day thou shalt be with me in paradise.',
+  },
+  'GEN 41:1': {
+    rsv: 'After two whole years, Pharaoh dreamed that he was standing by the Nile,',
+    dra: 'After two years Pharao had a dream. He thought he stood by the river,',
+  },
+  'GEN 41:8': {
+    rsv: 'So in the morning his spirit was troubled; and he sent and called for all the magicians of Egypt and all its wise men; and Pharaoh told them his dream, but there was none who could interpret it to Pharaoh.',
+    dra: 'And when morning was come, being struck with fear, he sent to all the interpreters of Egypt, and to all the wise men: and they being called for, he told them his dream, and there was not any one that could interpret it.',
+  },
+  'GEN 41:9': {
+    rsv: 'Then the chief butler said to Pharaoh, “I remember my faults today.',
+    dra: 'Then at length the chief butler remembering, said: I confess my sin:',
+  },
+  'GEN 41:14': {
+    rsv: 'Then Pharaoh sent and called Joseph, and they brought him hastily out of the dungeon; and when he had shaved himself and changed his clothes, he came in before Pharaoh.',
+    dra: 'Forthwith at the king\'s command, Joseph was brought out of the prison, and they shaved him, and changing his apparel, brought him in to him.',
+  },
+  'GEN 41:16': {
+    rsv: 'Joseph answered Pharaoh, “It is not in me; God will give Pharaoh a favorable answer.”',
+    dra: 'Joseph answered: Without me, God shall give Pharao a prosperous answer.',
+  },
+  'GEN 41:25': {
+    rsv: 'Then Joseph said to Pharaoh, “The dream of Pharaoh is one; God has revealed to Pharaoh what he is about to do.',
+    dra: 'Joseph answered: The king\'s dream is one: God hath shewn to Pharao what he is about to do.',
+  },
+  'GEN 41:29': {
+    rsv: 'There will come seven years of great plenty throughout all the land of Egypt,',
+    dra: 'Behold, there shall come seven years of great plenty in the whole land of Egypt:',
+  },
+  'GEN 41:30': {
+    rsv: 'but after them there will arise seven years of famine, and all the plenty will be forgotten in the land of Egypt; the famine will consume the land,',
+    dra: 'After which shall follow other seven years of so great scarcity, that all the abundance before shall be forgotten: for the famine shall consume all the land,',
+  },
+  'GEN 41:38': {
+    rsv: 'And Pharaoh said to his servants, “Can we find such a man as this, in whom is the Spirit of God?”',
+    dra: 'And he said to them: Can we find such another man, that is full of the spirit of God?',
+  },
+  'GEN 41:41': {
+    rsv: 'And Pharaoh said to Joseph, “Behold, I have set you over all the land of Egypt.”',
+    dra: 'And again Pharao said to Joseph: Behold, I have appointed thee over the whole land of Egypt.',
+  },
+  'GEN 41:42': {
+    rsv: 'Then Pharaoh took his signet ring from his hand and put it on Joseph’s hand, and arrayed him in garments of fine linen, and put a gold chain about his neck;',
+    dra: 'And he took his ring from his own hand, and gave it into his hand: and he put upon him a robe of silk, and put a chain of gold about his neck.',
+  },
+  'GEN 41:43': {
+    rsv: 'and he made him to ride in his second chariot; and they cried before him, “Bow the knee!” Thus he set him over all the land of Egypt.',
+    dra: 'And he made him go up into his second chariot, the crier proclaiming that all should bow their knee before him, and that they should know he was made governor over the whole land of Egypt.',
+  },
+  'GEN 41:49': {
+    rsv: 'And Joseph stored up grain in great abundance, like the sand of the sea, until he ceased to measure it, for it could not be measured.',
+    dra: 'And there was so great abundance of wheat, that it was equal to the sand of the sea, and the plenty exceeded measure.',
+  },
+  'GEN 41:52': {
+    rsv: 'The name of the second he called Ephraim, “For God has made me fruitful in the land of my affliction.”',
+    dra: 'And he named the second Ephraim, saying: God hath made me to grow in the land of my poverty.',
+  },
+  'GEN 41:54': {
+    rsv: 'and the seven years of famine began to come, as Joseph had said. There was famine in all lands; but in all the land of Egypt there was bread.',
+    dra: 'The seven years of scarcity, which Joseph had foretold, began to come: and the famine prevailed in the whole world, but there was bread in all the land of Egypt.',
+  },
+  'GEN 41:55': {
+    rsv: 'When all the land of Egypt was famished, the people cried to Pharaoh for bread; and Pharaoh said to all the Egyptians, “Go to Joseph; what he says to you, do.”',
+    dra: 'And when there also they began to be famished, the people cried to Pharao for food. And he said to them: Go to Joseph: and do all that he shall say to you.',
+  },
+  'GEN 41:57': {
+    rsv: 'Moreover, all the earth came to Egypt to Joseph to buy grain, because the famine was severe over all the earth.',
+    dra: 'And all provinces came into Egypt, to buy food, and to seek some relief of their want.',
+  },
+  'JHN 2:5': {
+    rsv: 'His mother said to the servants, “Do whatever he tells you.”',
+    dra: 'His mother saith to the waiters: Whatsoever he shall say to you, do ye.',
+  },
+  'GEN 42:2': {
+    rsv: 'And he said, “Behold, I have heard that there is grain in Egypt; go down and buy grain for us there, that we may live, and not die.”',
+    dra: 'I have heard that wheat is sold in Egypt: go ye down, and buy us necessaries, that we may live, and not be consumed with want.',
+  },
+  'GEN 42:4': {
+    rsv: 'But Jacob did not send Benjamin, Joseph’s brother, with his brothers, for he feared that harm might befall him.',
+    dra: 'Whilst Benjamin was kept at home by Jacob, who said to his brethren: Lest perhaps he take any harm in the journey.',
+  },
+  'GEN 42:6': {
+    rsv: 'Now Joseph was governor over the land; he it was who sold to all the people of the land. And Joseph’s brothers came, and bowed themselves before him with their faces to the ground.',
+    dra: 'And Joseph was governor in the land of Egypt, and corn was sold by his direction to the people. And when his brethren had bowed down to him,',
+  },
+  'GEN 42:8': {
+    rsv: 'Thus Joseph knew his brothers, but they did not know him.',
+    dra: 'And though he knew his brethren, he was not known by them.',
+  },
+  'GEN 42:9': {
+    rsv: 'And Joseph remembered the dreams which he had dreamed of them; and he said to them, “You are spies, you have come to see the weakness of the land.”',
+    dra: 'And remembering the dreams, which formerly he had dreamed, he said to them: You are spies. You are come to view the weaker parts of the land.',
+  },
+  'GEN 42:21': {
+    rsv: 'Then they said to one another, “In truth we are guilty concerning our brother, in that we saw the distress of his soul, when he besought us and we would not listen; therefore is this distress come upon us.”',
+    dra: 'And they talked one to another: We deserve to suffer these things, because we have sinned against our brother, seeing the anguish of his soul, when he besought us, and we would not hear: therefore is this affliction come upon us.',
+  },
+  'GEN 42:24': {
+    rsv: 'Then he turned away from them and wept; and he returned to them and spoke to them. And he took Simeon from them and bound him before their eyes.',
+    dra: 'And he turned himself away a little while, and wept: and returning he spoke to them.',
+  },
+  'GEN 42:25': {
+    rsv: 'And Joseph gave orders to fill their bags with grain, and to replace every man’s money in his sack, and to give them provisions for the journey. This was done for them.',
+    dra: 'And taking Simeon, and binding him in their presence, he commanded his servants to fill their sacks with wheat, and to put every man\'s money again in their sacks, and to give them besides provisions for the way: and they did so.',
+  },
+  'GEN 42:28': {
+    rsv: 'and he said to his brothers, “My money has been put back; here it is in the mouth of my sack!” At this their hearts failed them, and they turned trembling to one another, saying, “What is this that God has done to us?”',
+    dra: 'And said to his brethren: My money is given me again, behold it is in the sack. And they were astonished, and troubled, and said to one another: What is this that God hath done unto us?',
+  },
+  'GEN 43:1': {
+    rsv: 'Now the famine was severe in the land.',
+    dra: 'In the mean time the famine was heavy upon all the land.',
+  },
+  'GEN 43:9': {
+    rsv: 'I will be surety for him; of my hand you shall require him. If I do not bring him back to you and set him before you, then let me bear the blame for ever;',
+    dra: 'I take the boy upon me, require him at my hand: unless I bring him again, and restore him to thee, I will be guilty of sin against thee for ever.',
+  },
+  'GEN 43:30': {
+    rsv: 'Then Joseph made haste, for his heart yearned for his brother, and he sought a place to weep. And he entered his chamber and wept there.',
+    dra: 'And he made haste because his heart was moved upon his brother, and tears gushed out: and going into his chamber he wept.',
+  },
+  'GEN 43:34': {
+    rsv: 'Portions were taken to them from Joseph’s table, but Benjamin’s portion was five times as much as any of theirs. So they drank and were merry with him.',
+    dra: 'Taking the messes which they received of him: and the greater mess came to Benjamin, so that it exceeded by five parts. And they drank, and were merry with him.',
+  },
+  'JHN 6:35': {
+    rsv: 'Jesus said to them, “I am the bread of life; he who comes to me shall not hunger, and he who believes in me shall never thirst.',
+    dra: 'And Jesus said to them: I am the bread of life: he that cometh to me shall not hunger: and he that believeth in me shall never thirst.',
+  },
+  'GEN 44:1': {
+    rsv: 'Then he commanded the steward of his house, “Fill the men’s sacks with food, as much as they can carry, and put each man’s money in the mouth of his sack,',
+    dra: 'And Joseph commanded the steward of his house, saying: Fill their sacks with corn, as much as they can hold: and put the money of every one in the top of his sack.',
+  },
+  'GEN 44:2': {
+    rsv: 'and put my cup, the silver cup, in the mouth of the sack of the youngest, with his money for the grain.” And he did as Joseph told him.',
+    dra: 'And in the mouth of the younger\'s sack put my silver cup, and the price which he gave for the wheat. And it was so done.',
+  },
+  'GEN 44:12': {
+    rsv: 'And he searched, beginning with the eldest and ending with the youngest; and the cup was found in Benjamin’s sack.',
+    dra: 'Which when he had searched, beginning at the eldest and ending at the youngest, he found the cup in Benjamin\'s sack.',
+  },
+  'GEN 44:13': {
+    rsv: 'Then they rent their clothes, and every man loaded his ass, and they returned to the city.',
+    dra: 'Then they rent their garments, and loading their asses again, returned into the town.',
+  },
+  'GEN 44:16': {
+    rsv: 'And Judah said, “What shall we say to my lord? What shall we speak? Or how can we clear ourselves? God has found out the guilt of your servants; behold, we are my lord’s slaves, both we and he also in whose hand the cup has been found.”',
+    dra: 'And Juda said to him: What shall we answer my lord? or what shall we say, or be able justly to allege? God hath found out the iniquity of thy servants: behold, we are all bondmen to my lord, both we, and he with whom the cup was found.',
+  },
+  'GEN 44:18': {
+    rsv: 'Then Judah went up to him and said, “O my lord, let your servant, I pray you, speak a word in my lord’s ears, and let not your anger burn against your servant; for you are like Pharaoh himself.',
+    dra: 'Then Juda coming nearer, said boldly: I beseech thee, my lord, let thy servant speak a word in thy ears, and be not angry with thy servant: for after Pharao thou art,',
+  },
+  'GEN 44:30': {
+    rsv: 'Now therefore, when I come to your servant my father, and the lad is not with us, then, as his life is bound up in the lad’s life,',
+    dra: 'Therefore if I shall go to thy servant our father, and the boy be wanting, (whereas his life dependeth upon the life of him,)',
+  },
+  'GEN 44:33': {
+    rsv: 'Now therefore, let your servant, I pray you, remain instead of the lad as a slave to my lord; and let the lad go back with his brothers.',
+    dra: 'Therefore I thy servant will stay instead of the boy in the service of my lord, and let the boy go up with his brethren.',
+  },
+  'GEN 44:34': {
+    rsv: 'For how can I go back to my father if the lad is not with me? I fear to see the evil that would come upon my father.”',
+    dra: 'For I cannot return to my father without the boy, lest I be a witness of the calamity that will oppress my father.',
+  },
+  'JHN 15:13': {
+    rsv: 'Greater love has no man than this, that a man lay down his life for his friends.',
+    dra: 'Greater love than this no man hath, that a man lay down his life for his friends.',
+  },
+  'GEN 45:1': {
+    rsv: 'Then Joseph could not control himself before all those who stood by him; and he cried, “Make every one go out from me.” So no one stayed with him when Joseph made himself known to his brothers.',
+    dra: 'Joseph could no longer refrain himself before many that stood by: whereupon he commanded that all should go out, and no stranger be present at their knowing one another.',
+  },
+  'GEN 45:2': {
+    rsv: 'And he wept aloud, so that the Egyptians heard it, and the household of Pharaoh heard it.',
+    dra: 'And he lifted up his voice with weeping, which the Egyptians and all the house of Pharao heard.',
+  },
+  'GEN 45:3': {
+    rsv: 'And Joseph said to his brothers, “I am Joseph; is my father still alive?” But his brothers could not answer him, for they were dismayed at his presence.',
+    dra: 'And he said to his brethren: I am Joseph: is my father yet living? His brethren could not answer him, being struck with exceeding great fear.',
+  },
+  'GEN 45:4': {
+    rsv: 'So Joseph said to his brothers, “Come near to me, I pray you.” And they came near. And he said, “I am your brother, Joseph, whom you sold into Egypt.',
+    dra: 'And he said mildly to them: Come nearer to me. And when they were come near him, he said: I am Joseph, your brother, whom you sold into Egypt.',
+  },
+  'GEN 45:5': {
+    rsv: 'And now do not be distressed, or angry with yourselves, because you sold me here; for God sent me before you to preserve life.',
+    dra: 'Be not afraid, and let it not seem to you a hard case that you sold me into these countries: for God sent me before you into Egypt for your preservation.',
+  },
+  'GEN 45:8': {
+    rsv: 'So it was not you who sent me here, but God; and he has made me a father to Pharaoh, and lord of all his house and ruler over all the land of Egypt.',
+    dra: 'Not by your counsel was I sent hither, but by the will of God: who hath made me as it were a father to Pharao, and lord of his whole house, and governor in all the land of Egypt.',
+  },
+  'GEN 45:14': {
+    rsv: 'Then he fell upon his brother Benjamin’s neck and wept; and Benjamin wept upon his neck.',
+    dra: 'And falling upon the neck of his brother Benjamin, he embraced him and wept: and Benjamin in like manner wept also on his neck.',
+  },
+  'GEN 45:15': {
+    rsv: 'And he kissed all his brothers and wept upon them; and after that his brothers talked with him.',
+    dra: 'And Joseph kissed all his brethren, and wept upon every one of them: after which they were emboldened to speak to him.',
+  },
+  'GEN 45:26': {
+    rsv: 'And they told him, “Joseph is still alive, and he is ruler over all the land of Egypt.” And his heart fainted, for he did not believe them.',
+    dra: 'And they told him, saying: Joseph thy son is living: and he is ruler in all the land of Egypt. Which when Jacob heard, he awaked as it were out of a deep sleep, yet did not believe them.',
+  },
+  'GEN 45:27': {
+    rsv: 'But when they told him all the words of Joseph, which he had said to them, and when he saw the wagons which Joseph had sent to carry him, the spirit of their father Jacob revived;',
+    dra: 'They, on the other side, told the whole order of the thing. And when he saw the wagons and all that he had sent his spirit revived,',
+  },
+  'GEN 45:28': {
+    rsv: 'and Israel said, “It is enough; Joseph my son is still alive; I will go and see him before I die.”',
+    dra: 'And he said: It is enough for me, if Joseph my son be yet living: I will go and see him before I die.',
+  },
+  'GEN 46:3': {
+    rsv: 'Then he said, “I am God, the God of your father; do not be afraid to go down to Egypt; for I will there make of you a great nation.',
+    dra: 'God said to him: I am the most mighty God of thy father: fear not, go down into Egypt, for I will make a great nation of thee there.',
+  },
+  'GEN 46:4': {
+    rsv: 'I will go down with you to Egypt, and I will also bring you up again; and Joseph’s hand shall close your eyes.”',
+    dra: 'I will go down with thee thither, and will bring thee back again from thence: Joseph also shall put his hands upon thy eyes.',
+  },
+  'GEN 46:29': {
+    rsv: 'Then Joseph made ready his chariot and went up to meet Israel his father in Goshen; and he presented himself to him, and fell on his neck, and wept on his neck a good while.',
+    dra: 'And when he was come thither, Joseph made ready his chariot, and went up to meet his father, in the same place: and seeing him, he fell upon his neck, and embracing him wept.',
+  },
+  'GEN 46:30': {
+    rsv: 'Israel said to Joseph, “Now let me die, since I have seen your face and know that you are still alive.”',
+    dra: 'And the father said to Joseph: Now shall I die with joy, because I have seen thy face, and leave thee alive.',
+  },
+  'LUK 23:34': {
+    rsv: 'And Jesus said, “Father, forgive them; for they know not what they do.” And they cast lots to divide his garments.',
+    dra: 'And Jesus said: Father, forgive them, for they know not what they do. But they, dividing his garments, cast lots.',
+  },
+  'GEN 47:7': {
+    rsv: 'Then Joseph brought in Jacob his father, and set him before Pharaoh, and Jacob blessed Pharaoh.',
+    dra: 'After this Joseph brought in his father to the king, and presented him before him: and he blessed him.',
+  },
+  'GEN 47:27': {
+    rsv: 'Thus Israel dwelt in the land of Egypt, in the land of Goshen; and they gained possessions in it, and were fruitful and multiplied exceedingly.',
+    dra: 'So Israel dwelt in Egypt, that is, in the land of Gessen, and possessed it: and grew, and was multiplied exceedingly.',
+  },
+  'GEN 48:14': {
+    rsv: 'And Israel stretched out his right hand and laid it upon the head of Ephraim, who was the younger, and his left hand upon the head of Manasseh, crossing his hands, for Manasseh was the first-born.',
+    dra: 'But he stretching forth his right hand, put it upon the head of Ephraim the younger brother; and the left upon the head of Manasses who was the elder, changing his hands.',
+  },
+  'GEN 48:16': {
+    rsv: 'the angel who has redeemed me from all evil, bless the lads; and in them let my name be perpetuated, and the name of my fathers Abraham and Isaac; and let them grow into a multitude in the midst of the earth.”',
+    dra: 'The angel that delivereth me from all evils, bless these boys: and let my name be called upon them, and the names of my fathers Abraham, and Isaac, and may they grow into a multitude upon the earth.',
+  },
+  'GEN 49:1': {
+    rsv: 'Then Jacob called his sons, and said, “Gather yourselves together, that I may tell you what shall befall you in days to come.',
+    dra: 'And Jacob called his sons, and said to them: Gather yourselves together that I may tell you the things that shall befall you in the last days.',
+  },
+  'GEN 49:9': {
+    rsv: 'Judah is a lion’s whelp; from the prey, my son, you have gone up. He stooped down, he couched as a lion, and as a lioness; who dares rouse him up?',
+    dra: 'Juda is a lion\'s whelp: to the prey, my son, thou art gone up: resting thou hast couched as a lion, and as a lioness, who shall rouse him?',
+  },
+  'GEN 49:10': {
+    rsv: 'The scepter shall not depart from Judah, nor the ruler’s staff from between his feet, until he comes to whom it belongs; and to him shall be the obedience of the peoples.',
+    dra: 'The sceptre shall not be taken away from Juda, nor a ruler from his thigh, till he come that is to be sent, and he shall be the expectation of nations.',
+  },
+  'GEN 49:28': {
+    rsv: 'All these are the twelve tribes of Israel; and this is what their father said to them as he blessed them, blessing each with the blessing suitable to him.',
+    dra: 'All these are the twelve tribes of Israel: these things their father spoke to them, and he blessed every one, with their proper blessings.',
+  },
+  'GEN 49:33': {
+    rsv: 'When Jacob finished charging his sons, he drew up his feet into the bed, and breathed his last, and was gathered to his people.',
+    dra: 'And when he had ended the commandments, wherewith he instructed his sons, he drew up his feet upon the bed, and died: and he was gathered to his people.',
+  },
+  'GEN 50:15': {
+    rsv: 'When Joseph’s brothers saw that their father was dead, they said, “It may be that Joseph will hate us and pay us back for all the evil which we did to him.”',
+    dra: 'Now he being dead, his brethren were afraid, and talked one with another: Lest perhaps he should remember the wrong he suffered, and requite us all the evil that we did to him.',
+  },
+  'GEN 50:19': {
+    rsv: 'But Joseph said to them, “Fear not, for am I in the place of God?',
+    dra: 'And he answered them: Fear not: can we resist the will of God?',
+  },
+  'GEN 50:20': {
+    rsv: 'As for you, you meant evil against me; but God meant it for good, to bring it about that many people should be kept alive, as they are today.',
+    dra: 'You thought evil against me: but God turned it into good, that he might exalt me, as at present you see, and might save many people.',
+  },
+  'GEN 50:21': {
+    rsv: 'So do not fear; I will provide for you and your little ones.” Thus he reassured them and comforted them.',
+    dra: 'Fear not: I will feed you and your children. And he comforted them, and spoke gently and mildly.',
+  },
+  'GEN 50:24': {
+    rsv: 'And Joseph said to his brothers, “I am about to die; but God will visit you, and bring you up out of this land to the land which he swore to Abraham, to Isaac, and to Jacob.”',
+    dra: 'After which he told his brethren: God will visit you after my death, and will make you go up out of this land, to the land which he swore to Abraham, Isaac, and Jacob.',
+  },
+  'GEN 50:25': {
+    rsv: 'Then Joseph took an oath of the sons of Israel, saying, “God will visit you, and you shall carry up my bones from here.”',
+    dra: 'And he made them swear to him, saying: God will visit you, carry my bones with you out of this place:',
+  },
+  'GEN 50:26': {
+    rsv: 'So Joseph died, being a hundred and ten years old; and they embalmed him, and he was put in a coffin in Egypt.',
+    dra: 'And he died being a hundred and ten years old. And being embalmed he was laid in a coffin in Egypt.',
+  },
+  'LUK 1:32': {
+    rsv: 'He will be great, and will be called the Son of the Most High; and the Lord God will give to him the throne of his father David,',
+    dra: 'He shall be great, and shall be called the Son of the most High; and the Lord God shall give unto him the throne of David his father; and he shall reign in the house of Jacob for ever.',
+  },
+  'LUK 1:33': {
+    rsv: 'and he will reign over the house of Jacob for ever; and of his kingdom there will be no end.”',
+    dra: 'And of his kingdom there shall be no end.',
+  },
 }
 
 /** A verse's words in the active translation. Throws for a verse that isn't in the list (a content check catches these first). */

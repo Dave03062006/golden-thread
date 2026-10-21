@@ -121,11 +121,14 @@ const AREAS: MapRegion[] = [
     ['hebron', 'Hebron (Mamre)', 31.53, 35.1],
     ['beersheba', 'Beer-sheba', 31.25, 34.79],
   ].map(([id, name, lat, lon]) => city(id as string, name as string, { lat: lat as number, lon: lon as number }, 0.12)),
-  // Bethel and Bethlehem stand closer still, either side of Jerusalem: smaller again.
+  // Bethel, Bethlehem and Dothan stand closer still to their neighbors: smaller again.
   ...[
     ['bethel', 'Bethel', 31.93, 35.22],
     ['bethlehem', 'Bethlehem', 31.7, 35.2],
+    ['dothan', 'Dothan', 32.42, 35.24],
   ].map(([id, name, lat, lon]) => city(id as string, name as string, { lat: lat as number, lon: lon as number }, 0.07)),
+  // The land of Goshen, in the eastern Nile delta.
+  { id: 'goshen', name: 'Goshen', kind: 'area', shape: pairs([[30.95, 31.55], [30.85, 32.2], [30.4, 32.2], [30.45, 31.55]]) },
   // Where most scholars place Sodom and Gomorrah: the southern end of the Dead Sea.
   { id: 'dead-sea', name: 'The southern Dead Sea', kind: 'area', shape: pairs([[31.25, 35.35], [31.25, 35.6], [30.9, 35.55], [30.9, 35.35]]) },
 ]

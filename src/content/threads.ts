@@ -341,6 +341,85 @@ export const THREADS: GoldenThread[] = [
     sources: ['Luke 15:11–32', 'Matthew 5:23–24', 'Catechism 1439, 2843'],
     fulfilled: { age: 'XI' },
   },
+
+  // Level 5 · Joseph and His Brothers
+  {
+    id: 'sold-for-silver',
+    episode: 'l05-e1',
+    title: 'Joseph sold for silver by his brothers → Jesus betrayed for thirty pieces of silver',
+    from: ['GEN 37:28'],
+    to: ['MAT 26:15'],
+    explanation:
+      'Joseph, the beloved son sent by his father to his brothers, was rejected by them and sold for silver. Jesus, the beloved Son sent by the Father, came to his own, and one of his own sold him for silver. In both stories the betrayal did not have the last word: God turned it into salvation for many.',
+    sources: ['Matthew 26:14–16', 'John 1:11', 'Acts 7:9', 'Catechism 597–598'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'remember-me',
+    episode: 'l05-e2',
+    title: '“Remember me,” between two prisoners → “Jesus, remember me”',
+    from: ['GEN 40:14'],
+    to: ['LUK 23:42', 'LUK 23:43'],
+    explanation:
+      'Joseph, innocent, was counted among criminals, with one man on each side: one set free, one put to death. He asked the butler, “remember me,” and the butler forgot him. Jesus, innocent, died between two criminals. One of them asked, “Jesus, remember me,” and Jesus did not forget: “Today you will be with me in Paradise.”',
+    sources: ['Luke 23:32–43', 'Isaiah 53:12', 'Catechism 1021'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'do-whatever-he-tells-you',
+    episode: 'l05-e3',
+    title: '“Go to Joseph; what he says to you, do” → “Do whatever he tells you”',
+    from: ['GEN 41:55'],
+    to: ['JHN 2:5'],
+    explanation:
+      'When Egypt had no bread, Pharaoh sent the hungry to Joseph: “what he says to you, do.” When the wedding at Cana had no wine, Mary sent the servants to Jesus with almost the same words. They obeyed, and the water became wine. Mary still points us to her Son. The Church also uses Pharaoh’s words, “Go to Joseph,” for St Joseph, the guardian of the Holy Family.',
+    sources: ['John 2:1–11', 'Catechism 2618', 'Pope Leo XIII, Quamquam pluries (1889)'],
+    fulfilled: { age: 'XI', place: 'galilee' },
+  },
+  {
+    id: 'bread-for-the-world',
+    episode: 'l05-e4',
+    title: 'Grain from Joseph for a starving world → “I am the bread of life”',
+    from: ['GEN 41:57'],
+    to: ['JHN 6:35'],
+    explanation:
+      'In the famine, the whole world came to Joseph for bread, even the brothers who had sold him, and he gave it to them, and secretly gave back their money too. Jesus gives himself as bread for the whole world, freely, to all who come to him: in the Eucharist, the Bread of life.',
+    sources: ['John 6:32–35', 'Matthew 6:11', 'Catechism 1338, 1406'],
+    fulfilled: { age: 'XI', place: 'galilee' },
+  },
+  {
+    id: 'greater-love',
+    episode: 'l05-e5',
+    title: 'Judah offers himself in his brother’s place → “Greater love has no man than this”',
+    from: ['GEN 44:33'],
+    to: ['JHN 15:13'],
+    explanation:
+      'Judah, who once sold his brother, now offers his own freedom so that his youngest brother can go home: the first time in the Bible that someone offers to take another’s punishment in his place. Jesus, the Son of David from the tribe of Judah, did that fully: he gave his life in our place, so that we can go home to the Father.',
+    sources: ['John 15:12–14', '1 Peter 3:18', 'Hebrews 7:14', 'Catechism 615–616'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'father-forgive-them',
+    episode: 'l05-e6',
+    title: 'Joseph forgives the brothers who sold him → “Father, forgive them”',
+    from: ['GEN 45:5'],
+    to: ['LUK 23:34'],
+    explanation:
+      'Joseph could have punished his brothers. Instead he wept, called them near, and told them not to be afraid. Jesus, nailed to the cross by those he came to save, prayed for them: “Father, forgive them.” Joseph’s forgiveness is a picture of the mercy God offers everyone, and of how we are to forgive those who hurt us.',
+    sources: ['Luke 23:34', 'Matthew 5:44', 'Matthew 6:12', 'Catechism 2842–2845'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'the-scepter-of-judah',
+    episode: 'l05-e7',
+    title: '“The scepter shall not depart from Judah” → the Son of David, whose kingdom has no end',
+    from: ['GEN 49:10'],
+    to: ['LUK 1:32', 'LUK 1:33'],
+    explanation:
+      'Jacob blessed Judah with a king’s scepter “until he comes to whom it belongs.” From Judah came King David, and from David, many kings. But the angel Gabriel told Mary that her son would have the throne of David and reign “over the house of Jacob for ever.” The one to whom the scepter belongs is Jesus, the Lion of the tribe of Judah.',
+    sources: ['Luke 1:31–33', 'Revelation 5:5', 'Hebrews 7:14', 'Catechism 436, 439'],
+    fulfilled: { age: 'XI', place: 'nazareth' },
+  },
 ]
 
 const BY_ID = new Map(THREADS.map((thread) => [thread.id, thread]))

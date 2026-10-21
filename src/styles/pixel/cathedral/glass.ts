@@ -74,6 +74,14 @@ export const EMBLEMS: Record<string, { rows: string[]; colors: Record<string, st
   lion: { rows: ['.......y.', '......yyy', '.....mmmy', '.....mfmm', 'tbbbbmmm.', '.bbbbbbb.', '.b.b..b.b', 'ggggggggg', 'ggggggggg'], colors: { y: C.gold, m: C.wood2, f: C.gold, b: C.sand, t: C.sand2, g: C.green } },
   dawn: { rows: ['.........', '...o.o...', '.o.yyy.o.', '..yyyyy..', 'oyyWWWyyo', 'kkyyyyykk', 'kkkkkkkkk', 'sssssssss', 'kkkkkkkkk'], colors: { o: C.orange, y: C.gold, W: C.white, k: C.dslate, s: C.sky } },
   embrace: { rows: ['....y....', '..s...s..', '.sss.sss.', '..saaas..', '.gggarrr.', '.ggg.rrr.', '.ggg.rrr.', '.ggg.rrr.', 'gggg.rrrr'], colors: { y: C.gold, s: C.sand, a: C.sand2, g: C.green, r: C.rose } },
+  // Level 5 · Joseph and His Brothers
+  silver: { rows: ['.W.......', '.........', '.bb......', 'bbbb.....', 'bbbb.ww..', '.bb.wwww.', '...ww.ww.', '..wwww.ww', '...ww..ww'], colors: { W: C.white, b: C.wood2, w: C.pale } },
+  'prison-window': { rows: ['.........', '..ykykyk.', '..ykykyk.', '..ykykyk.', '..ykykyk.', '.........', '..yy.....', '.yyyy....', 'yyyyyy...'], colors: { y: C.gold, k: C.dslate } },
+  'grain-ears': { rows: ['....y....', '.y.yyy.y.', 'yyyyyyyyy', 'yyy.y.yyy', '.y..y..y.', '.b..b..b.', '.b..b..b.', '..b.b.b..', '...bbb...'], colors: { y: C.gold, b: C.wood3 } },
+  'grain-sack': { rows: ['...yyy...', '..y.y.y..', '...ttt...', '..sssss..', '.sssssss.', '.sssssss.', 'sssssssss', 'sssssssss', '.sssssss.'], colors: { y: C.gold, t: C.wood2, s: C.sand } },
+  'silver-cup': { rows: ['.......W.', 'wwwwwww..', '.wwwwww..', '..wwww...', '...ww....', '...ww....', '...ww....', '..wwww...', '.wwwwww..'], colors: { W: C.white, w: C.pale } },
+  'open-arms': { rows: ['....y....', '....s....', 's..sss..s', '.s.www.s.', '..swwws..', '...www...', '...www...', '...www...', '..wwwww..'], colors: { y: C.gold, s: C.sand, w: C.white } },
+  scepter: { rows: ['..y.y.y..', '..yyyyy..', '...yry...', '...yyy...', '....y....', '....y....', '....y....', '....y....', '...yyy...'], colors: { y: C.gold, r: C.rose } },
 }
 
 /** The pointed outline of a window, inside which the glass is: whether a pixel is in it. */
