@@ -62,6 +62,8 @@ import { blessingsProps } from './props/blessings'
 import { uzLayers } from './layers/uz'
 import { uzProps } from './props/uz'
 import { whirlwindProps } from './props/whirlwind'
+import { exodusLayers } from './layers/exodus'
+import { exodusProps } from './props/exodus'
 import { familyOfNoah } from './characters/family-of-noah'
 import { creationProps } from './props/creation'
 import { dove } from './props/dove'
@@ -161,6 +163,7 @@ export const paperLayerSets: Record<string, PaperLayerArt>[] = [
   grainLayers,
   goshenLayers,
   uzLayers,
+  exodusLayers,
 ]
 
 export const paperLayers: Record<string, PaperLayerArt> = Object.assign({}, ...paperLayerSets)
@@ -209,6 +212,7 @@ export const paperPropSets: Record<string, PaperPropArt>[] = [
   blessingsProps,
   uzProps,
   whirlwindProps,
+  exodusProps,
 ]
 
 export const paperProps: Record<string, PaperPropArt> = Object.assign({}, ...paperPropSets)

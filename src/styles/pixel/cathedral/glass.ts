@@ -89,6 +89,12 @@ export const EMBLEMS: Record<string, { rows: string[]; colors: Record<string, st
   'carved-rock': { rows: ['..sssss..', '.sssssss.', 'syyyyyyss', 'sssssssss', 'syyyyysss', 'sssssssss', 'syyyyyyss', 'sssssssss', 'kkkkkkkkk'], colors: { s: C.slate, y: C.gold, k: C.dslate } },
   whirlwind: { rows: ['ppppppppp', '.PPPPPPP.', '.ppppppp.', 'y.PPWPP..', '..ppppp..', '...PPP...', '...ppp...', '....P....', '....p....'], colors: { p: C.pale, P: C.slate, W: C.gold, y: C.gold } },
   twofold: { rows: ['....y....', '.........', 'www..www.', 'wwwkwwwwk', 'wwwwwwwww', 'wwww.wwww', '.k.k..k.k', '.k.k..k.k', 'ggggggggg'], colors: { y: C.gold, w: C.white, k: C.ink, g: C.green } },
+  // Level 7 · Moses Is Called
+  'window-lamp': { rows: ['....s....', '...sss...', '..sssss..', '.sskkkss.', '.sskykss.', '.sskrkss.', '.sskkkss.', '.sssssss.', '.sssssss.'], colors: { s: C.sand2, k: C.dslate, y: C.gold, r: C.orange } },
+  'reed-basket': { rows: ['g...y...g', 'g.......g', '.g.....g.', '.g.....g.', '..ttttt..', '.bbbbbbb.', '..bbbbb..', 'wwwwwwwww', 'wwwwwwwww'], colors: { g: C.green, y: C.gold, t: C.sand, b: C.wood3, w: C.blue } },
+  'water-trough': { rows: ['..y......', '.........', '......ww.', '.....wwwk', '.....wwww', 'bbbbbwww.', 'bsssb.k.k', 'bbbbb.k.k', '.........'], colors: { y: C.gold, w: C.white, k: C.ink, b: C.wood2, s: C.sky } },
+  'burning-bush': { rows: ['....o....', '...ooo...', '.o.oyo.o.', '.ooyyyoo.', 'ooyyyyyoo', '.ogygygo.', '..ggggg..', '.........', 'sssssssss'], colors: { o: C.orange, y: C.gold, g: C.green, s: C.sand2 } },
+  'rod-serpent': { rows: ['ww.....gg', '.w....g..', '.w...g...', '..w...g..', '..w....g.', '..w...g..', '...w.g...', '...w..g..', '...w...g.'], colors: { w: C.wood3, g: C.green } },
 }
 
 /** The pointed outline of a window, inside which the glass is: whether a pixel is in it. */

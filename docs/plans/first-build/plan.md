@@ -444,6 +444,32 @@ The same way again: script, art, build, checks, play-test. Level 6 completes Age
   - New `shots` baselines cover the Level 6 scenes. Dave still needs to look them over.
 - **A fix worth remembering:** a scene full of separate puppets can fail `perf` on late frames even when its average work is low. The cost is drawing (in the profile, 70% of the time was the browser's own work). Episode 1 first had 13 people and about 20 animals, each person drawn as five pieces. Drawing the sons, daughters and servants as one band each brought late frames from about 1.5% to 0.6%.
 
+### Task 13: Level 7, *Moses Is Called* (M13)
+
+The same way again: script, art, build, checks, play-test. Level 7 opens Age III, *Out of Egypt*.
+
+**Status (October 2026):** steps 1–4 are done; step 5 is Dave's.
+- **Script:** `docs/scripts/level-07-moses-is-called.md`, approved by Dave. It has 5 episodes and 20 scenes, 69 quotations checked word for word, and a 40-question quiz.
+- **Build:** all five episodes are built in both styles, each with a different kind of play from the spec's library:
+  - the midwives' night (stealth and escape, a first);
+  - a basket of bulrushes (building);
+  - watering the flock (pouring);
+  - turn aside and see (light and reveal: the burning bush, the spec's own example);
+  - the signs (ordering).
+- **New art:**
+  - Backdrops: the brick pits, the Hebrew quarter at night, inside a Hebrew house, the Nile among the papyrus, Horeb.
+  - Props: the reed basket (woven row by row), the burning bush, the water that turns red.
+  - Fourteen people, including Moses as a prince and as an old shepherd, Shiphrah and Puah, Jethro, Zipporah and Aaron.
+  - Bands for the Hebrew families, the slaves and the seven daughters of Reuel; bands can now walk.
+- **Cathedral and map:** the Level 7 window opens the bay of Age III, with five medallions. The map traces Moses' road from Egypt to Midian, to Horeb and back, with Midian as a new region and Horeb as a new place. The road ahead now points to Level 8, *The Plagues and the Passover*.
+- **Music:** three new recordings, all public domain, among them Marian Anderson's 1924 "Go Down, Moses," the spec's piece. Verdi's "Va, pensiero" had no allowed recording and became "Nobody Knows the Trouble I've Seen"; `music.ts` says so.
+- **Checks:** all pass.
+  - The playthrough runs Level 7 from start to finish in both styles, through its quiz, reflection and window ceremony (52 checks).
+  - `check`, `test` (2,004 tests), `a11y`, `keyboard` and `saves` pass.
+  - `perf` is within budget for every Level 7 scene in both styles.
+  - New `shots` baselines cover the Level 7 scenes. Dave still needs to look them over.
+- **A fix worth remembering:** a glow the size of the screen is costly in both styles. In pixel art it is redrawn whenever its size or opacity changes. In Paper & Glass a zoom well past the usual 1.04 makes the backdrops redraw. "I AM WHO I AM" now grows the flame a little, with a gentle zoom.
+
 ## Parallelization
 
 - **Code tasks run in order.** Each one builds on the last, and running them in order keeps the code consistent for the code tour. I do the work in this session, without subagents, as the session guidelines require.

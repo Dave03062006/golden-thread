@@ -735,6 +735,48 @@ export const TRACKS: Track[] = [
     download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Faur%C3%A9_-_Requiem_-_VII._In_paradisum.flac',
     credit: 'Fauré, Requiem: In paradisum. Chorale Philippe Caillard, Orchestre national de l’Opéra de Monte-Carlo, Louis Frémaux (1962). Public domain.',
   },
+  // Level 7 · Moses Is Called. Episode 2: a mother and her baby.
+  {
+    id: 'brahms-wiegenlied',
+    title: 'Wiegenlied (Lullaby)',
+    work: 'Op. 49 No. 4',
+    composer: 'Johannes Brahms',
+    performer: 'Ernestine Schumann-Heink, contralto',
+    year: 1915,
+    license: 'public-domain',
+    licenseNote: 'An old recording, in the public domain, as stated on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:Brahms_-_Schumann-Heink_-_Wiegenlied_(Berceuse)_(1915).ogg',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Brahms_-_Schumann-Heink_-_Wiegenlied_(Berceuse)_(1915).ogg',
+    credit: 'Brahms, Wiegenlied (Lullaby), Op. 49 No. 4. Ernestine Schumann-Heink (1915). Public domain.',
+  },
+  // Episode 5: the spec’s piece for this level, “Tell old Pharaoh, let my people go.”
+  {
+    id: 'go-down-moses',
+    title: 'Go Down, Moses',
+    work: 'Spiritual, arranged by H. T. Burleigh',
+    composer: 'Traditional',
+    performer: 'Marian Anderson, contralto, with Francis J. Lapitino, harp',
+    year: 1924,
+    license: 'public-domain',
+    licenseNote: 'An old recording, in the public domain, as stated on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:Go_down_Moses-Victor_19370-Marian_Anderson.mp3',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Go_down_Moses-Victor_19370-Marian_Anderson.mp3',
+    credit: 'Go Down, Moses (spiritual), arranged by H. T. Burleigh. Marian Anderson (1924). Public domain.',
+  },
+  // The minigames: bright and steady.
+  {
+    id: 'mozart-nachtmusik-allegro',
+    title: 'Allegro',
+    work: 'Eine kleine Nachtmusik (Serenade No. 13), K. 525',
+    composer: 'Wolfgang Amadeus Mozart',
+    performer: 'European Archive (via Musopen)',
+    year: 2024,
+    license: 'public-domain',
+    licenseNote: 'Released into the public domain through Musopen, as stated on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:Mozart_K525_Serenade_in_G_Major_1_-_Allegro.ogg',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mozart_K525_Serenade_in_G_Major_1_-_Allegro.ogg',
+    credit: 'Mozart, Eine kleine Nachtmusik: Allegro. European Archive (Musopen). Public domain, via Wikimedia Commons.',
+  },
 ]
 
 const BY_ID = new Map(TRACKS.map((track) => [track.id, track]))

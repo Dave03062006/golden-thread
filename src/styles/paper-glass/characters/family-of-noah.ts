@@ -107,14 +107,17 @@ function band(looks: Look[], spacing = 30): PaperPropArt {
   return {
     box: { x: 0, y: 0, w: 40 + (looks.length - 1) * spacing, h: 122 },
     facing: -1,
-    poses: ['idle'],
+    poses: ['idle', 'walk'],
     anchor: 'base',
     parts: [
       { id: 'back', svg: layer(1) },
       { id: 'front', svg: layer(0) },
     ],
-    // They shift their weight a little, out of step with each other.
-    animate: (part, _pose, time) => ({ y: 0.6 * Math.sin(time * TAU * 0.3 + (part === 'back' ? 1.3 : 0)) }),
+    // Standing, they shift their weight a little; walking, they bob, out of step with each other.
+    animate: (part, pose, time) => {
+      const phase = part === 'back' ? 1.3 : 0
+      return { y: pose === 'walk' ? -2.4 * Math.abs(Math.sin(time * TAU * 1.6 + phase)) : 0.6 * Math.sin(time * TAU * 0.3 + phase) }
+    },
   }
 }
 
@@ -228,6 +231,46 @@ export const familyOfNoah: Record<string, PaperPropArt> = {
     { robe: '#a84a6a', fold: '#7a3048', hair: '#2a1e1a', veil: '#f0e0c8' },
     { robe: '#4a7aa0', fold: '#305a7a', hair: '#1a1210', veil: '#e8e0f0' },
     { robe: '#c08a3a', fold: '#946424', hair: '#2a1e1a', veil: '#f4ecd8' },
+  ]),
+  // Level 7 · Moses Is Called: the midwives Shiphrah and Puah; a watchman and a taskmaster
+  // of Pharaoh's; a Hebrew slave; Moses' mother and his sister; Pharaoh's daughter; Moses as
+  // a prince of Egypt and as an old shepherd; Jethro and Zipporah; Aaron; an elder of Israel.
+  shiphrah: person({ robe: '#4a7a8a', fold: '#305a68', hair: '#2a1e1a', veil: '#e8dcc4' }),
+  puah: person({ robe: '#9a5a4a', fold: '#743e32', hair: '#1a1210', veil: '#d8cce0' }),
+  watchman: person({ robe: '#3a3a4a', fold: '#26263a', hair: '#1a1210', veil: '#4a4a5a', sash: '#a8743a' }),
+  taskmaster: person({ robe: '#efe6cc', fold: '#c8bc9a', hair: '#1a1210', sash: '#a83a3a' }),
+  slave: person({ robe: '#a89878', fold: '#7c6e54', hair: '#2a1e1a', beard: '#2a1e1a' }),
+  'moses-mother': person({ robe: '#5a6a8a', fold: '#3e4c68', hair: '#2a1e1a', veil: '#e0d4bc' }),
+  miriam: person({ robe: '#c07a4a', fold: '#945a32', hair: '#2a1e1a', veil: '#f0e4c8' }),
+  princess: person({ robe: '#f6f2e8', fold: '#d4ccb8', hair: '#1a1210', veil: '#e0b040', sash: '#3a8a9a' }),
+  'moses-prince': person({ robe: '#f4f0e6', fold: '#d0c8b4', hair: '#2a1e1a', beard: '#2a1e1a', veil: '#3a6aa8', sash: '#d8a840' }),
+  'moses-shepherd': person({ robe: '#7a5a3a', fold: '#5a4026', hair: '#d0ccc4', beard: '#d0ccc4', sash: '#c8a050' }),
+  jethro: person({ robe: '#6a3a5a', fold: '#4c2640', hair: '#ece8e0', beard: '#ece8e0', veil: '#e0d0b0' }),
+  zipporah: person({ robe: '#3a7a5a', fold: '#265a40', hair: '#1a1210', veil: '#e8c870' }),
+  aaron: person({ robe: '#3a5a9a', fold: '#264078', hair: '#b8b4ac', beard: '#b8b4ac', sash: '#d8b050' }),
+  elder: person({ robe: '#8a7a5a', fold: '#665a40', hair: '#d8d4cc', beard: '#d8d4cc', veil: '#c8bc9a' }),
+  // Hebrew families in Goshen, slaves at the brick pits, and the seven daughters of Reuel.
+  'hebrew-family': band([
+    { robe: '#6a7a3a', fold: '#4c5a26', hair: '#2a1e1a', beard: '#2a1e1a' },
+    { robe: '#a84a5a', fold: '#7a3040', hair: '#2a1e1a', veil: '#f0e0c8' },
+    { robe: '#c08a3a', fold: '#946424', hair: '#2a1e1a' },
+    { robe: '#4a6a8a', fold: '#304c68', hair: '#1a1210', veil: '#e8e0f0' },
+  ]),
+  'hebrew-workers': band([
+    { robe: '#a89878', fold: '#7c6e54', hair: '#2a1e1a', beard: '#2a1e1a' },
+    { robe: '#8a7a5a', fold: '#665a40', hair: '#1a1210', beard: '#1a1210' },
+    { robe: '#b8a888', fold: '#8a7c60', hair: '#2a1e1a' },
+    { robe: '#9a8868', fold: '#706248', hair: '#3a2a1e', beard: '#3a2a1e' },
+    { robe: '#a89070', fold: '#7c6a50', hair: '#1a1210', beard: '#1a1210' },
+  ]),
+  'reuel-daughters': band([
+    { robe: '#3a7a5a', fold: '#265a40', hair: '#1a1210', veil: '#e8c870' },
+    { robe: '#a84a6a', fold: '#7a3048', hair: '#2a1e1a', veil: '#f0e0c8' },
+    { robe: '#4a6a9a', fold: '#304c78', hair: '#1a1210', veil: '#e8e0f0' },
+    { robe: '#c07a3a', fold: '#945a24', hair: '#2a1e1a', veil: '#f4ecd8' },
+    { robe: '#6a4a7a', fold: '#4c3058', hair: '#1a1210', veil: '#e0d4bc' },
+    { robe: '#9a6a3a', fold: '#744c24', hair: '#2a1e1a', veil: '#f0e4c8' },
+    { robe: '#3a8a8a', fold: '#266868', hair: '#1a1210', veil: '#e8dcc4' },
   ]),
   // The children born after the Flood, drawn smaller in the scene.
   boy: person({ robe: '#b0843e', fold: '#82602a', hair: '#2a1e1a' }),

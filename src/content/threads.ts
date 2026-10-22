@@ -487,6 +487,62 @@ export const THREADS: GoldenThread[] = [
     sources: ['James 5:10–11', 'Matthew 5:44', 'Revelation 21:4', 'Catechism 309, 324'],
     fulfilled: { age: 'XIII' },
   },
+  // Level 7 · Moses Is Called
+  {
+    id: 'the-holy-innocents',
+    episode: 'l07-e1',
+    title: 'Pharaoh orders the Hebrew baby boys killed → King Herod orders the baby boys of Bethlehem killed, and the child Jesus is saved',
+    from: ['EXO 1:22'],
+    to: ['MAT 2:13', 'MAT 2:16'],
+    explanation:
+      'Moses was born when a king was killing baby boys, and God saved him. Jesus was born when a king was killing baby boys too, and God saved him, by sending his family into Egypt. Moses would lead God’s people out of slavery; Jesus would lead all people out of the slavery of sin. The Church remembers the little boys of Bethlehem as the Holy Innocents, on December 28.',
+    sources: ['Matthew 2:13–18', 'Hebrews 11:23', 'Catechism 530'],
+    fulfilled: { age: 'XI', place: 'bethlehem' },
+  },
+  {
+    id: 'adoption-as-sons',
+    episode: 'l07-e2',
+    title: 'Pharaoh’s daughter takes the Hebrew baby as her own son → In Christ, God makes us his own children',
+    from: ['EXO 2:10'],
+    to: ['GAL 4:4', 'GAL 4:5'],
+    explanation:
+      'A baby nobody could protect was drawn out of the water and taken into the king’s own family. That is a picture of what God does for us: through Jesus, and through the water of Baptism, he takes us into his own family, as his sons and daughters.',
+    sources: ['Galatians 4:4–7', 'Romans 8:15', 'Catechism 1265, 1279'],
+    fulfilled: { age: 'XIII' },
+  },
+  {
+    id: 'the-refused-deliverer',
+    episode: 'l07-e3',
+    title: 'Moses’ own people refuse him: “Who made you a prince and a judge over us?” → Jesus came to his own, and his own did not receive him',
+    from: ['EXO 2:14'],
+    to: ['ACT 7:35', 'JHN 1:11'],
+    explanation:
+      'St. Stephen, the first martyr, told this story to show that God’s people had often refused the very ones God sent to save them. Moses, refused by his own, was sent back as their deliverer. Jesus, refused by his own, became the Savior of all.',
+    sources: ['Acts 7:23–36', 'John 1:10–12', 'Catechism 530, 2575'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'i-am',
+    episode: 'l07-e4',
+    title: 'God tells Moses his name: “I AM WHO I AM” → Jesus says, “Before Abraham was, I am”',
+    from: ['EXO 3:14'],
+    to: ['JHN 8:58'],
+    explanation:
+      'God told Moses his name: I AM. Centuries later, Jesus used those same words about himself, and the people who heard him understood: he was saying that he is God. The one who spoke from the bush is the one who became a man in Jesus.',
+    sources: ['John 8:56–59', 'John 18:5–6', 'Catechism 205–213, 589'],
+    fulfilled: { age: 'XI', place: 'jerusalem' },
+  },
+  {
+    id: 'the-new-moses',
+    episode: 'l07-e5',
+    title: '“Go back to Egypt; for all the men who were seeking your life are dead” → “Go to the land of Israel, for those who sought the child’s life are dead”',
+    from: ['EXO 4:19'],
+    to: ['MAT 2:20'],
+    explanation:
+      'Matthew tells Jesus’ childhood with Moses’ words. Like Moses, Jesus was saved from a king who killed baby boys, lived in exile, and came back when those who wanted him dead had died. Jesus is the new Moses, who leads God’s people into true freedom.',
+    sources: ['Matthew 2:13–23', 'Hosea 11:1', 'Catechism 527–530'],
+    fulfilled: { age: 'XI', place: 'nazareth' },
+  },
 ]
 
 const BY_ID = new Map(THREADS.map((thread) => [thread.id, thread]))

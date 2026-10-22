@@ -308,6 +308,21 @@
     },
     "rock-face": {
       "hash": "fd40a4c7"
+    },
+    "brick-pits": {
+      "hash": "ec1de769"
+    },
+    "hebrew-quarter": {
+      "hash": "f454d129"
+    },
+    "nile-reeds": {
+      "hash": "e78a07c9"
+    },
+    "house-inside": {
+      "hash": "4a0bc1ae"
+    },
+    "horeb": {
+      "hash": "835d07e0"
     }
   },
   "paperProps": {
@@ -867,16 +882,16 @@
       "hash": "f650c807"
     },
     "jobs-sons": {
-      "hash": "ec2cf937"
+      "hash": "859070e0"
     },
     "jobs-daughters": {
-      "hash": "9df10649"
+      "hash": "1c0514e0"
     },
     "ox": {
       "hash": "99e407c3"
     },
     "jobs-servants": {
-      "hash": "42864d00"
+      "hash": "ac03a063"
     },
     "accuser": {
       "hash": "ed465dd5"
@@ -925,6 +940,69 @@
     },
     "job-old": {
       "hash": "1b19b46f"
+    },
+    "hebrew-family": {
+      "hash": "06445321"
+    },
+    "hebrew-workers": {
+      "hash": "c49019ff"
+    },
+    "slave": {
+      "hash": "f47e07e0"
+    },
+    "taskmaster": {
+      "hash": "e5ce23ab"
+    },
+    "watchman": {
+      "hash": "d014f973"
+    },
+    "shiphrah": {
+      "hash": "eb4f96d0"
+    },
+    "puah": {
+      "hash": "5ecd863d"
+    },
+    "moses-mother": {
+      "hash": "3cea92dd"
+    },
+    "miriam": {
+      "hash": "b261b062"
+    },
+    "reed-basket": {
+      "hash": "114b37bf"
+    },
+    "loose-reed": {
+      "hash": "8816dbd1"
+    },
+    "princess": {
+      "hash": "669ba767"
+    },
+    "reuel-daughters": {
+      "hash": "e81674be"
+    },
+    "moses-prince": {
+      "hash": "83b2a6f9"
+    },
+    "moses-shepherd": {
+      "hash": "f64543db"
+    },
+    "burning-bush": {
+      "hash": "710358c1"
+    },
+    "aaron": {
+      "hash": "74439da6"
+    },
+    "jethro": {
+      "hash": "25cb9de4"
+    },
+    "zipporah": {
+      "hash": "50287f8a"
+    },
+    "elder": {
+      "hash": "6dcfba5c"
+    },
+    "poured-water": {
+      "hash": "30f5f6d2"
     }
   },
   "pixelLayers": {
@@ -1236,6 +1314,21 @@
     },
     "rock-face": {
       "hash": "3813e64a"
+    },
+    "brick-pits": {
+      "hash": "d628833f"
+    },
+    "hebrew-quarter": {
+      "hash": "780e2b2b"
+    },
+    "nile-reeds": {
+      "hash": "9f4c2cfb"
+    },
+    "house-inside": {
+      "hash": "cf551cf5"
+    },
+    "horeb": {
+      "hash": "2ba30f0a"
     }
   },
   "backdrop": {

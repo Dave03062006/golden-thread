@@ -3,7 +3,7 @@
 **Bible:** Exodus 1–4
 **Age:** III · Out of Egypt
 **Length:** about 40 minutes (5 episodes, then the quiz, then reflection and prayer)
-**Status:** draft, waiting for Dave's approval.
+**Status:** approved by Dave on 2026-10-22 ("approve").
 
 ## How to read this script
 

@@ -73,7 +73,7 @@ function band(looks: Look[], spacing = 8): PixelSpriteArt {
   const colors: Record<string, string> = { S: C.wood1, R: C.gold, M: C.wood2, T: C.wood1 }
   looks.forEach((look, n) => Object.assign(colors, { [keys[n]!.H]: look.hair, [keys[n]!.B]: look.beard ?? C.wood0, [keys[n]!.V]: look.veil ?? C.pale, [keys[n]!.K]: look.robe, [keys[n]!.W]: look.sash ?? C.gold }))
   const frame = (i: number) => sprite(WIDTH + (looks.length - 1) * spacing, HEIGHT, (g) => looks.forEach((look, n) => draw(g, look, (n + i) % 2 ? -1 : 0, 'down', 0, false, X + n * spacing, keys[n])))
-  return { kind: 'sprite', facing: -1, anchor: 'base', colors, poses: { idle: { frames: [frame(0), frame(1)], fps: 0.45 } } }
+  return { kind: 'sprite', facing: -1, anchor: 'base', colors, poses: { idle: { frames: [frame(0), frame(1)], fps: 0.45 }, walk: { frames: [frame(0), frame(1)], fps: 3 } } }
 }
 
 function person(look: Look): PixelSpriteArt {
@@ -200,6 +200,42 @@ export const familyOfNoah: Record<string, PixelSpriteArt> = {
     { robe: C.orange, hair: C.wood0, veil: C.white },
     { robe: C.sky, hair: C.ink, veil: C.pale },
     { robe: C.gold, hair: C.wood0, veil: C.white },
+  ]),
+  shiphrah: person({ robe: C.teal, hair: C.wood0, veil: C.sand }),
+  puah: person({ robe: C.wood3, hair: C.ink, veil: C.pale }),
+  watchman: person({ robe: C.dslate, hair: C.ink, veil: C.slate, sash: C.wood3 }),
+  taskmaster: person({ robe: C.white, hair: C.ink, sash: C.rose }),
+  slave: person({ robe: C.sand2, hair: C.wood0, beard: C.wood0 }),
+  'moses-mother': person({ robe: C.navy, hair: C.wood0, veil: C.sand }),
+  miriam: person({ robe: C.orange, hair: C.wood0, veil: C.white }),
+  princess: person({ robe: C.white, hair: C.ink, veil: C.gold, sash: C.teal }),
+  'moses-prince': person({ robe: C.white, hair: C.wood0, beard: C.wood0, veil: C.blue, sash: C.gold }),
+  'moses-shepherd': person({ robe: C.wood3, hair: C.pale, beard: C.pale, sash: C.sand }),
+  jethro: person({ robe: C.purple, hair: C.white, beard: C.white, veil: C.sand }),
+  zipporah: person({ robe: C.green, hair: C.ink, veil: C.gold }),
+  aaron: person({ robe: C.blue, hair: C.pale, beard: C.pale, sash: C.gold }),
+  elder: person({ robe: C.sand2, hair: C.white, beard: C.white, veil: C.sand }),
+  'hebrew-family': band([
+    { robe: C.green, hair: C.wood0, beard: C.wood0 },
+    { robe: C.rose, hair: C.wood0, veil: C.white },
+    { robe: C.wood3, hair: C.wood0 },
+    { robe: C.blue, hair: C.ink, veil: C.pale },
+  ]),
+  'hebrew-workers': band([
+    { robe: C.sand2, hair: C.wood0, beard: C.wood0 },
+    { robe: C.wood2, hair: C.ink, beard: C.ink },
+    { robe: C.sand, hair: C.wood0 },
+    { robe: C.sand2, hair: C.wood1, beard: C.wood1 },
+    { robe: C.wood3, hair: C.ink, beard: C.ink },
+  ]),
+  'reuel-daughters': band([
+    { robe: C.green, hair: C.ink, veil: C.gold },
+    { robe: C.rose, hair: C.wood0, veil: C.white },
+    { robe: C.blue, hair: C.ink, veil: C.pale },
+    { robe: C.orange, hair: C.wood0, veil: C.white },
+    { robe: C.purple, hair: C.ink, veil: C.sand },
+    { robe: C.wood3, hair: C.wood0, veil: C.white },
+    { robe: C.teal, hair: C.ink, veil: C.sand },
   ]),
   boy: child({ robe: C.wood3, hair: C.wood0 }),
   girl: child({ robe: C.rose, hair: C.wood0, veil: C.white }),

@@ -73,6 +73,8 @@ import { blessingsProps } from './props/blessings'
 import { uzLayers } from './layers/uz'
 import { uzProps } from './props/uz'
 import { whirlwindProps } from './props/whirlwind'
+import { exodusLayers } from './layers/exodus'
+import { exodusProps } from './props/exodus'
 import { familyOfNoah } from './characters/family-of-noah'
 
 export { LAYER_H, LAYER_W, MARGIN_X, MARGIN_Y, PX_H, PX_W, type Painter } from './frame'
@@ -171,6 +173,7 @@ export const pixelLayerSets: Record<string, PixelLayerArt>[] = [
   grainLayers,
   goshenLayers,
   uzLayers,
+  exodusLayers,
 ]
 
 export const pixelLayers: Record<string, PixelLayerArt> = Object.assign({}, ...pixelLayerSets)
@@ -219,6 +222,7 @@ export const pixelPropSets: Record<string, PixelPropArt>[] = [
   blessingsProps,
   uzProps,
   whirlwindProps,
+  exodusProps,
 ]
 
 export const pixelProps: Record<string, PixelPropArt> = Object.assign({}, ...pixelPropSets)

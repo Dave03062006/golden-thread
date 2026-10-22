@@ -24,6 +24,8 @@ const KEYS = {
   'Hold on through the night.': { hold: ' ', seconds: 32 },
   // Each hold fills a sack; the next press loads it (repeated while the hint shows).
   'Hold to fill the sack': { hold: ' ', seconds: 1.4 },
+  // Held along the street: the midwives wait by themselves while the watchman's light is on it.
+  'Hold to walk the midwives': { hold: ' ', seconds: 6 },
 }
 
 /**
@@ -109,6 +111,17 @@ const LEVELS = [
       { number: 4, lines: 9, plays: 1 }, // episode-4.ts
       { number: 5, lines: 12, plays: 1 }, // episode-5.ts
       { number: 6, lines: 10, plays: 1 }, // episode-6.ts
+    ],
+  },
+  {
+    number: 7,
+    complete: true,
+    episodes: [
+      { number: 1, lines: 15, plays: 1 }, // src/content/levels/07-moses-is-called/episode-1.ts
+      { number: 2, lines: 13, plays: 1 }, // episode-2.ts
+      { number: 3, lines: 15, plays: 1 }, // episode-3.ts
+      { number: 4, lines: 22, plays: 1 }, // episode-4.ts
+      { number: 5, lines: 10, plays: 1 }, // episode-5.ts
     ],
   },
 ]
@@ -240,7 +253,7 @@ async function playEpisode(page, style, { number, lines: expected, plays: expect
 }
 
 /** What the player writes in each level's reflection, different each time so the journal can tell them apart. */
-const REFLECTIONS = { 1: 'I want to stop hiding, and walk with God.', 2: 'Help me trust you when I cannot see, like Noah.', 3: 'Lord, help me go where you call me, even when I cannot see the way.', 4: 'Help me make peace with my brother, and hold on to you in prayer.', 5: 'Help me forgive, and trust that you can bring good out of what is hard.', 6: 'Lord, help me tell you the truth when I am sad, and keep holding on to you.' }
+const REFLECTIONS = { 1: 'I want to stop hiding, and walk with God.', 2: 'Help me trust you when I cannot see, like Noah.', 3: 'Lord, help me go where you call me, even when I cannot see the way.', 4: 'Help me make peace with my brother, and hold on to you in prayer.', 5: 'Help me forgive, and trust that you can bring good out of what is hard.', 6: 'Lord, help me tell you the truth when I am sad, and keep holding on to you.', 7: 'Here am I, Lord. Be with me when I feel too small.' }
 
 /**
  * The end of a finished level (spec §3.3): the quiz (each question answered as it comes,

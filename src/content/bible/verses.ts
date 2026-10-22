@@ -1872,6 +1872,300 @@ export const VERSES: Record<string, Verse> = {
     dra: 'Will the eagle mount up at thy command…',
     partial: true,
   },
+  // Level 7 · Moses Is Called, with the verses its games quote.
+  'EXO 1:7': {
+    rsv: 'But the descendants of Israel were fruitful and increased greatly; they multiplied and grew exceedingly strong; so that the land was filled with them.',
+    dra: 'The children of Israel increased, and sprung up into multitudes, and growing exceedingly strong they filled the land.',
+  },
+  'EXO 1:8': {
+    rsv: 'Now there arose a new king over Egypt, who did not know Joseph.',
+    dra: 'In the mean time there arose a new king over Egypt, that knew not Joseph:',
+  },
+  'EXO 1:9': {
+    rsv: 'And he said to his people, “Behold, the people of Israel are too many and too mighty for us.',
+    dra: 'And he said to his people: Behold the people of the children of Israel are numerous and stronger than we.',
+  },
+  'EXO 1:11': {
+    rsv: 'Therefore they set taskmasters over them to afflict them with heavy burdens; and they built for Pharaoh store-cities, Pithom and Raamses.',
+    dra: 'Therefore he set over them masters of the works, to afflict them with burdens, and they built for Pharao cities of tabernacles, Phithom and Ramesses.',
+  },
+  'EXO 1:12': {
+    rsv: 'But the more they were oppressed, the more they multiplied and the more they spread abroad. And the Egyptians were in dread of the people of Israel.',
+    dra: 'But the more they oppressed them, the more they were multiplied, and increased:',
+  },
+  'EXO 1:14': {
+    rsv: 'and made their lives bitter with hard service, in mortar and brick, and in all kinds of work in the field; in all their work they made them serve with rigor.',
+    dra: 'And they made their life bitter with hard works in clay, and brick, and with all manner of service, wherewith they were overcharged in the works of the earth.',
+  },
+  'EXO 1:17': {
+    rsv: 'But the midwives feared God, and did not do as the king of Egypt commanded them, but let the male children live.',
+    dra: 'But the midwives feared God, and did not do as the king of Egypt had commanded, but saved the men children.',
+  },
+  'EXO 1:18': {
+    rsv: 'So the king of Egypt called the midwives, and said to them, “Why have you done this, and let the male children live?”',
+    dra: 'And the king called for them and said: What is that you meant to do, that you would save the men children?',
+  },
+  'EXO 1:19': {
+    rsv: 'The midwives said to Pharaoh, “Because the Hebrew women are not like the Egyptian women; for they are vigorous and are delivered before the midwife comes to them.”',
+    dra: 'They answered: The Hebrew women are not as the Egyptian women: for they themselves are skillful in the office of a midwife; and they are delivered before we come to them.',
+  },
+  'EXO 1:20': {
+    rsv: 'So God dealt well with the midwives; and the people multiplied and grew very strong.',
+    dra: 'Therefore God dealt well with the midwives: and the people multiplied and grew exceedingly strong.',
+  },
+  'EXO 1:21': {
+    rsv: 'And because the midwives feared God he gave them families.',
+    dra: 'And because the midwives feared God, he built them houses.',
+  },
+  'EXO 1:22': {
+    rsv: 'Then Pharaoh commanded all his people, “Every son that is born to the Hebrews you shall cast into the Nile, but you shall let every daughter live.”',
+    dra: 'Pharao therefore charged all his people, saying: Whatsoever shall be born of the male sex, ye shall cast into the river: whatsoever of the female, ye shall save alive.',
+  },
+  'MAT 2:13': {
+    rsv: 'Now when they had departed, behold, an angel of the Lord appeared to Joseph in a dream and said, “Rise, take the child and his mother, and flee to Egypt, and remain there till I tell you; for Herod is about to search for the child, to destroy him.”',
+    dra: 'And after they were departed, behold an angel of the Lord appeared in sleep to Joseph, saying: Arise, and take the child and his mother, and fly into Egypt: and be there until I shall tell thee. For it will come to pass that Herod will seek the child to destroy him.',
+  },
+  'MAT 2:16': {
+    rsv: 'Then Herod, when he saw that he had been tricked by the wise men, was in a furious rage, and he sent and killed all the male children in Bethlehem and in all that region who were two years old or under, according to the time which he had ascertained from the wise men.',
+    dra: 'Then Herod perceiving that he was deluded by the wise men, was exceeding angry; and sending killed all the men children that were in Bethlehem, and in all the borders thereof, from two years old and under, according to the time which he had diligently inquired of the wise men.',
+  },
+  'EXO 2:1': {
+    rsv: 'Now a man from the house of Levi went and took to wife a daughter of Levi.',
+    dra: 'After this there went a man of the house of Levi; and took a wife of his own kindred.',
+  },
+  'EXO 2:2': {
+    rsv: 'The woman conceived and bore a son; and when she saw that he was a goodly child, she hid him three months.',
+    dra: 'And she conceived, and bore a son; and seeing him a goodly child hid him three months.',
+  },
+  'EXO 2:3': {
+    rsv: 'And when she could hide him no longer she took for him a basket made of bulrushes, and daubed it with bitumen and pitch; and she put the child in it and placed it among the reeds at the river’s brink.',
+    dra: 'And when she could hide him no longer, she took a basket made of bulrushes, and daubed it with slime and pitch: and put the little babe therein, and laid him in the sedges by the river\'s brink,',
+  },
+  'EXO 2:4': {
+    rsv: 'And his sister stood at a distance, to know what would be done to him.',
+    dra: 'His sister standing afar off, and taking notice what would be done.',
+  },
+  'EXO 2:5': {
+    rsv: 'Now the daughter of Pharaoh came down to bathe at the river, and her maidens walked beside the river; she saw the basket among the reeds and sent her maid to fetch it.',
+    dra: 'And behold the daughter of Pharao came down to wash herself in the river: and her maids walked by the river\'s brink. And when she saw the basket in the sedges, she sent one of her maids for it: and when it was brought,',
+  },
+  'EXO 2:6': {
+    rsv: 'When she opened it she saw the child; and lo, the babe was crying. She took pity on him and said, “This is one of the Hebrews’ children.”',
+    dra: 'She opened it and seeing within it an infant crying, having compassion on it she said: This is one of the babes of the Hebrews.',
+  },
+  'EXO 2:7': {
+    rsv: 'Then his sister said to Pharaoh’s daughter, “Shall I go and call you a nurse from the Hebrew women to nurse the child for you?”',
+    dra: 'And the child\'s sister said to her Shall I go and call to thee a Hebrew woman, to nurse the babe?',
+  },
+  'EXO 2:8': {
+    rsv: 'And Pharaoh’s daughter said to her, “Go.” So the girl went and called the child’s mother.',
+    dra: 'She answered: Go. The maid went and called her mother.',
+  },
+  'EXO 2:9': {
+    rsv: 'And Pharaoh’s daughter said to her, “Take this child away, and nurse him for me, and I will give you your wages.” So the woman took the child and nursed him.',
+    dra: 'And Pharao\'s daughter said to her. Take this child and nurse him for me: I will give thee thy wages. The woman took, and nursed the child: and when he was grown up, she delivered him to Pharao\'s daughter.',
+  },
+  'EXO 2:10': {
+    rsv: 'And the child grew, and she brought him to Pharaoh’s daughter, and he became her son; and she named him Moses, for she said, “Because I drew him out of the water.”',
+    dra: 'And she adopted him for a son, and called him Moses, saying: Because I took him out of the water.',
+  },
+  'GAL 4:4': {
+    rsv: 'But when the time had fully come, God sent forth his Son, born of woman, born under the law,',
+    dra: 'But when the fulness of the time was come, God sent his Son, made of a woman, made under the law:',
+  },
+  'GAL 4:5': {
+    rsv: 'to redeem those who were under the law, so that we might receive adoption as sons.',
+    dra: 'That he might redeem them who were under the law: that we might receive the adoption of sons.',
+  },
+  'EXO 2:11': {
+    rsv: 'One day, when Moses had grown up, he went out to his people and looked on their burdens; and he saw an Egyptian beating a Hebrew, one of his people.',
+    dra: 'In those days after Moses was grown up, he went out to his brethren: and saw their affliction, and an Egyptian striking one of the Hebrews his brethren.',
+  },
+  'EXO 2:13': {
+    rsv: 'When he went out the next day, behold, two Hebrews were struggling together; and he said to the man that did the wrong, “Why do you strike your fellow?”',
+    dra: 'And going out the next day, he saw two Hebrews quarrelling: and he said to him that did the wrong: Why strikest thou thy neighbour?',
+  },
+  'EXO 2:14': {
+    rsv: 'He answered, “Who made you a prince and a judge over us? Do you mean to kill me as you killed the Egyptian?” Then Moses was afraid, and thought, “Surely the thing is known.”',
+    dra: 'But he answered: Who hath appointed thee prince and judge over us: wilt thou kill me, as thou didst yesterday kill the Egyptian? Moses feared, and said: How is this come to be known?',
+  },
+  'EXO 2:15': {
+    rsv: 'When Pharaoh heard of it, he sought to kill Moses. But Moses fled from Pharaoh, and stayed in the land of Midian; and he sat down by a well.',
+    dra: 'And Pharao heard of this word and sought to kill Moses: but he fled from his sight, and abode in the land of Madian, and he sat down by a well.',
+  },
+  'EXO 2:16': {
+    rsv: 'Now the priest of Midian had seven daughters; and they came and drew water, and filled the troughs to water their father’s flock.',
+    dra: 'And the priest of Madian had seven daughters, who came to draw water: and when the troughs were filled, desired to water their father\'s flocks.',
+  },
+  'EXO 2:17': {
+    rsv: 'The shepherds came and drove them away; but Moses stood up and helped them, and watered their flock.',
+    dra: 'And the shepherds came and drove them away: and Moses arose, and defending the maids, watered their sheep.',
+  },
+  'EXO 2:19': {
+    rsv: 'They said, “An Egyptian delivered us out of the hand of the shepherds, and even drew water for us and watered the flock.”',
+    dra: 'They answered: A man of Egypt delivered us from the hands of the shepherds: and he drew water also with us, and gave the sheep to drink.',
+  },
+  'EXO 2:20': {
+    rsv: 'He said to his daughters, “And where is he? Why have you left the man? Call him, that he may eat bread.”',
+    dra: 'But he said: Where is he? why have you let the man go? call him that he may eat bread.',
+  },
+  'EXO 2:22': {
+    rsv: 'She bore a son, and he called his name Gershom; for he said, “I have been a sojourner in a foreign land.”',
+    dra: 'And she bore him a son, whom he called Gersam, saying: I have been a stranger in a foreign country. And she bore another, whom he called Eliezer, saying: For the God of my father, my helper hath delivered me out of the hand of Pharao.',
+  },
+  'EXO 2:23': {
+    rsv: 'In the course of those many days the king of Egypt died. And the people of Israel groaned under their bondage, and cried out for help, and their cry under bondage came up to God.',
+    dra: 'Now after a long time the king of Egypt died: and the children of Israel groaning, cried out because of the works: and their cry went up unto God from the works.',
+  },
+  'EXO 2:24': {
+    rsv: 'And God heard their groaning, and God remembered his covenant with Abraham, with Isaac, and with Jacob.',
+    dra: 'And he heard their groaning, and remembered the covenant which he made with Abraham, Isaac, and Jacob.',
+  },
+  'EXO 2:25': {
+    rsv: 'And God saw the people of Israel, and God knew their condition.',
+    dra: 'And the Lord looked upon the children of Israel, and he knew them.',
+  },
+  'ACT 7:35': {
+    rsv: '“This Moses whom they refused, saying, ‘Who made you a ruler and a judge?’ God sent as both ruler and deliverer by the hand of the angel that appeared to him in the bush.',
+    dra: 'This Moses, whom they refused, saying: Who hath appointed thee prince and judge? him God sent to be prince and redeemer by the hand of the angel who appeared to him in the bush.',
+  },
+  'JHN 1:11': {
+    rsv: 'He came to his own home, and his own people received him not.',
+    dra: 'He came unto his own, and his own received him not.',
+  },
+  'EXO 3:1': {
+    rsv: 'Now Moses was keeping the flock of his father-in-law, Jethro, the priest of Midian; and he led his flock to the west side of the wilderness, and came to Horeb, the mountain of God.',
+    dra: 'Now Moses fed the sheep of Jethro his father in law, the priest of Madian: and he drove the flock to the inner parts of the desert, and came to the mountain of God, Horeb.',
+  },
+  'EXO 3:2': {
+    rsv: 'And the angel of the LORD appeared to him in a flame of fire out of the midst of a bush; and he looked, and lo, the bush was burning, yet it was not consumed.',
+    dra: 'And the Lord appeared to him in a flame of fire out of the midst of a bush: and he saw that the bush was on fire and was not burnt.',
+  },
+  'EXO 3:3': {
+    rsv: 'And Moses said, “I will turn aside and see this great sight, why the bush is not burnt.”',
+    dra: 'And Moses said: I will go and see this great sight, why the bush is not burnt.',
+  },
+  'EXO 3:4': {
+    rsv: 'When the LORD saw that he turned aside to see, God called to him out of the bush, “Moses, Moses!” And he said, “Here am I.”',
+    dra: 'And when the Lord saw that he went forward to see, he called to him out of the midst of the bush, and said: Moses, Moses. And he answered: Here I am.',
+  },
+  'EXO 3:5': {
+    rsv: 'Then he said, “Do not come near; put off your shoes from your feet, for the place on which you are standing is holy ground.”',
+    dra: 'And he said: Come not nigh hither, put off the shoes from thy feet: for the place whereon thou standest is holy ground.',
+  },
+  'EXO 3:6': {
+    rsv: 'And he said, “I am the God of your father, the God of Abraham, the God of Isaac, and the God of Jacob.” And Moses hid his face, for he was afraid to look at God.',
+    dra: 'And he said: I am the God of thy father, the God of Abraham, the God of Isaac, and the God of Jacob. Moses hid his face: for he durst not look at God.',
+  },
+  'EXO 3:7': {
+    rsv: 'Then the LORD said, “I have seen the affliction of my people who are in Egypt, and have heard their cry because of their taskmasters; I know their sufferings,',
+    dra: 'And the Lord said to him: I have seen the affliction of my people in Egypt, and I have heard their cry because of the rigour of them that are over the works:',
+  },
+  'EXO 3:8': {
+    rsv: 'and I have come down to deliver them out of the hand of the Egyptians, and to bring them up out of that land to a good and broad land, a land flowing with milk and honey…',
+    dra: '…I am come down to deliver them out of the hands of the Egyptians, and to bring them out of that land into a good and spacious land, into a land that floweth with milk and honey…',
+    partial: true,
+  },
+  'EXO 3:10': {
+    rsv: 'Come, I will send you to Pharaoh that you may bring forth my people, the sons of Israel, out of Egypt.”',
+    dra: 'But come, and I will send thee to Pharao, that thou mayst bring forth my people, the children of Israel out of Egypt.',
+  },
+  'EXO 3:11': {
+    rsv: 'But Moses said to God, “Who am I that I should go to Pharaoh, and bring the sons of Israel out of Egypt?”',
+    dra: 'And Moses said to God: Who am I that I should go to Pharao, and should bring forth the children of Israel out of Egypt?',
+  },
+  'EXO 3:12': {
+    rsv: 'He said, “But I will be with you; and this shall be the sign for you, that I have sent you: when you have brought forth the people out of Egypt, you shall serve God upon this mountain.”',
+    dra: 'And he said to him: I will be with thee: and this thou shalt have for a sign, that I have sent thee: When thou shalt have brought my people out of Egypt, thou shalt offer sacrifice to God upon this mountain.',
+  },
+  'EXO 3:13': {
+    rsv: 'Then Moses said to God, “If I come to the people of Israel and say to them, ‘The God of your fathers has sent me to you,’ and they ask me, ‘What is his name?’ what shall I say to them?”',
+    dra: 'Moses said to God: Lo, I shall go to the children of Israel, and say to them: The God of your fathers hath sent me to you. If they should say to me: What is his name? what shall I say to them?',
+  },
+  'EXO 3:14': {
+    rsv: 'God said to Moses, “I AM WHO I AM.” And he said, “Say this to the people of Israel, ‘I AM has sent me to you.’”',
+    dra: 'God said to Moses: I AM WHO AM. He said: Thus shalt thou say to the children of Israel: HE WHO IS, hath sent me to you.',
+  },
+  'EXO 4:1': {
+    rsv: 'Then Moses answered, “But behold, they will not believe me or listen to my voice, for they will say, ‘The LORD did not appear to you.’”',
+    dra: 'Moses answered and said: They will not believe me, nor hear my voice, but they will say: The Lord hath not appeared to thee.',
+  },
+  'EXO 4:2': {
+    rsv: 'The LORD said to him, “What is that in your hand?” He said, “A rod.”',
+    dra: 'Then he said to him: What is that thou holdest in thy hand? He answered: A rod.',
+  },
+  'EXO 4:3': {
+    rsv: 'And he said, “Cast it on the ground.” So he cast it on the ground, and it became a serpent; and Moses fled from it.',
+    dra: 'And the Lord said: Cast it down upon the ground. He cast it down, and it was turned into a serpent: so that Moses fled from it.',
+  },
+  'EXO 4:10': {
+    rsv: 'But Moses said to the LORD, “Oh, my Lord, I am not eloquent, either heretofore or since thou hast spoken to thy servant; but I am slow of speech and of tongue.”',
+    dra: 'Moses said: I beseech thee, Lord. I am not eloquent from yesterday and the day before: and since thou hast spoken to thy servant, I have more impediment and slowness of tongue.',
+  },
+  'EXO 4:12': {
+    rsv: 'Now therefore go, and I will be with your mouth and teach you what you shall speak.”',
+    dra: 'Go therefore and I will be in thy mouth: and I will teach thee what thou shalt speak.',
+  },
+  'EXO 4:17': {
+    rsv: 'And you shall take in your hand this rod, with which you shall do the signs.”',
+    dra: 'And take this rod in thy hand, wherewith thou shalt do the signs.',
+  },
+  'JHN 8:58': {
+    rsv: 'Jesus said to them, “Truly, truly, I say to you, before Abraham was, I am.”',
+    dra: 'Jesus said to them: Amen, amen I say to you, before Abraham was made, I am.',
+  },
+  'EXO 4:18': {
+    rsv: 'Moses went back to Jethro his father-in-law and said to him, “Let me go back, I pray, to my kinsmen in Egypt and see whether they are still alive.” And Jethro said to Moses, “Go in peace.”',
+    dra: 'Moses went his way, and returned to Jethro his father in law and said to him: I will go and return to my brethren into Egypt, that I may see if they be yet alive. And Jethro said to him: Go in peace.',
+  },
+  'EXO 4:19': {
+    rsv: 'And the LORD said to Moses in Midian, “Go back to Egypt; for all the men who were seeking your life are dead.”',
+    dra: 'And the Lord said to Moses, in Madian: Go, and return into Egypt: for they are all dead that sought thy life.',
+  },
+  'EXO 4:20': {
+    rsv: 'So Moses took his wife and his sons and set them on an ass, and went back to the land of Egypt; and in his hand Moses took the rod of God.',
+    dra: 'Moses therefore took his wife, and his sons, and set them upon an ass: and returned into Egypt, carrying the rod of God in his hand.',
+  },
+  'EXO 4:27': {
+    rsv: 'The LORD said to Aaron, “Go into the wilderness to meet Moses.” So he went, and met him at the mountain of God and kissed him.',
+    dra: 'And the Lord said to Aaron: Go into the desert to meet Moses. And he went forth to meet him in the mountain of God, and kissed him.',
+  },
+  'EXO 4:28': {
+    rsv: 'And Moses told Aaron all the words of the LORD with which he had sent him, and all the signs which he had charged him to do.',
+    dra: 'And Moses told Aaron all the words of the Lord, by which he had sent him, and the signs that he had commanded.',
+  },
+  'EXO 4:29': {
+    rsv: 'Then Moses and Aaron went and gathered together all the elders of the people of Israel.',
+    dra: 'And they came together, and they assembled all the ancients of the children of Israel.',
+  },
+  'EXO 4:30': {
+    rsv: 'And Aaron spoke all the words which the LORD had spoken to Moses, and did the signs in the sight of the people.',
+    dra: 'And Aaron spoke all the words which the Lord had said to Moses: and he wrought the signs before the people,',
+  },
+  'EXO 4:31': {
+    rsv: 'And the people believed; and when they heard that the LORD had visited the people of Israel and that he had seen their affliction, they bowed their heads and worshiped.',
+    dra: 'And the people believed. And they heard that the Lord had visited the children of Israel: and that he had looked upon their affliction: and falling down they adored.',
+  },
+  'MAT 2:20': {
+    rsv: '“Rise, take the child and his mother, and go to the land of Israel, for those who sought the child’s life are dead.”',
+    dra: 'Saying: Arise, and take the child and his mother, and go into the land of Israel. For they are dead that sought the life of the child.',
+  },
+  'EXO 4:4': {
+    rsv: 'But the LORD said to Moses, “Put out your hand, and take it by the tail”—so he put out his hand and caught it, and it became a rod in his hand—',
+    dra: 'And the Lord said: Put out thy hand and take it by the tail. He put forth his hand, and took hold of it, and it was turned into a rod.',
+  },
+  'EXO 4:6': {
+    rsv: 'Again, the LORD said to him, “Put your hand into your bosom.” And he put his hand into his bosom; and when he took it out, behold, his hand was leprous, as white as snow.',
+    dra: 'And the Lord said again: Put thy hand into thy bosom. And when he had put it into his bosom, he brought it forth leprous as snow.',
+  },
+  'EXO 4:7': {
+    rsv: 'Then God said, “Put your hand back into your bosom.” So he put his hand back into his bosom; and when he took it out, behold, it was restored like the rest of his flesh.',
+    dra: 'And he said: Put back thy hand into thy bosom. He put it back, and brought it out again, and it was like the other flesh.',
+  },
+  'EXO 4:9': {
+    rsv: 'If they will not believe even these two signs or heed your voice, you shall take some water from the Nile and pour it upon the dry ground; and the water which you shall take from the Nile will become blood upon the dry ground.”',
+    dra: 'But if they will not even believe these two signs, nor hear thy voice: take of the river water, and pour it out upon the dry land, and whatsoever thou drawest out of the river shall be turned into blood.',
+  },
 }
 
 /** A verse's words in the active translation. Throws for a verse that isn't in the list (a content check catches these first). */

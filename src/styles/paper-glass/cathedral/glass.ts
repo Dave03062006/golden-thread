@@ -457,6 +457,47 @@ export const EMBLEMS: Record<string, () => Piece[]> = {
     ]),
     { d: star8(0, -13, 3), color: '#ffe48a' },
   ],
+  // Level 7 · Moses Is Called
+  // A lamp in the window of a Hebrew house, where a baby is safe.
+  'window-lamp': () => [
+    { d: P([[-14, 16], [-14, -8], [0, -16], [14, -8], [14, 16]]), color: '#b08a5a' },
+    { d: P([[-7, 8], [-7, -4], [7, -4], [7, 8]]), color: '#2a2440' },
+    { d: P([[-5, 6], [5, 6], [3, 2], [-3, 2]]), color: '#c8784a' },
+    { d: P([[0, 2], [2, -2], [0, -5], [-2, -2]]), color: '#ffe48a' },
+    { d: star8(0, -2, 4), color: '#fff4c0' },
+  ],
+  // The little basket of bulrushes among the reeds.
+  'reed-basket': () => [
+    { d: P([[-16, 10], [16, 10], [16, 16], [-16, 16]]), color: '#3a7ab0' },
+    { d: P([[-11, 4], [11, 4], [8, 12], [-8, 12]]), color: '#a8843a' },
+    { d: P([[-11, 4], [11, 4], [9, 0], [-9, 0]]), color: '#c8a050' },
+    ...[-14, -12, 12, 14].map((x, i) => ({ d: P([[x - 0.8, 12], [x + 0.8, 12], [x + 1.2 * (i < 2 ? -1 : 1), -12 + (i % 2) * 6], [x, -12 + (i % 2) * 6]]), color: '#5a8a3a' })),
+    { d: star8(0, -10, 3), color: '#ffe48a' },
+  ],
+  // The water trough by the well in Midian, full, with a sheep drinking.
+  'water-trough': () => [
+    { d: P([[-15, 4], [5, 4], [5, 12], [-15, 12]]), color: '#8a6a4a' },
+    { d: P([[-13, 4], [3, 4], [3, 7], [-13, 7]]), color: '#5ab0e0' },
+    { d: circ(10, 2, 6, 16), color: '#f4eee0' },
+    { d: circ(5, 2, 3, 12), color: '#3a3030' },
+    { d: P([[8, 7], [10, 7], [10, 14], [8, 14]]), color: '#3a3030' },
+    { d: P([[12, 7], [14, 7], [14, 14], [12, 14]]), color: '#3a3030' },
+    { d: star8(-6, -10, 3), color: '#ffe48a' },
+  ],
+  // The bush that burned and was not consumed.
+  'burning-bush': () => [
+    { d: P([[-16, 16], [16, 16], [14, 12], [-14, 12]]), color: '#8a7a62' },
+    { d: P([[-12, 12], [-8, -6], [-2, 2], [0, -14], [3, 0], [8, -8], [12, 12]]), color: '#f08a2a' },
+    { d: P([[-7, 12], [-4, 0], [0, 6], [2, -6], [5, 4], [8, 12]]), color: '#ffd84a' },
+    ...[[-6, 6], [4, 8], [0, 10], [-9, 9], [8, 6]].map(([x, y]) => ({ d: circ(x!, y!, 2.2, 8), color: '#4a8a3a' })),
+  ],
+  // The rod of God, and the serpent it became.
+  'rod-serpent': () => [
+    { d: P([[-9, -16], [-6, -16], [-3, 16], [-6, 16]]), color: '#8a6038' },
+    { d: P([[-10, -16], [-4, -16], [-4, -13], [-10, -13]]), color: '#a8743a' },
+    { d: P([[2, 14], [8, 10], [3, 4], [9, -2], [4, -8], [8, -12], [11, -11], [7, -7], [12, -2], [6, 4], [11, 10], [4, 16]]), color: '#5a8a3a' },
+    { d: circ(9.5, -12.5, 2.4, 10), color: '#4a7a2a' },
+  ],
 }
 
 /** The medallions' backgrounds: deep blue, with one ruby for the darkest story. */

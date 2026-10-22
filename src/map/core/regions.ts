@@ -132,6 +132,8 @@ const AREAS: MapRegion[] = [
   // Where most scholars place Sodom and Gomorrah: the southern end of the Dead Sea.
   { id: 'dead-sea', name: 'The southern Dead Sea', kind: 'area', shape: pairs([[31.25, 35.35], [31.25, 35.6], [30.9, 35.55], [30.9, 35.35]]) },
   // Edom, the red mountains south-east of the Dead Sea, east of the Arabah valley.
+  // Midian, east of the Gulf of Aqaba, where Moses fled and kept Jethro's flock.
+  { id: 'midian', name: 'Midian', kind: 'area', shape: pairs([[29.6, 35.05], [29.6, 36.2], [28.0, 36.6], [27.2, 36.0], [27.6, 35.3], [28.4, 34.9]]) },
   { id: 'edom', name: 'Edom', kind: 'area', shape: pairs([[30.85, 35.5], [30.85, 35.85], [29.75, 35.6], [29.75, 35.05], [30.4, 35.25]]) },
 ]
 
