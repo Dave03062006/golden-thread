@@ -14,6 +14,7 @@ import type { PaperPropArt, PartMotion } from '../art'
  * - lift: the arm raised high, sending out or welcoming the dove.
  * - kneel: kneeling low, at the altar.
  * - carry: the arm held out in front, carrying (the cloak, a brick, a basket).
+ * - sit: low on the ground, the arm resting: sitting in grief, or keeping someone company.
  */
 
 const TAU = Math.PI * 2
@@ -73,7 +74,7 @@ const MALLET = `<path d="M11 58L11 70" stroke="#7a5a32" stroke-width="2.2" strok
 
 function moving(part: string, pose: string, time: number): PartMotion {
   const breath = Math.sin(time * TAU * 0.24)
-  const kneel = pose === 'kneel'
+  const kneel = pose === 'kneel' || pose === 'sit'
   if (part === 'leg-front' || part === 'leg-back') {
     // Kneeling, the robe comes down to the ground and hides the legs folded under it.
     if (kneel) return { y: 30, opacity: 0 }
@@ -84,6 +85,7 @@ function moving(part: string, pose: string, time: number): PartMotion {
   const step = pose === 'walk' ? Math.abs(Math.sin(time * TAU * 1.1)) * -1.2 : 0
   if (part === 'arm' || part === 'mallet') {
     if (part === 'mallet' && pose !== 'work') return { opacity: 0 }
+    if (pose === 'sit') return { y: low, rotate: 22 + 1.5 * breath }
     if (pose === 'pray' || pose === 'kneel') return { y: low, rotate: 150 + 3 * Math.sin(time * TAU * 0.2) }
     if (pose === 'lift') return { rotate: 168 + 2 * Math.sin(time * TAU * 0.3) }
     if (pose === 'work') return { rotate: 60 + 40 * Math.sin(time * TAU * 0.9) }
@@ -95,11 +97,32 @@ function moving(part: string, pose: string, time: number): PartMotion {
   return {}
 }
 
+/**
+ * Several people standing together, drawn as one cut-paper piece in two layers rather than
+ * a puppet each: a whole family can stand in a scene for the cost of one figure.
+ */
+function band(looks: Look[], spacing = 30): PaperPropArt {
+  const at = (look: Look, i: number) => `<g transform="translate(${i * spacing} ${i % 2 ? 2 : 0})">${leg(21)}${leg(12.5)}${figure(look)}${ARM}</g>`
+  const layer = (odd: number) => looks.map((look, i) => (i % 2 === odd ? at(look, i) : '')).join('')
+  return {
+    box: { x: 0, y: 0, w: 40 + (looks.length - 1) * spacing, h: 122 },
+    facing: -1,
+    poses: ['idle'],
+    anchor: 'base',
+    parts: [
+      { id: 'back', svg: layer(1) },
+      { id: 'front', svg: layer(0) },
+    ],
+    // They shift their weight a little, out of step with each other.
+    animate: (part, _pose, time) => ({ y: 0.6 * Math.sin(time * TAU * 0.3 + (part === 'back' ? 1.3 : 0)) }),
+  }
+}
+
 function person(look: Look): PaperPropArt {
   return {
     box: { x: 0, y: 0, w: 40, h: 120 },
     facing: -1,
-    poses: ['idle', 'walk', 'pray', 'work', 'lift', 'kneel', 'carry'],
+    poses: ['idle', 'walk', 'pray', 'work', 'lift', 'kneel', 'carry', 'sit'],
     anchor: 'base',
     parts: [
       { id: 'leg-back', pivot: HIP, svg: leg(21) },
@@ -174,6 +197,38 @@ export const familyOfNoah: Record<string, PaperPropArt> = {
   baker: person({ robe: '#e8d8b8', fold: '#c0ae8a', hair: '#1a1210', sash: '#a8743a' }),
   pharaoh: person({ robe: '#f4f0e6', fold: '#d0c8b4', hair: '#1a1210', veil: '#e0b040', sash: '#2a5aa0' }),
   steward: person({ robe: '#d8ccb0', fold: '#b0a486', hair: '#1a1210', sash: '#3a8a8a' }),
+  // Level 6 · Job: Job in his fine robe, in sackcloth among the ashes, and white-haired at
+  // the end; his wife, veiled in mourning; his three friends, Eliphaz the eldest, Bildad and
+  // Zophar; a messenger, dusty from the road; and one of his daughters.
+  job: person({ robe: '#3a4a7a', fold: '#26325a', hair: '#a8a49c', beard: '#a8a49c', sash: '#d8b050' }),
+  'job-mourning': person({ robe: '#7a6e5c', fold: '#5a503e', hair: '#a8a49c', beard: '#a8a49c' }),
+  'job-old': person({ robe: '#3a4a7a', fold: '#26325a', hair: '#ece8e0', beard: '#ece8e0', sash: '#d8b050' }),
+  'jobs-wife': person({ robe: '#6a4a6a', fold: '#4a304a', hair: '#2a1e1a', veil: '#5a5a6a' }),
+  eliphaz: person({ robe: '#8a2a3a', fold: '#641c28', hair: '#d8d4cc', beard: '#d8d4cc', sash: '#e0b850' }),
+  bildad: person({ robe: '#3a6a4a', fold: '#244a32', hair: '#3a2a1e', beard: '#3a2a1e', sash: '#c8a050' }),
+  zophar: person({ robe: '#b88a3a', fold: '#8a6424', hair: '#1a1210', beard: '#1a1210', sash: '#3a5a8a' }),
+  messenger: person({ robe: '#b8a888', fold: '#8a7c60', hair: '#2a1e1a' }),
+  daughter: person({ robe: '#a84a6a', fold: '#7a3048', hair: '#2a1e1a', veil: '#f0e0c8' }),
+  // Job's seven sons, three daughters and his servants, each drawn as one band.
+  'jobs-sons': band([
+    { robe: '#5a6a3a', fold: '#3e4c26', hair: '#2a1e1a', beard: '#2a1e1a' },
+    { robe: '#7a4a3a', fold: '#5a3426', hair: '#1a1210', beard: '#1a1210', sash: '#d8b050' },
+    { robe: '#3a5a7a', fold: '#264058', hair: '#2a1e1a', beard: '#2a1e1a' },
+    { robe: '#8a7a4a', fold: '#665a32', hair: '#3a2a1e', beard: '#3a2a1e', sash: '#3a6a8a' },
+    { robe: '#6a3a5a', fold: '#4c2640', hair: '#1a1210', beard: '#1a1210' },
+    { robe: '#4a6a5a', fold: '#304c40', hair: '#2a1e1a', beard: '#2a1e1a', sash: '#c8a050' },
+    { robe: '#9a5a32', fold: '#743e20', hair: '#2a1e1a' },
+  ]),
+  'jobs-servants': band([
+    { robe: '#b8a888', fold: '#8a7c60', hair: '#2a1e1a', beard: '#2a1e1a' },
+    { robe: '#a89878', fold: '#7c6e54', hair: '#1a1210', sash: '#7a5a3a' },
+    { robe: '#c4b494', fold: '#968a6a', hair: '#2a1e1a', beard: '#2a1e1a' },
+  ]),
+  'jobs-daughters': band([
+    { robe: '#a84a6a', fold: '#7a3048', hair: '#2a1e1a', veil: '#f0e0c8' },
+    { robe: '#4a7aa0', fold: '#305a7a', hair: '#1a1210', veil: '#e8e0f0' },
+    { robe: '#c08a3a', fold: '#946424', hair: '#2a1e1a', veil: '#f4ecd8' },
+  ]),
   // The children born after the Flood, drawn smaller in the scene.
   boy: person({ robe: '#b0843e', fold: '#82602a', hair: '#2a1e1a' }),
   girl: person({ robe: '#a8505a', fold: '#7a343c', hair: '#2a1e1a', veil: '#e8d8b8' }),

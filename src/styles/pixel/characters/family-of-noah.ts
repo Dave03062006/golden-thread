@@ -6,7 +6,7 @@ import { sprite, type Grid } from '../shapes'
  * The people of Level 2 (Noah and the Nations) as pixel sprites: silhouettes like the
  * first family, with the light on their left edge, now in long robes of their own colors.
  * Drawn in the same 18-pixel grid, with the poses the level asks for: idle, walk, pray,
- * work (a mallet), lift (the dove), kneel and carry.
+ * work (a mallet), lift (the dove), kneel and carry, and sit (low on the ground, arms down).
  */
 
 const X = 4
@@ -23,25 +23,35 @@ interface Look {
 
 type Arm = 'down' | 'up' | 'high' | 'swing' | 'forward'
 
+/** The letters a figure's own colors are drawn with: its hair, beard, veil, robe and sash. */
+interface Keys {
+  H: string
+  B: string
+  V: string
+  K: string
+  W: string
+}
+const KEYS: Keys = { H: 'H', B: 'B', V: 'V', K: 'K', W: 'W' }
+
 /** The figure in its robe, with the front arm and, for work, a mallet. */
-function draw(g: Grid, look: Look, up: number, arm: Arm, step: number, kneel: boolean) {
+function draw(g: Grid, look: Look, up: number, arm: Arm, step: number, kneel: boolean, x0 = X, keys: Keys = KEYS) {
   const k = kneel ? 8 : 0
   // Feet below the hem, stepping apart when walking.
-  if (kneel) g.rect(X + 1, 30, 9, 1, 'S')
-  else g.rect(X + 2 - step, 29, 3, 2, 'S').rect(X + 6 + step, 29, 3, 2, 'S')
+  if (kneel) g.rect(x0 + 1, 30, 9, 1, 'S')
+  else g.rect(x0 + 2 - step, 29, 3, 2, 'S').rect(x0 + 6 + step, 29, 3, 2, 'S')
   // The robe, from the shoulders to the ankles.
   const top = 8 + up + k
-  g.rect(X + 2, top, 7, 29 - top, 'K').rect(X + 1, top + 10, 9, 29 - top - 10, 'K')
-  if (look.sash) g.rect(X + 2, top + 9, 7, 1, 'W')
+  g.rect(x0 + 2, top, 7, 29 - top, keys.K).rect(x0 + 1, top + 10, 9, 29 - top - 10, keys.K)
+  if (look.sash) g.rect(x0 + 2, top + 9, 7, 1, keys.W)
   // Neck and head, hair, beard or veil.
-  g.rect(X + 5, 6 + up + k, 2, 2, 'S')
-  g.ellipse(X + 5.5, 3.6 + up + k, 2.6, 2.7, 'S')
-  g.set(X + 2, 4 + up + k, 'S')
-  g.ellipse(X + 6.2, 2.4 + up + k, 2.2, 1.6, 'H')
-  if (look.beard) g.rect(X + 3, 5 + up + k, 2, 2, 'B').set(X + 4, 7 + up + k, 'B')
-  if (look.veil) g.rect(X + 5, 1 + up + k, 4, 2, 'V').rect(X + 7, 3 + up + k, 2, 7, 'V')
+  g.rect(x0 + 5, 6 + up + k, 2, 2, 'S')
+  g.ellipse(x0 + 5.5, 3.6 + up + k, 2.6, 2.7, 'S')
+  g.set(x0 + 2, 4 + up + k, 'S')
+  g.ellipse(x0 + 6.2, 2.4 + up + k, 2.2, 1.6, keys.H)
+  if (look.beard) g.rect(x0 + 3, 5 + up + k, 2, 2, keys.B).set(x0 + 4, 7 + up + k, keys.B)
+  if (look.veil) g.rect(x0 + 5, 1 + up + k, 4, 2, keys.V).rect(x0 + 7, 3 + up + k, 2, 7, keys.V)
   // The front arm.
-  const sx = X + 2
+  const sx = x0 + 2
   const sy = 9 + up + k
   if (arm === 'down') g.rect(sx, sy, 1, 8, 'S')
   else if (arm === 'up') g.line(sx, sy, sx - 3, sy - 6, 'S')
@@ -52,7 +62,18 @@ function draw(g: Grid, look: Look, up: number, arm: Arm, step: number, kneel: bo
     g.rect(sx - 6, sy + 1, 3, 3, 'M').set(sx - 4, sy + 4, 'T')
   }
   g.rim('S', 'R', 'left')
-  g.rim('K', 'R', 'left')
+  g.rim(keys.K, 'R', 'left')
+}
+
+/** Several people standing side by side in one sprite: a whole family for the cost of one figure. */
+function band(looks: Look[], spacing = 8): PixelSpriteArt {
+  // Each figure draws its own colors with letters of its own (sprite cells are single letters).
+  const letters = 'abcdefghijklnopquvxyz0123456789ACDEFGIJ'
+  const keys = looks.map((_, n): Keys => ({ H: letters[n * 5]!, B: letters[n * 5 + 1]!, V: letters[n * 5 + 2]!, K: letters[n * 5 + 3]!, W: letters[n * 5 + 4]! }))
+  const colors: Record<string, string> = { S: C.wood1, R: C.gold, M: C.wood2, T: C.wood1 }
+  looks.forEach((look, n) => Object.assign(colors, { [keys[n]!.H]: look.hair, [keys[n]!.B]: look.beard ?? C.wood0, [keys[n]!.V]: look.veil ?? C.pale, [keys[n]!.K]: look.robe, [keys[n]!.W]: look.sash ?? C.gold }))
+  const frame = (i: number) => sprite(WIDTH + (looks.length - 1) * spacing, HEIGHT, (g) => looks.forEach((look, n) => draw(g, look, (n + i) % 2 ? -1 : 0, 'down', 0, false, X + n * spacing, keys[n])))
+  return { kind: 'sprite', facing: -1, anchor: 'base', colors, poses: { idle: { frames: [frame(0), frame(1)], fps: 0.45 } } }
 }
 
 function person(look: Look): PixelSpriteArt {
@@ -71,6 +92,7 @@ function person(look: Look): PixelSpriteArt {
       lift: { frames: frames('high'), fps: 0.4 },
       kneel: { frames: frames('up', [0, 0], true), fps: 0.4 },
       carry: { frames: frames('forward'), fps: 0.45 },
+      sit: { frames: frames('down', [0, 0], true), fps: 0.4 },
     },
   }
 }
@@ -151,6 +173,34 @@ export const familyOfNoah: Record<string, PixelSpriteArt> = {
   baker: person({ robe: C.pale, hair: C.ink, sash: C.wood3 }),
   pharaoh: person({ robe: C.white, hair: C.ink, veil: C.gold, sash: C.blue }),
   steward: person({ robe: C.sand, hair: C.ink, sash: C.teal }),
+  job: person({ robe: C.navy, hair: C.pale, beard: C.pale, sash: C.gold }),
+  'job-mourning': person({ robe: C.wood2, hair: C.pale, beard: C.pale }),
+  'job-old': person({ robe: C.navy, hair: C.white, beard: C.white, sash: C.gold }),
+  'jobs-wife': person({ robe: C.purple, hair: C.wood0, veil: C.slate }),
+  eliphaz: person({ robe: C.rose, hair: C.white, beard: C.white, sash: C.gold }),
+  bildad: person({ robe: C.green, hair: C.wood1, beard: C.wood1, sash: C.sand }),
+  zophar: person({ robe: C.wood3, hair: C.ink, beard: C.ink, sash: C.blue }),
+  messenger: person({ robe: C.sand, hair: C.wood0 }),
+  daughter: person({ robe: C.orange, hair: C.wood0, veil: C.white }),
+  'jobs-sons': band([
+    { robe: C.green, hair: C.wood0, beard: C.wood0 },
+    { robe: C.wood2, hair: C.ink, beard: C.ink, sash: C.gold },
+    { robe: C.blue, hair: C.wood0, beard: C.wood0 },
+    { robe: C.sand2, hair: C.wood1, beard: C.wood1, sash: C.teal },
+    { robe: C.purple, hair: C.ink, beard: C.ink },
+    { robe: C.teal, hair: C.wood0, beard: C.wood0, sash: C.sand },
+    { robe: C.wood3, hair: C.wood0 },
+  ]),
+  'jobs-servants': band([
+    { robe: C.sand, hair: C.wood0, beard: C.wood0 },
+    { robe: C.sand2, hair: C.ink, sash: C.wood2 },
+    { robe: C.sand, hair: C.wood0, beard: C.wood0 },
+  ]),
+  'jobs-daughters': band([
+    { robe: C.orange, hair: C.wood0, veil: C.white },
+    { robe: C.sky, hair: C.ink, veil: C.pale },
+    { robe: C.gold, hair: C.wood0, veil: C.white },
+  ]),
   boy: child({ robe: C.wood3, hair: C.wood0 }),
   girl: child({ robe: C.rose, hair: C.wood0, veil: C.white }),
 }

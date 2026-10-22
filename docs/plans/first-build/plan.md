@@ -416,6 +416,34 @@ The same way again: script, art, build, checks, play-test. Level 5 continues Age
   - New `shots` baselines cover the Level 5 scenes; the screens that list the levels (menu, quiz menu, cathedral, ceremony, map) now show Level 5. Dave still needs to look them over.
 - **A fix worth remembering:** art drawn with unrounded `Math.cos` or `Math.sin` can differ in its last digit between the browser that bakes it and the tests that fingerprint it. The chariot's spokes are now rounded.
 
+### Task 12: Level 6, *Job* (M12)
+
+The same way again: script, art, build, checks, play-test. Level 6 completes Age II.
+
+**Status (October 2026):** steps 1–4 are done; step 5 is Dave's.
+- **Script:** `docs/scripts/level-06-job.md`, approved by Dave. It has 6 episodes and 20 scenes, 57 quotations checked word for word, and a 42-question quiz.
+- **Build:** all six episodes are built in both styles, each with a different kind of play from the spec's library:
+  - Job's blessings (light and reveal);
+  - seven days (quiet);
+  - true or twisted? (spotting the twist);
+  - carved in the rock (memory);
+  - where were you? (searching);
+  - home to the fold (gathering).
+- **New art:**
+  - Backdrops: Job's pastures, the ash heap, the court of heaven, the great rock.
+  - Props: the accuser, an ox, the whirlwind, storm clouds, the storehouses of snow, the Pleiades and Orion.
+  - People: Job (in his fine robe, in sackcloth, and old), his wife, his three friends, a messenger.
+  - A new `sit` pose for every person, for sitting in grief.
+  - "Bands": several people drawn as one piece, used for Job's sons, daughters and servants.
+- **Cathedral and map:** the Level 6 window has six medallions and completes the bay of Age II. The map marks the land of Uz with a question mark, and Edom is a new place to tap in the quiz. The road ahead now points to Level 7, *Moses Is Called*, in Egypt.
+- **Music:** six new recordings, all public domain or CC BY. Two pieces had no allowed recording and were replaced (one by a track from Level 1); `music.ts` lists them.
+- **Checks:** all pass.
+  - The playthrough runs Level 6 from start to finish in both styles, through its quiz, reflection and window ceremony (60 checks).
+  - `check`, `test` (1,821 tests), `a11y`, `keyboard` and `saves` pass.
+  - `perf` is within budget for every Level 6 scene in both styles; the busiest averages 1.9 ms of work a frame.
+  - New `shots` baselines cover the Level 6 scenes. Dave still needs to look them over.
+- **A fix worth remembering:** a scene full of separate puppets can fail `perf` on late frames even when its average work is low. The cost is drawing (in the profile, 70% of the time was the browser's own work). Episode 1 first had 13 people and about 20 animals, each person drawn as five pieces. Drawing the sons, daughters and servants as one band each brought late frames from about 1.5% to 0.6%.
+
 ## Parallelization
 
 - **Code tasks run in order.** Each one builds on the last, and running them in order keeps the code consistent for the code tour. I do the work in this session, without subagents, as the session guidelines require.

@@ -99,6 +99,18 @@ const LEVELS = [
       { number: 7, lines: 19, plays: 1 }, // episode-7.ts
     ],
   },
+  {
+    number: 6,
+    complete: true,
+    episodes: [
+      { number: 1, lines: 19, plays: 1 }, // src/content/levels/06-job/episode-1.ts
+      { number: 2, lines: 10, plays: 1 }, // episode-2.ts
+      { number: 3, lines: 9, plays: 1 }, // episode-3.ts
+      { number: 4, lines: 9, plays: 1 }, // episode-4.ts
+      { number: 5, lines: 12, plays: 1 }, // episode-5.ts
+      { number: 6, lines: 10, plays: 1 }, // episode-6.ts
+    ],
+  },
 ]
 
 const value = (name) => process.argv.find((a) => a.startsWith(`--${name}=`))?.split('=')[1]
@@ -228,7 +240,7 @@ async function playEpisode(page, style, { number, lines: expected, plays: expect
 }
 
 /** What the player writes in each level's reflection, different each time so the journal can tell them apart. */
-const REFLECTIONS = { 1: 'I want to stop hiding, and walk with God.', 2: 'Help me trust you when I cannot see, like Noah.', 3: 'Lord, help me go where you call me, even when I cannot see the way.', 4: 'Help me make peace with my brother, and hold on to you in prayer.', 5: 'Help me forgive, and trust that you can bring good out of what is hard.' }
+const REFLECTIONS = { 1: 'I want to stop hiding, and walk with God.', 2: 'Help me trust you when I cannot see, like Noah.', 3: 'Lord, help me go where you call me, even when I cannot see the way.', 4: 'Help me make peace with my brother, and hold on to you in prayer.', 5: 'Help me forgive, and trust that you can bring good out of what is hard.', 6: 'Lord, help me tell you the truth when I am sad, and keep holding on to you.' }
 
 /**
  * The end of a finished level (spec §3.3): the quiz (each question answered as it comes,

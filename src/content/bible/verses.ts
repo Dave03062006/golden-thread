@@ -1613,6 +1613,265 @@ export const VERSES: Record<string, Verse> = {
     rsv: 'and he will reign over the house of Jacob for ever; and of his kingdom there will be no end.”',
     dra: 'And of his kingdom there shall be no end.',
   },
+  // Level 6 · Job, with the verses its games quote. The Douay-Rheims numbers Job 16:19 as 16:20
+  // and Job 40:4 as 39:34, and joins Mark 4:40–41 into one verse (only its second half is given).
+  'JOB 1:1': {
+    rsv: 'There was a man in the land of Uz, whose name was Job; and that man was blameless and upright, one who feared God, and turned away from evil.',
+    dra: 'There was a man in the land of Hus, whose name was Job, and that man was simple and upright, and fearing God, and avoiding evil.',
+  },
+  'JOB 1:2': {
+    rsv: 'There were born to him seven sons and three daughters.',
+    dra: 'And there were born to him seven sons and three daughters.',
+  },
+  'JOB 1:3': {
+    rsv: 'He had seven thousand sheep, three thousand camels, five hundred yoke of oxen, and five hundred she-asses, and very many servants; so that this man was the greatest of all the people of the east.',
+    dra: 'And his possession was seven thousand sheep, and three thousand camels, and five hundred yoke of oxen, and five hundred she asses, and a family exceeding great: and this man was great among all the people of the east.',
+  },
+  'JOB 1:8': {
+    rsv: 'And the LORD said to Satan, “Have you considered my servant Job, that there is none like him on the earth, a blameless and upright man, who fears God and turns away from evil?”',
+    dra: 'And the Lord said to him: Hast thou considered my servant Job, that there is none like him in the earth, a simple and upright man, and fearing God, and avoiding evil?',
+  },
+  'JOB 1:9': {
+    rsv: 'Then Satan answered the LORD, “Does Job fear God for nought?',
+    dra: 'And Satan answering, said: Doth Job fear God in vain?',
+  },
+  'JOB 1:11': {
+    rsv: 'But put forth thy hand now, and touch all that he has, and he will curse thee to thy face.”',
+    dra: 'But stretch forth thy hand a little, and touch all that he hath, and see if he blesseth thee not to thy face.',
+  },
+  'JOB 1:12': {
+    rsv: 'And the LORD said to Satan, “Behold, all that he has is in your power; only upon himself do not put forth your hand.” So Satan went forth from the presence of the LORD.',
+    dra: 'Then the Lord said to Satan: Behold, all that he hath is in thy hand: only put not forth thy hand upon his person. And Satan went forth from the presence of the Lord.',
+  },
+  'JOB 1:20': {
+    rsv: 'Then Job arose, and rent his robe, and shaved his head, and fell upon the ground, and worshiped.',
+    dra: 'Then Job rose up, and rent his garments, and having shaven his head fell down upon the ground and worshipped,',
+  },
+  'JOB 1:21': {
+    rsv: 'And he said, “Naked I came from my mother’s womb, and naked shall I return; the LORD gave, and the LORD has taken away; blessed be the name of the LORD.”',
+    dra: 'And said: Naked came I out of my mother\'s womb, and naked shall I return thither: the Lord gave, and the Lord hath taken away: as it hath pleased the Lord so is it done: blessed be the name of the Lord.',
+  },
+  'JOB 1:22': {
+    rsv: 'In all this Job did not sin or charge God with wrong.',
+    dra: 'In all these things Job sinned not by his lips, nor spoke he any foolish thing against God.',
+  },
+  'JOB 2:8': {
+    rsv: 'And he took a potsherd with which to scrape himself, and sat among the ashes.',
+    dra: 'And he took a potsherd and scraped the corrupt matter, sitting on a dunghill.',
+  },
+  'JOB 2:9': {
+    rsv: 'Then his wife said to him, “Do you still hold fast your integrity? Curse God, and die.”',
+    dra: 'And his wife said to him: Dost thou still continue in thy simplicity? bless God and die.',
+  },
+  'JOB 2:10': {
+    rsv: 'But he said to her, “You speak as one of the foolish women would speak. Shall we receive good at the hand of God, and shall we not receive evil?” In all this Job did not sin with his lips.',
+    dra: 'And he said to her: Thou hast; spoken like one of the foolish women: if we have received good things at the hand of God, why should we not receive evil? In all these things Job did not sin with his lips.',
+  },
+  'LUK 22:31': {
+    rsv: '“Simon, Simon, behold, Satan demanded to have you, that he might sift you like wheat,',
+    dra: 'And the Lord said: Simon, Simon, behold Satan hath desired to have you, that he may sift you as wheat:',
+  },
+  'LUK 22:32': {
+    rsv: 'but I have prayed for you that your faith may not fail; and when you have turned again, strengthen your brethren.”',
+    dra: 'But I have prayed for thee, that thy faith fail not: and thou, being once converted, confirm thy brethren.',
+  },
+  'JOB 2:11': {
+    rsv: 'Now when Job’s three friends heard of all this evil that had come upon him, they came each from his own place, Eliphaz the Temanite, Bildad the Shuhite, and Zophar the Naamathite. They made an appointment together to come to condole with him and comfort him.',
+    dra: 'Now when Job\'s three friends heard all the evil that had befallen him, they came every one from his own place, Alphas the Themanite, and Baldad the Suhite, and Sophar the Naamathite. For they had made an appointment to come together and visit him, and comfort him.',
+  },
+  'JOB 2:12': {
+    rsv: 'And when they saw him from afar, they did not recognize him; and they raised their voices and wept; and they rent their robes and sprinkled dust upon their heads toward heaven.',
+    dra: 'And when they had lifted up their eyes afar off, they knew him not, and crying out they wept, and rending their garments they sprinkled dust upon their heads towards heaven.',
+  },
+  'JOB 2:13': {
+    rsv: 'And they sat with him on the ground seven days and seven nights, and no one spoke a word to him, for they saw that his suffering was very great.',
+    dra: 'And they sat with him on the ground seven days and seven nights, and no man spoke to him a word: for they saw that his grief was very great.',
+  },
+  'JOB 3:1': {
+    rsv: 'After this Job opened his mouth and cursed the day of his birth.',
+    dra: 'After this Job opened his mouth, and cursed his day,',
+  },
+  'JOB 3:3': {
+    rsv: '“Let the day perish wherein I was born, and the night which said, ‘A man-child is conceived.’',
+    dra: 'Let the day perish wherein I was born, and the night in which it was said: A man child is conceived.',
+  },
+  'JOB 3:20': {
+    rsv: '“Why is light given to him that is in misery, and life to the bitter in soul,',
+    dra: 'Why is light given to him that is in misery, and life to them that are in bitterness of soul?',
+  },
+  'JOB 3:24': {
+    rsv: 'For my sighing comes as my bread, and my groanings are poured out like water.',
+    dra: 'Before I eat I sigh: and as overflowing waters, so is my roaring:',
+  },
+  'JOB 3:26': {
+    rsv: 'I am not at ease, nor am I quiet; I have no rest; but trouble comes.”',
+    dra: 'Have I not dissembled? have I not kept silence? have I not been quiet? and indignation is come upon me.',
+  },
+  'MAT 27:46': {
+    rsv: 'And about the ninth hour Jesus cried with a loud voice, “Eli, Eli, lama sabach-thani?” that is, “My God, my God, why hast thou forsaken me?”',
+    dra: 'And about the ninth hour Jesus cried with a loud voice, saying: Eli, Eli, lamma sabacthani? that is, My God, my God, why hast thou forsaken me?',
+  },
+  'JOB 4:7': {
+    rsv: '“Think now, who that was innocent ever perished? Or where were the upright cut off?',
+    dra: 'Remember, I pray thee, who ever perished being innocent? or when were the just destroyed?',
+  },
+  'JOB 4:8': {
+    rsv: 'As I have seen, those who plow iniquity and sow trouble reap the same.',
+    dra: 'On the contrary I have seen those who work iniquity, and sow sorrows, and reap them,',
+  },
+  'JOB 8:3': {
+    rsv: 'Does God pervert justice? Or does the Almighty pervert the right?',
+    dra: 'Doth God pervert judgment, or doth the Almighty overthrow that which is just?',
+  },
+  'JOB 11:6': {
+    rsv: 'and that he would tell you the secrets of wisdom! For he is manifold in understanding. Know then that God exacts of you less than your guilt deserves.',
+    dra: 'That he might shew thee the secrets of wisdom, and that his law is manifold, and thou mightest understand that he exacteth much less of thee, than thy iniquity deserveth.',
+  },
+  'JOB 16:19': {
+    rsv: 'Even now, behold, my witness is in heaven, and he that vouches for me is on high.',
+    dra: 'For behold my witness is in heaven, and he that knoweth my conscience is on high.',
+  },
+  'JOB 23:10': {
+    rsv: 'But he knows the way that I take; when he has tried me, I shall come forth as gold.',
+    dra: 'But he knoweth my way, and has tried me as gold that passeth through the fire:',
+  },
+  'JHN 9:2': {
+    rsv: 'And his disciples asked him, “Rabbi, who sinned, this man or his parents, that he was born blind?”',
+    dra: 'And his disciples asked him: Rabbi, who hath sinned, this man, or his parents, that he should be born blind?',
+  },
+  'JHN 9:3': {
+    rsv: 'Jesus answered, “It was not that this man sinned, or his parents, but that the works of God might be made manifest in him.',
+    dra: 'Jesus answered: Neither hath this man sinned, nor his parents; but that the works of God should be made manifest in him.',
+  },
+  'JOB 19:23': {
+    rsv: '“Oh that my words were written! Oh that they were inscribed in a book!',
+    dra: 'Who will grant me that my words may be written? Who will grant me that they may be marked down in a book?',
+  },
+  'JOB 19:24': {
+    rsv: 'Oh that with an iron pen and lead they were graven in the rock for ever!',
+    dra: 'With an iron pen and in a plate of lead, or else be graven with an instrument in flint stone.',
+  },
+  'JOB 19:25': {
+    rsv: 'For I know that my Redeemer lives, and at last he will stand upon the earth;',
+    dra: 'For I know that my Redeemer liveth, and in the last day I shall rise out of the earth.',
+  },
+  'JOB 19:26': {
+    rsv: 'and after my skin has been thus destroyed, then from my flesh I shall see God,',
+    dra: 'And I shall be clothed again with my skin, and in my flesh I will see my God.',
+  },
+  'JOB 19:27': {
+    rsv: 'whom I shall see on my side, and my eyes shall behold, and not another. My heart faints within me!',
+    dra: 'Whom I myself shall see, and my eyes shall behold, and not another: this my hope is laid up in my bosom.',
+  },
+  'JHN 11:25': {
+    rsv: 'Jesus said to her, “I am the resurrection and the life; he who believes in me, though he die, yet shall he live,',
+    dra: 'Jesus said to her: I am the resurrection and the life: he that believeth in me, although he be dead, shall live:',
+  },
+  'JOB 38:1': {
+    rsv: 'Then the LORD answered Job out of the whirlwind:',
+    dra: 'Then the Lord answered Job out of a whirlwind, and said:',
+  },
+  'JOB 38:4': {
+    rsv: '“Where were you when I laid the foundation of the earth? Tell me, if you have understanding.',
+    dra: 'Where wast thou when I laid up the foundations of the earth? tell me if thou hast understanding.',
+  },
+  'JOB 38:7': {
+    rsv: 'when the morning stars sang together, and all the sons of God shouted for joy?',
+    dra: 'When the morning stars praised me together, and all the sons of God made a joyful melody?',
+  },
+  'JOB 38:8': {
+    rsv: '“Or who shut in the sea with doors, when it burst forth from the womb;',
+    dra: 'Who shut up the sea with doors, when it broke forth as issuing out of the womb:',
+  },
+  'JOB 38:11': {
+    rsv: 'and said, ‘Thus far shall you come, and no farther, and here shall your proud waves be stayed’?',
+    dra: 'And I said: Hitherto thou shalt come, and shalt go no further, and here thou shalt break thy swelling waves.',
+  },
+  'JOB 38:41': {
+    rsv: 'Who provides for the raven its prey, when its young ones cry to God, and wander about for lack of food?',
+    dra: 'Who provideth food for the raven, when her young ones cry to God, wandering about, because they have no meat?',
+  },
+  'JOB 40:4': {
+    rsv: '“Behold, I am of small account; what shall I answer thee? I lay my hand on my mouth.',
+    dra: 'What can I answer, who hath spoken inconsiderately? I will lay my hand upon my mouth.',
+  },
+  'JOB 42:2': {
+    rsv: '“I know that thou canst do all things, and that no purpose of thine can be thwarted.',
+    dra: 'I know that thou canst do all things, and no thought is hid from thee.',
+  },
+  'JOB 42:5': {
+    rsv: 'I had heard of thee by the hearing of the ear, but now my eye sees thee;',
+    dra: 'With the hearing of the ear, I have heard thee, but now my eye seeth thee.',
+  },
+  'MRK 4:39': {
+    rsv: 'And he awoke and rebuked the wind, and said to the sea, “Peace! Be still!” And the wind ceased, and there was a great calm.',
+    dra: 'And rising up, he rebuked the wind, and said to the sea: Peace, be still. And the wind ceased: and there was made a great calm.',
+  },
+  'MRK 4:41': {
+    rsv: 'And they were filled with awe, and said to one another, “Who then is this, that even wind and sea obey him?”',
+    dra: '…And they feared exceedingly: and they said one to another: Who is this (thinkest thou) that both wind and sea obey him?',
+  },
+  'JOB 42:7': {
+    rsv: 'After the LORD had spoken these words to Job, the LORD said to Eliphaz the Temanite: “My wrath is kindled against you and against your two friends; for you have not spoken of me what is right, as my servant Job has.',
+    dra: 'And after the Lord had spoken these words to Job, he said to Eliphaz the Themanite: My wrath is kindled against thee, and against thy two friends, because you have not spoken the thing that is right before me, as my servant Job hath.',
+  },
+  'JOB 42:8': {
+    rsv: 'Now therefore take seven bulls and seven rams, and go to my servant Job, and offer up for yourselves a burnt offering; and my servant Job shall pray for you, for I will accept his prayer not to deal with you according to your folly; for you have not spoken of me what is right, as my servant Job has.”',
+    dra: 'Take unto you therefore seven oxen, and seven rams, and go to my servant Job, and offer for yourselves a holocaust: and my servant Job shall pray for you: his face I will accept, that folly be not imputed to you: for you have not spoken right things before me, as my servant Job hath.',
+  },
+  'JOB 42:10': {
+    rsv: 'And the LORD restored the fortunes of Job, when he had prayed for his friends; and the LORD gave Job twice as much as he had before.',
+    dra: 'The Lord also was turned at the penance of Job, when he prayed for his friends. And the Lord gave Job twice as much as he had before.',
+  },
+  'JOB 42:12': {
+    rsv: 'And the LORD blessed the latter days of Job more than his beginning; and he had fourteen thousand sheep, six thousand camels, a thousand yoke of oxen, and a thousand she-asses.',
+    dra: 'And the Lord blessed the latter end of Job more than his beginning. And he had fourteen thousand sheep, and six thousand camels, and a thousand yoke of oxen, and a thousand she asses.',
+  },
+  'JOB 42:13': {
+    rsv: 'He had also seven sons and three daughters.',
+    dra: 'And he had seven sons, and three daughters.',
+  },
+  'JOB 42:14': {
+    rsv: 'And he called the name of the first Jemimah; and the name of the second Keziah; and the name of the third Keren-happuch.',
+    dra: 'And he called the names of one Dies, and the name of the second Cassia, and the name of the third Cornustibil.',
+  },
+  'JOB 42:16': {
+    rsv: 'And after this Job lived a hundred and forty years, and saw his sons, and his sons’ sons, four generations.',
+    dra: 'And Job lived after these things, a hundred and forty years, and he saw his children, and his children\'s children, unto the fourth generation, and he died an old man, and full of days.',
+  },
+  'JAS 5:11': {
+    rsv: 'Behold, we call those happy who were steadfast. You have heard of the steadfastness of Job, and you have seen the purpose of the Lord, how the Lord is compassionate and merciful.',
+    dra: 'Behold, we account them blessed who have endured. You have heard of the patience of Job, and you have seen the end of the Lord, that the Lord is merciful and compassionate.',
+  },
+  'JOB 5:17': {
+    rsv: '…happy is the man whom God reproves…',
+    dra: 'Blessed is the man whom God correcteth…',
+    partial: true,
+  },
+  'JOB 38:22': {
+    rsv: 'Have you entered the storehouses of the snow…',
+    dra: 'Hast thou entered into the storehouses of the snow…',
+    partial: true,
+  },
+  'JOB 38:31': {
+    rsv: '“Can you bind the chains of the Pleiades, or loose the cords of Orion?',
+    dra: 'Shalt thou be able to join together the shining stars the Pleiades, or canst thou stop the turning about of Arcturus?',
+  },
+  'JOB 38:39': {
+    rsv: 'Can you hunt the prey for the lion…',
+    dra: 'Wilt thou take the prey for the lioness…',
+    partial: true,
+  },
+  'JOB 39:19': {
+    rsv: 'Do you give the horse his might?…',
+    dra: 'Wilt thou give strength to the horse…',
+    partial: true,
+  },
+  'JOB 39:27': {
+    rsv: 'Is it at your command that the eagle mounts up…',
+    dra: 'Will the eagle mount up at thy command…',
+    partial: true,
+  },
 }
 
 /** A verse's words in the active translation. Throws for a verse that isn't in the list (a content check catches these first). */

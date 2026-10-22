@@ -420,6 +420,73 @@ export const THREADS: GoldenThread[] = [
     sources: ['Luke 1:31–33', 'Revelation 5:5', 'Hebrews 7:14', 'Catechism 436, 439'],
     fulfilled: { age: 'XI', place: 'nazareth' },
   },
+  // Level 6 · Job
+  {
+    id: 'i-have-prayed-for-you',
+    episode: 'l06-e1',
+    title: 'Satan asks to test Job, and God sets a limit → Jesus to Peter: “Satan demanded to have you… but I have prayed for you”',
+    from: ['JOB 1:12'],
+    to: ['LUK 22:31', 'LUK 22:32'],
+    explanation:
+      'Satan could not touch Job without God’s leave, and God set a limit: “only upon himself do not put forth your hand.” Jesus told Peter that Satan had asked to test him too, and promised, “I have prayed for you.” God never leaves us alone in a trial: he sets its limits, and Jesus prays for us.',
+    sources: ['Luke 22:31–32', '1 Corinthians 10:13', 'Catechism 395, 2851'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'my-god-why',
+    episode: 'l06-e2',
+    title: 'Job cries out to God, “Why?” → Jesus on the cross: “My God, my God, why hast thou forsaken me?”',
+    from: ['JOB 3:20'],
+    to: ['MAT 27:46'],
+    explanation:
+      'Job cried out to God in his pain and asked why. On the cross, Jesus too cried out in the words of a psalm, “My God, my God, why?” He took our sorrow and our questions into his own heart. When we suffer, Jesus has been there before us, and he is with us there.',
+    sources: ['Matthew 27:45–46', 'Psalm 22:1', 'Hebrews 4:15', 'Catechism 603, 2606'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'who-sinned',
+    episode: 'l06-e3',
+    title: 'The friends think Job’s suffering must be his own fault → Jesus’ disciples ask, “Rabbi, who sinned?”',
+    from: ['JOB 4:7'],
+    to: ['JHN 9:2', 'JHN 9:3'],
+    explanation:
+      'Job’s friends were sure that suffering meant sin. Centuries later, Jesus’ disciples thought the same about a man born blind. Jesus said no: this was not a punishment, and God would show his glory in him. Then he healed him.',
+    sources: ['John 9:1–7', 'Luke 13:1–5', 'Catechism 1502–1505'],
+    fulfilled: { age: 'XI', place: 'jerusalem' },
+  },
+  {
+    id: 'the-resurrection-and-the-life',
+    episode: 'l06-e4',
+    title: '“I know that my Redeemer lives” → Jesus: “I am the resurrection and the life”',
+    from: ['JOB 19:25', 'JOB 19:26'],
+    to: ['JHN 11:25'],
+    explanation:
+      'Job, near death, hoped to see God with his own eyes, in his own flesh. Jesus is the Redeemer Job longed for: he died and rose again in his body, and he promises that those who believe in him will rise too. That is why the Church sings Job’s words at funerals, and why Handel set them to music in his Messiah.',
+    sources: ['John 11:25–26', '1 Corinthians 15:20', 'Catechism 988–991'],
+    fulfilled: { age: 'XI' },
+  },
+  {
+    id: 'wind-and-sea-obey-him',
+    episode: 'l06-e5',
+    title: 'God speaks out of the whirlwind, Lord of the wind and the sea → Jesus calms the storm: “Who then is this, that even wind and sea obey him?”',
+    from: ['JOB 38:8', 'JOB 38:11'],
+    to: ['MRK 4:39', 'MRK 4:41'],
+    explanation:
+      'God asked Job, “Who shut in the sea with doors?” Only the Creator commands the wind and the waves. When Jesus, in a little boat on the Sea of Galilee, told the storm, “Peace! Be still!”, and it obeyed, his friends asked who he could be. The answer is in Job: only God does this.',
+    sources: ['Mark 4:35–41', 'Psalm 89:9', 'Catechism 295, 548'],
+    fulfilled: { age: 'XI', place: 'galilee' },
+  },
+  {
+    id: 'the-steadfastness-of-job',
+    episode: 'l06-e6',
+    title: 'Job’s patience, and God’s mercy at the end → “You have heard of the steadfastness of Job”',
+    from: ['JOB 42:10'],
+    to: ['JAS 5:11'],
+    explanation:
+      'The New Testament itself points back to Job: an example of holding on to God in suffering, and of the Lord’s compassion. Job also prayed for those who had wronged him, as Jesus taught: “pray for those who persecute you.” And the restoration at the end of the book is a small picture of the great restoration to come, when God will wipe away every tear.',
+    sources: ['James 5:10–11', 'Matthew 5:44', 'Revelation 21:4', 'Catechism 309, 324'],
+    fulfilled: { age: 'XIII' },
+  },
 ]
 
 const BY_ID = new Map(THREADS.map((thread) => [thread.id, thread]))

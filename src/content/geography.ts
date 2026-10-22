@@ -153,6 +153,8 @@ export const PLACES: Place[] = [
   // Level 5 · Joseph and His Brothers
   { id: 'dothan', name: 'Dothan', kind: 'city', at: { lat: 32.42, lon: 35.24 }, note: 'A town on the trade road north of Shechem, where Joseph found his brothers and they sold him to traders bound for Egypt.' },
   { id: 'goshen', name: 'Goshen', kind: 'region', at: { lat: 30.6, lon: 31.9 }, note: 'Green land in the eastern Nile delta, good for flocks, where Jacob’s family settled in Egypt.' },
+  // Level 6 · Job
+  { id: 'uz', name: 'The land of Uz', kind: 'region', at: { lat: 30.4, lon: 36.4 }, note: 'Where Job lived. No one knows exactly where it was: the Book of Lamentations links Uz with Edom, south-east of the Dead Sea; others place it farther east, toward the desert.' },
 ]
 
 const BY_ID = new Map(PLACES.map((place) => [place.id, place]))

@@ -82,6 +82,13 @@ export const EMBLEMS: Record<string, { rows: string[]; colors: Record<string, st
   'silver-cup': { rows: ['.......W.', 'wwwwwww..', '.wwwwww..', '..wwww...', '...ww....', '...ww....', '...ww....', '..wwww...', '.wwwwww..'], colors: { W: C.white, w: C.pale } },
   'open-arms': { rows: ['....y....', '....s....', 's..sss..s', '.s.www.s.', '..swwws..', '...www...', '...www...', '...www...', '..wwwww..'], colors: { y: C.gold, s: C.sand, w: C.white } },
   scepter: { rows: ['..y.y.y..', '..yyyyy..', '...yry...', '...yyy...', '....y....', '....y....', '....y....', '....y....', '...yyy...'], colors: { y: C.gold, r: C.rose } },
+  // Level 6 · Job
+  'open-hand': { rows: ['....y....', '.........', '.s.s.s.s.', '.s.s.s.s.', '.sssssss.', '.sssssss.', '.ssssssss', '..ssssss.', '..aaaaa..'], colors: { y: C.gold, s: C.sand, a: C.sand2 } },
+  'seven-marks': { rows: ['.....ww..', '.W..w....', '....w....', '.....ww..', '.W.......', '.........', 'sssssssss', 'kskskskks', 'sssssssss'], colors: { w: C.white, W: C.pale, s: C.sand2, k: C.wood1 } },
+  'refined-gold': { rows: ['.......W.', '..yyyyy..', '.yyyyyyy.', '.........', '...o.o...', '..ooooo..', '.oOoOoOo.', 'oOOOOOOOo', '.ooooooo.'], colors: { W: C.white, y: C.gold, o: C.orange, O: C.rose } },
+  'carved-rock': { rows: ['..sssss..', '.sssssss.', 'syyyyyyss', 'sssssssss', 'syyyyysss', 'sssssssss', 'syyyyyyss', 'sssssssss', 'kkkkkkkkk'], colors: { s: C.slate, y: C.gold, k: C.dslate } },
+  whirlwind: { rows: ['ppppppppp', '.PPPPPPP.', '.ppppppp.', 'y.PPWPP..', '..ppppp..', '...PPP...', '...ppp...', '....P....', '....p....'], colors: { p: C.pale, P: C.slate, W: C.gold, y: C.gold } },
+  twofold: { rows: ['....y....', '.........', 'www..www.', 'wwwkwwwwk', 'wwwwwwwww', 'wwww.wwww', '.k.k..k.k', '.k.k..k.k', 'ggggggggg'], colors: { y: C.gold, w: C.white, k: C.ink, g: C.green } },
 }
 
 /** The pointed outline of a window, inside which the glass is: whether a pixel is in it. */

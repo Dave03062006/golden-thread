@@ -296,6 +296,18 @@
     },
     "goshen-fields": {
       "hash": "1cc8c81a"
+    },
+    "uz-pastures": {
+      "hash": "0c05a265"
+    },
+    "ash-heap": {
+      "hash": "4cd2c000"
+    },
+    "heaven-court": {
+      "hash": "9f997ec7"
+    },
+    "rock-face": {
+      "hash": "fd40a4c7"
     }
   },
   "paperProps": {
@@ -444,22 +456,22 @@
       "hash": "2a142a0c"
     },
     "noahs-wife": {
-      "hash": "c49079b9"
+      "hash": "47d33135"
     },
     "shem": {
-      "hash": "ffabe3ef"
+      "hash": "e4623c8b"
     },
     "sons-wife": {
-      "hash": "ce63a074"
+      "hash": "50bd41e8"
     },
     "ham": {
-      "hash": "563c533f"
+      "hash": "aec27473"
     },
     "japheth": {
-      "hash": "06ef69a5"
+      "hash": "78aae221"
     },
     "noah": {
-      "hash": "a6db1c8d"
+      "hash": "cce9abe9"
     },
     "ark-keel": {
       "hash": "78fe01c6"
@@ -519,10 +531,10 @@
       "hash": "895d2acc"
     },
     "boy": {
-      "hash": "e3979649"
+      "hash": "924a73e5"
     },
     "girl": {
-      "hash": "86922804"
+      "hash": "bd42e460"
     },
     "cloak": {
       "hash": "1d2f443c"
@@ -549,22 +561,22 @@
       "hash": "4e7b9927"
     },
     "terah": {
-      "hash": "b0bcd5ee"
+      "hash": "6fd1fefa"
     },
     "abram": {
-      "hash": "3155daff"
+      "hash": "144a9c8b"
     },
     "nahor": {
-      "hash": "f4c28e18"
+      "hash": "2dc098a4"
     },
     "haran": {
-      "hash": "390500c0"
+      "hash": "128dba3c"
     },
     "sarai": {
-      "hash": "df82007e"
+      "hash": "e1be799a"
     },
     "lot": {
-      "hash": "3be115eb"
+      "hash": "8b9fe867"
     },
     "camel": {
       "hash": "3c1ed397"
@@ -591,13 +603,13 @@
       "hash": "ba485638"
     },
     "melchizedek": {
-      "hash": "8022811c"
+      "hash": "7c310068"
     },
     "bread-and-wine": {
       "hash": "f1a57dd8"
     },
     "king-of-sodom": {
-      "hash": "edf09c4a"
+      "hash": "ca0e71ae"
     },
     "counted-star": {
       "hash": "a45141dc"
@@ -615,7 +627,7 @@
       "hash": "e4822576"
     },
     "hagar": {
-      "hash": "865ef314"
+      "hash": "0c838060"
     },
     "angel": {
       "hash": "b063401d"
@@ -636,10 +648,10 @@
       "hash": "8d81698b"
     },
     "lots-wife": {
-      "hash": "acbfa7e2"
+      "hash": "f43c16c6"
     },
     "lots-daughter": {
-      "hash": "f0f23ee4"
+      "hash": "22929cb8"
     },
     "salt-pillar": {
       "hash": "53f860c8"
@@ -663,10 +675,10 @@
       "hash": "28a364f6"
     },
     "servant": {
-      "hash": "f8df530a"
+      "hash": "235c31ae"
     },
     "isaac": {
-      "hash": "a444cf9c"
+      "hash": "94f2b1b8"
     },
     "wood-bundle": {
       "hash": "19dd88a0"
@@ -681,16 +693,16 @@
       "hash": "d709cb6a"
     },
     "abraham-old": {
-      "hash": "cd4ccd8b"
+      "hash": "f1ce0d87"
     },
     "rebekah": {
-      "hash": "15c019eb"
+      "hash": "0bd9b3ef"
     },
     "laban": {
-      "hash": "a185f49e"
+      "hash": "027a983a"
     },
     "bethuel": {
-      "hash": "cbabf817"
+      "hash": "48ab684b"
     },
     "stew-pot": {
       "hash": "8e340ab6"
@@ -702,16 +714,16 @@
       "hash": "7bf4d607"
     },
     "ishmael": {
-      "hash": "e566bc57"
+      "hash": "b24135a3"
     },
     "esau": {
-      "hash": "f16fde00"
+      "hash": "eb88295c"
     },
     "jacob": {
-      "hash": "a9e33226"
+      "hash": "c70ca642"
     },
     "isaac-old": {
-      "hash": "948044ef"
+      "hash": "39c5ba63"
     },
     "ladder": {
       "hash": "85f000cc"
@@ -726,22 +738,22 @@
       "hash": "210fbef9"
     },
     "rachel": {
-      "hash": "0dca19a0"
+      "hash": "84d6158c"
     },
     "leah": {
-      "hash": "28151710"
+      "hash": "21900b1c"
     },
     "maid": {
-      "hash": "ce8536cf"
+      "hash": "0eed1b6b"
     },
     "stranger": {
-      "hash": "7ea7fd6b"
+      "hash": "4006176f"
     },
     "wrestlers": {
       "hash": "c8048a34"
     },
     "jacob-grown": {
-      "hash": "9839ca3d"
+      "hash": "b33f7621"
     },
     "dust-cloud": {
       "hash": "c0a621bb"
@@ -762,31 +774,31 @@
       "hash": "fb23c944"
     },
     "jacob-old": {
-      "hash": "74f4b7c9"
+      "hash": "6a72e6ed"
     },
     "joseph-young": {
-      "hash": "6d274f8c"
+      "hash": "be699b08"
     },
     "reuben": {
-      "hash": "7330300c"
+      "hash": "47e17140"
     },
     "simeon": {
-      "hash": "f4c28e18"
+      "hash": "2dc098a4"
     },
     "judah": {
-      "hash": "4a56886b"
+      "hash": "4f1122a7"
     },
     "brother": {
-      "hash": "96b95794"
+      "hash": "a2816cd0"
     },
     "prisoner": {
-      "hash": "0e49823c"
+      "hash": "62185f50"
     },
     "butler": {
-      "hash": "7d1a11c1"
+      "hash": "f4b4ba75"
     },
     "baker": {
-      "hash": "108f8ff1"
+      "hash": "6564e845"
     },
     "need": {
       "hash": "6d1a5c8a"
@@ -801,13 +813,13 @@
       "hash": "c140f984"
     },
     "potiphar": {
-      "hash": "85d6a4f5"
+      "hash": "c1ee3f31"
     },
     "joseph-slave": {
-      "hash": "bc328b9f"
+      "hash": "5a4bb68b"
     },
     "keeper": {
-      "hash": "f488c28e"
+      "hash": "6c22b6c2"
     },
     "cow": {
       "hash": "123bd5d9"
@@ -822,10 +834,10 @@
       "hash": "9bf6fc45"
     },
     "pharaoh": {
-      "hash": "b4b32e57"
+      "hash": "38315b0b"
     },
     "joseph-egypt": {
-      "hash": "84873a28"
+      "hash": "07c4de44"
     },
     "chariot": {
       "hash": "561b4454"
@@ -837,10 +849,10 @@
       "hash": "cbafab9b"
     },
     "benjamin": {
-      "hash": "dee2d0ea"
+      "hash": "045a6cee"
     },
     "steward": {
-      "hash": "1edf2c77"
+      "hash": "116ae7cb"
     },
     "silver-cup": {
       "hash": "a1d059b2"
@@ -852,7 +864,67 @@
       "hash": "db4815aa"
     },
     "joseph-old": {
-      "hash": "31191cc3"
+      "hash": "f650c807"
+    },
+    "jobs-sons": {
+      "hash": "ec2cf937"
+    },
+    "jobs-daughters": {
+      "hash": "9df10649"
+    },
+    "ox": {
+      "hash": "99e407c3"
+    },
+    "jobs-servants": {
+      "hash": "42864d00"
+    },
+    "accuser": {
+      "hash": "ed465dd5"
+    },
+    "job": {
+      "hash": "891e998f"
+    },
+    "messenger": {
+      "hash": "bd58f8e8"
+    },
+    "job-mourning": {
+      "hash": "82d05291"
+    },
+    "jobs-wife": {
+      "hash": "631bb601"
+    },
+    "dust-mark": {
+      "hash": "94666024"
+    },
+    "eliphaz": {
+      "hash": "d935ceb6"
+    },
+    "bildad": {
+      "hash": "e652ecf1"
+    },
+    "zophar": {
+      "hash": "43a145ab"
+    },
+    "carved-line": {
+      "hash": "83cd8b5f"
+    },
+    "whirlwind": {
+      "hash": "76478fc3"
+    },
+    "snow-store": {
+      "hash": "1f0d503e"
+    },
+    "constellation": {
+      "hash": "4152808f"
+    },
+    "storm-cloud": {
+      "hash": "8eb50ade"
+    },
+    "daughter": {
+      "hash": "6093f104"
+    },
+    "job-old": {
+      "hash": "1b19b46f"
     }
   },
   "pixelLayers": {
@@ -1152,6 +1224,18 @@
     },
     "goshen-fields": {
       "hash": "b369cb25"
+    },
+    "uz-pastures": {
+      "hash": "4f99341a"
+    },
+    "ash-heap": {
+      "hash": "25e28437"
+    },
+    "heaven-court": {
+      "hash": "c6fa3a36"
+    },
+    "rock-face": {
+      "hash": "3813e64a"
     }
   },
   "backdrop": {

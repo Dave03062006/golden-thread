@@ -131,6 +131,8 @@ const AREAS: MapRegion[] = [
   { id: 'goshen', name: 'Goshen', kind: 'area', shape: pairs([[30.95, 31.55], [30.85, 32.2], [30.4, 32.2], [30.45, 31.55]]) },
   // Where most scholars place Sodom and Gomorrah: the southern end of the Dead Sea.
   { id: 'dead-sea', name: 'The southern Dead Sea', kind: 'area', shape: pairs([[31.25, 35.35], [31.25, 35.6], [30.9, 35.55], [30.9, 35.35]]) },
+  // Edom, the red mountains south-east of the Dead Sea, east of the Arabah valley.
+  { id: 'edom', name: 'Edom', kind: 'area', shape: pairs([[30.85, 35.5], [30.85, 35.85], [29.75, 35.6], [29.75, 35.05], [30.4, 35.25]]) },
 ]
 
 /** A city on the map: a small square around it, big enough to tap (smaller where towns stand close). */

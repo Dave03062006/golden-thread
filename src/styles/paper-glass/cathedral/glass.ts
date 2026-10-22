@@ -406,10 +406,61 @@ export const EMBLEMS: Record<string, () => Piece[]> = {
     { d: P([[-6, -14], [-3, -20], [0, -15], [3, -20], [6, -14]]), color: '#f8e08a' },
     { d: circ(0, -11, 2, 8), color: '#c03a3a' },
   ],
+  // Level 6 · Job
+  // An open hand, held up: "The LORD gave, and the LORD has taken away."
+  'open-hand': () => [
+    { d: P([[-7, 16], [5, 16], [7, 2], [-9, 2]]), color: '#d8a880' },
+    ...[-7, -3, 1, 5].map((x, i) => ({ d: P([[x - 1.6, 2], [x + 1.6, 2], [x + 1.6, -10 + (i === 0 || i === 3 ? 3 : 0)], [x - 1.6, -10 + (i === 0 || i === 3 ? 3 : 0)]]), color: '#e8b890' })),
+    { d: P([[7, 6], [14, -2], [15, 0], [8, 9]]), color: '#e8b890' },
+    { d: star8(-1, -15, 3), color: '#ffe48a' },
+  ],
+  // Seven marks in the dust, under the moon: seven days and seven nights.
+  'seven-marks': () => [
+    { d: P([[-16, 6], [16, 6], [16, 16], [-16, 16]]), color: '#a89070' },
+    ...[-12, -8, -4, 0, 4, 8, 12].map((x) => ({ d: P([[x - 0.8, 8], [x + 0.8, 8], [x + 1.6, 14], [x - 0.2, 14]]), color: '#5a4630' })),
+    { d: circ(6, -9, 6, 16), color: '#f0e6c0' },
+    { d: circ(9, -11, 5, 16), color: '#24409a' },
+    ...[[-10, -12], [-4, -6], [-12, -2]].map(([x, y]) => ({ d: star8(x!, y!, 1.6), color: '#ffffff' })),
+  ],
+  // Gold coming out of the fire: "When he has tried me, I shall come forth as gold."
+  'refined-gold': () => [
+    { d: P([[-12, 16], [-8, 4], [-4, 10], [0, -2], [4, 10], [8, 4], [12, 16]]), color: '#e0602a' },
+    { d: P([[-7, 16], [-4, 9], [0, 4], [4, 9], [7, 16]]), color: '#f0a83a' },
+    { d: P([[-8, -6], [8, -6], [6, -12], [-6, -12]]), color: '#f0c850' },
+    { d: P([[-6, -12], [6, -12], [4, -16], [-4, -16]]), color: '#f8e08a' },
+    { d: star8(9, -14, 3), color: '#ffffff' },
+  ],
+  // The words carved in the rock, in letters of light: "I know that my Redeemer lives."
+  'carved-rock': () => [
+    { d: P([[-14, 16], [-15, -6], [-9, -14], [8, -15], [15, -6], [14, 16]]), color: '#8a8070' },
+    ...[-8, -3, 2, 7].map((y, i) => ({ d: P([[-9, y - 0.9], [9 - (i % 2) * 4, y - 0.9], [9 - (i % 2) * 4, y + 0.9], [-9, y + 0.9]]), color: '#ffe48a' })),
+    { d: P([[-12, 11], [12, 11], [12, 16], [-12, 16]]), color: '#6a6254' },
+  ],
+  // The whirlwind, with the light at its heart.
+  whirlwind: () => [
+    ...[0, 1, 2, 3, 4].map((i) => {
+      const w = 15 - i * 2.8
+      const y = -14 + i * 6
+      return { d: P([[-w + i, y], [w + i, y], [w - 2.4 + i, y + 4.2], [-w + 2.4 + i, y + 4.2]]), color: i % 2 ? '#a0aac4' : '#8a96b0' }
+    }),
+    { d: P([[3, 14], [5, 14], [4.5, 17], [3.5, 17]]), color: '#a0aac4' },
+    { d: circ(0, -2, 3.4, 12), color: '#fff0b0' },
+    { d: P([[-12, -6], [-9, -1], [-11, -1], [-8, 5]]), color: '#ffe48a' },
+  ],
+  // Two sheep side by side: the LORD gave Job twice as much as he had before.
+  twofold: () => [
+    ...[-7, 7].flatMap((x, i) => [
+      { d: circ(x, 4 - i, 7, 16), color: '#f4eee0' },
+      { d: circ(x + 6, -1 - i, 3, 12), color: '#3a3030' },
+      { d: P([[x - 4, 9], [x - 2, 9], [x - 2, 15], [x - 4, 15]]), color: '#3a3030' },
+      { d: P([[x + 2, 9], [x + 4, 9], [x + 4, 15], [x + 2, 15]]), color: '#3a3030' },
+    ]),
+    { d: star8(0, -13, 3), color: '#ffe48a' },
+  ],
 }
 
 /** The medallions' backgrounds: deep blue, with one ruby for the darkest story. */
-const MEDALLION_BG: Record<string, string> = { lamb: '#7a1a2a', storm: '#2a2a4a' }
+const MEDALLION_BG: Record<string, string> = { lamb: '#7a1a2a', storm: '#2a2a4a', whirlwind: '#2a2a4a' }
 
 /** A window of a built level, or one standing dark and waiting for its level. */
 export function windowArt(window: CathedralWindow, seed: number): WindowArt {

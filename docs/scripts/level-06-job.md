@@ -3,7 +3,7 @@
 **Bible:** the Book of Job
 **Age:** II · The Patriarchs
 **Length:** about 35 minutes (6 episodes, then the quiz, then reflection and prayer)
-**Status:** draft, waiting for Dave's approval.
+**Status:** approved by Dave on 2026-10-22 ("Approved").
 
 ## How to read this script
 
