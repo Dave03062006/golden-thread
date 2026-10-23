@@ -498,6 +498,58 @@ export const EMBLEMS: Record<string, () => Piece[]> = {
     { d: P([[2, 14], [8, 10], [3, 4], [9, -2], [4, -8], [8, -12], [11, -11], [7, -7], [12, -2], [6, 4], [11, 10], [4, 16]]), color: '#5a8a3a' },
     { d: circ(9.5, -12.5, 2.4, 10), color: '#4a7a2a' },
   ],
+  // Level 8 · The Plagues and the Passover
+  // An outstretched arm under an arc of stars: the six "I will"s of God's promise.
+  'i-will': () => [
+    { d: P([[-15, 16], [-9, 16], [4, -2], [8, -4], [9, -1], [5, 2], [-6, 16]]), color: '#d8b888' },
+    { d: P([[-16, 16], [-6, 16], [-8, 12], [-14, 10]]), color: '#3a5a9a' },
+    ...[0, 1, 2, 3, 4, 5].map((i) => {
+      const a = Math.PI * (0.95 + i * 0.22)
+      return { d: star8(Math.round(Math.cos(a) * 12 + 2), Math.round(Math.sin(a) * 12 - 1), 2.2), color: '#ffe48a' }
+    }),
+  ],
+  // Stubble gathered from the field, and a brick that needs it.
+  stubble: () => [
+    { d: P([[-15, 16], [15, 16], [15, 13], [-15, 13]]), color: '#a8843a' },
+    ...[-12, -9, -6, -3, 0, 3].map((x, i) => ({ d: P([[x, 13], [x + 1.6, 13], [x + 1.6 + (i % 2), 2 - (i % 3) * 3], [x + (i % 2), 2 - (i % 3) * 3]]), color: i % 2 ? '#e0c060' : '#c8a04a' })),
+    { d: P([[5, 13], [15, 13], [15, 5], [5, 5]]), color: '#b8784a' },
+    { d: P([[5, 5], [15, 5], [13, 3], [7, 3]]), color: '#d09060' },
+    { d: star8(-4, -12, 3), color: '#ffe48a' },
+  ],
+  // A frog, the second plague.
+  frog: () => [
+    { d: P([[-15, 14], [15, 14], [15, 16], [-15, 16]]), color: '#3a7ab0' },
+    { d: P([[-12, 12], [-10, 2], [-2, -2], [8, -2], [12, 4], [12, 12]]), color: '#5a9a3a' },
+    { d: circ(-4, -4, 3.4, 10), color: '#7aba4a' },
+    { d: circ(6, -4, 3.4, 10), color: '#7aba4a' },
+    { d: circ(-4, -4.6, 1.4, 8), color: '#1a1a14' },
+    { d: circ(6, -4.6, 1.4, 8), color: '#1a1a14' },
+    { d: P([[-14, 12], [-10, 6], [-6, 12]]), color: '#4a7a2a' },
+    { d: P([[14, 12], [10, 6], [6, 12]]), color: '#4a7a2a' },
+  ],
+  // A door marked with the blood of the lamb, on its posts and lintel.
+  'marked-door': () => [
+    { d: P([[-14, 16], [-14, -12], [14, -12], [14, 16]]), color: '#a8845a' },
+    { d: P([[-7, 16], [-7, -4], [0, -9], [7, -4], [7, 16]]), color: '#2a2440' },
+    { d: P([[-11, -6], [11, -6], [11, -10], [-11, -10]]), color: '#9a1a2a' },
+    { d: P([[-10, 16], [-7, 16], [-7, -4], [-10, -4]]), color: '#9a1a2a' },
+    { d: P([[7, 16], [10, 16], [10, -4], [7, -4]]), color: '#9a1a2a' },
+    { d: star8(0, 6, 2.4), color: '#ffe48a' },
+  ],
+  // The pillar of fire that went before them by night.
+  'pillar-of-fire': () => [
+    { d: P([[-16, 16], [16, 16], [16, 12], [-16, 12]]), color: '#c8a46a' },
+    { d: P([[-6, 12], [-8, 0], [-5, -10], [0, -17], [5, -10], [8, 0], [6, 12]]), color: '#f08a2a' },
+    { d: P([[-3, 12], [-4, 0], [0, -12], [4, 0], [3, 12]]), color: '#ffd84a' },
+    ...[-12, 12].map((x) => ({ d: P([[x - 3, 12], [x, 6], [x + 3, 12]]), color: '#e8dcc0' })),
+  ],
+  // Unleavened bread, flat and quickly baked, for a people leaving in haste.
+  'unleavened-bread': () => [
+    { d: circ(0, 4, 13, 20), color: '#e8c888' },
+    { d: circ(0, 4, 9.6, 18), color: '#d8b070' },
+    ...[[-5, 0], [3, -2], [-2, 6], [6, 6], [0, 2], [-6, 8]].map(([x, y]) => ({ d: circ(x!, y!, 1, 6), color: '#8a5a2a' })),
+    { d: star8(0, -13, 3), color: '#ffe48a' },
+  ],
 }
 
 /** The medallions' backgrounds: deep blue, with one ruby for the darkest story. */

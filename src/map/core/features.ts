@@ -22,7 +22,7 @@ export const MOUNTAINS: { name: string; peaks: LatLon[] }[] = [
 export const ARARAT: LatLon = { lat: 39.7, lon: 44.3 }
 
 /** Where the levels still to come begin on the map, as far as the route is drawn ahead. */
-export const AHEAD: { number: number; title: string; at: LatLon; label: string }[] = [{ number: 8, title: 'The Plagues and the Passover', at: { lat: 30.8, lon: 31.83 }, label: 'Rameses, in Egypt' }]
+export const AHEAD: { number: number; title: string; at: LatLon; label: string }[] = [{ number: 9, title: 'Through the Sea', at: { lat: 30.0, lon: 32.55 }, label: 'The sea' }]
 
 export interface LevelMarker {
   id: string

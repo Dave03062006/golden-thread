@@ -25,6 +25,30 @@ function papyrus(x: number, y: number, cx: number, base: number, count: number, 
   return null
 }
 
+/** The Nile among the papyrus, its water in the colors given (blue, or turned to blood). */
+export function nileReeds(water: string, ripple: string): PixelLayerArt {
+  return {
+    draw: (buf) => {
+      fill(buf, (x, y) => (y >= Math.round(crest(div([520, 515, 522, 512, 520, 518, 514, 520, 516, 520]), x)) ? (dither(x, y) < 0.5 ? C.green : C.lime) : null))
+      fill(buf, (x, y) => {
+        // Palms on the far bank.
+        for (const [i, px] of [16, 60, 104, 236, 288].entries()) {
+          const top = 86 - (i % 2) * 5
+          if (x >= px && x < px + 2 && y >= top && y < 108) return C.wood1
+          if (y >= top - 3 && y < top + 3 && Math.abs(x - px - 1) < 10 - Math.abs(y - top) * 2 && (x + y) % 2) return C.teal
+        }
+        // The river.
+        if (y >= 111 && y < 139) return (y === 118 || y === 124 || y === 130) && (x + y * 3) % 11 < 6 ? ripple : water
+        // The papyrus along the near bank, and the bank itself.
+        const reed = papyrus(x, y, 16, 140, 14, 42, 3) ?? papyrus(x, y, -24, 140, 10, 38, 7) ?? papyrus(x, y, 224, 140, 12, 44, 5) ?? papyrus(x, y, 272, 140, 14, 40, 9) ?? papyrus(x, y, 112, 140, 6, 28, 11)
+        if (reed) return reed
+        if (y >= 139) return y === 139 ? C.lime : dither(x, y) < 0.3 ? C.wood3 : C.sand2
+        return null
+      })
+    },
+  }
+}
+
 export const exodusLayers: Record<string, PixelLayerArt> = {
   'brick-pits': {
     draw: (buf) => {
@@ -96,26 +120,7 @@ export const exodusLayers: Record<string, PixelLayerArt> = {
         return (brick * 7 + row * 3) % 5 ? C.wood2 : C.wood3
       }),
   },
-  'nile-reeds': {
-    draw: (buf) => {
-      fill(buf, (x, y) => (y >= Math.round(crest(div([520, 515, 522, 512, 520, 518, 514, 520, 516, 520]), x)) ? (dither(x, y) < 0.5 ? C.green : C.lime) : null))
-      fill(buf, (x, y) => {
-        // Palms on the far bank.
-        for (const [i, px] of [16, 60, 104, 236, 288].entries()) {
-          const top = 86 - (i % 2) * 5
-          if (x >= px && x < px + 2 && y >= top && y < 108) return C.wood1
-          if (y >= top - 3 && y < top + 3 && Math.abs(x - px - 1) < 10 - Math.abs(y - top) * 2 && (x + y) % 2) return C.teal
-        }
-        // The river.
-        if (y >= 111 && y < 139) return (y === 118 || y === 124 || y === 130) && (x + y * 3) % 11 < 6 ? C.sky : C.blue
-        // The papyrus along the near bank, and the bank itself.
-        const reed = papyrus(x, y, 16, 140, 14, 42, 3) ?? papyrus(x, y, -24, 140, 10, 38, 7) ?? papyrus(x, y, 224, 140, 12, 44, 5) ?? papyrus(x, y, 272, 140, 14, 40, 9) ?? papyrus(x, y, 112, 140, 6, 28, 11)
-        if (reed) return reed
-        if (y >= 139) return y === 139 ? C.lime : dither(x, y) < 0.3 ? C.wood3 : C.sand2
-        return null
-      })
-    },
-  },
+  'nile-reeds': nileReeds(C.blue, C.sky),
   horeb: {
     draw: (buf) => {
       const peak = [

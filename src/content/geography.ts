@@ -158,6 +158,9 @@ export const PLACES: Place[] = [
   // Level 7 · Moses Is Called
   { id: 'midian', name: 'Midian', kind: 'region', at: { lat: 28.5, lon: 35.6 }, note: 'The land of the Midianites, east of the Gulf of Aqaba, where Moses fled from Pharaoh and kept Jethro’s flock for forty years.' },
   { id: 'horeb', name: 'Horeb, the mountain of God', kind: 'mountain', at: { lat: 28.54, lon: 33.97 }, note: 'Another name for Mount Sinai, where Moses saw the burning bush. Tradition places it at Jebel Musa, in the south of the Sinai peninsula.' },
+  // Level 8 · The Plagues and the Passover
+  { id: 'rameses', name: 'Rameses', kind: 'city', at: { lat: 30.8, lon: 31.83 }, note: 'One of the store-cities the Hebrew slaves built for Pharaoh, in the eastern Nile delta, where the Exodus began.' },
+  { id: 'succoth', name: 'Succoth', kind: 'city', at: { lat: 30.55, lon: 32.1 }, note: 'The first camp of the Israelites on their way out of Egypt; the name means “booths.”' },
 ]
 
 const BY_ID = new Map(PLACES.map((place) => [place.id, place]))

@@ -543,6 +543,73 @@ export const THREADS: GoldenThread[] = [
     sources: ['Matthew 2:13–23', 'Hosea 11:1', 'Catechism 527–530'],
     fulfilled: { age: 'XI', place: 'nazareth' },
   },
+  // Level 8 · The Plagues and the Passover
+  {
+    id: 'free-indeed',
+    episode: 'l08-e1',
+    title: '“Let my people go” → Jesus: “If the Son makes you free, you will be free indeed”',
+    from: ['EXO 5:1'],
+    to: ['JHN 8:34', 'JHN 8:36'],
+    explanation:
+      'God sent Moses to set his people free from slavery in Egypt. Jesus came to set all people free from a deeper slavery: sin, which keeps us from loving God and each other. He is the Son who makes us free.',
+    sources: ['John 8:31–36', 'Luke 4:18', 'Catechism 1741'],
+    fulfilled: { age: 'XI', place: 'jerusalem' },
+  },
+  {
+    id: 'rest-for-the-weary',
+    episode: 'l08-e2',
+    title: '“Let heavier work be laid upon the men” → Jesus: “Come to me, all who labor and are heavy laden, and I will give you rest”',
+    from: ['EXO 5:9'],
+    to: ['MAT 11:28', 'MAT 11:29'],
+    explanation:
+      'Pharaoh made the burdens heavier and heavier. Jesus does the opposite: he calls everyone who is tired and weighed down, and gives them rest. Whatever is heavy for us, we can bring to him.',
+    sources: ['Matthew 11:28–30', 'Catechism 1658, 2612'],
+    fulfilled: { age: 'XI', place: 'galilee' },
+  },
+  {
+    id: 'water-into-wine',
+    episode: 'l08-e3',
+    title: 'Moses’ first sign turns the water of the Nile into blood → Jesus’ first sign turns water into wine',
+    from: ['EXO 7:20'],
+    to: ['JHN 2:9', 'JHN 2:11'],
+    explanation:
+      'Moses’ first great sign in Egypt turned water into blood, and brought death to the river. Jesus’ first sign, at a wedding in Cana, turned water into wine, and brought joy. The signs of Moses showed God’s judgment on Pharaoh; the signs of Jesus show God’s life and joy for everyone.',
+    sources: ['John 2:1–11', 'Catechism 1335, 2618'],
+    fulfilled: { age: 'XI', place: 'galilee' },
+  },
+  {
+    id: 'the-lamb-of-god',
+    episode: 'l08-e4',
+    title: 'The Passover lamb, without blemish, whose blood saved God’s people → Jesus, the Lamb of God, our Passover',
+    from: ['EXO 12:5', 'EXO 12:13'],
+    to: ['JHN 1:29', '1CO 5:7'],
+    explanation:
+      'The Passover lamb had to be without blemish, and not one of its bones could be broken (Exodus 12:46). Jesus died at Passover time, the innocent Lamb of God, and not one of his bones was broken either (John 19:36). His blood saves us, as the lamb’s blood saved God’s people. That is why, at every Mass, the priest holds up the Host and says, “Behold the Lamb of God.”',
+    sources: ['John 1:29', '1 Corinthians 5:7', 'John 19:36', 'Catechism 608, 1340, 1364'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'his-exodus',
+    episode: 'l08-e5',
+    title: 'God brings his people out of Egypt in the great exodus → Jesus’ “departure,” his exodus, accomplished in Jerusalem',
+    from: ['EXO 12:41'],
+    to: ['LUK 9:30', 'LUK 9:31'],
+    explanation:
+      'On the mountain of the Transfiguration, Moses spoke with Jesus about his “departure”: in Greek, his exodus. Moses had led God’s people out of slavery in Egypt; Jesus, by his death and resurrection, would lead all God’s people out of the slavery of sin and death, into the Father’s house.',
+    sources: ['Luke 9:28–36', 'Catechism 1151, 1340'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'in-remembrance-of-me',
+    episode: 'l08-e6',
+    title: '“This day shall be for you a memorial day” → Jesus at the Last Supper: “Do this in remembrance of me”',
+    from: ['EXO 12:14'],
+    to: ['LUK 22:19'],
+    explanation:
+      'God told his people to keep the Passover every year in memory of how he saved them. At the Passover meal before he died, Jesus gave the bread and the cup a new meaning: his own Body and Blood, given for us. Every Mass is that memorial, the new Passover: not only remembering, but receiving the Lamb of God himself.',
+    sources: ['Luke 22:7–20', '1 Corinthians 11:23–26', 'Catechism 1339–1340, 1363'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
 ]
 
 const BY_ID = new Map(THREADS.map((thread) => [thread.id, thread]))

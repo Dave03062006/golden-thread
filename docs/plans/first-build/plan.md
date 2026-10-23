@@ -470,6 +470,32 @@ The same way again: script, art, build, checks, play-test. Level 7 opens Age III
   - New `shots` baselines cover the Level 7 scenes. Dave still needs to look them over.
 - **A fix worth remembering:** a glow the size of the screen is costly in both styles. In pixel art it is redrawn whenever its size or opacity changes. In Paper & Glass a zoom well past the usual 1.04 makes the backdrops redraw. "I AM WHO I AM" now grows the flame a little, with a gentle zoom.
 
+### Task 14: Level 8, *The Plagues and the Passover* (M14)
+
+The same way again: script, art, build, checks, play-test.
+
+**Status (October 2026):** steps 1–4 are done; step 5 is Dave's.
+- **Script:** `docs/scripts/level-08-the-plagues-and-the-passover.md`, approved by Dave. It has 6 episodes and 22 scenes, 71 quotations checked word for word, and a 42-question quiz.
+- **Build:** all six episodes are built in both styles, each with a different kind of play from the spec's library:
+  - God's promises (catching);
+  - gathering stubble (herding and gathering);
+  - the plagues in order (ordering);
+  - the Passover night (serving and distributing);
+  - the march out (rhythm);
+  - when your children ask (matching and naming).
+- **New art:**
+  - Backdrops: a harvested field of stubble, and the Nile turned to blood. The Nile backdrop is now one function, drawn in either color.
+  - Props: the nine plague pictures in round frames, a frog, a swarm (gnats, flies or locusts), the blood on the doorposts and lintel, the Passover dishes, stubble, and the pillar of cloud and fire.
+  - People: Pharaoh's magicians and a Hebrew father and mother. Children can now pray in pixel art.
+- **Cathedral and map:** six new medallions for the Level 8 window. The map adds Rameses and Succoth, and the road ahead now points to Level 9, *Through the Sea*.
+- **Music:** six new recordings, all public domain or CC0, including Mozart's Lacrimosa and Dies irae, Fauré's Agnus Dei, and Handel's "Worthy Is the Lamb."
+- **Checks:** all pass.
+  - The playthrough runs Level 8 from start to finish in both styles, through its quiz, reflection and window ceremony.
+  - `check`, `test` (2,186 tests), `a11y`, `keyboard` and `saves` pass.
+  - `perf` is within budget for every Level 8 scene in both styles.
+  - New `shots` baselines cover the Level 8 scenes. Dave still needs to look them over.
+- **A fix worth remembering:** a golden thread that first glows in a scene's last line or two can end before the playthrough (or a quick reader) sees it. Episode 6's glow now comes up on the scene's first line, over the unleavened bread, and stays as the table becomes the bread and the cup.
+
 ## Parallelization
 
 - **Code tasks run in order.** Each one builds on the last, and running them in order keeps the code consistent for the code tour. I do the work in this session, without subagents, as the session guidelines require.

@@ -249,6 +249,11 @@ export const familyOfNoah: Record<string, PaperPropArt> = {
   zipporah: person({ robe: '#3a7a5a', fold: '#265a40', hair: '#1a1210', veil: '#e8c870' }),
   aaron: person({ robe: '#3a5a9a', fold: '#264078', hair: '#b8b4ac', beard: '#b8b4ac', sash: '#d8b050' }),
   elder: person({ robe: '#8a7a5a', fold: '#665a40', hair: '#d8d4cc', beard: '#d8d4cc', veil: '#c8bc9a' }),
+  // Level 8 · The Plagues and the Passover: Pharaoh's magicians, in white linen with the
+  // leopard-skin sash of a priest; a Hebrew father and mother at the Passover.
+  magician: person({ robe: '#f0ead8', fold: '#c8bea4', hair: '#1a1210', sash: '#c8943a' }),
+  'hebrew-father': person({ robe: '#6a7a3a', fold: '#4c5a26', hair: '#2a1e1a', beard: '#2a1e1a', sash: '#a8743a' }),
+  'hebrew-mother': person({ robe: '#a84a5a', fold: '#7a3040', hair: '#2a1e1a', veil: '#f0e0c8' }),
   // Hebrew families in Goshen, slaves at the brick pits, and the seven daughters of Reuel.
   'hebrew-family': band([
     { robe: '#6a7a3a', fold: '#4c5a26', hair: '#2a1e1a', beard: '#2a1e1a' },

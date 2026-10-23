@@ -2166,6 +2166,291 @@ export const VERSES: Record<string, Verse> = {
     rsv: 'If they will not believe even these two signs or heed your voice, you shall take some water from the Nile and pour it upon the dry ground; and the water which you shall take from the Nile will become blood upon the dry ground.”',
     dra: 'But if they will not even believe these two signs, nor hear thy voice: take of the river water, and pour it out upon the dry land, and whatsoever thou drawest out of the river shall be turned into blood.',
   },
+  // Level 8 · The Plagues and the Passover (Exodus 12:27's “LORD’s” corrected from the download's “LORD’S”).
+  'EXO 5:1': {
+    rsv: 'Afterward Moses and Aaron went to Pharaoh and said, “Thus says the LORD, the God of Israel, ‘Let my people go, that they may hold a feast to me in the wilderness.’”',
+    dra: 'After these things Moses and Aaron went in, and said to Pharao: Thus saith the Lord God of Israel: Let my people go that they may sacrifice to me in the desert.',
+  },
+  'EXO 5:2': {
+    rsv: 'But Pharaoh said, “Who is the LORD, that I should heed his voice and let Israel go? I do not know the LORD, and moreover I will not let Israel go.”',
+    dra: 'But he answered: Who is the Lord, that I should hear his voice, and let Israel go? I know not the Lord, neither will I let Israel go.',
+  },
+  'EXO 5:4': {
+    rsv: 'But the king of Egypt said to them, “Moses and Aaron, why do you take the people away from their work? Get to your burdens.”',
+    dra: 'The king of Egypt said to them: Why do you Moses and Aaron draw off the people from their works? Get you gone to your burdens.',
+  },
+  'EXO 6:2': {
+    rsv: 'And God said to Moses, “I am the LORD.',
+    dra: 'And the Lord spoke to Moses, saying: I am the Lord,',
+  },
+  'EXO 6:6': {
+    rsv: 'Say therefore to the people of Israel, ‘I am the LORD, and I will bring you out from under the burdens of the Egyptians, and I will deliver you from their bondage, and I will redeem you with an outstretched arm and with great acts of judgment,',
+    dra: 'Therefore say to the children of Israel: I am the Lord who will bring you out from the work prison of the Egyptians, and will deliver you from bondage: and redeem you with a high arm, and great judgments.',
+  },
+  'EXO 6:7': {
+    rsv: 'and I will take you for my people, and I will be your God; and you shall know that I am the LORD your God, who has brought you out from under the burdens of the Egyptians.',
+    dra: 'And I will take you to myself for my people, I will be your God: and you shall know that I am the Lord your God who brought you out from the work prison of the Egyptians.',
+  },
+  'EXO 6:9': {
+    rsv: 'Moses spoke thus to the people of Israel; but they did not listen to Moses, because of their broken spirit and their cruel bondage.',
+    dra: 'And Moses told all this to the children of Israel: but they did not hearken to him, for anguish of spirit, and most painful work.',
+  },
+  'EXO 7:10': {
+    rsv: 'So Moses and Aaron went to Pharaoh and did as the LORD commanded; Aaron cast down his rod before Pharaoh and his servants, and it became a serpent.',
+    dra: 'So Moses and Aaron went in unto Pharao, and did as the Lord had commanded. And Aaron took the rod before Pharao, and his servants, and it was turned into a serpent.',
+  },
+  'EXO 7:11': {
+    rsv: 'Then Pharaoh summoned the wise men and the sorcerers; and they also, the magicians of Egypt, did the same by their secret arts.',
+    dra: 'And Pharao called the wise men and the magicians: and they also by Egyptian enchantments and certain secrets did in like manner.',
+  },
+  'EXO 7:12': {
+    rsv: 'For every man cast down his rod, and they became serpents. But Aaron’s rod swallowed up their rods.',
+    dra: 'And they every one cast down their rods, and they were turned into serpents: but Aaron\'s rod devoured their rods.',
+  },
+  'EXO 7:13': {
+    rsv: 'Still Pharaoh’s heart was hardened, and he would not listen to them; as the LORD had said.',
+    dra: 'And Pharao\'s heart was hardened, and he did not hearken to them, as the Lord had commanded.',
+  },
+  'JHN 8:34': {
+    rsv: 'Jesus answered them, “Truly, truly, I say to you, every one who commits sin is a slave to sin.',
+    dra: 'Jesus answered them: Amen, amen I say unto you: that whosoever committeth sin, is the servant of sin.',
+  },
+  'JHN 8:36': {
+    rsv: 'So if the Son makes you free, you will be free indeed.',
+    dra: 'If therefore the son shall make you free, you shall be free indeed.',
+  },
+  'EXO 5:6': {
+    rsv: 'The same day Pharaoh commanded the taskmasters of the people and their foremen,',
+    dra: 'Therefore he commanded the same day the overseers of the works, and the taskmasters of the people, saying:',
+  },
+  'EXO 5:7': {
+    rsv: '“You shall no longer give the people straw to make bricks, as heretofore; let them go and gather straw for themselves.',
+    dra: 'You shall give straw no more to the people to make brick, as before: but let them go and gather straw.',
+  },
+  'EXO 5:9': {
+    rsv: 'Let heavier work be laid upon the men that they may labor at it and pay no regard to lying words.”',
+    dra: 'Let them be oppressed, with works, and let them fulfill them: that they may not regard lying words.',
+  },
+  'EXO 5:12': {
+    rsv: 'So the people were scattered abroad throughout all the land of Egypt, to gather stubble for straw.',
+    dra: 'And the people was scattered through all the land of Egypt to gather straw.',
+  },
+  'EXO 5:13': {
+    rsv: 'The taskmasters were urgent, saying, “Complete your work, your daily task, as when there was straw.”',
+    dra: 'And the overseers of the works pressed them, saying: Fulfill your work every day as before you were wont to do when straw was given you.',
+  },
+  'EXO 5:15': {
+    rsv: 'Then the foremen of the people of Israel came and cried to Pharaoh, “Why do you deal thus with your servants?',
+    dra: 'And the officers of the children of Israel came, and cried out to Pharao, saying: Why dealest thou so with thy servants?',
+  },
+  'EXO 5:17': {
+    rsv: 'But he said, “You are idle, you are idle; therefore you say, ‘Let us go and sacrifice to the LORD.’',
+    dra: 'And he said: You are idle, and therefore you say: Let us go and sacrifice to the Lord.',
+  },
+  'EXO 5:21': {
+    rsv: 'and they said to them, “The LORD look upon you and judge, because you have made us offensive in the sight of Pharaoh and his servants, and have put a sword in their hand to kill us.”',
+    dra: 'And they said to them: The Lord see and judge, because you have made our savour to stink before Pharao and his servants, and you have given him a sword to kill us.',
+  },
+  'EXO 5:22': {
+    rsv: 'Then Moses turned again to the LORD and said, “O LORD, why hast thou done evil to this people? Why didst thou ever send me?',
+    dra: 'And Moses returned to the Lord, and said: Lord, why hast thou afflicted this people? wherefore hast thou sent me?',
+  },
+  'EXO 5:23': {
+    rsv: 'For since I came to Pharaoh to speak in thy name, he has done evil to this people, and thou hast not delivered thy people at all.”',
+    dra: 'For since the time that I went in to Pharao to speak in thy name, he hath afflicted thy people: and thou hast not delivered them.',
+  },
+  'EXO 6:1': {
+    rsv: 'But the LORD said to Moses, “Now you shall see what I will do to Pharaoh; for with a strong hand he will send them out, yea, with a strong hand he will drive them out of his land.”',
+    dra: 'And the Lord said to Moses: Now thou shalt see what I will do to Pharao: for by a mighty hand shall he let them go, and with a strong hand shall he cast them out of his land.',
+  },
+  'MAT 11:28': {
+    rsv: 'Come to me, all who labor and are heavy laden, and I will give you rest.',
+    dra: 'Come to me, all you that labour, and are burdened, and I will refresh you.',
+  },
+  'MAT 11:29': {
+    rsv: 'Take my yoke upon you, and learn from me; for I am gentle and lowly in heart, and you will find rest for your souls.',
+    dra: 'Take up my yoke upon you, and learn of me, because I am meek, and humble of heart: and you shall find rest to your souls.',
+  },
+  'EXO 7:16': {
+    rsv: 'And you shall say to him, ‘The LORD, the God of the Hebrews, sent me to you, saying, “Let my people go, that they may serve me in the wilderness; and behold, you have not yet obeyed.”',
+    dra: 'And thou shalt say to him: The Lord God of the Hebrews sent me to thee saying: Let my people go to sacrifice to me in the desert: and hitherto thou wouldst not hear.',
+  },
+  'EXO 7:20': {
+    rsv: 'Moses and Aaron did as the LORD commanded; in the sight of Pharaoh and in the sight of his servants, he lifted up the rod and struck the water that was in the Nile, and all the water that was in the Nile turned to blood.',
+    dra: 'And Moses and Aaron did as the Lord had commanded: and lifting up the rod he struck the water of the river before Pharao and his servants: and it was turned into blood.',
+  },
+  'EXO 7:21': {
+    rsv: 'And the fish in the Nile died; and the Nile became foul, so that the Egyptians could not drink water from the Nile; and there was blood throughout all the land of Egypt.',
+    dra: 'And the fishes that were in the river died: and the river corrupted, and the Egyptians could not drink the water of the river, and there was blood in all the land of Egypt.',
+  },
+  'EXO 7:23': {
+    rsv: 'Pharaoh turned and went into his house, and he did not lay even this to heart.',
+    dra: 'And he turned himself away and went into his house, neither did he set his heart to it this time also.',
+  },
+  'EXO 8:6': {
+    rsv: 'So Aaron stretched out his hand over the waters of Egypt; and the frogs came up and covered the land of Egypt.',
+    dra: 'And Aaron stretched forth his hand upon the waters of Egypt, and the frogs came up, and covered the land of Egypt.',
+  },
+  'EXO 8:19': {
+    rsv: 'And the magicians said to Pharaoh, “This is the finger of God.” But Pharaoh’s heart was hardened, and he would not listen to them; as the LORD had said.',
+    dra: 'And the magicians said to Pharao This is the finger of God. And Pharao heart was hardened, and he hearkened not unto them, as the Lord had commanded.',
+  },
+  'EXO 8:22': {
+    rsv: 'But on that day I will set apart the land of Goshen, where my people dwell, so that no swarms of flies shall be there; that you may know that I am the LORD in the midst of the earth.',
+    dra: 'And I will make the land of Gessen wherein my people is, wonderful in that lay, so that flies shall not be there: and thou shalt know that I am the Lord in the midst of the earth.',
+  },
+  'EXO 10:22': {
+    rsv: 'So Moses stretched out his hand toward heaven, and there was thick darkness in all the land of Egypt three days;',
+    dra: 'And Moses stretch forth his hand towards heaven: and there came horrible darkness in all the land of Egypt for three days.',
+  },
+  'EXO 10:23': {
+    rsv: 'they did not see one another, nor did any rise from his place for three days; but all the people of Israel had light where they dwelt.',
+    dra: 'No man saw his brother, nor moved himself out of the place where he was: but wheresoever the children of Israel dwelt there was light.',
+  },
+  'EXO 9:27': {
+    rsv: 'Then Pharaoh sent, and called Moses and Aaron, and said to them, “I have sinned this time; the LORD is in the right, and I and my people are in the wrong.',
+    dra: 'And Pharao sent and called Moses and Aaron, saying to them: I have sinned this time also; the Lord is just: I and my people are wicked.',
+  },
+  'EXO 10:28': {
+    rsv: 'Then Pharaoh said to him, “Get away from me; take heed to yourself; never see my face again; for in the day you see my face you shall die.”',
+    dra: 'And Pharao said to Moses: Get thee from me, and beware thou see not my face any more: in what day soever thou shalt come in my sight, thou shalt die.',
+  },
+  'EXO 10:29': {
+    rsv: 'Moses said, “As you say! I will not see your face again.”',
+    dra: 'Moses answered: So shall it be as thou hast spoken, I will not see thy face any more.',
+  },
+  'JHN 2:9': {
+    rsv: 'When the steward of the feast tasted the water now become wine, and did not know where it came from (though the servants who had drawn the water knew), the steward of the feast called the bridegroom',
+    dra: 'And when the chief steward had tasted the water made wine, and knew not whence it was, but the waiters knew who had drawn the water; the chief steward calleth the bridegroom,',
+  },
+  'JHN 2:11': {
+    rsv: 'This, the first of his signs, Jesus did at Cana in Galilee, and manifested his glory; and his disciples believed in him.',
+    dra: 'This beginning of miracles did Jesus in Cana of Galilee; and manifested his glory, and his disciples believed in him.',
+  },
+  'EXO 11:1': {
+    rsv: 'The LORD said to Moses, “Yet one plague more I will bring upon Pharaoh and upon Egypt; afterwards he will let you go hence; when he lets you go, he will drive you away completely.',
+    dra: 'And the Lord said to Moses: Yet one plague more will I bring upon Pharao and Egypt, and after that he shall let you go and thrust you out.',
+  },
+  'EXO 11:7': {
+    rsv: 'But against any of the people of Israel, either man or beast, not a dog shall growl; that you may know that the LORD makes a distinction between the Egyptians and Israel.',
+    dra: 'But with all the children of Israel there shall not a dog make the least noise, from man even to beast: that you may know how wonderful a difference the Lord maketh between the Egyptians and Israel.',
+  },
+  'EXO 12:3': {
+    rsv: 'Tell all the congregation of Israel that on the tenth day of this month they shall take every man a lamb according to their fathers’ houses, a lamb for a household;',
+    dra: 'Speak ye to the whole assembly of the children of Israel, and say to them: On the tenth day of this month let every man take a lamb by their families and houses.',
+  },
+  'EXO 12:5': {
+    rsv: 'Your lamb shall be without blemish, a male a year old; you shall take it from the sheep or from the goats;',
+    dra: 'And it shall be a lamb without blemish, a male, of one year: according to which rite also you shall take a kid.',
+  },
+  'EXO 12:7': {
+    rsv: 'Then they shall take some of the blood, and put it on the two doorposts and the lintel of the houses in which they eat them.',
+    dra: 'And they shall take of the blood thereof, and put it upon both the side posts, and on the upper door posts of the houses, wherein they shall eat it.',
+  },
+  'EXO 12:8': {
+    rsv: 'They shall eat the flesh that night, roasted; with unleavened bread and bitter herbs they shall eat it.',
+    dra: 'And they shall eat the flesh that night roasted at the fire, and unleavened bread with wild lettuce.',
+  },
+  'EXO 12:11': {
+    rsv: 'In this manner you shall eat it: your loins girded, your sandals on your feet, and your staff in your hand; and you shall eat it in haste. It is the LORD’s passover.',
+    dra: 'And thus you shall eat it: you shall gird your reins, and you shall have shoes on your feet, holding staves in your hands, and you shall eat in haste: for it is the Phase (that is the Passage) of the Lord.',
+  },
+  'EXO 12:13': {
+    rsv: 'The blood shall be a sign for you, upon the houses where you are; and when I see the blood, I will pass over you, and no plague shall fall upon you to destroy you, when I smite the land of Egypt.',
+    dra: 'And the blood shall be unto you for a sign in the houses where you shall be: and I shall see the blood, and shall pass over you: and the plague shall not be upon you to destroy you, when I shall strike the land of Egypt.',
+  },
+  'EXO 12:21': {
+    rsv: 'Then Moses called all the elders of Israel, and said to them, “Select lambs for yourselves according to your families, and kill the passover lamb.',
+    dra: 'And Moses called all the ancients of the children of Israel, and said to them: Go take a lamb by your families, and sacrifice the Phase.',
+  },
+  'EXO 12:28': {
+    rsv: 'Then the people of Israel went and did so; as the LORD had commanded Moses and Aaron, so they did.',
+    dra: 'And the children of Israel going forth did as the Lord had commanded Moses and Aaron.',
+  },
+  '1CO 5:7': {
+    rsv: 'Cleanse out the old leaven that you may be a new lump, as you really are unleavened. For Christ, our paschal lamb, has been sacrificed.',
+    dra: 'Purge out the old leaven, that you may be a new paste, as you are unleavened. For Christ our pasch is sacrificed.',
+  },
+  'EXO 12:31': {
+    rsv: 'And he summoned Moses and Aaron by night, and said, “Rise up, go forth from among my people, both you and the people of Israel; and go, serve the LORD, as you have said.',
+    dra: 'And Pharao calling Moses and Aaron, in the night, said: Arise and go forth from among my people, you and the children of Israel: go, sacrifice to the Lord as you say.',
+  },
+  'EXO 12:32': {
+    rsv: 'Take your flocks and your herds, as you have said, and be gone; and bless me also!”',
+    dra: 'Your sheep and herds take along with you, as you demanded, and departing, bless me.',
+  },
+  'EXO 12:34': {
+    rsv: 'So the people took their dough before it was leavened, their kneading bowls being bound up in their mantles on their shoulders.',
+    dra: 'The people therefore took dough before it was leavened: and tying it in their cloaks, put it on their shoulders.',
+  },
+  'EXO 12:37': {
+    rsv: 'And the people of Israel journeyed from Rameses to Succoth, about six hundred thousand men on foot, besides women and children.',
+    dra: 'And the children of Israel set forward from Ramesse to Socoth, being about six hundred thousand men on foot, beside children.',
+  },
+  'EXO 12:38': {
+    rsv: 'A mixed multitude also went up with them, and very many cattle, both flocks and herds.',
+    dra: 'And a mixed multitude without number went up also with them, sheep and herds and beasts of divers kinds, exceeding many.',
+  },
+  'EXO 12:40': {
+    rsv: 'The time that the people of Israel dwelt in Egypt was four hundred and thirty years.',
+    dra: 'And the abode of the children of Israel that they made in Egypt, was four hundred and thirty years.',
+  },
+  'EXO 12:41': {
+    rsv: 'And at the end of four hundred and thirty years, on that very day, all the hosts of the LORD went out from the land of Egypt.',
+    dra: 'Which being expired, the same day all the army of the Lord went forth out of the land of Egypt.',
+  },
+  'EXO 12:42': {
+    rsv: 'It was a night of watching by the LORD, to bring them out of the land of Egypt; so this same night is a night of watching kept to the LORD by all the people of Israel throughout their generations.',
+    dra: 'This is the observable night of the Lord, when he brought them forth out of the land of Egypt: this night all the children of Israel must observe in their generations.',
+  },
+  'EXO 13:21': {
+    rsv: 'And the LORD went before them by day in a pillar of cloud to lead them along the way, and by night in a pillar of fire to give them light, that they might travel by day and by night;',
+    dra: 'And the Lord went before them to shew the way by day in a pillar of a cloud, and by night in a pillar of fire: that he might be the guide of their journey at both times.',
+  },
+  'EXO 13:22': {
+    rsv: 'the pillar of cloud by day and the pillar of fire by night did not depart from before the people.',
+    dra: 'There never failed the pillar of the cloud by day, nor the pillar of fire by night, before the people.',
+  },
+  'LUK 9:30': {
+    rsv: 'And behold, two men talked with him, Moses and Elijah,',
+    dra: 'And behold two men were talking with him. And they were Moses and Elias,',
+  },
+  'LUK 9:31': {
+    rsv: 'who appeared in glory and spoke of his departure, which he was to accomplish at Jerusalem.',
+    dra: 'Appearing in majesty. And they spoke of his decease that he should accomplish in Jerusalem.',
+  },
+  'EXO 12:14': {
+    rsv: '“This day shall be for you a memorial day, and you shall keep it as a feast to the LORD; throughout your generations you shall observe it as an ordinance for ever.',
+    dra: 'And this day shall be for a memorial to you: and you shall keep it a feast to the Lord in your generations with an everlasting observance.',
+  },
+  'EXO 12:17': {
+    rsv: 'And you shall observe the feast of unleavened bread, for on this very day I brought your hosts out of the land of Egypt: therefore you shall observe this day, throughout your generations, as an ordinance for ever.',
+    dra: 'And you shall observe the feast of the unleavened bread: for in this same day I will bring forth your army out of the land of Egypt, and you shall keep this day in your generations by a perpetual observance.',
+  },
+  'EXO 13:3': {
+    rsv: 'And Moses said to the people, “Remember this day, in which you came out from Egypt, out of the house of bondage, for by strength of hand the LORD brought you out from this place; no leavened bread shall be eaten.',
+    dra: 'And Moses said to the people: Remember this day in which you came forth out of Egypt, and out of the house of bondage, for with a strong hand hath the Lord brought you forth out of this place: that you eat no leavened bread.',
+  },
+  'EXO 13:8': {
+    rsv: 'And you shall tell your son on that day, ‘It is because of what the LORD did for me when I came out of Egypt.’',
+    dra: 'And thou shalt tell thy son in that day, saying: This is what the Lord did to me when I came forth out of Egypt.',
+  },
+  'EXO 12:26': {
+    rsv: 'And when your children say to you, ‘What do you mean by this service?’',
+    dra: 'And when your children shall say to you: What is the meaning of this service?',
+  },
+  'EXO 12:27': {
+    rsv: 'you shall say, ‘It is the sacrifice of the LORD’s passover, for he passed over the houses of the people of Israel in Egypt, when he slew the Egyptians but spared our houses.’” And the people bowed their heads and worshiped.',
+    dra: 'You shall say to them: It is the victim of the passage of the Lord, when he passed over the houses of the children of Israel in Egypt, striking the Egyptians, and saving our houses. And the people bowing themselves, adored.',
+  },
+  'EXO 13:14': {
+    rsv: 'And when in time to come your son asks you, ‘What does this mean?’ you shall say to him, ‘By strength of hand the LORD brought us out of Egypt, from the house of bondage.',
+    dra: 'And when thy son shall ask thee to morrow, saying: What is this? thou shalt answer him: With a strong hand did the Lord bring us forth out of the land of Egypt, out of the house of bondage.',
+  },
+  'LUK 22:19': {
+    rsv: 'And he took bread, and when he had given thanks he broke it and gave it to them, saying, “This is my body which is given for you. Do this in remembrance of me.”',
+    dra: 'And taking bread, he gave thanks, and brake; and gave to them, saying: This is my body, which is given for you. Do this for a commemoration of me.',
+  },
 }
 
 /** A verse's words in the active translation. Throws for a verse that isn't in the list (a content check catches these first). */

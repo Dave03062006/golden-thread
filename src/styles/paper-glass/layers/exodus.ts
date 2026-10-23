@@ -27,6 +27,23 @@ function papyrus(x: number, base: number, count: number, height: number, seed: n
   return out
 }
 
+/** The bank of the Nile, thick with papyrus, its water in the colors given (blue, or turned to blood). */
+export function nileReeds(water: string, ripple: string): PaperLayerArt {
+  return {
+    bounds: bandFrom(380),
+    shadow: true,
+    resolution: 0.5,
+    svg: `
+      <path d="${hills([520, 515, 522, 512, 520, 518, 514, 520, 516, 520])}" fill="#8aa06a" opacity=".85"/>
+      ${[80, 300, 520, 1180, 1440].map((x, i) => `<path d="M${x} 540L${x + 5} ${430 - (i % 2) * 24}L${x + 10} 540Z" fill="#6a4a2a"/><path d="M${x + 5} ${430 - (i % 2) * 24}c-34-12-52 6-60 18M${x + 5} ${430 - (i % 2) * 24}c34-14 52 4 60 16M${x + 5} ${430 - (i % 2) * 24}c-12-26-26-30-40-26M${x + 5} ${430 - (i % 2) * 24}c14-26 30-28 42-22" stroke="#3e6a32" stroke-width="10" fill="none" stroke-linecap="round"/>`).join('')}
+      <path d="M${LEFT} 556L${RIGHT} 556L${RIGHT} 700L${LEFT} 700Z" fill="${water}"/>
+      ${[590, 620, 650, 676].map((y, i) => `<path d="M${LEFT + 80 + i * 60} ${y}C400 ${y - 6} 1000 ${y + 6} ${RIGHT - 120} ${y}" stroke="${ripple}" stroke-width="2.4" fill="none" opacity=".7"/>`).join('')}
+      ${papyrus(80, 700, 14, 210, 3)}${papyrus(-120, 700, 10, 190, 7)}${papyrus(1120, 700, 12, 220, 5)}${papyrus(1360, 700, 14, 200, 9)}${papyrus(560, 700, 6, 140, 11)}
+      <path d="M${LEFT} 696C300 690 900 704 ${RIGHT} 694L${RIGHT} ${BOTTOM}L${LEFT} ${BOTTOM}Z" fill="#7a7a42"/>
+      <path d="M${LEFT} 696C300 690 900 704 ${RIGHT} 694" stroke="#a8a860" stroke-width="5" fill="none"/>`,
+  }
+}
+
 export const exodusLayers: Record<string, PaperLayerArt> = {
   'brick-pits': {
     bounds: bandFrom(340),
@@ -83,19 +100,7 @@ export const exodusLayers: Record<string, PaperLayerArt> = {
       ${[600, 680, 760, 840, 920].map((x) => `<path d="M${x} 760L${x - 6} 820" stroke="#8a6a2a" stroke-width="3"/>`).join('')}
       <path d="M180 700L180 610L300 610L300 700Z" fill="#8a6a42"/><ellipse cx="240" cy="610" rx="64" ry="12" fill="#a07a4a"/>`,
   },
-  'nile-reeds': {
-    bounds: bandFrom(380),
-    shadow: true,
-    resolution: 0.5,
-    svg: `
-      <path d="${hills([520, 515, 522, 512, 520, 518, 514, 520, 516, 520])}" fill="#8aa06a" opacity=".85"/>
-      ${[80, 300, 520, 1180, 1440].map((x, i) => `<path d="M${x} 540L${x + 5} ${430 - (i % 2) * 24}L${x + 10} 540Z" fill="#6a4a2a"/><path d="M${x + 5} ${430 - (i % 2) * 24}c-34-12-52 6-60 18M${x + 5} ${430 - (i % 2) * 24}c34-14 52 4 60 16M${x + 5} ${430 - (i % 2) * 24}c-12-26-26-30-40-26M${x + 5} ${430 - (i % 2) * 24}c14-26 30-28 42-22" stroke="#3e6a32" stroke-width="10" fill="none" stroke-linecap="round"/>`).join('')}
-      <path d="M${LEFT} 556L${RIGHT} 556L${RIGHT} 700L${LEFT} 700Z" fill="#4a8ab8"/>
-      ${[590, 620, 650, 676].map((y, i) => `<path d="M${LEFT + 80 + i * 60} ${y}C400 ${y - 6} 1000 ${y + 6} ${RIGHT - 120} ${y}" stroke="#9ad0ee" stroke-width="2.4" fill="none" opacity=".7"/>`).join('')}
-      ${papyrus(80, 700, 14, 210, 3)}${papyrus(-120, 700, 10, 190, 7)}${papyrus(1120, 700, 12, 220, 5)}${papyrus(1360, 700, 14, 200, 9)}${papyrus(560, 700, 6, 140, 11)}
-      <path d="M${LEFT} 696C300 690 900 704 ${RIGHT} 694L${RIGHT} ${BOTTOM}L${LEFT} ${BOTTOM}Z" fill="#7a7a42"/>
-      <path d="M${LEFT} 696C300 690 900 704 ${RIGHT} 694" stroke="#a8a860" stroke-width="5" fill="none"/>`,
-  },
+  'nile-reeds': nileReeds('#4a8ab8', '#9ad0ee'),
   horeb: {
     bounds: bandFrom(160),
     shadow: true,

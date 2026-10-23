@@ -95,6 +95,13 @@ export const EMBLEMS: Record<string, { rows: string[]; colors: Record<string, st
   'water-trough': { rows: ['..y......', '.........', '......ww.', '.....wwwk', '.....wwww', 'bbbbbwww.', 'bsssb.k.k', 'bbbbb.k.k', '.........'], colors: { y: C.gold, w: C.white, k: C.ink, b: C.wood2, s: C.sky } },
   'burning-bush': { rows: ['....o....', '...ooo...', '.o.oyo.o.', '.ooyyyoo.', 'ooyyyyyoo', '.ogygygo.', '..ggggg..', '.........', 'sssssssss'], colors: { o: C.orange, y: C.gold, g: C.green, s: C.sand2 } },
   'rod-serpent': { rows: ['ww.....gg', '.w....g..', '.w...g...', '..w...g..', '..w....g.', '..w...g..', '...w.g...', '...w..g..', '...w...g.'], colors: { w: C.wood3, g: C.green } },
+  // Level 8 · The Plagues and the Passover
+  'i-will': { rows: ['..y.y.y..', '.y.....y.', 'y........', '......ss.', '.....ss..', '....ss...', '...ss....', 'bbss.....', 'bbs......'], colors: { y: C.gold, s: C.sand, b: C.blue } },
+  stubble: { rows: ['...y.....', '.........', '.s.......', '.s.s.s...', 'ss.s.s...', 'sSsSsSbbb', 'sSsSsSbbb', 'sSsSsSbbb', 'wwwwwwwww'], colors: { y: C.gold, s: C.sand, S: C.sand2, b: C.wood2, w: C.wood3 } },
+  frog: { rows: ['.........', '..ll.ll..', '..lkllk..', '.ggggggg.', 'ggggggggg', 'ggggggggg', 'g.g...g.g', '.........', 'bbbbbbbbb'], colors: { l: C.lime, k: C.ink, g: C.green, b: C.blue } },
+  'marked-door': { rows: ['sssssssss', 'srrrrrrrs', 'ssskkksss', 'srkkkkkrs', 'srkkkkkrs', 'srkkykkrs', 'srkkkkkrs', 'srkkkkkrs', 'srkkkkkrs'], colors: { s: C.sand2, r: C.rose, k: C.navy, y: C.gold } },
+  'pillar-of-fire': { rows: ['....o....', '...ooo...', '...oyo...', '..oyyyo..', '..oyyyo..', '..oyyyo..', '..oyyyo..', '.ooyyyoo.', 'sssssssss'], colors: { o: C.orange, y: C.gold, s: C.sand2 } },
+  'unleavened-bread': { rows: ['....y....', '.........', '..sssss..', '.sSsssSs.', 'sssSssssS', 'sSsssSsss', '.ssSsssS.', '..sssss..', '.........'], colors: { y: C.gold, s: C.sand, S: C.wood2 } },
 }
 
 /** The pointed outline of a window, inside which the glass is: whether a pixel is in it. */

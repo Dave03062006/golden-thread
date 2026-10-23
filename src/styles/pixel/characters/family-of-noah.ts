@@ -97,9 +97,9 @@ function person(look: Look): PixelSpriteArt {
   }
 }
 
-/** A child born after the Flood: the same figure, smaller, in a short robe, standing or walking. */
+/** A child born after the Flood: the same figure, smaller, in a short robe, standing, walking or praying. */
 function child(look: Look): PixelSpriteArt {
-  const frame = (step: number, up: number) =>
+  const frame = (step: number, up: number, pray = false) =>
     sprite(12, 20, (g) => {
       g.rect(3 - step, 18, 2, 2, 'S').rect(6 + step, 18, 2, 2, 'S')
       g.rect(3, 7 + up, 6, 11 - up, 'K')
@@ -107,7 +107,9 @@ function child(look: Look): PixelSpriteArt {
       g.ellipse(5.5, 3 + up, 2.2, 2.2, 'S')
       g.ellipse(6, 2 + up, 2, 1.3, 'H')
       if (look.veil) g.rect(6, 1 + up, 3, 2, 'V').rect(7, 3 + up, 2, 4, 'V')
-      g.rect(2, 8 + up, 1, 6, 'S')
+      // Hands down at the side, or held together in front of the face.
+      if (pray) g.rect(2, 7 + up, 1, 3, 'S').rect(1, 6 + up, 1, 2, 'S')
+      else g.rect(2, 8 + up, 1, 6, 'S')
       g.rim('S', 'R', 'left')
       g.rim('K', 'R', 'left')
     })
@@ -119,6 +121,7 @@ function child(look: Look): PixelSpriteArt {
     poses: {
       idle: { frames: [frame(0, 0), frame(0, -1)], fps: 0.5 },
       walk: { frames: [frame(1, 0), frame(-1, 0)], fps: 3.4 },
+      pray: { frames: [frame(0, 0, true), frame(0, -1, true)], fps: 0.4 },
     },
   }
 }
@@ -215,6 +218,10 @@ export const familyOfNoah: Record<string, PixelSpriteArt> = {
   zipporah: person({ robe: C.green, hair: C.ink, veil: C.gold }),
   aaron: person({ robe: C.blue, hair: C.pale, beard: C.pale, sash: C.gold }),
   elder: person({ robe: C.sand2, hair: C.white, beard: C.white, veil: C.sand }),
+  // Level 8: Pharaoh's magicians; a Hebrew father and mother at the Passover.
+  magician: person({ robe: C.white, hair: C.ink, sash: C.gold }),
+  'hebrew-father': person({ robe: C.green, hair: C.wood0, beard: C.wood0, sash: C.wood2 }),
+  'hebrew-mother': person({ robe: C.rose, hair: C.wood0, veil: C.pale }),
   'hebrew-family': band([
     { robe: C.green, hair: C.wood0, beard: C.wood0 },
     { robe: C.rose, hair: C.wood0, veil: C.white },

@@ -323,6 +323,12 @@
     },
     "horeb": {
       "hash": "835d07e0"
+    },
+    "stubble-field": {
+      "hash": "2f6a9663"
+    },
+    "blood-nile": {
+      "hash": "5d78d887"
     }
   },
   "paperProps": {
@@ -1003,6 +1009,36 @@
     },
     "poured-water": {
       "hash": "30f5f6d2"
+    },
+    "magician": {
+      "hash": "ea3e45fb"
+    },
+    "stubble": {
+      "hash": "13f7142b"
+    },
+    "frog": {
+      "hash": "01821529"
+    },
+    "swarm": {
+      "hash": "91f4111b"
+    },
+    "plague-sign": {
+      "hash": "ee31fd7d"
+    },
+    "blood-mark": {
+      "hash": "5b820231"
+    },
+    "passover-dish": {
+      "hash": "242d4dbc"
+    },
+    "hebrew-father": {
+      "hash": "36ab629a"
+    },
+    "hebrew-mother": {
+      "hash": "25dffc57"
+    },
+    "pillar": {
+      "hash": "917a4c38"
     }
   },
   "pixelLayers": {
@@ -1329,6 +1365,12 @@
     },
     "horeb": {
       "hash": "2ba30f0a"
+    },
+    "stubble-field": {
+      "hash": "19dadbfa"
+    },
+    "blood-nile": {
+      "hash": "4bfa3d96"
     }
   },
   "backdrop": {
