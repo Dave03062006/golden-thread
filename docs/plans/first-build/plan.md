@@ -475,7 +475,7 @@ The same way again: script, art, build, checks, play-test. Level 7 opens Age III
 The same way again: script, art, build, checks, play-test.
 
 **Status (October 2026):** steps 1–4 are done; step 5 is Dave's.
-- **Script:** `docs/scripts/level-08-the-plagues-and-the-passover.md`, approved by Dave. It has 6 episodes and 22 scenes, 71 quotations checked word for word, and a 42-question quiz.
+- **Script:** `docs/scripts/level-08-the-plagues-and-the-passover.md`, approved by Dave. It has 6 episodes and 22 scenes, 72 quotations checked word for word, and a 42-question quiz.
 - **Build:** all six episodes are built in both styles, each with a different kind of play from the spec's library:
   - God's promises (catching);
   - gathering stubble (herding and gathering);
