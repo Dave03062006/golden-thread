@@ -2451,6 +2451,333 @@ export const VERSES: Record<string, Verse> = {
     rsv: 'And he took bread, and when he had given thanks he broke it and gave it to them, saying, “This is my body which is given for you. Do this in remembrance of me.”',
     dra: 'And taking bread, he gave thanks, and brake; and gave to them, saying: This is my body, which is given for you. Do this for a commemoration of me.',
   },
+  // Level 9 · Through the Sea (the RSV's pronunciation marks in names, like Am′alek, left out).
+  'EXO 14:5': {
+    rsv: 'When the king of Egypt was told that the people had fled, the mind of Pharaoh and his servants was changed toward the people, and they said, “What is this we have done, that we have let Israel go from serving us?”',
+    dra: 'And it was told the king of the Egyptians that the people was fled: and the heart of Pharao and of his servants was changed with regard to the people, and they said: What meant we to do, that we let Israel go from serving us?',
+  },
+  'EXO 14:6': {
+    rsv: 'So he made ready his chariot and took his army with him,',
+    dra: 'So he made ready his chariot, and took all his people with him.',
+  },
+  'EXO 14:7': {
+    rsv: 'and took six hundred picked chariots and all the other chariots of Egypt with officers over all of them.',
+    dra: 'And he took six hundred chosen chariots, and all the chariots that were in Egypt: and the captains of the whole army.',
+  },
+  'EXO 14:10': {
+    rsv: 'When Pharaoh drew near, the people of Israel lifted up their eyes, and behold, the Egyptians were marching after them; and they were in great fear. And the people of Israel cried out to the LORD;',
+    dra: 'And when Pharao drew near, the children of Israel, lifting up their eyes, saw the Egyptians behind them: and they feared exceedingly, and cried to the Lord.',
+  },
+  'EXO 14:11': {
+    rsv: 'and they said to Moses, “Is it because there are no graves in Egypt that you have taken us away to die in the wilderness? What have you done to us, in bringing us out of Egypt?',
+    dra: 'And they said to Moses: Perhaps there were no graves in Egypt, therefore thou hast brought us to die in the wilderness: why wouldst thou do this, to lead us out of Egypt?',
+  },
+  'EXO 14:13': {
+    rsv: 'And Moses said to the people, “Fear not, stand firm, and see the salvation of the LORD, which he will work for you today; for the Egyptians whom you see today, you shall never see again.',
+    dra: 'And Moses said to the people: Fear not: stand and see the great wonders of the Lord, which he will do this day: for the Egyptians, whom you see now, you shall see no more for ever.',
+  },
+  'EXO 14:14': {
+    rsv: 'The LORD will fight for you, and you have only to be still.”',
+    dra: 'The Lord will fight for you, and you shall hold your peace.',
+  },
+  'EXO 14:19': {
+    rsv: 'Then the angel of God who went before the host of Israel moved and went behind them; and the pillar of cloud moved from before them and stood behind them,',
+    dra: 'And the angel of God, who went before the camp of Israel, removing, went behind them: and together with him the pillar of the cloud, leaving the forepart,',
+  },
+  'EXO 14:20': {
+    rsv: 'coming between the host of Egypt and the host of Israel. And there was the cloud and the darkness; and the night passed without one coming near the other all night.',
+    dra: 'Stood behind, between the Egyptians\' camp and the camp of Israel: and it was a dark cloud, and enlightening the night, so that they could not come at one another all the night.',
+  },
+  'MAT 14:25': {
+    rsv: 'And in the fourth watch of the night he came to them, walking on the sea.',
+    dra: 'And in the fourth watch of the night, he came to them walking upon the sea.',
+  },
+  'MAT 14:27': {
+    rsv: 'But immediately he spoke to them, saying, “Take heart, it is I; have no fear.”',
+    dra: 'And immediately Jesus spoke to them, saying: Be of good heart: it is I, fear ye not.',
+  },
+  'EXO 14:15': {
+    rsv: 'The LORD said to Moses, “Why do you cry to me? Tell the people of Israel to go forward.',
+    dra: 'And the Lord said to Moses: Why criest thou to me? Speak to the children of Israel to go forward.',
+  },
+  'EXO 14:16': {
+    rsv: 'Lift up your rod, and stretch out your hand over the sea and divide it, that the people of Israel may go on dry ground through the sea.',
+    dra: 'But lift thou up thy rod, and stretch forth thy hand over the sea, and divide it: that the children of Israel may go through the midst of the sea on dry ground.',
+  },
+  'EXO 14:21': {
+    rsv: 'Then Moses stretched out his hand over the sea; and the LORD drove the sea back by a strong east wind all night, and made the sea dry land, and the waters were divided.',
+    dra: 'And when Moses had stretched forth his hand over the sea, the Lord took it away by a strong and burning wind blowing all the night, and turned it into dry ground: and the water was divided.',
+  },
+  'EXO 14:22': {
+    rsv: 'And the people of Israel went into the midst of the sea on dry ground, the waters being a wall to them on their right hand and on their left.',
+    dra: 'And the children of Israel went in through the midst of the sea dried up: for the water was as a wall on their right hand and on their left.',
+  },
+  'EXO 14:25': {
+    rsv: 'clogging their chariot wheels so that they drove heavily; and the Egyptians said, “Let us flee from before Israel; for the LORD fights for them against the Egyptians.”',
+    dra: 'And overthrew the wheels of the chariots, and they were carried into the deep. And the Egyptians said: Let us flee from Israel: for the Lord fighteth for them against us.',
+  },
+  'EXO 14:26': {
+    rsv: 'Then the LORD said to Moses, “Stretch out your hand over the sea, that the water may come back upon the Egyptians, upon their chariots, and upon their horsemen.”',
+    dra: 'And the Lord said to Moses: Stretch forth they hand over the sea, that the waters may come again upon the Egyptians, upon their chariots and horsemen.',
+  },
+  'EXO 14:28': {
+    rsv: 'The waters returned and covered the chariots and the horsemen and all the host of Pharaoh that had followed them into the sea; not so much as one of them remained.',
+    dra: 'And the waters returned, and covered the chariots and the horsemen of all the army of Pharao, who had come into the sea after them, neither did there so much as one of them remain.',
+  },
+  'EXO 14:29': {
+    rsv: 'But the people of Israel walked on dry ground through the sea, the waters being a wall to them on their right hand and on their left.',
+    dra: 'But the children of Israel marched through the midst of the sea upon dry land, and the waters were to them as a wall on the right hand and on the left:',
+  },
+  'EXO 14:31': {
+    rsv: 'And Israel saw the great work which the LORD did against the Egyptians, and the people feared the LORD; and they believed in the LORD and in his servant Moses.',
+    dra: 'And they saw the Egyptians dead upon the sea shore, and the mighty hand that the Lord had used against them: and the people feared the Lord, and they believed the Lord, and Moses his servant.',
+  },
+  '1CO 10:1': {
+    rsv: 'I want you to know, brethren, that our fathers were all under the cloud, and all passed through the sea,',
+    dra: 'For I would not have you ignorant, brethren, that our fathers were all under the cloud, and all passed through the sea.',
+  },
+  '1CO 10:2': {
+    rsv: 'and all were baptized into Moses in the cloud and in the sea,',
+    dra: 'And all in Moses were baptized, in the cloud, and in the sea:',
+  },
+  'EXO 15:1': {
+    rsv: 'Then Moses and the people of Israel sang this song to the LORD, saying, “I will sing to the LORD, for he has triumphed gloriously; the horse and his rider he has thrown into the sea.',
+    dra: 'Then Moses and the children of Israel sung this canticle to the Lord: and said: Let us sing to the Lord: for he is gloriously magnified, the horse and the rider he hath thrown into the sea.',
+  },
+  'EXO 15:2': {
+    rsv: 'The LORD is my strength and my song, and he has become my salvation; this is my God, and I will praise him, my father’s God, and I will exalt him.',
+    dra: 'The Lord is my strength and my praise, and he is become salvation to me: he is my God and I will glorify him: the God of my father, and I will exalt him.',
+  },
+  'EXO 15:11': {
+    rsv: '“Who is like thee, O LORD, among the gods? Who is like thee, majestic in holiness, terrible in glorious deeds, doing wonders?',
+    dra: 'Who is like to thee, among the strong, O Lord? who is like to thee, glorious in holiness, terrible and praiseworthy, doing wonders?',
+  },
+  'EXO 15:20': {
+    rsv: 'Then Miriam, the prophetess, the sister of Aaron, took a timbrel in her hand; and all the women went out after her with timbrels and dancing.',
+    dra: 'So Mary the prophetess, the sister of Aaron, took a timbrel in her hand: and all the women went forth after her with timbrels and with dances:',
+  },
+  'EXO 15:21': {
+    rsv: 'And Miriam sang to them: “Sing to the LORD, for he has triumphed gloriously; the horse and his rider he has thrown into the sea.”',
+    dra: 'And she began the song to them, saying: Let us sing to the Lord, for he is gloriously magnified, the horse and his rider he hath thrown into the sea.',
+  },
+  'EXO 15:13': {
+    rsv: '“Thou hast led in thy steadfast love the people whom thou hast redeemed, thou hast guided them by thy strength to thy holy abode.',
+    dra: 'In thy mercy thou hast been a leader to the people which thou hast redeemed: and in thy strength thou hast carried them to thy holy habitation.',
+  },
+  'EXO 15:17': {
+    rsv: 'Thou wilt bring them in, and plant them on thy own mountain, the place, O LORD, which thou hast made for thy abode, the sanctuary, O LORD, which thy hands have established.',
+    dra: 'Thou shalt bring them in, and plant them in the mountain of thy inheritance, in thy most firm habitation which thou hast made, O Lord; thy sanctuary, O Lord, which thy hands have established.',
+  },
+  'EXO 15:18': {
+    rsv: 'The LORD will reign for ever and ever.”',
+    dra: 'The Lord shall reign for ever and ever.',
+  },
+  'REV 15:2': {
+    rsv: 'And I saw what appeared to be a sea of glass mingled with fire, and those who had conquered the beast and its image and the number of its name, standing beside the sea of glass with harps of God in their hands.',
+    dra: 'And I saw as it were a sea of glass mingled with fire, and them that had overcome the beast, and his image, and the number of his name, standing on the sea of glass, having the harps of God:',
+  },
+  'REV 15:3': {
+    rsv: 'And they sing the song of Moses, the servant of God, and the song of the Lamb, saying, “Great and wonderful are thy deeds, O Lord God the Almighty! Just and true are thy ways, O King of the ages!',
+    dra: 'And singing the canticle of Moses, the servant of God, and the canticle of the Lamb, saying: Great and wonderful are thy works, O Lord God Almighty; just and true are thy ways, O King of ages.',
+  },
+  'EXO 15:22': {
+    rsv: 'Then Moses led Israel onward from the Red Sea, and they went into the wilderness of Shur; they went three days in the wilderness and found no water.',
+    dra: 'And Moses brought Israel from the Red Sea, and they went forth into the wilderness of Sur: and they marched three days through the wilderness, and found no water.',
+  },
+  'EXO 15:23': {
+    rsv: 'When they came to Marah, they could not drink the water of Marah because it was bitter; therefore it was named Marah.',
+    dra: 'And they came into Mara, and they could not drink the waters of Mara, because they were bitter: whereupon he gave a name also agreeable to the place, calling it Mara, that is, bitterness.',
+  },
+  'EXO 15:25': {
+    rsv: 'And he cried to the LORD; and the LORD showed him a tree, and he threw it into the water, and the water became sweet.…',
+    dra: 'But he cried to the Lord, and he shewed him a tree, which when he had cast into the waters, they were turned into sweetness.…',
+    partial: true,
+  },
+  'EXO 15:27': {
+    rsv: 'Then they came to Elim, where there were twelve springs of water and seventy palm trees; and they encamped there by the water.',
+    dra: 'And the children of Israel came into Elim, where there were twelve fountains of water, and seventy palm trees: and they encamped by the waters.',
+  },
+  'EXO 16:2': {
+    rsv: 'And the whole congregation of the people of Israel murmured against Moses and Aaron in the wilderness,',
+    dra: 'And all the congregation of the children of Israel murmured against Moses and Aaron in the wilderness.',
+  },
+  'EXO 16:3': {
+    rsv: 'and said to them, “Would that we had died by the hand of the LORD in the land of Egypt, when we sat by the fleshpots and ate bread to the full; for you have brought us out into this wilderness to kill this whole assembly with hunger.”',
+    dra: 'And the children of Israel said to them: Would to God we had died by the hand of the Lord in the land of Egypt, when we sat over the flesh pots, and ate bread to the full. Why have you brought us into this desert, that you might destroy all the multitude with famine?',
+  },
+  'EXO 16:4': {
+    rsv: 'Then the LORD said to Moses, “Behold, I will rain bread from heaven for you; and the people shall go out and gather a day’s portion every day, that I may prove them, whether they will walk in my law or not.',
+    dra: 'And the Lord said to Moses: Behold I will rain bread from heaven for you: let the people go forth, and gather what is sufficient for every day: that I may prove them whether they will walk in my law, or not.',
+  },
+  'EXO 16:13': {
+    rsv: 'In the evening quails came up and covered the camp; and in the morning dew lay round about the camp.',
+    dra: 'So it came to pass in the evening, that quails coming up, covered the camp: and in the morning, a dew lay round about the camp.',
+  },
+  'EXO 16:14': {
+    rsv: 'And when the dew had gone up, there was on the face of the wilderness a fine, flake-like thing, fine as hoarfrost on the ground.',
+    dra: 'And when it had covered the face of the earth, it appeared in the wilderness small, and as it were beaten with a pestle, like unto the hoar frost on the ground.',
+  },
+  'EXO 16:15': {
+    rsv: 'When the people of Israel saw it, they said to one another, “What is it?” For they did not know what it was. And Moses said to them, “It is the bread which the LORD has given you to eat.',
+    dra: 'And when the children of Israel saw it, they said one to another: Manhu! which signifieth: What is this! for they knew not what it was. And Moses said to them: This is the bread, which the Lord hath given you to eat.',
+  },
+  'EXO 16:16': {
+    rsv: 'This is what the LORD has commanded: ‘Gather of it, every man of you, as much as he can eat; you shall take an omer apiece, according to the number of the persons whom each of you has in his tent.’”',
+    dra: 'This is the word, that the Lord hath commanded: Let every one gather of it as much as is enough to eat: a gomor for every man, according to the number of your souls that dwell in a tent, so shall you take of it.',
+  },
+  'EXO 16:18': {
+    rsv: 'But when they measured it with an omer, he that gathered much had nothing over, and he that gathered little had no lack; each gathered according to what he could eat.',
+    dra: 'And they measured by the measure of a gomor: neither had he more that had gathered more: nor did he find less that had provided less: but every one had gathered, according to what they were able to eat.',
+  },
+  'EXO 16:21': {
+    rsv: 'Morning by morning they gathered it, each as much as he could eat; but when the sun grew hot, it melted.',
+    dra: 'Now every one of them gathered in the morning, as much as might suffice to eat: and after the sun grew hot, it melted.',
+  },
+  'EXO 16:31': {
+    rsv: 'Now the house of Israel called its name manna; it was like coriander seed, white, and the taste of it was like wafers made with honey.',
+    dra: 'And the house of Israel called the name thereof Manna: and it was like coriander seed white, and the taste thereof like to flour with honey.',
+  },
+  'EXO 16:33': {
+    rsv: 'And Moses said to Aaron, “Take a jar, and put an omer of manna in it, and place it before the LORD, to be kept throughout your generations.”',
+    dra: 'And Moses said to Aaron: Take a vessel, and put manna into it, as much as a gomor can hold: and lay it up before the Lord to keep unto your generations,',
+  },
+  'EXO 16:35': {
+    rsv: 'And the people of Israel ate the manna forty years, till they came to a habitable land; they ate the manna, till they came to the border of the land of Canaan.',
+    dra: 'And the children of Israel ate manna forty years, till they came to a habitable land: with this meat were they fed, until they reached the borders of the land of Chanaan.',
+  },
+  'JHN 6:49': {
+    rsv: 'Your fathers ate the manna in the wilderness, and they died.',
+    dra: 'Your fathers did eat manna in the desert, and are dead.',
+  },
+  'JHN 6:50': {
+    rsv: 'This is the bread which comes down from heaven, that a man may eat of it and not die.',
+    dra: 'This is the bread which cometh down from heaven; that if any man eat of it, he may not die.',
+  },
+  'JHN 6:51': {
+    rsv: 'I am the living bread which came down from heaven…',
+    dra: 'I am the living bread which came down from heaven.',
+    partial: true,
+  },
+  'EXO 17:1': {
+    rsv: 'All the congregation of the people of Israel moved on from the wilderness of Sin by stages, according to the commandment of the LORD, and camped at Rephidim; but there was no water for the people to drink.',
+    dra: 'Then all the multitude of the children of Israel setting forward from the desert of Sin, by their mansions, according to the word of the Lord, encamped in Raphidim, where there was no water for the people to drink.',
+  },
+  'EXO 17:2': {
+    rsv: 'Therefore the people found fault with Moses, and said, “Give us water to drink.” And Moses said to them, “Why do you find fault with me? Why do you put the LORD to the proof?”',
+    dra: 'And they chode with Moses, and said: Give us water, that we may drink. And Moses answered them: Why chide you with me? Wherefore do you tempt the Lord?',
+  },
+  'EXO 17:3': {
+    rsv: 'But the people thirsted there for water, and the people murmured against Moses, and said, “Why did you bring us up out of Egypt, to kill us and our children and our cattle with thirst?”',
+    dra: 'So the people were thirsty there for want of water, and murmured against Moses, saying: Why didst thou make us go forth out of Egypt, to kill us and our children, and our beasts with thirst?',
+  },
+  'EXO 17:4': {
+    rsv: 'So Moses cried to the LORD, “What shall I do with this people? They are almost ready to stone me.”',
+    dra: 'And Moses cried to the Lord, saying: What shall I do to this people? Yet a little more and they will stone me.',
+  },
+  'EXO 17:5': {
+    rsv: 'And the LORD said to Moses, “Pass on before the people, taking with you some of the elders of Israel; and take in your hand the rod with which you struck the Nile, and go.',
+    dra: 'And the Lord said to Moses: Go before the people, and take with thee of the ancients of Israel: and take in thy hand the rod wherewith thou didst strike the river, and go.',
+  },
+  'EXO 17:6': {
+    rsv: 'Behold, I will stand before you there on the rock at Horeb; and you shall strike the rock, and water shall come out of it, that the people may drink.” And Moses did so, in the sight of the elders of Israel.',
+    dra: 'Behold I will stand there before thee, upon the rock Horeb: and thou shalt strike the rock, and water shall come out of it that the people may drink. Moses did so before the ancients of Israel:',
+  },
+  'EXO 17:7': {
+    rsv: 'And he called the name of the place Massah and Meribah, because of the faultfinding of the children of Israel, and because they put the LORD to the proof by saying, “Is the LORD among us or not?”',
+    dra: 'And he called the name of that place Temptation, because the chiding of the children of Israel, and for that they tempted the Lord, saying: Is the Lord amongst us or not?',
+  },
+  '1CO 10:4': {
+    rsv: 'and all drank the same supernatural drink. For they drank from the supernatural Rock which followed them, and the Rock was Christ.',
+    dra: 'And all drank the same spiritual drink; (and they drank of the spiritual rock that followed them, and the rock was Christ.)',
+  },
+  'JHN 19:34': {
+    rsv: 'But one of the soldiers pierced his side with a spear, and at once there came out blood and water.',
+    dra: 'But one of the soldiers with a spear opened his side, and immediately there came out blood and water.',
+  },
+  'EXO 17:8': {
+    rsv: 'Then came Amalek and fought with Israel at Rephidim.',
+    dra: 'And Amalec came, and fought against Israel in Raphidim.',
+  },
+  'EXO 17:9': {
+    rsv: 'And Moses said to Joshua, “Choose for us men, and go out, fight with Amalek; tomorrow I will stand on the top of the hill with the rod of God in my hand.”',
+    dra: 'And Moses said to Josue: Choose out men: and go out and fight against Amalec: to morrow I will stand on the top of the hill having the rod of God in my hand.',
+  },
+  'EXO 17:10': {
+    rsv: 'So Joshua did as Moses told him, and fought with Amalek; and Moses, Aaron, and Hur went up to the top of the hill.',
+    dra: 'Josue did as Moses had spoken, and he fought against Amalec; but Moses, and Aaron, and Hur went up upon the top of the hill.',
+  },
+  'EXO 17:11': {
+    rsv: 'Whenever Moses held up his hand, Israel prevailed; and whenever he lowered his hand, Amalek prevailed.',
+    dra: 'And when Moses lifted up his hands, Israel overcame: but if he let them down a little, Amalec overcame.',
+  },
+  'EXO 17:12': {
+    rsv: 'But Moses’ hands grew weary; so they took a stone and put it under him, and he sat upon it, and Aaron and Hur held up his hands, one on one side, and the other on the other side; so his hands were steady until the going down of the sun.',
+    dra: 'And Moses\' hands were heavy: so they took a stone, and put under him, and he sat on it: and Aaron and Hur stayed up his hands on both sides. And it came to pass that his hands were not weary until sunset.',
+  },
+  'EXO 17:15': {
+    rsv: 'And Moses built an altar and called the name of it, The LORD is my banner,',
+    dra: 'And Moses built an altar: and called the name thereof, The Lord my exaltation, saying:',
+  },
+  'JHN 12:32': {
+    rsv: 'and I, when I am lifted up from the earth, will draw all men to myself.”',
+    dra: 'And I, if I be lifted up from the earth, will draw all things to myself.',
+  },
+  'JHN 12:33': {
+    rsv: 'He said this to show by what death he was to die.',
+    dra: '(Now this he said, signifying what death he should die.)',
+  },
+  'EXO 18:5': {
+    rsv: 'And Jethro, Moses’ father-in-law, came with his sons and his wife to Moses in the wilderness where he was encamped at the mountain of God.',
+    dra: 'And Jethro the kinsman of Moses came with his sons and his wife, to Moses into the desert, where he was camped by the mountain of God.',
+  },
+  'EXO 18:7': {
+    rsv: 'Moses went out to meet his father-in-law, and did obeisance and kissed him; and they asked each other of their welfare, and went into the tent.',
+    dra: 'And he went out to meet his kinsman, and worshipped and kissed him: and they saluted one another with words of peace. And when he was come into the tent,',
+  },
+  'EXO 18:8': {
+    rsv: 'Then Moses told his father-in-law all that the LORD had done to Pharaoh and to the Egyptians for Israel’s sake, all the hardship that had come upon them in the way, and how the LORD had delivered them.',
+    dra: 'Moses told his kinsman all that the Lord had done to Pharao, and the Egyptians, in favour of Israel: and all the labour which had befallen them in the journey, and that the Lord had delivered them.',
+  },
+  'EXO 18:11': {
+    rsv: 'Now I know that the LORD is greater than all gods, because he delivered the people from under the hand of the Egyptians, when they dealt arrogantly with them.”',
+    dra: 'Now I know that the Lord is great above all gods: because they dealt proudly against them.',
+  },
+  'EXO 18:13': {
+    rsv: 'On the morrow Moses sat to judge the people, and the people stood about Moses from morning till evening.',
+    dra: 'And the next day Moses sat, to judge the people, who stood by Moses from morning until night.',
+  },
+  'EXO 18:14': {
+    rsv: 'When Moses’ father-in-law saw all that he was doing for the people, he said, “What is this that you are doing for the people? Why do you sit alone, and all the people stand about you from morning till evening?”',
+    dra: 'And when his kinsman had seen all things that he did among the people, he said: What is it that thou dost among the people? Why sittest thou alone, and all the people wait from morning till night.',
+  },
+  'EXO 18:17': {
+    rsv: 'Moses’ father-in-law said to him, “What you are doing is not good.',
+    dra: 'But he said: The thing thou dost is not good.',
+  },
+  'EXO 18:18': {
+    rsv: 'You and the people with you will wear yourselves out, for the thing is too heavy for you; you are not able to perform it alone.',
+    dra: 'Thou are spent with foolish labour, both thou and this people that is with thee: the business is above thy strength, thou alone canst not bear it.',
+  },
+  'EXO 18:21': {
+    rsv: 'Moreover choose able men from all the people, such as fear God, men who are trustworthy and who hate a bribe; and place such men over the people as rulers of thousands, of hundreds, of fifties, and of tens.',
+    dra: 'And provide out of all the people able men, such as fear God, in whom there is truth, and that hate avarice, and appoint of them rulers of thousands, and of hundreds, and of fifties, and of tens.',
+  },
+  'EXO 18:22': {
+    rsv: 'And let them judge the people at all times; every great matter they shall bring to you, but any small matter they shall decide themselves; so it will be easier for you, and they will bear the burden with you.',
+    dra: 'Who may judge the people at all times: and when any great matter soever shall fall out, let them refer it to thee, and let them judge the lesser matters only: that so it may be lighter for thee, the burden being shared out unto others.',
+  },
+  'EXO 18:24': {
+    rsv: 'So Moses gave heed to the voice of his father-in-law and did all that he had said.',
+    dra: 'And when Moses heard this, he did all things that he had suggested unto him.',
+  },
+  'MRK 3:14': {
+    rsv: 'And he appointed twelve, to be with him, and to be sent out to preach',
+    dra: 'And he made that twelve should be with him, and that he might send them to preach.',
+  },
+  'LUK 10:2': {
+    rsv: 'And he said to them, “The harvest is plentiful, but the laborers are few; pray therefore the Lord of the harvest to send out laborers into his harvest.',
+    dra: 'And he said to them: The harvest indeed is great, but the labourers are few. Pray ye therefore the Lord of the harvest, that he send labourers into his harvest.',
+  },
 }
 
 /** A verse's words in the active translation. Throws for a verse that isn't in the list (a content check catches these first). */

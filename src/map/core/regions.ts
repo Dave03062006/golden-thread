@@ -135,6 +135,8 @@ const AREAS: MapRegion[] = [
   // Midian, east of the Gulf of Aqaba, where Moses fled and kept Jethro's flock.
   { id: 'midian', name: 'Midian', kind: 'area', shape: pairs([[29.6, 35.05], [29.6, 36.2], [28.0, 36.6], [27.2, 36.0], [27.6, 35.3], [28.4, 34.9]]) },
   { id: 'edom', name: 'Edom', kind: 'area', shape: pairs([[30.85, 35.5], [30.85, 35.85], [29.75, 35.6], [29.75, 35.05], [30.4, 35.25]]) },
+  // The Red Sea where the people crossed: no one knows the place, so the whole Gulf of Suez, from the lakes north of it.
+  { id: 'red-sea', name: 'The Red Sea', kind: 'area', shape: pairs([[30.45, 32.25], [30.45, 32.6], [29.9, 32.75], [29.0, 33.15], [28.1, 33.75], [27.85, 33.55], [28.9, 32.85], [29.85, 32.4]]) },
 ]
 
 /** A city on the map: a small square around it, big enough to tap (smaller where towns stand close). */

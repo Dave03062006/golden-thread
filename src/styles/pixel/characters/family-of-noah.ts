@@ -222,6 +222,23 @@ export const familyOfNoah: Record<string, PixelSpriteArt> = {
   magician: person({ robe: C.white, hair: C.ink, sash: C.gold }),
   'hebrew-father': person({ robe: C.green, hair: C.wood0, beard: C.wood0, sash: C.wood2 }),
   'hebrew-mother': person({ robe: C.rose, hair: C.wood0, veil: C.pale }),
+  // Level 9: old Miriam; a grandmother; Joshua; Hur; the women who dance; the warriors of Amalek.
+  'miriam-old': person({ robe: C.orange, hair: C.pale, veil: C.white, sash: C.gold }),
+  grandmother: person({ robe: C.purple, hair: C.white, veil: C.sand }),
+  joshua: person({ robe: C.wood3, hair: C.wood0, beard: C.wood0, sash: C.rose }),
+  hur: person({ robe: C.teal, hair: C.pale, beard: C.pale, sash: C.gold }),
+  'hebrew-women': band([
+    { robe: C.rose, hair: C.wood0, veil: C.white },
+    { robe: C.sky, hair: C.ink, veil: C.pale },
+    { robe: C.gold, hair: C.wood0, veil: C.white },
+    { robe: C.green, hair: C.ink, veil: C.sand },
+  ]),
+  amalekites: band([
+    { robe: C.wood1, hair: C.ink, beard: C.ink, veil: C.dslate },
+    { robe: C.purple, hair: C.ink, beard: C.ink, veil: C.wood0 },
+    { robe: C.dslate, hair: C.ink, beard: C.ink, veil: C.wood1 },
+    { robe: C.wood0, hair: C.ink, beard: C.ink, veil: C.dslate },
+  ]),
   'hebrew-family': band([
     { robe: C.green, hair: C.wood0, beard: C.wood0 },
     { robe: C.rose, hair: C.wood0, veil: C.white },

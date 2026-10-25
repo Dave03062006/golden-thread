@@ -161,6 +161,13 @@ export const PLACES: Place[] = [
   // Level 8 · The Plagues and the Passover
   { id: 'rameses', name: 'Rameses', kind: 'city', at: { lat: 30.8, lon: 31.83 }, note: 'One of the store-cities the Hebrew slaves built for Pharaoh, in the eastern Nile delta, where the Exodus began.' },
   { id: 'succoth', name: 'Succoth', kind: 'city', at: { lat: 30.55, lon: 32.1 }, note: 'The first camp of the Israelites on their way out of Egypt; the name means “booths.”' },
+  // Level 9 · Through the Sea. The stations of the journey are traditional sites only: where
+  // they were depends on where Mount Sinai was, which no one knows for certain.
+  { id: 'red-sea', name: 'The Red Sea', kind: 'region', at: { lat: 29.95, lon: 32.55 }, note: 'Exodus calls it Yam Suph, “the Red Sea” or “the Sea of Reeds.” No one knows exactly where the people crossed: perhaps at the lakes north of the Gulf of Suez, perhaps at the gulf itself.' },
+  { id: 'marah', name: 'Marah', kind: 'city', at: { lat: 29.33, lon: 32.88 }, note: '“Bitter.” Traditionally placed at the spring of Ain Hawarah, about fifty miles south of Suez, whose water is still bitter.' },
+  { id: 'elim', name: 'Elim', kind: 'city', at: { lat: 29.24, lon: 32.97 }, note: 'An oasis with twelve springs and seventy palm trees, traditionally placed in Wadi Gharandel, a few miles south of Marah.' },
+  { id: 'wilderness-of-sin', name: 'The wilderness of Sin', kind: 'region', at: { lat: 28.85, lon: 33.25 }, note: 'Between Elim and Sinai, where the manna first fell. Traditionally the coastal plain of el-Markha, in the west of the Sinai peninsula.' },
+  { id: 'rephidim', name: 'Rephidim', kind: 'city', at: { lat: 28.72, lon: 33.63 }, note: 'Where Moses struck the rock and Israel fought Amalek. Often placed in Wadi Feiran, the largest oasis valley in Sinai.' },
 ]
 
 const BY_ID = new Map(PLACES.map((place) => [place.id, place]))

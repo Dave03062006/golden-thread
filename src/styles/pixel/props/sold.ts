@@ -51,6 +51,11 @@ const ICONS: Record<string, { rows: string[]; colors: Record<string, string> }> 
   fire: { rows: ['...o...', '..ooo..', '..oyo..', '.oyyyo.', '..yyy..', '.bbbbb.', '.......'], colors: { o: C.orange, y: C.gold, b: C.wood1 } },
   man: { rows: ['...s..s', '..sss.s', '...s.s.', '..kkk..', '..kkk..', '..kkk..', '..k.k..'], colors: { s: C.wood1, k: C.sand2 } },
   lamb: { rows: ['.......', '.....ww', '.wwwwww', 'wwwwww.', '.wwwww.', '.k...k.', '.k...k.'], colors: { w: C.white, k: C.ink } },
+  // Level 9, the path through the sea: Moses with his rod, a child, an old man, a family.
+  moses: { rows: ['...p..r', '..sss.r', '...s..r', '..bbb.r', '.bbbbbr', '..bbb.r', '..b.b.r'], colors: { p: C.pale, s: C.wood1, b: C.wood3, r: C.wood0 } },
+  child: { rows: ['.......', '.......', '...h...', '...s...', '..rrr..', '..rrr..', '..r.r..'], colors: { h: C.ink, s: C.wood1, r: C.rose } },
+  elder: { rows: ['...w...', '..sss..', '...s...', 'r.ggg..', 'r.ggg..', 'r.ggg..', 'r.g.g..'], colors: { w: C.white, s: C.wood1, g: C.sand2, r: C.wood0 } },
+  family: { rows: ['.......', '.h...v.', '.s...s.', 'ggg.rrr', 'ggg.rrr', 'ggg.rrr', 'g.g.r.r'], colors: { h: C.ink, v: C.white, s: C.wood1, g: C.green, r: C.rose } },
 }
 const mapToken: PixelDrawnArt = {
   kind: 'drawn',

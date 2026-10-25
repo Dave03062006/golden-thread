@@ -3,7 +3,7 @@
 **Bible:** Exodus 14–18
 **Age:** III · Out of Egypt
 **Length:** about 45 minutes (7 episodes, then the quiz, then reflection and prayer)
-**Status:** draft, waiting for Dave's approval.
+**Status:** approved by Dave on 2026-10-25 ("approve").
 
 ## How to read this script
 
@@ -155,7 +155,7 @@ The people are often afraid, and they grumble, again and again. God is patient w
 
 ### Play: Miriam's song
 - **What it is:** rhythm (spec §13.7, kind 5; the spec's own example).
-- **How it plays:** Miriam beats a short pattern on her timbrel, and the player answers it with the same pattern (tap, or Space). The women echo it on their timbrels. Each phrase answered brings more women into the dance, and the patterns grow a little longer, until the whole shore is singing "Sing to the LORD." A missed beat doesn't stop the song; Miriam simply plays the phrase again. (Level 8's march was keeping a steady beat; this is call and response.)
+- **How it plays:** Miriam beats a short pattern on her timbrel, and the player answers it with the same pattern (tap, or Space). The women echo it on their timbrels. Each phrase answered brings more women into the dance, and the patterns grow a little longer, until the whole shore is singing "Sing to the LORD." A missed beat doesn't stop the song; Miriam simply plays the phrase again, and after two misses the women sing it with the player, and any answer counts. (Level 8's march was keeping a steady beat; this is call and response.)
 - **Teaches:** thanksgiving: when God saves us, we praise him, and we praise him together.
 - **Gentle mode:** any answer with the right number of taps counts.
 - **Accessibility:** a pointer (tap), or Space; each pattern also shows as pulses on screen.
@@ -419,7 +419,7 @@ The people are often afraid, and they grumble, again and again. God is patient w
 
 ---
 
-## Level 9 quiz bank (42 questions)
+## Level 9 quiz bank (44 questions)
 
 The types are MC (multiple choice), TF (true or false), WHO (who said it?), ORDER (put in order), WHERE (tap the map), FINISH (finish the verse) and THREAD (match the golden thread). The correct answer is in **bold**. For FINISH questions, the wrong words offered are listed after the right ones. Every question shows its explanation and reference after it's answered.
 
@@ -532,45 +532,51 @@ The types are MC (multiple choice), TF (true or false), WHO (who said it?), ORDE
 31. **THREAD** · The rock that gave water in the desert → ?
     **"The Rock was Christ"; from his pierced side came blood and water** · "I am the living bread." · "Take heart, it is I." · "The harvest is plentiful."
     *The sacraments flow from Jesus.* (1 Corinthians 10:4; John 19:34)
+32. **TF** · When the people found fault with Moses at Rephidim, he cried to the LORD.
+    **True**
+    *"What shall I do with this people?"* (Exodus 17:4)
 
 ### Episode 6 · Hands Raised Against Amalek
 
-32. **WHO** · Who led Israel's men in the battle against Amalek?
+33. **WHO** · Who led Israel's men in the battle against Amalek?
     **Joshua** · Aaron · Hur · Jethro
     *Moses prayed on the hill while Joshua fought.* (Exodus 17:9–10)
-33. **MC** · What happened whenever Moses held up his hand?
+34. **MC** · What happened whenever Moses held up his hand?
     **Israel prevailed** · Amalek prevailed · It began to rain · The sun stood still
     *And whenever he lowered it, Amalek prevailed.* (Exodus 17:11)
-34. **MC** · Who held up Moses' hands when they grew weary?
+35. **MC** · Who held up Moses' hands when they grew weary?
     **Aaron and Hur** · Joshua and Caleb · Miriam and Zipporah · Jethro and Gershom
     *One on one side, and the other on the other side.* (Exodus 17:12)
-35. **FINISH** · "so his hands were steady until the going down of the ___"
+36. **FINISH** · "so his hands were steady until the going down of the ___"
     **sun** (wrong words: moon, hill, stars)
     *The battle lasted all day.* (Exodus 17:12)
-36. **TF** · Moses built an altar and called it "The LORD is my banner."
+37. **TF** · Moses built an altar and called it "The LORD is my banner."
     **True**
     *The victory was the LORD's.* (Exodus 17:15)
-37. **THREAD** · Moses on the hill, his arms stretched out until sunset → ?
+38. **THREAD** · Moses on the hill, his arms stretched out until sunset → ?
     **"And I, when I am lifted up from the earth, will draw all men to myself."** · "The Rock was Christ." · "I am the living bread." · "Take heart, it is I."
     *Jesus' arms stretched out on the cross.* (John 12:32)
 
 ### Episode 7 · Jethro's Advice
 
-38. **WHO** · "Now I know that the LORD is greater than all gods."
+39. **WHO** · "Now I know that the LORD is greater than all gods."
     **Jethro** · Pharaoh · Moses · Joshua
     *Moses' father-in-law, the priest of Midian.* (Exodus 18:11)
-39. **MC** · Why did the people stand about Moses from morning till evening?
+40. **MC** · Why did the people stand about Moses from morning till evening?
     **He was judging all their disputes by himself** · He was building an altar · He was teaching them a song · He was handing out manna
     *"Why do you sit alone?"* (Exodus 18:13–16)
-40. **FINISH** · "You and the people with you will wear yourselves out, for the thing is too ___ for you"
+41. **FINISH** · "You and the people with you will wear yourselves out, for the thing is too ___ for you"
     **heavy** (wrong words: easy, strange, new)
     *Jethro's warning.* (Exodus 18:18)
-41. **MC** · What kind of men did Jethro tell Moses to choose?
+42. **MC** · What kind of men did Jethro tell Moses to choose?
     **Able men who fear God, trustworthy, who hate a bribe** · The richest men · The tallest men · Only men of his own family
     *Rulers of thousands, of hundreds, of fifties, and of tens.* (Exodus 18:21)
-42. **THREAD** · Moses chooses able men to share the work → ?
+43. **THREAD** · Moses chooses able men to share the work → ?
     **Jesus "appointed twelve, to be with him, and to be sent out to preach"** · "Take heart, it is I." · "I am the living bread." · "The Rock was Christ."
     *The harvest is plentiful, and every Christian has a part in it.* (Mark 3:14)
+44. **TF** · Moses would not listen to his father-in-law's advice.
+    **False**
+    *"So Moses gave heed to the voice of his father-in-law and did all that he had said."* (Exodus 18:24)
 
 ---
 

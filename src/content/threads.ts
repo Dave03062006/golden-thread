@@ -610,6 +610,84 @@ export const THREADS: GoldenThread[] = [
     sources: ['Luke 22:7–20', '1 Corinthians 11:23–26', 'Catechism 1339–1340, 1363'],
     fulfilled: { age: 'XII', place: 'jerusalem' },
   },
+  // Level 9 · Through the Sea
+  {
+    id: 'take-heart-it-is-i',
+    episode: 'l09-e1',
+    title: '“Fear not, stand firm” by the sea → Jesus, walking on the sea: “Take heart, it is I; have no fear”',
+    from: ['EXO 14:13'],
+    to: ['MAT 14:25', 'MAT 14:27'],
+    explanation:
+      'God’s people stood at the edge of the sea at night, terrified, and Moses told them, “Fear not.” Long after, Jesus’ disciples were in a boat on a stormy sea at night, terrified, and Jesus came to them walking on the water, and said, “Have no fear.” The God who made a path through the sea walks on the sea himself, and comes to us in our fear.',
+    sources: ['Matthew 14:22–33', 'Psalm 77:19', 'Catechism 1817'],
+    fulfilled: { age: 'XI', place: 'galilee' },
+  },
+  {
+    id: 'baptized-in-the-sea',
+    episode: 'l09-e2',
+    title: 'The people pass through the sea, from slavery to freedom → Baptism',
+    from: ['EXO 14:22'],
+    to: ['1CO 10:1', '1CO 10:2'],
+    explanation:
+      'God’s people went down into the sea as slaves and came up on the other side free. Saint Paul says they were “baptized into Moses in the cloud and in the sea.” In Baptism we pass through the water too: from the slavery of sin into the freedom of God’s children. That is why this reading is never left out at the Easter Vigil, the night when new Christians are baptized.',
+    sources: ['1 Corinthians 10:1–2', 'Catechism 1094, 1221'],
+    fulfilled: { age: 'XIII' },
+  },
+  {
+    id: 'the-song-of-the-lamb',
+    episode: 'l09-e3',
+    title: 'The song of Moses by the sea → the saints in heaven “sing the song of Moses, the servant of God, and the song of the Lamb”',
+    from: ['EXO 15:1'],
+    to: ['REV 15:2', 'REV 15:3'],
+    explanation:
+      'In the Book of Revelation, Saint John sees the saints in heaven standing beside a sea of glass, with harps in their hands. They sing “the song of Moses” and “the song of the Lamb.” The song God’s people sang on the shore of the Red Sea is sung again in heaven, by everyone Jesus has brought safely through, from death to life. And every Easter, after the reading of the crossing, the Church sings Moses’ song again.',
+    sources: ['Revelation 15:2–4', 'Catechism 2642'],
+    fulfilled: { age: 'XIV' },
+  },
+  {
+    id: 'the-living-bread',
+    episode: 'l09-e4',
+    title: 'The manna, bread from heaven in the desert → Jesus, “the living bread which came down from heaven”',
+    from: ['EXO 16:15'],
+    to: ['JHN 6:49', 'JHN 6:50', 'JHN 6:51'],
+    explanation:
+      'God fed his people in the desert with bread from heaven, every morning for forty years. Jesus said that he himself is the true bread from heaven: whoever eats this bread will live for ever. In the Eucharist, God still feeds his people on their journey through life. And as Aaron kept a jar of manna before the LORD, every church keeps the Eucharist in the tabernacle.',
+    sources: ['John 6:31–51', 'Hebrews 9:4', 'Catechism 1094, 1334, 1379'],
+    fulfilled: { age: 'XI', place: 'galilee' },
+  },
+  {
+    id: 'the-rock-was-christ',
+    episode: 'l09-e5',
+    title: 'The rock that gave water in the desert → “the Rock was Christ,” from whose pierced side came blood and water',
+    from: ['EXO 17:6'],
+    to: ['1CO 10:4', 'JHN 19:34'],
+    explanation:
+      'Saint Paul says the rock that gave water in the desert was a sign of Christ: “the Rock was Christ.” When Jesus died on the cross, a soldier pierced his side, and out came blood and water. The Church has always seen in them the sacraments that flow from Jesus: the water of Baptism and the Blood of the Eucharist. Jesus himself said, “If any one thirst, let him come to me and drink” (John 7:37).',
+    sources: ['1 Corinthians 10:4', 'John 7:37–38', 'John 19:34', 'Catechism 694, 1094, 1225'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'lifted-up',
+    episode: 'l09-e6',
+    title: 'Moses on the hill, his arms stretched out until sunset → Jesus on the cross: “when I am lifted up from the earth, I will draw all men to myself”',
+    from: ['EXO 17:11', 'EXO 17:12'],
+    to: ['JHN 12:32', 'JHN 12:33'],
+    explanation:
+      'The first Christians saw in Moses on the hill, his arms held wide until the sun went down, a picture of Jesus on the cross. Jesus’ arms were stretched out between heaven and earth, and there he won the victory over sin and death for all of us. And the man who led the battle below was named Joshua, the same name as Jesus in Hebrew: “the LORD saves.”',
+    sources: ['John 12:32–33', 'Letter of Barnabas 12', 'Saint Justin Martyr, Dialogue with Trypho 90', 'Catechism 2574–2577'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'laborers-for-the-harvest',
+    episode: 'l09-e7',
+    title: 'Moses chooses able men to share the work → Jesus appoints the Twelve, and sends out laborers into his harvest',
+    from: ['EXO 18:21'],
+    to: ['MRK 3:14', 'LUK 10:2'],
+    explanation:
+      'Moses could not carry the whole people alone, and God gave him helpers. Jesus, too, chose twelve apostles to be with him and to be sent out, and seventy others besides. The Church still has bishops, priests and deacons to serve God’s people, and every Christian has a part in the work: “The harvest is plentiful, but the laborers are few.”',
+    sources: ['Mark 3:13–15', 'Luke 10:1–2', 'Acts 6:1–6', 'Catechism 551, 873'],
+    fulfilled: { age: 'XI', place: 'galilee' },
+  },
 ]
 
 const BY_ID = new Map(THREADS.map((thread) => [thread.id, thread]))

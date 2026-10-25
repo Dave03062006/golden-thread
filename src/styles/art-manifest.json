@@ -329,6 +329,24 @@
     },
     "blood-nile": {
       "hash": "5d78d887"
+    },
+    "red-sea-shore": {
+      "hash": "36501545"
+    },
+    "sea-walls": {
+      "hash": "b027ea04"
+    },
+    "sea-map": {
+      "hash": "e5b9fd18"
+    },
+    "elim-oasis": {
+      "hash": "4befcc0a"
+    },
+    "rephidim": {
+      "hash": "83b6e922"
+    },
+    "hilltop": {
+      "hash": "7155ea4e"
     }
   },
   "paperProps": {
@@ -786,7 +804,7 @@
       "hash": "3916a1de"
     },
     "map-token": {
-      "hash": "f4ad748e"
+      "hash": "086692d7"
     },
     "pit": {
       "hash": "658d4263"
@@ -1039,6 +1057,42 @@
     },
     "pillar": {
       "hash": "917a4c38"
+    },
+    "miriam-old": {
+      "hash": "e370618b"
+    },
+    "hebrew-women": {
+      "hash": "7e1b2a49"
+    },
+    "pool": {
+      "hash": "1682908c"
+    },
+    "manna": {
+      "hash": "0d59d8ef"
+    },
+    "grandmother": {
+      "hash": "eafc7c6b"
+    },
+    "omer-jar": {
+      "hash": "225dc134"
+    },
+    "great-rock": {
+      "hash": "8e6c9cb2"
+    },
+    "stream": {
+      "hash": "2cb400d9"
+    },
+    "amalekites": {
+      "hash": "a3514eef"
+    },
+    "joshua": {
+      "hash": "782c0147"
+    },
+    "hur": {
+      "hash": "e93553c1"
+    },
+    "banner": {
+      "hash": "5f734ab4"
     }
   },
   "pixelLayers": {
@@ -1371,6 +1425,24 @@
     },
     "blood-nile": {
       "hash": "4bfa3d96"
+    },
+    "red-sea-shore": {
+      "hash": "cc633f3b"
+    },
+    "sea-walls": {
+      "hash": "7e5f3611"
+    },
+    "sea-map": {
+      "hash": "043bb935"
+    },
+    "elim-oasis": {
+      "hash": "eadc6ba1"
+    },
+    "rephidim": {
+      "hash": "414870c2"
+    },
+    "hilltop": {
+      "hash": "f7a348cb"
     }
   },
   "backdrop": {

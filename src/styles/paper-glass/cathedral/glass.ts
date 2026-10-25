@@ -550,6 +550,68 @@ export const EMBLEMS: Record<string, () => Piece[]> = {
     ...[[-5, 0], [3, -2], [-2, 6], [6, 6], [0, 2], [-6, 8]].map(([x, y]) => ({ d: circ(x!, y!, 1, 6), color: '#8a5a2a' })),
     { d: star8(0, -13, 3), color: '#ffe48a' },
   ],
+  // Level 9 · Through the Sea
+  // Moses' rod raised over the dark sea, and a star: "Fear not, stand firm."
+  'stand-firm': () => [
+    { d: P([[-16, 8], [-8, 4], [0, 8], [8, 4], [16, 8], [16, 16], [-16, 16]]), color: '#2e5e8e' },
+    { d: P([[-16, 8], [-8, 4], [0, 8], [8, 4], [16, 8], [16, 10], [8, 6], [0, 10], [-8, 6], [-16, 10]]), color: '#8ac0e4' },
+    { d: P([[-2, 12], [1, 12], [3, -12], [0, -12]]), color: '#8a6038' },
+    { d: star8(1, -14, 3), color: '#ffe48a' },
+  ],
+  // The sea parted: a wall of water on either side, and the dry path between.
+  'parted-sea': () => [
+    { d: P([[-16, 16], [-16, -12], [-12, -16], [-6, -12], [-4, 16]]), color: '#2e5e8e' },
+    { d: P([[16, 16], [16, -12], [12, -16], [6, -12], [4, 16]]), color: '#2e5e8e' },
+    { d: P([[-4, 16], [-2, -10], [2, -10], [4, 16]]), color: '#e2c894' },
+    { d: P([[-12, -16], [-6, -12], [-8, -10], [-13, -13]]), color: '#e8f4fc' },
+    { d: P([[12, -16], [6, -12], [8, -10], [13, -13]]), color: '#e8f4fc' },
+    { d: star8(0, -13, 2.6), color: '#ffe48a' },
+  ],
+  // Miriam's timbrel, its little bells, and a star.
+  timbrel: () => [
+    { d: circ(0, 2, 13, 20), color: '#a8743a' },
+    { d: circ(0, 2, 10, 18), color: '#f0e0b8' },
+    ...[0, 1, 2, 3, 4, 5].map((i) => {
+      const a = (i / 6) * Math.PI * 2
+      return { d: circ(Math.round(Math.cos(a) * 115) / 10, Math.round(Math.sin(a) * 115) / 10 + 2, 1.8, 8), color: '#ffd84a' }
+    }),
+    { d: star8(0, 2, 3), color: '#ffe48a' },
+  ],
+  // The jar of manna kept before the LORD.
+  'manna-jar': () => [
+    { d: P([[-8, 16], [-11, 4], [-9, -4], [-5, -7], [5, -7], [9, -4], [11, 4], [8, 16]]), color: '#b87a4a' },
+    { d: P([[-6, -7], [6, -7], [7, -11], [-7, -11]]), color: '#9a5e34' },
+    { d: P([[-7, -11], [0, -15], [7, -11]]), color: '#f4f2ea' },
+    ...[[-12, -12], [12, -8], [-13, 2], [13, 8]].map(([x, y]) => ({ d: circ(x!, y!, 1.4, 6), color: '#ffffff' })),
+  ],
+  // The rock at Horeb, and the water running out of it.
+  'struck-rock': () => [
+    { d: P([[-16, 16], [-15, -2], [-8, -12], [4, -14], [12, -6], [14, 6], [12, 16]]), color: '#9a5a46' },
+    { d: P([[-8, -12], [4, -14], [0, -6], [-10, -2]]), color: '#b8745a' },
+    { d: P([[0, -2], [3, -2], [6, 16], [-4, 16]]), color: '#5aa0d4' },
+    { d: P([[1, 2], [2, 2], [3, 14], [0, 14]]), color: '#d4eefc' },
+  ],
+  // Moses' hands held high on the hilltop as the sun goes down.
+  'raised-hands': () => [
+    { d: circ(0, 10, 9, 16), color: '#f0a83a' },
+    { d: P([[-16, 16], [-10, 8], [10, 8], [16, 16]]), color: '#8a6a46' },
+    { d: P([[-2, 8], [-2, -4], [2, -4], [2, 8]]), color: '#7a5a3a' },
+    { d: P([[-2, -2], [-11, -14], [-8, -16], [0, -5]]), color: '#d8b888' },
+    { d: P([[2, -2], [11, -14], [8, -16], [0, -5]]), color: '#d8b888' },
+    { d: circ(0, -7, 2.6, 10), color: '#d8d4cc' },
+  ],
+  // The new leaders standing together around Moses, sharing the load.
+  'shared-load': () => [
+    ...[0, 1, 2, 3, 4].map((i) => {
+      const x = -12 + i * 6
+      const y = i === 2 ? -4 : 0
+      return [
+        { d: P([[x - 3, 16], [x - 2, y + 2], [x + 2, y + 2], [x + 3, 16]]), color: i === 2 ? '#7a5a3a' : ['#6a7a3a', '#3a5a9a', '#a84a5a', '#8a7a5a'][i > 2 ? i - 1 : i]! },
+        { d: circ(x, y - 1, 2.4, 10), color: '#3a2a42' },
+      ]
+    }).flat(),
+    { d: star8(0, -13, 3), color: '#ffe48a' },
+  ],
 }
 
 /** The medallions' backgrounds: deep blue, with one ruby for the darkest story. */

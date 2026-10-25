@@ -254,6 +254,24 @@ export const familyOfNoah: Record<string, PaperPropArt> = {
   magician: person({ robe: '#f0ead8', fold: '#c8bea4', hair: '#1a1210', sash: '#c8943a' }),
   'hebrew-father': person({ robe: '#6a7a3a', fold: '#4c5a26', hair: '#2a1e1a', beard: '#2a1e1a', sash: '#a8743a' }),
   'hebrew-mother': person({ robe: '#a84a5a', fold: '#7a3040', hair: '#2a1e1a', veil: '#f0e0c8' }),
+  // Level 9 · Through the Sea: Miriam, now old, with her timbrel; a grandmother of the camp;
+  // Joshua, a strong young man; Hur; the women who dance with Miriam; the warriors of Amalek.
+  'miriam-old': person({ robe: '#c07a4a', fold: '#945a32', hair: '#d8d4cc', veil: '#f0e4c8', sash: '#d8b050' }),
+  grandmother: person({ robe: '#6a5a7a', fold: '#4c3e5a', hair: '#e0dcd4', veil: '#d8ccb8' }),
+  joshua: person({ robe: '#8a5a32', fold: '#664020', hair: '#2a1e1a', beard: '#2a1e1a', sash: '#a83a3a' }),
+  hur: person({ robe: '#4a7a6a', fold: '#305a4c', hair: '#b8b4ac', beard: '#b8b4ac', sash: '#c8a050' }),
+  'hebrew-women': band([
+    { robe: '#a84a5a', fold: '#7a3040', hair: '#2a1e1a', veil: '#f0e0c8' },
+    { robe: '#4a6a8a', fold: '#304c68', hair: '#1a1210', veil: '#e8e0f0' },
+    { robe: '#c08a3a', fold: '#946424', hair: '#2a1e1a', veil: '#f4ecd8' },
+    { robe: '#6a7a3a', fold: '#4c5a26', hair: '#1a1210', veil: '#e0d4bc' },
+  ]),
+  amalekites: band([
+    { robe: '#5a3a3a', fold: '#3e2626', hair: '#1a1210', beard: '#1a1210', veil: '#3a2a2a' },
+    { robe: '#6a4a3a', fold: '#4c3226', hair: '#1a1210', beard: '#1a1210', veil: '#4a3a2a' },
+    { robe: '#4a3a4a', fold: '#322632', hair: '#1a1210', beard: '#1a1210', veil: '#2a2a3a' },
+    { robe: '#5a4a3a', fold: '#3e3226', hair: '#1a1210', beard: '#1a1210', veil: '#3a3a2a' },
+  ]),
   // Hebrew families in Goshen, slaves at the brick pits, and the seven daughters of Reuel.
   'hebrew-family': band([
     { robe: '#6a7a3a', fold: '#4c5a26', hair: '#2a1e1a', beard: '#2a1e1a' },

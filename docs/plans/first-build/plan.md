@@ -496,6 +496,33 @@ The same way again: script, art, build, checks, play-test.
   - New `shots` baselines cover the Level 8 scenes. Dave still needs to look them over.
 - **A fix worth remembering:** a golden thread that first glows in a scene's last line or two can end before the playthrough (or a quick reader) sees it. Episode 6's glow now comes up on the scene's first line, over the unleavened bread, and stays as the table becomes the bread and the cup.
 
+### Task 15: Level 9, *Through the Sea* (M15)
+
+The same way again: script, art, build, checks, play-test. Level 9 closes Age III, *Out of Egypt*.
+
+**Status (October 2026):** steps 1–4 are done; step 5 is Dave's.
+- **Script:** `docs/scripts/level-09-through-the-sea.md`, approved by Dave. It has 7 episodes and 23 scenes, 81 quotations checked word for word, and a 44-question quiz. Two quiz questions were added after approval, so that every episode has six.
+- **Build:** all seven episodes are built in both styles, each with a different kind of play from the spec's library:
+  - the light in the camp (light and reveal);
+  - the path through the sea (pathfinding, on a map of the seabed seen from above);
+  - Miriam's song (rhythm, as call and response);
+  - enough for each (herding and gathering: the manna);
+  - streams in the desert (pouring and water);
+  - hands held high (timing);
+  - sharing the load (serving and distributing).
+- **New art:**
+  - Backdrops: the shore of the Red Sea, the seabed between the walls of water, the same seabed as a map, the oasis of Elim, the red valley of Rephidim, and the hilltop above the valley.
+  - Props: a stream, the great rock at Horeb, a desert pool, the manna, an omer jar (empty, full, heaped), the banners of Israel and Amalek, and four new map tokens.
+  - People: old Miriam, a grandmother, Joshua and Hur, and groups for the dancing women and the warriors of Amalek.
+- **Cathedral and map:** seven new medallions for the Level 9 window. The map adds the Red Sea (as a region to tap, the crossing place unknown), Marah, Elim, the wilderness of Sin and Rephidim at their traditional sites, and the road ahead now points to Level 10, *Sinai*.
+- **Music:** three new recordings: the Easter sequence *Victimae paschali laudes* (CC BY), Charpentier's *Te Deum* prelude (CC0) and a 1913 "Rock of Ages" (public domain). The Exsultet and Handel's *Israel in Egypt* had no allowed recording; `music.ts` says so. The closing prayer is the Our Father, for the daily bread.
+- **Checks:** all pass.
+  - The playthrough runs Level 9 from start to finish in both styles, through its quiz, reflection and window ceremony (68 checks).
+  - `check`, `test` (2,397 tests), `a11y`, `keyboard` and `saves` pass.
+  - `perf` is within budget for every Level 9 scene in both styles. The busiest, the manna gathering, runs at under 1% late frames.
+  - New `shots` baselines cover the Level 9 scenes. Dave still needs to look them over.
+- **A fix worth remembering:** a hint with the 'rest' gesture turns the screen into a quiet rest that waits for "Continue". Use it only for a real rest, never for "listen first" in a game that goes on by itself.
+
 ## Parallelization
 
 - **Code tasks run in order.** Each one builds on the last, and running them in order keeps the code consistent for the code tour. I do the work in this session, without subagents, as the session guidelines require.

@@ -1,7 +1,7 @@
 import type { Question } from '../../../quiz/types'
 
 /**
- * Level 8's quiz bank: the 42 questions of the approved Level 8 script ("Level 5 quiz
+ * Level 8's quiz bank: the 42 questions of the approved Level 8 script ("Level 8 quiz
  * bank"), in its order. In each list of options, the first is the right one; the quiz
  * shuffles them. Every episode has at least six questions.
  */

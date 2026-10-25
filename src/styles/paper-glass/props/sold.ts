@@ -71,6 +71,11 @@ const ICONS: Record<string, string> = {
   fire: `<path d="M20 36L40 36" stroke="#6a4a2a" stroke-width="4"/><path d="M30 34Q20 26 26 16Q28 24 31 20Q30 12 36 8Q34 18 38 24Q40 30 30 34Z" fill="#f08a3a"/>`,
   man: `<path d="M24 36L26 18Q30 14 34 18L36 36Z" fill="#8a7a62"/><circle cx="30" cy="13" r="4.6" fill="#3a2a42"/><path d="M34 20L44 12" stroke="#3a2a42" stroke-width="3" stroke-linecap="round"/>`,
   lamb: `<ellipse cx="30" cy="26" rx="11" ry="7" fill="#f4f0e6"/><circle cx="40" cy="22" r="4" fill="#f4f0e6"/><path d="M24 32L24 38M34 32L34 38" stroke="#3a2a2a" stroke-width="2.4"/>`,
+  // Level 9, the path through the sea: Moses with his rod, a child, an old man, a family.
+  moses: `<path d="M22 36L24 18Q30 12 36 18L38 36Z" fill="#7a5a3a"/><circle cx="30" cy="13" r="5" fill="#d8d4cc"/><path d="M41 8L40 38" stroke="#5a3a22" stroke-width="2.6" stroke-linecap="round"/>`,
+  child: `<path d="M25 36L26 24Q30 19 34 24L35 36Z" fill="#c05a6a"/><circle cx="30" cy="19" r="4" fill="#3a2a42"/>`,
+  elder: `<path d="M22 36L24 18Q30 12 36 18L38 36Z" fill="#8a7a5a"/><circle cx="30" cy="13" r="5" fill="#e8e4dc"/><path d="M18 36L20 20" stroke="#5a3a22" stroke-width="2.4" stroke-linecap="round"/>`,
+  family: `<path d="M16 36L18 20Q22 15 26 20L28 36Z" fill="#6a7a3a"/><circle cx="22" cy="15" r="4" fill="#3a2a42"/><path d="M32 36L34 22Q38 17 42 22L44 36Z" fill="#a84a5a"/><circle cx="38" cy="17" r="4" fill="#f0e0c8"/>`,
 }
 /** A round token on the cloth map, with the picture of what it stands for. */
 const mapToken: PaperPropArt = {

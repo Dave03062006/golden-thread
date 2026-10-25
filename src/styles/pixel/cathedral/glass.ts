@@ -102,6 +102,14 @@ export const EMBLEMS: Record<string, { rows: string[]; colors: Record<string, st
   'marked-door': { rows: ['sssssssss', 'srrrrrrrs', 'ssskkksss', 'srkkkkkrs', 'srkkkkkrs', 'srkkykkrs', 'srkkkkkrs', 'srkkkkkrs', 'srkkkkkrs'], colors: { s: C.sand2, r: C.rose, k: C.navy, y: C.gold } },
   'pillar-of-fire': { rows: ['....o....', '...ooo...', '...oyo...', '..oyyyo..', '..oyyyo..', '..oyyyo..', '..oyyyo..', '.ooyyyoo.', 'sssssssss'], colors: { o: C.orange, y: C.gold, s: C.sand2 } },
   'unleavened-bread': { rows: ['....y....', '.........', '..sssss..', '.sSsssSs.', 'sssSssssS', 'sSsssSsss', '.ssSsssS.', '..sssss..', '.........'], colors: { y: C.gold, s: C.sand, S: C.wood2 } },
+  // Level 9 · Through the Sea
+  'stand-firm': { rows: ['....y....', '...yyy...', '....w....', '....w....', '....w....', '....w....', 'b.b.w.b.b', 'bbbbwbbbb', 'nnnnnnnnn'], colors: { y: C.gold, w: C.wood3, b: C.sky, n: C.blue } },
+  'parted-sea': { rows: ['nn..y..nn', 'nwn...nwn', 'nnn...nnn', 'nnns.snnn', 'nnns.snnn', 'nnnsssnnn', 'nnnsssnnn', 'nnsssssnn', 'nnsssssnn'], colors: { y: C.gold, w: C.white, n: C.blue, s: C.sand } },
+  timbrel: { rows: ['...g.g...', '..wwwww..', '.gwwwwwg.', '.wwwywww.', '.gwwwwwg.', '..wwwww..', '...g.g...', '.........', '.........'], colors: { g: C.gold, w: C.sand, y: C.orange } },
+  'manna-jar': { rows: ['w.......w', '...www...', '..wwwww..', '...ddd...', '..bbbbb..', '.bbbbbbb.', '.bbbbbbb.', '..bbbbb..', '..bbbbb..'], colors: { w: C.white, d: C.wood1, b: C.wood2 } },
+  'struck-rock': { rows: ['..rrrr...', '.rRRrrr..', 'rrRrrrrr.', 'rrrrsrrr.', 'rrrrssrrr', 'rrrrrsrrr', 'rrrrrssrr', 'rrrrrrsrr', '......sss'], colors: { r: C.wood2, R: C.rose, s: C.sky } },
+  'raised-hands': { rows: ['k.......k', '.k.....k.', '..k.p.k..', '...kpk...', '....b....', '...obo...', '..ooboo..', '.bbbbbbb.', 'bbbbbbbbb'], colors: { k: C.sand, p: C.pale, b: C.wood2, o: C.orange } },
+  'shared-load': { rows: ['....y....', '.........', '....h....', '.h..b..h.', '.g.hbh.r.', '.g.ghr.r.', '.g.ghr.r.', '.........', 'sssssssss'], colors: { y: C.gold, h: C.ink, b: C.wood3, g: C.green, r: C.rose, s: C.sand2 } },
 }
 
 /** The pointed outline of a window, inside which the glass is: whether a pixel is in it. */

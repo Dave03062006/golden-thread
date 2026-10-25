@@ -861,6 +861,50 @@ export const TRACKS: Track[] = [
     download: 'https://commons.wikimedia.org/wiki/Special:FilePath/BWV_1069_R%C3%A9jouissance_(Adolf_Busch_1937).ogg',
     credit: 'Bach, Orchestral Suite No. 4: Réjouissance. The Busch Chamber Players, Adolf Busch (1937). Public domain.',
   },
+  // Level 9 · Through the Sea. Episode 2, in place of the Easter Exsultet, whose free
+  // recordings are all CC BY-SA: the Easter sequence, for the reading never left out at the Vigil.
+  {
+    id: 'victimae-paschali',
+    title: 'Victimae paschali laudes',
+    work: 'The Easter sequence',
+    composer: 'Gregorian chant',
+    performer: 'The Tudor Consort',
+    year: 2010,
+    license: 'cc-by',
+    licenseNote: 'Published by the ensemble under the Creative Commons Attribution 3.0 license, as stated on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:The_Tudor_Consort_-_09_-_Sequence_-_Victimae_Paschali_Laudes.ogg',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/The_Tudor_Consort_-_09_-_Sequence_-_Victimae_Paschali_Laudes.ogg',
+    credit: 'Victimae paschali laudes, the Easter sequence. The Tudor Consort (2010). CC BY 3.0, via Wikimedia Commons.',
+  },
+  // Episode 3, in place of Handel's Israel in Egypt, whose only free recording is a fragment
+  // from 1888: trumpets and drums for the song of victory.
+  {
+    id: 'charpentier-te-deum',
+    title: 'Prelude',
+    work: 'Te Deum, H. 146',
+    composer: 'Marc-Antoine Charpentier',
+    performer: 'Ian Dollins, organ',
+    // The recording gives no date; it was published on Musopen and Wikimedia Commons in 2013.
+    year: 2013,
+    license: 'cc0',
+    licenseNote: 'Dedicated to the public domain (CC0) through Musopen, as stated on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:Charpentier,_Te_Deum_(Prelude).ogg',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Charpentier,_Te_Deum_(Prelude).ogg',
+    credit: 'Charpentier, Te Deum: Prelude, arranged for organ. Ian Dollins, via Musopen (published 2013). CC0, via Wikimedia Commons.',
+  },
+  // Episode 5: "Let the water and the blood, from thy wounded side which flowed."
+  {
+    id: 'rock-of-ages',
+    title: 'Rock of Ages',
+    composer: 'Thomas Hastings (music), Augustus Toplady (words)',
+    performer: 'The Edison Mixed Quartet',
+    year: 1913,
+    license: 'public-domain',
+    licenseNote: 'An old recording on an Edison cylinder, in the public domain, as stated on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:EdisonMixedQuartet_RockOfAges1913.ogg',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/EdisonMixedQuartet_RockOfAges1913.ogg',
+    credit: 'Rock of Ages. The Edison Mixed Quartet (1913). Public domain.',
+  },
 ]
 
 const BY_ID = new Map(TRACKS.map((track) => [track.id, track]))
