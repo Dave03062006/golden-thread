@@ -14,7 +14,7 @@ It can be played in two art styles, switched at any moment, even in the middle o
 Level 1, *Creation and the Fall*, is built: six episodes, its quiz, reflection and prayer,
 its window in the cathedral and its place on the map.
 
-- The design: [`docs/superpowers/specs/2026-10-15-golden-thread-design.md`](docs/superpowers/specs/2026-10-15-golden-thread-design.md)
+- The design: [`docs/specs/2026-10-15-golden-thread-design.md`](docs/specs/2026-10-15-golden-thread-design.md)
 - The build plan and its results: [`docs/plans/first-build/plan.md`](docs/plans/first-build/plan.md)
 - How the code works, for someone learning React: [`docs/code-tour.md`](docs/code-tour.md)
 

@@ -2,7 +2,7 @@
 
 **Owner:** Dave Tristian Nurcahyo
 **Date:** 2026-10-15
-**Status:** Designed and approved section by section in conversation on 2026-10-15. This document collects those decisions and is awaiting Dave's review.
+**Status:** Designed and approved section by section on 2026-10-15. This document collects those decisions and is awaiting Dave's review.
 **Working title:** *Golden Thread*. It can be renamed at any time.
 
 ## In plain words
@@ -606,7 +606,7 @@ Each level's full playlist (3–6 pieces in each mode) is written into its scrip
 - The same page says its free-quotation allowance for other RSV editions (up to 500 verses) does not apply to apps and other new media, which require permission or a license.
 - **Plan:**
   - Develop with the RSV-2CE while the game is private.
-  - Ask Ignatius Press for written permission before the public launch (Claude can draft the request).
+  - Ask Ignatius Press for written permission before the public launch (a draft request is prepared).
   - If permission hasn't arrived by launch, the public version quotes the public-domain **Douay-Rheims** and switches when permission comes.
 
 ### 12.3 Rules for free music and sound
@@ -810,11 +810,11 @@ About 200 free recordings is far too much to download up front. They're compress
 
 ## 15. How each level is made
 
-1. **Script.** Claude writes the full level script: scenes, narration, quoted verses, minigames, golden threads, where and when, the quiz bank, reflection and prayer, and both music playlists. **Dave approves it.** Having a priest or catechist read the scripts is recommended.
-2. **Art.** Claude builds any new props and characters in both styles.
-3. **Build.** Claude assembles the scenes, minigames, quiz and music.
+1. **Script.** The full level script is written: scenes, narration, quoted verses, minigames, golden threads, where and when, the quiz bank, reflection and prayer, and both music playlists. **Dave approves it.** Having a priest or catechist read the scripts is recommended.
+2. **Art.** Any new props and characters are built in both styles.
+3. **Build.** The scenes, minigames, quiz and music are assembled.
 4. **Checks.** The quality gates in section 14 run.
-5. **Play-test.** Dave plays the level, Claude fixes what's found, and the level ships.
+5. **Play-test.** Dave plays the level, what's found is fixed, and the level ships.
 
 ## 16. Scope and roadmap
 
@@ -868,7 +868,7 @@ Seven milestones. Each ends with something Dave can open and play-test.
 
 ### 16.2 The Level 1 checkpoint
 
-After M7, Dave and Claude look at what it really cost to make Level 1 in two styles. If it's sustainable, both styles continue. If not, one becomes the main style.
+After M7, Dave looks at what it really cost to make Level 1 in two styles. If it's sustainable, both styles continue. If not, one becomes the main style.
 
 ### 16.3 After Level 1
 
@@ -890,7 +890,7 @@ After M7, Dave and Claude look at what it really cost to make Level 1 in two sty
 | Approval of each level's script | before each level is built |
 | A free file-hosting account for the music recordings, such as Cloudflare R2 | M3 |
 | A Vercel project on Dave's account | M7 |
-| Ignatius Press permission for RSV-2CE quotes (Claude drafts the request) | before the public launch |
+| Ignatius Press permission for RSV-2CE quotes (a draft request is prepared) | before the public launch |
 | The final name of the game | any time |
 | Optionally, a priest or catechist to read the scripts | from the first script |
 
@@ -916,7 +916,7 @@ After M7, Dave and Claude look at what it really cost to make Level 1 in two sty
 
 ## 18. References
 
-- **Mockups from the design conversation** (stored locally in `.superpowers/brainstorm/`, which git ignores):
+- **Mockups from the design stage** (stored locally, outside git):
   - `art-style.html`: the first four style samples
   - `compare.html`: Paper & Glass plus the cathedral, against Pixel, across the story, a minigame and the map
 - [Friendship Press: Bible licensing](https://friendshippress.org/bible-licensing)

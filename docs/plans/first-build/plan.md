@@ -2,7 +2,7 @@
 
 ## Overview
 
-Build the first playable version of Golden Thread described in [the design spec](../../superpowers/specs/2026-10-15-golden-thread-design.md): the whole game engine, both art styles (Paper & Glass, and Pixel), both music modes, saves, the quiz, the cathedral and the world map, and **Level 1, *Creation and the Fall*,** complete from start to finish. It covers the spec's milestones M1–M7 (§16.1), one task per milestone. Each task ends with something Dave can open and play-test.
+Build the first playable version of Golden Thread described in [the design spec](../../specs/2026-10-15-golden-thread-design.md): the whole game engine, both art styles (Paper & Glass, and Pixel), both music modes, saves, the quiz, the cathedral and the world map, and **Level 1, *Creation and the Fall*,** complete from start to finish. It covers the spec's milestones M1–M7 (§16.1), one task per milestone. Each task ends with something Dave can open and play-test.
 
 ## Requirements summary
 
@@ -45,7 +45,7 @@ Current npm versions (npm on this machine uses the npmmirror registry, which mir
 
 - **ffmpeg 9.0.1** is installed, so audio can be compressed to Opus (with an AAC fallback) by a script.
 - **Edge** is installed at the standard location, so the screenshot, performance and accessibility scripts run in headless Edge without downloading browsers.
-- **The mockups** in `.superpowers/brainstorm/` already prove some techniques: the Voronoi glass, the pixel world map's geography, the outlined pixel sprites and the layered paper scenes. Their code is a reference for M1, M2 and M6, but it isn't copied as is: it computed SVG filters on every frame, which the spec forbids (§10, rule 8).
+- **The design mockups** (kept locally, outside git) already prove some techniques: the Voronoi glass, the pixel world map's geography, the outlined pixel sprites and the layered paper scenes. Their code is a reference for M1, M2 and M6, but it isn't copied as is: it computed SVG filters on every frame, which the spec forbids (§10, rule 8).
 
 ## Tasks
 
@@ -551,7 +551,7 @@ The same way again: script, art, build, checks, play-test. Level 10 opens Age IV
 
 ## Parallelization
 
-- **Code tasks run in order.** Each one builds on the last, and running them in order keeps the code consistent for the code tour. I do the work in this session, without subagents, as the session guidelines require.
+- **Code tasks run in order.** Each one builds on the last, and running them in order keeps the code consistent for the code tour.
 - **Two things overlap with Dave's time:**
   - The Level 1 script is written at the very start, so Dave reviews it while Task 1 is being built.
   - Choosing the music host can be settled at any point before Task 3.
@@ -565,7 +565,7 @@ The same way again: script, art, build, checks, play-test. Level 10 opens Age IV
   - RSV-2CE wording, checked against a printed Ignatius Bible or the closest available edition.
   - Douay-Rheims, which is public domain.
 - **Streaming services:** only plain links that open search pages (Spotify, Apple Music, YouTube Music, YouTube). No APIs, as spec §12.4 explains.
-- **Ignatius Press:** the permission request before the public launch. Claude drafts it.
+- **Ignatius Press:** the permission request before the public launch. A draft is prepared for Dave to send.
 
 ## Testing strategy
 
@@ -601,7 +601,7 @@ The same way again: script, art, build, checks, play-test. Level 10 opens Age IV
 | Safari doesn't play Opus | Encode AAC as well, and let the player pick the format the browser supports. |
 | iPhone and iPad browsers can't pick a whole folder | Fall back to selecting many files at once (already planned). |
 | The browser clears stored saves or music | Ask for permanent storage, keep backups, and remind the player to export now and then. |
-| Library versions are newer than my training data | Check against the installed type definitions, documentation and real builds rather than memory. |
+| Library versions are newer than familiar examples | Check against the installed type definitions, documentation and real builds rather than memory. |
 | Large audio files end up in git | Media lives in the git-ignored `media/` folder and on the file host. A check rejects audio files in `src/` and `public/`. |
 
 ## Key decisions
@@ -613,7 +613,6 @@ The same way again: script, art, build, checks, play-test. Level 10 opens Age IV
 - **Content as TypeScript data,** so the typechecker catches broken references. Narration text lives separately so it's easy to review.
 - **Media outside git.** Audio is compressed by `scripts/media.mjs` into the git-ignored `media/` folder and served from `VITE_MEDIA_URL`.
 - **The Level 1 script comes first,** so Dave's review overlaps with the Task 1 build, and nothing is built from unapproved content.
-- **No subagents.** I do the work in this session, as the session guidelines require.
 
 ## Results (2026-10-18)
 
