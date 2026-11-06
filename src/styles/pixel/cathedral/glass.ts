@@ -110,6 +110,13 @@ export const EMBLEMS: Record<string, { rows: string[]; colors: Record<string, st
   'struck-rock': { rows: ['..rrrr...', '.rRRrrr..', 'rrRrrrrr.', 'rrrrsrrr.', 'rrrrssrrr', 'rrrrrsrrr', 'rrrrrssrr', 'rrrrrrsrr', '......sss'], colors: { r: C.wood2, R: C.rose, s: C.sky } },
   'raised-hands': { rows: ['k.......k', '.k.....k.', '..k.p.k..', '...kpk...', '....b....', '...obo...', '..ooboo..', '.bbbbbbb.', 'bbbbbbbbb'], colors: { k: C.sand, p: C.pale, b: C.wood2, o: C.orange } },
   'shared-load': { rows: ['....y....', '.........', '....h....', '.h..b..h.', '.g.hbh.r.', '.g.ghr.r.', '.g.ghr.r.', '.........', 'sssssssss'], colors: { y: C.gold, h: C.ink, b: C.wood3, g: C.green, r: C.rose, s: C.sand2 } },
+  // Level 10 · Sinai
+  'eagles-wings': { rows: ['.........', 'ww.....ww', '.wwwbwww.', '...bWb...', '....b....', '.........', '...rrr...', '..rrrrr..', '.rrrrrrr.'], colors: { w: C.wood1, b: C.wood0, W: C.white, r: C.wood2 } },
+  'two-tablets': { rows: ['....y....', '.sss.sss.', 'sssssssss', 'skkssskks', 'sssssssss', 'skkssskks', 'sssssssss', 'skkssskks', 'sssssssss'], colors: { y: C.gold, s: C.pale, k: C.dslate } },
+  'twelve-pillars': { rows: ['.........', 's.s.s.s.s', 's.s.s.s.s', 'sss.o.sss', 'sss.o.sss', 'ss.aaa.ss', 'ss.aaa.ss', 'sssaaasss', 'ggggggggg'], colors: { s: C.pale, o: C.orange, a: C.wood2, g: C.sand2 } },
+  'broken-tablets': { rows: ['.ss....ss', 'sss...sss', '.s.....s.', '.........', 'ss..s.ss.', 'sss.ssss.', 'ssss.sss.', 'sssssssss', 'ggggggggg'], colors: { s: C.pale, g: C.wood2 } },
+  'tent-of-meeting': { rows: ['......ww.', '.....wwww', '...t.wyyw', '..ttt.wyw', '.ttttt.y.', 'ttkkttty.', 'ttkkttty.', 'ttkkttty.', 'ggggggggg'], colors: { w: C.pale, y: C.gold, t: C.wood3, k: C.ink, g: C.sand2 } },
+  'shining-face': { rows: ['y...y...y', '.y.www.y.', '..wsssw..', 'ywsssssw.', '..wsssw.y', '.y.www.y.', 'y..bbb..y', '..bbbbb..', '.bbbbbbb.'], colors: { y: C.gold, w: C.white, s: C.sand, b: C.wood3 } },
 }
 
 /** The pointed outline of a window, inside which the glass is: whether a pixel is in it. */

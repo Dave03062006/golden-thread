@@ -688,6 +688,73 @@ export const THREADS: GoldenThread[] = [
     sources: ['Mark 3:13–15', 'Luke 10:1–2', 'Acts 6:1–6', 'Catechism 551, 873'],
     fulfilled: { age: 'XI', place: 'galilee' },
   },
+  // Level 10 · Sinai
+  {
+    id: 'a-holy-nation',
+    episode: 'l10-e1',
+    title: '“You shall be to me a kingdom of priests and a holy nation” → “You are a chosen race, a royal priesthood, a holy nation”',
+    from: ['EXO 19:6'],
+    to: ['1PE 2:9', '1PE 2:10'],
+    explanation:
+      'At Sinai, God called the people he had set free to be his own: a holy nation, a kingdom of priests, to bring the whole earth to him. Saint Peter gives the same words to everyone baptized into Christ. Every Christian belongs to God’s people, shares in Christ’s priesthood, and is sent to tell what God has done.',
+    sources: ['1 Peter 2:4–10', 'Revelation 1:6', 'Catechism 709, 1268, 1546'],
+    fulfilled: { age: 'XIII' },
+  },
+  {
+    id: 'love-god-and-neighbor',
+    episode: 'l10-e2',
+    title: 'The Ten Commandments → Jesus: “You shall love the Lord your God… You shall love your neighbor as yourself”',
+    from: ['EXO 20:2', 'EXO 20:3'],
+    to: ['MAT 22:37', 'MAT 22:39', 'MAT 22:40'],
+    explanation:
+      'When Jesus was asked which commandment was the greatest, he gathered all ten into two: love God with everything you have, and love your neighbor as yourself. The first tablet is love of God; the second is love of neighbor. Jesus did not take the commandments away. He came to fulfill them, and to give us the grace to keep them, out of love.',
+    sources: ['Matthew 22:34–40', 'Matthew 5:17', 'John 14:15', 'Catechism 2055, 2067'],
+    fulfilled: { age: 'XI', place: 'jerusalem' },
+  },
+  {
+    id: 'blood-of-the-covenant',
+    episode: 'l10-e3',
+    title: '“Behold the blood of the covenant” → Jesus at the Last Supper: “This is my blood of the covenant, which is poured out for many”',
+    from: ['EXO 24:8'],
+    to: ['MRK 14:23', 'MRK 14:24'],
+    explanation:
+      'At Sinai, Moses sealed the covenant between God and his people with blood, and then the elders ate and drank in God’s presence. At the Last Supper, Jesus used Moses’ very words over the cup: “my blood of the covenant.” The new covenant is sealed not with the blood of oxen, but with Jesus’ own blood, and at every Mass his people eat and drink in the presence of God.',
+    sources: ['Mark 14:22–25', 'Hebrews 9:18–22', 'Hebrews 12:24', 'Catechism 610, 1339, 1365'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'no-idols',
+    episode: 'l10-e4',
+    title: 'The golden calf → “Do not be idolaters as some of them were,” and Jesus: “You shall worship the Lord your God and him only shall you serve”',
+    from: ['EXO 32:4'],
+    to: ['1CO 10:7', 'MAT 4:10'],
+    explanation:
+      'Saint Paul looks back at the golden calf and warns Christians: do not be idolaters as they were. An idol is anything we put in God’s place: money, success, pleasure, what others think of us. When the devil tempted Jesus in the desert, Jesus answered with God’s own word: worship God, and him alone.',
+    sources: ['1 Corinthians 10:6–14', 'Matthew 4:8–10', 'Catechism 2112–2114'],
+    fulfilled: { age: 'XIII' },
+  },
+  {
+    id: 'friends-of-god',
+    episode: 'l10-e5',
+    title: '“The LORD used to speak to Moses face to face, as a man speaks to his friend” → Jesus: “I have called you friends”',
+    from: ['EXO 33:11'],
+    to: ['JHN 15:14', 'JHN 15:15'],
+    explanation:
+      'God spoke with Moses as a friend, and Moses prayed for his people as only a friend of God could. Jesus calls all his disciples his friends, and tells them everything he has heard from the Father. And as Moses offered to be blotted out for his people, Jesus gave his own life for us, and now “always lives to make intercession” for us (Hebrews 7:25).',
+    sources: ['John 15:12–15', 'Hebrews 7:25', 'Catechism 2574–2577, 2665'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'we-have-beheld-his-glory',
+    episode: 'l10-e6',
+    title: '“You cannot see my face” → “No one has ever seen God; the only Son… has made him known”',
+    from: ['EXO 33:20', 'EXO 34:6'],
+    to: ['JHN 1:14', 'JHN 1:17', 'JHN 1:18'],
+    explanation:
+      'Moses asked to see God’s glory, and saw only his back, as he passed. His face shone just from being near God. In Jesus, God’s glory is seen at last in a human face: “we have beheld his glory.” The God who called himself “merciful and gracious… abounding in steadfast love and faithfulness” came to live among us, “full of grace and truth.”',
+    sources: ['John 1:14–18', '2 Corinthians 3:18', '2 Corinthians 4:6', 'Catechism 210–211'],
+    fulfilled: { age: 'XI', place: 'bethlehem' },
+  },
 ]
 
 const BY_ID = new Map(THREADS.map((thread) => [thread.id, thread]))

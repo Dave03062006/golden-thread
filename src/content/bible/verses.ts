@@ -2778,6 +2778,364 @@ export const VERSES: Record<string, Verse> = {
     rsv: 'And he said to them, “The harvest is plentiful, but the laborers are few; pray therefore the Lord of the harvest to send out laborers into his harvest.',
     dra: 'And he said to them: The harvest indeed is great, but the labourers are few. Pray ye therefore the Lord of the harvest, that he send labourers into his harvest.',
   },
+  // Level 10 · Sinai (the RSV's pronunciation marks in names, like Abi′hu, left out).
+  'EXO 19:2': {
+    rsv: 'And when they set out from Rephidim and came into the wilderness of Sinai, they encamped in the wilderness; and there Israel encamped before the mountain.',
+    dra: 'For departing out of Raphidim, and coming to the desert of Sinai, they camped in the same place, and there Israel pitched their tents over against the mountain.',
+  },
+  'EXO 19:4': {
+    rsv: 'You have seen what I did to the Egyptians, and how I bore you on eagles’ wings and brought you to myself.',
+    dra: 'You have seen what I have done to the Egyptians, how I have carried you upon the wings of eagles, and have taken you to myself.',
+  },
+  'EXO 19:5': {
+    rsv: 'Now therefore, if you will obey my voice and keep my covenant, you shall be my own possession among all peoples; for all the earth is mine,',
+    dra: 'If therefore you will hear my voice, and keep my covenant, you shall be my peculiar possession above all people: for all the earth is mine.',
+  },
+  'EXO 19:6': {
+    rsv: 'and you shall be to me a kingdom of priests and a holy nation. These are the words which you shall speak to the children of Israel.”',
+    dra: 'And you shall be to me a priestly kingdom, and a holy nation. Those are the words thou shalt speak to the children of Israel.',
+  },
+  'EXO 19:7': {
+    rsv: 'So Moses came and called the elders of the people, and set before them all these words which the LORD had commanded him.',
+    dra: 'Moses came, and calling together the elders of the people, he declared all the words which the Lord had commanded.',
+  },
+  'EXO 19:8': {
+    rsv: 'And all the people answered together and said, “All that the LORD has spoken we will do.” And Moses reported the words of the people to the LORD.',
+    dra: 'And all the people answered together: All that the Lord hath spoken, we will do. And when Moses had related the people\'s words to the Lord,',
+  },
+  'EXO 19:10': {
+    rsv: 'And the LORD said to Moses, “Go to the people and consecrate them today and tomorrow, and let them wash their garments,',
+    dra: 'And he said to him: Go to the people, and sanctify them to day, and to morrow, and let them wash their garments.',
+  },
+  'EXO 19:11': {
+    rsv: 'and be ready by the third day; for on the third day the LORD will come down upon Mount Sinai in the sight of all the people.',
+    dra: 'And let them be ready against the third day: for on the third day the Lord will come down in the sight of all the people upon mount Sinai.',
+  },
+  'EXO 19:16': {
+    rsv: 'On the morning of the third day there were thunders and lightnings, and a thick cloud upon the mountain, and a very loud trumpet blast, so that all the people who were in the camp trembled.',
+    dra: 'And now the third day was come, and the morning appeared: and behold thunders began to be heard, and lightning to flash, and a very thick cloud to cover the mount, and the noise of the trumpet sounded exceeding loud, and the people that was in the camp, feared.',
+  },
+  'EXO 19:18': {
+    rsv: 'And Mount Sinai was wrapped in smoke, because the LORD descended upon it in fire; and the smoke of it went up like the smoke of a kiln, and the whole mountain quaked greatly.',
+    dra: 'And all mount Sinai was on a smoke: because the Lord was come down upon it in fire, and the smoke arose from it as out of a furnace: and all the mount was terrible.',
+  },
+  'EXO 19:19': {
+    rsv: 'And as the sound of the trumpet grew louder and louder, Moses spoke, and God answered him in thunder.',
+    dra: 'And the sound of the trumpet grew by degrees louder and louder, and was drawn out to a greater length: Moses spoke, and God answered him.',
+  },
+  'EXO 19:20': {
+    rsv: 'And the LORD came down upon Mount Sinai, to the top of the mountain; and the LORD called Moses to the top of the mountain, and Moses went up.',
+    dra: 'And the Lord came down upon mount Sinai, in the very top of the mount, and he called Moses unto the top thereof. And when he was gone up thither,',
+  },
+  '1PE 2:9': {
+    rsv: 'But you are a chosen race, a royal priesthood, a holy nation, God’s own people, that you may declare the wonderful deeds of him who called you out of darkness into his marvelous light.',
+    dra: 'But you are a chosen generation, a kingly priesthood, a holy nation, a purchased people: that you may declare his virtues, who hath called you out of darkness into his marvellous light:',
+  },
+  '1PE 2:10': {
+    rsv: 'Once you were no people but now you are God’s people; once you had not received mercy but now you have received mercy.',
+    dra: 'Who in time past were not a people: but are now the people of God. Who had not obtained mercy; but now have obtained mercy.',
+  },
+  'EXO 20:1': {
+    rsv: 'And God spoke all these words, saying,',
+    dra: 'And the Lord spoke all these words:',
+  },
+  'EXO 20:2': {
+    rsv: '“I am the LORD your God, who brought you out of the land of Egypt, out of the house of bondage.',
+    dra: 'I am the Lord thy God, who brought thee out of the land of Egypt, out of the house of bondage.',
+  },
+  'EXO 20:3': {
+    rsv: '“You shall have no other gods before me.',
+    dra: 'Thou shalt not have strange gods before me.',
+  },
+  // The first commandment as one passage, for the comparison in Episode 4 (minigames/the-calf).
+  'EXO 20:2-3': {
+    rsv: '“I am the LORD your God, who brought you out of the land of Egypt, out of the house of bondage. “You shall have no other gods before me.',
+    dra: 'I am the Lord thy God, who brought thee out of the land of Egypt, out of the house of bondage. Thou shalt not have strange gods before me.',
+  },
+  'EXO 20:7': {
+    rsv: '“You shall not take the name of the LORD your God in vain; for the LORD will not hold him guiltless who takes his name in vain.',
+    dra: 'Thou shalt not take the name of the Lord thy God in vain: for the Lord will not hold him guiltless that shall take the name of the Lord his God in vain.',
+  },
+  'EXO 20:8': {
+    rsv: '“Remember the sabbath day, to keep it holy.',
+    dra: 'Remember that thou keep holy the sabbath day.',
+  },
+  'EXO 20:12': {
+    rsv: '“Honor your father and your mother, that your days may be long in the land which the LORD your God gives you.',
+    dra: 'Honour thy father and thy mother, that thou mayest be longlived upon the land which the Lord thy God will give thee.',
+  },
+  'EXO 20:13': {
+    rsv: '“You shall not kill.',
+    dra: 'Thou shalt not kill.',
+  },
+  'EXO 20:14': {
+    rsv: '“You shall not commit adultery.',
+    dra: 'Thou shalt not commit adultery.',
+  },
+  'EXO 20:15': {
+    rsv: '“You shall not steal.',
+    dra: 'Thou shalt not steal.',
+  },
+  'EXO 20:16': {
+    rsv: '“You shall not bear false witness against your neighbor.',
+    dra: 'Thou shalt not bear false witness against thy neighbour.',
+  },
+  'EXO 20:17': {
+    rsv: '“You shall not covet your neighbor’s house; you shall not covet your neighbor’s wife, or his manservant, or his maidservant, or his ox, or his ass, or anything that is your neighbor’s.”',
+    dra: 'Thou shalt not covet thy neighbour\'s house: neither shalt thou desire his wife, nor his servant, nor his handmaid, nor his ox, nor his ass, nor any thing that is his.',
+  },
+  'EXO 20:18': {
+    rsv: 'Now when all the people perceived the thunderings and the lightnings and the sound of the trumpet and the mountain smoking, the people were afraid and trembled; and they stood afar off,',
+    dra: 'And all the people saw the voices and the flames, and the sound of the trumpet, and the mount smoking: and being terrified and struck with fear, they stood afar off,',
+  },
+  'EXO 20:20': {
+    rsv: 'And Moses said to the people, “Do not fear; for God has come to prove you, and that the fear of him may be before your eyes, that you may not sin.”',
+    dra: 'And Moses said to the people: Fear not: for God is come to prove you, and that the dread of him might be in you, and you should not sin.',
+  },
+  'EXO 20:21': {
+    rsv: 'And the people stood afar off, while Moses drew near to the thick darkness where God was.',
+    dra: 'And the people stood afar off. But Moses went to the dark cloud wherein God was.',
+  },
+  'MAT 22:37': {
+    rsv: 'And he said to him, “You shall love the Lord your God with all your heart, and with all your soul, and with all your mind.',
+    dra: 'Jesus said to him: Thou shalt love the Lord thy God with thy whole heart, and with thy whole soul, and with thy whole mind.',
+  },
+  'MAT 22:39': {
+    rsv: 'And a second is like it, You shall love your neighbor as yourself.',
+    dra: 'And the second is like to this: Thou shalt love thy neighbour as thyself.',
+  },
+  'MAT 22:40': {
+    rsv: 'On these two commandments depend all the law and the prophets.”',
+    dra: 'On these two commandments dependeth the whole law and the prophets.',
+  },
+  'EXO 24:3': {
+    rsv: 'Moses came and told the people all the words of the LORD and all the ordinances; and all the people answered with one voice, and said, “All the words which the LORD has spoken we will do.”',
+    dra: 'So Moses came and told the people all the words of the Lord, and all the judgments: and all the people answered with one voice: We will do all the words of the Lord, which he hath spoken.',
+  },
+  'EXO 24:4': {
+    rsv: 'And Moses wrote all the words of the LORD. And he rose early in the morning, and built an altar at the foot of the mountain, and twelve pillars, according to the twelve tribes of Israel.',
+    dra: 'And Moses wrote all the words of the Lord: and rising in the morning he built an altar at the foot of the mount, and twelve titles according to the twelve tribes of Israel.',
+  },
+  'EXO 24:5': {
+    rsv: 'And he sent young men of the people of Israel, who offered burnt offerings and sacrificed peace offerings of oxen to the LORD.',
+    dra: 'And he sent young men of the children of Israel, and they offered holocausts, and sacrificed pacific victims of calves to the Lord.',
+  },
+  'EXO 24:6': {
+    rsv: 'And Moses took half of the blood and put it in basins, and half of the blood he threw against the altar.',
+    dra: 'Then Moses took half of the blood, and put it into bowls: and the rest he poured upon the altar.',
+  },
+  'EXO 24:7': {
+    rsv: 'Then he took the book of the covenant, and read it in the hearing of the people; and they said, “All that the LORD has spoken we will do, and we will be obedient.”',
+    dra: 'And taking the book of the covenant, he read it in the hearing of the people: and they said: All things that the Lord hath spoken we will do, we will be obedient.',
+  },
+  'EXO 24:8': {
+    rsv: 'And Moses took the blood and threw it upon the people, and said, “Behold the blood of the covenant which the LORD has made with you in accordance with all these words.”',
+    dra: 'And he took the blood and sprinkled it upon the people, and he said: This is the blood of the covenant which the Lord hath made with you concerning all these words.',
+  },
+  'EXO 24:9': {
+    rsv: 'Then Moses and Aaron, Nadab, and Abihu, and seventy of the elders of Israel went up,',
+    dra: 'Then Moses and Aaron, Nadab and Abiu, and seventy of the ancients of Israel went up:',
+  },
+  'EXO 24:10': {
+    rsv: 'and they saw the God of Israel; and there was under his feet as it were a pavement of sapphire stone, like the very heaven for clearness.',
+    dra: 'And they saw the God of Israel: and under his feet as it were a work of sapphire stone, and as the heaven, when clear.',
+  },
+  'EXO 24:11': {
+    rsv: 'And he did not lay his hand on the chief men of the people of Israel; they beheld God, and ate and drank.',
+    dra: 'Neither did he lay his hand upon those of the children of Israel, that retired afar off, and they saw God, and they did eat and drink.',
+  },
+  'EXO 24:18': {
+    rsv: 'And Moses entered the cloud, and went up on the mountain. And Moses was on the mountain forty days and forty nights.',
+    dra: 'And Moses, entering into the midst of the cloud, went up into the mountain: and he was there forty days, and forty nights.',
+  },
+  'MRK 14:23': {
+    rsv: 'And he took a cup, and when he had given thanks he gave it to them, and they all drank of it.',
+    dra: 'And having taken the chalice, giving thanks, he gave it to them. And they all drank of it.',
+  },
+  'MRK 14:24': {
+    rsv: 'And he said to them, “This is my blood of the covenant, which is poured out for many.',
+    dra: 'And he said to them: This is my blood of the new testament, which shall be shed for many.',
+  },
+  'EXO 32:1': {
+    rsv: 'When the people saw that Moses delayed to come down from the mountain, the people gathered themselves together to Aaron, and said to him, “Up, make us gods, who shall go before us; as for this Moses, the man who brought us up out of the land of Egypt, we do not know what has become of him.”',
+    dra: 'And the people seeing that Moses delayed to come down from the mount, gathering together against Aaron, said: Arise, make us gods, that may go before us: for as to this Moses, the man that brought us out of the land of Egypt, we know not what has befallen him.',
+  },
+  'EXO 32:3': {
+    rsv: 'So all the people took off the rings of gold which were in their ears, and brought them to Aaron.',
+    dra: 'And the people did what he had commanded, bringing the earrings to Aaron.',
+  },
+  'EXO 32:4': {
+    rsv: 'And he received the gold at their hand, and fashioned it with a graving tool, and made a molten calf; and they said, “These are your gods, O Israel, who brought you up out of the land of Egypt!”',
+    dra: 'And when he had received them, he fashioned them by founders\' work, and made of them a molten calf. And they said: These are thy gods, O Israel, that have brought thee out of the land of Egypt.',
+  },
+  'EXO 32:5': {
+    rsv: 'When Aaron saw this, he built an altar before it; and Aaron made proclamation and said, “Tomorrow shall be a feast to the LORD.”',
+    dra: 'And when Aaron saw this, he built an altar before it, and made proclamation by a crier\'s voice, saying: To morrow is the solemnity of the Lord.',
+  },
+  'EXO 32:6': {
+    rsv: 'And they rose up early on the morrow, and offered burnt offerings and brought peace offerings; and the people sat down to eat and drink, and rose up to play.',
+    dra: 'And rising in the morning, they offered holocausts, and peace victims, and the people sat down to eat, and drink, and they rose up to play.',
+  },
+  'EXO 31:18': {
+    rsv: 'And he gave to Moses, when he had made an end of speaking with him upon Mount Sinai, the two tables of the testimony, tables of stone, written with the finger of God.',
+    dra: 'And the Lord, when he had ended these words in mount Sinai, gave to Moses two stone tables of testimony, written with the finger of God.',
+  },
+  'EXO 32:7': {
+    rsv: 'And the LORD said to Moses, “Go down; for your people, whom you brought up out of the land of Egypt, have corrupted themselves;',
+    dra: 'And the Lord spoke to Moses, saying: Go, get thee down: thy people, which thou hast brought out of the land of Egypt, hath sinned.',
+  },
+  'EXO 32:15': {
+    rsv: 'And Moses turned, and went down from the mountain with the two tables of the testimony in his hands, tables that were written on both sides; on the one side and on the other were they written.',
+    dra: 'And Moses returned from the mount, carrying the two tables of the testimony in his hand, written on both sides,',
+  },
+  'EXO 32:16': {
+    rsv: 'And the tables were the work of God, and the writing was the writing of God, graven upon the tables.',
+    dra: 'And made by the work of God: the writing also of God was graven in the tables.',
+  },
+  'EXO 32:17': {
+    rsv: 'When Joshua heard the noise of the people as they shouted, he said to Moses, “There is a noise of war in the camp.”',
+    dra: 'And Josue hearing the noise of the people shouting, said to Moses: The noise of battle is heard in the camp.',
+  },
+  'EXO 32:18': {
+    rsv: 'But he said, “It is not the sound of shouting for victory, or the sound of the cry of defeat, but the sound of singing that I hear.”',
+    dra: 'But he answered: It is not the cry of men encouraging to fight, nor the shout of men compelling to flee: but I hear the voice of singers.',
+  },
+  'EXO 32:19': {
+    rsv: 'And as soon as he came near the camp and saw the calf and the dancing, Moses’ anger burned hot, and he threw the tables out of his hands and broke them at the foot of the mountain.',
+    dra: 'And when he came nigh to the camp, he saw the calf, and the dances: and being very angry, he threw the tables out of his hand, and broke them at the foot of the mount:',
+  },
+  'EXO 32:20': {
+    rsv: 'And he took the calf which they had made, and burnt it with fire, and ground it to powder, and scattered it upon the water, and made the people of Israel drink it.',
+    dra: 'And laying hold of the calf which they had made, he burnt it, and beat it to powder, which he strowed into water, and gave thereof to the children of Israel to drink.',
+  },
+  '1CO 10:7': {
+    rsv: 'Do not be idolaters as some of them were; as it is written, “The people sat down to eat and drink and rose up to dance.”',
+    dra: 'Neither become ye idolaters, as some of them, as it is written: The people sat down to eat and drink, and rose up to play.',
+  },
+  'MAT 4:10': {
+    rsv: 'Then Jesus said to him, “Begone, Satan! for it is written, ‘You shall worship the Lord your God and him only shall you serve.’”',
+    dra: 'Then Jesus saith to him: Begone, Satan: for it is written, The Lord thy God shalt thou adore, and him only shalt thou serve.',
+  },
+  'EXO 32:9': {
+    rsv: 'And the LORD said to Moses, “I have seen this people, and behold, it is a stiff-necked people;',
+    dra: 'And again the Lord said to Moses: See that this people is stiffnecked:',
+  },
+  'EXO 32:10': {
+    rsv: 'now therefore let me alone, that my wrath may burn hot against them and I may consume them; but of you I will make a great nation.”',
+    dra: 'Let me alone, that my wrath may be kindled against them, and that I may destroy them, and I will make of thee a great nation.',
+  },
+  'EXO 32:14': {
+    rsv: 'And the LORD repented of the evil which he thought to do to his people.',
+    dra: 'And the Lord was appeased from doing the evil which he had spoken against his people.',
+  },
+  'EXO 32:30': {
+    rsv: 'On the morrow Moses said to the people, “You have sinned a great sin. And now I will go up to the LORD; perhaps I can make atonement for your sin.”',
+    dra: 'And when the next day was come, Moses spoke to the people: You have sinned a very great sin: I will go up to the Lord, if by any means I may be able to entreat him for your crime.',
+  },
+  'EXO 32:31': {
+    rsv: 'So Moses returned to the LORD and said, “Alas, this people have sinned a great sin; they have made for themselves gods of gold.',
+    dra: 'And returning to the Lord, he said: I beseech thee: this people hath sinned a heinous sin, and they have made to themselves gods of gold: either forgive them this trespass,',
+  },
+  'EXO 32:32': {
+    rsv: 'But now, if thou wilt forgive their sin—and if not, blot me, I pray thee, out of thy book which thou hast written.”',
+    dra: 'Or if thou do not, strike me out of the book that thou hast written.',
+  },
+  'EXO 33:7': {
+    rsv: 'Now Moses used to take the tent and pitch it outside the camp, far off from the camp; and he called it the tent of meeting. And every one who sought the LORD would go out to the tent of meeting, which was outside the camp.',
+    dra: 'Moses also taking the tabernacle, pitched it without the camp afar off, and called the name thereof, The tabernacle of the covenant. And all the people that had any question, went forth to the tabernacle of the covenant, without the camp.',
+  },
+  'EXO 33:9': {
+    rsv: 'When Moses entered the tent, the pillar of cloud would descend and stand at the door of the tent, and the LORD would speak with Moses.',
+    dra: 'And when he was gone into the tabernacle of the covenant, the pillar of the cloud came down, and stood at the door, and he spoke with Moses.',
+  },
+  'EXO 33:10': {
+    rsv: 'And when all the people saw the pillar of cloud standing at the door of the tent, all the people would rise up and worship, every man at his tent door.',
+    dra: 'And all saw that the pillar of the cloud stood at the door of the tabernacle. And they stood, and worshipped at the doors of their tents.',
+  },
+  'EXO 33:11': {
+    rsv: 'Thus the LORD used to speak to Moses face to face, as a man speaks to his friend. When Moses turned again into the camp, his servant Joshua the son of Nun, a young man, did not depart from the tent.',
+    dra: 'And the Lord spoke to Moses face to face, as a man is wont to speak to his friend. And when he returned into the camp, his servant Josue the son of Nun, a young man, departed not from the tabernacle.',
+  },
+  'EXO 33:14': {
+    rsv: 'And he said, “My presence will go with you, and I will give you rest.”',
+    dra: 'And the Lord said: My face shall go before thee, and I will give thee rest.',
+  },
+  'JHN 15:14': {
+    rsv: 'You are my friends if you do what I command you.',
+    dra: 'You are my friends, if you do the things that I command you.',
+  },
+  'JHN 15:15': {
+    rsv: 'No longer do I call you servants, for the servant does not know what his master is doing; but I have called you friends, for all that I have heard from my Father I have made known to you.',
+    dra: 'I will not now call you servants: for the servant knoweth not what his lord doth. But I have called you friends: because all things whatsoever I have heard of my Father, I have made known to you.',
+  },
+  'EXO 33:18': {
+    rsv: 'Moses said, “I pray thee, show me thy glory.”',
+    dra: 'And he said: shew me thy glory.',
+  },
+  'EXO 33:19': {
+    rsv: 'And he said, “I will make all my goodness pass before you, and will proclaim before you my name ‘The LORD’; and I will be gracious to whom I will be gracious, and will show mercy on whom I will show mercy.',
+    dra: 'He answered: I will shew thee all good, and I will proclaim in the name of the Lord before thee: and I will have mercy on whom I will, and I will be merciful to whom it shall please me.',
+  },
+  'EXO 33:20': {
+    rsv: 'But,” he said, “you cannot see my face; for man shall not see me and live.”',
+    dra: 'And again he said: Thou canst not see my face: for man shall not see me and live.',
+  },
+  'EXO 33:22': {
+    rsv: 'and while my glory passes by I will put you in a cleft of the rock, and I will cover you with my hand until I have passed by;',
+    dra: 'And when my glory shall pass, I will set thee in a hole of the rock, and protect thee with my right hand, till I pass:',
+  },
+  'EXO 34:1': {
+    rsv: 'The LORD said to Moses, “Cut two tables of stone like the first; and I will write upon the tables the words that were on the first tables, which you broke.',
+    dra: 'And after this he said: Hew thee two tables of stone like unto the former, and I will write upon them the words which were in the tables, which thou brokest.',
+  },
+  'EXO 34:4': {
+    rsv: 'So Moses cut two tables of stone like the first; and he rose early in the morning and went up on Mount Sinai, as the LORD had commanded him, and took in his hand two tables of stone.',
+    dra: 'Then he cut out two tables of stone, such as had been before: and rising very early he went up into the mount Sinai, as the Lord had commanded him, carrying with him the tables.',
+  },
+  'EXO 34:5': {
+    rsv: 'And the LORD descended in the cloud and stood with him there, and proclaimed the name of the LORD.',
+    dra: 'And when the Lord was come down in a cloud, Moses stood with him, calling upon the name of the Lord.',
+  },
+  'EXO 34:6': {
+    rsv: 'The LORD passed before him, and proclaimed, “The LORD, the LORD, a God merciful and gracious, slow to anger, and abounding in steadfast love and faithfulness,',
+    dra: 'And when he passed before him, he said: O the Lord, the Lord God, merciful and gracious, patient and of much compassion, and true,',
+  },
+  'EXO 34:8': {
+    rsv: 'And Moses made haste to bow his head toward the earth, and worshiped.',
+    dra: 'And Moses making haste, bowed down prostrate unto the earth, and adoring,',
+  },
+  'EXO 34:9': {
+    rsv: 'And he said, “If now I have found favor in thy sight, O Lord, let the Lord, I pray thee, go in the midst of us, although it is a stiff-necked people; and pardon our iniquity and our sin, and take us for thy inheritance.”',
+    dra: 'Said: If I have found grace in thy sight: O Lord, I beseech thee, that thou wilt go with us, (for it is a stiffnecked people,) and take away our iniquities and sin, and possess us.',
+  },
+  'EXO 34:28': {
+    rsv: 'And he was there with the LORD forty days and forty nights; he neither ate bread nor drank water. And he wrote upon the tables the words of the covenant, the ten commandments.',
+    dra: 'And he was there with the Lord forty days and forty nights: he neither ate bread nor drank water, and he wrote upon the tables the ten words of the covenant.',
+  },
+  'EXO 34:29': {
+    rsv: 'When Moses came down from Mount Sinai, with the two tables of the testimony in his hand as he came down from the mountain, Moses did not know that the skin of his face shone because he had been talking with God.',
+    dra: 'And when Moses came down from the mount Sinai, he held the two tables of the testimony, and he knew not that his face was horned from the conversation of the Lord.',
+  },
+  'EXO 34:30': {
+    rsv: 'And when Aaron and all the people of Israel saw Moses, behold, the skin of his face shone, and they were afraid to come near him.',
+    dra: 'And Aaron and the children of Israel seeing the face of Moses horned, were afraid to come near.',
+  },
+  'EXO 34:33': {
+    rsv: 'And when Moses had finished speaking with them, he put a veil on his face;',
+    dra: 'And having done speaking, he put a veil upon his face.',
+  },
+  'JHN 1:14': {
+    rsv: 'And the Word became flesh and dwelt among us, full of grace and truth; we have beheld his glory, glory as of the only Son from the Father.',
+    dra: 'And the Word was made flesh, and dwelt among us, (and we saw his glory, the glory as it were of the only begotten of the Father,) full of grace and truth.',
+  },
+  'JHN 1:17': {
+    rsv: 'For the law was given through Moses; grace and truth came through Jesus Christ.',
+    dra: 'For the law was given by Moses; grace and truth came by Jesus Christ.',
+  },
+  'JHN 1:18': {
+    rsv: 'No one has ever seen God; the only Son, who is in the bosom of the Father, he has made him known.',
+    dra: 'No man hath seen God at any time: the only begotten Son who is in the bosom of the Father, he hath declared him.',
+  },
 }
 
 /** A verse's words in the active translation. Throws for a verse that isn't in the list (a content check catches these first). */

@@ -79,6 +79,8 @@ import { plaguesLayers } from './layers/plagues'
 import { plaguesProps } from './props/plagues'
 import { crossingLayers } from './layers/crossing'
 import { crossingProps } from './props/crossing'
+import { sinaiLayers } from './layers/sinai'
+import { sinaiProps } from './props/sinai'
 import { familyOfNoah } from './characters/family-of-noah'
 
 export { LAYER_H, LAYER_W, MARGIN_X, MARGIN_Y, PX_H, PX_W, type Painter } from './frame'
@@ -180,6 +182,7 @@ export const pixelLayerSets: Record<string, PixelLayerArt>[] = [
   exodusLayers,
   plaguesLayers,
   crossingLayers,
+  sinaiLayers,
 ]
 
 export const pixelLayers: Record<string, PixelLayerArt> = Object.assign({}, ...pixelLayerSets)
@@ -231,6 +234,7 @@ export const pixelPropSets: Record<string, PixelPropArt>[] = [
   exodusProps,
   plaguesProps,
   crossingProps,
+  sinaiProps,
 ]
 
 export const pixelProps: Record<string, PixelPropArt> = Object.assign({}, ...pixelPropSets)

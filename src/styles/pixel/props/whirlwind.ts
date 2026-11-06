@@ -40,6 +40,7 @@ const stormCloud: PixelDrawnArt = {
   kind: 'drawn',
   poses: ['idle'],
   anchor: 'center',
+  fps: 0,
   draw(paint, { width }) {
     const w = Math.max(12, Math.round(width))
     const r = w / 2

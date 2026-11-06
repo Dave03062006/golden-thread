@@ -266,6 +266,14 @@ export const familyOfNoah: Record<string, PaperPropArt> = {
     { robe: '#c08a3a', fold: '#946424', hair: '#2a1e1a', veil: '#f4ecd8' },
     { robe: '#6a7a3a', fold: '#4c5a26', hair: '#1a1210', veil: '#e0d4bc' },
   ]),
+  // Level 10 · Sinai: the seventy elders of Israel, and Moses with his face veiled.
+  elders: band([
+    { robe: '#8a7a5a', fold: '#665a40', hair: '#d8d4cc', beard: '#d8d4cc', veil: '#c8bc9a' },
+    { robe: '#6a5a7a', fold: '#4c3e5a', hair: '#e0dcd4', beard: '#e0dcd4' },
+    { robe: '#7a6a4a', fold: '#5a4c32', hair: '#c8c4bc', beard: '#c8c4bc', veil: '#d8ccb0' },
+    { robe: '#5a6a5a', fold: '#3e4c3e', hair: '#d8d4cc', beard: '#d8d4cc' },
+  ]),
+  'moses-veiled': person({ robe: '#7a5a3a', fold: '#5a4026', hair: '#d0ccc4', beard: '#f4f0e6', veil: '#f4f0e6', sash: '#c8a050' }),
   amalekites: band([
     { robe: '#5a3a3a', fold: '#3e2626', hair: '#1a1210', beard: '#1a1210', veil: '#3a2a2a' },
     { robe: '#6a4a3a', fold: '#4c3226', hair: '#1a1210', beard: '#1a1210', veil: '#4a3a2a' },

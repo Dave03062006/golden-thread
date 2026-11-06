@@ -905,6 +905,20 @@ export const TRACKS: Track[] = [
     download: 'https://commons.wikimedia.org/wiki/Special:FilePath/EdisonMixedQuartet_RockOfAges1913.ogg',
     credit: 'Rock of Ages. The Edison Mixed Quartet (1913). Public domain.',
   },
+  // Level 10 · Sinai. Episode 1: the organ's thunder for the mountain of fire.
+  {
+    id: 'bach-toccata',
+    title: 'Toccata and Fugue in D minor',
+    work: 'BWV 565',
+    composer: 'Johann Sebastian Bach',
+    performer: 'Ashtar Moïra, on the Tamburini organ',
+    year: 2006,
+    license: 'public-domain',
+    licenseNote: 'Released into the public domain by its performer, as stated on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:Toccata_et_Fugue_BWV565.ogg',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Toccata_et_Fugue_BWV565.ogg',
+    credit: 'Bach, Toccata and Fugue in D minor, BWV 565. Ashtar Moïra, organ (2006). Public domain.',
+  },
 ]
 
 const BY_ID = new Map(TRACKS.map((track) => [track.id, track]))

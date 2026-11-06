@@ -21,8 +21,12 @@ export const MOUNTAINS: { name: string; peaks: LatLon[] }[] = [
 /** Mount Ararat, where the ark came to rest (Level 2). */
 export const ARARAT: LatLon = { lat: 39.7, lon: 44.3 }
 
-/** Where the levels still to come begin on the map, as far as the route is drawn ahead. */
-export const AHEAD: { number: number; title: string; at: LatLon; label: string }[] = [{ number: 10, title: 'Sinai', at: { lat: 28.54, lon: 33.97 }, label: 'Sinai' }]
+/**
+ * Where the levels still to come begin on the map, as far as the route is drawn ahead. Level
+ * 11, the tabernacle, stays at Mount Sinai, where Level 10 already stands, so there is no
+ * road ahead to draw until the people set out from Sinai.
+ */
+export const AHEAD: { number: number; title: string; at: LatLon; label: string }[] = []
 
 export interface LevelMarker {
   id: string

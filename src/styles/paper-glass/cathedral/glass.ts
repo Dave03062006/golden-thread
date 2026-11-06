@@ -612,6 +612,59 @@ export const EMBLEMS: Record<string, () => Piece[]> = {
     }).flat(),
     { d: star8(0, -13, 3), color: '#ffe48a' },
   ],
+  // Level 10 · Sinai
+  // An eagle with its wings spread over the mountain: "I bore you on eagles' wings."
+  'eagles-wings': () => [
+    { d: P([[-16, 16], [-4, 0], [4, 6], [16, 16]]), color: '#9a6450' },
+    { d: P([[0, -4], [-8, -12], [-16, -10], [-8, -6], [-2, -2]]), color: '#5a3a26' },
+    { d: P([[0, -4], [8, -12], [16, -10], [8, -6], [2, -2]]), color: '#5a3a26' },
+    { d: circ(0, -2, 3, 10), color: '#4a2e1e' },
+    { d: circ(0, -6, 1.8, 8), color: '#f0ead8' },
+  ],
+  // The two tablets of the law.
+  'two-tablets': () => [
+    ...[-8, 8].flatMap((x) => [
+      { d: P([[x - 7, 16], [x - 7, -6], [x - 5, -12], [x + 5, -12], [x + 7, -6], [x + 7, 16]]), color: '#b8b0a4' },
+      ...[-6, -1, 4, 9].map((y) => ({ d: P([[x - 4, y], [x + 4, y], [x + 4, y + 1.4], [x - 4, y + 1.4]]), color: '#6a6258' })),
+    ]),
+    { d: star8(0, -15, 2.6), color: '#ffe48a' },
+  ],
+  // The altar at the foot of the mountain, and the twelve pillars around it.
+  'twelve-pillars': () => [
+    ...Array.from({ length: 12 }, (_, i) => {
+      const x = -15 + i * (30 / 11)
+      const top = -2 - Math.round(Math.abs(i - 5.5)) * -1
+      return { d: P([[x - 1, 12], [x - 1, top], [x + 1, top], [x + 1, 12]]), color: '#a89a84' }
+    }),
+    { d: P([[-6, 16], [-6, 6], [6, 6], [6, 16]]), color: '#8a7a62' },
+    { d: P([[-2, 6], [0, 0], [2, 6]]), color: '#f08a2a' },
+  ],
+  // The tablets broken at the foot of the mountain.
+  'broken-tablets': () => [
+    { d: P([[-15, 16], [-12, 4], [-6, 8], [-3, 0], [3, 6], [0, 16]]), color: '#b8b0a4' },
+    { d: P([[-10, -2], [-8, -12], [0, -14], [2, -6], [-4, -4]]), color: '#cec6ba' },
+    { d: P([[3, 16], [5, 6], [10, 2], [15, 16]]), color: '#b8b0a4' },
+    { d: P([[6, -2], [8, -12], [14, -10], [14, -2]]), color: '#cec6ba' },
+  ],
+  // The tent of meeting, and the pillar of cloud at its door.
+  'tent-of-meeting': () => [
+    { d: P([[-16, 16], [-4, -2], [8, 16]]), color: '#a8785a' },
+    { d: P([[-7, 16], [-4, 6], [-1, 16]]), color: '#2a2440' },
+    { d: P([[8, 16], [8, -10], [10, -16], [14, -16], [16, -10], [16, 16]]), color: '#e8e4ee' },
+    { d: P([[10, 14], [10, -8], [14, -8], [14, 14]]), color: '#ffe8a0' },
+  ],
+  // Moses' face, shining from being with God.
+  'shining-face': () => [
+    ...[0, 1, 2, 3, 4, 5, 6, 7].map((i) => {
+      const a = (i / 8) * Math.PI * 2
+      const x = Math.round(Math.cos(a) * 140) / 10
+      const y = Math.round(Math.sin(a) * 140) / 10 - 2
+      return { d: P([[x * 0.7, y * 0.7 - 0.6], [x, y], [x * 0.7 + 0.6, y * 0.7]]), color: '#ffe48a' }
+    }),
+    { d: circ(0, -2, 8, 18), color: '#fff4c0' },
+    { d: circ(0, -2, 5.6, 16), color: '#d8b888' },
+    { d: P([[-6, 16], [-4, 8], [4, 8], [6, 16]]), color: '#7a5a3a' },
+  ],
 }
 
 /** The medallions' backgrounds: deep blue, with one ruby for the darkest story. */

@@ -3,7 +3,7 @@
 **Bible:** Exodus 19–20; 24; 31:18–34:35
 **Age:** IV · The Covenant in the Desert
 **Length:** about 50 minutes (6 episodes, then the quiz, then reflection and prayer)
-**Status:** draft, waiting for Dave's approval.
+**Status:** approved by Dave on 2026-10-25 ("approve").
 
 ## How to read this script
 
@@ -221,7 +221,7 @@ The covenant at Sinai is the heart of the Old Testament. The level shows that Go
 - **Gentle mode:** the twisted words are faintly underlined.
 - **Accessibility:** a pointer, or the arrow keys and Space.
 
-**Thread:** *The golden calf → "Do not be idolaters as some of them were," and Jesus: "You shall worship the Lord your God and him only shall you serve."* The glowing object is the broken tablets at the foot of the mountain.
+**Thread:** *The golden calf → "Do not be idolaters as some of them were," and Jesus: "You shall worship the Lord your God and him only shall you serve."* The glowing object is the two tablets of stone, from the moment God gives them to Moses until he breaks them at the foot of the mountain.
 - **[Q] 1 Corinthians 10:7:** "Do not be idolaters as some of them were; as it is written, "The people sat down to eat and drink and rose up to dance.""
 - **[Q] Matthew 4:10:** "Then Jesus said to him, "Begone, Satan! for it is written, 'You shall worship the Lord your God and him only shall you serve.'""
 - **What it shows:** Saint Paul looks back at the golden calf and warns Christians: do not be idolaters as they were. An idol is anything we put in God's place: money, success, pleasure, what others think of us. When the devil tempted Jesus in the desert, Jesus answered with God's own word: worship God, and him alone.
@@ -540,7 +540,7 @@ Every recording must be public domain, CC0 or CC BY (spec §12.3). If no suitabl
 | Where | Piece | Why |
 |---|---|---|
 | Episode 1 | Bach, Toccata and Fugue in D minor, BWV 565 (Ashtar Moïra, organ, 2006, public domain) | The organ's thunder for the mountain of fire. |
-| Episode 2 | Palestrina, *Missa Papae Marcelli*: Kyrie (via Musopen, CC0) | In place of the spec's Bach chorale "Dies sind die heilgen zehn Gebot," whose free recordings are all CC BY-SA: "Lord, have mercy," sung before God's law. |
+| Episode 2 | Palestrina, *Missa Papae Marcelli*: Kyrie (from Level 3) | In place of the spec's Bach chorale "Dies sind die heilgen zehn Gebot," whose free recordings are all CC BY-SA: "Lord, have mercy," sung before God's law. |
 | Episode 3 | Byrd, "Ave verum corpus" (Stile Antico, from Level 3) | The true Body and Blood of the new covenant. |
 | Episode 4 | Allegri, "Miserere" (from Level 1) | Psalm 51, after the great sin. |
 | Episode 5 | Bach, "Aus tiefer Not schrei ich zu dir" (from Level 2) | Psalm 130, "Out of the depths": a plea for mercy. |

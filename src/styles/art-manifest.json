@@ -347,6 +347,15 @@
     },
     "hilltop": {
       "hash": "7155ea4e"
+    },
+    "sinai-path": {
+      "hash": "c7651ee9"
+    },
+    "sinai-summit": {
+      "hash": "e6f4f4bc"
+    },
+    "glory-rock": {
+      "hash": "735c36b6"
     }
   },
   "paperProps": {
@@ -1093,6 +1102,33 @@
     },
     "banner": {
       "hash": "5f734ab4"
+    },
+    "lightning": {
+      "hash": "913a78a1"
+    },
+    "stone-tablets": {
+      "hash": "0f489413"
+    },
+    "basin": {
+      "hash": "10df043f"
+    },
+    "scroll": {
+      "hash": "1d100b26"
+    },
+    "sapphire-pavement": {
+      "hash": "7d19484d"
+    },
+    "elders": {
+      "hash": "51d1d7ff"
+    },
+    "gold-rings": {
+      "hash": "52a49516"
+    },
+    "golden-calf": {
+      "hash": "fa8aaf30"
+    },
+    "moses-veiled": {
+      "hash": "482c6a54"
     }
   },
   "pixelLayers": {
@@ -1443,6 +1479,15 @@
     },
     "hilltop": {
       "hash": "f7a348cb"
+    },
+    "sinai-path": {
+      "hash": "8ccc2857"
+    },
+    "sinai-summit": {
+      "hash": "f21985cd"
+    },
+    "glory-rock": {
+      "hash": "35d67383"
     }
   },
   "backdrop": {

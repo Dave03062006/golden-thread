@@ -523,6 +523,32 @@ The same way again: script, art, build, checks, play-test. Level 9 closes Age II
   - New `shots` baselines cover the Level 9 scenes. Dave still needs to look them over.
 - **A fix worth remembering:** a hint with the 'rest' gesture turns the screen into a quiet rest that waits for "Continue". Use it only for a real rest, never for "listen first" in a game that goes on by itself.
 
+### Task 16: Level 10, *Sinai* (M16)
+
+The same way again: script, art, build, checks, play-test. Level 10 opens Age IV, *The Covenant in the Desert*.
+
+**Status (November 2026):** steps 1–4 are done; step 5 is Dave's.
+- **Script:** `docs/scripts/level-10-sinai.md`, approved by Dave on 2026-10-25. It has 6 episodes and 20 scenes, 88 verses quoted word for word, and a 42-question quiz. One change after approval: the golden thread of Episode 4 now glows on the tablets from the moment God gives them to Moses, not only once they lie broken, so the thread is seen in time.
+- **Build:** all six episodes are built in both styles, each with a different kind of play from the spec's library:
+  - up and down the mountain (courier routes: Moses carries the words between God and the people);
+  - the ten words (memory: the commandments in order, in the Catechism's short forms);
+  - twelve pillars (building and stacking, one standing stone for each tribe);
+  - the true words and the twisted (spot the twist, as in Level 1, between Exodus 20 and the golden calf);
+  - Moses pleads (matching: each of Moses' pleas with what it asks God to remember);
+  - the LORD passed by (light and reveal: the words of God's name appear where his glory passes).
+- **New art:**
+  - Backdrops: the path up Mount Sinai, its summit, and the cleft of the rock.
+  - Props: the two tablets of stone (blank, written, broken), the golden calf, the rings of gold, the basin of blood, the book of the covenant, the pavement like sapphire, and the lightning.
+  - People: the seventy elders, and Moses with his face veiled.
+- **Cathedral and map:** six new medallions for the Level 10 window: the eagle's wings over the mountain, the two tablets, the altar and the twelve pillars, the broken tablets, the tent of meeting, and Moses' shining face. Level 10 stands at Mount Sinai. Level 11, the tabernacle, stays there, so the map has no road ahead to draw until the people set out.
+- **Music:** one new recording, Bach's Toccata and Fugue in D minor (public domain), for the mountain of fire. The rest are recordings already in the game. Bach's chorale on the Ten Commandments had only CC BY-SA recordings, so Episode 2 uses Palestrina's Kyrie instead; `music.ts` says so.
+- **Checks:** all pass.
+  - The playthrough runs Level 10 from start to finish in both styles, through its quiz, reflection and window ceremony.
+  - `check`, `test` (2,590 tests), `a11y`, `keyboard` and `saves` pass.
+  - `perf` is within budget for every Level 10 scene in both styles.
+  - New `shots` baselines cover the Level 10 scenes. Dave still needs to look them over.
+- **A fix worth remembering:** in pixel art, a drawn prop that never changes must say `fps: 0`. Without it, the prop is drawn again from scratch six times a second, because each tick is a new picture to the cache. Level 6's storm cloud had been missing it all along. Shown twice as large over Sinai, it put six pixel scenes over the late-frame budget (up to 3.3%). With `fps: 0` they are back under 0.3%. The new Sinai props now say it too.
+
 ## Parallelization
 
 - **Code tasks run in order.** Each one builds on the last, and running them in order keeps the code consistent for the code tour. I do the work in this session, without subagents, as the session guidelines require.

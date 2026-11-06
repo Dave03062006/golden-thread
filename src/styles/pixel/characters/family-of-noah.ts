@@ -233,6 +233,14 @@ export const familyOfNoah: Record<string, PixelSpriteArt> = {
     { robe: C.gold, hair: C.wood0, veil: C.white },
     { robe: C.green, hair: C.ink, veil: C.sand },
   ]),
+  // Level 10: the seventy elders, and Moses with his face veiled.
+  elders: band([
+    { robe: C.sand2, hair: C.white, beard: C.white, veil: C.sand },
+    { robe: C.purple, hair: C.white, beard: C.white },
+    { robe: C.wood3, hair: C.pale, beard: C.pale, veil: C.sand },
+    { robe: C.dslate, hair: C.white, beard: C.white },
+  ]),
+  'moses-veiled': person({ robe: C.wood3, hair: C.pale, beard: C.white, veil: C.white, sash: C.sand }),
   amalekites: band([
     { robe: C.wood1, hair: C.ink, beard: C.ink, veil: C.dslate },
     { robe: C.purple, hair: C.ink, beard: C.ink, veil: C.wood0 },
