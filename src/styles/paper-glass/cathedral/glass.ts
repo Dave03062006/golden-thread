@@ -715,6 +715,61 @@ export const EMBLEMS: Record<string, () => Piece[]> = {
     { d: circ(-1, -6, 3.4, 12), color: '#c89a6a' },
     { d: P([[3, 6], [8, 2], [9, 4], [4, 8]]), color: '#e0b040' },
   ],
+  // Level 12 · Forty Years in the Wilderness
+  // Aaron's hands lifted in blessing, with light falling from them.
+  'priestly-blessing': () => [
+    ...[-12, 0, 12].map((x) => ({ d: P([[x - 1, -16], [x + 1, -16], [x * 0.4 + 0.8, -6], [x * 0.4 - 0.8, -6]]), color: '#ffe48a' })),
+    { d: P([[-9, -2], [-6, -8], [-3, -2], [-4, 6], [-8, 6]]), color: '#d8b888' },
+    { d: P([[9, -2], [6, -8], [3, -2], [4, 6], [8, 6]]), color: '#d8b888' },
+    { d: P([[-10, 16], [-7, 4], [7, 4], [10, 16]]), color: '#3a5aa8' },
+  ],
+  // The tent of meeting, and the elders around it, with the spirit resting on them.
+  'seventy-elders': () => [
+    { d: P([[-4, 4], [0, -6], [4, 4]]), color: '#a8785a' },
+    ...[-13, -8, 8, 13].flatMap((x) => [
+      { d: P([[x - 2.4, 16], [x - 2, 6], [x + 2, 6], [x + 2.4, 16]]), color: '#c8a870' },
+      { d: circ(x, 3, 2, 10), color: '#d8b888' },
+      { d: circ(x, -2, 1.6, 8), color: '#ffe48a' },
+    ]),
+    { d: circ(0, -12, 3, 12), color: '#fff4c0' },
+  ],
+  // The great cluster of grapes on its pole.
+  'cluster-of-grapes': () => [
+    { d: P([[-16, -12], [16, -12], [16, -10], [-16, -10]]), color: '#8a5a32' },
+    ...[[-4, -6], [0, -6], [4, -6], [-6, -1], [-2, -1], [2, -1], [6, -1], [-4, 4], [0, 4], [4, 4], [-2, 9], [2, 9], [0, 13]].map(([x, y]) => ({ d: circ(x!, y!, 2.4, 10), color: (x! + y!) % 4 ? '#6a2a6a' : '#8a3a7a' })),
+  ],
+  // Aaron's rod, budded and blossoming.
+  'rod-that-budded': () => [
+    { d: P([[-1, 16], [-0.6, -15], [0.6, -15], [1, 16]]), color: '#8a5a32' },
+    ...[[-4, -12, '#ffffff'], [4, -6, '#f4dce4'], [-4, 0, '#8ac85a'], [4, 6, '#ffffff'], [-4, 10, '#8ac85a']].map(([x, y, c]) => ({ d: circ(x as number, y as number, 2.4, 10), color: c as string })),
+  ],
+  // Water bursting from the rock.
+  'water-from-the-rock': () => [
+    { d: P([[-16, -14], [6, -16], [10, -4], [2, 2], [-16, 4]]), color: '#8a5a3a' },
+    { d: P([[0, -4], [3, -4], [8, 10], [14, 16], [-2, 16], [2, 8]]), color: '#5ab8e8' },
+    { d: P([[1, -2], [2, -2], [4, 8], [3, 8]]), color: '#d8f0ff' },
+  ],
+  // The bronze serpent on its pole.
+  'bronze-serpent': () => [
+    { d: P([[-1, 16], [-1, -14], [1, -14], [1, 16]]), color: '#8a5a32' },
+    { d: P([[-8, -12], [8, -12], [8, -10], [-8, -10]]), color: '#a8743a' },
+    ...[[-4, -6], [4, -2], [-4, 2], [4, 6]].map(([x, y]) => ({ d: circ(x!, y!, 2.6, 10), color: '#d08a3a' })),
+    { d: circ(6, -15, 2.4, 10), color: '#e8a84a' },
+  ],
+  // Balaam's donkey, and the angel she saw in the road.
+  'balaams-donkey': () => [
+    { d: P([[-14, 4], [6, 4], [6, 12], [-14, 12]]), color: '#8a8a9a' },
+    ...[-12, -6, 0, 4].map((x) => ({ d: P([[x, 12], [x + 1.6, 12], [x + 1.6, 16], [x, 16]]), color: '#7a7a8a' })),
+    { d: P([[4, 4], [8, -4], [12, -2], [8, 6]]), color: '#8a8a9a' },
+    { d: P([[10, -16], [16, -16], [16, 16], [10, 16]]), color: '#fff4c0' },
+  ],
+  // The star out of Jacob, and the scepter beneath it.
+  'star-out-of-jacob': () => [
+    { d: star8(0, -8, 7), color: '#ffe48a' },
+    { d: circ(0, -8, 2.4, 10), color: '#ffffff' },
+    { d: P([[-1, 16], [-1, 2], [1, 2], [1, 16]]), color: '#e0b040' },
+    { d: P([[-3, 4], [-2, -1], [0, 2], [2, -1], [3, 4]]), color: '#f4d070' },
+  ],
 }
 
 /** The medallions' backgrounds: deep blue, with one ruby for the darkest story. */

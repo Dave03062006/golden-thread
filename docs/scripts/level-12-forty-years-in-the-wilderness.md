@@ -3,7 +3,7 @@
 **Bible:** Numbers 1–2; 6; 9–11; 13–14; 16–17; 20–24
 **Age:** IV · The Covenant in the Desert
 **Length:** about 55 minutes (8 episodes, then the quiz, then reflection and prayer)
-**Status:** draft, waiting for Dave's approval.
+**Status:** approved by Dave on 2026-11-08 ("Approved, build it").
 
 ## How to read this script
 

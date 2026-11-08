@@ -581,6 +581,38 @@ The same way again: script, art, build, checks, play-test. Level 11 is the secon
 - **A fix worth remembering:** a pixel prop shown very large makes a very large cached picture. A tabernacle piece shown close up (at 1.4 to 1.8 frame widths) made pictures of about 860 × 1,100 pixels, and four pixel scenes went over budget, with frames up to 330 ms. Since each piece is only a few dozen blocks, it is now drawn straight onto the screen (`live: true`), like Level 10's sapphire pavement.
 - **Baking:** `npm run bake` writes every image again, and many unchanged ones come out a few bytes different. Only the new images are committed; the manifest's hashes show the old ones are unchanged.
 
+### Task 18: Level 12, *Forty Years in the Wilderness* (M18)
+
+The same way again: script, art, build, checks, play-test. Level 12 is the third level of Age IV.
+
+**Status (November 2026):** steps 1–4 are done; step 5 is Dave's.
+- **Script:** `docs/scripts/level-12-forty-years-in-the-wilderness.md`, approved by Dave on 2026-11-08. It has 8 episodes and 25 scenes, 118 verses quoted word for word, and a 48-question quiz. The Douay-Rheims numbers Numbers 13 one verse higher, and two of Bible Gateway's slips in it are set right (Numbers 11:5 and 23:12).
+- **Build:** all eight episodes are built in both styles, each with a different kind of play from the spec's library:
+  - follow the cloud (pathfinding, on a map of the wilderness seen from above);
+  - the spirit on the seventy (light and reveal);
+  - forty days in Canaan (stealth: the spies past the watchman, gathering the fruit);
+  - the twelve rods (matching each tribe with its sign);
+  - water for all (serving: water from the rock for everyone who is thirsty);
+  - look and live (a quiet play: helping the bitten look up at the bronze serpent);
+  - the narrow way (steering Balaam's donkey around the angel);
+  - a star out of Jacob (memory: the words of Numbers 24:17).
+  The twelve rods and the star reuse the ordering rules of Level 11 (`minigames/in-order.ts`), and the episodes reuse Level 11's stage helpers.
+- **New art:**
+  - Backdrops: the wilderness seen from above; Balaam's road, from the field through the vineyard walls to the narrow pass.
+  - Props: the bronze serpent on its pole, and the small serpents; a staff (dry, budded, or a scepter); the cluster of grapes on its pole; a quail; and Balaam riding his donkey, walking or lying down.
+  - People: Korah, Caleb, Eleazar, Balaam and Balak.
+  - Everything else is art the game already had: the pillar of cloud and fire, the great rock, the angel, the walled city and its watchman, the altars.
+- **Cathedral and map:** eight new medallions for the Level 12 window. The map marks Kadesh, with the road on by Mount Hor to the plains of Moab, where Level 13 begins; three new places (Kadesh, Mount Hor, the plains of Moab) are in `geography.ts`.
+- **Music:** no new recordings. Every free recording of "Guide Me, O Thou Great Jehovah" (*Cwm Rhondda*) on Wikimedia Commons is a CC BY-SA sample or a 28-second rendering of the tune, so Episode 2 uses Franck's *Panis angelicus*, "the bread of angels," as the script says.
+- **Checks:** all pass.
+  - The playthrough runs Level 12 from start to finish in both styles, through its quiz, reflection and window ceremony.
+  - `check`, `test` (3,029 tests), `a11y`, `keyboard` and `saves` pass.
+  - `perf` is within budget for every Level 12 scene in both styles.
+  - New `shots` baselines cover the Level 12 scenes and the screens Level 12 changes. Dave still needs to look them over. The map around Kadesh and Hebron is crowded: Kadesh's label partly covers Hebron's.
+- **Two performance lessons:**
+  - A glow (`halo`) that changes size redraws its pixel picture every frame. Episode 1's blessing first grew from 0.3 to 0.8 of the frame and put a pixel scene at 2.6% late frames; it now stays one size and only fades in.
+  - A group of 24 bobbing quail cost too much in both styles; 12 without bobbing look the same and stay under budget.
+
 ## Parallelization
 
 - **Code tasks run in order.** Each one builds on the last, and running them in order keeps the code consistent for the code tour.

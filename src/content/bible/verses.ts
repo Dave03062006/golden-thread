@@ -3502,6 +3502,480 @@ export const VERSES: Record<string, Verse> = {
     rsv: 'Then God’s temple in heaven was opened, and the ark of his covenant was seen within his temple; and there were flashes of lightning, loud noises, peals of thunder, an earthquake, and heavy hail.',
     dra: 'And the temple of God was opened in heaven: and the ark of his testament was seen in his temple, and there were lightnings, and voices, and an earthquake, and great hail.',
   },
+  // Level 12 · Forty Years in the Wilderness (the RSV's pronunciation marks in names left out; the
+  // Douay-Rheims numbers Numbers 13 one higher, and two of Bible Gateway's slips in it are set right).
+  'NUM 1:1': {
+    rsv: 'The LORD spoke to Moses in the wilderness of Sinai, in the tent of meeting, on the first day of the second month, in the second year after they had come out of the land of Egypt, saying,',
+    dra: 'And the Lord spoke to Moses in the desert of Sinai in the tabernacle of the covenant, the first day of the second month, the second year of their going out of Egypt, saying:',
+  },
+  'NUM 1:2': {
+    rsv: '“Take a census of all the congregation of the people of Israel, by families, by fathers’ houses, according to the number of names, every male, head by head;',
+    dra: 'Take the sum of all the congregation of the children of Israel by their families, and houses, and the names of every one, as many as are of the male sex,',
+  },
+  'NUM 2:2': {
+    rsv: '“The people of Israel shall encamp each by his own standard, with the ensigns of their fathers’ houses; they shall encamp facing the tent of meeting on every side.',
+    dra: 'All the children of Israel shall camp by their troops, ensigns, and standards, and the houses of their kindreds, round about the tabernacle of the covenant.',
+  },
+  'NUM 6:23': {
+    rsv: '“Say to Aaron and his sons, Thus you shall bless the people of Israel: you shall say to them,',
+    dra: 'Say to Aaron and his sons: Thus shall you bless the children of Israel, and you shall say to them:',
+  },
+  'NUM 6:24': {
+    rsv: 'The LORD bless you and keep you:',
+    dra: 'The Lord bless thee, and keep thee.',
+  },
+  'NUM 6:25': {
+    rsv: 'The LORD make his face to shine upon you, and be gracious to you:',
+    dra: 'The Lord shew his face to thee, and have mercy on thee.',
+  },
+  'NUM 6:26': {
+    rsv: 'The LORD lift up his countenance upon you, and give you peace.',
+    dra: 'The Lord turn his countenance to thee, and give thee peace.',
+  },
+  'NUM 6:27': {
+    rsv: '“So shall they put my name upon the people of Israel, and I will bless them.”',
+    dra: 'And they shall invoke my name upon the children of Israel, and I will bless them.',
+  },
+  'NUM 9:15': {
+    rsv: 'On the day that the tabernacle was set up, the cloud covered the tabernacle, the tent of the testimony; and at evening it was over the tabernacle like the appearance of fire until morning.',
+    dra: 'Now on the day that the tabernacle was reared up, a cloud covered it. But from the evening there was over the tabernacle, as it were, the appearance of fire until the morning.',
+  },
+  'NUM 9:17': {
+    rsv: 'And whenever the cloud was taken up from over the tent, after that the people of Israel set out; and in the place where the cloud settled down, there the people of Israel encamped.',
+    dra: 'And when the cloud that covered the tabernacle was taken up, then the children of Israel marched forward: and in the place where the cloud stood still, there they camped.',
+  },
+  'NUM 9:18': {
+    rsv: 'At the command of the LORD the people of Israel set out, and at the command of the LORD they encamped; as long as the cloud rested over the tabernacle, they remained in camp.',
+    dra: 'At the commandment of the Lord they marched, and at his commandment they pitched the tabernacle. All the days that the cloud abode over the tabernacle, they remained in the same place:',
+  },
+  'NUM 10:33': {
+    rsv: 'So they set out from the mount of the LORD three days’ journey; and the ark of the covenant of the LORD went before them three days’ journey, to seek out a resting place for them.',
+    dra: 'So they marched from the mount of the Lord three days’ journey, and the ark of the covenant of the Lord went before them, for three days providing a place for the camp.',
+  },
+  'NUM 10:35': {
+    rsv: 'And whenever the ark set out, Moses said, “Arise, O LORD, and let thy enemies be scattered; and let them that hate thee flee before thee.”',
+    dra: 'And when the ark was lifted up, Moses said: Arise, O Lord, and let thy enemies be scattered, and let them that hate thee, flee from before thy face.',
+  },
+  'NUM 10:36': {
+    rsv: 'And when it rested, he said, “Return, O LORD, to the ten thousand thousands of Israel.”',
+    dra: 'And when it was set down, he said: Return, O Lord, to the multitude of the host of Israel.',
+  },
+  'NUM 11:4': {
+    rsv: 'Now the rabble that was among them had a strong craving; and the people of Israel also wept again, and said, “O that we had meat to eat!',
+    dra: 'For a mixt multitude of people, that came up with them, burned with desire, sitting and weeping, the children of Israel also being joined with them, and said: Who shall give us flesh to eat?',
+  },
+  'NUM 11:5': {
+    rsv: 'We remember the fish we ate in Egypt for nothing, the cucumbers, the melons, the leeks, the onions, and the garlic;',
+    dra: 'We remember the fish that we ate in Egypt free cost: the cucumbers come into our mind, and the melons, and the leeks, and the onions, and the garlic.',
+  },
+  'NUM 11:6': {
+    rsv: 'but now our strength is dried up, and there is nothing at all but this manna to look at.”',
+    dra: 'Our soul is dry, our eyes behold nothing else but manna.',
+  },
+  'NUM 11:10': {
+    rsv: 'Moses heard the people weeping throughout their families, every man at the door of his tent; and the anger of the LORD blazed hotly, and Moses was displeased.',
+    dra: 'Now Moses heard the people weeping by their families, every one at the door of his tent. And the wrath of the Lord was exceedingly enkindled: to Moses also the thing seemed insupportable.',
+  },
+  'NUM 11:11': {
+    rsv: 'Moses said to the LORD, “Why hast thou dealt ill with thy servant? And why have I not found favor in thy sight, that thou dost lay the burden of all this people upon me?',
+    dra: 'And he said to the Lord: Why hast thou afflicted thy servant? wherefore do I not find favour before thee? and why hast thou laid the weight of all this people upon me?',
+  },
+  'NUM 11:14': {
+    rsv: 'I am not able to carry all this people alone, the burden is too heavy for me.',
+    dra: 'I am not able alone to bear all this people, because it is too heavy for me.',
+  },
+  'NUM 11:16': {
+    rsv: 'And the LORD said to Moses, “Gather for me seventy men of the elders of Israel, whom you know to be the elders of the people and officers over them; and bring them to the tent of meeting, and let them take their stand there with you.',
+    dra: 'And the Lord said to Moses: Gather unto me seventy men of the ancients of Israel, whom thou knowest to be ancients and masters of the people: and thou shalt bring them to the door of the tabernacle of the covenant, and shalt make them stand there with thee,',
+  },
+  'NUM 11:17': {
+    rsv: 'And I will come down and talk with you there; and I will take some of the spirit which is upon you and put it upon them; and they shall bear the burden of the people with you, that you may not bear it yourself alone.',
+    dra: 'That I may come down and speak with thee: and I will take of thy spirit, and will give to them, that they may bear with thee the burden of the people, and thou mayest not be burthened alone.',
+  },
+  'NUM 11:25': {
+    rsv: 'Then the LORD came down in the cloud and spoke to him, and took some of the spirit that was upon him and put it upon the seventy elders; and when the spirit rested upon them, they prophesied. But they did so no more.',
+    dra: 'And the Lord came down in a cloud, and spoke to him, taking away of the spirit that was in Moses, and giving to the seventy men. And when the spirit had rested on them they prophesied, nor did they cease afterwards.',
+  },
+  'NUM 11:26': {
+    rsv: 'Now two men remained in the camp, one named Eldad, and the other named Medad, and the spirit rested upon them; they were among those registered, but they had not gone out to the tent, and so they prophesied in the camp.',
+    dra: 'Now there remained in the camp two of the men, of whom one was called Eldad, and the other Medad, upon whom the spirit rested; for they also had been enrolled, but were not gone forth to the tabernacle.',
+  },
+  'NUM 11:28': {
+    rsv: 'And Joshua the son of Nun, the minister of Moses, one of his chosen men, said, “My lord Moses, forbid them.”',
+    dra: 'Forthwith Josue the son of Nun, the minister of Moses, and chosen out of many, said: My lord Moses forbid them.',
+  },
+  'NUM 11:29': {
+    rsv: 'But Moses said to him, “Are you jealous for my sake? Would that all the LORD’s people were prophets, that the LORD would put his spirit upon them!”',
+    dra: 'But he said: Why hast thou emulation for me? O that all the people might prophesy, and that the Lord would give them his spirit!',
+  },
+  'NUM 11:31': {
+    rsv: 'And there went forth a wind from the LORD, and it brought quails from the sea, and let them fall beside the camp, about a day’s journey on this side and a day’s journey on the other side, round about the camp, and about two cubits above the face of the earth.',
+    dra: 'And a wind going out from the Lord, taking quails up beyond the sea brought them, and cast them into the camp for the space of one day’s journey, on every side of the camp round about, and they flew in the air two cubits high above the ground.',
+  },
+  'NUM 13:2': {
+    rsv: '“Send men to spy out the land of Canaan, which I give to the people of Israel; from each tribe of their fathers shall you send a man, every one a leader among them.”',
+    dra: 'Send men to view the land of Chanaan, which I will give to the children of Israel, one of every tribe, of the rulers.',
+  },
+  'NUM 13:18': {
+    rsv: 'and see what the land is, and whether the people who dwell in it are strong or weak, whether they are few or many,',
+    dra: 'View the land, of what sort it is: and the people that are the inhabitants thereof, whether they be strong or weak: few in number or many:',
+  },
+  'NUM 13:20': {
+    rsv: 'and whether the land is rich or poor, and whether there is wood in it or not. Be of good courage, and bring some of the fruit of the land.” Now the time was the season of the first ripe grapes.',
+    dra: 'The ground, fat or barren, woody or without trees. Be of good courage, and bring us of the fruits of the land. Now it was the time when the first ripe grapes are fit to be eaten.',
+  },
+  'NUM 13:21': {
+    rsv: 'So they went up and spied out the land from the wilderness of Zin to Rehob, near the entrance of Hamath.',
+    dra: 'And when they were gone up, they viewed the land from the desert of Sin, unto Rohob as you enter into Emath.',
+  },
+  'NUM 13:23': {
+    rsv: 'And they came to the Valley of Eshcol, and cut down from there a branch with a single cluster of grapes, and they carried it on a pole between two of them; they brought also some pomegranates and figs.',
+    dra: 'And going forward as far as the torrent of the cluster of grapes, they cut off a branch with its cluster of grapes, which two men carried upon a lever. They took also of the pomegranates and of the figs of that place:',
+  },
+  'NUM 13:25': {
+    rsv: 'At the end of forty days they returned from spying out the land.',
+    dra: 'And they that went to spy out the land returned after forty days, having gone round all the country,',
+  },
+  'NUM 13:27': {
+    rsv: 'And they told him, “We came to the land to which you sent us; it flows with milk and honey, and this is its fruit.',
+    dra: 'And they related and said: We came into the land to which thou sentest us, which in very deed floweth with milk and honey as may be known by these fruits:',
+  },
+  'NUM 13:28': {
+    rsv: 'Yet the people who dwell in the land are strong, and the cities are fortified and very large; and besides, we saw the descendants of Anak there.',
+    dra: 'But it hath very strong inhabitants, and the cities are great and walled. We saw there the race of Enac.',
+  },
+  'NUM 13:30': {
+    rsv: 'But Caleb quieted the people before Moses, and said, “Let us go up at once, and occupy it; for we are well able to overcome it.”',
+    dra: 'In the mean time Caleb, to still the murmuring of the people that rose against Moses, said: Let us go up and possess the land, for we shall be able to conquer it.',
+  },
+  'NUM 13:31': {
+    rsv: 'Then the men who had gone up with him said, “We are not able to go up against the people; for they are stronger than we.”',
+    dra: 'But the others, that had been with him, said: No, we are not able to go up to this people, because they are stronger than we.',
+  },
+  'NUM 13:33': {
+    rsv: 'And there we saw the Nephilim (the sons of Anak, who come from the Nephilim); and we seemed to ourselves like grasshoppers, and so we seemed to them.”',
+    dra: 'There we saw certain monsters of the sons of Enac, of the giant kind: in comparison of whom, we seemed like locusts.',
+  },
+  'NUM 14:1': {
+    rsv: 'Then all the congregation raised a loud cry; and the people wept that night.',
+    dra: 'Wherefore the whole multitude crying wept that night.',
+  },
+  'NUM 14:4': {
+    rsv: 'And they said to one another, “Let us choose a captain, and go back to Egypt.”',
+    dra: 'And they said one to another: Let us appoint a captain, and let us return into Egypt.',
+  },
+  'NUM 14:6': {
+    rsv: 'And Joshua the son of Nun and Caleb the son of Jephunneh, who were among those who had spied out the land, rent their clothes,',
+    dra: 'But Josue the son of Nun, and Caleb the son of Jephone, who themselves also had viewed the land, rent their garments,',
+  },
+  'NUM 14:7': {
+    rsv: 'and said to all the congregation of the people of Israel, “The land, which we passed through to spy it out, is an exceedingly good land.',
+    dra: 'And said to all the multitude of the children of Israel: The land which we have gone round is very good:',
+  },
+  'NUM 14:8': {
+    rsv: 'If the LORD delights in us, he will bring us into this land and give it to us, a land which flows with milk and honey.',
+    dra: 'If the Lord be favourable, he will bring us into it, and give us a land flowing with milk and honey.',
+  },
+  'NUM 14:9': {
+    rsv: 'Only, do not rebel against the LORD; and do not fear the people of the land, for they are bread for us; their protection is removed from them, and the LORD is with us; do not fear them.”',
+    dra: 'Be not rebellious against the Lord: and fear ye not the people of this land, for we are able to eat them up as bread. All aid is gone from them: the Lord is with us, fear ye not.',
+  },
+  'NUM 14:10': {
+    rsv: 'But all the congregation said to stone them with stones. Then the glory of the LORD appeared at the tent of meeting to all the people of Israel.',
+    dra: 'And when all the multitude cried out, and would have stoned them, the glory of the Lord appeared over the tabernacle of the covenant to all the children of Israel.',
+  },
+  'NUM 14:24': {
+    rsv: 'But my servant Caleb, because he has a different spirit and has followed me fully, I will bring into the land into which he went, and his descendants shall possess it.',
+    dra: 'My servant Caleb, who being full of another spirit hath followed me, I will bring into this land which he hath gone round: and his seed shall possess it.',
+  },
+  'NUM 14:34': {
+    rsv: 'According to the number of the days in which you spied out the land, forty days, for every day a year, you shall bear your iniquity, forty years, and you shall know my displeasure.’',
+    dra: 'According to the number of the forty days, wherein you viewed the land: year shall be counted for a day. And forty years you shall receive your iniquities, and shall know my revenge:',
+  },
+  'NUM 16:3': {
+    rsv: 'and they assembled themselves together against Moses and against Aaron, and said to them, “You have gone too far! For all the congregation are holy, every one of them, and the LORD is among them; why then do you exalt yourselves above the assembly of the LORD?”',
+    dra: 'And when they had stood up against Moses and Aaron, they said: Let it be enough for you, that all the multitude consisteth of holy ones, and the Lord is among them: Why lift you up yourselves above the people of the Lord?',
+  },
+  'NUM 16:9': {
+    rsv: 'is it too small a thing for you that the God of Israel has separated you from the congregation of Israel, to bring you near to himself, to do service in the tabernacle of the LORD, and to stand before the congregation to minister to them;',
+    dra: 'Is it a small thing unto you, that the God of Israel hath spared you from all the people, and joined you to himself, that you should serve him in the service of the tabernacle, and should stand before the congregation of the people, and should minister to him?',
+  },
+  'NUM 16:10': {
+    rsv: 'and that he has brought you near him, and all your brethren the sons of Levi with you? And would you seek the priesthood also?',
+    dra: 'Did he therefore make thee and all thy brethren the sons of Levi to approach unto him, that you should challenge to yourselves the priesthood also,',
+  },
+  'NUM 16:31': {
+    rsv: 'And as he finished speaking all these words, the ground under them split asunder;',
+    dra: 'And immediately as he had made an end of speaking, the earth broke asunder under their feet:',
+  },
+  'NUM 16:41': {
+    rsv: 'But on the morrow all the congregation of the people of Israel murmured against Moses and against Aaron, saying, “You have killed the people of the LORD.”',
+    dra: 'The following day all the multitude of the children of Israel murmured against Moses and Aaron, saying: You have killed the people of the Lord.',
+  },
+  'NUM 16:46': {
+    rsv: 'And Moses said to Aaron, “Take your censer, and put fire therein from off the altar, and lay incense on it, and carry it quickly to the congregation, and make atonement for them; for wrath has gone forth from the LORD, the plague has begun.”',
+    dra: 'Moses said to Aaron: Take the censer, and putting fire in it from the altar, put incense upon it, and go quickly to the people to pray for them: for already wrath is gone out from the Lord, and the plague rageth.',
+  },
+  'NUM 16:47': {
+    rsv: 'So Aaron took it as Moses said, and ran into the midst of the assembly; and behold, the plague had already begun among the people; and he put on the incense, and made atonement for the people.',
+    dra: 'When Aaron had done this, and had run to the midst of the multitude which the burning fire was now destroying, he offered the incense:',
+  },
+  'NUM 16:48': {
+    rsv: 'And he stood between the dead and the living; and the plague was stopped.',
+    dra: 'And standing between the dead and the living, he prayed for the people, and the plague ceased.',
+  },
+  'NUM 17:2': {
+    rsv: '“Speak to the people of Israel, and get from them rods, one for each fathers’ house, from all their leaders according to their fathers’ houses, twelve rods. Write each man’s name upon his rod,',
+    dra: 'Speak to the children of Israel, and take of every one of them a rod by their kindreds, of all the princes of the tribes, twelve rods, and write the name of every man upon his rod.',
+  },
+  'NUM 17:5': {
+    rsv: 'And the rod of the man whom I choose shall sprout; thus I will make to cease from me the murmurings of the people of Israel, which they murmur against you.”',
+    dra: 'Whomsoever of these I shall choose, his rod shall blossom: and I will make to cease from me the murmurings of the children of Israel, wherewith they murmur against you.',
+  },
+  'NUM 17:8': {
+    rsv: 'And on the morrow Moses went into the tent of the testimony; and behold, the rod of Aaron for the house of Levi had sprouted and put forth buds, and produced blossoms, and it bore ripe almonds.',
+    dra: 'He returned on the following day, and found that the rod of Aaron for the house of Levi, was budded: and that the buds swelling it had bloomed blossoms, which spreading the leaves, were formed into almonds.',
+  },
+  'NUM 17:10': {
+    rsv: 'And the LORD said to Moses, “Put back the rod of Aaron before the testimony, to be kept as a sign for the rebels, that you may make an end of their murmurings against me, lest they die.”',
+    dra: 'And the Lord said to Moses: Carry back the rod of Aaron into the tabernacle of the testimony, that it may be kept there for a token of the rebellious children of Israel, and that their complaints may cease from me lest they die.',
+  },
+  'NUM 20:1': {
+    rsv: 'And the people of Israel, the whole congregation, came into the wilderness of Zin in the first month, and the people stayed in Kadesh; and Miriam died there, and was buried there.',
+    dra: 'And the children of Israel, and all the multitude came into the desert of Sin, in the first month: and the people abode in Cades. And Mary died there, and was buried in the same place.',
+  },
+  'NUM 20:2': {
+    rsv: 'Now there was no water for the congregation; and they assembled themselves together against Moses and against Aaron.',
+    dra: 'And the people wanting water, came together against Moses and Aaron:',
+  },
+  'NUM 20:5': {
+    rsv: 'And why have you made us come up out of Egypt, to bring us to this evil place? It is no place for grain, or figs, or vines, or pomegranates; and there is no water to drink.”',
+    dra: 'Why have you made us come up out of Egypt, and have brought us into this wretched place which cannot be sowed, nor bringeth forth figs, nor vines, nor pomegranates, neither is there any water to drink?',
+  },
+  'NUM 20:6': {
+    rsv: 'Then Moses and Aaron went from the presence of the assembly to the door of the tent of meeting, and fell on their faces. And the glory of the LORD appeared to them,',
+    dra: 'And Moses and Aaron leaving the multitude, went into the tabernacle of the covenant, and fell flat upon the ground, and cried to the Lord, and said: O Lord God, hear the cry of this people, and open to them thy treasure, a fountain of living water, that being satisfied, they may cease to murmur. And the glory of the Lord appeared over them.',
+  },
+  'NUM 20:8': {
+    rsv: '“Take the rod, and assemble the congregation, you and Aaron your brother, and tell the rock before their eyes to yield its water; so you shall bring water out of the rock for them; so you shall give drink to the congregation and their cattle.”',
+    dra: 'Take the rod, and assemble the people together, thou and Aaron thy brother, and speak to the rock before them, and it shall yield waters. And when thou hast brought forth water out of the rock, all the multitude and their cattle shall drink.',
+  },
+  'NUM 20:10': {
+    rsv: 'And Moses and Aaron gathered the assembly together before the rock, and he said to them, “Hear now, you rebels; shall we bring forth water for you out of this rock?”',
+    dra: 'And having gathered together the multitude before the rock, he said to them: Hear, ye rebellious and incredulous: Can we bring you forth water out of this rock?',
+  },
+  'NUM 20:11': {
+    rsv: 'And Moses lifted up his hand and struck the rock with his rod twice; and water came forth abundantly, and the congregation drank, and their cattle.',
+    dra: 'And when Moses had lifted up his hand, and struck the rock twice with the rod, there came forth water in great abundance, so that the people and their cattle drank,',
+  },
+  'NUM 20:12': {
+    rsv: 'And the LORD said to Moses and Aaron, “Because you did not believe in me, to sanctify me in the eyes of the people of Israel, therefore you shall not bring this assembly into the land which I have given them.”',
+    dra: 'And the Lord said to Moses and Aaron: Because you have not believed me, to sanctify me before the children of Israel, you shall not bring these people into the land, which I will give them.',
+  },
+  'NUM 20:24': {
+    rsv: '“Aaron shall be gathered to his people; for he shall not enter the land which I have given to the people of Israel, because you rebelled against my command at the waters of Meribah.',
+    dra: 'Let Aaron, saith he, go to his people: for he shall not go into the land which I have given the children of Israel, because he was incredulous to my words, at the waters of contradiction.',
+  },
+  'NUM 20:26': {
+    rsv: 'and strip Aaron of his garments, and put them upon Eleazar his son; and Aaron shall be gathered to his people, and shall die there.”',
+    dra: 'And when thou hast stripped the father of his vesture, thou shalt vest therewith Eleazar his son: Aaron shall be gathered to his people, and die there.',
+  },
+  'NUM 20:27': {
+    rsv: 'Moses did as the LORD commanded; and they went up Mount Hor in the sight of all the congregation.',
+    dra: 'Moses did as the Lord had commanded: and they went up into mount Hor before all the multitude.',
+  },
+  'NUM 21:4': {
+    rsv: 'From Mount Hor they set out by the way to the Red Sea, to go around the land of Edom; and the people became impatient on the way.',
+    dra: 'And they marched from mount Hor, by the way that leadeth to the Red Sea, to compass the land of Edom. And the people began to be weary of their journey and labour:',
+  },
+  'NUM 21:5': {
+    rsv: 'And the people spoke against God and against Moses, “Why have you brought us up out of Egypt to die in the wilderness? For there is no food and no water, and we loathe this worthless food.”',
+    dra: 'And speaking against God and Moses, they said: Why didst thou bring us out of Egypt, to die in the wilderness? There is no bread, nor have we any waters: our soul now loatheth this very light food.',
+  },
+  'NUM 21:6': {
+    rsv: 'Then the LORD sent fiery serpents among the people, and they bit the people, so that many people of Israel died.',
+    dra: 'Wherefore the Lord sent among the people fiery serpents, which bit them and killed many of them.',
+  },
+  'NUM 21:7': {
+    rsv: 'And the people came to Moses, and said, “We have sinned, for we have spoken against the LORD and against you; pray to the LORD, that he take away the serpents from us.” So Moses prayed for the people.',
+    dra: 'Upon which they came to Moses, and said: We have sinned, because we have spoken against the Lord and thee: pray that he may take away these serpents from us. And Moses prayed for the people.',
+  },
+  'NUM 21:8': {
+    rsv: 'And the LORD said to Moses, “Make a fiery serpent, and set it on a pole; and every one who is bitten, when he sees it, shall live.”',
+    dra: 'And the Lord said to him: Make brazen serpent, and set it up for a sign: whosoever being struck shall look on it, shall live.',
+  },
+  'NUM 21:9': {
+    rsv: 'So Moses made a bronze serpent, and set it on a pole; and if a serpent bit any man, he would look at the bronze serpent and live.',
+    dra: 'Moses therefore made a brazen serpent, and set it up for a sign: which when they that were bitten looked upon, they were healed.',
+  },
+  'NUM 22:3': {
+    rsv: 'And Moab was in great dread of the people, because they were many; Moab was overcome with fear of the people of Israel.',
+    dra: 'And that the Moabites were in great fear of him, and were not able to sustain his assault,',
+  },
+  'NUM 22:6': {
+    rsv: 'Come now, curse this people for me, since they are too mighty for me; perhaps I shall be able to defeat them and drive them from the land; for I know that he whom you bless is blessed, and he whom you curse is cursed.”',
+    dra: 'Come therefore, and curse this people, because it is mightier than I: if by any means I may beat them and drive them out of my land: for I know that he whom thou shalt bless is blessed, and he whom thou shalt curse is cursed.',
+  },
+  'NUM 22:12': {
+    rsv: 'God said to Balaam, “You shall not go with them; you shall not curse the people, for they are blessed.”',
+    dra: 'And God said to Balaam: Thou shalt not go with them, nor shalt thou curse the people: because it is blessed.',
+  },
+  'NUM 22:18': {
+    rsv: 'But Balaam answered and said to the servants of Balak, “Though Balak were to give me his house full of silver and gold, I could not go beyond the command of the LORD my God, to do less or more.',
+    dra: 'Balaam answered: If Balac would give me his house full of silver and gold, I cannot alter the word of the Lord my God, to speak either more or less.',
+  },
+  'NUM 22:21': {
+    rsv: 'So Balaam rose in the morning, and saddled his ass, and went with the princes of Moab.',
+    dra: 'Balaam arose in the morning, and saddling his ass went with them.',
+  },
+  'NUM 22:22': {
+    rsv: 'But God’s anger was kindled because he went; and the angel of the LORD took his stand in the way as his adversary. Now he was riding on the ass, and his two servants were with him.',
+    dra: 'And God was angry. And an angel of the Lord stood in the way against Balaam, who sat on the ass, and had two servants with him.',
+  },
+  'NUM 22:23': {
+    rsv: 'And the ass saw the angel of the LORD standing in the road, with a drawn sword in his hand; and the ass turned aside out of the road, and went into the field; and Balaam struck the ass, to turn her into the road.',
+    dra: 'The ass seeing the angel standing in the way, with a drawn sword, turned herself out of the way, and went into the field. And when Balaam beat her, and had a mind to bring her again to the way,',
+  },
+  'NUM 22:27': {
+    rsv: 'When the ass saw the angel of the LORD, she lay down under Balaam; and Balaam’s anger was kindled, and he struck the ass with his staff.',
+    dra: 'And when the ass saw the angel standing, she fell under the feet of the rider: who being angry beat her sides more vehemently with a staff.',
+  },
+  'NUM 22:28': {
+    rsv: 'Then the LORD opened the mouth of the ass, and she said to Balaam, “What have I done to you, that you have struck me these three times?”',
+    dra: 'And the Lord opened the mouth of the ass, and she said: What have I done to thee? Why strikest thou me, lo, now this third time?',
+  },
+  'NUM 22:30': {
+    rsv: 'And the ass said to Balaam, “Am I not your ass, upon which you have ridden all your life long to this day? Was I ever accustomed to do so to you?” And he said, “No.”',
+    dra: 'The ass said: Am not I thy beast, on which thou hast been always accustomed to ride until this present day? tell me if I ever did the like thing to thee. But he said: Never.',
+  },
+  'NUM 22:31': {
+    rsv: 'Then the LORD opened the eyes of Balaam, and he saw the angel of the LORD standing in the way, with his drawn sword in his hand; and he bowed his head, and fell on his face.',
+    dra: 'Forthwith the Lord opened the eyes of Balaam, and he saw the angel standing in the way with a drawn sword, and he worshipped him falling flat on the ground.',
+  },
+  'NUM 22:34': {
+    rsv: 'Then Balaam said to the angel of the LORD, “I have sinned, for I did not know that thou didst stand in the road against me. Now therefore, if it is evil in thy sight, I will go back again.”',
+    dra: 'Balaam said: I have sinned, not knowing that thou didst stand against me: and now if it displease thee that I go, I will return.',
+  },
+  'NUM 22:35': {
+    rsv: 'And the angel of the LORD said to Balaam, “Go with the men; but only the word which I bid you, that shall you speak.” So Balaam went on with the princes of Balak.',
+    dra: 'The angel said: Go with these men, and see thou speak no other thing than what I shall command thee. He went therefore with the princes.',
+  },
+  'NUM 23:7': {
+    rsv: 'And Balaam took up his discourse, and said, “From Aram Balak has brought me, the king of Moab from the eastern mountains: ‘Come, curse Jacob for me, and come, denounce Israel!’',
+    dra: 'And taking up his parable, he said: Balac king of the Moabites hath brought me from Aram, from the mountains of the east: Come, said he, and curse Jacob: make haste and detest Israel.',
+  },
+  'NUM 23:8': {
+    rsv: 'How can I curse whom God has not cursed? How can I denounce whom the LORD has not denounced?',
+    dra: 'How shall I curse him, whom God hath not cursed? By what means should I detest him, whom the Lord detesteth not?',
+  },
+  'NUM 23:11': {
+    rsv: 'And Balak said to Balaam, “What have you done to me? I took you to curse my enemies, and behold, you have done nothing but bless them.”',
+    dra: 'And Balac said to Balaam: What is this that thou dost? I sent for thee to curse my enemies: and thou contrariwise blessest them.',
+  },
+  'NUM 23:12': {
+    rsv: 'And he answered, “Must I not take heed to speak what the LORD puts in my mouth?”',
+    dra: 'He answered him: Can I speak any thing else but what the Lord commandeth?',
+  },
+  'NUM 23:19': {
+    rsv: 'God is not man, that he should lie, or a son of man, that he should repent. Has he said, and will he not do it? Or has he spoken, and will he not fulfil it?',
+    dra: 'God is not a man, that he should lie, nor as the son of man, that he should be changed. Hath he said then, and will he not do? hath he spoken, and will he not fulfill?',
+  },
+  'NUM 23:20': {
+    rsv: 'Behold, I received a command to bless: he has blessed, and I cannot revoke it.',
+    dra: 'I was brought to bless, the blessing I am not able to hinder.',
+  },
+  'NUM 24:2': {
+    rsv: 'And Balaam lifted up his eyes, and saw Israel encamping tribe by tribe. And the Spirit of God came upon him,',
+    dra: 'And lifting up his eyes, he saw Israel abiding in their tents by their tribes: and the spirit of God rushing upon him,',
+  },
+  'NUM 24:5': {
+    rsv: 'How fair are your tents, O Jacob, your encampments, O Israel!',
+    dra: 'How beautiful are thy tabernacles, O Jacob, and thy tents, O Israel!',
+  },
+  'NUM 24:10': {
+    rsv: 'And Balak’s anger was kindled against Balaam, and he struck his hands together; and Balak said to Balaam, “I called you to curse my enemies, and behold, you have blessed them these three times.',
+    dra: 'And Balac being angry against Balaam, clapped his hands together and said: I called thee to curse my enemies, and thou on the contrary hast blessed them three times.',
+  },
+  'NUM 24:16': {
+    rsv: 'the oracle of him who hears the words of God, and knows the knowledge of the Most High, who sees the vision of the Almighty, falling down, but having his eyes uncovered:',
+    dra: 'The hearer of the words of God hath said, who knoweth the doctrine of the Highest, and seeth the visions of the Almighty, who falling hath his eyes opened:',
+  },
+  'NUM 24:17': {
+    rsv: 'I see him, but not now; I behold him, but not nigh: a star shall come forth out of Jacob, and a scepter shall rise out of Israel; it shall crush the forehead of Moab, and break down all the sons of Sheth.',
+    dra: 'I shall see him, but not now: I shall behold him, but not near. A STAR SHALL RISE out of Jacob and a sceptre shall spring up from Israel: and shall strike the chiefs of Moab, and shall waste all the children of Seth.',
+  },
+  'MAT 2:1': {
+    rsv: 'Now when Jesus was born in Bethlehem of Judea in the days of Herod the king, behold, wise men from the East came to Jerusalem, saying,',
+    dra: 'When Jesus therefore was born in Bethlehem of Juda, in the days of king Herod, behold, there came wise men from the east to Jerusalem.',
+  },
+  'MAT 2:2': {
+    rsv: '“Where is he who has been born king of the Jews? For we have seen his star in the East, and have come to worship him.”',
+    dra: 'Saying, Where is he that is born king of the Jews? For we have seen his star in the east, and are come to adore him.',
+  },
+  'LUK 24:50': {
+    rsv: 'Then he led them out as far as Bethany, and lifting up his hands he blessed them.',
+    dra: 'And he led them out as far as Bethania: and lifting up his hands, he blessed them.',
+  },
+  'LUK 24:51': {
+    rsv: 'While he blessed them, he parted from them and was carried up into heaven.',
+    dra: 'And it came to pass, whilst he blessed them, he departed from them, and was carried up to heaven.',
+  },
+  'JHN 3:14': {
+    rsv: 'And as Moses lifted up the serpent in the wilderness, so must the Son of man be lifted up,',
+    dra: 'And as Moses lifted up the serpent in the desert, so must the Son of man be lifted up:',
+  },
+  'JHN 3:15': {
+    rsv: 'that whoever believes in him may have eternal life.”',
+    dra: 'That whosoever believeth in him, may not perish; but may have life everlasting.',
+  },
+  'JHN 7:37': {
+    rsv: 'On the last day of the feast, the great day, Jesus stood up and proclaimed, “If any one thirst, let him come to me and drink.',
+    dra: 'And on the last, and great day of the festivity, Jesus stood and cried, saying: If any man thirst, let him come to me, and drink.',
+  },
+  'JHN 7:38': {
+    rsv: 'He who believes in me, as the scripture has said, ‘Out of his heart shall flow rivers of living water.’”',
+    dra: 'He that believeth in me, as the scripture saith, Out of his belly shall flow rivers of living water.',
+  },
+  'ACT 2:17': {
+    rsv: '‘And in the last days it shall be, God declares, that I will pour out my Spirit upon all flesh, and your sons and your daughters shall prophesy, and your young men shall see visions, and your old men shall dream dreams;',
+    dra: 'And it shall come to pass, in the last days, (saith the Lord,) I will pour out of my Spirit upon all flesh: and your sons and your daughters shall prophesy, and your young men shall see visions, and your old men shall dream dreams.',
+  },
+  'ACT 2:18': {
+    rsv: 'yea, and on my menservants and my maidservants in those days I will pour out my Spirit; and they shall prophesy.',
+    dra: 'And upon my servants indeed, and upon my handmaids will I pour out in those days of my spirit, and they shall prophesy.',
+  },
+  'GAL 3:13': {
+    rsv: 'Christ redeemed us from the curse of the law, having become a curse for us—for it is written, “Cursed be every one who hangs on a tree”—',
+    dra: 'Christ hath redeemed us from the curse of the law, being made a curse for us: for it is written: Cursed is every one that hangeth on a tree:',
+  },
+  'GAL 3:14': {
+    rsv: 'that in Christ Jesus the blessing of Abraham might come upon the Gentiles, that we might receive the promise of the Spirit through faith.',
+    dra: 'That the blessing of Abraham might come on the Gentiles through Christ Jesus: that we may receive the promise of the Spirit by faith.',
+  },
+  'HEB 3:19': {
+    rsv: 'So we see that they were unable to enter because of unbelief.',
+    dra: 'And we see that they could not enter in, because of unbelief.',
+  },
+  'HEB 4:9': {
+    rsv: 'So then, there remains a sabbath rest for the people of God;',
+    dra: 'There remaineth therefore a day of rest for the people of God.',
+  },
+  'HEB 5:4': {
+    rsv: 'And one does not take the honor upon himself, but he is called by God, just as Aaron was.',
+    dra: 'Neither doth any man take the honour to himself, but he that is called by God, as Aaron was.',
+  },
+  'HEB 5:5': {
+    rsv: 'So also Christ did not exalt himself to be made a high priest, but was appointed by him who said to him, “Thou art my Son, today I have begotten thee”;',
+    dra: 'So Christ also did not glorify himself, that he might be made a high priest: but he that said unto him: Thou art my Son, this day have I begotten thee.',
+  },
+  'HEB 9:4': {
+    rsv: 'having the golden altar of incense and the ark of the covenant covered on all sides with gold, which contained a golden urn holding the manna, and Aaron’s rod that budded, and the tables of the covenant;',
+    dra: 'Having a golden censer, and the ark of the testament covered about on every part with gold, in which was a golden pot that had manna, and the rod of Aaron, that had blossomed, and the tables of the testament.',
+  },
+  'REV 22:16': {
+    rsv: '“I Jesus have sent my angel to you with this testimony for the churches. I am the root and the offspring of David, the bright morning star.”',
+    dra: 'I Jesus have sent my angel, to testify to you these things in the churches. I am the root and stock of David, the bright and morning star.',
+  },
 }
 
 /** A verse's words in the active translation. Throws for a verse that isn't in the list (a content check catches these first). */

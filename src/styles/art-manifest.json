@@ -362,6 +362,12 @@
     },
     "year-wheel": {
       "hash": "3a9db19a"
+    },
+    "wilderness-map": {
+      "hash": "99e79d78"
+    },
+    "balaam-road": {
+      "hash": "81a9f614"
     }
   },
   "paperProps": {
@@ -1183,6 +1189,36 @@
     },
     "sojourner": {
       "hash": "db77ef4d"
+    },
+    "quail": {
+      "hash": "83b8534e"
+    },
+    "caleb": {
+      "hash": "4eb5f956"
+    },
+    "grape-cluster": {
+      "hash": "2d672d54"
+    },
+    "korah": {
+      "hash": "f42fa478"
+    },
+    "rod": {
+      "hash": "b49cf514"
+    },
+    "eleazar": {
+      "hash": "5cef5460"
+    },
+    "bronze-serpent": {
+      "hash": "48d47d48"
+    },
+    "balak": {
+      "hash": "637c8331"
+    },
+    "balaam": {
+      "hash": "0dab5bcd"
+    },
+    "balaam-riding": {
+      "hash": "138a380a"
     }
   },
   "pixelLayers": {
@@ -1548,6 +1584,12 @@
     },
     "year-wheel": {
       "hash": "41a3b172"
+    },
+    "wilderness-map": {
+      "hash": "006ef18f"
+    },
+    "balaam-road": {
+      "hash": "ca33a7c6"
     }
   },
   "backdrop": {

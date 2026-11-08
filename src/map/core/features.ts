@@ -23,8 +23,8 @@ export const ARARAT: LatLon = { lat: 39.7, lon: 44.3 }
 
 /**
  * Where the levels still to come begin on the map, as far as the route is drawn ahead. Level
- * 11, the tabernacle, stays at Mount Sinai, where Level 10 already stands, so there is no
- * road ahead to draw until the people set out from Sinai.
+ * 12's route already ends on the plains of Moab, where Level 13 begins, so there is no road
+ * ahead to add.
  */
 export const AHEAD: { number: number; title: string; at: LatLon; label: string }[] = []
 

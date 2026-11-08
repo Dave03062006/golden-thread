@@ -83,6 +83,8 @@ import { sinaiLayers } from './layers/sinai'
 import { sinaiProps } from './props/sinai'
 import { tabernacleLayers } from './layers/tabernacle'
 import { tabernacleProps } from './props/tabernacle'
+import { wildernessLayers } from './layers/wilderness'
+import { wildernessProps } from './props/wilderness'
 import { familyOfNoah } from './characters/family-of-noah'
 
 export { LAYER_H, LAYER_W, MARGIN_X, MARGIN_Y, PX_H, PX_W, type Painter } from './frame'
@@ -186,6 +188,7 @@ export const pixelLayerSets: Record<string, PixelLayerArt>[] = [
   crossingLayers,
   sinaiLayers,
   tabernacleLayers,
+  wildernessLayers,
 ]
 
 export const pixelLayers: Record<string, PixelLayerArt> = Object.assign({}, ...pixelLayerSets)
@@ -239,6 +242,7 @@ export const pixelPropSets: Record<string, PixelPropArt>[] = [
   crossingProps,
   sinaiProps,
   tabernacleProps,
+  wildernessProps,
 ]
 
 export const pixelProps: Record<string, PixelPropArt> = Object.assign({}, ...pixelPropSets)

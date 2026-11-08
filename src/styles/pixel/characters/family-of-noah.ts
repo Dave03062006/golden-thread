@@ -251,6 +251,12 @@ export const familyOfNoah: Record<string, PixelSpriteArt> = {
   widow: person({ robe: C.dslate, hair: C.pale, veil: C.ink }),
   'poor-man': person({ robe: C.sand2, hair: C.slate, beard: C.slate }),
   sojourner: person({ robe: C.teal, hair: C.ink, beard: C.ink, veil: C.orange }),
+  // Level 12: Korah; Caleb; Eleazar, Aaron's son; Balaam the seer; Balak, king of Moab.
+  korah: person({ robe: C.rose, hair: C.ink, beard: C.ink, sash: C.gold }),
+  caleb: person({ robe: C.green, hair: C.wood1, beard: C.wood1, sash: C.sand }),
+  eleazar: person({ robe: C.white, hair: C.wood0, beard: C.wood0, veil: C.white, sash: C.blue }),
+  balaam: person({ robe: C.purple, hair: C.pale, beard: C.pale, veil: C.gold, sash: C.orange }),
+  balak: person({ robe: C.rose, hair: C.ink, beard: C.ink, veil: C.gold, sash: C.gold }),
   amalekites: band([
     { robe: C.wood1, hair: C.ink, beard: C.ink, veil: C.dslate },
     { robe: C.purple, hair: C.ink, beard: C.ink, veil: C.wood0 },

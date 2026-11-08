@@ -125,6 +125,15 @@ export const EMBLEMS: Record<string, { rows: string[]; colors: Record<string, st
   'the-veil': { rows: ['ppbbbbbrr', 'ppbbbbbrr', 'ppbbybbrr', 'ppbyyybrr', 'ppbbybbrr', 'ppbbbbbrr', 'ppbbbbbrr', 'ppbbbbbrr', 'ggggggggg'], colors: { p: C.purple, b: C.blue, r: C.rose, y: C.gold, g: C.sand2 } },
   'first-sheaf': { rows: ['.y.y.y.y.', '.yyyyyyy.', '..sssss..', '...sss...', '..wwwww..', '...sss...', '..sssss..', '.sssssss.', 'ggggggggg'], colors: { y: C.gold, s: C.sand2, w: C.wood2, g: C.wood3 } },
   'edges-of-the-field': { rows: ['.........', 'y.......y', 'y..h....y', 'y..k....y', 'yy.k...yy', 'yy.ss.yyy', 'yy....yyy', 'yy....yyy', 'ggggggggg'], colors: { y: C.gold, h: C.ink, k: C.teal, s: C.sand2, g: C.wood2 } },
+  // Level 12 · Forty Years in the Wilderness
+  'priestly-blessing': { rows: ['y...y...y', '.y.....y.', '..yy.yy..', '..ww.ww..', '...www...', '...bbb...', '..bbbbb..', '..bbbbb..', '.bbbbbbb.'], colors: { y: C.gold, w: C.sand, b: C.blue } },
+  'seventy-elders': { rows: ['....y....', '...yyy...', '.y..t..y.', 'yyy.t.yyy', '.s..t..s.', 'sss.t.sss', 'sss...sss', 'sss...sss', 'ggggggggg'], colors: { y: C.gold, t: C.wood3, s: C.sand2, g: C.wood2 } },
+  'cluster-of-grapes': { rows: ['wwwwwwwww', '....g....', '..ppppp..', '..ppppp..', '...ppp...', '...ppp...', '....p....', '.........', '.........'], colors: { w: C.wood2, g: C.green, p: C.purple } },
+  'rod-that-budded': { rows: ['....w....', '...wbw...', '....b..l.', '.l..b.ll.', 'll..b....', '....bw...', '...wb....', '....b....', 'ggggggggg'], colors: { w: C.white, b: C.wood2, l: C.lime, g: C.wood3 } },
+  'water-from-the-rock': { rows: ['rrrrrrr..', 'rrrrrrrr.', 'rrrrcrrr.', 'rrrrcrr..', '....cc...', '.....cc..', '....cccc.', '...cccccc', 'gggcccggg'], colors: { r: C.wood2, c: C.sky, g: C.sand2 } },
+  'bronze-serpent': { rows: ['..ooo....', '...wooo..', '....w..o.', '..oow....', '.o..w....', '..oow....', '....w....', '....w....', 'ggggwgggg'], colors: { o: C.orange, w: C.wood2, g: C.sand2 } },
+  'balaams-donkey': { rows: ['y.......y', '.y.....y.', '..y...ss.', '..y..sss.', '..y...s..', 'ssssssss.', 'sssssss..', 's.s..s.s.', 'ggggggggg'], colors: { y: C.white, s: C.slate, g: C.sand2 } },
+  'star-out-of-jacob': { rows: ['....w....', '....y....', '.wyyyyyw.', '...yyy...', '..yy.yy..', '.y.....y.', '....r....', '....r....', 'ggggrgggg'], colors: { w: C.white, y: C.gold, r: C.gold, g: C.navy } },
 }
 
 /** The pointed outline of a window, inside which the glass is: whether a pixel is in it. */

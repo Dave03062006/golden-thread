@@ -9,10 +9,11 @@ import { level8 } from './levels/08-the-plagues-and-the-passover/level'
 import { level9 } from './levels/09-through-the-sea/level'
 import { level10 } from './levels/10-sinai/level'
 import { level11 } from './levels/11-the-tabernacle-and-the-holy-life/level'
+import { level12 } from './levels/12-forty-years-in-the-wilderness/level'
 import type { Episode, Level } from './types'
 
 /** Every level built so far, in order. */
-export const LEVELS: Level[] = [level1, level2, level3, level4, level5, level6, level7, level8, level9, level10, level11]
+export const LEVELS: Level[] = [level1, level2, level3, level4, level5, level6, level7, level8, level9, level10, level11, level12]
 
 /** Finds an episode and its level by the episode's id, like "l01-e1". */
 export function findEpisode(episodeId: string): { level: Level; episode: Episode } | undefined {

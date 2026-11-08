@@ -168,6 +168,10 @@ export const PLACES: Place[] = [
   { id: 'elim', name: 'Elim', kind: 'city', at: { lat: 29.24, lon: 32.97 }, note: 'An oasis with twelve springs and seventy palm trees, traditionally placed in Wadi Gharandel, a few miles south of Marah.' },
   { id: 'wilderness-of-sin', name: 'The wilderness of Sin', kind: 'region', at: { lat: 28.85, lon: 33.25 }, note: 'Between Elim and Sinai, where the manna first fell. Traditionally the coastal plain of el-Markha, in the west of the Sinai peninsula.' },
   { id: 'rephidim', name: 'Rephidim', kind: 'city', at: { lat: 28.72, lon: 33.63 }, note: 'Where Moses struck the rock and Israel fought Amalek. Often placed in Wadi Feiran, the largest oasis valley in Sinai.' },
+  // Level 12 · Forty Years in the Wilderness
+  { id: 'kadesh', name: 'Kadesh', kind: 'city', at: { lat: 30.69, lon: 34.49 }, note: 'An oasis on the southern edge of Canaan, perhaps Ain el-Qudeirat, where the people camped for many years. The twelve spies set out from here.' },
+  { id: 'mount-hor', name: 'Mount Hor', kind: 'mountain', at: { lat: 30.32, lon: 35.41 }, note: 'On the border of Edom, where Aaron died. Traditionally Jebel Harun, “Aaron’s mountain,” near Petra.' },
+  { id: 'plains-of-moab', name: 'The plains of Moab', kind: 'region', at: { lat: 31.85, lon: 35.6 }, note: 'The plain east of the Jordan, across from Jericho, where Israel camped at the end of the forty years.' },
 ]
 
 const BY_ID = new Map(PLACES.map((place) => [place.id, place]))

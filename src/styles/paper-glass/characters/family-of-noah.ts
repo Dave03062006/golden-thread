@@ -284,6 +284,13 @@ export const familyOfNoah: Record<string, PaperPropArt> = {
   widow: person({ robe: '#3a3c4a', fold: '#26283a', hair: '#c8c4bc', veil: '#1a1c26' }),
   'poor-man': person({ robe: '#a88a5a', fold: '#7a6440', hair: '#6a6a72', beard: '#6a6a72' }),
   sojourner: person({ robe: '#2a7a7a', fold: '#1a5a5a', hair: '#1a1416', beard: '#1a1416', veil: '#e0782a' }),
+  // Level 12 · Forty Years in the Wilderness: Korah; Caleb; Eleazar, Aaron's son; Balaam the
+  // seer; Balak, king of Moab.
+  korah: person({ robe: '#a83a3a', fold: '#7a2626', hair: '#1a1416', beard: '#1a1416', sash: '#e0b040' }),
+  caleb: person({ robe: '#4a7a3a', fold: '#345a26', hair: '#6a3a1a', beard: '#6a3a1a', sash: '#d8b880' }),
+  eleazar: person({ robe: '#f4efe2', fold: '#d8d0c0', hair: '#2a1e1a', beard: '#2a1e1a', veil: '#ffffff', sash: '#3a5aa8' }),
+  balaam: person({ robe: '#6a3a7a', fold: '#4c2a5a', hair: '#c8c4bc', beard: '#c8c4bc', veil: '#e0b040', sash: '#e0782a' }),
+  balak: person({ robe: '#a83a3a', fold: '#7a2626', hair: '#1a1416', beard: '#1a1416', veil: '#f4d070', sash: '#e0b040' }),
   amalekites: band([
     { robe: '#5a3a3a', fold: '#3e2626', hair: '#1a1210', beard: '#1a1210', veil: '#3a2a2a' },
     { robe: '#6a4a3a', fold: '#4c3226', hair: '#1a1210', beard: '#1a1210', veil: '#4a3a2a' },

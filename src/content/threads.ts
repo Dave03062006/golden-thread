@@ -833,6 +833,95 @@ export const THREADS: GoldenThread[] = [
     sources: ['Luke 10:25–37', 'Matthew 25:35–40', 'Catechism 1825, 1931–1932'],
     fulfilled: { age: 'XI' },
   },
+  // Level 12 · Forty Years in the Wilderness
+  {
+    id: 'he-blessed-them',
+    episode: 'l12-e1',
+    title: 'Aaron lifts his hands and blesses the people: “The LORD bless you and keep you” → Jesus, at his ascension, “lifting up his hands he blessed them”',
+    from: ['NUM 6:24', 'NUM 6:25', 'NUM 6:26'],
+    to: ['LUK 24:50', 'LUK 24:51'],
+    explanation:
+      'God told Aaron and his sons to bless the people with his own name. The last thing Jesus did on earth was to bless his disciples, with his hands lifted, and he went up to heaven still blessing them. At the end of every Mass, the priest blesses the people in his name, and sends them out. The blessing of Aaron is still prayed in the Church: on the first day of every year, its words are read at Mass.',
+    sources: ['Luke 24:50–53', 'Numbers 6:22–27 (the first reading of the Mass of Mary, Mother of God, 1 January)', 'Catechism 1078–1083, 1671'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'all-the-lords-people',
+    episode: 'l12-e2',
+    title: '“Would that all the LORD’s people were prophets, that the LORD would put his spirit upon them!” → At Pentecost: “I will pour out my Spirit upon all flesh”',
+    from: ['NUM 11:29'],
+    to: ['ACT 2:17', 'ACT 2:18'],
+    explanation:
+      'Moses longed for the day when God’s Spirit would rest on all his people, not just on seventy elders. At Pentecost, it happened: the Holy Spirit came down on the whole Church, men and women, young and old. Through Baptism and Confirmation, every Christian receives the Spirit and shares in Christ’s work as prophet, speaking his word to the world.',
+    sources: ['Acts 2:1–21 (quoting Joel 2:28–29)', 'Catechism 1268, 1285–1287, 1546'],
+    fulfilled: { age: 'XIII', place: 'jerusalem' },
+  },
+  {
+    id: 'a-sabbath-rest',
+    episode: 'l12-e3',
+    title: 'Joshua and Caleb trust God, but the people will not go in; they wander forty years, “unable to enter because of unbelief” → “There remains a sabbath rest for the people of God”',
+    from: ['NUM 14:8', 'NUM 14:34'],
+    to: ['HEB 3:19', 'HEB 4:9'],
+    explanation:
+      'The people saw the fruit of the promised land with their own eyes, and still they would not trust God to bring them in. The letter to the Hebrews tells Christians not to make the same mistake: God has promised us a greater rest, his own rest in heaven, and we enter it by trusting him. Joshua led the next generation into Canaan; Jesus, whose name is the same, leads us into God’s rest.',
+    sources: ['Hebrews 3:7–4:11 (quoting Psalm 95:7–11)', 'Catechism 1720–1721, 2184'],
+    fulfilled: { age: 'XIII' },
+  },
+  {
+    id: 'called-like-aaron',
+    episode: 'l12-e4',
+    title: 'Aaron’s dry rod blossoms, to show whom God has chosen as priest → “One does not take the honor upon himself, but he is called by God, just as Aaron was. So also Christ…”',
+    from: ['NUM 17:5', 'NUM 17:8'],
+    to: ['HEB 5:4', 'HEB 5:5', 'HEB 9:4'],
+    explanation:
+      'Korah wanted to make himself a priest. Jesus, who truly was the Son of God, did not take any glory for himself: the Father called him. Aaron’s rod, dead wood that blossomed overnight, was kept in the ark as a sign. The Fathers of the Church saw in it Christ himself, who came to life from the dead wood of the cross, and Mary, from whom, without any human father, came the flower of Jesse’s root.',
+    sources: ['Hebrews 5:1–10; 9:4', 'Isaiah 11:1', 'Catechism 1539–1547, 1578'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'rivers-of-living-water',
+    episode: 'l12-e5',
+    title: 'Water flows from the rock for a thirsty people → Jesus: “If any one thirst, let him come to me and drink”',
+    from: ['NUM 20:8', 'NUM 20:11'],
+    to: ['JHN 7:37', 'JHN 7:38'],
+    explanation:
+      'At the feast of booths, when the people remembered the years in the wilderness and prayed for rain, the priests poured water at the altar. On the last day, Jesus stood up and promised water that would never run dry: the Holy Spirit, flowing from the hearts of all who believe in him. Saint Paul says the rock that followed the people in the desert was Christ (1 Corinthians 10:4; Level 9).',
+    sources: ['John 7:37–39', '1 Corinthians 10:4', 'Catechism 694, 728, 2561'],
+    fulfilled: { age: 'XI', place: 'jerusalem' },
+  },
+  {
+    id: 'the-serpent-lifted-up',
+    episode: 'l12-e6',
+    title: 'Moses lifts up the bronze serpent, and everyone who looks at it lives → Jesus: “As Moses lifted up the serpent in the wilderness, so must the Son of man be lifted up”',
+    from: ['NUM 21:8', 'NUM 21:9'],
+    to: ['JHN 3:14', 'JHN 3:15'],
+    explanation:
+      'Jesus himself explained this sign to Nicodemus. As the serpent was lifted up on a pole, he would be lifted up on the cross; and as everyone who looked at the serpent lived, everyone who looks to him with faith will have eternal life. The very next words are the best-known verse in the Bible: “For God so loved the world that he gave his only Son.”',
+    sources: ['John 3:14–16', 'Wisdom 16:5–7', '2 Kings 18:4', 'Catechism 2130'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'the-curse-turned-to-blessing',
+    episode: 'l12-e7',
+    title: 'God will not let his people be cursed: “you shall not curse the people, for they are blessed” → Christ became a curse for us, “that in Christ Jesus the blessing of Abraham might come upon the Gentiles”',
+    from: ['NUM 22:12'],
+    to: ['GAL 3:13', 'GAL 3:14'],
+    explanation:
+      'Balak wanted God’s people cursed, but God turned every curse into a blessing (Deuteronomy 23:5). On the cross, Jesus took on himself the curse that we deserved, so that God’s blessing, promised to Abraham, could come to every nation. No curse can undo what God has blessed.',
+    sources: ['Galatians 3:6–14', 'Deuteronomy 23:5', 'Nehemiah 13:2', 'Catechism 580, 1006'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'a-star-out-of-jacob',
+    episode: 'l12-e8',
+    title: '“A star shall come forth out of Jacob, and a scepter shall rise out of Israel” → the wise men: “We have seen his star in the East,” and Jesus: “I am… the bright morning star”',
+    from: ['NUM 24:17'],
+    to: ['MAT 2:1', 'MAT 2:2', 'REV 22:16'],
+    explanation:
+      'A prophet from the east, who did not even belong to God’s people, was made to see the King who would come from Israel. Centuries later, wise men from the east saw his star and came to worship him: the first of all the nations to come to Jesus. At the very end of the Bible, Jesus calls himself “the bright morning star,” the star that rises before the dawn of the day that will never end.',
+    sources: ['Matthew 2:1–12', 'Revelation 22:16', '2 Peter 1:19', 'Catechism 528'],
+    fulfilled: { age: 'XI', place: 'bethlehem' },
+  },
 ]
 
 const BY_ID = new Map(THREADS.map((thread) => [thread.id, thread]))
