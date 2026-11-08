@@ -241,6 +241,16 @@ export const familyOfNoah: Record<string, PixelSpriteArt> = {
     { robe: C.dslate, hair: C.white, beard: C.white },
   ]),
   'moses-veiled': person({ robe: C.wood3, hair: C.pale, beard: C.white, veil: C.white, sash: C.sand }),
+  // Level 11: Aaron in plain linen and in his holy garments; Bezalel and Oholiab; a priest, one of
+  // Aaron's sons; a widow, a poor man and a stranger.
+  'aaron-linen': person({ robe: C.white, hair: C.pale, beard: C.pale, veil: C.white, sash: C.white }),
+  'high-priest': person({ robe: C.blue, hair: C.pale, beard: C.pale, veil: C.white, sash: C.gold }),
+  bezalel: person({ robe: C.wood3, hair: C.wood0, beard: C.wood0, sash: C.gold }),
+  oholiab: person({ robe: C.purple, hair: C.ink, beard: C.ink, sash: C.rose }),
+  priest: person({ robe: C.white, hair: C.wood0, veil: C.white, sash: C.blue }),
+  widow: person({ robe: C.dslate, hair: C.pale, veil: C.ink }),
+  'poor-man': person({ robe: C.sand2, hair: C.slate, beard: C.slate }),
+  sojourner: person({ robe: C.teal, hair: C.ink, beard: C.ink, veil: C.orange }),
   amalekites: band([
     { robe: C.wood1, hair: C.ink, beard: C.ink, veil: C.dslate },
     { robe: C.purple, hair: C.ink, beard: C.ink, veil: C.wood0 },

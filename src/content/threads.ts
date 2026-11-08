@@ -755,6 +755,84 @@ export const THREADS: GoldenThread[] = [
     sources: ['John 1:14–18', '2 Corinthians 3:18', '2 Corinthians 4:6', 'Catechism 210–211'],
     fulfilled: { age: 'XI', place: 'bethlehem' },
   },
+  // Level 11 · The Tabernacle and the Holy Life
+  {
+    id: 'the-temple-of-his-body',
+    episode: 'l11-e1',
+    title: '“Let them make me a sanctuary, that I may dwell in their midst” → Jesus: “Destroy this temple, and in three days I will raise it up,” and “You are God’s temple”',
+    from: ['EXO 25:8'],
+    to: ['JHN 2:19', 'JHN 2:21', '1CO 3:16'],
+    explanation:
+      'God wanted to live among his people, so he had them build him a tent in the middle of their camp. Later, Solomon would build him a temple of stone in Jerusalem. But Jesus spoke of a greater temple: his own body. In Jesus, God came to live among us in person. And through Baptism, the Holy Spirit makes every Christian a temple of God, and every church is God’s house among the houses of his people.',
+    sources: ['John 2:13–22', 'John 1:14', '1 Corinthians 3:16–17; 6:19', 'Revelation 21:3', 'Catechism 586, 797, 1197'],
+    fulfilled: { age: 'XI', place: 'jerusalem' },
+  },
+  {
+    id: 'the-ark-of-the-covenant',
+    episode: 'l11-e2',
+    title: 'The ark of the covenant, overshadowed by the cloud of God’s glory → Mary: “the power of the Most High will overshadow you”',
+    from: ['EXO 40:34'],
+    to: ['LUK 1:35', 'REV 11:19'],
+    explanation:
+      'The ark held God’s word, written on stone, and the cloud of his glory covered it. In the Greek Bible the apostles read, the cloud “overshadowed” the tabernacle, the same word the angel used to Mary. The Word of God himself came to live within her. That is why the Church calls Mary the Ark of the Covenant. In the book of Revelation, Saint John sees the ark of the covenant in heaven, and straight after it, “a woman clothed with the sun.”',
+    sources: ['Luke 1:35, 39–45 (compare 2 Samuel 6:9–11)', 'Revelation 11:19–12:1', 'Catechism 2676', 'The Litany of Loreto'],
+    fulfilled: { age: 'XI', place: 'nazareth' },
+  },
+  {
+    id: 'the-great-high-priest',
+    episode: 'l11-e3',
+    title: 'Aaron the high priest, carrying the names of his people on his heart → “We have a great high priest… Jesus, the Son of God”',
+    from: ['EXO 28:29'],
+    to: ['HEB 4:14', 'HEB 4:15'],
+    explanation:
+      'Aaron carried the names of all twelve tribes on his heart when he went in before God. Jesus is the great high priest. He does not carry our names on stones: he took our human nature, was tempted in every way as we are, yet without sin, and carries each of us before the Father. The priests of the new covenant share in his one priesthood.',
+    sources: ['Hebrews 4:14–5:10; 7:23–27', 'Catechism 1539–1545'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'a-fragrant-offering',
+    episode: 'l11-e4',
+    title: 'The offerings on the altar, “a pleasing odor to the LORD” → “Christ loved us and gave himself up for us, a fragrant offering and sacrifice to God”',
+    from: ['LEV 2:2'],
+    to: ['EPH 5:2', 'HEB 10:10'],
+    explanation:
+      'Every offering on the altar was a gift to God, and a sign of a greater gift to come. The blood of animals could never truly take away sin (Hebrews 10:4). Jesus offered himself: his whole life, given in love on the cross, “once for all.” At every Mass, that one sacrifice is made present, and we offer ourselves with him.',
+    sources: ['Hebrews 10:1–14', 'Ephesians 5:1–2', 'Romans 12:1', 'Catechism 613–614, 1366–1367, 2099–2100'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'once-for-all',
+    episode: 'l11-e5',
+    title: 'The high priest passes the veil once a year with the blood of the offering → Christ “entered once for all into the Holy Place, taking not the blood of goats and calves but his own blood,” and the curtain of the temple is torn in two',
+    from: ['LEV 16:2', 'LEV 16:15'],
+    to: ['HEB 9:11', 'HEB 9:12', 'MRK 15:37', 'MRK 15:38'],
+    explanation:
+      'Once a year, one man could pass the veil into God’s presence, and only for a short time. When Jesus died on the cross, the curtain of the Temple was torn in two, from top to bottom: torn by God, from above. Jesus, our high priest, has gone into the presence of God for us, not with the blood of goats, but with his own, and now the way to God is open to everyone.',
+    sources: ['Hebrews 9:1–14, 24–28; 10:19–22', 'Romans 3:25', 'Catechism 433, 662'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'the-first-fruits',
+    episode: 'l11-e6',
+    title: 'The first sheaf, waved before the LORD “on the morrow after the sabbath,” and the feast fifty days later → Christ raised from the dead, “the first fruits,” and the Holy Spirit given at Pentecost',
+    from: ['LEV 23:11', 'LEV 23:16'],
+    to: ['1CO 15:20', 'ACT 2:1'],
+    explanation:
+      'The first sheaf of the harvest was given to God on the day after the sabbath, in the week of the Passover. Jesus rose from the dead on that very day, the first day of the week: the first fruits of all who will rise. Fifty days later, at the feast of weeks (in Greek, Pentecost, “the fiftieth”), the Holy Spirit came down on the apostles, and the great harvest began: about three thousand were baptized that day. The Church still keeps Easter and Pentecost on these feasts.',
+    sources: ['1 Corinthians 15:20–23', 'Acts 2:1–41', 'Catechism 731, 1096, 1169'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'who-is-my-neighbor',
+    episode: 'l11-e7',
+    title: '“You shall love your neighbor as yourself,” and the stranger “you shall love him as yourself” → Jesus’ parable of the Good Samaritan: “Go and do likewise”',
+    from: ['LEV 19:18', 'LEV 19:34'],
+    to: ['LUK 10:29', 'LUK 10:36', 'LUK 10:37'],
+    explanation:
+      'When a lawyer asked Jesus what he must do to inherit eternal life, Jesus had him answer from the law: love God, and love your neighbor as yourself. “And who is my neighbor?” Jesus told of a Samaritan, a foreigner, who stopped for a wounded stranger when a priest and a Levite had passed him by. Our neighbor is anyone who needs us, even a stranger or an enemy. And Jesus himself is the Good Samaritan, who stopped for us.',
+    sources: ['Luke 10:25–37', 'Matthew 25:35–40', 'Catechism 1825, 1931–1932'],
+    fulfilled: { age: 'XI' },
+  },
 ]
 
 const BY_ID = new Map(THREADS.map((thread) => [thread.id, thread]))

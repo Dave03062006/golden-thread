@@ -3,7 +3,7 @@
 **Bible:** Exodus 25–31; 35–40; Leviticus 1–3; 6; 8–9; 16; 19; 23
 **Age:** IV · The Covenant in the Desert
 **Length:** about 45 minutes (7 episodes, then the quiz, then reflection and prayer)
-**Status:** draft, waiting for Dave's approval.
+**Status:** approved by Dave on 2026-11-07 ("Approved, build it").
 
 ## How to read this script
 

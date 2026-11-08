@@ -919,6 +919,20 @@ export const TRACKS: Track[] = [
     download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Toccata_et_Fugue_BWV565.ogg',
     credit: 'Bach, Toccata and Fugue in D minor, BWV 565. Ashtar Moïra, organ (2006). Public domain.',
   },
+  // Level 11 · The Tabernacle and the Holy Life. Episode 1, in place of Bruckner's Locus iste
+  // (whose free recordings are all CC BY-SA): a psalm of longing for the house of God.
+  {
+    id: 'parry-psalm-84',
+    title: 'Psalm 84, “How amiable are thy dwellings”',
+    composer: 'Anglican chant by Charles Hubert Parry',
+    performer: 'The choir of Trinity Church Boston, at the consecration of its chapel',
+    year: 2017,
+    license: 'cc-by',
+    licenseNote: 'Published by Trinity Church Boston under the Creative Commons Attribution 3.0 license, as stated on Wikimedia Commons.',
+    source: 'https://commons.wikimedia.org/wiki/File:Psalm_84_CH_Parry_Trinity_Church_Boston.ogg',
+    download: 'https://commons.wikimedia.org/wiki/Special:FilePath/Psalm_84_CH_Parry_Trinity_Church_Boston.ogg',
+    credit: 'Psalm 84, “How amiable are thy dwellings,” to a chant by Hubert Parry. The choir of Trinity Church Boston (2017). CC BY 3.0, via Wikimedia Commons.',
+  },
 ]
 
 const BY_ID = new Map(TRACKS.map((track) => [track.id, track]))

@@ -117,6 +117,14 @@ export const EMBLEMS: Record<string, { rows: string[]; colors: Record<string, st
   'broken-tablets': { rows: ['.ss....ss', 'sss...sss', '.s.....s.', '.........', 'ss..s.ss.', 'sss.ssss.', 'ssss.sss.', 'sssssssss', 'ggggggggg'], colors: { s: C.pale, g: C.wood2 } },
   'tent-of-meeting': { rows: ['......ww.', '.....wwww', '...t.wyyw', '..ttt.wyw', '.ttttt.y.', 'ttkkttty.', 'ttkkttty.', 'ttkkttty.', 'ggggggggg'], colors: { w: C.pale, y: C.gold, t: C.wood3, k: C.ink, g: C.sand2 } },
   'shining-face': { rows: ['y...y...y', '.y.www.y.', '..wsssw..', 'ywsssssw.', '..wsssw.y', '.y.www.y.', 'y..bbb..y', '..bbbbb..', '.bbbbbbb.'], colors: { y: C.gold, w: C.white, s: C.sand, b: C.wood3 } },
+  // Level 11 · The Tabernacle and the Holy Life
+  'tabernacle-plan': { rows: ['yyyyyyyyy', 'y.......y', 'y.yyyy..y', 'y.ywyy.ay', 'y.yyyy..y', 'y.......y', 'yyyyyy.yy', '.........', 'ggggggggg'], colors: { y: C.gold, w: C.white, a: C.wood3, g: C.sand2 } },
+  'mercy-seat': { rows: ['.........', 'yy.....yy', '.yy...yy.', '..yy.yy..', 'wwwwwwwww', '.yyyyyyy.', '.yyyyyyy.', 'bbyyyyybb', '.........'], colors: { y: C.gold, w: C.white, b: C.wood3 } },
+  'twelve-stones': { rows: ['.yyyyyyy.', '.y.....y.', '.yrrgggy.', '.ybbbsssy', '.ypppoooy', '.yttwwwy.', '.y.....y.', '.yyyyyyy.', '.........'], colors: { y: C.gold, r: C.rose, g: C.green, b: C.blue, s: C.sky, p: C.purple, o: C.orange, t: C.teal, w: C.white } },
+  'altar-fire': { rows: ['....y....', '...yoy...', '..yooy...', '..orroo..', '.b.ror.b.', 'bbbbbbbbb', 'bkkkkkkkb', 'bbbbbbbbb', 'b.......b'], colors: { y: C.gold, o: C.orange, r: C.rose, b: C.wood3, k: C.wood1 } },
+  'the-veil': { rows: ['ppbbbbbrr', 'ppbbbbbrr', 'ppbbybbrr', 'ppbyyybrr', 'ppbbybbrr', 'ppbbbbbrr', 'ppbbbbbrr', 'ppbbbbbrr', 'ggggggggg'], colors: { p: C.purple, b: C.blue, r: C.rose, y: C.gold, g: C.sand2 } },
+  'first-sheaf': { rows: ['.y.y.y.y.', '.yyyyyyy.', '..sssss..', '...sss...', '..wwwww..', '...sss...', '..sssss..', '.sssssss.', 'ggggggggg'], colors: { y: C.gold, s: C.sand2, w: C.wood2, g: C.wood3 } },
+  'edges-of-the-field': { rows: ['.........', 'y.......y', 'y..h....y', 'y..k....y', 'yy.k...yy', 'yy.ss.yyy', 'yy....yyy', 'yy....yyy', 'ggggggggg'], colors: { y: C.gold, h: C.ink, k: C.teal, s: C.sand2, g: C.wood2 } },
 }
 
 /** The pointed outline of a window, inside which the glass is: whether a pixel is in it. */

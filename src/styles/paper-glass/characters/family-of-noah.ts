@@ -274,6 +274,16 @@ export const familyOfNoah: Record<string, PaperPropArt> = {
     { robe: '#5a6a5a', fold: '#3e4c3e', hair: '#d8d4cc', beard: '#d8d4cc' },
   ]),
   'moses-veiled': person({ robe: '#7a5a3a', fold: '#5a4026', hair: '#d0ccc4', beard: '#f4f0e6', veil: '#f4f0e6', sash: '#c8a050' }),
+  // Level 11 · The Tabernacle and the Holy Life: Aaron in plain linen and in his holy garments;
+  // Bezalel and Oholiab; a priest, one of Aaron's sons; a widow, a poor man and a stranger.
+  'aaron-linen': person({ robe: '#f4efe2', fold: '#d8d0c0', hair: '#b8b4ac', beard: '#b8b4ac', veil: '#ffffff', sash: '#e8e0d0' }),
+  'high-priest': person({ robe: '#3a5aa8', fold: '#264078', hair: '#b8b4ac', beard: '#b8b4ac', veil: '#f4efe2', sash: '#e0b040' }),
+  bezalel: person({ robe: '#a8743a', fold: '#7a5226', hair: '#2a1e1a', beard: '#2a1e1a', sash: '#e0b040' }),
+  oholiab: person({ robe: '#6a3a7a', fold: '#4c2a5a', hair: '#1a1416', beard: '#1a1416', sash: '#b8323a' }),
+  priest: person({ robe: '#f4efe2', fold: '#d8d0c0', hair: '#2a1e1a', veil: '#ffffff', sash: '#3a5aa8' }),
+  widow: person({ robe: '#3a3c4a', fold: '#26283a', hair: '#c8c4bc', veil: '#1a1c26' }),
+  'poor-man': person({ robe: '#a88a5a', fold: '#7a6440', hair: '#6a6a72', beard: '#6a6a72' }),
+  sojourner: person({ robe: '#2a7a7a', fold: '#1a5a5a', hair: '#1a1416', beard: '#1a1416', veil: '#e0782a' }),
   amalekites: band([
     { robe: '#5a3a3a', fold: '#3e2626', hair: '#1a1210', beard: '#1a1210', veil: '#3a2a2a' },
     { robe: '#6a4a3a', fold: '#4c3226', hair: '#1a1210', beard: '#1a1210', veil: '#4a3a2a' },

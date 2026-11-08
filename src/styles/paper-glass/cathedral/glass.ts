@@ -665,6 +665,56 @@ export const EMBLEMS: Record<string, () => Piece[]> = {
     { d: circ(0, -2, 5.6, 16), color: '#d8b888' },
     { d: P([[-6, 16], [-4, 8], [4, 8], [6, 16]]), color: '#7a5a3a' },
   ],
+  // Level 11 · The Tabernacle and the Holy Life
+  // The plan of the tabernacle in its court, drawn in light.
+  'tabernacle-plan': () => [
+    { d: P([[-16, -10], [16, -10], [16, 10], [-16, 10]]), color: '#ffe48a' },
+    { d: P([[-14, -8], [14, -8], [14, 8], [-14, 8]]), color: '#2a3a6a' },
+    { d: P([[-11, -4], [3, -4], [3, 4], [-11, 4]]), color: '#e0b040' },
+    { d: P([[-9, -1.6], [-6, -1.6], [-6, 1.6], [-9, 1.6]]), color: '#fff6d0' },
+    { d: P([[7, -2], [11, -2], [11, 2], [7, 2]]), color: '#b07a3a' },
+  ],
+  // The mercy seat on the ark, and the two cherubim with their wings spread over it.
+  'mercy-seat': () => [
+    { d: P([[-12, 4], [12, 4], [12, 14], [-12, 14]]), color: '#e0b040' },
+    { d: P([[-14, 1], [14, 1], [14, 4], [-14, 4]]), color: '#f4d070' },
+    { d: P([[-11, 1], [-12, -10], [-2, -4], [-4, 1]]), color: '#e0b040' },
+    { d: P([[11, 1], [12, -10], [2, -4], [4, 1]]), color: '#e0b040' },
+    { d: P([[-16, 9], [16, 9], [16, 10.4], [-16, 10.4]]), color: '#8a5a32' },
+  ],
+  // The breastpiece of the high priest, with the twelve stones of the tribes.
+  'twelve-stones': () => [
+    { d: P([[-11, -13], [11, -13], [11, 13], [-11, 13]]), color: '#e0b040' },
+    ...[0, 1, 2, 3].flatMap((row) => [0, 1, 2].map((col) => ({ d: P([[-8 + col * 6, -10 + row * 6], [-4 + col * 6, -10 + row * 6], [-4 + col * 6, -6 + row * 6], [-8 + col * 6, -6 + row * 6]]), color: ['#b8323a', '#4aa85a', '#5ab8e8', '#6a3a7a'][row]! }))),
+  ],
+  // The altar of burnt offering, and its fire that never went out.
+  'altar-fire': () => [
+    { d: P([[-12, 2], [12, 2], [12, 15], [-12, 15]]), color: '#b07a3a' },
+    { d: P([[-13, 2], [-12, -2], [-10, 2]]), color: '#b07a3a' },
+    { d: P([[13, 2], [12, -2], [10, 2]]), color: '#b07a3a' },
+    { d: P([[0, -15], [6, -6], [7, 1], [-7, 1], [-6, -6]]), color: '#e0602a' },
+    { d: P([[0, -8], [3, -3], [3, 1], [-3, 1], [-3, -3]]), color: '#ffcf5a' },
+  ],
+  // The veil before the holy of holies, of blue, purple and scarlet.
+  'the-veil': () => [
+    { d: P([[-14, -15], [14, -15], [14, 16], [-14, 16]]), color: '#3a5aa8' },
+    { d: P([[-14, -15], [-7, -15], [-7, 16], [-14, 16]]), color: '#6a3a7a' },
+    { d: P([[7, -15], [14, -15], [14, 16], [7, 16]]), color: '#b8323a' },
+    { d: P([[0, -6], [-5, 2], [5, 2]]), color: '#e0b040' },
+  ],
+  // The first sheaf of the harvest, waved before the LORD.
+  'first-sheaf': () => [
+    ...[-8, -4, 0, 4, 8].map((x) => ({ d: P([[x - 1, -14], [x + 1, -14], [x * 0.3 + 0.8, 14], [x * 0.3 - 0.8, 14]]), color: '#f0c850' })),
+    { d: P([[-6, 0], [6, 0], [6, 3], [-6, 3]]), color: '#8a5a32' },
+  ],
+  // The stranger gleaning at the edge of the field.
+  'edges-of-the-field': () => [
+    { d: P([[-16, -6], [-10, -6], [-10, 16], [-16, 16]]), color: '#f0c850' },
+    { d: P([[10, -6], [16, -6], [16, 16], [10, 16]]), color: '#f0c850' },
+    { d: P([[-6, 16], [-4, -2], [2, -2], [4, 16]]), color: '#2a7a7a' },
+    { d: circ(-1, -6, 3.4, 12), color: '#c89a6a' },
+    { d: P([[3, 6], [8, 2], [9, 4], [4, 8]]), color: '#e0b040' },
+  ],
 }
 
 /** The medallions' backgrounds: deep blue, with one ruby for the darkest story. */

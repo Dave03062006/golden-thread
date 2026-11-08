@@ -549,6 +549,38 @@ The same way again: script, art, build, checks, play-test. Level 10 opens Age IV
   - New `shots` baselines cover the Level 10 scenes. Dave still needs to look them over.
 - **A fix worth remembering:** in pixel art, a drawn prop that never changes must say `fps: 0`. Without it, the prop is drawn again from scratch six times a second, because each tick is a new picture to the cache. Level 6's storm cloud had been missing it all along. Shown twice as large over Sinai, it put six pixel scenes over the late-frame budget (up to 3.3%). With `fps: 0` they are back under 0.3%. The new Sinai props now say it too.
 
+### Task 17: Level 11, *The Tabernacle and the Holy Life* (M17)
+
+The same way again: script, art, build, checks, play-test. Level 11 is the second level of Age IV.
+
+**Status (November 2026):** steps 1–4 are done; step 5 is Dave's.
+- **Script:** `docs/scripts/level-11-the-tabernacle-and-the-holy-life.md`, approved by Dave on 2026-11-07. It has 7 episodes and 23 scenes, 91 verses quoted word for word, and a 42-question quiz. Two changes after approval:
+  - Two "finish the verse" questions now start where the verse itself starts its words ("…from every man", and Exodus 25:22 without the inner "…"), so they match the text word for word.
+  - The golden threads of Episodes 5 and 6 glow a little sooner and stay longer, so the player has time to see them.
+- **Build:** all seven episodes are built in both styles, each with a different kind of play from the spec's library:
+  - gifts for the sanctuary (gathering: each gift on God's list brought to its place, until there is "much more than enough");
+  - raise the tabernacle (building, in the order of Exodus 40);
+  - clothed for glory (ordering: Aaron dressed in the order of Leviticus 8);
+  - keep the fire burning (timing, through a day and a night);
+  - carried far away (a quiet play: the people's sins laid on the goat, which carries them out of sight);
+  - the feasts of the year (matching each feast with what it remembers, on the wheel of the year);
+  - the edges of the field (serving: the field reaped, its edges left for the widow, the poor man and the stranger).
+  The two ordering plays share one small set of rules, `minigames/in-order.ts`.
+- **New art:**
+  - The tabernacle is one picture, 400 units wide, with each piece an actor drawn in its own place, so the pieces fit together into the whole tabernacle in its court, cut away to show the ark, the table and the lampstand. One piece alone can be shown close up anywhere (`stage.ts` says how).
+  - Backdrops: the holy place, with the veil; the wheel of the year.
+  - Props: the gifts for the sanctuary, the holy garments and their rail, the signs of the feasts, the altar's flame, a dark stone for a sin, the plan drawn in light, and a row of standing grain.
+  - People: Aaron in plain linen and as high priest, Bezalel, Oholiab, a priest, a widow, a poor man and a stranger.
+- **Cathedral and map:** seven new medallions for the Level 11 window: the plan of the tabernacle, the mercy seat, the twelve stones, the altar fire, the veil, the first sheaf, and the edges of the field. Level 11 stands at Mount Sinai with Level 10, as the script says. Its marker, "The tabernacle at Sinai," sits just to the south-east of Level 10's, because at the same spot each label covered the other.
+- **Music:** one new recording, Psalm 84, "How amiable are thy dwellings," to a chant by Parry (Trinity Church Boston, CC BY 3.0), in place of Bruckner's *Locus iste*, whose free recordings are all CC BY-SA. The rest are recordings already in the game.
+- **Checks:** all pass.
+  - The playthrough runs Level 11 from start to finish in both styles, through its quiz, reflection and window ceremony.
+  - `check`, `test` (2,796 tests), `a11y`, `keyboard` and `saves` pass.
+  - `perf` is within budget for every Level 11 scene in both styles.
+  - New `shots` baselines cover the Level 11 scenes. Dave still needs to look them over.
+- **A fix worth remembering:** a pixel prop shown very large makes a very large cached picture. A tabernacle piece shown close up (at 1.4 to 1.8 frame widths) made pictures of about 860 × 1,100 pixels, and four pixel scenes went over budget, with frames up to 330 ms. Since each piece is only a few dozen blocks, it is now drawn straight onto the screen (`live: true`), like Level 10's sapphire pavement.
+- **Baking:** `npm run bake` writes every image again, and many unchanged ones come out a few bytes different. Only the new images are committed; the manifest's hashes show the old ones are unchanged.
+
 ## Parallelization
 
 - **Code tasks run in order.** Each one builds on the last, and running them in order keeps the code consistent for the code tour.

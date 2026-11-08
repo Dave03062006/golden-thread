@@ -3136,6 +3136,372 @@ export const VERSES: Record<string, Verse> = {
     rsv: 'No one has ever seen God; the only Son, who is in the bosom of the Father, he has made him known.',
     dra: 'No man hath seen God at any time: the only begotten Son who is in the bosom of the Father, he hath declared him.',
   },
+  // Level 11 · The Tabernacle and the Holy Life (the RSV's pronunciation marks in names left out; the
+  // Douay-Rheims numbers the end of Exodus 40 two lower, and its "marrow" in Leviticus 23:16 is read "morrow").
+  'EXO 25:2': {
+    rsv: '“Speak to the people of Israel, that they take for me an offering; from every man whose heart makes him willing you shall receive the offering for me.',
+    dra: 'Speak to the children of Israel, that they bring firstfruits to me: of every man that offereth of his own accord, you shall take them.',
+  },
+  'EXO 25:8': {
+    rsv: 'And let them make me a sanctuary, that I may dwell in their midst.',
+    dra: 'And they shall make me a sanctuary, and I will dwell in the midst of them:',
+  },
+  'EXO 25:9': {
+    rsv: 'According to all that I show you concerning the pattern of the tabernacle, and of all its furniture, so you shall make it.',
+    dra: 'According to all the likeness of the tabernacle which I will shew thee, and of all the vessels for the service thereof: and thus you shall make it:',
+  },
+  'EXO 25:10': {
+    rsv: '“They shall make an ark of acacia wood; two cubits and a half shall be its length, a cubit and a half its breadth, and a cubit and a half its height.',
+    dra: 'Frame an ark of setim wood, the length whereof shall be of two cubits and a half: the breadth, a cubit and a half: the height, likewise, a cubit and a half.',
+  },
+  'EXO 25:20': {
+    rsv: 'The cherubim shall spread out their wings above, overshadowing the mercy seat with their wings, their faces one to another; toward the mercy seat shall the faces of the cherubim be.',
+    dra: 'Let them cover both sides of the propitiatory, spreading their wings, and covering the oracle, and let them look one towards the other, their faces being turned towards the propitiatory wherewith the ark is to be covered.',
+  },
+  'EXO 25:21': {
+    rsv: 'And you shall put the mercy seat on the top of the ark; and in the ark you shall put the testimony that I shall give you.',
+    dra: 'In which thou shalt put the testimony that I will give thee.',
+  },
+  'EXO 25:22': {
+    rsv: 'There I will meet with you, and from above the mercy seat, from between the two cherubim that are upon the ark of the testimony, I will speak with you of all that I will give you in commandment for the people of Israel.',
+    dra: 'Thence will I give orders, and will speak to thee over the propitiatory, and from the midst of the two cherubims, which shall be upon the ark of the testimony, all things which I will command the children of Israel by thee.',
+  },
+  'EXO 25:30': {
+    rsv: 'And you shall set the bread of the Presence on the table before me always.',
+    dra: 'And thou shalt set upon the table loaves of proposition in my sight always.',
+  },
+  'EXO 25:37': {
+    rsv: 'And you shall make the seven lamps for it; and the lamps shall be set up so as to give light upon the space in front of it.',
+    dra: 'Thou shalt make also seven lamps, and shalt set them upon the candlestick, to give light over against.',
+  },
+  'EXO 27:20': {
+    rsv: '“And you shall command the people of Israel that they bring to you pure beaten olive oil for the light, that a lamp may be set up to burn continually.',
+    dra: 'Command the children of Israel that they bring thee the purest oil of the olives, and beaten with a pestle: that a lamp may burn always,',
+  },
+  'EXO 28:1': {
+    rsv: '“Then bring near to you Aaron your brother, and his sons with him, from among the people of Israel, to serve me as priests—Aaron and Aaron’s sons, Nadab and Abihu, Eleazar and Ithamar.',
+    dra: 'Take unto thee also Aaron thy brother with his sons, from among the children of Israel, that they may minister to me in the priest’s office: Aaron, Nadab, and Abiu, Eleazar, and Ithamar.',
+  },
+  'EXO 28:2': {
+    rsv: 'And you shall make holy garments for Aaron your brother, for glory and for beauty.',
+    dra: 'And thou shalt make a holy vesture for Aaron thy brother for glory and for beauty.',
+  },
+  'EXO 28:29': {
+    rsv: 'So Aaron shall bear the names of the sons of Israel in the breastpiece of judgment upon his heart, when he goes into the holy place, to bring them to continual remembrance before the LORD.',
+    dra: 'And Aaron shall bear the names of the children of Israel in the rational of judgement upon his breast, when he shall enter into the sanctuary, a memorial before the Lord for ever.',
+  },
+  'EXO 28:36': {
+    rsv: '“And you shall make a plate of pure gold, and engrave on it, like the engraving of a signet, ‘Holy to the LORD.’',
+    dra: 'Thou shalt make also a plate of the purest gold: wherein thou shalt grave with engraver’s work, Holy to the Lord.',
+  },
+  'EXO 31:2': {
+    rsv: '“See, I have called by name Bezalel the son of Uri, son of Hur, of the tribe of Judah:',
+    dra: 'Behold, I have called by name Beseleel the son of Uri the son of Hur of the tribe of Juda,',
+  },
+  'EXO 31:3': {
+    rsv: 'and I have filled him with the Spirit of God, with ability and intelligence, with knowledge and all craftsmanship,',
+    dra: 'And I have filled him with the spirit of God, with wisdom and understanding, and knowledge in all manner of work.',
+  },
+  'EXO 35:21': {
+    rsv: 'And they came, every one whose heart stirred him, and every one whose spirit moved him, and brought the LORD’s offering to be used for the tent of meeting, and for all its service, and for the holy garments.',
+    dra: 'Offered firstfruits to the Lord with a most ready and devout mind, to make the work of the tabernacle of the testimony. Whatsoever was necessary to the service, and to the holy vestments,',
+  },
+  'EXO 35:22': {
+    rsv: 'So they came, both men and women; all who were of a willing heart brought brooches and earrings and signet rings and armlets, all sorts of gold objects, every man dedicating an offering of gold to the LORD.',
+    dra: 'Both men and women gave bracelets and earrings, rings and tablets: every vessel of gold was set aside to be offered to the Lord.',
+  },
+  'EXO 36:5': {
+    rsv: 'and said to Moses, “The people bring much more than enough for doing the work which the LORD has commanded us to do.”',
+    dra: 'Said to Moses: The people offereth more than is necessary.',
+  },
+  'EXO 36:6': {
+    rsv: 'So Moses gave command, and word was proclaimed throughout the camp, “Let neither man nor woman do anything more for the offering for the sanctuary.” So the people were restrained from bringing;',
+    dra: 'Moses therefore commanded proclamation to be made by the crier’s voice: Let neither man nor woman offer any more for the work of the sanctuary. And so they ceased from offering gifts,',
+  },
+  'EXO 36:7': {
+    rsv: 'for the stuff they had was sufficient to do all the work, and more.',
+    dra: 'Because the things that were offered did suffice, and were too much.',
+  },
+  'EXO 39:42': {
+    rsv: 'According to all that the LORD had commanded Moses, so the people of Israel had done all the work.',
+    dra: 'The children of Israel offered as the Lord had commanded.',
+  },
+  'EXO 39:43': {
+    rsv: 'And Moses saw all the work, and behold, they had done it; as the LORD had commanded, so had they done it. And Moses blessed them.',
+    dra: 'And when Moses saw all things finished, he blessed them.',
+  },
+  'EXO 40:2': {
+    rsv: '“On the first day of the first month you shall erect the tabernacle of the tent of meeting.',
+    dra: 'The first month, the first day of the month, thou shalt set up the tabernacle of the testimony,',
+  },
+  'EXO 40:17': {
+    rsv: 'And in the first month in the second year, on the first day of the month, the tabernacle was erected.',
+    dra: 'So in the first month of the second year, the first day of the month, the tabernacle was set up.',
+  },
+  'EXO 40:33': {
+    rsv: 'And he erected the court round the tabernacle and the altar, and set up the screen of the gate of the court. So Moses finished the work.',
+    dra: 'He set up also the court round about the tabernacle and the altar, drawing the hanging in the entry thereof. After all things were perfected,',
+  },
+  'EXO 40:34': {
+    rsv: 'Then the cloud covered the tent of meeting, and the glory of the LORD filled the tabernacle.',
+    dra: 'The cloud covered the tabernacle of the testimony, and the glory of the Lord filled it.',
+  },
+  'EXO 40:35': {
+    rsv: 'And Moses was not able to enter the tent of meeting, because the cloud abode upon it, and the glory of the LORD filled the tabernacle.',
+    dra: 'Neither could Moses go into the tabernacle of the covenant, the cloud covering all things and the majesty of the Lord shining, for the cloud had covered all.',
+  },
+  'EXO 40:36': {
+    rsv: 'Throughout all their journeys, whenever the cloud was taken up from over the tabernacle, the people of Israel would go onward;',
+    dra: 'If at any time the cloud removed from the tabernacle, the children of Israel went forward by their troops:',
+  },
+  'EXO 40:38': {
+    rsv: 'For throughout all their journeys the cloud of the LORD was upon the tabernacle by day, and fire was in it by night, in the sight of all the house of Israel.',
+    dra: 'For the cloud of the Lord hung over the tabernacle by day, and a fire by night, in the sight of all the children of Israel throughout all their mansions.',
+  },
+  'LEV 1:1': {
+    rsv: 'The LORD called Moses, and spoke to him from the tent of meeting, saying,',
+    dra: 'And the Lord called Moses, and spoke to him from the tabernacle of the testimony, saying:',
+  },
+  'LEV 1:2': {
+    rsv: '“Speak to the people of Israel, and say to them, When any man of you brings an offering to the LORD, you shall bring your offering of cattle from the herd or from the flock.',
+    dra: 'Speak to the children of Israel, and thou shalt say to them: The man among you that shall offer to the Lord a sacrifice of the cattle, that is, offering victims of oxen and sheep,',
+  },
+  'LEV 1:4': {
+    rsv: 'he shall lay his hand upon the head of the burnt offering, and it shall be accepted for him to make atonement for him.',
+    dra: 'And he shall put his hand upon the head of the victim, and it shall be acceptable, and help to its expiation.',
+  },
+  'LEV 2:1': {
+    rsv: '“When any one brings a cereal offering as an offering to the LORD, his offering shall be of fine flour; he shall pour oil upon it, and put frankincense on it,',
+    dra: 'When any one shall offer an oblation of sacrifice to the Lord, his offering shall be of fine flour, and he shall pour oil upon it, and put frankincense,',
+  },
+  'LEV 2:2': {
+    rsv: 'and bring it to Aaron’s sons the priests. And he shall take from it a handful of the fine flour and oil, with all of its frankincense; and the priest shall burn this as its memorial portion upon the altar, an offering by fire, a pleasing odor to the LORD.',
+    dra: 'And shall bring it to the sons of Aaron the priests: and one of them shall take a handful of the flour and oil, and all the frankincense, and shall put it a memorial upon the altar for a most sweet savour to the Lord.',
+  },
+  'LEV 6:12': {
+    rsv: 'The fire on the altar shall be kept burning on it, it shall not go out; the priest shall burn wood on it every morning, and he shall lay the burnt offering in order upon it, and shall burn on it the fat of the peace offerings.',
+    dra: 'And the fire on the altar shall always burn, and the priest shall feed it, putting wood on it every day in the morning, and laying on the holocaust, shall burn thereupon the fat of the peace offerings.',
+  },
+  'LEV 6:13': {
+    rsv: 'Fire shall be kept burning upon the altar continually; it shall not go out.',
+    dra: 'This is the perpetual fire which shall never go out on the altar.',
+  },
+  'LEV 8:4': {
+    rsv: 'And Moses did as the LORD commanded him; and the congregation was assembled at the door of the tent of meeting.',
+    dra: 'And Moses did as the Lord had commanded. And all the multitude being gathered together before the door of the tabernacle,',
+  },
+  'LEV 8:6': {
+    rsv: 'And Moses brought Aaron and his sons, and washed them with water.',
+    dra: 'And immediately he offered Aaron and his sons: and when he had washed them,',
+  },
+  'LEV 8:12': {
+    rsv: 'And he poured some of the anointing oil on Aaron’s head, and anointed him, to consecrate him.',
+    dra: 'And he poured it upon Aaron’s head, and he anointed and consecrated him:',
+  },
+  'LEV 9:22': {
+    rsv: 'Then Aaron lifted up his hands toward the people and blessed them; and he came down from offering the sin offering and the burnt offering and the peace offerings.',
+    dra: 'And stretching forth his hands to the people, he blessed them. And so the victims for sin, and the holocausts, and the peace offerings being finished, he came down.',
+  },
+  'LEV 9:23': {
+    rsv: 'And Moses and Aaron went into the tent of meeting; and when they came out they blessed the people, and the glory of the LORD appeared to all the people.',
+    dra: 'And Moses and Aaron went into the tabernacle of the testimony, and afterwards came forth and blessed the people. And the glory of the Lord appeared to all the multitude:',
+  },
+  'LEV 9:24': {
+    rsv: 'And fire came forth from before the LORD and consumed the burnt offering and the fat upon the altar; and when all the people saw it, they shouted, and fell on their faces.',
+    dra: 'And behold a fire, coming forth from the Lord, devoured the holocaust, and the fat that was upon the altar: which when the multitude saw, they praised the Lord, falling on their faces.',
+  },
+  'LEV 16:2': {
+    rsv: 'and the LORD said to Moses, “Tell Aaron your brother not to come at all times into the holy place within the veil, before the mercy seat which is upon the ark, lest he die; for I will appear in the cloud upon the mercy seat.',
+    dra: 'And he commanded him, saying, Speak to Aaron thy brother, that he enter not at all into the sanctuary, which is within the veil before the propitiatory, with which the ark is covered, lest he die, (for I will appear in a cloud over the oracle,)',
+  },
+  'LEV 16:4': {
+    rsv: 'He shall put on the holy linen coat, and shall have the linen breeches on his body, be girded with the linen girdle, and wear the linen turban; these are the holy garments. He shall bathe his body in water, and then put them on.',
+    dra: 'He shall be vested with a linen tunick, he shall cover his nakedness with linen breeches: he shall be girded with a linen girdle, and he shall put a linen mitre upon his head: for these are holy vestments: all which he shall put on, after he is washed.',
+  },
+  'LEV 16:8': {
+    rsv: 'and Aaron shall cast lots upon the two goats, one lot for the LORD and the other lot for Azazel.',
+    dra: 'And casting lots upon them both, one to be offered to the Lord, and the other to be the emissary goat:',
+  },
+  'LEV 16:12': {
+    rsv: 'And he shall take a censer full of coals of fire from the altar before the LORD, and two handfuls of sweet incense beaten small; and he shall bring it within the veil',
+    dra: 'And taking the censer, which he hath filled with the burning coals of the altar, and taking up with his hand the compounded perfume for incense, he shall go in within the veil into the holy place:',
+  },
+  'LEV 16:13': {
+    rsv: 'and put the incense on the fire before the LORD, that the cloud of the incense may cover the mercy seat which is upon the testimony, lest he die;',
+    dra: 'That when the perfumes are put upon the fire, the cloud and vapour thereof may cover the oracle, which is over the testimony, and he may not die.',
+  },
+  'LEV 16:15': {
+    rsv: '“Then he shall kill the goat of the sin offering which is for the people, and bring its blood within the veil, and do with its blood as he did with the blood of the bull, sprinkling it upon the mercy seat and before the mercy seat;',
+    dra: 'And when he hath killed the buck goat for the sin of the people, he shall carry in the blood thereof within the veil, as he was commanded to do with the blood of the calf, that he may sprinkle it over against the oracle,',
+  },
+  'LEV 16:16': {
+    rsv: 'thus he shall make atonement for the holy place, because of the uncleannesses of the people of Israel, and because of their transgressions, all their sins; and so he shall do for the tent of meeting, which abides with them in the midst of their uncleannesses.',
+    dra: 'And may expiate the sanctuary from the uncleanness of the children of Israel, and from their transgressions, and all their sins. According to this rite shall he do to the tabernacle of the testimony, which is fixed among them in the midst of the filth of their habitation.',
+  },
+  'LEV 16:21': {
+    rsv: 'and Aaron shall lay both his hands upon the head of the live goat, and confess over him all the iniquities of the people of Israel, and all their transgressions, all their sins; and he shall put them upon the head of the goat, and send him away into the wilderness by the hand of a man who is in readiness.',
+    dra: 'And putting both hands upon his head, let him confess all the iniquities of the children of Israel, and all their offences and sins: and praying that they may light on his head, he shall turn him out by a man ready for it, into the desert.',
+  },
+  'LEV 16:22': {
+    rsv: 'The goat shall bear all their iniquities upon him to a solitary land; and he shall let the goat go in the wilderness.',
+    dra: 'And when the goat hath carried all their iniquities into an uninhabited land, and shall be let go into the desert,',
+  },
+  'LEV 16:30': {
+    rsv: 'for on this day shall atonement be made for you, to cleanse you; from all your sins you shall be clean before the LORD.',
+    dra: 'Upon this day shall be the expiation for you, and the cleansing from all your sins: you shall be cleansed before the Lord.',
+  },
+  'LEV 16:34': {
+    rsv: 'And this shall be an everlasting statute for you, that atonement may be made for the people of Israel once in the year because of all their sins.” And Moses did as the LORD commanded him.',
+    dra: 'And this shall be an ordinance for ever, that you pray for the children of Israel, and for all their sins once in a year. He did therefore as the Lord had commanded Moses.',
+  },
+  'LEV 19:2': {
+    rsv: '“Say to all the congregation of the people of Israel, You shall be holy; for I the LORD your God am holy.',
+    dra: 'Speak to all the congregation of the children of Israel, and thou shalt say to them: Be ye holy, because I the Lord your God am holy.',
+  },
+  'LEV 19:3': {
+    rsv: 'Every one of you shall revere his mother and his father, and you shall keep my sabbaths: I am the LORD your God.',
+    dra: 'Let every one fear his father, and his mother. Keep my sabbaths. I am the Lord your God.',
+  },
+  'LEV 19:9': {
+    rsv: '“When you reap the harvest of your land, you shall not reap your field to its very border, neither shall you gather the gleanings after your harvest.',
+    dra: 'When thou reapest the corn of thy land, thou shalt not cut down all that is on the face of the earth to the very ground: nor shalt thou gather the ears that remain.',
+  },
+  'LEV 19:10': {
+    rsv: 'And you shall not strip your vineyard bare, neither shall you gather the fallen grapes of your vineyard; you shall leave them for the poor and for the sojourner: I am the LORD your God.',
+    dra: 'Neither shalt thou gather the bunches and grapes that fall down in thy vineyard, but shalt leave them to the poor and the strangers to take. I am the Lord your God.',
+  },
+  'LEV 19:14': {
+    rsv: 'You shall not curse the deaf or put a stumbling block before the blind, but you shall fear your God: I am the LORD.',
+    dra: 'Thou shalt not speak evil of the deaf, nor put a stumblingblock before the blind: but thou shalt fear the Lord thy God, because I am the Lord.',
+  },
+  'LEV 19:18': {
+    rsv: 'You shall not take vengeance or bear any grudge against the sons of your own people, but you shall love your neighbor as yourself: I am the LORD.',
+    dra: 'Seek not revenge, nor be mindful of the injury of thy citizens. Thou shalt love thy friend as thyself. I am the Lord.',
+  },
+  'LEV 19:32': {
+    rsv: '“You shall rise up before the hoary head, and honor the face of an old man, and you shall fear your God: I am the LORD.',
+    dra: 'Rise up before the hoary head, and honour the person of the aged man: and fear the Lord thy God. I am the Lord.',
+  },
+  'LEV 19:34': {
+    rsv: 'The stranger who sojourns with you shall be to you as the native among you, and you shall love him as yourself; for you were strangers in the land of Egypt: I am the LORD your God.',
+    dra: 'But let him be among you as one of the same country: and you shall love him as yourselves: for you were strangers in the land of Egypt. I am the Lord your God.',
+  },
+  'LEV 23:2': {
+    rsv: '“Say to the people of Israel, The appointed feasts of the LORD which you shall proclaim as holy convocations, my appointed feasts, are these.',
+    dra: 'Speak to the children of Israel, and thou shalt say to them: These are the feasts of the Lord, which you shall call holy.',
+  },
+  'LEV 23:3': {
+    rsv: 'Six days shall work be done; but on the seventh day is a sabbath of solemn rest, a holy convocation; you shall do no work; it is a sabbath to the LORD in all your dwellings.',
+    dra: 'Six days shall ye do work: the seventh day, because it is the rest of the sabbath, shall be called holy. You shall do no work on that day: it is the sabbath of the Lord in all your habitations.',
+  },
+  'LEV 23:5': {
+    rsv: 'In the first month, on the fourteenth day of the month in the evening, is the LORD’s passover.',
+    dra: 'The first month, the fourteenth day of the month at evening, is the phase of the Lord:',
+  },
+  'LEV 23:6': {
+    rsv: 'And on the fifteenth day of the same month is the feast of unleavened bread to the LORD; seven days you shall eat unleavened bread.',
+    dra: 'And the fifteenth day of the same month is the solemnity of the unleavened bread of the Lord. Seven days shall you eat unleavened bread.',
+  },
+  'LEV 23:10': {
+    rsv: '“Say to the people of Israel, When you come into the land which I give you and reap its harvest, you shall bring the sheaf of the first fruits of your harvest to the priest;',
+    dra: 'Speak to the children of Israel, and thou shalt say to them: When you shall have entered into the land which I will give you, and shall reap your corn, you shall bring sheaves of ears, the firstfruits of your harvest to the priest:',
+  },
+  'LEV 23:11': {
+    rsv: 'and he shall wave the sheaf before the LORD, that you may find acceptance; on the morrow after the sabbath the priest shall wave it.',
+    dra: 'Who shall lift up the shed before the Lord, the next day after the sabbath, that it may be acceptable for you, and shall sanctify it.',
+  },
+  'LEV 23:15': {
+    rsv: '“And you shall count from the morrow after the sabbath, from the day that you brought the sheaf of the wave offering; seven full weeks shall they be,',
+    dra: 'You shall count therefore from the morrow after the sabbath, wherein you offered the sheaf of the firstfruits, seven full weeks.',
+  },
+  'LEV 23:16': {
+    rsv: 'counting fifty days to the morrow after the seventh sabbath; then you shall present a cereal offering of new grain to the LORD.',
+    dra: 'Even unto the morrow after the seventh week be expired, that is to say, fifty days, and so you shall offer a new sacrifice to the Lord.',
+  },
+  'LEV 23:40': {
+    rsv: 'And you shall take on the first day the fruit of goodly trees, branches of palm trees, and boughs of leafy trees, and willows of the brook; and you shall rejoice before the LORD your God seven days.',
+    dra: 'And you shall take to you on the first day the fruits of the fairest tree, and branches of palm trees, and boughs of thick trees, and willows of the brook, and you shall rejoice before the Lord your God.',
+  },
+  'LEV 23:42': {
+    rsv: 'You shall dwell in booths for seven days; all that are native in Israel shall dwell in booths,',
+    dra: 'And you shall dwell in bowers seven days: every one that is of the race of Israel, shall dwell in tabernacles:',
+  },
+  'LEV 23:43': {
+    rsv: 'that your generations may know that I made the people of Israel dwell in booths when I brought them out of the land of Egypt: I am the LORD your God.”',
+    dra: 'That your posterity may know, that I made the children of Israel to dwell in tabernacles, when I brought them out of the land of Egypt. I am the Lord your God.',
+  },
+  'MRK 15:37': {
+    rsv: 'And Jesus uttered a loud cry, and breathed his last.',
+    dra: 'And Jesus having cried out with a loud voice, gave up the ghost.',
+  },
+  'MRK 15:38': {
+    rsv: 'And the curtain of the temple was torn in two, from top to bottom.',
+    dra: 'And the veil of the temple was rent in two, from the top to the bottom.',
+  },
+  'LUK 1:35': {
+    rsv: 'And the angel said to her, “The Holy Spirit will come upon you, and the power of the Most High will overshadow you; therefore the child to be born will be called holy, the Son of God.',
+    dra: 'And the angel answering, said to her: The Holy Ghost shall come upon thee, and the power of the most High shall overshadow thee. And therefore also the Holy which shall be born of thee shall be called the Son of God.',
+  },
+  'LUK 10:29': {
+    rsv: 'But he, desiring to justify himself, said to Jesus, “And who is my neighbor?”',
+    dra: 'But he willing to justify himself, said to Jesus: And who is my neighbour?',
+  },
+  'LUK 10:36': {
+    rsv: 'Which of these three, do you think, proved neighbor to the man who fell among the robbers?”',
+    dra: 'Which of these three, in thy opinion, was neighbour to him that fell among the robbers?',
+  },
+  'LUK 10:37': {
+    rsv: 'He said, “The one who showed mercy on him.” And Jesus said to him, “Go and do likewise.”',
+    dra: 'But he said: He that shewed mercy to him. And Jesus said to him: Go, and do thou in like manner.',
+  },
+  'JHN 2:19': {
+    rsv: 'Jesus answered them, “Destroy this temple, and in three days I will raise it up.”',
+    dra: 'Jesus answered, and said to them: Destroy this temple, and in three days I will raise it up.',
+  },
+  'JHN 2:21': {
+    rsv: 'But he spoke of the temple of his body.',
+    dra: 'But he spoke of the temple of his body.',
+  },
+  'ACT 2:1': {
+    rsv: 'When the day of Pentecost had come, they were all together in one place.',
+    dra: 'And when the days of the Pentecost were accomplished, they were all together in one place:',
+  },
+  '1CO 3:16': {
+    rsv: 'Do you not know that you are God’s temple and that God’s Spirit dwells in you?',
+    dra: 'Know you not, that you are the temple of God, and that the Spirit of God dwelleth in you?',
+  },
+  '1CO 15:20': {
+    rsv: 'But in fact Christ has been raised from the dead, the first fruits of those who have fallen asleep.',
+    dra: 'But now Christ is risen from the dead, the firstfruits of them that sleep:',
+  },
+  'EPH 5:2': {
+    rsv: 'And walk in love, as Christ loved us and gave himself up for us, a fragrant offering and sacrifice to God.',
+    dra: 'And walk in love, as Christ also hath loved us, and hath delivered himself for us, an oblation and a sacrifice to God for an odour of sweetness.',
+  },
+  'HEB 4:14': {
+    rsv: 'Since then we have a great high priest who has passed through the heavens, Jesus, the Son of God, let us hold fast our confession.',
+    dra: 'Having therefore a great high priest that hath passed into the heavens, Jesus the Son of God: let us hold fast our confession.',
+  },
+  'HEB 4:15': {
+    rsv: 'For we have not a high priest who is unable to sympathize with our weaknesses, but one who in every respect has been tempted as we are, yet without sinning.',
+    dra: 'For we have not a high priest, who can not have compassion on our infirmities: but one tempted in all things like as we are, without sin.',
+  },
+  'HEB 9:11': {
+    rsv: 'But when Christ appeared as a high priest of the good things that have come, then through the greater and more perfect tent (not made with hands, that is, not of this creation)',
+    dra: 'But Christ, being come an high priest of the good things to come, by a greater and more perfect tabernacle not made with hand, that is, not of this creation:',
+  },
+  'HEB 9:12': {
+    rsv: 'he entered once for all into the Holy Place, taking not the blood of goats and calves but his own blood, thus securing an eternal redemption.',
+    dra: 'Neither by the blood of goats, or of calves, but by his own blood, entered once into the holies, having obtained eternal redemption.',
+  },
+  'HEB 10:10': {
+    rsv: 'And by that will we have been sanctified through the offering of the body of Jesus Christ once for all.',
+    dra: 'In the which will, we are sanctified by the oblation of the body of Jesus Christ once.',
+  },
+  'REV 11:19': {
+    rsv: 'Then God’s temple in heaven was opened, and the ark of his covenant was seen within his temple; and there were flashes of lightning, loud noises, peals of thunder, an earthquake, and heavy hail.',
+    dra: 'And the temple of God was opened in heaven: and the ark of his testament was seen in his temple, and there were lightnings, and voices, and an earthquake, and great hail.',
+  },
 }
 
 /** A verse's words in the active translation. Throws for a verse that isn't in the list (a content check catches these first). */

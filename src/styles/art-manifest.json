@@ -356,6 +356,12 @@
     },
     "glory-rock": {
       "hash": "735c36b6"
+    },
+    "holy-place": {
+      "hash": "5c3dc8b2"
+    },
+    "year-wheel": {
+      "hash": "3a9db19a"
     }
   },
   "paperProps": {
@@ -1129,6 +1135,54 @@
     },
     "moses-veiled": {
       "hash": "482c6a54"
+    },
+    "tabernacle-plan": {
+      "hash": "e5e0d2f5"
+    },
+    "gift": {
+      "hash": "47f2298d"
+    },
+    "bezalel": {
+      "hash": "5960504c"
+    },
+    "oholiab": {
+      "hash": "149ed256"
+    },
+    "tabernacle-piece": {
+      "hash": "7db0fe1c"
+    },
+    "aaron-linen": {
+      "hash": "48c7c49b"
+    },
+    "high-priest": {
+      "hash": "97183c27"
+    },
+    "priest": {
+      "hash": "f989ade5"
+    },
+    "vestment": {
+      "hash": "44907ea4"
+    },
+    "widow": {
+      "hash": "89b978b3"
+    },
+    "flame": {
+      "hash": "ebe07b7d"
+    },
+    "dark-stone": {
+      "hash": "ea2c95ae"
+    },
+    "feast-sign": {
+      "hash": "b50014ee"
+    },
+    "grain-row": {
+      "hash": "47e92e54"
+    },
+    "poor-man": {
+      "hash": "4eb7e901"
+    },
+    "sojourner": {
+      "hash": "db77ef4d"
     }
   },
   "pixelLayers": {
@@ -1488,6 +1542,12 @@
     },
     "glory-rock": {
       "hash": "35d67383"
+    },
+    "holy-place": {
+      "hash": "13b1120e"
+    },
+    "year-wheel": {
+      "hash": "41a3b172"
     }
   },
   "backdrop": {
