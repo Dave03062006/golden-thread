@@ -134,6 +134,12 @@ export const EMBLEMS: Record<string, { rows: string[]; colors: Record<string, st
   'bronze-serpent': { rows: ['..ooo....', '...wooo..', '....w..o.', '..oow....', '.o..w....', '..oow....', '....w....', '....w....', 'ggggwgggg'], colors: { o: C.orange, w: C.wood2, g: C.sand2 } },
   'balaams-donkey': { rows: ['y.......y', '.y.....y.', '..y...ss.', '..y..sss.', '..y...s..', 'ssssssss.', 'sssssss..', 's.s..s.s.', 'ggggggggg'], colors: { y: C.white, s: C.slate, g: C.sand2 } },
   'star-out-of-jacob': { rows: ['....w....', '....y....', '.wyyyyyw.', '...yyy...', '..yy.yy..', '.y.....y.', '....r....', '....r....', 'ggggrgggg'], colors: { w: C.white, y: C.gold, r: C.gold, g: C.navy } },
+  // Level 13 · Moses' Last Words
+  'remember-the-way': { rows: ['......ttt', '.....s...', '....s....', '...s.....', '..s......', '.s.......', 's........', 'p........', 'ggggggggg'], colors: { t: C.wood3, s: C.sand, p: C.rose, g: C.sand2 } },
+  'shema': { rows: ['.wwwwwww.', '.w.....w.', '.w.kkk.w.', '.w.....w.', '.w.kkk.w.', '.w.....w.', '.w.kk..w.', '.w.....w.', '.wwwwwww.'], colors: { w: C.wood2, k: C.gold } },
+  'hands-on-joshua': { rows: ['....y....', '...yyy...', '.hh...hh.', '..hhhhh..', '...jjj...', '..jjjjj..', '..jjjjj..', '..j...j..', 'ggggggggg'], colors: { y: C.gold, h: C.sand, j: C.wood3, g: C.sand2 } },
+  'two-roads': { rows: ['....ggggg', '....ggggg', '..c.ggggg', 'ss.c.gggg', '.ss.c..ll', '..ss.c.ll', 'dd..ssll.', 'dd.....s.', 'dddddddss'], colors: { g: C.green, c: C.sky, s: C.sand, l: C.lime, d: C.wood2 } },
+  'mount-nebo': { rows: ['yyyyyyyyy', '.........', '....w....', '...www...', '..wwwww..', '.wwwwwww.', 'wwwwwwwww', 'gbgbgbgbg', 'ggggggggg'], colors: { y: C.gold, w: C.wood2, g: C.green, b: C.blue } },
 }
 
 /** The pointed outline of a window, inside which the glass is: whether a pixel is in it. */

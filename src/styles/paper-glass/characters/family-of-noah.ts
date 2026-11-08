@@ -291,6 +291,8 @@ export const familyOfNoah: Record<string, PaperPropArt> = {
   eleazar: person({ robe: '#f4efe2', fold: '#d8d0c0', hair: '#2a1e1a', beard: '#2a1e1a', veil: '#ffffff', sash: '#3a5aa8' }),
   balaam: person({ robe: '#6a3a7a', fold: '#4c2a5a', hair: '#c8c4bc', beard: '#c8c4bc', veil: '#e0b040', sash: '#e0782a' }),
   balak: person({ robe: '#a83a3a', fold: '#7a2626', hair: '#1a1416', beard: '#1a1416', veil: '#f4d070', sash: '#e0b040' }),
+  // Level 13 · Moses' Last Words: Moses at a hundred and twenty, white-haired, "his eye not dim."
+  'moses-old': person({ robe: '#7a5a3a', fold: '#5a4026', hair: '#f4f0e6', beard: '#f4f0e6', sash: '#c8a050' }),
   amalekites: band([
     { robe: '#5a3a3a', fold: '#3e2626', hair: '#1a1210', beard: '#1a1210', veil: '#3a2a2a' },
     { robe: '#6a4a3a', fold: '#4c3226', hair: '#1a1210', beard: '#1a1210', veil: '#4a3a2a' },

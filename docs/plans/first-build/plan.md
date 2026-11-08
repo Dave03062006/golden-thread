@@ -613,6 +613,29 @@ The same way again: script, art, build, checks, play-test. Level 12 is the third
   - A glow (`halo`) that changes size redraws its pixel picture every frame. Episode 1's blessing first grew from 0.3 to 0.8 of the frame and put a pixel scene at 2.6% late frames; it now stays one size and only fades in.
   - A group of 24 bobbing quail cost too much in both styles; 12 without bobbing look the same and stay under budget.
 
+### Task 19: Level 13, *Moses' Last Words* (M19)
+
+The same way again: script, art, build, checks, play-test. Level 13 is the last level of Age IV, and completes its window bay.
+
+**Status (November 2026):** steps 1–4 are done; step 5 is Dave's.
+- **Script:** `docs/scripts/level-13-moses-last-words.md`, approved by Dave on 2026-11-08. It has 5 episodes and 14 scenes, 62 verses quoted word for word, and a 40-question quiz. The Douay-Rheims numbers these chapters as the RSV does. One change after approval: Episode 1's golden thread (the manna) glows from the first line of its scene, so there is time to see it before the play.
+- **Build:** all five episodes are built in both styles, each with a different kind of play from the spec's library:
+  - remember the way (courier routes: Moses' memory carried from Egypt to Moab, a picture at each stop);
+  - on the doorposts (memory: the words of the *Shema*);
+  - be strong and of good courage (a quiet play: Moses' hands rest on Joshua while the light passes, then the tribes come to follow him);
+  - choose life (matching each choice to its road);
+  - all the land (light and reveal: the land God shows Moses from Nebo).
+  The *Shema* reuses the ordering rules of Level 11, and the episodes reuse Level 11's stage helpers.
+- **New art:** two backdrops (the two roads; the view from Nebo) and Moses at a hundred and twenty, in both styles. Everything else is art the game already had.
+- **Cathedral and map:** five new medallions, completing the Age IV bay. The map marks Mount Nebo, a new place in `geography.ts`.
+- **Music:** no new recordings. The only free recording of "O God, Our Help in Ages Past" is CC BY-SA, and so is every recording of Bach's "St Anne" Fugue on the same tune, so Episode 5 uses "Abide with Me," as the script says.
+- **Checks:** all pass.
+  - The playthrough runs Level 13 from start to finish in both styles, through its quiz, reflection and window ceremony.
+  - `check`, `test` (3,163 tests), `a11y`, `keyboard` and `saves` pass.
+  - `perf` is within budget for every Level 13 scene in both styles. Episode 1's map scene first ran at 1.3% late frames in pixel, with 14 pieces of manna fading in as it opened; seven look the same and bring it to 0.8%.
+  - New `shots` baselines cover the Level 13 scenes and the screens Level 13 changes. Dave still needs to look them over.
+- **Two plays had the same flaw as Level 12's spies:** a player who keeps pressing could race past the words a play shows at each step. "Remember the way" now waits at each stop until its words have been shown; worth checking for in every new play that shows words between steps.
+
 ## Parallelization
 
 - **Code tasks run in order.** Each one builds on the last, and running them in order keeps the code consistent for the code tour.

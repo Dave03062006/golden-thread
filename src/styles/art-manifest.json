@@ -368,6 +368,12 @@
     },
     "balaam-road": {
       "hash": "81a9f614"
+    },
+    "two-roads": {
+      "hash": "a05e6d78"
+    },
+    "nebo-view": {
+      "hash": "7c672bbf"
     }
   },
   "paperProps": {
@@ -1219,6 +1225,9 @@
     },
     "balaam-riding": {
       "hash": "138a380a"
+    },
+    "moses-old": {
+      "hash": "9bb8941f"
     }
   },
   "pixelLayers": {
@@ -1590,6 +1599,12 @@
     },
     "balaam-road": {
       "hash": "ca33a7c6"
+    },
+    "two-roads": {
+      "hash": "500cc72d"
+    },
+    "nebo-view": {
+      "hash": "e960ac57"
     }
   },
   "backdrop": {

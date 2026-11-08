@@ -3,7 +3,7 @@
 **Bible:** Deuteronomy 1; 6; 8; 18; 30–31; 34
 **Age:** IV · The Covenant in the Desert
 **Length:** about 35 minutes (5 episodes, then the quiz, then reflection and prayer)
-**Status:** draft, waiting for Dave's approval.
+**Status:** approved by Dave on 2026-11-08 ("Approved, build it").
 
 ## How to read this script
 

@@ -770,6 +770,41 @@ export const EMBLEMS: Record<string, () => Piece[]> = {
     { d: P([[-1, 16], [-1, 2], [1, 2], [1, 16]]), color: '#e0b040' },
     { d: P([[-3, 4], [-2, -1], [0, 2], [2, -1], [3, 4]]), color: '#f4d070' },
   ],
+  // Level 13 · Moses' Last Words
+  // The road of the forty years, winding from Egypt to the tents on the plains of Moab.
+  'remember-the-way': () => [
+    { d: P([[-15, 14], [-13, 14], [12, -10], [10, -12]]), color: '#e0c48a' },
+    { d: circ(-14, 13, 2.4, 10), color: '#b8323a' },
+    { d: P([[8, -10], [12, -16], [16, -10]]), color: '#a8785a' },
+  ],
+  // The words of the Shema on a doorpost, with the little case of the mezuzah.
+  'shema': () => [
+    { d: P([[-10, -16], [10, -16], [10, 16], [-10, 16]]), color: '#8a5a32' },
+    ...[-10, -4, 2, 8].map((y) => ({ d: P([[-6, y], [4, y], [4, y + 2], [-6, y + 2]]), color: '#e0b040' })),
+    { d: P([[6, -12], [8, -12], [8, -4], [6, -4]]), color: '#d8d4cc' },
+  ],
+  // Moses' hands laid on Joshua's head, and the light passing between them.
+  'hands-on-joshua': () => [
+    { d: circ(0, -12, 3, 12), color: '#fff4c0' },
+    { d: P([[-10, -6], [-2, -4], [-2, -2], [-10, -4]]), color: '#d8b888' },
+    { d: P([[10, -6], [2, -4], [2, -2], [10, -4]]), color: '#d8b888' },
+    { d: circ(0, 0, 3.4, 12), color: '#c89a6a' },
+    { d: P([[-6, 16], [-4, 4], [4, 4], [6, 16]]), color: '#a8743a' },
+  ],
+  // The two roads: one down to the river and into the green land, one back into the dry hills.
+  'two-roads': () => [
+    { d: P([[2, -16], [16, -16], [16, 16], [6, 16]]), color: '#5a8a3a' },
+    { d: P([[0, -16], [3, -16], [5, 16], [2, 16]]), color: '#5ab8e8' },
+    { d: P([[-12, 16], [-8, 16], [12, 0], [10, -2]]), color: '#f0d8a8' },
+    { d: P([[-12, 14], [-16, 2], [-14, 1], [-10, 13]]), color: '#a8744a' },
+  ],
+  // Mount Nebo, and the promised land shining below it at sunset.
+  'mount-nebo': () => [
+    { d: P([[-16, -16], [16, -16], [16, -12], [-16, -12]]), color: '#ffe48a' },
+    { d: P([[-16, 8], [0, -8], [16, 8]]), color: '#8a5a32' },
+    { d: P([[-16, 8], [16, 8], [16, 16], [-16, 16]]), color: '#6a9a4a' },
+    { d: P([[-4, 10], [4, 10], [4, 14], [-4, 14]]), color: '#4a7ab8' },
+  ],
 }
 
 /** The medallions' backgrounds: deep blue, with one ruby for the darkest story. */

@@ -3976,6 +3976,255 @@ export const VERSES: Record<string, Verse> = {
     rsv: '“I Jesus have sent my angel to you with this testimony for the churches. I am the root and the offspring of David, the bright morning star.”',
     dra: 'I Jesus have sent my angel, to testify to you these things in the churches. I am the root and stock of David, the bright and morning star.',
   },
+  // Level 13 · Moses' Last Words (the Douay-Rheims numbers these chapters as the RSV does).
+  'DEU 1:1': {
+    rsv: 'These are the words that Moses spoke to all Israel beyond the Jordan in the wilderness, in the Arabah over against Suph, between Paran and Tophel, Laban, Hazeroth, and Dizahab.',
+    dra: 'These are the words, which Moses spoke to all Israel beyond the Jordan, in the plain wilderness, over against the Red Sea, between Pharan and Thophel and Laban and Haseroth, where there is very much gold:',
+  },
+  'DEU 1:3': {
+    rsv: 'And in the fortieth year, on the first day of the eleventh month, Moses spoke to the people of Israel according to all that the LORD had given him in commandment to them,',
+    dra: 'In the fortieth year, the eleventh month, the first day of the month, Moses spoke to the children of Israel all that the Lord had commanded him to say to them:',
+  },
+  'DEU 1:5': {
+    rsv: 'Beyond the Jordan, in the land of Moab, Moses undertook to explain this law, saying,',
+    dra: 'Beyond the Jordan in the land of Moab. And Moses began to expound the law, and to say:',
+  },
+  'DEU 6:3': {
+    rsv: 'Hear therefore, O Israel, and be careful to do them; that it may go well with you, and that you may multiply greatly, as the LORD, the God of your fathers, has promised you, in a land flowing with milk and honey.',
+    dra: 'Hear, O Israel, and observe to do the things which the Lord hath commanded thee, that it may be well with thee, and thou mayst be greatly multiplied, as the Lord the God of thy fathers hath promised thee a land flowing with milk and honey.',
+  },
+  'DEU 6:4': {
+    rsv: '“Hear, O Israel: The LORD our God is one LORD;',
+    dra: 'Hear, O Israel, the Lord our God is one Lord.',
+  },
+  'DEU 6:5': {
+    rsv: 'and you shall love the LORD your God with all your heart, and with all your soul, and with all your might.',
+    dra: 'Thou shalt love the Lord thy God with thy whole heart, and with thy whole soul, and with thy whole strength.',
+  },
+  'DEU 6:6': {
+    rsv: 'And these words which I command you this day shall be upon your heart;',
+    dra: 'And these words which I command thee this day, shall be in thy heart:',
+  },
+  'DEU 6:7': {
+    rsv: 'and you shall teach them diligently to your children, and shall talk of them when you sit in your house, and when you walk by the way, and when you lie down, and when you rise.',
+    dra: 'And thou shalt tell them to thy children, and thou shalt meditate upon them sitting in thy house, and walking on thy journey, sleeping and rising.',
+  },
+  'DEU 6:8': {
+    rsv: 'And you shall bind them as a sign upon your hand, and they shall be as frontlets between your eyes.',
+    dra: 'And thou shalt bind them as a sign on thy hand, and they shall be and shall move between thy eyes.',
+  },
+  'DEU 6:9': {
+    rsv: 'And you shall write them on the doorposts of your house and on your gates.',
+    dra: 'And thou shalt write them in the entry, and on the doors of thy house.',
+  },
+  'DEU 6:20': {
+    rsv: '“When your son asks you in time to come, ‘What is the meaning of the testimonies and the statutes and the ordinances which the LORD our God has commanded you?’',
+    dra: 'And when thy son shall ask thee to morrow, saying: What mean these testimonies, and ceremonies and judgments, which the Lord our God hath commanded us?',
+  },
+  'DEU 6:21': {
+    rsv: 'then you shall say to your son, ‘We were Pharaoh’s slaves in Egypt; and the LORD brought us out of Egypt with a mighty hand;',
+    dra: 'Thou shalt say to him: We were bondmen of Pharao in Egypt, and the Lord brought us out of Egypt with a strong hand.',
+  },
+  'DEU 6:23': {
+    rsv: 'and he brought us out from there, that he might bring us in and give us the land which he swore to give to our fathers.',
+    dra: 'And he brought us out from thence, that he might bring us in and give us the land, concerning which he swore to our fathers.',
+  },
+  'DEU 6:24': {
+    rsv: 'And the LORD commanded us to do all these statutes, to fear the LORD our God, for our good always, that he might preserve us alive, as at this day.',
+    dra: 'And the Lord commanded that we should do all these ordinances, and should fear the Lord our God, that it might be well with us all the days of our life, as it is at this day.',
+  },
+  'DEU 8:2': {
+    rsv: 'And you shall remember all the way which the LORD your God has led you these forty years in the wilderness, that he might humble you, testing you to know what was in your heart, whether you would keep his commandments, or not.',
+    dra: 'And thou shalt remember all the way through which the Lord thy God hath brought thee for forty years through the desert, to afflict thee and to prove thee, and that the things that were in thy heart might be made known, whether thou wouldst keep his commandments or no.',
+  },
+  'DEU 8:3': {
+    rsv: 'And he humbled you and let you hunger and fed you with manna, which you did not know, nor did your fathers know; that he might make you know that man does not live by bread alone, but that man lives by everything that proceeds out of the mouth of the LORD.',
+    dra: 'He afflicted thee with want, and gave thee manna for thy food, which neither thou nor thy fathers knew: to shew that not in bread alone doth man live, but in every word that proceedeth from the mouth of God.',
+  },
+  'DEU 8:4': {
+    rsv: 'Your clothing did not wear out upon you, and your foot did not swell, these forty years.',
+    dra: 'Thy raiment, with which thou wast covered, hath not decayed for age, and thy foot is not worn, lo this is the fortieth year,',
+  },
+  'DEU 8:7': {
+    rsv: 'For the LORD your God is bringing you into a good land, a land of brooks of water, of fountains and springs, flowing forth in valleys and hills,',
+    dra: 'For the Lord thy God will bring thee into a good land, of brooks and of waters, and of fountains: in the plains of which and the hills deep rivers break out:',
+  },
+  'DEU 8:8': {
+    rsv: 'a land of wheat and barley, of vines and fig trees and pomegranates, a land of olive trees and honey,',
+    dra: 'A land of wheat, and barley, and vineyards, wherein fig trees and pomegranates, and oliveyards grow: a land of oil and honey.',
+  },
+  'DEU 8:10': {
+    rsv: 'And you shall eat and be full, and you shall bless the LORD your God for the good land he has given you.',
+    dra: 'That when thou hast eaten, and art full, thou mayst bless the Lord thy God for the excellent land which he hath given thee.',
+  },
+  'DEU 8:11': {
+    rsv: '“Take heed lest you forget the LORD your God, by not keeping his commandments and his ordinances and his statutes, which I command you this day:',
+    dra: 'Take heed, and beware lest at any time thou forget the Lord thy God, and neglect his commandments and judgments and ceremonies, which I command thee this day:',
+  },
+  'DEU 8:17': {
+    rsv: 'Beware lest you say in your heart, ‘My power and the might of my hand have gotten me this wealth.’',
+    dra: 'Lest thou shouldst say in thy heart: My own might, and the strength of my own hand have achieved all these things for me.',
+  },
+  'DEU 8:18': {
+    rsv: 'You shall remember the LORD your God, for it is he who gives you power to get wealth; that he may confirm his covenant which he swore to your fathers, as at this day.',
+    dra: 'But remember the Lord thy God, that he hath given thee strength, that he might fulfill his covenant, concerning which he swore to thy fathers, as this present day sheweth.',
+  },
+  'DEU 18:15': {
+    rsv: '“The LORD your God will raise up for you a prophet like me from among you, from your brethren—him you shall heed—',
+    dra: 'The Lord thy God will raise up to thee a PROPHET of thy nation and of thy brethren like unto me: him thou shalt hear:',
+  },
+  'DEU 18:16': {
+    rsv: 'just as you desired of the LORD your God at Horeb on the day of the assembly, when you said, ‘Let me not hear again the voice of the LORD my God, or see this great fire any more, lest I die.’',
+    dra: 'As thou desiredst of the Lord thy God in Horeb, when the assembly was gathered together, and saidst: Let me not hear any more the voice of the Lord my God, neither let me see any more this exceeding great fire, lest I die.',
+  },
+  'DEU 18:18': {
+    rsv: 'I will raise up for them a prophet like you from among their brethren; and I will put my words in his mouth, and he shall speak to them all that I command him.',
+    dra: 'I will raise them up a prophet out of the midst of their brethren like to thee: and I will put my words in his mouth, and he shall speak to them all that I shall command him.',
+  },
+  'DEU 30:11': {
+    rsv: '“For this commandment which I command you this day is not too hard for you, neither is it far off.',
+    dra: 'This commandment, that I command thee this day is not above thee, nor far off from thee:',
+  },
+  'DEU 30:12': {
+    rsv: 'It is not in heaven, that you should say, ‘Who will go up for us to heaven, and bring it to us, that we may hear it and do it?’',
+    dra: 'Nor is it in heaven, that thou shouldst say: Which of us can go up to heaven to bring it unto us, and we may hear and fulfill it in work?',
+  },
+  'DEU 30:13': {
+    rsv: 'Neither is it beyond the sea, that you should say, ‘Who will go over the sea for us, and bring it to us, that we may hear it and do it?’',
+    dra: 'Nor is it beyond the sea: that thou mayst excuse thyself, and say: Which of us can cross the sea, and bring it unto us: that we may hear, and do that which is commanded?',
+  },
+  'DEU 30:14': {
+    rsv: 'But the word is very near you; it is in your mouth and in your heart, so that you can do it.',
+    dra: 'But the word is very nigh unto thee, in thy mouth and in thy heart, that thou mayst do it.',
+  },
+  'DEU 30:15': {
+    rsv: '“See, I have set before you this day life and good, death and evil.',
+    dra: 'Consider that I have set before thee this day life and good, and on the other hand death and evil:',
+  },
+  'DEU 30:16': {
+    rsv: 'If you obey the commandments of the LORD your God which I command you this day, by loving the LORD your God, by walking in his ways, and by keeping his commandments and his statutes and his ordinances, then you shall live and multiply, and the LORD your God will bless you in the land which you are entering to take possession of it.',
+    dra: 'That thou mayst love the Lord thy God, and walk in his ways, and keep his commandments and ceremonies and judgments, and thou mayst live, and he may multiply thee, and bless thee in the land, which thou shalt go in to possess.',
+  },
+  'DEU 30:19': {
+    rsv: 'I call heaven and earth to witness against you this day, that I have set before you life and death, blessing and curse; therefore choose life, that you and your descendants may live,',
+    dra: 'I call heaven and earth to witness this day, that I have set before you life and death, blessing and cursing. Choose therefore life, that both thou and thy seed may live:',
+  },
+  'DEU 30:20': {
+    rsv: 'loving the LORD your God, obeying his voice, and cleaving to him; for that means life to you and length of days, that you may dwell in the land which the LORD swore to your fathers, to Abraham, to Isaac, and to Jacob, to give them.”',
+    dra: 'And that thou mayst love the Lord thy God, and obey his voice, and adhere to him (for he is thy life, and the length of thy days,) that thou mayst dwell in the land, for which the Lord swore to thy fathers Abraham, Isaac, and Jacob that he would give it them.',
+  },
+  'DEU 31:2': {
+    rsv: 'And he said to them, “I am a hundred and twenty years old this day; I am no longer able to go out and come in. The LORD has said to me, ‘You shall not go over this Jordan.’',
+    dra: 'And he said to them: I am this day a hundred and twenty years old, I can no longer go out and come in, especially as the Lord also hath said to me: O Thou shalt not pass over this Jordan.',
+  },
+  'DEU 31:6': {
+    rsv: 'Be strong and of good courage, do not fear or be in dread of them: for it is the LORD your God who goes with you; he will not fail you or forsake you.”',
+    dra: 'Do manfully and be of good heart: fear not, nor be ye dismayed at their sight: for the Lord thy God he himself is thy leader, and will not leave thee nor forsake thee.',
+  },
+  'DEU 31:7': {
+    rsv: 'Then Moses summoned Joshua, and said to him in the sight of all Israel, “Be strong and of good courage; for you shall go with this people into the land which the LORD has sworn to their fathers to give them; and you shall put them in possession of it.',
+    dra: 'And Moses called Josue, and said to him before all Israel: Take courage, and be valiant: for thou shalt bring this people into the land which the Lord swore he would give to their fathers, and thou shalt divide it by lot.',
+  },
+  'DEU 31:8': {
+    rsv: 'It is the LORD who goes before you; he will be with you, he will not fail you or forsake you; do not fear or be dismayed.”',
+    dra: 'And the Lord who is your leader, he himself will be with thee: he will not leave thee, nor forsake thee: fear not, neither be dismayed.',
+  },
+  'DEU 31:23': {
+    rsv: 'And the LORD commissioned Joshua the son of Nun and said, “Be strong and of good courage; for you shall bring the children of Israel into the land which I swore to give them: I will be with you.”',
+    dra: 'And the Lord commanded Josue the son of Nun, and said: Take courage, and be valiant: for thou shalt bring the children of Israel into the land which I have promised, and I will be with thee.',
+  },
+  'DEU 31:24': {
+    rsv: 'When Moses had finished writing the words of this law in a book, to the very end,',
+    dra: 'Therefore after Moses had wrote the words of this law in a volume, and finished it:',
+  },
+  'DEU 34:1': {
+    rsv: 'And Moses went up from the plains of Moab to Mount Nebo, to the top of Pisgah, which is opposite Jericho. And the LORD showed him all the land, Gilead as far as Dan,',
+    dra: 'Then Moses went up from the plains of Moab upon mount Nebo, to the top of Phasga over against Jericho: and the Lord shewed him all the land of Galaad as far as Dan.',
+  },
+  'DEU 34:2': {
+    rsv: 'all Naphtali, the land of Ephraim and Manasseh, all the land of Judah as far as the western sea,',
+    dra: 'And all Nephtali, and the land of Ephraim and Manasses, and all the land of Juda unto the furthermost sea,',
+  },
+  'DEU 34:3': {
+    rsv: 'the Negeb, and the Plain, that is, the valley of Jericho the city of palm trees, as far as Zoar.',
+    dra: 'And the south part, and the breadth of the plain of Jericho the city of palm trees as far as Segor.',
+  },
+  'DEU 34:4': {
+    rsv: 'And the LORD said to him, “This is the land of which I swore to Abraham, to Isaac, and to Jacob, ‘I will give it to your descendants.’ I have let you see it with your eyes, but you shall not go over there.”',
+    dra: 'And the Lord said to him: This is the land, for which I swore to Abraham, Isaac, and Jacob, saying: I will give it to thy seed. Thou hast seen it with thy eyes, and shalt not pass over to it.',
+  },
+  'DEU 34:5': {
+    rsv: 'So Moses the servant of the LORD died there in the land of Moab, according to the word of the LORD,',
+    dra: 'And Moses the servant of the Lord died there, in the land of Moab, by the commandment of the Lord:',
+  },
+  'DEU 34:6': {
+    rsv: 'and he buried him in the valley in the land of Moab opposite Beth-peor; but no man knows the place of his burial to this day.',
+    dra: 'And he buried him in the valley of the land of Moab over against Phogor: and no man hath known of his sepulchre until this present day.',
+  },
+  'DEU 34:7': {
+    rsv: 'Moses was a hundred and twenty years old when he died; his eye was not dim, nor his natural force abated.',
+    dra: 'Moses was a hundred and twenty years old when he died: his eye was not dim, neither were his teeth moved.',
+  },
+  'DEU 34:8': {
+    rsv: 'And the people of Israel wept for Moses in the plains of Moab thirty days; then the days of weeping and mourning for Moses were ended.',
+    dra: 'And the children of Israel mourned for him in the plains of Moab thirty days: and the days of their mourning in which they mourned for Moses were ended.',
+  },
+  'DEU 34:9': {
+    rsv: 'And Joshua the son of Nun was full of the spirit of wisdom, for Moses had laid his hands upon him; so the people of Israel obeyed him, and did as the LORD had commanded Moses.',
+    dra: 'And Josue the son of Nun was filled with the spirit of wisdom, because Moses had laid his hands upon him. And the children of Israel obeyed him, and did as the Lord commanded Moses.',
+  },
+  'DEU 34:10': {
+    rsv: 'And there has not arisen a prophet since in Israel like Moses, whom the LORD knew face to face,',
+    dra: 'And there arose no more a prophet in Israel like unto Moses, whom the Lord knew face to face,',
+  },
+  'DEU 34:11': {
+    rsv: 'none like him for all the signs and the wonders which the LORD sent him to do in the land of Egypt, to Pharaoh and to all his servants and to all his land,',
+    dra: 'In all the signs and wonders, which he sent by him, to do in the land of Egypt to Pharao, and to all his servants, and to his whole land,',
+  },
+  'MAT 17:1': {
+    rsv: 'And after six days Jesus took with him Peter and James and John his brother, and led them up a high mountain apart.',
+    dra: 'And after six days Jesus taketh unto him Peter and James, and John his brother, and bringeth them up into a high mountain apart:',
+  },
+  'MAT 17:3': {
+    rsv: 'And behold, there appeared to them Moses and Elijah, talking with him.',
+    dra: 'And behold there appeared to them Moses and Elias talking with him.',
+  },
+  'MAT 17:5': {
+    rsv: 'He was still speaking, when lo, a bright cloud overshadowed them, and a voice from the cloud said, “This is my beloved Son, with whom I am well pleased; listen to him.”',
+    dra: 'And as he was yet speaking, behold a bright cloud overshadowed them. And lo, a voice out of the cloud, saying: This is my beloved Son, in whom I am well pleased: hear ye him.',
+  },
+  'MRK 12:29': {
+    rsv: 'Jesus answered, “The first is, ‘Hear, O Israel: The Lord our God, the Lord is one;',
+    dra: 'And Jesus answered him: The first commandment of all is, Hear, O Israel: the Lord thy God is one God.',
+  },
+  'MRK 12:30': {
+    rsv: 'and you shall love the Lord your God with all your heart, and with all your soul, and with all your mind, and with all your strength.’',
+    dra: 'And thou shalt love the Lord thy God, with thy whole heart, and with thy whole soul, and with thy whole mind, and with thy whole strength. This is the first commandment.',
+  },
+  'LUK 4:1': {
+    rsv: 'And Jesus, full of the Holy Spirit, returned from the Jordan, and was led by the Spirit',
+    dra: 'And Jesus being full of the Holy Ghost, returned from the Jordan, and was led by the Spirit into the desert,',
+  },
+  'LUK 4:2': {
+    rsv: 'for forty days in the wilderness, tempted by the devil. And he ate nothing in those days; and when they were ended, he was hungry.',
+    dra: 'For the space of forty days; and was tempted by the devil. And he ate nothing in those days; and when they were ended, he was hungry.',
+  },
+  'LUK 4:4': {
+    rsv: 'And Jesus answered him, “It is written, ‘Man shall not live by bread alone.’”',
+    dra: 'And Jesus answered him: It is written, that Man liveth not by bread alone, but by every word of God.',
+  },
+  'JHN 10:10': {
+    rsv: 'The thief comes only to steal and kill and destroy; I came that they may have life, and have it abundantly.',
+    dra: 'The thief cometh not, but for to steal, and to kill, and to destroy. I am come that they may have life, and may have it more abundantly.',
+  },
+  'JHN 14:6': {
+    rsv: 'Jesus said to him, “I am the way, and the truth, and the life; no one comes to the Father, but by me.',
+    dra: 'Jesus saith to him: I am the way, and the truth, and the life. No man cometh to the Father, but by me.',
+  },
+  'ACT 3:22': {
+    rsv: 'Moses said, ‘The Lord God will raise up for you a prophet from your brethren as he raised me up. You shall listen to him in whatever he tells you.',
+    dra: 'For Moses said: A prophet shall the Lord your God raise up unto you of your brethren, like unto me: him you shall hear according to all things whatsoever he shall speak to you.',
+  },
 }
 
 /** A verse's words in the active translation. Throws for a verse that isn't in the list (a content check catches these first). */

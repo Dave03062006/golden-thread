@@ -172,6 +172,8 @@ export const PLACES: Place[] = [
   { id: 'kadesh', name: 'Kadesh', kind: 'city', at: { lat: 30.69, lon: 34.49 }, note: 'An oasis on the southern edge of Canaan, perhaps Ain el-Qudeirat, where the people camped for many years. The twelve spies set out from here.' },
   { id: 'mount-hor', name: 'Mount Hor', kind: 'mountain', at: { lat: 30.32, lon: 35.41 }, note: 'On the border of Edom, where Aaron died. Traditionally Jebel Harun, “Aaron’s mountain,” near Petra.' },
   { id: 'plains-of-moab', name: 'The plains of Moab', kind: 'region', at: { lat: 31.85, lon: 35.6 }, note: 'The plain east of the Jordan, across from Jericho, where Israel camped at the end of the forty years.' },
+  // Level 13 · Moses' Last Words
+  { id: 'nebo', name: 'Mount Nebo', kind: 'mountain', at: { lat: 31.77, lon: 35.73 }, note: 'The ridge in Moab, about 700 meters high, from whose top, Pisgah, God showed Moses the promised land. Moses died there.' },
 ]
 
 const BY_ID = new Map(PLACES.map((place) => [place.id, place]))

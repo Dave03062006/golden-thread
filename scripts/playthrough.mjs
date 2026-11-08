@@ -28,6 +28,8 @@ const KEYS = {
   'Hold to walk the midwives': { hold: ' ', seconds: 6 },
   // Held until the goat sets off into the wilderness, carrying the people's sins.
   'Now press and hold to send the goat away.': { hold: ' ', seconds: 1.6 },
+  // Held while the light passes from Moses to Joshua.
+  'Press and hold to rest Moses’ hands on Joshua’s head.': { hold: ' ', seconds: 4.5 },
 }
 
 /**
@@ -190,6 +192,17 @@ const LEVELS = [
       { number: 8, lines: 13, plays: 1 }, // episode-8.ts
     ],
   },
+  {
+    number: 13,
+    complete: true,
+    episodes: [
+      { number: 1, lines: 13, plays: 1 }, // src/content/levels/13-moses-last-words/episode-1.ts
+      { number: 2, lines: 12, plays: 1 }, // episode-2.ts
+      { number: 3, lines: 11, plays: 1 }, // episode-3.ts
+      { number: 4, lines: 9, plays: 1 }, // episode-4.ts
+      { number: 5, lines: 12, plays: 1 }, // episode-5.ts
+    ],
+  },
 ]
 
 const value = (name) => process.argv.find((a) => a.startsWith(`--${name}=`))?.split('=')[1]
@@ -319,7 +332,7 @@ async function playEpisode(page, style, { number, lines: expected, plays: expect
 }
 
 /** What the player writes in each level's reflection, different each time so the journal can tell them apart. */
-const REFLECTIONS = { 1: 'I want to stop hiding, and walk with God.', 2: 'Help me trust you when I cannot see, like Noah.', 3: 'Lord, help me go where you call me, even when I cannot see the way.', 4: 'Help me make peace with my brother, and hold on to you in prayer.', 5: 'Help me forgive, and trust that you can bring good out of what is hard.', 6: 'Lord, help me tell you the truth when I am sad, and keep holding on to you.', 7: 'Here am I, Lord. Be with me when I feel too small.', 8: 'Thank you, Lord, for setting your people free. Help me remember all you have done for me.', 9: 'Lord, make a way for me, and give me what I need for today.', 10: 'Lord, help me love you with all my heart, and my neighbor as myself.', 11: 'Lord, make my heart a place where you are glad to dwell.', 12: 'Thank you for leading me, Lord. Help me trust you instead of complaining.' }
+const REFLECTIONS = { 1: 'I want to stop hiding, and walk with God.', 2: 'Help me trust you when I cannot see, like Noah.', 3: 'Lord, help me go where you call me, even when I cannot see the way.', 4: 'Help me make peace with my brother, and hold on to you in prayer.', 5: 'Help me forgive, and trust that you can bring good out of what is hard.', 6: 'Lord, help me tell you the truth when I am sad, and keep holding on to you.', 7: 'Here am I, Lord. Be with me when I feel too small.', 8: 'Thank you, Lord, for setting your people free. Help me remember all you have done for me.', 9: 'Lord, make a way for me, and give me what I need for today.', 10: 'Lord, help me love you with all my heart, and my neighbor as myself.', 11: 'Lord, make my heart a place where you are glad to dwell.', 12: 'Thank you for leading me, Lord. Help me trust you instead of complaining.', 13: 'Help me remember all you have done, and choose life every day.' }
 
 /**
  * The end of a finished level (spec §3.3): the quiz (each question answered as it comes,

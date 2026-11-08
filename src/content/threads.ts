@@ -922,6 +922,61 @@ export const THREADS: GoldenThread[] = [
     sources: ['Matthew 2:1–12', 'Revelation 22:16', '2 Peter 1:19', 'Catechism 528'],
     fulfilled: { age: 'XI', place: 'bethlehem' },
   },
+  // Level 13 · Moses' Last Words
+  {
+    id: 'forty-days-in-the-wilderness',
+    episode: 'l13-e1',
+    title: '“Man does not live by bread alone, but… by everything that proceeds out of the mouth of the LORD” → Jesus, forty days in the wilderness, answers the devil with Moses’ words',
+    from: ['DEU 8:2', 'DEU 8:3'],
+    to: ['LUK 4:1', 'LUK 4:2', 'LUK 4:4'],
+    explanation:
+      'Israel spent forty years in the wilderness, learning to trust God for their daily bread. Jesus, the new Israel, spent forty days in the wilderness, and was tempted where they had failed. Hungry, he answered the devil with these very words of Moses. Every Lent, the Church keeps Jesus’ forty days, fasting a little so as to remember that we live by God’s word.',
+    sources: ['Luke 4:1–13', 'Matthew 4:1–11', 'Catechism 538–540, 2835'],
+    fulfilled: { age: 'XI', place: 'jordan' },
+  },
+  {
+    id: 'the-first-commandment',
+    episode: 'l13-e2',
+    title: '“Hear, O Israel: The LORD our God is one LORD; and you shall love the LORD your God with all your heart” → Jesus: “The first is, ‘Hear, O Israel…’”',
+    from: ['DEU 6:4', 'DEU 6:5'],
+    to: ['MRK 12:29', 'MRK 12:30'],
+    explanation:
+      'When a scribe asked Jesus which commandment was first of all, Jesus answered with the words of Moses that every Jewish child knew by heart, and joined to them a second: “You shall love your neighbor as yourself” (Level 11). Love of God with everything we have is the first and greatest commandment; the whole law hangs on it.',
+    sources: ['Mark 12:28–34', 'Matthew 22:34–40', 'Catechism 201–202, 2083'],
+    fulfilled: { age: 'XI', place: 'jerusalem' },
+  },
+  {
+    id: 'a-prophet-like-moses',
+    episode: 'l13-e3',
+    title: '“The LORD your God will raise up for you a prophet like me” → Peter: “Moses said, ‘The Lord God will raise up for you a prophet…’” and the Father: “This is my beloved Son… listen to him”',
+    from: ['DEU 18:15', 'DEU 18:18'],
+    to: ['ACT 3:22', 'MAT 17:5'],
+    explanation:
+      'Moses promised that God would raise up another prophet like him, and told the people to listen to him. After Pentecost, Saint Peter told the crowds in Jerusalem that this prophet had come: Jesus, who did not just speak God’s words, but is God’s Word. At the Transfiguration, with Moses standing beside him, the Father’s voice said of Jesus the very words of Moses’ promise: “listen to him.”',
+    sources: ['Acts 3:17–26', 'John 1:45; 6:14', 'Matthew 17:1–8', 'Catechism 1093, 2582'],
+    fulfilled: { age: 'XIII', place: 'jerusalem' },
+  },
+  {
+    id: 'choose-life',
+    episode: 'l13-e4',
+    title: '“I have set before you life and death… therefore choose life” → Jesus: “I came that they may have life, and have it abundantly,” and “I am the way, and the truth, and the life”',
+    from: ['DEU 30:19', 'DEU 30:20'],
+    to: ['JHN 10:10', 'JHN 14:6'],
+    explanation: 'Moses set life before the people as a road to walk: loving God, obeying his voice, holding fast to him. Jesus is that road, and that life: “I am the way, and the truth, and the life.” To choose life is to choose him, and to follow him, every day.',
+    sources: ['John 10:10; 14:6', 'Matthew 7:13–14', 'Catechism 1696, 2057'],
+    fulfilled: { age: 'XI', place: 'jerusalem' },
+  },
+  {
+    id: 'moses-in-the-land',
+    episode: 'l13-e5',
+    title: 'Moses sees the land but does not go in → on the mountain of the Transfiguration, Moses stands in the promised land at last, talking with Jesus',
+    from: ['DEU 34:4'],
+    to: ['MAT 17:1', 'MAT 17:3'],
+    explanation:
+      'Moses died looking at the land he could not enter. But that was not the end of his story. Centuries later, on a high mountain in that very land, Moses appeared with Elijah, talking with Jesus in his glory. God had brought him into the promised land after all, and into something far greater: the life of heaven, which Jesus opened to all who belong to him.',
+    sources: ['Matthew 17:1–8', 'Luke 9:28–36', 'Catechism 554–556, 1023'],
+    fulfilled: { age: 'XI' },
+  },
 ]
 
 const BY_ID = new Map(THREADS.map((thread) => [thread.id, thread]))
