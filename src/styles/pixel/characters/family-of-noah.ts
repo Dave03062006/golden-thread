@@ -259,6 +259,11 @@ export const familyOfNoah: Record<string, PixelSpriteArt> = {
   balak: person({ robe: C.rose, hair: C.ink, beard: C.ink, veil: C.gold, sash: C.gold }),
   // Level 13: Moses at a hundred and twenty, white-haired, "his eye not dim."
   'moses-old': person({ robe: C.wood3, hair: C.white, beard: C.white, sash: C.sand }),
+  // Level 14: Rahab of Jericho; Achan; Caleb at eighty-five; Joshua grown old.
+  rahab: person({ robe: C.purple, hair: C.ink, veil: C.rose, sash: C.gold }),
+  achan: person({ robe: C.wood2, hair: C.ink, beard: C.ink, sash: C.dslate }),
+  'caleb-old': person({ robe: C.green, hair: C.white, beard: C.white, sash: C.sand }),
+  'joshua-old': person({ robe: C.wood3, hair: C.white, beard: C.white, sash: C.rose }),
   amalekites: band([
     { robe: C.wood1, hair: C.ink, beard: C.ink, veil: C.dslate },
     { robe: C.purple, hair: C.ink, beard: C.ink, veil: C.wood0 },

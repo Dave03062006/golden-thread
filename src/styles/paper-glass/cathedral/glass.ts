@@ -805,6 +805,51 @@ export const EMBLEMS: Record<string, () => Piece[]> = {
     { d: P([[-16, 8], [16, 8], [16, 16], [-16, 16]]), color: '#6a9a4a' },
     { d: P([[-4, 10], [4, 10], [4, 14], [-4, 14]]), color: '#4a7ab8' },
   ],
+  // Level 14 · Joshua
+  // Rahab's window in the wall of Jericho, and the scarlet cord hanging from it.
+  'scarlet-cord': () => [
+    { d: P([[-16, -10], [16, -10], [16, 16], [-16, 16]]), color: '#c8a06a' },
+    { d: P([[-4, -4], [4, -4], [4, 4], [-4, 4]]), color: '#3a2418' },
+    { d: P([[0, 4], [2, 4], [2, 16], [0, 16]]), color: '#d42a3a' },
+  ],
+  // The twelve stones from the Jordan, standing in a ring at Gilgal.
+  'stones-from-the-jordan': () => [
+    { d: P([[-16, 10], [16, 10], [16, 16], [-16, 16]]), color: '#5ab8e8' },
+    ...Array.from({ length: 12 }, (_, i) => {
+      const a = (i / 12) * Math.PI * 2
+      return { d: circ(Math.sin(a) * 11, Math.cos(a) * 6 - 2, 2.2, 8), color: '#9a94a4' }
+    }),
+  ],
+  // The walls of Jericho falling, and a ram's horn trumpet.
+  'walls-of-jericho': () => [
+    { d: P([[-16, 4], [-8, 0], [0, 6], [8, 2], [16, 6], [16, 16], [-16, 16]]), color: '#c8a06a' },
+    { d: P([[-12, -12], [8, -6], [12, -12], [10, -2], [-12, -8]]), color: '#f4d070' },
+  ],
+  // The lamp in Achan's tent, bringing what was hidden into the light.
+  'lamp-in-the-tent': () => [
+    { d: circ(0, -6, 10, 16), color: '#fff4c0' },
+    { d: P([[-6, 2], [6, 2], [4, 8], [-4, 8]]), color: '#c89a3a' },
+    { d: P([[-1, -4], [1, -4], [2, 2], [-2, 2]]), color: '#f08a3a' },
+    { d: P([[-14, 12], [14, 12], [14, 16], [-14, 16]]), color: '#8a5a32' },
+  ],
+  // The sun standing still over Gibeon, and the pale moon over the valley.
+  'sun-stands-still': () => [
+    { d: star8(-4, -6, 8), color: '#ffe48a' },
+    { d: circ(-4, -6, 4, 12), color: '#ffffff' },
+    { d: circ(11, -10, 3, 10), color: '#d8d4cc' },
+    { d: P([[-16, 8], [-4, 2], [8, 8], [16, 6], [16, 16], [-16, 16]]), color: '#8a7a4a' },
+  ],
+  // The map of the land, each tribe's portion its own color.
+  'twelve-portions': () => [
+    { d: P([[-16, -16], [-8, -16], [-12, 16], [-16, 16]]), color: '#4a7ab8' },
+    ...['#c8a050', '#a8744a', '#6a9a4a', '#b8323a', '#e0b040', '#8a5a9a'].map((color, i) => ({ d: P([[-8 + (i % 2) * 10 - Math.floor(i / 2), -16 + Math.floor(i / 2) * 11], [2 + (i % 2) * 10 - Math.floor(i / 2), -16 + Math.floor(i / 2) * 11], [2 + (i % 2) * 10 - Math.floor(i / 2), -5 + Math.floor(i / 2) * 11], [-8 + (i % 2) * 10 - Math.floor(i / 2), -5 + Math.floor(i / 2) * 11]]), color })),
+  ],
+  // The great stone under the oak at Shechem.
+  'stone-under-the-oak': () => [
+    { d: circ(-2, -8, 10, 14), color: '#4a7a3a' },
+    { d: P([[-4, -2], [0, -2], [0, 16], [-4, 16]]), color: '#6a4a2a' },
+    { d: P([[6, 16], [5, 2], [8, -2], [12, 2], [12, 16]]), color: '#9a94a4' },
+  ],
 }
 
 /** The medallions' backgrounds: deep blue, with one ruby for the darkest story. */

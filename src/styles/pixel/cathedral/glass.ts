@@ -140,6 +140,14 @@ export const EMBLEMS: Record<string, { rows: string[]; colors: Record<string, st
   'hands-on-joshua': { rows: ['....y....', '...yyy...', '.hh...hh.', '..hhhhh..', '...jjj...', '..jjjjj..', '..jjjjj..', '..j...j..', 'ggggggggg'], colors: { y: C.gold, h: C.sand, j: C.wood3, g: C.sand2 } },
   'two-roads': { rows: ['....ggggg', '....ggggg', '..c.ggggg', 'ss.c.gggg', '.ss.c..ll', '..ss.c.ll', 'dd..ssll.', 'dd.....s.', 'dddddddss'], colors: { g: C.green, c: C.sky, s: C.sand, l: C.lime, d: C.wood2 } },
   'mount-nebo': { rows: ['yyyyyyyyy', '.........', '....w....', '...www...', '..wwwww..', '.wwwwwww.', 'wwwwwwwww', 'gbgbgbgbg', 'ggggggggg'], colors: { y: C.gold, w: C.wood2, g: C.green, b: C.blue } },
+  // Level 14 · Joshua
+  'scarlet-cord': { rows: ['.........', 'sssssssss', 'sssssssss', 'sss..ssss', 'sss..ssss', 'ssssrssss', 'ssssrssss', 'ssssrssss', 'ggggrgggg'], colors: { s: C.sand2, r: C.rose, g: C.wood3 } },
+  'stones-from-the-jordan': { rows: ['.........', '...s.s...', '.s.....s.', 's.......s', '.s.....s.', '...s.s...', '.........', 'ccccccccc', 'ccccccccc'], colors: { s: C.pale, c: C.sky } },
+  'walls-of-jericho': { rows: ['yy.......', '.yyy.....', '..yyyyy..', '.........', '.s.......', 'sss..s...', 'ssss.sss.', 'sssssssss', 'ggggggggg'], colors: { y: C.gold, s: C.sand2, g: C.wood3 } },
+  'lamp-in-the-tent': { rows: ['.........', '...www...', '..wwoww..', '..wwoww..', '...yyy...', '....y....', '.........', 'wwwwwwwww', 'wwwwwwwww'], colors: { w: C.white, o: C.orange, y: C.gold } },
+  'sun-stands-still': { rows: ['..y....m.', '.yyy..mm.', 'yywyy....', '.yyy.....', '..y......', '.........', 'gg....ggg', 'ggggggggg', 'ggggggggg'], colors: { y: C.gold, w: C.white, m: C.pale, g: C.wood2 } },
+  'twelve-portions': { rows: ['bbaaarrr.', 'bbaaarrr.', 'bgggpppd.', 'bgggpppd.', 'byyyooodd', 'byyyooodd', 'blllkkkdd', 'blllkkkdd', 'bbbbbbbbb'], colors: { b: C.blue, a: C.gold, r: C.rose, g: C.green, p: C.purple, d: C.wood3, y: C.sand, o: C.orange, l: C.lime, k: C.teal } },
+  'stone-under-the-oak': { rows: ['.ggggg...', 'ggggggg..', 'ggggggg..', '.ggggg...', '...w..ss.', '...w.sss.', '...w.sss.', '...w.sss.', 'ggggggggg'], colors: { g: C.green, w: C.wood1, s: C.pale } },
 }
 
 /** The pointed outline of a window, inside which the glass is: whether a pixel is in it. */

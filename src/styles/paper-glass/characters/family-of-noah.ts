@@ -293,6 +293,11 @@ export const familyOfNoah: Record<string, PaperPropArt> = {
   balak: person({ robe: '#a83a3a', fold: '#7a2626', hair: '#1a1416', beard: '#1a1416', veil: '#f4d070', sash: '#e0b040' }),
   // Level 13 · Moses' Last Words: Moses at a hundred and twenty, white-haired, "his eye not dim."
   'moses-old': person({ robe: '#7a5a3a', fold: '#5a4026', hair: '#f4f0e6', beard: '#f4f0e6', sash: '#c8a050' }),
+  // Level 14: Rahab of Jericho; Achan; Caleb at eighty-five; Joshua grown old.
+  rahab: person({ robe: '#6a3a6a', fold: '#4a264a', hair: '#1a1416', veil: '#b8323a', sash: '#e0b040' }),
+  achan: person({ robe: '#7a6248', fold: '#5a4632', hair: '#1a1416', beard: '#1a1416', sash: '#3a3c4a' }),
+  'caleb-old': person({ robe: '#4a7a3a', fold: '#345a26', hair: '#f4f0e6', beard: '#f4f0e6', sash: '#d8b880' }),
+  'joshua-old': person({ robe: '#8a5a32', fold: '#664020', hair: '#f4f0e6', beard: '#f4f0e6', sash: '#a83a3a' }),
   amalekites: band([
     { robe: '#5a3a3a', fold: '#3e2626', hair: '#1a1210', beard: '#1a1210', veil: '#3a2a2a' },
     { robe: '#6a4a3a', fold: '#4c3226', hair: '#1a1210', beard: '#1a1210', veil: '#4a3a2a' },

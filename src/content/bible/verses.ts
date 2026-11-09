@@ -4225,6 +4225,400 @@ export const VERSES: Record<string, Verse> = {
     rsv: 'Moses said, ‘The Lord God will raise up for you a prophet from your brethren as he raised me up. You shall listen to him in whatever he tells you.',
     dra: 'For Moses said: A prophet shall the Lord your God raise up unto you of your brethren, like unto me: him you shall hear according to all things whatsoever he shall speak to you.',
   },
+  // Level 14 · Joshua (the Douay-Rheims numbers the end of Joshua 5 one higher, the end of Joshua 21 two
+  // lower and John 6 from verse 66 one higher; two of Bible Gateway's slips in it are set right).
+  'JOS 1:1': {
+    rsv: 'After the death of Moses the servant of the LORD, the LORD said to Joshua the son of Nun, Moses’ minister,',
+    dra: 'Now it came to pass after the death of Moses the servant of the Lord, that the Lord spoke to Josue the son of Nun, the minister of Moses, and said to him:',
+  },
+  'JOS 1:2': {
+    rsv: '“Moses my servant is dead; now therefore arise, go over this Jordan, you and all this people, into the land which I am giving to them, to the people of Israel.',
+    dra: 'Moses my servant is dead: arise, and pass over this Jordan, thou and thy people with thee, into the land which I will give to the children of Israel.',
+  },
+  'JOS 1:5': {
+    rsv: 'No man shall be able to stand before you all the days of your life; as I was with Moses, so I will be with you; I will not fail you or forsake you.',
+    dra: 'No man shall be able to resist you all the days of thy life: as I have been with Moses, so will I be with thee: I will not leave thee, nor forsake thee.',
+  },
+  'JOS 1:9': {
+    rsv: 'Have I not commanded you? Be strong and of good courage; be not frightened, neither be dismayed; for the LORD your God is with you wherever you go.”',
+    dra: 'Behold I command thee, take courage, and be strong. Fear not and be not dismayed: because the Lord thy God is with thee in all things whatsoever thou shalt go to.',
+  },
+  'JOS 2:1': {
+    rsv: 'And Joshua the son of Nun sent two men secretly from Shittim as spies, saying, “Go, view the land, especially Jericho.” And they went, and came into the house of a harlot whose name was Rahab, and lodged there.',
+    dra: 'And Josue the son of Nun sent from Setim two men, to spy secretly: and said to them: Go, and view the land and the city of Jericho. They went and entered into the house of a woman that was a harlot named Rahab, and lodged with her.',
+  },
+  'JOS 2:3': {
+    rsv: 'Then the king of Jericho sent to Rahab, saying, “Bring forth the men that have come to you, who entered your house; for they have come to search out all the land.”',
+    dra: 'And the king of Jericho sent to Rahab, saying: Bring forth the men that came to thee, and are entered into thy house: for they are spies, and are come to view all the land.',
+  },
+  'JOS 2:4': {
+    rsv: 'But the woman had taken the two men and hidden them; and she said, “True, men came to me, but I did not know where they came from;',
+    dra: 'And the woman taking the men, hid them, and said: I confess they came to me, but I knew not whence they were:',
+  },
+  'JOS 2:9': {
+    rsv: 'and said to the men, “I know that the LORD has given you the land, and that the fear of you has fallen upon us, and that all the inhabitants of the land melt away before you.',
+    dra: 'I know that the Lord hath given this land to you: for the dread of you is fallen upon us, and all the inhabitants of the land have lost all strength.',
+  },
+  'JOS 2:11': {
+    rsv: 'And as soon as we heard it, our hearts melted, and there was no courage left in any man, because of you; for the LORD your God is he who is God in heaven above and on earth beneath.',
+    dra: 'And hearing these things we were affrighted, and our heart fainted away, neither did there remain any spirit in us at your coming in: for the Lord your God he is God in heaven above, and in the earth beneath.',
+  },
+  'JOS 2:12': {
+    rsv: 'Now then, swear to me by the LORD that as I have dealt kindly with you, you also will deal kindly with my father’s house, and give me a sure sign,',
+    dra: 'Now therefore swear ye to me by the Lord, that as I have shewn mercy to you, so you also will shew mercy to my father’s house: and give me a true token,',
+  },
+  'JOS 2:15': {
+    rsv: 'Then she let them down by a rope through the window, for her house was built into the city wall, so that she dwelt in the wall.',
+    dra: 'Then she let them down with a cord out of a window: for her house joined close to the wall.',
+  },
+  'JOS 2:18': {
+    rsv: 'Behold, when we come into the land, you shall bind this scarlet cord in the window through which you let us down; and you shall gather into your house your father and mother, your brothers, and all your father’s household.',
+    dra: 'If when we come into the land, this scarlet cord be a sign, and thou tie it in the window, by which thou hast let us down: and gather together thy father and mother, and brethren and all thy kindred into thy house.',
+  },
+  'JOS 2:21': {
+    rsv: 'And she said, “According to your words, so be it.” Then she sent them away, and they departed; and she bound the scarlet cord in the window.',
+    dra: 'And she answered: As you have spoken, so be it done. And sending them on their way, she hung the scarlet cord in the window.',
+  },
+  'JOS 2:24': {
+    rsv: 'And they said to Joshua, “Truly the LORD has given all the land into our hands; and moreover all the inhabitants of the land are fainthearted because of us.”',
+    dra: 'And said: The Lord hath delivered all this land into our hands, and all the inhabitants thereof are overthrown with fear.',
+  },
+  'JOS 3:5': {
+    rsv: 'And Joshua said to the people, “Sanctify yourselves; for tomorrow the LORD will do wonders among you.”',
+    dra: 'And Josue said to the people: Be ye sanctified: for to morrow the Lord will do wonders among you.',
+  },
+  'JOS 3:6': {
+    rsv: 'And Joshua said to the priests, “Take up the ark of the covenant, and pass on before the people.” And they took up the ark of the covenant, and went before the people.',
+    dra: 'And he said to the priests: Take up the ark of the covenant, and go before the people. And they obeyed his commands, and took it up and walked before them.',
+  },
+  'JOS 3:13': {
+    rsv: 'And when the soles of the feet of the priests who bear the ark of the LORD, the Lord of all the earth, shall rest in the waters of the Jordan, the waters of the Jordan shall be stopped from flowing, and the waters coming down from above shall stand in one heap.”',
+    dra: 'And when the priests, that carry the ark of the Lord the God of the whole earth, shall set the soles of their feet in the waters of the Jordan, the waters that are beneath shall run down and go off: and those that come from above, shall stand together upon a heap.',
+  },
+  'JOS 3:15': {
+    rsv: 'and when those who bore the ark had come to the Jordan, and the feet of the priests bearing the ark were dipped in the brink of the water (the Jordan overflows all its banks throughout the time of harvest),',
+    dra: 'And as soon as they came into the Jordan, and their feet were dipped in part of the water, (now the Jordan, it being harvest time, had filled the banks of its channel,)',
+  },
+  'JOS 3:16': {
+    rsv: 'the waters coming down from above stood and rose up in a heap far off, at Adam, the city that is beside Zarethan, and those flowing down toward the sea of the Arabah, the Salt Sea, were wholly cut off; and the people passed over opposite Jericho.',
+    dra: 'The waters that came down from above stood in one place, and swelling up like a mountain, were seen afar off from the city that is called Adom, to the place of Sarthan: but those that were beneath, ran down into the sea of the wilderness (which now is called the Dead Sea) until they wholly failed.',
+  },
+  'JOS 3:17': {
+    rsv: 'And while all Israel were passing over on dry ground, the priests who bore the ark of the covenant of the LORD stood on dry ground in the midst of the Jordan, until all the nation finished passing over the Jordan.',
+    dra: 'And the people marched over against Jericho: and the priests that carried the ark of the covenant of the Lord, stood girded upon the dry ground in the midst of the Jordan, and all the people passed over through the channel that was dried up.',
+  },
+  'JOS 4:2': {
+    rsv: '“Take twelve men from the people, from each tribe a man,',
+    dra: 'Choose twelve men, one of every tribe:',
+  },
+  'JOS 4:3': {
+    rsv: 'and command them, ‘Take twelve stones from here out of the midst of the Jordan, from the very place where the priests’ feet stood, and carry them over with you, and lay them down in the place where you lodge tonight.’”',
+    dra: 'And command them to take out of the midst of the Jordan, where the feet of the priests stood, twelve very hard stones, which you shall set in the place of the camp, where you shall pitch your tents this night.',
+  },
+  'JOS 4:6': {
+    rsv: 'that this may be a sign among you, when your children ask in time to come, ‘What do those stones mean to you?’',
+    dra: 'That it may be a sign among you and when your children shall ask you to morrow, saying: What mean these stones?',
+  },
+  'JOS 4:7': {
+    rsv: 'Then you shall tell them that the waters of the Jordan were cut off before the ark of the covenant of the LORD; when it passed over the Jordan, the waters of the Jordan were cut off. So these stones shall be to the people of Israel a memorial for ever.”',
+    dra: 'You shall answer them: The waters of the Jordan ran off before the ark of the covenant of the Lord, when it passed over the same: therefore were these atones set for a monument of the children of Israel for ever.',
+  },
+  'JOS 4:19': {
+    rsv: 'The people came up out of the Jordan on the tenth day of the first month, and they encamped in Gilgal on the east border of Jericho.',
+    dra: 'And the people came up out of the Jordan, the tenth day of the first month, and camped in Galgal, over against the east side of the city of Jericho.',
+  },
+  'JOS 4:20': {
+    rsv: 'And those twelve stones, which they took out of the Jordan, Joshua set up in Gilgal.',
+    dra: 'And the twelve stones which they had taken out of the channel of the Jordan, Josue pitched in Galgal,',
+  },
+  'JOS 5:10': {
+    rsv: 'While the people of Israel were encamped in Gilgal they kept the passover on the fourteenth day of the month at evening in the plains of Jericho.',
+    dra: 'And the children of Israel abode in Galgal, and they kept the phase on the fourteenth day of the month, at evening, in the plains of Jericho:',
+  },
+  'JOS 5:12': {
+    rsv: 'And the manna ceased on the morrow, when they ate of the produce of the land; and the people of Israel had manna no more, but ate of the fruit of the land of Canaan that year.',
+    dra: 'And the manna ceased after they ate of the corn of the land, neither did the children of Israel use that food any more, but they ate of the corn of the present year of the land of Chanaan.',
+  },
+  'JOS 5:13': {
+    rsv: 'When Joshua was by Jericho, he lifted up his eyes and looked, and behold, a man stood before him with his drawn sword in his hand; and Joshua went to him and said to him, “Are you for us, or for our adversaries?”',
+    dra: 'And when Josue was in the field of the city of Jericho, he lifted up his eyes, and saw a man standing over against him: holding a drawn sword, and he went to him, and said: Art thou one of ours, or of our adversaries?',
+  },
+  'JOS 5:15': {
+    rsv: 'And the commander of the LORD’s army said to Joshua, “Put off your shoes from your feet; for the place where you stand is holy.” And Joshua did so.',
+    dra: 'Loose, saith he, thy shoes from off thy feet: for the place whereon thou standest is holy. And Josue did as was commanded him.',
+  },
+  'JOS 6:1': {
+    rsv: 'Now Jericho was shut up from within and from without because of the people of Israel; none went out, and none came in.',
+    dra: 'Now Jericho was close shut up and fenced, for fear of the children of Israel, and no man durst go out or come in.',
+  },
+  'JOS 6:2': {
+    rsv: 'And the LORD said to Joshua, “See, I have given into your hand Jericho, with its king and mighty men of valor.',
+    dra: 'And the Lord said to Josue: Behold I have given into thy hands Jericho, and the king thereof, and all the valiant men.',
+  },
+  'JOS 6:3': {
+    rsv: 'You shall march around the city, all the men of war going around the city once. Thus shall you do for six days.',
+    dra: 'Go round about the city, all ye fighting men, once a day: so shall ye do for six days.',
+  },
+  'JOS 6:4': {
+    rsv: 'And seven priests shall bear seven trumpets of rams’ horns before the ark; and on the seventh day you shall march around the city seven times, the priests blowing the trumpets.',
+    dra: 'And on the seventh day the priests shall take the seven trumpets, which are used in the jubilee, and shall go before the ark of the covenant: and you shall go about the city seven times, and the priests shall sound the trumpets.',
+  },
+  'JOS 6:5': {
+    rsv: 'And when they make a long blast with the ram’s horn, as soon as you hear the sound of the trumpet, then all the people shall shout with a great shout; and the wall of the city will fall down flat, and the people shall go up every man straight before him.”',
+    dra: 'And when the voice of the trumpet shall give a longer and broken tune, and shall sound in your ears, all the people shall shout together with a very great shout, and the walls of the city shall fall to the ground, and they shall enter in every one at the place against which they shall stand.',
+  },
+  'JOS 6:10': {
+    rsv: 'But Joshua commanded the people, “You shall not shout or let your voice be heard, neither shall any word go out of your mouth, until the day I bid you shout; then you shall shout.”',
+    dra: 'But Josue had commanded the people, saying: You shall not shout, nor shall your voice be heard, nor any word go out of your mouth: until the day come wherein I shall say to you: Cry, and shout.',
+  },
+  'JOS 6:15': {
+    rsv: 'On the seventh day they rose early at the dawn of day, and marched around the city in the same manner seven times: it was only on that day that they marched around the city seven times.',
+    dra: 'But the seventh day, rising up early, they went about the city, as it was ordered, seven times.',
+  },
+  'JOS 6:16': {
+    rsv: 'And at the seventh time, when the priests had blown the trumpets, Joshua said to the people, “Shout; for the LORD has given you the city.',
+    dra: 'And when in the seventh going about the priests sounded with the trumpets, Josue said to all Israel: Shout: for the Lord hath delivered the city to you:',
+  },
+  'JOS 6:20': {
+    rsv: 'So the people shouted, and the trumpets were blown. As soon as the people heard the sound of the trumpet, the people raised a great shout, and the wall fell down flat, so that the people went up into the city, every man straight before him, and they took the city.',
+    dra: 'So all the people making a shout, and the trumpets sounding, when the voice and the sound thundered in the ears of the multitude, the walls forthwith fell down: and every man went up by the place that was over against him: and they took the city,',
+  },
+  'JOS 6:25': {
+    rsv: 'But Rahab the harlot, and her father’s household, and all who belonged to her, Joshua saved alive; and she dwelt in Israel to this day, because she hid the messengers whom Joshua sent to spy out Jericho.',
+    dra: 'But Josue saved Rahab the harlot and her father’s house, and all she had, and they dwelt in the midst of Israel until this present day: because she hid the messengers whom he had sent to spy out Jericho. At that time, Josue made an imprecation, saying:',
+  },
+  'JOS 6:27': {
+    rsv: 'So the LORD was with Joshua; and his fame was in all the land.',
+    dra: 'And the Lord was with Josue, and his name was noised throughout all the land.',
+  },
+  'JOS 7:1': {
+    rsv: 'But the people of Israel broke faith in regard to the devoted things; for Achan the son of Carmi, son of Zabdi, son of Zerah, of the tribe of Judah, took some of the devoted things; and the anger of the LORD burned against the people of Israel.',
+    dra: 'But the children of Israel transgressed the commandment, and took to their own use of the anathema. For Achan the son of Charmi, the son of Zabdi, the son of Zare of the tribe of Juda, took something of the anathema: and the Lord was angry against the children of Israel.',
+  },
+  'JOS 7:4': {
+    rsv: 'So about three thousand went up there from the people; and they fled before the men of Ai,',
+    dra: 'There went up therefore three thousand fighting men: who immediately turned their backs,',
+  },
+  'JOS 7:6': {
+    rsv: 'Then Joshua rent his clothes, and fell to the earth upon his face before the ark of the LORD until the evening, he and the elders of Israel; and they put dust upon their heads.',
+    dra: 'But Josue rent his garments, and fell flat on the ground before the ark of the Lord until the evening, both he and all the ancients of Israel: and they put dust upon their heads.',
+  },
+  'JOS 7:7': {
+    rsv: 'And Joshua said, “Alas, O Lord GOD, why hast thou brought this people over the Jordan at all, to give us into the hands of the Amorites, to destroy us? Would that we had been content to dwell beyond the Jordan!',
+    dra: 'And Josue said: Alas, O Lord God, why wouldst thou bring this people over the river Jordan, to deliver us into the hand of the Amorrhite, and to destroy us? would God, we had stayed beyond the Jordan as we began.',
+  },
+  'JOS 7:10': {
+    rsv: 'The LORD said to Joshua, “Arise, why have you thus fallen upon your face?',
+    dra: 'And the Lord said to Josue: Arise, why liest thou flat on the ground?',
+  },
+  'JOS 7:11': {
+    rsv: 'Israel has sinned; they have transgressed my covenant which I commanded them; they have taken some of the devoted things; they have stolen, and lied, and put them among their own stuff.',
+    dra: 'Israel hath sinned, and transgressed my covenant: and they have taken of the anathema, and have stolen and lied, and have hidden it among their goods.',
+  },
+  'JOS 7:19': {
+    rsv: 'Then Joshua said to Achan, “My son, give glory to the LORD God of Israel, and render praise to him; and tell me now what you have done; do not hide it from me.”',
+    dra: 'And Josue said to Achan: My son, give glory to the Lord God of Israel, and confess, and tell me what thou hast done, hide it not.',
+  },
+  'JOS 7:20': {
+    rsv: 'And Achan answered Joshua, “Of a truth I have sinned against the LORD God of Israel, and this is what I did:',
+    dra: 'And Achan answered Josue, and said to him: Indeed I have sinned against the Lord the God of Israel, and thus and thus have I done.',
+  },
+  'JOS 7:21': {
+    rsv: 'when I saw among the spoil a beautiful mantle from Shinar, and two hundred shekels of silver, and a bar of gold weighing fifty shekels, then I coveted them, and took them; and behold, they are hidden in the earth inside my tent, with the silver underneath.”',
+    dra: 'For I saw among the spoils a scarlet garment exceeding good, and two hundred sides of silver, and a golden rule of fifty sides: and I coveted them, and I took them away, and hid them in the ground is the midst of my tent, and the silver I covered with the earth that I dug up.',
+  },
+  'JOS 8:1': {
+    rsv: 'And the LORD said to Joshua, “Do not fear or be dismayed; take all the fighting men with you, and arise, go up to Ai; see, I have given into your hand the king of Ai, and his people, his city, and his land;',
+    dra: 'And the Lord said to Josue: Fear not, nor be thou dismayed: take with thee all the multitude of fighting men, arise and go up to the town of Hai. Behold I have delivered into thy hand the king thereof, and the people, and the city, and the land.',
+  },
+  'JOS 8:30': {
+    rsv: 'Then Joshua built an altar on Mount Ebal to the LORD, the God of Israel,',
+    dra: 'Then Josue built an altar to the Lord the God of Israel in mount Hebal,',
+  },
+  'JOS 8:34': {
+    rsv: 'And afterward he read all the words of the law, the blessing and the curse, according to all that is written in the book of the law.',
+    dra: 'After this he read all the words of the blessing and the cursing and all things that were written in the hook of the law.',
+  },
+  'JOS 8:35': {
+    rsv: 'There was not a word of all that Moses commanded which Joshua did not read before all the assembly of Israel, and the women, and the little ones, and the sojourners who lived among them.',
+    dra: 'He left out nothing of those things which Moses had commanded, but he repeated all before all the people of Israel, with the women and children and strangers that dwelt among them.',
+  },
+  'JOS 10:6': {
+    rsv: 'And the men of Gibeon sent to Joshua at the camp in Gilgal, saying, “Do not relax your hand from your servants; come up to us quickly, and save us, and help us; for all the kings of the Amorites that dwell in the hill country are gathered against us.”',
+    dra: 'But the inhabitants of the city of Gabaon which was besieged, sent to Josue, who then abode in the camp at Galgal, and said to him: Withdraw not thy hands from helping thy servants: come up quickly and save us, and bring us succour: for all the kings of the Amorrhites, who dwell in the mountains, are gathered together against us.',
+  },
+  'JOS 10:7': {
+    rsv: 'So Joshua went up from Gilgal, he and all the people of war with him, and all the mighty men of valor.',
+    dra: 'And Josue went up from Galgal, and all the army of the warriors with him, most valiant men.',
+  },
+  'JOS 10:8': {
+    rsv: 'And the LORD said to Joshua, “Do not fear them, for I have given them into your hands; there shall not a man of them stand before you.”',
+    dra: 'And the Lord said to Josue: Fear them not: for I have delivered them into thy hands: none of them shall be able to stand against thee.',
+  },
+  'JOS 10:9': {
+    rsv: 'So Joshua came upon them suddenly, having marched up all night from Gilgal.',
+    dra: 'So Josue going up from Galgal all the night, came upon them suddenly.',
+  },
+  'JOS 10:12': {
+    rsv: 'Then spoke Joshua to the LORD in the day when the LORD gave the Amorites over to the men of Israel; and he said in the sight of Israel, “Sun, stand thou still at Gibeon, and thou Moon in the valley of Aijalon.”',
+    dra: 'Then Josue spoke to the Lord, in the day that he delivered the Amorrhite in the sight of the children of Israel, and he said before them: Move not, O sun, toward Gabaon, nor thou, O moon, toward the valley of Ajalon.',
+  },
+  'JOS 10:13': {
+    rsv: 'And the sun stood still, and the moon stayed, until the nation took vengeance on their enemies. Is this not written in the Book of Jashar? The sun stayed in the midst of heaven, and did not hasten to go down for about a whole day.',
+    dra: 'And the sun and the moon stood still, till the people revenged themselves of their enemies. Is not this written in the book of the just? So the sun stood still in the midst of heaven, and hasted not to go down the space of one day.',
+  },
+  'JOS 10:14': {
+    rsv: 'There has been no day like it before or since, when the LORD hearkened to the voice of a man; for the LORD fought for Israel.',
+    dra: 'There was not before nor after so long a day, the Lord obeying the voice of a man, and fighting for Israel.',
+  },
+  'JOS 14:6': {
+    rsv: 'Then the people of Judah came to Joshua at Gilgal; and Caleb the son of Jephunneh the Kenizzite said to him, “You know what the LORD said to Moses the man of God in Kadesh-barnea concerning you and me.',
+    dra: 'Then the children of Juda came to Josue in Galgal, and Caleb the son of Jephone the Cenezite spoke to him: Thou knowest what the Lord spoke to Moses the man of God concerning me and thee in Cadesbarne.',
+  },
+  'JOS 14:7': {
+    rsv: 'I was forty years old when Moses the servant of the LORD sent me from Kadesh-barnea to spy out the land; and I brought him word again as it was in my heart.',
+    dra: 'I was forty years old when Moses the servant of the Lord sent me from Cadesbarne, to view the land, and I brought him word again as to me seemed true.',
+  },
+  'JOS 14:10': {
+    rsv: 'And now, behold, the LORD has kept me alive, as he said, these forty-five years since the time that the LORD spoke this word to Moses, while Israel walked in the wilderness; and now, lo, I am this day eighty-five years old.',
+    dra: 'The Lord therefore hath granted me life, as he promised until this present day. It is forty and five years since the Lord spoke this word to Moses, when Israel journeyed through the wilderness: this day I am eighty-five years old,',
+  },
+  'JOS 14:11': {
+    rsv: 'I am still as strong to this day as I was in the day that Moses sent me; my strength now is as my strength was then, for war, and for going and coming.',
+    dra: 'As strong as I was at that time when I was sent to view the land: the strength of that time continueth in me until this day, as well to fight as to march.',
+  },
+  'JOS 14:12': {
+    rsv: 'So now give me this hill country of which the LORD spoke on that day; for you heard on that day how the Anakim were there, with great fortified cities: it may be that the LORD will be with me, and I shall drive them out as the LORD said.”',
+    dra: 'Give me therefore this mountain, which the Lord promised, in thy hearing also, wherein are the Enacims, and cities great and strong: if so be the Lord will be with me, and I shall be able to destroy them, as he promised me.',
+  },
+  'JOS 14:13': {
+    rsv: 'Then Joshua blessed him; and he gave Hebron to Caleb the son of Jephunneh for an inheritance.',
+    dra: 'And Josue blessed him, and gave him Hebron in possession.',
+  },
+  'JOS 18:1': {
+    rsv: 'Then the whole congregation of the people of Israel assembled at Shiloh, and set up the tent of meeting there; the land lay subdued before them.',
+    dra: 'And all the children of Israel assembled together in Silo, and there they set up the tabernacle of the testimony, and the land was subdued before them.',
+  },
+  'JOS 18:8': {
+    rsv: 'So the men started on their way; and Joshua charged those who went to write the description of the land, saying, “Go up and down and write a description of the land, and come again to me; and I will cast lots for you here before the LORD in Shiloh.”',
+    dra: 'And when the men were risen up, to go to mark out the land, Josue commanded them, saying: Go round the land and mark it out, and return to me: that I may cast lots for you before the Lord in Silo.',
+  },
+  'JOS 18:10': {
+    rsv: 'and Joshua cast lots for them in Shiloh before the LORD; and there Joshua apportioned the land to the people of Israel, to each his portion.',
+    dra: 'And he cast lots before the Lord in Silo, and divided the land to the children of Israel into seven parts.',
+  },
+  'JOS 21:43': {
+    rsv: 'Thus the LORD gave to Israel all the land which he swore to give to their fathers; and having taken possession of it, they settled there.',
+    dra: 'And the Lord God gave to Israel all the land that he had sworn to give to their fathers: and they possessed it and dwelt in it.',
+  },
+  'JOS 21:45': {
+    rsv: 'Not one of all the good promises which the LORD had made to the house of Israel had failed; all came to pass.',
+    dra: 'Not so much as one word, which he had promised to perform unto them, was made void, but all came to pass.',
+  },
+  'JOS 24:1': {
+    rsv: 'Then Joshua gathered all the tribes of Israel to Shechem, and summoned the elders, the heads, the judges, and the officers of Israel; and they presented themselves before God.',
+    dra: 'And Josue gathered together all the tribes of Israel in Sichem, and called for the ancients, and the princes, and the judges, and the masters: and they stood in the sight of the Lord:',
+  },
+  'JOS 24:2': {
+    rsv: 'And Joshua said to all the people, “Thus says the LORD, the God of Israel, ‘Your fathers lived of old beyond the Euphrates, Terah, the father of Abraham and of Nahor; and they served other gods.',
+    dra: 'And he spoke thus to the people: Thus saith the Lord the God of Israel: Your fathers dwelt of old on the other side of the river, Thare the father of Abraham, and Nachor: and they served strange gods.',
+  },
+  'JOS 24:13': {
+    rsv: 'I gave you a land on which you had not labored, and cities which you had not built, and you dwell therein; you eat the fruit of vineyards and oliveyards which you did not plant.’',
+    dra: 'And I gave you a land, in which you had not laboured, and cities to dwell in which you built not, vineyards and oliveyards, which you planted not.',
+  },
+  'JOS 24:14': {
+    rsv: '“Now therefore fear the LORD, and serve him in sincerity and in faithfulness; put away the gods which your fathers served beyond the River, and in Egypt, and serve the LORD.',
+    dra: 'Now therefore fear the Lord, and serve him with a perfect and most sincere heart: and put away the gods which your fathers served in Mesopotamia and in Egypt, and serve the Lord.',
+  },
+  'JOS 24:15': {
+    rsv: 'And if you be unwilling to serve the LORD, choose this day whom you will serve, whether the gods your fathers served in the region beyond the River, or the gods of the Amorites in whose land you dwell; but as for me and my house, we will serve the LORD.”',
+    dra: 'But if it seem evil to you to serve the Lord, you have your choice: choose this day that which pleaseth you, whom you would rather serve, whether the gods which your fathers served in Mesopotamia, or the gods of the Amorrhites, in whose land you dwell: but as for me and my house we will serve the Lord.',
+  },
+  'JOS 24:16': {
+    rsv: 'Then the people answered, “Far be it from us that we should forsake the LORD, to serve other gods;',
+    dra: 'And the people answered, and said: God forbid we should leave the Lord, and serve strange gods.',
+  },
+  'JOS 24:17': {
+    rsv: 'for it is the LORD our God who brought us and our fathers up from the land of Egypt, out of the house of bondage, and who did those great signs in our sight, and preserved us in all the way that we went, and among all the peoples through whom we passed;',
+    dra: 'The Lord our God he brought us and our fathers out of the land of Egypt, out of the house of bondage: and did very great signs in our sight, and preserved us in all the way by which we journeyed, and among all the people through whom we passed.',
+  },
+  'JOS 24:18': {
+    rsv: 'and the LORD drove out before us all the peoples, the Amorites who lived in the land; therefore we also will serve the LORD, for he is our God.”',
+    dra: 'And he hath cast out all the nations, the Amorrhite the inhabitant of the land into which we are come. Therefore we will serve the Lord, for he is our God.',
+  },
+  'JOS 24:24': {
+    rsv: 'And the people said to Joshua, “The LORD our God we will serve, and his voice we will obey.”',
+    dra: 'And the people said to Josue: We will serve the Lord our God, and we will be obedient to his commandments.',
+  },
+  'JOS 24:25': {
+    rsv: 'So Joshua made a covenant with the people that day, and made statutes and ordinances for them at Shechem.',
+    dra: 'Josue therefore on that day made a covenant, and set before the people commandments and judgments in Sichem.',
+  },
+  'JOS 24:26': {
+    rsv: 'And Joshua wrote these words in the book of the law of God; and he took a great stone, and set it up there under the oak in the sanctuary of the LORD.',
+    dra: 'And he wrote all these things in the volume of the law of the Lord: and he took a great stone, and set it under the oak that was in the sanctuary of the Lord.',
+  },
+  'JOS 24:29': {
+    rsv: 'After these things Joshua the son of Nun, the servant of the LORD, died, being a hundred and ten years old.',
+    dra: 'And after these things Josue the son of Nun the servant of the Lord died, being a hundred and ten years old:',
+  },
+  'JOS 24:31': {
+    rsv: 'And Israel served the LORD all the days of Joshua, and all the days of the elders who outlived Joshua and had known all the work which the LORD did for Israel.',
+    dra: 'And Israel served the Lord all the days of Josue, and of the ancients that lived a long time after Josue, and that had known all the works of the Lord which he had done in Israel.',
+  },
+  'MAT 1:5': {
+    rsv: 'and Salmon the father of Boaz by Rahab, and Boaz the father of Obed by Ruth, and Obed the father of Jesse,',
+    dra: 'And Salmon begot Booz of Rahab. And Booz begot Obed of Ruth. And Obed begot Jesse.',
+  },
+  'MRK 1:9': {
+    rsv: 'In those days Jesus came from Nazareth of Galilee and was baptized by John in the Jordan.',
+    dra: 'And it came to pass, in those days, Jesus came from Nazareth of Galilee, and was baptized by John in the Jordan.',
+  },
+  'MRK 1:10': {
+    rsv: 'And when he came up out of the water, immediately he saw the heavens opened and the Spirit descending upon him like a dove;',
+    dra: 'And forthwith coming up out of the water, he saw the heavens opened, and the Spirit as a dove descending, and remaining on him.',
+  },
+  'JHN 6:67': {
+    rsv: 'Jesus said to the twelve, “Will you also go away?”',
+    dra: 'Then Jesus said to the twelve: Will you also go away?',
+  },
+  'JHN 6:68': {
+    rsv: 'Simon Peter answered him, “Lord, to whom shall we go? You have the words of eternal life;',
+    dra: 'And Simon Peter answered him: Lord, to whom shall we go? thou hast the words of eternal life.',
+  },
+  'ROM 8:31': {
+    rsv: 'What then shall we say to this? If God is for us, who is against us?',
+    dra: 'What shall we then say to these things? If God be for us, who is against us?',
+  },
+  '2CO 1:20': {
+    rsv: 'For all the promises of God find their Yes in him. That is why we utter the Amen through him, to the glory of God.',
+    dra: 'For all the promises of God are in him, It is; therefore also by him, amen to God, unto our glory.',
+  },
+  'HEB 11:30': {
+    rsv: 'By faith the walls of Jericho fell down after they had been encircled for seven days.',
+    dra: 'By faith the walls of Jericho fell down, by the going round them seven days.',
+  },
+  'HEB 11:31': {
+    rsv: 'By faith Rahab the harlot did not perish with those who were disobedient, because she had given friendly welcome to the spies.',
+    dra: 'By faith Rahab the harlot perished not with the unbelievers, receiving the spies with peace.',
+  },
+  '1PE 1:3': {
+    rsv: 'Blessed be the God and Father of our Lord Jesus Christ! By his great mercy we have been born anew to a living hope through the resurrection of Jesus Christ from the dead,',
+    dra: 'Blessed be the God and Father of our Lord Jesus Christ, who according to his great mercy hath regenerated us unto a lively hope, by the resurrection of Jesus Christ from the dead,',
+  },
+  '1PE 1:4': {
+    rsv: 'and to an inheritance which is imperishable, undefiled, and unfading, kept in heaven for you,',
+    dra: 'Unto an inheritance incorruptible, and undefiled, and that can not fade, reserved in heaven for you,',
+  },
+  '1JN 1:8': {
+    rsv: 'If we say we have no sin, we deceive ourselves, and the truth is not in us.',
+    dra: 'If we say that we have no sin, we deceive ourselves, and the truth is not in us.',
+  },
+  '1JN 1:9': {
+    rsv: 'If we confess our sins, he is faithful and just, and will forgive our sins and cleanse us from all unrighteousness.',
+    dra: 'If we confess our sins, he is faithful and just, to forgive us our sins, and to cleanse us from all iniquity.',
+  },
 }
 
 /** A verse's words in the active translation. Throws for a verse that isn't in the list (a content check catches these first). */

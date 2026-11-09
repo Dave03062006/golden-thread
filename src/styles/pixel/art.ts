@@ -86,6 +86,8 @@ import { tabernacleProps } from './props/tabernacle'
 import { wildernessLayers } from './layers/wilderness'
 import { wildernessProps } from './props/wilderness'
 import { moabLayers } from './layers/moab'
+import { joshuaLayers } from './layers/joshua'
+import { joshuaProps } from './props/joshua'
 import { familyOfNoah } from './characters/family-of-noah'
 
 export { LAYER_H, LAYER_W, MARGIN_X, MARGIN_Y, PX_H, PX_W, type Painter } from './frame'
@@ -191,6 +193,7 @@ export const pixelLayerSets: Record<string, PixelLayerArt>[] = [
   tabernacleLayers,
   wildernessLayers,
   moabLayers,
+  joshuaLayers,
 ]
 
 export const pixelLayers: Record<string, PixelLayerArt> = Object.assign({}, ...pixelLayerSets)
@@ -245,6 +248,7 @@ export const pixelPropSets: Record<string, PixelPropArt>[] = [
   sinaiProps,
   tabernacleProps,
   wildernessProps,
+  joshuaProps,
 ]
 
 export const pixelProps: Record<string, PixelPropArt> = Object.assign({}, ...pixelPropSets)

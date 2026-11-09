@@ -3,7 +3,7 @@
 **Bible:** Joshua 1–8; 10; 14; 18; 21; 24
 **Age:** V · The Promised Land
 **Length:** about 50 minutes (7 episodes, then the quiz, then reflection and prayer)
-**Status:** draft, waiting for Dave's approval.
+**Status:** approved by Dave on 2026-11-08 ("Approved, build it").
 
 ## How to read this script
 

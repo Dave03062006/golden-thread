@@ -374,6 +374,21 @@
     },
     "nebo-view": {
       "hash": "7c672bbf"
+    },
+    "jericho-walls": {
+      "hash": "dc533cc8"
+    },
+    "rahab-roof": {
+      "hash": "199a81ca"
+    },
+    "jericho-fallen": {
+      "hash": "3d25c229"
+    },
+    "hill-road-map": {
+      "hash": "2b444c09"
+    },
+    "tribes-map": {
+      "hash": "59a7ff3b"
     }
   },
   "paperProps": {
@@ -1228,6 +1243,27 @@
     },
     "moses-old": {
       "hash": "9bb8941f"
+    },
+    "flax": {
+      "hash": "47792eef"
+    },
+    "rahab": {
+      "hash": "e8fd4634"
+    },
+    "scarlet-cord": {
+      "hash": "9bb64c57"
+    },
+    "achan": {
+      "hash": "12ee09d2"
+    },
+    "joshua-old": {
+      "hash": "6fb9329f"
+    },
+    "caleb-old": {
+      "hash": "fd5f2df6"
+    },
+    "idol": {
+      "hash": "51b8027e"
     }
   },
   "pixelLayers": {
@@ -1605,6 +1641,21 @@
     },
     "nebo-view": {
       "hash": "e960ac57"
+    },
+    "jericho-walls": {
+      "hash": "965d6b9e"
+    },
+    "rahab-roof": {
+      "hash": "a3d86b0b"
+    },
+    "jericho-fallen": {
+      "hash": "585c97f1"
+    },
+    "hill-road-map": {
+      "hash": "2decd2fc"
+    },
+    "tribes-map": {
+      "hash": "0253baf9"
     }
   },
   "backdrop": {

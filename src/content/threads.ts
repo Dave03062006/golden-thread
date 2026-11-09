@@ -977,6 +977,84 @@ export const THREADS: GoldenThread[] = [
     sources: ['Matthew 17:1–8', 'Luke 9:28–36', 'Catechism 554–556, 1023'],
     fulfilled: { age: 'XI' },
   },
+  // Level 14 · Joshua
+  {
+    id: 'the-scarlet-cord',
+    episode: 'l14-e1',
+    title: 'Rahab trusts the God of Israel, and is saved by the scarlet cord in her window → “By faith Rahab… did not perish,” and she became an ancestor of Jesus',
+    from: ['JOS 2:18', 'JOS 2:21'],
+    to: ['HEB 11:31', 'MAT 1:5'],
+    explanation:
+      'Rahab was a foreigner, a sinner, living in an enemy city. But she believed that the God of Israel was “God in heaven above and on earth beneath,” and she risked everything to help his people. God saved her and her whole family, and she came to live among his people. She married into the tribe of Judah, and became the great-great-grandmother of King David, and so an ancestor of Jesus. Saint Matthew names her in Jesus’ family tree. The Fathers of the Church saw in her scarlet cord a sign of the blood of Christ, by which we are saved.',
+    sources: ['Hebrews 11:31', 'James 2:25', 'Matthew 1:5', 'Saint Clement of Rome, Letter to the Corinthians 12', 'Catechism 2463'],
+    fulfilled: { age: 'XI', place: 'bethlehem' },
+  },
+  {
+    id: 'through-the-jordan',
+    episode: 'l14-e2',
+    title: 'Israel passes through the Jordan into the promised land → Jesus is baptized in the Jordan, and the heavens open',
+    from: ['JOS 3:17', 'JOS 4:7'],
+    to: ['MRK 1:9', 'MRK 1:10'],
+    explanation:
+      'God’s people entered the promised land through the waters of the Jordan, led by the ark. Centuries later, Jesus, whose name is Joshua, came down to that same river to be baptized, and the heavens opened. He makes the waters of Baptism the way into God’s family, and into the life he promises. Saint Gregory of Nyssa wrote that the crossing of the Jordan was a picture of Baptism, the doorway into the true promised land.',
+    sources: ['Mark 1:9–11', 'Matthew 3:13–17', 'Saint Gregory of Nyssa, On the Baptism of Christ', 'Catechism 1222, 1223–1225'],
+    fulfilled: { age: 'XI', place: 'jordan' },
+  },
+  {
+    id: 'by-faith-the-walls-fell',
+    episode: 'l14-e3',
+    title: 'The walls of Jericho fall after seven days of marching → “By faith the walls of Jericho fell down”',
+    from: ['JOS 6:20'],
+    to: ['HEB 11:30'],
+    explanation:
+      'No army could have broken Jericho’s walls. God’s people simply did what he asked, marching and waiting in silence for seven days, and trusted him to keep his word. The letter to the Hebrews puts the walls of Jericho in its list of the great deeds of faith. The walls in our own lives, of fear, of sin, of things too hard for us, fall the same way: not by our strength, but by trusting God.',
+    sources: ['Hebrews 11:30', '2 Corinthians 10:3–5', 'Catechism 144–146'],
+    fulfilled: { age: 'XIII' },
+  },
+  {
+    id: 'if-we-confess',
+    episode: 'l14-e4',
+    title: '“Tell me now what you have done; do not hide it from me” → “If we confess our sins, he is faithful and just, and will forgive our sins”',
+    from: ['JOS 7:19'],
+    to: ['1JN 1:8', '1JN 1:9'],
+    explanation:
+      'Achan’s hidden sin harmed the whole people, and he hid it until he was found. Jesus has given us a better way: we bring our sins into the light ourselves, and he forgives them. In the sacrament of Reconciliation, we tell our sins to God through his priest, and hear that we are forgiven. Nothing we bring to him is too heavy for his mercy.',
+    sources: ['1 John 1:5–10', 'John 3:20–21', 'Catechism 1424, 1455–1458'],
+    fulfilled: { age: 'XIII' },
+  },
+  {
+    id: 'if-god-is-for-us',
+    episode: 'l14-e5',
+    title: '“The LORD fought for Israel” → “If God is for us, who is against us?”',
+    from: ['JOS 10:14'],
+    to: ['ROM 8:31'],
+    explanation:
+      'The day the sun stood still was remembered as the day God listened to a man’s prayer and fought for his people. Saint Paul says the same of every Christian: God gave his own Son for us, so nothing can stand against us, and nothing can separate us from his love. It is not that God takes our side in every quarrel, but that he is always on the side of those who trust him.',
+    sources: ['Romans 8:31–39', 'Catechism 2738–2741'],
+    fulfilled: { age: 'XIII' },
+  },
+  {
+    id: 'every-promise-yes',
+    episode: 'l14-e6',
+    title: '“Not one of all the good promises which the LORD had made… had failed” → “All the promises of God find their Yes in him,” and an inheritance “kept in heaven for you”',
+    from: ['JOS 21:45'],
+    to: ['2CO 1:20', '1PE 1:3', '1PE 1:4'],
+    explanation:
+      'Every family of Israel received its share of the land, and not one of God’s promises failed. But even the promised land was only a picture. Jesus is God’s “Yes” to every promise, and he has won for us a far greater inheritance: eternal life with God, which no war can take, nothing can spoil, and no time can wear away.',
+    sources: ['2 Corinthians 1:18–22', '1 Peter 1:3–5', 'Hebrews 11:13–16', 'Catechism 1817–1821'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'to-whom-shall-we-go',
+    episode: 'l14-e7',
+    title: '“Choose this day whom you will serve… as for me and my house, we will serve the LORD” → Peter: “Lord, to whom shall we go? You have the words of eternal life”',
+    from: ['JOS 24:15'],
+    to: ['JHN 6:67', 'JHN 6:68'],
+    explanation:
+      'Joshua set the choice before the people, and gave his own answer first. Jesus too let people choose: when his teaching on the Eucharist was too hard for many and they left him, he turned to the twelve and asked, “Will you also go away?” Peter answered for all who follow Jesus: there is no one else to go to. Every Christian family makes Joshua’s choice again: as for us, we will serve the Lord.',
+    sources: ['John 6:60–69', 'Catechism 1657, 2204–2206'],
+    fulfilled: { age: 'XI', place: 'galilee' },
+  },
 ]
 
 const BY_ID = new Map(THREADS.map((thread) => [thread.id, thread]))

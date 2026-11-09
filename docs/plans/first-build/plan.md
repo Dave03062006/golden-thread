@@ -636,6 +636,34 @@ The same way again: script, art, build, checks, play-test. Level 13 is the last 
   - New `shots` baselines cover the Level 13 scenes and the screens Level 13 changes. Dave still needs to look them over.
 - **Two plays had the same flaw as Level 12's spies:** a player who keeps pressing could race past the words a play shows at each step. "Remember the way" now waits at each stop until its words have been shown; worth checking for in every new play that shows words between steps.
 
+### Task 20: Level 14, *Joshua* (M20)
+
+The same way again: script, art, build, checks, play-test. Level 14 is the first level of Age V, *The Promised Land*.
+
+**Status (November 2026):** steps 1–4 are done; step 5 is Dave's.
+- **Script:** `docs/scripts/level-14-joshua.md`, approved by Dave on 2026-11-08. It has 7 episodes and 21 scenes, 98 passages quoted word for word, and a 42-question quiz.
+- **Build:** all seven episodes are built in both styles, each with its own play:
+  - hidden on the roof (covering the spies with flax before the king's men reach the top of the stairs);
+  - twelve stones from the Jordan (carrying a stone for each tribe up out of the riverbed);
+  - seven times around (rhythm: marching in step, then holding for the trumpets and tapping for the shout);
+  - brought into the light (searching Achan's tent with a lamp);
+  - all night from Gilgal (pathfinding up through the dark hills to Gibeon);
+  - a portion for each (matching each tribe to its land on the map, using Level 11's ordering rules);
+  - we will serve the LORD (a quiet play: family by family, idols laid down at the oak).
+  The episodes reuse Level 11's stage helpers.
+- **Change from the script:** in "hidden on the roof" the player only hides the spies. Letting them down the wall by the scarlet cord is shown in the story that follows, not played.
+- **No battles are shown,** as the script asks: Ai and Gibeon show Joshua praying and the people marching, and the hailstones are a storm cloud over the valley.
+- **New art:** five backdrops (Rahab's roof; the wall of Jericho, standing and fallen; the night road to Gibeon; the map of the tribes), three props (flax, the scarlet cord, an idol) and four people (Rahab, Achan, Caleb at eighty-five, Joshua grown old), in both styles.
+- **Cathedral and map:** seven new medallions, the first of the Age V bay. The map marks Jericho, with the road on to Shiloh and Shechem; Jericho, Gilgal, Ai, Gibeon and Shiloh are new places in `geography.ts`. On the zoomed-out world map, Jericho's label partly covers Mount Nebo's, about 25 km away.
+- **Music:** no new recordings. Every piece comes from earlier levels, and each one's license is already checked.
+- **Checks:** all pass.
+  - The playthrough runs Level 14 from start to finish in both styles, through its quiz, reflection and window ceremony (68 checks).
+  - `check`, `test` (3,368 tests), `a11y`, `keyboard` and `saves` pass.
+  - `perf` is within budget for every Level 14 scene in both styles.
+  - New `shots` baselines cover the Level 14 scenes and the screens Level 14 changes. Dave still needs to look them over.
+- **Golden threads under the narration box:** in Pixel the verse box is taller and covered Episode 3's glow at y 0.74, so the playthrough could not tap it. The glows now sit higher. A glow that moves during a play (the ark, carried around the walls) rests while the play is on, so it is found standing still. Content tests still allow y up to 0.74; around 0.66 is safer.
+- **Held poses:** a pose held for a long time (`pose(id, name, delay, 30)`) made the played world differ from the rebuilt one when a player skipped ahead. A pose meant to stay now uses a single `actor` cue.
+
 ## Parallelization
 
 - **Code tasks run in order.** Each one builds on the last, and running them in order keeps the code consistent for the code tour.

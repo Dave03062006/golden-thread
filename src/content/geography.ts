@@ -173,6 +173,12 @@ export const PLACES: Place[] = [
   { id: 'mount-hor', name: 'Mount Hor', kind: 'mountain', at: { lat: 30.32, lon: 35.41 }, note: 'On the border of Edom, where Aaron died. Traditionally Jebel Harun, “Aaron’s mountain,” near Petra.' },
   { id: 'plains-of-moab', name: 'The plains of Moab', kind: 'region', at: { lat: 31.85, lon: 35.6 }, note: 'The plain east of the Jordan, across from Jericho, where Israel camped at the end of the forty years.' },
   // Level 13 · Moses' Last Words
+  // Level 14 · Joshua
+  { id: 'jericho', name: 'Jericho', kind: 'city', at: { lat: 31.87, lon: 35.44 }, note: 'One of the oldest cities in the world, in an oasis west of the Jordan near the Dead Sea: “the city of palm trees.” Its walls fell at the sound of the trumpets.' },
+  { id: 'gilgal', name: 'Gilgal', kind: 'city', at: { lat: 31.85, lon: 35.5 }, note: 'The first camp in the promised land, near Jericho, where the twelve stones from the Jordan were set up.' },
+  { id: 'ai', name: 'Ai', kind: 'city', at: { lat: 31.92, lon: 35.26 }, note: 'A small town on a hill east of Bethel. Its name means “the ruin.”' },
+  { id: 'gibeon', name: 'Gibeon', kind: 'city', at: { lat: 31.85, lon: 35.18 }, note: 'A town on a hill north of Jerusalem, whose people made peace with Joshua. There the sun stood still.' },
+  { id: 'shiloh', name: 'Shiloh', kind: 'city', at: { lat: 32.06, lon: 35.29 }, note: 'A town in the hills of Ephraim where the tabernacle stood for many generations, until the time of Samuel.' },
   { id: 'nebo', name: 'Mount Nebo', kind: 'mountain', at: { lat: 31.77, lon: 35.73 }, note: 'The ridge in Moab, about 700 meters high, from whose top, Pisgah, God showed Moses the promised land. Moses died there.' },
 ]
 
