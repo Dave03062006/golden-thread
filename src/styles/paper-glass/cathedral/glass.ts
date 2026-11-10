@@ -850,6 +850,51 @@ export const EMBLEMS: Record<string, () => Piece[]> = {
     { d: P([[-4, -2], [0, -2], [0, 16], [-4, 16]]), color: '#6a4a2a' },
     { d: P([[6, 16], [5, 2], [8, -2], [12, 2], [12, 16]]), color: '#9a94a4' },
   ],
+  // Level 15 · The Judges
+  // The circle of the judges: five lights around a wheel, one of them shining.
+  'circle-of-the-judges': () => [
+    { d: circ(0, 0, 13, 20), color: '#8a6a3a' },
+    { d: circ(0, 0, 9, 20), color: '#2a3a6a' },
+    ...Array.from({ length: 5 }, (_, i) => {
+      const a = (i / 5) * Math.PI * 2
+      return { d: circ(Math.sin(a) * 11, -Math.cos(a) * 11, 2.6, 8), color: i === 3 ? '#fff4c0' : '#c8a060' }
+    }),
+  ],
+  // The palm of Deborah, where she judged Israel.
+  'palm-of-deborah': () => [
+    { d: P([[-2, -6], [2, -6], [3, 16], [-3, 16]]), color: '#8a5a32' },
+    { d: P([[0, -8], [-14, -2], [-12, -6], [0, -12], [12, -6], [14, -2]]), color: '#4a8a3a' },
+    { d: P([[0, -10], [-8, -16], [0, -14], [8, -16]]), color: '#5a9a44' },
+    { d: P([[-16, 12], [16, 12], [16, 16], [-16, 16]]), color: '#c8a868' },
+  ],
+  // A broken clay jar, and the torch blazing out of it.
+  'torches-and-jars': () => [
+    { d: P([[-8, 4], [8, 4], [10, 14], [-10, 14]]), color: '#a8643a' },
+    { d: P([[-4, 4], [-6, -2], [-2, 0], [0, -4], [3, 0], [6, -2], [4, 4]]), color: '#c87a4a' },
+    { d: P([[-1, 0], [1, 0], [2, -6], [0, -14], [-2, -6]]), color: '#f8b040' },
+    { d: P([[-1, -2], [1, -2], [1, -8], [0, -11], [-1, -8]]), color: '#fff0a0' },
+  ],
+  // The timbrel of Jephthah's daughter, remembered by the daughters of Israel.
+  'timbrel-of-mizpah': () => [
+    { d: circ(0, -2, 12, 20), color: '#c89a5a' },
+    { d: circ(0, -2, 9, 20), color: '#f0e0b8' },
+    ...[0, 1, 2, 3].map((i) => ({ d: circ(Math.sin(i * 1.57) * 10.5, -2 - Math.cos(i * 1.57) * 10.5, 1.6, 6), color: '#f4d070' })),
+  ],
+  // The two middle pillars of the house of Dagon.
+  'two-pillars': () => [
+    { d: P([[-16, -14], [16, -14], [16, -10], [-16, -10]]), color: '#a88458' },
+    { d: P([[-9, -10], [-3, -10], [-3, 16], [-9, 16]]), color: '#d8b47e' },
+    { d: P([[3, -10], [9, -10], [9, 16], [3, 16]]), color: '#d8b47e' },
+    { d: circ(0, 2, 3, 8), color: '#fff4c0' },
+  ],
+  // The little town of Bethlehem on its hill, with one lamp burning.
+  'lamp-in-bethlehem': () => [
+    { d: P([[-16, 16], [-16, 6], [0, -2], [16, 6], [16, 16]]), color: '#6a8a4a' },
+    { d: P([[-8, 2], [-2, 2], [-2, -6], [-8, -6]]), color: '#d8c8a0' },
+    { d: P([[0, 0], [8, 0], [8, -8], [0, -8]]), color: '#c8b890' },
+    { d: circ(4, -4, 1.6, 6), color: '#f8c040' },
+    { d: circ(4, -12, 3, 10), color: '#fff4c0' },
+  ],
 }
 
 /** The medallions' backgrounds: deep blue, with one ruby for the darkest story. */

@@ -180,6 +180,12 @@ export const PLACES: Place[] = [
   { id: 'gibeon', name: 'Gibeon', kind: 'city', at: { lat: 31.85, lon: 35.18 }, note: 'A town on a hill north of Jerusalem, whose people made peace with Joshua. There the sun stood still.' },
   { id: 'shiloh', name: 'Shiloh', kind: 'city', at: { lat: 32.06, lon: 35.29 }, note: 'A town in the hills of Ephraim where the tabernacle stood for many generations, until the time of Samuel.' },
   { id: 'nebo', name: 'Mount Nebo', kind: 'mountain', at: { lat: 31.77, lon: 35.73 }, note: 'The ridge in Moab, about 700 meters high, from whose top, Pisgah, God showed Moses the promised land. Moses died there.' },
+  // Level 15 · The Judges
+  { id: 'mount-tabor', name: 'Mount Tabor', kind: 'mountain', at: { lat: 32.69, lon: 35.39 }, note: 'A round mountain standing alone at the edge of the Jezreel Valley. Barak’s ten thousand came down from it against Sisera; Christians honor it as the mountain of the Transfiguration.' },
+  { id: 'harod', name: 'The spring of Harod', kind: 'river', at: { lat: 32.55, lon: 35.36 }, note: 'A spring at the foot of Mount Gilboa, where God chose Gideon’s three hundred men by the way they drank. It still flows today.' },
+  { id: 'mizpah-of-gilead', name: 'Mizpah of Gilead', kind: 'city', at: { lat: 32.3, lon: 35.8 }, note: 'Jephthah’s home in the hills east of the Jordan. Its name means “watchtower”; its exact place is not known.' },
+  { id: 'zorah', name: 'Zorah', kind: 'city', at: { lat: 31.77, lon: 34.98 }, note: 'Samson’s home village, on a hill of the tribe of Dan looking down on the land of the Philistines.' },
+  { id: 'gaza', name: 'Gaza', kind: 'city', at: { lat: 31.5, lon: 34.46 }, note: 'The southernmost city of the Philistines, by the sea. Samson died there, when the house of Dagon fell.' },
 ]
 
 const BY_ID = new Map(PLACES.map((place) => [place.id, place]))

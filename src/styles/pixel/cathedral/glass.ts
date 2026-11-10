@@ -148,6 +148,13 @@ export const EMBLEMS: Record<string, { rows: string[]; colors: Record<string, st
   'sun-stands-still': { rows: ['..y....m.', '.yyy..mm.', 'yywyy....', '.yyy.....', '..y......', '.........', 'gg....ggg', 'ggggggggg', 'ggggggggg'], colors: { y: C.gold, w: C.white, m: C.pale, g: C.wood2 } },
   'twelve-portions': { rows: ['bbaaarrr.', 'bbaaarrr.', 'bgggpppd.', 'bgggpppd.', 'byyyooodd', 'byyyooodd', 'blllkkkdd', 'blllkkkdd', 'bbbbbbbbb'], colors: { b: C.blue, a: C.gold, r: C.rose, g: C.green, p: C.purple, d: C.wood3, y: C.sand, o: C.orange, l: C.lime, k: C.teal } },
   'stone-under-the-oak': { rows: ['.ggggg...', 'ggggggg..', 'ggggggg..', '.ggggg...', '...w..ss.', '...w.sss.', '...w.sss.', '...w.sss.', 'ggggggggg'], colors: { g: C.green, w: C.wood1, s: C.pale } },
+  // Level 15 · The Judges
+  'circle-of-the-judges': { rows: ['...yyy...', '.y.....y.', '.........', 'y...w...y', '.........', '.y.....y.', '...yyy...', '.........', 'ggggggggg'], colors: { y: C.gold, w: C.white, g: C.wood3 } },
+  'palm-of-deborah': { rows: ['..g.g.g..', '.ggggggg.', 'gg.gwg.gg', '....w....', '....w....', '....w....', '....w....', 'sssswssss', 'sssssssss'], colors: { g: C.green, w: C.wood2, s: C.sand } },
+  'torches-and-jars': { rows: ['....y....', '...yoy...', '...yoy...', '....o....', '.r.....r.', '.rr...rr.', '.rrrrrrr.', '..rrrrr..', '.........'], colors: { y: C.gold, o: C.orange, r: C.wood3 } },
+  'timbrel-of-mizpah': { rows: ['.........', '..ywwwy..', '.wppppppw', '.wppppppw', '.yppppppy', '.wppppppw', '..ywwwy..', '.........', 'rrrrrrrrr'], colors: { y: C.gold, w: C.wood3, p: C.sand, r: C.rose } },
+  'two-pillars': { rows: ['sssssssss', '.pp...pp.', '.pp...pp.', '.pp.w.pp.', '.pp...pp.', '.pp...pp.', '.pp...pp.', '.pp...pp.', 'ggggggggg'], colors: { s: C.wood3, p: C.sand, w: C.white, g: C.wood2 } },
+  'lamp-in-bethlehem': { rows: ['....w....', '...wyw...', '....w....', '.........', '.hh.hhh..', '.hh.hyh..', 'ggggggggg', 'ggggggggg', 'ggggggggg'], colors: { w: C.white, y: C.gold, h: C.sand, g: C.green } },
 }
 
 /** The pointed outline of a window, inside which the glass is: whether a pixel is in it. */

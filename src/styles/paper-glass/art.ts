@@ -77,6 +77,8 @@ import { wildernessProps } from './props/wilderness'
 import { moabLayers } from './layers/moab'
 import { joshuaLayers } from './layers/joshua'
 import { joshuaProps } from './props/joshua'
+import { judgesLayers } from './layers/judges'
+import { judgesProps } from './props/judges'
 import { familyOfNoah } from './characters/family-of-noah'
 import { creationProps } from './props/creation'
 import { dove } from './props/dove'
@@ -184,6 +186,7 @@ export const paperLayerSets: Record<string, PaperLayerArt>[] = [
   wildernessLayers,
   moabLayers,
   joshuaLayers,
+  judgesLayers,
 ]
 
 export const paperLayers: Record<string, PaperLayerArt> = Object.assign({}, ...paperLayerSets)
@@ -239,6 +242,7 @@ export const paperPropSets: Record<string, PaperPropArt>[] = [
   tabernacleProps,
   wildernessProps,
   joshuaProps,
+  judgesProps,
 ]
 
 export const paperProps: Record<string, PaperPropArt> = Object.assign({}, ...paperPropSets)

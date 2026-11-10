@@ -1055,6 +1055,73 @@ export const THREADS: GoldenThread[] = [
     sources: ['John 6:60–69', 'Catechism 1657, 2204–2206'],
     fulfilled: { age: 'XI', place: 'galilee' },
   },
+  // Level 15 · The Judges
+  {
+    id: 'faithful-when-we-are-not',
+    episode: 'l15-e1',
+    title: 'Israel forgets God again and again, but every time they cry out, he hears them and saves them → “If we are faithless, he remains faithful”',
+    from: ['JDG 2:18', 'JDG 3:9'],
+    to: ['2TI 2:13'],
+    explanation:
+      'The circle in the book of Judges is a sad one, but it shows something wonderful. The people break their promises to God again and again. God never breaks his. Each time they cry out, “the LORD was moved to pity,” and he sends someone to save them. Saint Paul says the same of us: even when we are faithless, God stays faithful, because he cannot stop being himself. The judges saved Israel for a while; Jesus came to break the circle of sin for good.',
+    sources: ['2 Timothy 2:11–13', 'Romans 3:3–4', 'Catechism 210–211, 1428'],
+    fulfilled: { age: 'XIII' },
+  },
+  {
+    id: 'shine-like-the-sun',
+    episode: 'l15-e2',
+    title: '“But thy friends be like the sun as he rises in his might” → “Then the righteous will shine like the sun in the kingdom of their Father”',
+    from: ['JDG 5:31'],
+    to: ['MAT 13:43'],
+    explanation:
+      'Deborah’s song ends with a prayer that God’s friends would shine like the sunrise. Jesus promises that this will truly happen: at the end of time, those who love God will shine like the sun in their Father’s kingdom. Mount Tabor, where Barak’s men waited, is the mountain where Christians remember the Transfiguration, when Jesus’ face “shone like the sun,” and his friends saw a glimpse of that glory.',
+    sources: ['Matthew 13:43', 'Matthew 17:1–2', 'Daniel 12:3', 'Catechism 554–556, 1042'],
+    fulfilled: { age: 'XI', place: 'galilee' },
+  },
+  {
+    id: 'treasure-in-earthen-vessels',
+    episode: 'l15-e3',
+    title: 'Torches hidden in clay jars blaze out when the jars are broken → “We have this treasure in earthen vessels”',
+    from: ['JDG 7:16', 'JDG 7:20'],
+    to: ['2CO 4:6', '2CO 4:7'],
+    explanation:
+      'Gideon’s men carried their light hidden in ordinary clay jars, and it only shone out when the jars were broken. Saint Paul says that we are like those jars: plain, fragile, easily broken. But God has put inside us a great treasure, the light of Christ, so that everyone can see that the power is God’s and not ours. Gideon was the least in the weakest clan, and God chose him for exactly that reason.',
+    sources: ['2 Corinthians 4:6–11', '2 Corinthians 12:9', '1 Corinthians 1:27–29', 'Catechism 272–273'],
+    fulfilled: { age: 'XIII' },
+  },
+  {
+    id: 'yes-or-no',
+    episode: 'l15-e4',
+    title: 'Jephthah makes a careless vow, trying to bargain with God for victory → Jesus: “Let what you say be simply ‘Yes’ or ‘No’”',
+    from: ['JDG 11:30', 'JDG 11:31'],
+    to: ['MAT 5:34', 'MAT 5:37'],
+    explanation:
+      'God had already given Jephthah his Spirit, and needed nothing from him. But Jephthah tried to bargain with God, the way people bargained with the gods of the nations, and promised something terrible without thinking. God never asked for it: his law forbade offering children (Deuteronomy 12:31). Saint Jerome said Jephthah was foolish to make the vow, and wrong to keep it. Jesus teaches us not to make careless oaths, and not to bargain with God at all: he is our Father, and we can simply ask. A true promise to God, a vow, is made freely and carefully, for something good.',
+    sources: ['Matthew 5:33–37', 'Deuteronomy 12:31', 'Micah 6:6–8', 'Saint Thomas Aquinas, Summa Theologiae II-II, q. 88, a. 2, quoting Saint Jerome', 'Catechism 2101–2103, 2153'],
+    fulfilled: { age: 'XI', place: 'galilee' },
+  },
+  {
+    id: 'set-apart-from-the-womb',
+    episode: 'l15-e5',
+    title: 'An angel promises a son to a woman who could have no children; he must drink no wine, and he will be God’s from his mother’s womb → John the Baptist',
+    from: ['JDG 13:3', 'JDG 13:5'],
+    to: ['LUK 1:13', 'LUK 1:15'],
+    explanation:
+      'Samson’s birth was announced by an angel, to a woman who had no children, and he was to be set apart for God from before he was born. More than a thousand years later, the same thing happened to Zechariah and Elizabeth: an angel promised them a son, John, who would drink no wine and be filled with the Holy Spirit from his mother’s womb. Samson wasted much of his great gift and served himself; John gave everything to point to Jesus, saying, “He must increase, but I must decrease.” Both remind us that every life is known and called by God before birth.',
+    sources: ['Luke 1:5–25', 'John 3:30', 'Jeremiah 1:5', 'Catechism 523, 717–718, 2270'],
+    fulfilled: { age: 'XI', place: 'jerusalem' },
+  },
+  {
+    id: 'a-ruler-from-bethlehem',
+    episode: 'l15-e6',
+    title: '“In those days there was no king in Israel” → the King born in Bethlehem',
+    from: ['JDG 17:6', 'JDG 21:25'],
+    to: ['MAT 2:6'],
+    explanation:
+      'The book of Judges ends with a sad cry: “there was no king in Israel; every man did what was right in his own eyes.” God’s people needed someone to lead them in God’s ways. The Levite who led Micah astray came from Bethlehem, a little town in Judah. But from that same little town God would bring a shepherd boy, David, to be Israel’s greatest king, and from David’s family, the true King, Jesus, born in Bethlehem. As Gideon said, “the LORD will rule over you”: in Jesus, God himself came to be our King, not by force, but by love.',
+    sources: ['Matthew 2:1–6', 'Micah 5:2', 'Ruth 1:1', 'Ruth 4:17', 'John 18:36–37', 'Catechism 436, 528, 2816–2818'],
+    fulfilled: { age: 'XI', place: 'bethlehem' },
+  },
 ]
 
 const BY_ID = new Map(THREADS.map((thread) => [thread.id, thread]))

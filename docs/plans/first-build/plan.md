@@ -664,6 +664,31 @@ The same way again: script, art, build, checks, play-test. Level 14 is the first
 - **Golden threads under the narration box:** in Pixel the verse box is taller and covered Episode 3's glow at y 0.74, so the playthrough could not tap it. The glows now sit higher. A glow that moves during a play (the ark, carried around the walls) rests while the play is on, so it is found standing still. Content tests still allow y up to 0.74; around 0.66 is safer.
 - **Held poses:** a pose held for a long time (`pose(id, name, delay, 30)`) made the played world differ from the rebuilt one when a player skipped ahead. A pose meant to stay now uses a single `actor` cue.
 
+### Task 21: Level 15, *The Judges* (M21)
+
+The same way again: script, art, build, checks, play-test. Level 15 is the second level of Age V, *The Promised Land*.
+
+**Status (November 2026):** steps 1–4 are done; step 5 is Dave's.
+- **Script:** `docs/scripts/level-15-the-judges.md`, approved by Dave on 2026-11-10. It has 6 episodes and 19 scenes, 129 passages quoted word for word, and a 44-question quiz.
+- **Build:** all six episodes are built in both styles, each with its own play:
+  - around and around (ordering: the five steps of the cycle of the judges, three times round);
+  - the torrent Kishon (tapping the storm until the river floods and Sisera's chariots sink);
+  - torches and trumpets (timing: doing as Gideon does, company by company);
+  - the way we came (tracing Israel's route around Edom and Moab on Jephthah's map);
+  - out of the eater (decoding Samson's riddle);
+  - in his own eyes (matching each thing in Micah's shrine to the law it breaks).
+  Three of them use Level 11's ordering rules, which can now offer their own wrong answers. "The way we came" and Level 14's "all night from Gilgal" now share one set of route rules (`minigames/along-the-way.ts`).
+- **Changes from the script:** the cycle, the riddle and Micah's shrine are played by choosing, not by dragging pictures. Quiz question 32 asked the player to tap the Mediterranean, which the map doesn't have; it now asks which land Zorah was in (Canaan), and the script says so.
+- **Hard passages:** Episodes 4, 5 and 6 open with a content note. Jael, Jephthah's daughter, Samson's blinding and death, and the crime at Gibeah are told in a sentence each and never shown. No battles are shown.
+- **New art:** eight backdrops (the plain below Tabor and the Kishon in flood, the wine press, the camp of Midian, Jephthah's map, the prison mill, the house of Dagon standing and fallen), four props (palm tree, fleece, honeycomb, millstone) and ten people (Deborah, Barak, Gideon, Jephthah and his daughter, Samson and Samson shorn, Delilah, Micah, the Levite), in both styles.
+- **Cathedral and map:** six new medallions in the Age V bay. Mount Tabor, the spring of Harod, Mizpah of Gilead, Zorah and Gaza are new places in `geography.ts`; the map's route runs from Tabor to Gaza.
+- **Music:** no new recordings. Handel's *Samson* and *Jephtha* have no allowed recording, so pieces from earlier levels stand in, as the script says.
+- **Checks:**
+  - The playthrough runs Level 15 from start to finish in both styles, through its quiz, reflection and window ceremony (60 checks).
+  - `check`, `test`, `a11y`, `keyboard` and `saves` pass. (`saves` timed out once and passed when run again.)
+  - `perf` could not be judged this time: the browser ran at 30 frames a second, so every frame counted as late, for Level 14's scenes too, which passed on 2026-11-09. Level 15's scenes average 1–3 ms of work a frame, well within the 8 ms budget. Run it again on an unthrottled machine.
+  - New `shots` baselines cover the Level 15 scenes and the screens Level 15 changes. Dave still needs to look them over.
+
 ## Parallelization
 
 - **Code tasks run in order.** Each one builds on the last, and running them in order keeps the code consistent for the code tour.

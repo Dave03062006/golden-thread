@@ -29,7 +29,7 @@ describe('"All night from Gilgal"', () => {
   })
 
   it('stays where it is until it is led, except in gentle mode', () => {
-    expect(run(false, 4).state.army).toEqual(WAY[0])
+    expect(run(false, 4).state.at).toEqual(WAY[0])
     expect(run(true, 4).state.next).toBeGreaterThan(1)
   })
 

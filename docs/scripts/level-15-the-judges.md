@@ -3,7 +3,7 @@
 **Bible:** Judges 2–8; 10–11; 13–14; 16–18; 20–21
 **Age:** V · The Promised Land
 **Length:** about 50 minutes (6 episodes, then the quiz, then reflection and prayer)
-**Status:** draft for Dave's approval.
+**Status:** approved by Dave on 2026-11-10 ("Approved, build it").
 
 ## How to read this script
 
@@ -561,9 +561,9 @@ The FINISH questions quote the verse from where its own words begin, exactly as 
 31. **MC** · What did the angel say about the boy who would be born to Manoah's wife?
     **No razor should touch his head, for he would be a Nazirite to God** · He would be a king · He would build a temple · He would be a priest
     *Set apart for God from birth.* (Judges 13:5)
-32. **WHERE** · The Philistines, Samson's enemies, lived along the coast of which sea?
-    **The Mediterranean** (region: mediterranean)
-    *Gaza, Ashkelon and their other cities lay by the sea.* (Judges 16:1)
+32. **WHERE** · Samson was born at Zorah, near the Philistines. Which land was it in?
+    **Canaan** (region: canaan)
+    *In the hills of the tribe of Dan, looking down on the Philistine plain by the sea.* (Judges 13:2)
 33. **FINISH** · "Out of the eater came something to eat. Out of the strong came something ___."
     **sweet** (wrong words: strong, new, small)
     *Samson's riddle.* (Judges 14:14)

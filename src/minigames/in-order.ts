@@ -20,6 +20,8 @@ export interface InOrder {
   steps: readonly OrderStep[]
   question: (n: number) => string
   notYet: string
+  /** The choices for step `n`, when they aren't the right one and two of the other steps (a riddle's wrong guesses). */
+  offer?: (n: number) => { id: string; text: string }[]
   /** What the scene shows, with `placed` steps done and the last of them `t` of the way in (0 to 1). */
   live: (placed: number, t: number) => Record<string, number>
 }
@@ -60,7 +62,7 @@ export function inOrder(config: InOrder): GameRules<OrderState> {
         view = {
           id: `step-${n}`,
           question: config.question(n),
-          options: offered(steps.length, n).map((i) => ({ id: steps[i]!.id, text: steps[i]!.text })),
+          options: config.offer ? config.offer(n) : offered(steps.length, n).map((i) => ({ id: steps[i]!.id, text: steps[i]!.text })),
           feedback: state.missed ? { right: false, text: config.notYet } : null,
           trail,
           glow: gentle ? steps[n]!.id : undefined,

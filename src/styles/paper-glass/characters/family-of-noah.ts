@@ -298,6 +298,17 @@ export const familyOfNoah: Record<string, PaperPropArt> = {
   achan: person({ robe: '#7a6248', fold: '#5a4632', hair: '#1a1416', beard: '#1a1416', sash: '#3a3c4a' }),
   'caleb-old': person({ robe: '#4a7a3a', fold: '#345a26', hair: '#f4f0e6', beard: '#f4f0e6', sash: '#d8b880' }),
   'joshua-old': person({ robe: '#8a5a32', fold: '#664020', hair: '#f4f0e6', beard: '#f4f0e6', sash: '#a83a3a' }),
+  // Level 15: the judges Deborah, Barak, Gideon, Jephthah and Samson (and Samson shorn); Jephthah's daughter; Delilah; Micah; the young Levite.
+  deborah: person({ robe: '#3a6a5a', fold: '#264a3e', hair: '#2a1e1a', veil: '#e8d8a8', sash: '#c8a040' }),
+  barak: person({ robe: '#8a3a2a', fold: '#64261a', hair: '#241a16', beard: '#241a16', sash: '#c8b080' }),
+  gideon: person({ robe: '#a8844a', fold: '#7a5e30', hair: '#3a2618', beard: '#3a2618', sash: '#5a6a3a' }),
+  jephthah: person({ robe: '#3a3a4a', fold: '#24242e', hair: '#1a1416', beard: '#1a1416', sash: '#8a2a2a' }),
+  'jephthahs-daughter': person({ robe: '#e8dcc4', fold: '#c4b494', hair: '#2a1e1a', veil: '#d88a9a', sash: '#4a7ab8' }),
+  samson: person({ robe: '#7a4a2a', fold: '#56321a', hair: '#1a1210', beard: '#1a1210', sash: '#d8a040' }),
+  'samson-shorn': person({ robe: '#6a5a4a', fold: '#4a3e32', hair: '#c89a7a', beard: '#3a2a20' }),
+  delilah: person({ robe: '#8a2a5a', fold: '#641a40', hair: '#1a1416', veil: '#e0b040', sash: '#e0b040' }),
+  micah: person({ robe: '#6a6a3a', fold: '#4a4a24', hair: '#3a2a1e', beard: '#3a2a1e', sash: '#b8b8c8' }),
+  levite: person({ robe: '#d8d0c0', fold: '#b0a690', hair: '#2a1e1a', sash: '#3a5a8a' }),
   amalekites: band([
     { robe: '#5a3a3a', fold: '#3e2626', hair: '#1a1210', beard: '#1a1210', veil: '#3a2a2a' },
     { robe: '#6a4a3a', fold: '#4c3226', hair: '#1a1210', beard: '#1a1210', veil: '#4a3a2a' },

@@ -4619,6 +4619,524 @@ export const VERSES: Record<string, Verse> = {
     rsv: 'If we confess our sins, he is faithful and just, and will forgive our sins and cleanse us from all unrighteousness.',
     dra: 'If we confess our sins, he is faithful and just, to forgive us our sins, and to cleanse us from all iniquity.',
   },
+  // Level 15 · The Judges (the Douay-Rheims splits Judges 5:31 in two and joins Judges 21:24–25 into
+  // one verse; one of Bible Gateway's slips in it, in Judges 11:13, is set right).
+  'JDG 2:7': {
+    rsv: 'And the people served the LORD all the days of Joshua, and all the days of the elders who outlived Joshua, who had seen all the great work which the LORD had done for Israel.',
+    dra: 'And they served the Lord all his days, and the days of the ancients, that lived a long time after him, and who knew all the works of the Lord, which he had done for Israel.',
+  },
+  'JDG 2:8': {
+    rsv: 'And Joshua the son of Nun, the servant of the LORD, died at the age of one hundred and ten years.',
+    dra: 'And Josue the son of Nun, the servant of the Lord, died, being a hundred and ten years old,',
+  },
+  'JDG 2:10': {
+    rsv: 'And all that generation also were gathered to their fathers; and there arose another generation after them, who did not know the LORD or the work which he had done for Israel.',
+    dra: 'And all that generation was gathered to their fathers: and there arose others that knew not the Lord, and the works which he had done for Israel.',
+  },
+  'JDG 2:11': {
+    rsv: 'And the people of Israel did what was evil in the sight of the LORD and served the Baals;',
+    dra: 'And the children of Israel did evil in the sight of the Lord, and they served Baalim.',
+  },
+  'JDG 2:12': {
+    rsv: 'and they forsook the LORD, the God of their fathers, who had brought them out of the land of Egypt; they went after other gods, from among the gods of the peoples who were round about them, and bowed down to them; and they provoked the LORD to anger.',
+    dra: 'And they left the Lord the God of their fathers, who had brought them out of the land of Egypt: and they followed strange gods, and the gods of the people that dwelt round about them, and they adored them: and they provoked the Lord to anger.',
+  },
+  'JDG 2:14': {
+    rsv: 'So the anger of the LORD was kindled against Israel, and he gave them over to plunderers, who plundered them; and he sold them into the power of their enemies round about, so that they could no longer withstand their enemies.',
+    dra: 'And the Lord being angry against Israel, delivered them into the hands of plunderers: who took them and sold them to their enemies, that dwelt round about: neither could they stand against their enemies:',
+  },
+  'JDG 2:16': {
+    rsv: 'Then the LORD raised up judges, who saved them out of the power of those who plundered them.',
+    dra: 'And the Lord raised up judges, to deliver them from the hands of those that oppressed them: but they would not hearken to them,',
+  },
+  'JDG 2:18': {
+    rsv: 'Whenever the LORD raised up judges for them, the LORD was with the judge, and he saved them from the hand of their enemies all the days of the judge; for the LORD was moved to pity by their groaning because of those who afflicted and oppressed them.',
+    dra: 'And when the Lord raised them up judges, in their days he was moved to mercy, and heard the groanings of the afflicted, and delivered them from the slaughter of the oppressors.',
+  },
+  'JDG 2:19': {
+    rsv: 'But whenever the judge died, they turned back and behaved worse than their fathers, going after other gods, serving them and bowing down to them; they did not drop any of their practices or their stubborn ways.',
+    dra: 'But after the judge was dead, they returned, and did much worse things than their fathers had done, following strange gods, serving them and adoring them. They left not their own inventions, and the stubborn way, by which they were accustomed to walk.',
+  },
+  'JDG 3:7': {
+    rsv: 'And the people of Israel did what was evil in the sight of the LORD, forgetting the LORD their God, and serving the Baals and the Asheroth.',
+    dra: 'And they did evil in the sight of the Lord, and they forgot their God, and served Baalim and Astaroth.',
+  },
+  'JDG 3:9': {
+    rsv: 'But when the people of Israel cried to the LORD, the LORD raised up a deliverer for the people of Israel, who delivered them, Othni-el the son of Kenaz, Caleb’s younger brother.',
+    dra: 'And they cried to the Lord, who raised them up a saviour, and delivered them, to wit, Othoniel the son of Cenez, the younger brother of Caleb:',
+  },
+  'JDG 3:10': {
+    rsv: 'The Spirit of the LORD came upon him, and he judged Israel; he went out to war, and the LORD gave Cushan-rishathaim king of Mesopotamia into his hand; and his hand prevailed over Cushan-rishathaim.',
+    dra: 'And the spirit of the Lord was in him, and he judged Israel. And he went out to fight, and the Lord delivered into his hands Chusan Rasathaim king of Syria, and he overthrew him.',
+  },
+  'JDG 3:11': {
+    rsv: 'So the land had rest forty years. Then Othni-el the son of Kenaz died.',
+    dra: 'And the land rested forty years, and Othoniel the son of Cenez died.',
+  },
+  'JDG 3:15': {
+    rsv: 'But when the people of Israel cried to the LORD, the LORD raised up for them a deliverer, Ehud, the son of Gera, the Benjaminite, a left-handed man. The people of Israel sent tribute by him to Eglon the king of Moab.',
+    dra: 'And afterwards they cried to the Lord, who raised them up a saviour called Aod, the son of Gera, the son of Jemini, who used the left hand as well as the right. And the children of Israel sent presents to Eglon king of Moab by him.',
+  },
+  'JDG 3:30': {
+    rsv: 'So Moab was subdued that day under the hand of Israel. And the land had rest for eighty years.',
+    dra: 'And Moab was humbled that day under the hand of Israel: and the land rested eighty years.',
+  },
+  'JDG 4:3': {
+    rsv: 'Then the people of Israel cried to the LORD for help; for he had nine hundred chariots of iron, and oppressed the people of Israel cruelly for twenty years.',
+    dra: 'And the children of Israel cried to the Lord: for he had nine hundred chariots set with scythes, and for twenty years had grievously oppressed them.',
+  },
+  'JDG 4:4': {
+    rsv: 'Now Deborah, a prophetess, the wife of Lappidoth, was judging Israel at that time.',
+    dra: 'And there was at that time Debbora a prophetess the wife of Lapidoth, who judged the people,',
+  },
+  'JDG 4:5': {
+    rsv: 'She used to sit under the palm of Deborah between Ramah and Bethel in the hill country of Ephraim; and the people of Israel came up to her for judgment.',
+    dra: 'And she sat under a palm tree, which was called by her name, between Rama and Bethel in mount Ephraim: and the children of Israel came up to her for all judgment.',
+  },
+  'JDG 4:6': {
+    rsv: 'She sent and summoned Barak the son of Abino-am from Kedesh in Naphtali, and said to him, “The LORD, the God of Israel, commands you, ‘Go, gather your men at Mount Tabor, taking ten thousand from the tribe of Naphtali and the tribe of Zebulun.',
+    dra: 'And she sent and called Barac the son of Abinoem out of Cedes in Nephtali: and she said to him: The Lord God of Israel hath commanded thee: Go, and lead an army to mount Thabor, and thou shalt take with thee ten thousand fighting men of the children of Nephtali, and of the children of Zabulon:',
+  },
+  'JDG 4:7': {
+    rsv: 'And I will draw out Sisera, the general of Jabin’s army, to meet you by the river Kishon with his chariots and his troops; and I will give him into your hand.’”',
+    dra: 'And I will bring unto thee in the place of the torrent Cison, Sisara the general of Jabin’s army, and his chariots, and all his multitude, and will deliver them into thy hand.',
+  },
+  'JDG 4:8': {
+    rsv: 'Barak said to her, “If you will go with me, I will go; but if you will not go with me, I will not go.”',
+    dra: 'And Barac said to her: If thou wilt come with me, I will go: if thou wilt not come with me, I will not go.',
+  },
+  'JDG 4:9': {
+    rsv: 'And she said, “I will surely go with you; nevertheless, the road on which you are going will not lead to your glory, for the LORD will sell Sisera into the hand of a woman.” Then Deborah arose, and went with Barak to Kedesh.',
+    dra: 'She said to him: I will go indeed with thee, but at this time the victory shall not be attributed to thee, because Sisara shall be delivered into the hand of a woman. Debbora therefore arose, and went with Barac to Cedes.',
+  },
+  'JDG 4:14': {
+    rsv: 'And Deborah said to Barak, “Up! For this is the day in which the LORD has given Sisera into your hand. Does not the LORD go out before you?” So Barak went down from Mount Tabor with ten thousand men following him.',
+    dra: 'And Debbora said to Barac: Arise, for this is the day wherein the Lord hath delivered Sisara into thy hands: behold he is thy leader. And Barac went down from mount Thabor, and ten thousand fighting men with him.',
+  },
+  'JDG 4:15': {
+    rsv: 'And the LORD routed Sisera and all his chariots and all his army before Barak at the edge of the sword; and Sisera alighted from his chariot and fled away on foot.',
+    dra: 'And the Lord struck a terror into Sisara, and all his chariots, and all his multitude, with the edge of the sword, at the sight of Barac, insomuch that Sisara leaping down from off his chariot, fled away on foot.',
+  },
+  'JDG 4:17': {
+    rsv: 'But Sisera fled away on foot to the tent of Jael, the wife of Heber the Kenite; for there was peace between Jabin the king of Hazor and the house of Heber the Kenite.',
+    dra: 'But Sisara fleeing came to the tent of Jahel the wife of Haber the Cinite, for there was peace between Jabin the king of Asor, and the house of Haber the Cinite.',
+  },
+  'JDG 5:1': {
+    rsv: 'Then sang Deborah and Barak the son of Abino-am on that day:',
+    dra: 'In that day Debbora and Barac son of Abinoem sung, and said:',
+  },
+  'JDG 5:3': {
+    rsv: '“Hear, O kings; give ear, O princes; to the LORD I will sing, I will make melody to the LORD, the God of Israel.',
+    dra: 'Hear, O ye kings, give ear, ye princes: It is I, it is I, that will sing to the Lord, I will sing to the Lord the God of Israel.',
+  },
+  'JDG 5:7': {
+    rsv: 'The peasantry ceased in Israel, they ceased until you arose, Deborah, arose as a mother in Israel.',
+    dra: 'The valiant men ceased, and rested in Israel: until Debbora arose, a mother arose in Israel.',
+  },
+  'JDG 5:12': {
+    rsv: '“Awake, awake, Deborah! Awake, awake, utter a song! Arise, Barak, lead away your captives, O son of Abino-am.',
+    dra: 'Arise, arise, O Debbora, arise, arise, and utter a canticle. Arise, Barac, and take hold of thy captives, O son of Abinoem.',
+  },
+  'JDG 5:20': {
+    rsv: 'From heaven fought the stars, from their courses they fought against Sisera.',
+    dra: 'War from heaven was made against them, the stars remaining in their order and courses fought against Sisara.',
+  },
+  'JDG 5:21': {
+    rsv: 'The torrent Kishon swept them away, the onrushing torrent, the torrent Kishon. March on, my soul, with might!',
+    dra: 'The torrent of Cison dragged their carcasses, the torrent of Cadumim, the torrent of Cisoii: tread thou, my soul, upon the strong ones.',
+  },
+  'JDG 5:31': {
+    rsv: '“So perish all thine enemies, O LORD! But thy friends be like the sun as he rises in his might.” And the land had rest for forty years.',
+    dra: 'So let all thy enemies perish, O Lord: but let them that love thee shine, as the sun shineth in his rising. And the land rested for forty years.',
+  },
+  'JDG 6:6': {
+    rsv: 'And Israel was brought very low because of Midian; and the people of Israel cried for help to the LORD.',
+    dra: 'And Israel was humbled exceedingly in the sight of Madian.',
+  },
+  'JDG 6:11': {
+    rsv: 'Now the angel of the LORD came and sat under the oak at Ophrah, which belonged to Joash the Abiezrite, as his son Gideon was beating out wheat in the wine press, to hide it from the Midianites.',
+    dra: 'And an angel of the Lord came, and sat under an oak, that was in Ephra, and belonged to Joas the father of the family of Ezri. And when Gedeon his son was threshing and cleansing wheat by the winepress, to flee from Madian,',
+  },
+  'JDG 6:12': {
+    rsv: 'And the angel of the LORD appeared to him and said to him, “The LORD is with you, you mighty man of valor.”',
+    dra: 'The angel of the Lord appeared to him, and said: The Lord is with thee, O most valiant of men.',
+  },
+  'JDG 6:13': {
+    rsv: 'And Gideon said to him, “Pray, sir, if the LORD is with us, why then has all this befallen us? And where are all his wonderful deeds which our fathers recounted to us, saying, ‘Did not the LORD bring us up from Egypt?’ But now the LORD has cast us off, and given us into the hand of Midian.”',
+    dra: 'And Gedeon said to him: I beseech thee, my lord, if the Lord be with us, why have these evils fallen upon us? Where are his miracles, which our fathers have told us of, saying: The Lord brought us Out of Egypt? but now the Lord hath forsaken us, and delivered us into the bands of Madian.',
+  },
+  'JDG 6:14': {
+    rsv: 'And the LORD turned to him and said, “Go in this might of yours and deliver Israel from the hand of Midian; do not I send you?”',
+    dra: 'And the Lord looked upon him, and said: Go in this thy strength, and thou shalt deliver Israel out of the hand of Madian: know that I have sent thee.',
+  },
+  'JDG 6:15': {
+    rsv: 'And he said to him, “Pray, Lord, how can I deliver Israel? Behold, my clan is the weakest in Manasseh, and I am the least in my family.”',
+    dra: 'He answered and said: I beseech thee, my lord, wherewith shall I deliver Israel? Behold my family is the meanest in Manasses, and I am the least in my father’s house.',
+  },
+  'JDG 6:16': {
+    rsv: 'And the LORD said to him, “But I will be with you, and you shall smite the Midianites as one man.”',
+    dra: 'And the Lord said to him: I will be with thee: and thou shalt cut off Madian as one man.',
+  },
+  'JDG 6:37': {
+    rsv: 'behold, I am laying a fleece of wool on the threshing floor; if there is dew on the fleece alone, and it is dry on all the ground, then I shall know that thou wilt deliver Israel by my hand, as thou hast said.”',
+    dra: 'I will put this fleece of wool on the floor: if there be dew on the fleece only, and it be dry on all the ground beside, I, shall know that by my hand, as thou hast said, thou wilt deliver Israel.',
+  },
+  'JDG 6:38': {
+    rsv: 'And it was so. When he rose early next morning and squeezed the fleece, he wrung enough dew from the fleece to fill a bowl with water.',
+    dra: 'And it was so. And rising before day wringing the fleece, he filled a vessel with the dew.',
+  },
+  'JDG 6:39': {
+    rsv: 'Then Gideon said to God, “Let not thy anger burn against me, let me speak but this once; pray, let me make trial only this once with the fleece; pray, let it be dry only on the fleece, and on all the ground let there be dew.”',
+    dra: 'And he said again to God: let not thy wrath be kindled against me if I try once more, seeking a sign in the fleece. I pray that the fleece only may be dry, and all the ground wet with dew.',
+  },
+  'JDG 6:40': {
+    rsv: 'And God did so that night; for it was dry on the fleece only, and on all the ground there was dew.',
+    dra: 'And God did that night as he had requested: and it was dry on the fleece only, and there was dew on all the ground.',
+  },
+  'JDG 7:2': {
+    rsv: 'The LORD said to Gideon, “The people with you are too many for me to give the Midianites into their hand, lest Israel vaunt themselves against me, saying, ‘My own hand has delivered me.’',
+    dra: 'And the Lord said to Gedeon: The people that are with thee are many, and Madian shall not be delivered into their hands: lest Israel should glory against me, and say: I was delivered by my own strength.',
+  },
+  'JDG 7:6': {
+    rsv: 'And the number of those that lapped, putting their hands to their mouths, was three hundred men; but all the rest of the people knelt down to drink water.',
+    dra: 'And the number of them that had lapped water, casting it with the hand to their mouth, was three hundred men: and all the rest of the multitude had drunk kneeling.',
+  },
+  'JDG 7:7': {
+    rsv: 'And the LORD said to Gideon, “With the three hundred men that lapped I will deliver you, and give the Midianites into your hand; and let all the others go every man to his home.”',
+    dra: 'And the Lord said to Gedeon: By the three hundred men, that lapped water, I will save you, and deliver Madian into thy hand: but let all the rest of the people return to their place.',
+  },
+  'JDG 7:16': {
+    rsv: 'And he divided the three hundred men into three companies, and put trumpets into the hands of all of them and empty jars, with torches inside the jars.',
+    dra: 'And he divided the three hundred men into three parts, and gave them trumpets in their hands, and empty pitchers, and lamps within the pitchers.',
+  },
+  'JDG 7:17': {
+    rsv: 'And he said to them, “Look at me, and do likewise; when I come to the outskirts of the camp, do as I do.',
+    dra: 'And he said to them: What you shall see me do, do you the same: I will go into one part of the camp, and do you as I shall do.',
+  },
+  'JDG 7:20': {
+    rsv: 'And the three companies blew the trumpets and broke the jars, holding in their left hands the torches, and in their right hands the trumpets to blow; and they cried, “A sword for the LORD and for Gideon!”',
+    dra: 'And when they sounded their trumpets in three places round about the camp, and had broken their pitchers, they held their lamps in their left hands, and with their right hands the trumpets which they blew, and they cried out: The sword of the Lord and of Gedeon;',
+  },
+  'JDG 7:21': {
+    rsv: 'They stood every man in his place round about the camp, and all the army ran; they cried out and fled.',
+    dra: 'Standing every man in his place round about the enemies’ camp. So all the camp was troubled, and crying out and howling they fled away.',
+  },
+  'JDG 8:22': {
+    rsv: 'Then the men of Israel said to Gideon, “Rule over us, you and your son and your grandson also; for you have delivered us out of the hand of Midian.”',
+    dra: 'And all the men of Israel said to Gedeon: Rule thou over us and thy son, and thy son’s son: because thou hast delivered us from the hand of Madian.',
+  },
+  'JDG 8:23': {
+    rsv: 'Gideon said to them, “I will not rule over you, and my son will not rule over you; the LORD will rule over you.”',
+    dra: 'And he said to them: I will not rule over you, neither shall my son rule over you, but the Lord shall rule over you.',
+  },
+  'JDG 8:28': {
+    rsv: 'So Midian was subdued before the people of Israel, and they lifted up their heads no more. And the land had rest forty years in the days of Gideon.',
+    dra: 'But Madian was humbled before the children of Israel, neither could they any more lift up their beads: but the land rested for forty years, while Gedeon presided.',
+  },
+  'JDG 10:10': {
+    rsv: 'And the people of Israel cried to the LORD, saying, “We have sinned against thee, because we have forsaken our God and have served the Baals.”',
+    dra: 'And they cried to the Lord, and said: We have sinned against thee, because we have forsaken the Lord our God, and have served Baalim.',
+  },
+  'JDG 10:15': {
+    rsv: 'And the people of Israel said to the LORD, “We have sinned; do to us whatever seems good to thee; only deliver us, we pray thee, this day.”',
+    dra: 'And the children of Israel said to the Lord: We have sinned, do thou unto us whatsoever pleaseth thee: only deliver us this time.',
+  },
+  'JDG 10:16': {
+    rsv: 'So they put away the foreign gods from among them and served the LORD; and he became indignant over the misery of Israel.',
+    dra: 'And saying these things, they cast away out of their coasts all the idols of strange gods and served the Lord their God: and he was touched with their miseries.',
+  },
+  'JDG 11:1': {
+    rsv: 'Now Jephthah the Gileadite was a mighty warrior, but he was the son of a harlot. Gilead was the father of Jephthah.',
+    dra: 'There was at that time Jephte the Galaadite, a most valiant man and a warrior, the son of a woman that was a harlot, and his father was Galaad.',
+  },
+  'JDG 11:2': {
+    rsv: 'And Gilead’s wife also bore him sons; and when his wife’s sons grew up, they thrust Jephthah out, and said to him, “You shall not inherit in our father’s house; for you are the son of another woman.”',
+    dra: 'Now Galaad had a wife of whom he had sons: who after they were grown up, thrust out Jephte, saying: Thou canst not inherit in the house of our father, because thou art born of another mother.',
+  },
+  'JDG 11:7': {
+    rsv: 'But Jephthah said to the elders of Gilead, “Did you not hate me, and drive me out of my father’s house? Why have you come to me now when you are in trouble?”',
+    dra: 'And he answered them: Are not you the men that hated me, and cast me out of my father’s house, and now you are come to me constrained by necessity?',
+  },
+  'JDG 11:11': {
+    rsv: 'So Jephthah went with the elders of Gilead, and the people made him head and leader over them; and Jephthah spoke all his words before the LORD at Mizpah.',
+    dra: 'Jephte therefore went with the princes of Galaad, and all the people made him their prince. And Jephte spoke all his words before the Lord in Maspha.',
+  },
+  'JDG 11:12': {
+    rsv: 'Then Jephthah sent messengers to the king of the Ammonites and said, “What have you against me, that you have come to me to fight against my land?”',
+    dra: 'And he sent messengers to the king of the children of Ammon, to say in his name, What hast thou to do with me, that thou art come against me, to waste my land?',
+  },
+  'JDG 11:13': {
+    rsv: 'And the king of the Ammonites answered the messengers of Jephthah, “Because Israel on coming from Egypt took away my land, from the Arnon to the Jabbok and to the Jordan; now therefore restore it peaceably.”',
+    dra: 'And he answered them: Because Israel took away my land when he came up out of Egypt, from the confines of the Arnon unto the Jaboc and the Jordan: now therefore restore the same peaceably to me.',
+  },
+  'JDG 11:27': {
+    rsv: 'I therefore have not sinned against you, and you do me wrong by making war on me; the LORD, the Judge, decide this day between the people of Israel and the people of Ammon.”',
+    dra: 'Therefore I do not trespass against thee, but thou wrongest me by declaring an unjust war against me. The Lord be judge and decide this day between Israel and the children of Ammon.',
+  },
+  'JDG 11:28': {
+    rsv: 'But the king of the Ammonites did not heed the message of Jephthah which he sent to him.',
+    dra: 'And the king of the children of Ammon would not hearken to the words of Jephte, which he sent him by the messengers.',
+  },
+  'JDG 11:29': {
+    rsv: 'Then the Spirit of the LORD came upon Jephthah, and he passed through Gilead and Manasseh, and passed on to Mizpah of Gilead, and from Mizpah of Gilead he passed on to the Ammonites.',
+    dra: 'Therefore the spirit of the Lord came upon Jephte, and going round Galaad, and Manasses, and Maspha of Galaad, and passing over from thence to the children of Ammon,',
+  },
+  'JDG 11:30': {
+    rsv: 'And Jephthah made a vow to the LORD, and said, “If thou wilt give the Ammonites into my hand,',
+    dra: 'He made a vow to the Lord, saying: If thou wilt deliver the children of Ammon into my hands,',
+  },
+  'JDG 11:31': {
+    rsv: 'then whoever comes forth from the doors of my house to meet me, when I return victorious from the Ammonites, shall be the LORD’s, and I will offer him up for a burnt offering.”',
+    dra: 'Whosoever shall first come forth out of the doors of my house, and shall meet me when I return in peace from the children of Ammon, the same will I offer a holocaust to the Lord.',
+  },
+  'JDG 11:32': {
+    rsv: 'So Jephthah crossed over to the Ammonites to fight against them; and the LORD gave them into his hand.',
+    dra: 'And Jephte passed over to the children of Ammon, to fight against them: and the Lord delivered them into his hands.',
+  },
+  'JDG 11:34': {
+    rsv: 'Then Jephthah came to his home at Mizpah; and behold, his daughter came out to meet him with timbrels and with dances; she was his only child; beside her he had neither son nor daughter.',
+    dra: 'And when Jephte returned into Maspha to his house, his only daughter met him with timbrels and with dances: for he had no other children.',
+  },
+  'JDG 11:35': {
+    rsv: 'And when he saw her, he rent his clothes, and said, “Alas, my daughter! you have brought me very low, and you have become the cause of great trouble to me; for I have opened my mouth to the LORD, and I cannot take back my vow.”',
+    dra: 'And when he saw her, he rent his garments, and said: Alas! my daughter, thou hast deceived me, and thou thyself art deceived: for I have opened my mouth to the Lord, and I can do no other thing.',
+  },
+  'JDG 11:36': {
+    rsv: 'And she said to him, “My father, if you have opened your mouth to the LORD, do to me according to what has gone forth from your mouth, now that the LORD has avenged you on your enemies, on the Ammonites.”',
+    dra: 'And she answered him: My father, if thou hast opened thy mouth to the Lord, do unto me whatsoever thou hast promised, since the victory hath been granted to thee, and revenge of thy enemies.',
+  },
+  'JDG 11:37': {
+    rsv: 'And she said to her father, “Let this thing be done for me; let me alone two months, that I may go and wander on the mountains, and bewail my virginity, I and my companions.”',
+    dra: 'And she said to her father: Grant me only this which I desire: Let me go, that I may go about the mountains for two months, and may bewail my virginity with my companions.',
+  },
+  'JDG 11:40': {
+    rsv: 'that the daughters of Israel went year by year to lament the daughter of Jephthah the Gileadite four days in the year.',
+    dra: 'That from year to year the daughters of Israel assemble together, and lament the daughter of Jephte the Galaadite for four days.',
+  },
+  'JDG 13:2': {
+    rsv: 'And there was a certain man of Zorah, of the tribe of the Danites, whose name was Manoah; and his wife was barren and had no children.',
+    dra: 'Now there was a certain man of Saraa, and of the race of Dan, whose name was Manue, and his wife was barren.',
+  },
+  'JDG 13:3': {
+    rsv: 'And the angel of the LORD appeared to the woman and said to her, “Behold, you are barren and have no children; but you shall conceive and bear a son.',
+    dra: 'And an angel of the Lord appeared to her, and said: Thou art barren and without children: but thou shalt conceive and bear a son.',
+  },
+  'JDG 13:5': {
+    rsv: 'for lo, you shall conceive and bear a son. No razor shall come upon his head, for the boy shall be a Nazirite to God from birth; and he shall begin to deliver Israel from the hand of the Philistines.”',
+    dra: 'Because thou shalt conceive and bear a son, and no razor shall touch his head: for he shall be a Nazarite of God, from his infancy, and from his mother’s womb, and he shall begin to deliver Israel from the hands of the Philistines.',
+  },
+  'JDG 13:8': {
+    rsv: 'Then Manoah entreated the LORD, and said, “O, LORD, I pray thee, let the man of God whom thou didst send come again to us, and teach us what we are to do with the boy that will be born.”',
+    dra: 'Then Manue prayed to the Lord, and said: I beseech thee, O Lord, that the mail of God, whom thou didst send, may come again, and teach us what we ought to do concerning the child that shall be born.',
+  },
+  'JDG 13:18': {
+    rsv: 'And the angel of the LORD said to him, “Why do you ask my name, seeing it is wonderful?”',
+    dra: 'And he answered him: Why askest thou my name, which is wonderful?',
+  },
+  'JDG 13:20': {
+    rsv: 'And when the flame went up toward heaven from the altar, the angel of the LORD ascended in the flame of the altar while Manoah and his wife looked on; and they fell on their faces to the ground.',
+    dra: 'And when the flame from the altar went up towards heaven, the angel of the lord ascended also in the flame. And when Manue and his wife saw this, they fell flat on the ground.',
+  },
+  'JDG 13:24': {
+    rsv: 'And the woman bore a son, and called his name Samson; and the boy grew, and the LORD blessed him.',
+    dra: 'And she bore a son, and called his name Samson. And the child grew, and the Lord blessed him.',
+  },
+  'JDG 14:5': {
+    rsv: 'Then Samson went down with his father and mother to Timnah, and he came to the vineyards of Timnah. And behold, a young lion roared against him;',
+    dra: 'Then Samson went down with his father and mother to Thamnatha. And when they were come to the vineyards of the town, behold a young lion met him raging and roaring.',
+  },
+  'JDG 14:6': {
+    rsv: 'and the Spirit of the LORD came mightily upon him, and he tore the lion asunder as one tears a kid; and he had nothing in his hand. But he did not tell his father or his mother what he had done.',
+    dra: 'And the spirit of the Lord came upon Samson, and he tore the lion as he would have torn a kid in pieces, having nothing at all in his hand: and he would not tell this to his father and mother.',
+  },
+  'JDG 14:8': {
+    rsv: 'And after a while he returned to take her; and he turned aside to see the carcass of the lion, and behold, there was a swarm of bees in the body of the lion, and honey.',
+    dra: 'And after some days returning to take her, he went aside to see the carcass of the lion, and behold there was a swarm of bees in the mouth of the lion and a honeycomb.',
+  },
+  'JDG 14:14': {
+    rsv: 'And he said to them, “Out of the eater came something to eat. Out of the strong came something sweet.” And they could not in three days tell what the riddle was.',
+    dra: 'And he said to them: Out of the eater came forth meat, and out of the strong came forth sweetness. And they could not in three days expound the riddle.',
+  },
+  'JDG 14:18': {
+    rsv: 'And the men of the city said to him on the seventh day before the sun went down, “What is sweeter than honey? What is stronger than a lion?” And he said to them, “If you had not plowed with my heifer, you would not have found out my riddle.”',
+    dra: 'And they on the seventh day before the sun went down said to him: What is sweeter than honey? and what is stronger than a lion? And he said to them: If you had not ploughed with my heifer, you had not found out my riddle.',
+  },
+  'JDG 16:4': {
+    rsv: 'After this he loved a woman in the valley of Sorek, whose name was Delilah.',
+    dra: 'After this he loved a woman, who dwelt in the valley of Sorec, and she was called Dalila.',
+  },
+  'JDG 16:5': {
+    rsv: 'And the lords of the Philistines came to her and said to her, “Entice him, and see wherein his great strength lies, and by what means we may overpower him, that we may bind him to subdue him; and we will each give you eleven hundred pieces of silver.”',
+    dra: 'And the princes of the Philistines came to her, and said: Deceive him, and learn of him wherein his great strength lieth, and how we may be able to overcome him, to bind and afflict him: which if thou shalt do, we will give thee every one of us eleven hundred pieces of silver.',
+  },
+  'JDG 16:15': {
+    rsv: 'And she said to him, “How can you say, ‘I love you,’ when your heart is not with me? You have mocked me these three times, and you have not told me wherein your great strength lies.”',
+    dra: 'And Dalila said to him: How dost thou say thou lovest me, when thy mind is not with me? Thou hast told me lies these three times, and wouldst not tell me wherein thy great strength lieth.',
+  },
+  'JDG 16:17': {
+    rsv: 'And he told her all his mind, and said to her, “A razor has never come upon my head; for I have been a Nazirite to God from my mother’s womb. If I be shaved, then my strength will leave me, and I shall become weak, and be like any other man.”',
+    dra: 'Then opening the truth of the thing, he said to her: The razor hath never come upon my head, for I am a Nazarite, that is to say, consecrated to God from my mother’s womb: if my head be shaven, my strength shall depart from me, and I shall become weak, and shall be like other men.',
+  },
+  'JDG 16:19': {
+    rsv: 'She made him sleep upon her knees; and she called a man, and had him shave off the seven locks of his head. Then she began to torment him, and his strength left him.',
+    dra: 'But she made him sleep upon her knees, and lay his head in her bosom. And she called a barber, and shaved his seven locks, and began to drive him away, and thrust him from her: for immediately his strength departed from him.',
+  },
+  'JDG 16:20': {
+    rsv: 'And she said, “The Philistines are upon you, Samson!” And he awoke from his sleep, and said, “I will go out as at other times, and shake myself free.” And he did not know that the LORD had left him.',
+    dra: 'And she said: The Philistines are upon thee, Samson. And awaking from sleep, he said in his mind: I will go out as I did before, and shake myself, not knowing that the Lord was departed from him.',
+  },
+  'JDG 16:21': {
+    rsv: 'And the Philistines seized him and gouged out his eyes, and brought him down to Gaza, and bound him with bronze fetters; and he ground at the mill in the prison.',
+    dra: 'Then the Philistines seized upon him, and forthwith pulled out his eyes, and led him bound in chains to Gaza, and shutting him up in prison made him grind.',
+  },
+  'JDG 16:22': {
+    rsv: 'But the hair of his head began to grow again after it had been shaved.',
+    dra: 'And now his hair began to grow again.',
+  },
+  'JDG 16:23': {
+    rsv: 'Now the lords of the Philistines gathered to offer a great sacrifice to Dagon their god, and to rejoice; for they said, “Our god has given Samson our enemy into our hand.”',
+    dra: 'And the princes of the Philistines assembled together, to offer great sacrifices to Dagon their god, and to make merry, saying: Our god hath delivered our enemy Samson into our hands.',
+  },
+  'JDG 16:25': {
+    rsv: 'And when their hearts were merry, they said, “Call Samson, that he may make sport for us.” So they called Samson out of the prison, and he made sport before them. They made him stand between the pillars;',
+    dra: 'And rejoicing in their feasts, when they had now taken their good cheer, they commanded that Samson should be called, and should play before them. And being brought out of prison he played before them, and they made him stand between two pillars.',
+  },
+  'JDG 16:26': {
+    rsv: 'and Samson said to the lad who held him by the hand, “Let me feel the pillars on which the house rests, that I may lean against them.”',
+    dra: 'And he said to the lad that guided his steps: Suffer me to touch the pillars which support the whole house, and let me lean upon them, and rest a little.',
+  },
+  'JDG 16:28': {
+    rsv: 'Then Samson called to the LORD and said, “O Lord GOD, remember me, I pray thee, and strengthen me, I pray thee, only this once, O God, that I may be avenged upon the Philistines for one of my two eyes.”',
+    dra: 'But he called upon the Lord, saying: O Lord God, remember me, and restore to me now my former strength, O my God, that I may revenge myself on my enemies, and for the loss of my two eyes I may take one revenge.',
+  },
+  'JDG 16:30': {
+    rsv: 'And Samson said, “Let me die with the Philistines.” Then he bowed with all his might; and the house fell upon the lords and upon all the people that were in it. So the dead whom he slew at his death were more than those whom he had slain during his life.',
+    dra: 'He said: Let me die with the Philistines. And when he had strongly shook the pillars, the house fell upon all the princes, and the rest of the multitude that was there: and he killed many more at his death, than he had killed before in his life.',
+  },
+  'JDG 16:31': {
+    rsv: 'Then his brothers and all his family came down and took him and brought him up and buried him between Zorah and Eshta-ol in the tomb of Manoah his father. He had judged Israel twenty years.',
+    dra: 'And his brethren and all his kindred, going down took his body, and buried it between Saraa and Esthaol in the buryingplace of his father Manue: and he judged Israel twenty years.',
+  },
+  'JDG 17:1': {
+    rsv: 'There was a man of the hill country of Ephraim, whose name was Micah.',
+    dra: 'There was at that time a man of mount Ephraim whose name was Michas,',
+  },
+  'JDG 17:3': {
+    rsv: 'And he restored the eleven hundred pieces of silver to his mother; and his mother said, “I consecrate the silver to the LORD from my hand for my son, to make a graven image and a molten image; now therefore I will restore it to you.”',
+    dra: 'So he restored them to his mother, who said to him: I have consecrated and vowed this silver to the Lord, that my son may receive it at my hand, and make a graven and a molten god, so now I deliver it to thee.',
+  },
+  'JDG 17:5': {
+    rsv: 'And the man Micah had a shrine, and he made an ephod and teraphim, and installed one of his sons, who became his priest.',
+    dra: 'And he separated also therein a little temple for the god, and made an ephod, and theraphim, that is to say, a priestly garment, and idols: and he filled the hand of one of his sons, and he became his priest.',
+  },
+  'JDG 17:6': {
+    rsv: 'In those days there was no king in Israel; every man did what was right in his own eyes.',
+    dra: 'In those days there was no king in Israel, but every one did that which seemed right to himself.',
+  },
+  'JDG 17:9': {
+    rsv: 'And Micah said to him, “From where do you come?” And he said to him, “I am a Levite of Bethlehem in Judah, and I am going to sojourn where I may find a place.”',
+    dra: 'He was asked by him whence he came. And he answered: I am a Levite of Bethlehem Juda, and I am going to dwell where I can, and where I shall find a place to my advantage.',
+  },
+  'JDG 17:10': {
+    rsv: 'And Micah said to him, “Stay with me, and be to me a father and a priest, and I will give you ten pieces of silver a year, and a suit of apparel, and your living.”',
+    dra: 'And Michas said: Stay with me, and be unto me a father and a priest, and I will give thee every year ten pieces of silver, and a double suit of apparel, and thy victuals.',
+  },
+  'JDG 17:13': {
+    rsv: 'Then Micah said, “Now I know that the LORD will prosper me, because I have a Levite as priest.”',
+    dra: 'Now I know God will do me good, since I have a priest of the race of the Levites.',
+  },
+  'JDG 18:1': {
+    rsv: 'In those days there was no king in Israel. And in those days the tribe of the Danites was seeking for itself an inheritance to dwell in; for until then no inheritance among the tribes of Israel had fallen to them.',
+    dra: 'In those days there was no king in Israel, and the tribe of Dan sought them an inheritance to dwell in: for unto that day they had not received their lot among the other tribes.',
+  },
+  'JDG 18:17': {
+    rsv: 'and the five men who had gone to spy out the land went up, and entered and took the graven image, the ephod, the teraphim, and the molten image, while the priest stood by the entrance of the gate with the six hundred men armed with weapons of war.',
+    dra: 'But they that were gone into the house of the young man, went about to take away the graven god, and the ephod, and the theraphim, and the molten god, and the priest stood before the door, the six hundred valiant men waiting not far off.',
+  },
+  'JDG 18:19': {
+    rsv: 'And they said to him, “Keep quiet, put your hand upon your mouth, and come with us, and be to us a father and a priest. Is it better for you to be priest to the house of one man, or to be priest to a tribe and family in Israel?”',
+    dra: 'And they said to him: Hold thy peace and put thy finger on thy mouth and come with us, that we may have thee for a father, and a priest. Whether is better for thee, to be a priest in the house of one man, or in a tribe and family in Israel?',
+  },
+  'JDG 18:20': {
+    rsv: 'And the priest’s heart was glad; he took the ephod, and the teraphim, and the graven image, and went in the midst of the people.',
+    dra: 'When he had heard this, he agreed to their words, and took the ephod, and the idols, and the graven god, and departed with them.',
+  },
+  'JDG 18:24': {
+    rsv: 'And he said, “You take my gods which I made, and the priest, and go away, and what have I left? How then do you ask me, ‘What ails you?’”',
+    dra: 'And he answered: You have taken away my gods which I have made me and the priest, and all that I have, and do you say: What aileth thee?',
+  },
+  'JDG 18:29': {
+    rsv: 'And they named the city Dan, after the name of Dan their ancestor, who was born to Israel; but the name of the city was Laish at the first.',
+    dra: 'Calling the name of the city Dan after the name of their father, who was the son of Israel, which before was called Lais.',
+  },
+  'JDG 18:30': {
+    rsv: 'And the Danites set up the graven image for themselves; and Jonathan the son of Gershom, son of Moses, and his sons were priests to the tribe of the Danites until the day of the captivity of the land.',
+    dra: 'And they set up to themselves the graven idol, and Jonathan the son of Gersam the son of Moses, he and his sons were priests in the tribe of Dan, until the day of their captivity.',
+  },
+  'JDG 20:1': {
+    rsv: 'Then all the people of Israel came out, from Dan to Beer-sheba, including the land of Gilead, and the congregation assembled as one man to the LORD at Mizpah.',
+    dra: 'Then all the children of Israel went out and gathered together as one man from Dan to Bersabee, with the land of Galaad, to the Lord in Maspha:',
+  },
+  'JDG 21:2': {
+    rsv: 'And the people came to Bethel, and sat there till evening before God, and they lifted up their voices and wept bitterly.',
+    dra: 'And they all came to the house of God in Silo, and abiding before him till the evening, lifted up their voices, and began to lament and weep, saying:',
+  },
+  'JDG 21:3': {
+    rsv: 'And they said, “O LORD, the God of Israel, why has this come to pass in Israel, that there should be today one tribe lacking in Israel?”',
+    dra: 'O Lord God of Israel, why is so great an evil come to pass in thy people, that this day one tribe should be taken away from among us?',
+  },
+  'JDG 21:6': {
+    rsv: 'And the people of Israel had compassion for Benjamin their brother, and said, “One tribe is cut off from Israel this day.',
+    dra: 'And the children of Israel being moved with repentance for their brother Benjamin, began to say: One tribe is taken away from Israel.',
+  },
+  'JDG 21:25': {
+    rsv: 'In those days there was no king in Israel; every man did what was right in his own eyes.',
+    dra: 'In those days there was no king in Israel: but every one did that which seemed right to himself.',
+  },
+  'MAT 2:6': {
+    rsv: '‘And you, O Bethlehem, in the land of Judah, are by no means least among the rulers of Judah; for from you shall come a ruler who will govern my people Israel.’”',
+    dra: 'And thou Bethlehem the land of Juda art not the least among the princes of Juda: for out of thee shall come forth the captain that shall rule my people Israel.',
+  },
+  'MAT 5:34': {
+    rsv: 'But I say to you, Do not swear at all, either by heaven, for it is the throne of God,',
+    dra: 'But I say to you not to swear at all, neither by heaven, for it is the throne of God:',
+  },
+  'MAT 5:37': {
+    rsv: 'Let what you say be simply ‘Yes’ or ‘No’; anything more than this comes from evil.',
+    dra: 'But let your speech be yea, yea: no, no: and that which is over and above these, is of evil.',
+  },
+  'MAT 13:43': {
+    rsv: 'Then the righteous will shine like the sun in the kingdom of their Father. He who has ears, let him hear.',
+    dra: 'Then shall the just shine as the sun, in the kingdom of their Father. He that hath ears to hear, let him hear.',
+  },
+  'LUK 1:13': {
+    rsv: 'But the angel said to him, “Do not be afraid, Zechariah, for your prayer is heard, and your wife Elizabeth will bear you a son, and you shall call his name John.',
+    dra: 'But the angel said to him: Fear not, Zachary, for thy prayer is heard; and thy wife Elizabeth shall bear thee a son, and thou shalt call his name John:',
+  },
+  'LUK 1:15': {
+    rsv: 'for he will be great before the Lord, and he shall drink no wine nor strong drink, and he will be filled with the Holy Spirit, even from his mother’s womb.',
+    dra: 'For he shall be great before the Lord; and shall drink no wine nor strong drink: and he shall be filled with the Holy Ghost, even from his mother’s womb.',
+  },
+  '2CO 4:6': {
+    rsv: 'For it is the God who said, “Let light shine out of darkness,” who has shone in our hearts to give the light of the knowledge of the glory of God in the face of Christ.',
+    dra: 'For God, who commanded the light to shine out of darkness, hath shined in our hearts, to give the light of the knowledge of the glory of God, in the face of Christ Jesus.',
+  },
+  '2CO 4:7': {
+    rsv: 'But we have this treasure in earthen vessels, to show that the transcendent power belongs to God and not to us.',
+    dra: 'But we have this treasure in earthen vessels, that the excellency may be of the power of God, and not of us.',
+  },
+  '2TI 2:13': {
+    rsv: 'if we are faithless, he remains faithful— for he cannot deny himself.',
+    dra: 'If we believe not, he continueth faithful, he can not deny himself.',
+  },
+  'HEB 11:32': {
+    rsv: 'And what more shall I say? For time would fail me to tell of Gideon, Barak, Samson, Jephthah, of David and Samuel and the prophets—',
+    dra: 'And what shall I yet say? For the time would fail me to tell of Gedeon, Barac, Samson, Jephthe, David, Samuel, and the prophets:',
+  },
+  'HEB 11:34': {
+    rsv: 'quenched raging fire, escaped the edge of the sword, won strength out of weakness, became mighty in war, put foreign armies to flight.',
+    dra: 'Quenched the violence of fire, escaped the edge of the sword, recovered strength from weakness, became valiant in battle, put to flight the armies of foreigners:',
+  },
 }
 
 /** A verse's words in the active translation. Throws for a verse that isn't in the list (a content check catches these first). */

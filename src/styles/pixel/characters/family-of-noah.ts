@@ -264,6 +264,17 @@ export const familyOfNoah: Record<string, PixelSpriteArt> = {
   achan: person({ robe: C.wood2, hair: C.ink, beard: C.ink, sash: C.dslate }),
   'caleb-old': person({ robe: C.green, hair: C.white, beard: C.white, sash: C.sand }),
   'joshua-old': person({ robe: C.wood3, hair: C.white, beard: C.white, sash: C.rose }),
+  // Level 15: the judges Deborah, Barak, Gideon, Jephthah and Samson (and Samson shorn); Jephthah's daughter; Delilah; Micah; the young Levite.
+  deborah: person({ robe: C.teal, hair: C.wood0, veil: C.sand, sash: C.gold }),
+  barak: person({ robe: C.rose, hair: C.ink, beard: C.ink, sash: C.sand }),
+  gideon: person({ robe: C.sand2, hair: C.wood1, beard: C.wood1, sash: C.green }),
+  jephthah: person({ robe: C.dslate, hair: C.ink, beard: C.ink, sash: C.rose }),
+  'jephthahs-daughter': person({ robe: C.white, hair: C.wood0, veil: C.rose, sash: C.blue }),
+  samson: person({ robe: C.wood2, hair: C.ink, beard: C.ink, sash: C.gold }),
+  'samson-shorn': person({ robe: C.slate, hair: C.wood3, beard: C.wood1 }),
+  delilah: person({ robe: C.purple, hair: C.ink, veil: C.gold, sash: C.gold }),
+  micah: person({ robe: C.green, hair: C.wood1, beard: C.wood1, sash: C.pale }),
+  levite: person({ robe: C.white, hair: C.wood0, sash: C.blue }),
   amalekites: band([
     { robe: C.wood1, hair: C.ink, beard: C.ink, veil: C.dslate },
     { robe: C.purple, hair: C.ink, beard: C.ink, veil: C.wood0 },

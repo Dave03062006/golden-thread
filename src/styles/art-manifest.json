@@ -389,6 +389,30 @@
     },
     "tribes-map": {
       "hash": "59a7ff3b"
+    },
+    "tabor-plain": {
+      "hash": "73731eb9"
+    },
+    "kishon-flood": {
+      "hash": "6923161a"
+    },
+    "wine-press": {
+      "hash": "1d7a4970"
+    },
+    "midian-camp": {
+      "hash": "d033557b"
+    },
+    "jephthah-map": {
+      "hash": "1f966d7d"
+    },
+    "prison-mill": {
+      "hash": "2603ebe2"
+    },
+    "dagon-hall": {
+      "hash": "741ffd70"
+    },
+    "dagon-fallen": {
+      "hash": "f4204f6a"
     }
   },
   "paperProps": {
@@ -1264,6 +1288,48 @@
     },
     "idol": {
       "hash": "51b8027e"
+    },
+    "palm-tree": {
+      "hash": "34ef197a"
+    },
+    "deborah": {
+      "hash": "2f7419d1"
+    },
+    "barak": {
+      "hash": "ec4088af"
+    },
+    "gideon": {
+      "hash": "264dcb26"
+    },
+    "fleece": {
+      "hash": "2d223257"
+    },
+    "jephthah": {
+      "hash": "1685db85"
+    },
+    "jephthahs-daughter": {
+      "hash": "8a892164"
+    },
+    "samson": {
+      "hash": "83365d23"
+    },
+    "honeycomb": {
+      "hash": "20f5cbf9"
+    },
+    "delilah": {
+      "hash": "b4a44cbc"
+    },
+    "samson-shorn": {
+      "hash": "63a14e37"
+    },
+    "millstone": {
+      "hash": "a0cb2d7d"
+    },
+    "micah": {
+      "hash": "ed42e7dd"
+    },
+    "levite": {
+      "hash": "bb0a157f"
     }
   },
   "pixelLayers": {
@@ -1656,6 +1722,30 @@
     },
     "tribes-map": {
       "hash": "0253baf9"
+    },
+    "tabor-plain": {
+      "hash": "1b2ab5f5"
+    },
+    "kishon-flood": {
+      "hash": "ccb36b4f"
+    },
+    "wine-press": {
+      "hash": "73235017"
+    },
+    "midian-camp": {
+      "hash": "e2be11b3"
+    },
+    "jephthah-map": {
+      "hash": "f2cd4c5a"
+    },
+    "prison-mill": {
+      "hash": "b8df046d"
+    },
+    "dagon-hall": {
+      "hash": "2f63a6f5"
+    },
+    "dagon-fallen": {
+      "hash": "3eab283f"
     }
   },
   "backdrop": {
