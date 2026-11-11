@@ -19,7 +19,7 @@ const FIRST_LIGHT_HOME = { x: 0.075, y: 0.1 }
 
 /** On day four the sun and moon first rise from behind the hills... */
 const SUN_RISEN = { x: 0.44, y: 0.43 }
-const MOON_RISEN = { x: 0.575, y: 0.42 }
+const MOON_RISEN = { x: 0.72, y: 0.42 }
 /** ...and are then set in their places: the sun on the day side, the moon on the night side. */
 const SUN_HOME = { x: 0.2, y: 0.22 }
 const MOON_HOME = { x: 0.8, y: 0.2 }
@@ -28,8 +28,8 @@ const MOON_HOME = { x: 0.8, y: 0.2 }
 const ANIMAL_PLACES = {
   lion: { x: 0.25, facing: 1 },
   deer: { x: 0.37, facing: 1 },
-  sheep: { x: 0.665, facing: -1 },
-  elephant: { x: 0.82, facing: -1 },
+  sheep: { x: 0.56, facing: -1 },
+  elephant: { x: 0.8, facing: -1 },
 } as const
 
 const PLANTS = ['tree-1', 'tree-2', 'tree-3', 'plant-1', 'plant-2', 'plant-3'] as const
@@ -72,7 +72,7 @@ export const creationSet: SceneDescription = {
   actors: [
     // The sun and moon wait below the horizon, behind the sea.
     { id: 'sun', prop: 'sun', above: 'firmament', x: 0.44, y: 0.74, size: 0.09, opacity: 0 },
-    { id: 'moon', prop: 'moon', above: 'firmament', x: 0.575, y: 0.74, size: 0.06, opacity: 0 },
+    { id: 'moon', prop: 'moon', above: 'firmament', x: 0.72, y: 0.74, size: 0.06, opacity: 0 },
 
     // Trees and plants, which grow on day three.
     { id: 'tree-1', prop: 'fruit-tree', above: 'grass', x: 0.15, y: 0.585, size: 0.1, grow: 0 },
@@ -80,7 +80,7 @@ export const creationSet: SceneDescription = {
     { id: 'tree-3', prop: 'fruit-tree', above: 'grass', x: 0.9, y: 0.585, size: 0.1, grow: 0 },
     { id: 'plant-1', prop: 'seed-plant', above: 'grass', x: 0.31, y: 0.6, size: 0.05, grow: 0 },
     { id: 'plant-2', prop: 'seed-plant', above: 'grass', x: 0.44, y: 0.585, size: 0.042, grow: 0 },
-    { id: 'plant-3', prop: 'seed-plant', above: 'grass', x: 0.76, y: 0.6, size: 0.05, grow: 0 },
+    { id: 'plant-3', prop: 'seed-plant', above: 'grass', x: 0.665, y: 0.6, size: 0.05, grow: 0 },
 
     // Birds, which fill the sky on day five.
     {
@@ -325,9 +325,9 @@ const scenes: StoryScene[] = [
       say(
         'God said, let the earth bring forth living creatures: cattle, creeping things and wild beasts, each according to its kind. And so it was.',
         // The animals arrive at the edges and wait to be welcomed.
-        actor('lion', { x: 0.07, pose: 'walk' }, { seconds: 4, ease: 'outCubic' }),
+        actor('lion', { x: 0.17, pose: 'walk' }, { seconds: 4, ease: 'outCubic' }),
         actor('lion', { pose: 'idle' }, { seconds: 0.6, delay: 3.4 }),
-        actor('deer', { x: 0.16, pose: 'walk' }, { seconds: 4.5, ease: 'outCubic', delay: 0.8 }),
+        actor('deer', { x: 0.06, pose: 'walk' }, { seconds: 4.5, ease: 'outCubic', delay: 0.8 }),
         actor('deer', { pose: 'idle' }, { seconds: 0.6, delay: 4.6 }),
         actor('sheep', { x: 0.9, pose: 'walk' }, { seconds: 4, ease: 'outCubic', delay: 0.4 }),
         actor('sheep', { pose: 'idle' }, { seconds: 0.6, delay: 3.8 }),

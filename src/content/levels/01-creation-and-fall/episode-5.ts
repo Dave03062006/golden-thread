@@ -41,9 +41,9 @@ export const FLOCK: FlockAnimal[] = [
   { id: 'sheep-4', lamb: false, firstborn: false, wanders: false, x: 0.6, y: 0.7, slot: { x: 0.86, y: 0.78 } },
   { id: 'sheep-5', lamb: false, firstborn: false, wanders: false, x: 0.55, y: 0.85, slot: { x: 0.735, y: 0.805 } },
   { id: 'sheep-6', lamb: false, firstborn: false, wanders: false, x: 0.47, y: 0.78, slot: { x: 0.8, y: 0.805 } },
-  { id: 'lamb-1', lamb: true, firstborn: true, wanders: false, x: 0.58, y: 0.76, slot: { x: 0.745, y: 0.78 } },
-  { id: 'lamb-2', lamb: true, firstborn: true, wanders: true, x: 0.53, y: 0.82, slot: { x: 0.79, y: 0.78 } },
-  { id: 'lamb-3', lamb: true, firstborn: false, wanders: true, x: 0.62, y: 0.84, slot: { x: 0.845, y: 0.805 } },
+  { id: 'lamb-1', lamb: true, firstborn: true, wanders: false, x: 0.64, y: 0.79, slot: { x: 0.7, y: 0.835 } },
+  { id: 'lamb-2', lamb: true, firstborn: true, wanders: true, x: 0.5, y: 0.84, slot: { x: 0.77, y: 0.835 } },
+  { id: 'lamb-3', lamb: true, firstborn: false, wanders: true, x: 0.62, y: 0.84, slot: { x: 0.84, y: 0.84 } },
 ]
 
 /** The fold's gate, on its left side, facing the pasture. */

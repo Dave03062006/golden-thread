@@ -90,3 +90,19 @@ The upload only sends files that are new or changed, and it remembers what it se
 2. Run `npm run build` then `npm run preview`, open the game, and start Episode 1: the
    music should play. If it's silent, open the browser's console (F12). A message about
    **CORS** means step 4 needs your site's address added.
+
+## The narrator's voice
+
+When "Read aloud" is on, the story plays a recorded narrator for each line, and falls back to
+the device's own voice if a recording is missing. The recordings are made on your computer with
+Kokoro, a free neural voice (Apache-2.0), in the voice "Michael":
+
+1. Once: `pip install kokoro-onnx soundfile`, and put `kokoro-v1.0.onnx` and `voices-v1.0.bin`
+   (from the `model-files-v1.0` release of github.com/thewh1teagle/kokoro-onnx) in a `kokoro`
+   folder in your home folder.
+2. List the lines: `EXPORT=1 npx vitest run src/screens/story/narration.export.test.ts`.
+3. Record them: `python scripts/narrate.py`. Only new or changed lines are recorded; each file is
+   named after its words, so editing a line simply records it again.
+4. `npm run media:upload` sends them to the bucket with the music, into `voice/`.
+
+All 18 levels are about 1,700 lines.

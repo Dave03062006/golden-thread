@@ -1,4 +1,4 @@
-// Uploads the prepared music (media/music/, made by `npm run media`) to the game's music
+// Uploads the prepared music (media/music/, made by `npm run media`) and the recorded narration (media/voice/, made by scripts/narrate.py) to the game's music
 // host, a Cloudflare R2 bucket, using Cloudflare's own command-line tool, Wrangler. Only
 // files that are new or have changed since the last upload are sent.
 //
@@ -36,10 +36,12 @@ function bucketName() {
 
 const BUCKET = bucketName()
 const FOLDER = 'media/music'
+/** The recorded narration (scripts/narrate.py), uploaded beside the music once it has been made. */
+const VOICE = 'media/voice'
 /** What was uploaded last time, by file name: its content hash. Kept beside the files (git-ignored). */
 const RECORD = 'media/uploaded.json'
 
-const TYPES = { webm: 'audio/webm', m4a: 'audio/mp4' }
+const TYPES = { webm: 'audio/webm', m4a: 'audio/mp4', mp3: 'audio/mpeg' }
 /** The files never change under the same name once uploaded, so browsers may keep them a long time. */
 const CACHE = 'public, max-age=2592000'
 
@@ -60,23 +62,27 @@ if (!existsSync(FOLDER)) {
 }
 
 const record = existsSync(RECORD) ? JSON.parse(await readFile(RECORD, 'utf8')) : {}
-const files = (await readdir(FOLDER)).filter((f) => /\.(webm|m4a)$/.test(f)).sort()
+// Music is recorded by file name (as before), narration as voice/name.
+const files = [
+  ...(await readdir(FOLDER)).filter((f) => /\.(webm|m4a)$/.test(f)).sort().map((file) => ({ dir: 'music', folder: FOLDER, file, key: file })),
+  ...(existsSync(VOICE) ? (await readdir(VOICE)).filter((f) => f.endsWith('.mp3')).sort().map((file) => ({ dir: 'voice', folder: VOICE, file, key: `voice/${file}` })) : []),
+]
 const changed = []
-for (const file of files) {
-  const digest = await hash(`${FOLDER}/${file}`)
-  if (all || record[file] !== digest) changed.push({ file, digest })
+for (const entry of files) {
+  const digest = await hash(`${entry.folder}/${entry.file}`)
+  if (all || record[entry.key] !== digest) changed.push({ ...entry, digest })
 }
 
-console.log(`Bucket: ${BUCKET}. ${files.length} music files, ${changed.length} to upload.`)
+console.log(`Bucket: ${BUCKET}. ${files.length} music and narration files, ${changed.length} to upload.`)
 let bytes = 0
-for (const { file, digest } of changed) {
-  const size = (await stat(`${FOLDER}/${file}`)).size
+for (const { dir, folder, file, key, digest } of changed) {
+  const size = (await stat(`${folder}/${file}`)).size
   bytes += size
   const type = TYPES[file.split('.').pop()]
-  console.log(`${dryRun ? 'would upload' : 'uploading'} music/${file} (${(size / 1024).toFixed(0)} KB)`)
+  console.log(`${dryRun ? 'would upload' : 'uploading'} ${dir}/${file} (${(size / 1024).toFixed(0)} KB)`)
   if (dryRun) continue
-  await run('npx', ['wrangler', 'r2', 'object', 'put', `${BUCKET}/music/${file}`, '--file', `${FOLDER}/${file}`, '--content-type', type, '--cache-control', `"${CACHE}"`, '--remote'])
-  record[file] = digest
+  await run('npx', ['wrangler', 'r2', 'object', 'put', `${BUCKET}/${dir}/${file}`, '--file', `${folder}/${file}`, '--content-type', type, '--cache-control', `"${CACHE}"`, '--remote'])
+  record[key] = digest
   // Saved after each file, so an interrupted upload picks up where it stopped.
   await writeFile(RECORD, JSON.stringify(record, null, 2))
 }

@@ -1,5 +1,6 @@
 import { memo, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { gameClock } from '../../engine/clock'
+import { inDepthOrder } from '../../scene/depth'
 import { layerTransform, projectPoint, type ActorState } from '../../scene/evaluate'
 import type { RendererProps } from '../../stage/types'
 import { LAYER_H, LAYER_W, MARGIN_X, MARGIN_Y, PX_H, PX_W, pixelLayers, pixelProps } from './art'
@@ -20,6 +21,13 @@ const ALONE = [{ dx: 0, dy: 0, scale: 1, phase: 0 }]
  * Pixel art doesn't zoom, since that would break the grid; the camera only pans. Things
  * fade by dithering, so every pixel on screen stays a palette color.
  */
+/** People and animals, standing on the ground: drawn in depth order (scene/depth.ts). */
+function walks(actor: ActorState): boolean {
+  const art = pixelProps[actor.prop]
+  if (!art || art.anchor !== 'base') return false
+  return art.kind === 'sprite' ? 'walk' in art.poses : art.poses.includes('walk')
+}
+
 export const PixelRenderer = memo(function PixelRenderer({ scene, getFrame, width, height, dpr, active, onReady }: RendererProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const scale = pixelScale(width, height, dpr)
@@ -113,7 +121,7 @@ export const PixelRenderer = memo(function PixelRenderer({ scene, getFrame, widt
           const animate = look?.animate
           if (animate) animate(painterAt(ctx, left, top, scale, layer.opacity), frame.time)
         }
-        for (const actor of frame.actors) if (actor.above === layer.id) drawActor(actor, camera)
+        for (const actor of inDepthOrder(frame.actors.filter((a) => a.above === layer.id), walks)) drawActor(actor, camera)
       }
     }
 

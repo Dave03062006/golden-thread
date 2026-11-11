@@ -19,6 +19,8 @@ export interface DeviceSettings {
   musicVolume: number
   soundVolume: number
   voiceVolume: number
+  /** The read-aloud voice the player chose, by name; none means the best one the device has (engine/voice.ts). */
+  voiceName: string | null
   lastStyle: StyleId
   /** Sacred music (free, built in), the player's worship songs, or no music (spec §11.2). */
   musicMode: 'sacred' | 'worship' | 'off'
@@ -43,6 +45,7 @@ export const DEFAULT_SETTINGS: DeviceSettings = {
   musicVolume: 0.8,
   soundVolume: 0.8,
   voiceVolume: 1,
+  voiceName: null,
   lastStyle: 'paper-glass',
   musicMode: 'sacred',
   worshipWay: null,

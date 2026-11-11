@@ -1,5 +1,7 @@
+import { useEffect, useState } from 'react'
 import { useApp } from '../app/store'
 import { useSettings, type DeviceSettings } from '../engine/settings'
+import { READING, deviceVoices, pickVoice, rankVoices } from '../engine/voice'
 import { STYLE_IDS, STYLE_NAMES, type StyleId } from '../styles/ids'
 import { Button, Choice, Panel, Slider, Toggle } from '../ui/components'
 import './screens.css'
@@ -97,6 +99,7 @@ export function SettingsScreen() {
           <Slider label="Music volume" value={settings.musicVolume} onChange={(musicVolume) => settings.update({ musicVolume })} />
           <Slider label="Sound effects" value={settings.soundVolume} onChange={(soundVolume) => settings.update({ soundVolume })} />
           <Slider label="Read-aloud voice" value={settings.voiceVolume} onChange={(voiceVolume) => settings.update({ voiceVolume })} />
+          <VoicePicker />
         </section>
 
         <section className="settings-group" aria-labelledby="settings-motion">
@@ -120,5 +123,45 @@ export function SettingsScreen() {
         </section>
       </Panel>
     </main>
+  )
+}
+
+/** A sample to hear a voice by. */
+const SAMPLE = 'In the beginning God created the heavens and the earth.'
+
+/** Which voice reads aloud: the best one on this device, or one the player picks, with a sample to hear it. */
+function VoicePicker() {
+  const { voiceName, voiceVolume, update } = useSettings()
+  const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([])
+  useEffect(() => {
+    void deviceVoices().then((all) => setVoices(rankVoices(all)))
+  }, [])
+  if (!voices.length) return null
+  const hear = () => {
+    const utterance = new SpeechSynthesisUtterance(SAMPLE)
+    const voice = pickVoice(voices, voiceName)
+    if (voice) utterance.voice = voice
+    utterance.rate = READING.rate
+    utterance.pitch = READING.pitch
+    utterance.volume = voiceVolume
+    speechSynthesis.cancel()
+    speechSynthesis.speak(utterance)
+  }
+  return (
+    <div className="settings-voice">
+      <label>
+        Reading voice
+        <select value={voiceName ?? ''} onChange={(e) => update({ voiceName: e.target.value || null })}>
+          <option value=''>The best voice on this device ({voices[0]!.name})</option>
+          {voices.map((v) => (
+            <option key={v.name} value={v.name}>
+              {v.name}
+            </option>
+          ))}
+        </select>
+      </label>
+      <Button onClick={hear}>Hear it</Button>
+      <p className='settings-note'>Voices marked “Natural” sound most like a person reading. Edge on Windows has the most of them.</p>
+    </div>
   )
 }

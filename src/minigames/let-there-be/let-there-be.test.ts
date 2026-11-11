@@ -144,7 +144,7 @@ describe('"Let there be…"', () => {
     // The sheep waits at the right edge.
     runner.queue({ kind: 'pointer', phase: 'down', x: 0.9, y: 0.6 })
     for (const end = now + 4; now < end; now += FRAME) runner.advanceTo(now)
-    expect(director.timeline.value('actor:sheep.x', now)).toBeCloseTo(0.665)
-    expect(director.timeline.value('actor:lion.x', now)).toBeCloseTo(0.07)
+    expect(director.timeline.value('actor:sheep.x', now)).toBeCloseTo(0.56)
+    expect(director.timeline.value('actor:lion.x', now)).toBeCloseTo(0.17)
   })
 })

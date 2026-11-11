@@ -338,3 +338,29 @@
     z-index: 10;
   }
 }
+
+/* Choosing the read-aloud voice. */
+.settings-voice {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 0.5rem 1rem;
+}
+.settings-voice label {
+  display: flex;
+  flex: 1 1 16rem;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+.settings-voice select {
+  max-width: 100%;
+  padding: 0.4rem;
+  font: inherit;
+}
+.settings-voice .settings-note {
+  flex-basis: 100%;
+  margin: 0;
+  font-size: 0.9em;
+  opacity: 0.8;
+}

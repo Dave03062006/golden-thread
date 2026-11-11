@@ -9,6 +9,7 @@ import { gameClock } from '../engine/clock'
 import { createInput } from '../engine/input'
 import type { Position } from '../engine/save/types'
 import { useSettings } from '../engine/settings'
+import { READING, deviceVoices, pickVoice } from '../engine/voice'
 import { GAMES } from '../minigames/registry'
 import { GameRunner } from '../minigames/runner'
 import { Director, historyUpTo, type StoryPosition } from '../scene/director'
@@ -22,7 +23,7 @@ import { EpisodeEndDialog, HistoryDialog, ThreadDialog, WhereWhenDialog } from '
 import { Line } from './story/Line'
 import { ListenAlongCard } from '../ui/MusicCards'
 import { PlayLayer } from './story/PlayLayer'
-import { spokenText } from './story/speech'
+import { narrationUrl, spokenText } from './story/speech'
 import { ThreadSpot } from './story/ThreadSpot'
 import './screens.css'
 import './story/story.css'
@@ -97,7 +98,11 @@ export function StoryScreen() {
   const startLevelEnd = useApp((s) => s.startLevelEnd)
   const closeSave = useApp((s) => s.closeSave)
   const updateSettings = useSettings((s) => s.update)
-  const { gentleMode, autoAdvance, readAloud, voiceVolume, musicMode } = useSettings()
+  const { gentleMode, autoAdvance, readAloud, voiceVolume, voiceName, musicMode } = useSettings()
+  const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([])
+  useEffect(() => {
+    if (readAloud) void deviceVoices().then(setVoices)
+  }, [readAloud])
   const reducedMotion = useReducedMotion()
 
   // A replay starts its episode from the beginning, and never moves the player's place in the story.
@@ -249,20 +254,39 @@ export function StoryScreen() {
   // Read each line aloud, if the player asked for it (spec §9.5).
   const lineText = current && current.beat.kind !== 'play' ? spokenText(current.beat) : ''
   useEffect(() => {
-    if (!readAloud || !lineText || typeof speechSynthesis === 'undefined') return
-    const utterance = new SpeechSynthesisUtterance(lineText)
-    utterance.rate = 0.95
-    utterance.volume = voiceVolume
-    // The music softens under the voice.
-    utterance.onstart = () => duckMusic(true)
-    utterance.onend = () => duckMusic(false)
-    speechSynthesis.cancel()
-    speechSynthesis.speak(utterance)
-    return () => {
+    if (!readAloud || !lineText) return
+    // The recorded narrator first (scripts/narrate.py); the device's own voice if there is no recording.
+    let stopped = false
+    let spoken = false
+    const speak = () => {
+      if (stopped || spoken || typeof speechSynthesis === 'undefined') return
+      spoken = true
+      const utterance = new SpeechSynthesisUtterance(lineText)
+      const voice = pickVoice(voices, voiceName)
+      if (voice) utterance.voice = voice
+      utterance.rate = READING.rate
+      utterance.pitch = READING.pitch
+      utterance.volume = voiceVolume
+      utterance.onstart = () => duckMusic(true)
+      utterance.onend = () => duckMusic(false)
       speechSynthesis.cancel()
+      speechSynthesis.speak(utterance)
+    }
+    const recording = new Audio(narrationUrl(lineText))
+    recording.volume = voiceVolume
+    // The music softens under the voice.
+    recording.onplay = () => duckMusic(true)
+    recording.onended = () => duckMusic(false)
+    recording.onerror = speak
+    recording.play().catch(speak)
+    return () => {
+      stopped = true
+      recording.pause()
+      recording.removeAttribute('src')
+      if (typeof speechSynthesis !== 'undefined') speechSynthesis.cancel()
       duckMusic(false)
     }
-  }, [readAloud, lineText, voiceVolume])
+  }, [readAloud, lineText, voiceVolume, voices, voiceName])
 
   // Move on by itself, if the player turned auto-advance on. Never by default (spec §9.7).
   useEffect(() => {

@@ -1,6 +1,8 @@
 import { memo, useEffect, useLayoutEffect, useRef } from 'react'
 import { gameClock } from '../../engine/clock'
-import { layerTransform, projectPoint } from '../../scene/evaluate'
+import { inDepthOrder } from '../../scene/depth'
+import { layerTransform, projectPoint, type ActorState } from '../../scene/evaluate'
+import type { SceneDescription } from '../../scene/types'
 import type { SceneActor } from '../../scene/types'
 import type { RendererProps } from '../../stage/types'
 import { FRAME_H, FRAME_W, paperLayers, paperProps, partMotion, type Box } from './art'
@@ -24,6 +26,23 @@ const membersOf = (actor: SceneActor) => actor.group?.count ?? 1
 
 /** A single actor is drawn as a group of one, right at its place. */
 const ALONE = [{ dx: 0, dy: 0, scale: 1, phase: 0 }]
+
+/** People and animals, standing on the ground: drawn in depth order (scene/depth.ts). */
+function walks(actor: { prop: string }): boolean {
+  const art = paperProps[actor.prop]
+  return art?.anchor === 'base' && art.poses.includes('walk')
+}
+
+/** Each layer and actor's place in the stack, in the scene's own order. Walkers trade places among theirs as they move. */
+function stackOrder(scene: SceneDescription): Map<string, number> {
+  const z = new Map<string, number>()
+  let n = 0
+  for (const layer of scene.layers) {
+    z.set(`layer:${layer.id}`, n++)
+    for (const actor of scene.actors) if (actor.above === layer.id) z.set(actor.id, n++)
+  }
+  return z
+}
 
 /** A copy of a part's picture, for the second and later places it's shown. */
 function copyArt(art: HTMLImageElement | HTMLCanvasElement): HTMLImageElement | HTMLCanvasElement {
@@ -113,6 +132,22 @@ export const PaperRenderer = memo(function PaperRenderer({ scene, getFrame, widt
   // Every frame: move, fade and pose everything to where the scene says it is now.
   useLayoutEffect(() => {
     const baseSize = new Map(scene.actors.map((a) => [a.id, a.size]))
+    const stack = stackOrder(scene)
+    const shownZ = new Map<string, number>()
+    const restack = (actors: readonly ActorState[]) => {
+      for (const layer of scene.layers) {
+        const inLayer = actors.filter((a) => a.above === layer.id)
+        inDepthOrder(inLayer, walks).forEach((actor, k) => {
+          const z = stack.get(inLayer[k]!.id)!
+          if (shownZ.get(actor.id) === z) return
+          shownZ.set(actor.id, z)
+          for (let i = 0; i < (actor.instances ?? ALONE).length; i++) {
+            const el = actorRefs.current.get(`${actor.id}#${i}`)
+            if (el) el.style.zIndex = String(z)
+          }
+        })
+      }
+    }
     const draw = () => {
       const frame = getFrame()
       for (const layer of frame.layers) {
@@ -154,12 +189,14 @@ export const PaperRenderer = memo(function PaperRenderer({ scene, getFrame, widt
           }
         })
       }
+      restack(frame.actors)
     }
     draw()
     if (!active) return
     return gameClock.subscribe(draw)
   }, [scene, getFrame, width, height, active])
 
+  const stack = stackOrder(scene)
   return (
     <div className="paper-frame" style={{ width, height }}>
       {scene.layers.map((layer) => {
@@ -170,7 +207,7 @@ export const PaperRenderer = memo(function PaperRenderer({ scene, getFrame, widt
             key={layer.id}
             className="paper-layer"
             data-layer={layer.id}
-            style={placement(art.bounds)}
+            style={{ ...placement(art.bounds), zIndex: stack.get(`layer:${layer.id}`) }}
             ref={(el) => {
               if (el) layerRefs.current.set(layer.id, el)
               else layerRefs.current.delete(layer.id)
@@ -187,7 +224,7 @@ export const PaperRenderer = memo(function PaperRenderer({ scene, getFrame, widt
                   key={`${actor.id}#${i}`}
                   className="paper-actor"
                   data-actor={actor.id}
-                  style={{ width: w, height: w * (art.box.h / art.box.w), transformOrigin: art.anchor === 'base' ? '50% 100%' : '50% 50%' }}
+                  style={{ width: w, height: w * (art.box.h / art.box.w), transformOrigin: art.anchor === 'base' ? '50% 100%' : '50% 50%', zIndex: stack.get(actor.id) }}
                   ref={(el) => {
                     if (el) actorRefs.current.set(`${actor.id}#${i}`, el)
                     else actorRefs.current.delete(`${actor.id}#${i}`)
