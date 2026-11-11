@@ -168,6 +168,15 @@ export const EMBLEMS: Record<string, { rows: string[]; colors: Record<string, st
   'stone-of-help': { rows: ['.........', '....s....', '...sss...', '...sws...', '...sss...', '...sss...', '...sss...', 'ggggggggg', 'ggggggggg'], colors: { s: C.pale, w: C.white, g: C.green } },
   'vial-of-oil': { rows: ['......yy.', '.....yy..', '...ww....', '...ss....', '..ssss...', '..syys...', '..syys...', '..ssss...', '.........'], colors: { y: C.gold, w: C.wood2, s: C.sand } },
   'torn-robe': { rows: ['.sssssss.', '.sssssss.', '.sssssss.', '.ssss.ss.', '.sss..ss.', '.ssss..s.', 'sssss..ss', 'ssssss.ss', '.........'], colors: { s: C.slate } },
+  // Level 18 · David, the Shepherd King
+  'horn-of-oil': { rows: ['ww.......', '.www.....', '..www....', '...www...', '....wwy..', '......y..', '......y..', '.........', 'ggggggggg'], colors: { w: C.sand, y: C.gold, g: C.green } },
+  'sling-and-stones': { rows: ['w.......w', '.w.....w.', '..w...w..', '...w.w...', '....w....', '.........', '.........', 's.s.s.s.s', '.........'], colors: { w: C.wood2, s: C.pale } },
+  'robe-and-bow': { rows: ['.tttt..b.', '.tttt...b', '.tttt...b', 'ttttt...b', 'ttttt...b', 'ttttt...b', 'tttttt.b.', 'tttttt...', '.........'], colors: { t: C.teal, b: C.wood2 } },
+  'bread-of-the-presence': { rows: ['.........', '.bbbbbb..', '.bbbbbb..', 'yyyyyyyyy', '.y.....y.', '.y.....y.', '.y.....y.', '.y.....y.', '.........'], colors: { b: C.sand, y: C.gold } },
+  'corner-of-the-robe': { rows: ['rrrrrrr..', 'rrrrrrr..', 'rrrrrrr..', 'rrrrrr.ww', 'rrrrr..ww', 'rrrrr....', 'rrrrrr...', 'rrrrrrr..', '.........'], colors: { r: C.rose, w: C.sand } },
+  'banner-over-zion': { rows: ['....wpp..', '....wppp.', '....w....', '...sss...', '..sssss..', '.sssssss.', 'sssssssss', 'sssssssss', '.........'], colors: { w: C.wood1, p: C.navy, s: C.sand } },
+  'david-dancing': { rows: ['w...p...w', '.w.www.w.', '..wwwww..', '...www...', '...www...', '..w...w..', '.w.....w.', '.........', 'ggggggggg'], colors: { w: C.white, p: C.sand, g: C.gold } },
+  'house-for-ever': { rows: ['....y....', '...www...', '..wwwww..', '.wwwwwww.', '.wwwwwww.', '.www.www.', '.ww...ww.', '.ww.y.ww.', 'ggggggggg'], colors: { y: C.gold, w: C.white, g: C.wood3 } },
 }
 
 /** The pointed outline of a window, inside which the glass is: whether a pixel is in it. */

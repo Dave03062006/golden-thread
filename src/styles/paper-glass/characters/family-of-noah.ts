@@ -319,6 +319,13 @@ export const familyOfNoah: Record<string, PaperPropArt> = {
   'samuel-boy': person({ robe: '#f0ece0', fold: '#c8c0ac', hair: '#3a2618', sash: '#8a6a3a' }),
   samuel: person({ robe: '#5a5a7a', fold: '#3e3e5a', hair: '#d8d4cc', beard: '#d8d4cc', sash: '#e8e0c8' }),
   saul: person({ robe: '#8a2a3a', fold: '#641a26', hair: '#1a1416', beard: '#1a1416', sash: '#d8b040' }),
+  // Level 18: David as a shepherd boy and as king; Jonathan; Goliath in bronze; Michal; the prophet Nathan.
+  'david-young': person({ robe: '#c89a5a', fold: '#9a7238', hair: '#8a4a26', sash: '#6a8a3a' }),
+  david: person({ robe: '#4a3a8a', fold: '#322666', hair: '#8a4a26', beard: '#8a4a26', sash: '#e0b040' }),
+  jonathan: person({ robe: '#2a6a6a', fold: '#1a4a4a', hair: '#2a1e1a', beard: '#2a1e1a', sash: '#c8a040' }),
+  goliath: person({ robe: '#a8843a', fold: '#7a5e24', hair: '#1a1210', beard: '#1a1210', sash: '#6a5a4a' }),
+  michal: person({ robe: '#8a3a6a', fold: '#64264a', hair: '#1a1416', veil: '#e0c070' }),
+  nathan: person({ robe: '#6a6a5a', fold: '#4a4a3e', hair: '#bab4a8', beard: '#bab4a8', sash: '#3a5a8a' }),
   amalekites: band([
     { robe: '#5a3a3a', fold: '#3e2626', hair: '#1a1210', beard: '#1a1210', veil: '#3a2a2a' },
     { robe: '#6a4a3a', fold: '#4c3226', hair: '#1a1210', beard: '#1a1210', veil: '#4a3a2a' },

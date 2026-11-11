@@ -1245,6 +1245,95 @@ export const THREADS: GoldenThread[] = [
     sources: ['Hebrews 10:5–10', 'Psalm 40:6–8', 'Psalm 51:16–17', 'Catechism 614, 2100'],
     fulfilled: { age: 'XII', place: 'jerusalem' },
   },
+  // Level 18 · David, the Shepherd King
+  {
+    id: 'the-good-shepherd',
+    episode: 'l18-e1',
+    title: 'The shepherd boy of Bethlehem, anointed to be the shepherd of God’s people → Jesus: “I am the good shepherd”',
+    from: ['1SA 16:11', '1SA 16:13'],
+    to: ['JHN 10:11', 'JHN 10:14'],
+    explanation:
+      'God took David “from following the sheep” to be the shepherd of Israel. A thousand years later, another child was born in Bethlehem, of David’s family, and his birth was announced first to shepherds. Jesus calls himself the Good Shepherd, who knows his sheep by name and lays down his life for them, as David risked his against the lion and the bear.',
+    sources: ['John 10:11–16','2 Samuel 5:2','Psalm 23','Ezekiel 34:23','Catechism 437, 754'],
+    fulfilled: { age: 'XI', place: 'bethlehem' },
+  },
+  {
+    id: 'the-battle-is-the-lords',
+    episode: 'l18-e2',
+    title: '“The battle is the LORD’s” → “Thanks be to God, who gives us the victory through our Lord Jesus Christ”',
+    from: ['1SA 17:45', '1SA 17:47'],
+    to: ['1CO 15:57'],
+    explanation:
+      'David won not with Saul’s armor, but “in the name of the LORD.” The Fathers of the Church saw in David’s victory a picture of Christ’s: the Son of David went out alone against the greatest enemies of all, sin and death, and won, not with a sword but with the wood of the cross. And he shares his victory with us.',
+    sources: ['1 Corinthians 15:54–57','Colossians 2:15','Catechism 1505, 2853'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'he-must-increase',
+    episode: 'l18-e3',
+    title: 'Jonathan, the king’s son, gives David his robe and his sword and says, “you shall be king, and I shall be next to you” → John the Baptist: “He must increase, but I must decrease”',
+    from: ['1SA 18:4', '1SA 23:17'],
+    to: ['JHN 3:30'],
+    explanation:
+      'Jonathan was the heir to Saul’s throne. But he saw that God had chosen David, and he gave David his own robe and weapons, and gladly stepped aside. John the Baptist did the same for Jesus: crowds followed John, but when Jesus came, John pointed to him and said, “He must increase, but I must decrease.” True friends of God are glad when someone else is lifted up.',
+    sources: ['1 Samuel 23:16–18','John 3:27–30','Catechism 523, 1829'],
+    fulfilled: { age: 'XI', place: 'jordan' },
+  },
+  {
+    id: 'the-holy-bread',
+    episode: 'l18-e4',
+    title: 'David eats the holy bread of the Presence → Jesus: “Have you not read what David did, when he was hungry?”',
+    from: ['1SA 21:6'],
+    to: ['MAT 12:3', 'MAT 12:4'],
+    explanation:
+      'The bread of the Presence was holy, for the priests alone. But the priest gave it to David and his hungry men. Jesus himself told this story to show that God’s law was given for the good of people, and that mercy comes first. And Jesus would give a holier bread than any on the golden table: himself, the Bread of Life, for everyone who is hungry.',
+    sources: ['Matthew 12:1–8','John 6:35','Catechism 582, 1338'],
+    fulfilled: { age: 'XI', place: 'galilee' },
+  },
+  {
+    id: 'love-your-enemies',
+    episode: 'l18-e5',
+    title: 'David spares the king who is hunting him → Jesus: “Love your enemies and pray for those who persecute you”',
+    from: ['1SA 24:6', '1SA 26:11'],
+    to: ['MAT 5:44'],
+    explanation:
+      'Saul hunted David for years, and twice God put Saul in David’s power. Both times David refused to harm him: he left Saul to God. Jesus asks the same of us: not to pay back evil with evil, but to love our enemies and pray for them. On the cross he did it himself, praying for the men who crucified him.',
+    sources: ['Matthew 5:43–48','Romans 12:17–21','Luke 23:34','Catechism 1825, 2303'],
+    fulfilled: { age: 'XI', place: 'galilee' },
+  },
+  {
+    id: 'mount-zion',
+    episode: 'l18-e6',
+    title: 'David takes the stronghold of Zion, and it becomes the city of David → “You have come to Mount Zion and to the city of the living God, the heavenly Jerusalem”',
+    from: ['2SA 5:7'],
+    to: ['HEB 12:22'],
+    explanation:
+      'Jerusalem, on Mount Zion, became the city of David and later the city of God’s Temple. But the Bible looks beyond the earthly city to a heavenly one. The letter to the Hebrews says that Christians have already “come to Mount Zion,” the city of the living God, where Jesus, the Son of David, reigns, and where we will one day see him face to face.',
+    sources: ['Hebrews 12:22–24','Revelation 21:2','Psalm 48','Catechism 1045, 2796'],
+    fulfilled: { age: 'XIV' },
+  },
+  {
+    id: 'ark-of-the-new-covenant',
+    episode: 'l18-e7',
+    title: 'The ark comes to the house of Obed-edom for three months, and David leaps for joy before it → Mary, carrying Jesus, comes to Elizabeth’s house for three months, and John leaps for joy',
+    from: ['2SA 6:9', '2SA 6:11', '2SA 6:16'],
+    to: ['LUK 1:41', 'LUK 1:43', 'LUK 1:44', 'LUK 1:56'],
+    explanation:
+      'Saint Luke tells Mary’s visit to Elizabeth with the words of this chapter. David asked, “How can the ark of the LORD come to me?”; Elizabeth asks, “Why is this granted me, that the mother of my Lord should come to me?” David leapt before the ark; John leapt in his mother’s womb. The ark stayed three months; Mary stayed three months. The ark held God’s word on stone; Mary carried the Word of God made flesh. That is why the Church calls Mary the “Ark of the Covenant.”',
+    sources: ['Luke 1:39–56','Revelation 11:19–12:1','Litany of Loreto','Catechism 2676'],
+    fulfilled: { age: 'XI' },
+  },
+  {
+    id: 'son-of-david',
+    episode: 'l18-e8',
+    title: '“Your throne shall be established for ever” → “Jesus Christ, the son of David,” hailed: “Hosanna to the Son of David!”',
+    from: ['2SA 7:12', '2SA 7:13', '2SA 7:16'],
+    to: ['MAT 1:1', 'MAT 21:9'],
+    explanation:
+      'Solomon, David’s son, would build the Temple, but his kingdom did not last for ever. God’s promise waited a thousand years, until a child of David’s family was born in Bethlehem. The very first words of the New Testament call him “Jesus Christ, the son of David.” When he rode into Jerusalem, the crowds shouted, “Hosanna to the Son of David!” He is the King whose throne lasts for ever.',
+    sources: ['Matthew 1:1','Matthew 21:9','Luke 1:32–33','Psalm 89:3–4','Catechism 439, 709'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
 ]
 
 const BY_ID = new Map(THREADS.map((thread) => [thread.id, thread]))

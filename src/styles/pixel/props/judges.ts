@@ -84,4 +84,16 @@ const oilVial: PixelDrawnArt = {
   },
 }
 
-export const judgesProps: Record<string, PixelDrawnArt> = { 'palm-tree': palmTree, fleece, honeycomb, millstone, sandal, 'oil-vial': oilVial }
+/** Level 18: Saul's spear, stuck in the ground by his head. */
+const spear: PixelDrawnArt = {
+  kind: 'drawn',
+  poses: ['idle'],
+  anchor: 'base',
+  draw(paint, { width }) {
+    const h = Math.max(8, Math.round(width * 10))
+    paint.rect(0, -h + 2, 1, h - 2, C.wood2)
+    paint.rect(-1, -h, 3, 2, C.pale)
+  },
+}
+
+export const judgesProps: Record<string, PixelDrawnArt> = { 'palm-tree': palmTree, fleece, honeycomb, millstone, sandal, 'oil-vial': oilVial, spear }

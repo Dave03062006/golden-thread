@@ -731,6 +731,27 @@ The same way again: script, art, build, checks, play-test. Level 17 is the first
 - **New art:** no new backdrops; the level reuses earlier scenery (including Level 15's house of Dagon and Level 11's holy place). New: four people (Hannah, Samuel as a boy and as a man, Saul) and a vial of oil, in both styles.
 - **Cathedral and map:** six new medallions open the Age VI bay. Ramah, Mizpah, Ashdod and Beth-shemesh are new places in `geography.ts`. On the zoomed-out map, Ramah and Mizpah (about 5 km apart) and Beth-shemesh and Zorah (about 3 km apart) sit very close.
 - **Music:** no new recordings. Handel's *Saul* has no recording on Wikimedia Commons; one 78 of its "Dead March" (Coldstream Guards, HMV C. 118) is on the Internet Archive with no date or license. Dave to decide whether to add it, perhaps for Saul's death in Level 18.
+### Task 24: Level 18, *David, the Shepherd King* (M24)
+
+The same way again: script, art, build, checks, play-test. Level 18 is the second level of Age VI, *The Kingdom*.
+
+**Status (November 2026):** steps 1–4 are done; step 5 is Dave's.
+- **Script:** `docs/scripts/level-18-david-the-shepherd-king.md`, approved by Dave on 2026-11-11. It has 8 episodes and 24 scenes, 88 passages quoted word for word, and a 48-question quiz.
+- **Build:** all eight episodes are built in both styles, each with its own play:
+  - the LORD looks on the heart (passing over Jesse's older sons, asking for the youngest);
+  - five smooth stones (aiming David's sling);
+  - the arrow beyond you (aiming Jonathan's signal arrow);
+  - the other side of the mountain (moving David's men while Saul's lookout looks away);
+  - through the sleeping camp (leading David and Abishai to Saul's spear and jar);
+  - the road to the throne (David's life, in order);
+  - dancing before the LORD (dancing on the beat before the ark);
+  - a house for ever (God's promise to David, in order).
+  Two new shared rule sets: `minigames/aim-at.ts` (a swinging aim and a target) and `minigames/at-the-signal.ts` (acting while a signal lasts). The rest reuse the route rules and Level 11's ordering rules.
+- **Hard passages:** Episodes 2, 6 and 7 open with a content note. Goliath falls, seen from far off; Saul's death and Uzzah's are told in a sentence each. 1 Samuel 24:3 and 31:4 are told in our own words, not quoted.
+- **New art:** no new backdrops; the level reuses earlier scenery (Level 3's Salem for Zion, Level 11's holy place and its table and ark, Level 15's and 17's settings). New: six people (David as a shepherd boy and as king, Jonathan, Goliath, Michal, Nathan) and Saul's spear, in both styles.
+- **Cathedral and map:** eight new medallions in the Age VI bay. The valley of Elah, Adullam and En-gedi are new places in `geography.ts`; Elah and Adullam (about 4 km apart) sit close on the zoomed-out map.
+- **Music:** no new recordings. The spec's "Sheep May Safely Graze" was already in the game; Schubert's Psalm 23 has no allowed recording.
+- **Fixed in passing:** Level 18's thread for Episode 7 was first named like Level 11's thread (`the-ark-of-the-covenant`); it is `ark-of-the-new-covenant`.
 ## Parallelization
 
 - **Code tasks run in order.** Each one builds on the last, and running them in order keeps the code consistent for the code tour.

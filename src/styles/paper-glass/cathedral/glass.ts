@@ -967,6 +967,59 @@ export const EMBLEMS: Record<string, () => Piece[]> = {
     { d: P([[-12, -14], [12, -14], [14, 16], [-14, 16]]), color: '#5a5a7a' },
     { d: P([[2, 4], [8, 6], [6, 16], [0, 16], [4, 10]]), color: '#2a2a4a' },
   ],
+  // Level 18 · David, the Shepherd King
+  // The horn of oil, poured on the shepherd boy.
+  'horn-of-oil': () => [
+    { d: P([[-12, -12], [-4, -14], [10, 2], [6, 6]]), color: '#d8c8a0' },
+    { d: P([[8, 4], [10, 6], [9, 14], [7, 14]]), color: '#e8c850' },
+    { d: P([[-16, 16], [-16, 12], [16, 12], [16, 16]]), color: '#5a8a4a' },
+  ],
+  // The sling and the five smooth stones.
+  'sling-and-stones': () => [
+    { d: P([[-12, -14], [-10, -14], [0, 2], [10, -14], [12, -14], [0, 6]]), color: '#8a5a32' },
+    ...[-8, -4, 0, 4, 8].map((x) => ({ d: circ(x, 12, 2, 8), color: '#c8c4cc' })),
+  ],
+  // Jonathan's robe and bow, given to David.
+  'robe-and-bow': () => [
+    { d: P([[-10, -12], [4, -12], [6, 16], [-12, 16]]), color: '#2a6a6a' },
+    { d: P([[8, -14], [10, -14], [14, 0], [10, 14], [8, 14], [12, 0]]), color: '#8a5a32' },
+    { d: P([[9, -14], [10, -14], [10, 14], [9, 14]]), color: '#e8e0c8' },
+  ],
+  // The twelve loaves of the Presence on the golden table.
+  'bread-of-the-presence': () => [
+    { d: P([[-14, 4], [14, 4], [14, 7], [-14, 7]]), color: '#d8a838' },
+    { d: P([[-12, 7], [-10, 7], [-10, 16], [-12, 16]]), color: '#d8a838' },
+    { d: P([[10, 7], [12, 7], [12, 16], [10, 16]]), color: '#d8a838' },
+    ...Array.from({ length: 6 }, (_, i) => ({ d: circ(-10 + i * 4, 0, 2.4, 8), color: '#e8c890' })),
+    ...Array.from({ length: 6 }, (_, i) => ({ d: circ(-10 + i * 4, -4, 2.4, 8), color: '#e8c890' })),
+  ],
+  // The corner of Saul's robe, in David's hand.
+  'corner-of-the-robe': () => [
+    { d: P([[-14, -14], [8, -14], [14, 16], [-14, 16]]), color: '#8a2a3a' },
+    { d: P([[4, 4], [14, 2], [14, 16], [8, 16]]), color: '#2a2a4a' },
+  ],
+  // David's banner over the stronghold of Zion.
+  'banner-over-zion': () => [
+    { d: P([[-16, 16], [-8, 2], [8, 2], [16, 16]]), color: '#c8b890' },
+    { d: P([[-6, 2], [-6, -6], [6, -6], [6, 2]]), color: '#d8c8a0' },
+    { d: P([[0, -6], [1, -6], [1, -16], [0, -16]]), color: '#6a4020' },
+    { d: P([[1, -16], [12, -13], [1, -10]]), color: '#4a3a8a' },
+  ],
+  // David dancing before the ark.
+  'david-dancing': () => [
+    { d: circ(-2, -10, 3, 10), color: '#e8d8c8' },
+    { d: P([[-6, -6], [2, -6], [4, 6], [-8, 6]]), color: '#efe8d8' },
+    { d: P([[-6, -4], [-14, -12], [-12, -14], [-4, -6]]), color: '#efe8d8' },
+    { d: P([[2, -4], [10, -14], [12, -12], [4, -6]]), color: '#efe8d8' },
+    { d: P([[-6, 6], [-10, 16], [-8, 16], [-4, 8]]), color: '#efe8d8' },
+    { d: P([[0, 6], [8, 12], [9, 10], [2, 6]]), color: '#efe8d8' },
+  ],
+  // The house of light God promised David.
+  'house-for-ever': () => [
+    { d: P([[-12, 16], [-12, 0], [0, -12], [12, 0], [12, 16]]), color: '#fff4c0' },
+    { d: P([[-4, 16], [-4, 6], [4, 6], [4, 16]]), color: '#d8a838' },
+    { d: P([[-2, -16], [2, -16], [2, -13], [-2, -13]]), color: '#f4d070' },
+  ],
 }
 
 /** The medallions' backgrounds: deep blue, with one ruby for the darkest story. */

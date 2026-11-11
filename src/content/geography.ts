@@ -191,6 +191,10 @@ export const PLACES: Place[] = [
   { id: 'mizpah', name: 'Mizpah', kind: 'city', at: { lat: 31.89, lon: 35.21 }, note: 'A town in Benjamin where Israel gathered to pray, where Samuel set up the stone Ebenezer nearby, and where Saul was chosen by lot.' },
   { id: 'ashdod', name: 'Ashdod', kind: 'city', at: { lat: 31.75, lon: 34.65 }, note: 'A Philistine city near the coast, where the ark was set in the house of Dagon, and Dagon fell before it.' },
   { id: 'beth-shemesh', name: 'Beth-shemesh', kind: 'city', at: { lat: 31.73, lon: 34.99 }, note: '“House of the sun,” a town of Israel on the edge of the hills, where the ark came home on a cart.' },
+  // Level 18 · David, the Shepherd King
+  { id: 'valley-of-elah', name: 'The valley of Elah', kind: 'region', at: { lat: 31.69, lon: 34.96 }, note: 'A wide valley between the hills of Judah and Philistine country, where David faced Goliath.' },
+  { id: 'adullam', name: 'Adullam', kind: 'city', at: { lat: 31.65, lon: 34.98 }, note: 'A cave-riddled hill near the valley of Elah, where David hid from Saul and four hundred men gathered to him.' },
+  { id: 'en-gedi', name: 'En-gedi', kind: 'city', at: { lat: 31.46, lon: 35.39 }, note: 'A spring and waterfall in the cliffs above the Dead Sea, where David spared Saul in a cave.' },
 ]
 
 const BY_ID = new Map(PLACES.map((place) => [place.id, place]))

@@ -5795,6 +5795,360 @@ export const VERSES: Record<string, Verse> = {
     rsv: 'Hence we can confidently say, “The Lord is my helper, I will not be afraid; what can man do to me?”',
     dra: 'So that we may confidently say: The Lord is my helper: I will not fear what man shall do to me.',
   },
+  // Level 18 · David, the Shepherd King (the Douay-Rheims splits 1 Samuel 20:42 in two and numbers 1 Samuel 24 one
+  // higher; one of Bible Gateway's slips in it, in 1 Samuel 16:12, is set right).
+  '1SA 16:1': {
+    rsv: 'The LORD said to Samuel, “How long will you grieve over Saul, seeing I have rejected him from being king over Israel? Fill your horn with oil, and go; I will send you to Jesse the Bethlehemite, for I have provided for myself a king among his sons.”',
+    dra: 'And the Lord said to Samuel: How long wilt thou mourn for Saul, whom I have rejected from reigning over Israel? fill thy horn with oil, and come, that I may send thee to Isai the Bethlehemite: for I have provided me a king among his sons.',
+  },
+  '1SA 16:6': {
+    rsv: 'When they came, he looked on Eliab and thought, “Surely the LORD’s anointed is before him.”',
+    dra: 'And when they were come in, he saw Eliab, and said: Is the Lord’s anointed before him?',
+  },
+  '1SA 16:7': {
+    rsv: 'But the LORD said to Samuel, “Do not look on his appearance or on the height of his stature, because I have rejected him; for the LORD sees not as man sees; man looks on the outward appearance, but the LORD looks on the heart.”',
+    dra: 'And the Lord said to Samuel: Look not on his countenance, nor on the height of his stature: because I have rejected him, nor do I judge according to the look of man: for man seeth those things that appear, but the Lord beholdeth the heart.',
+  },
+  '1SA 16:10': {
+    rsv: 'And Jesse made seven of his sons pass before Samuel. And Samuel said to Jesse, “The LORD has not chosen these.”',
+    dra: 'Isai therefore brought his seven sons before Samuel: and Samuel said to Isai: The Lord hath not chosen any one of these.',
+  },
+  '1SA 16:11': {
+    rsv: 'And Samuel said to Jesse, “Are all your sons here?” And he said, “There remains yet the youngest, but behold, he is keeping the sheep.” And Samuel said to Jesse, “Send and fetch him; for we will not sit down till he comes here.”',
+    dra: 'And Samuel said to Isai: Are here all thy sons? He answered: There remaineth yet a young one, who keepeth the sheep. And Samuel said to Isai: Send, and fetch him, for we will not sit down till he come hither.',
+  },
+  '1SA 16:12': {
+    rsv: 'And he sent, and brought him in. Now he was ruddy, and had beautiful eyes, and was handsome. And the LORD said, “Arise, anoint him; for this is he.”',
+    dra: 'He sent therefore and brought him. Now he was ruddy and beautiful to behold, and of a comely face. And the Lord said: Arise, and anoint him, for this is he.',
+  },
+  '1SA 16:13': {
+    rsv: 'Then Samuel took the horn of oil, and anointed him in the midst of his brothers; and the Spirit of the LORD came mightily upon David from that day forward. And Samuel rose up, and went to Ramah.',
+    dra: 'Then Samuel took the horn of oil, and anointed him in the midst of his brethren: and the spirit of the Lord came upon David from that day forward: and Samuel rose up, and went to Ramatha.',
+  },
+  '1SA 16:23': {
+    rsv: 'And whenever the evil spirit from God was upon Saul, David took the lyre and played it with his hand; so Saul was refreshed, and was well, and the evil spirit departed from him.',
+    dra: 'So whensoever the evil spirit from the Lord was upon Saul, David took his harp, and played with his hand, and Saul was refreshed, and was better, for the evil spirit departed from him.',
+  },
+  '1SA 17:4': {
+    rsv: 'And there came out from the camp of the Philistines a champion named Goliath, of Gath, whose height was six cubits and a span.',
+    dra: 'And there went out a man baseborn from the camp of the Philistines named Goliath, of Geth, whose height was six cubits and a span:',
+  },
+  '1SA 17:11': {
+    rsv: 'When Saul and all Israel heard these words of the Philistine, they were dismayed and greatly afraid.',
+    dra: 'And Saul and all the Israelites hearing these words of the Philistine were dismayed, and greatly afraid.',
+  },
+  '1SA 17:26': {
+    rsv: 'And David said to the men who stood by him, “What shall be done for the man who kills this Philistine, and takes away the reproach from Israel? For who is this uncircumcised Philistine, that he should defy the armies of the living God?”',
+    dra: 'And David spoke to the men that stood by him, saying: What shall be given to the man that shall kill this Philistine, and shall take away the reproach from Israel? for who is this uncircumcised Philistine, that he should defy the armies of the living God?',
+  },
+  '1SA 17:32': {
+    rsv: 'And David said to Saul, “Let no man’s heart fail because of him; your servant will go and fight with this Philistine.”',
+    dra: 'And when he was brought to him, he said to him: Let not any man’s heart be dismayed in him: I thy servant will go, and will fight against the Philistine.',
+  },
+  '1SA 17:33': {
+    rsv: 'And Saul said to David, “You are not able to go against this Philistine to fight with him; for you are but a youth, and he has been a man of war from his youth.”',
+    dra: 'And Saul said to David: Thou art not able to withstand this Philistine, nor to fight against him: for thou art but a boy, but he is a warrior from his youth.',
+  },
+  '1SA 17:34': {
+    rsv: 'But David said to Saul, “Your servant used to keep sheep for his father; and when there came a lion, or a bear, and took a lamb from the flock,',
+    dra: 'And David said to Saul: Thy servant kept his father’s sheep, and there came a lion, or a bear, and took a ram out of the midst of the flock:',
+  },
+  '1SA 17:37': {
+    rsv: 'And David said, “The LORD who delivered me from the paw of the lion and from the paw of the bear, will deliver me from the hand of this Philistine.” And Saul said to David, “Go, and the LORD be with you!”',
+    dra: 'And David said: The Lord who delivered me out of the paw of the lion, and out of the paw of the bear, he will deliver me out of the hand of this Philistine. And Saul said to David: Go, and the Lord be with thee.',
+  },
+  '1SA 17:40': {
+    rsv: 'Then he took his staff in his hand, and chose five smooth stones from the brook, and put them in his shepherd’s bag or wallet; his sling was in his hand, and he drew near to the Philistine.',
+    dra: 'And he took his staff, which he had always in his hands: and chose him five smooth stones out of the brook, and put them into the shepherd’s scrip, which he had with him, and he took a sling in his hand, and went forth against the Philistine.',
+  },
+  '1SA 17:45': {
+    rsv: 'Then David said to the Philistine, “You come to me with a sword and with a spear and with a javelin; but I come to you in the name of the LORD of hosts, the God of the armies of Israel, whom you have defied.',
+    dra: 'And David said to the Philistine: Thou comest to me with a sword, and with a spear, and with a shield: but I come to thee in the name of the Lord of hosts, the God of the armies of Israel, which thou hast defied.',
+  },
+  '1SA 17:47': {
+    rsv: 'and that all this assembly may know that the LORD saves not with sword and spear; for the battle is the LORD’s and he will give you into our hand.”',
+    dra: 'And all this assembly shall know, that the Lord saveth not with sword and spear: for it is his battle, and he will deliver you into our hands.',
+  },
+  '1SA 17:49': {
+    rsv: 'And David put his hand in his bag and took out a stone, and slung it, and struck the Philistine on his forehead; the stone sank into his forehead, and he fell on his face to the ground.',
+    dra: 'And he put his hand into his scrip, and took a stone, and cast it with the sling, and fetching it about struck the Philistine in the forehead: and the stone was fixed in his forehead, and he fell on his face upon the earth.',
+  },
+  '1SA 17:50': {
+    rsv: 'So David prevailed over the Philistine with a sling and with a stone, and struck the Philistine, and killed him; there was no sword in the hand of David.',
+    dra: 'And David prevailed over the Philistine, with a sling and a stone, and he struck, and slew the Philistine. And as David had no sword in his hand,',
+  },
+  '1SA 18:1': {
+    rsv: 'When he had finished speaking to Saul, the soul of Jonathan was knit to the soul of David, and Jonathan loved him as his own soul.',
+    dra: 'And it came to pass, when he had made an end of speaking to Saul, the soul of Jonathan was knit with the soul of David, and Jonathan loved him as his own soul.',
+  },
+  '1SA 18:3': {
+    rsv: 'Then Jonathan made a covenant with David, because he loved him as his own soul.',
+    dra: 'And David and Jonathan made a covenant, for be loved him as his own soul.',
+  },
+  '1SA 18:4': {
+    rsv: 'And Jonathan stripped himself of the robe that was upon him, and gave it to David, and his armor, and even his sword and his bow and his girdle.',
+    dra: 'And Jonathan stripped himself of the coat with which he was clothed, and gave it to David, and the rest of his garments, even to his sword, and to his bow, and to his girdle.',
+  },
+  '1SA 18:7': {
+    rsv: 'And the women sang to one another as they made merry, “Saul has slain his thousands, and David his ten thousands.”',
+    dra: 'And the women sung as they played, and they said: I Saul slew his thousands, and David his ten thousands.',
+  },
+  '1SA 18:9': {
+    rsv: 'And Saul eyed David from that day on.',
+    dra: 'And Saul did not look on David with a good eye from that day and forward.',
+  },
+  '1SA 20:17': {
+    rsv: 'And Jonathan made David swear again by his love for him; for he loved him as he loved his own soul.',
+    dra: 'And Jonathan swore again to David, because he loved him: for he loved him as his own soul.',
+  },
+  '1SA 20:35': {
+    rsv: 'In the morning Jonathan went out into the field to the appointment with David, and with him a little lad.',
+    dra: 'And when the morning came, Jonathan went into the field, according to the appointment with David, and a little boy with him.',
+  },
+  '1SA 20:36': {
+    rsv: 'And he said to his lad, “Run and find the arrows which I shoot.” As the lad ran, he shot an arrow beyond him.',
+    dra: 'And he said to his boy: Go, and fetch me the arrows which I shoot. And when the boy ran, he shot another arrow beyond the boy.',
+  },
+  '1SA 20:37': {
+    rsv: 'And when the lad came to the place of the arrow which Jonathan had shot, Jonathan called after the lad and said, “Is not the arrow beyond you?”',
+    dra: 'The boy therefore came to the place of the arrow which Jonathan had shot: and Jonathan cried after the boy, and said: Behold the arrow is there further beyond thee.',
+  },
+  '1SA 20:41': {
+    rsv: 'And as soon as the lad had gone, David rose from beside the stone heap and fell on his face to the ground, and bowed three times; and they kissed one another, and wept with one another, until David recovered himself.',
+    dra: 'And when the boy was gone, David rose out of his place, which was towards the south, and falling on his face to the ground, adored thrice: and kissing one another, they wept together, but David more.',
+  },
+  '1SA 20:42': {
+    rsv: 'Then Jonathan said to David, “Go in peace, forasmuch as we have sworn both of us in the name of the LORD, saying, ‘The LORD shall be between me and you, and between my descendants and your descendants, for ever.’” And he rose and departed; and Jonathan went into the city.',
+    dra: 'And Jonathan said to David: Go in peace: and let all stand that we have sworn both of us in the name of the Lord, saying: The Lord be between me and thee, and between my seed and thy seed for ever. And David arose, and departed: and Jonathan went into the city.',
+  },
+  '1SA 21:6': {
+    rsv: 'So the priest gave him the holy bread; for there was no bread there but the bread of the Presence, which is removed from before the LORD, to be replaced by hot bread on the day it is taken away.',
+    dra: 'The priest therefore gave him hallowed bread: for there was no bread there, but only the loaves of proposition, which had been taken away from before the face of the Lord, that hot loaves might be set up.',
+  },
+  '1SA 22:1': {
+    rsv: 'David departed from there and escaped to the cave of Adullam; and when his brothers and all his father’s house heard it, they went down there to him.',
+    dra: 'David therefore went from thence and fled to the cave of Odollam. And when his brethren, and all his father’s house had heard of it, they went down to him thither;',
+  },
+  '1SA 22:2': {
+    rsv: 'And every one who was in distress, and every one who was in debt, and every one who was discontented, gathered to him; and he became captain over them. And there were with him about four hundred men.',
+    dra: 'And all that were in distress and oppressed with debt, and under affliction of mind gathered themselves unto him: and he became their prince, and there were with him about four hundred men.',
+  },
+  '1SA 23:14': {
+    rsv: 'And David remained in the strongholds in the wilderness, in the hill country of the Wilderness of Ziph. And Saul sought him every day, but God did not give him into his hand.',
+    dra: 'But David abode in the desert in strong holds, and he remained in a mountain of the desert of Ziph, in a woody hill. And Saul sought him always: but the Lord delivered him not into his hands.',
+  },
+  '1SA 23:16': {
+    rsv: 'And Jonathan, Saul’s son, rose, and went to David at Horesh, and strengthened his hand in God.',
+    dra: 'And Jonathan the son of Saul arose, and went to David into the wood, and strengthened his hands in God: and he said to him:',
+  },
+  '1SA 23:17': {
+    rsv: 'And he said to him, “Fear not; for the hand of Saul my father shall not find you; you shall be king over Israel, and I shall be next to you; Saul my father also knows this.”',
+    dra: 'Fear not: for the hand of my father Saul shall not find thee, and thou shalt reign over Israel, and I shall be next to thee, yea, and my father knoweth this.',
+  },
+  '1SA 24:6': {
+    rsv: 'He said to his men, “The LORD forbid that I should do this thing to my lord, the LORD’s anointed, to put forth my hand against him, seeing he is the LORD’s anointed.”',
+    dra: 'And he said to his men: The Lord be merciful unto me, that I may do no such thing to my master the Lord’s anointed, as to lay my hand upon him, because he is the Lord’s anointed.',
+  },
+  '1SA 24:10': {
+    rsv: 'Lo, this day your eyes have seen how the LORD gave you today into my hand in the cave; and some bade me kill you, but I spared you. I said, ‘I will not put forth my hand against my lord; for he is the LORD’s anointed.’',
+    dra: 'Behold this day thy eyes have seen, that the Lord hath delivered thee into my hand, in the cave, and I had a thought to kill thee, but my eye hath spared thee. For I said: I will not put out my hand against my lord, because he is the Lord’s anointed.',
+  },
+  '1SA 24:11': {
+    rsv: 'See, my father, see the skirt of your robe in my hand; for by the fact that I cut off the skirt of your robe, and did not kill you, you may know and see that there is no wrong or treason in my hands. I have not sinned against you, though you hunt my life to take it.',
+    dra: 'Moreover see and know, O my father, the hem of thy robe in my hand, that when I cut, off the hem of thy robe, I would not put out my hand against thee. Reflect, and see, that there is no evil in my hand, nor iniquity, neither have I sinned against thee: but thou liest in wait for my life, to take it away.',
+  },
+  '1SA 24:16': {
+    rsv: 'When David had finished speaking these words to Saul, Saul said, “Is this your voice, my son David?” And Saul lifted up his voice and wept.',
+    dra: 'And when David had made an end of speaking these words to Saul, Saul said: Is this thy voice, my son David? And Saul lifted up his voice, and wept.',
+  },
+  '1SA 24:17': {
+    rsv: 'He said to David, “You are more righteous than I; for you have repaid me good, whereas I have repaid you evil.',
+    dra: 'And he said to David: Thou art more just than I: for thou hast done good to me, and I have rewarded thee with evil.',
+  },
+  '1SA 26:7': {
+    rsv: 'So David and Abishai went to the army by night; and there lay Saul sleeping within the encampment, with his spear stuck in the ground at his head; and Abner and the army lay around him.',
+    dra: 'So David and Abisai came to the people by night, and found Saul lying and sleeping in the tent, and his spear fixed in the ground at his head: and Abner and the people sleeping round about him.',
+  },
+  '1SA 26:9': {
+    rsv: 'But David said to Abishai, “Do not destroy him; for who can put forth his hand against the LORD’s anointed, and be guiltless?”',
+    dra: 'And David said to Abisai: Kill him not: for who shall put forth his hand against the Lord’s anointed, and shall be guiltless?',
+  },
+  '1SA 26:11': {
+    rsv: 'The LORD forbid that I should put forth my hand against the LORD’s anointed; but take now the spear that is at his head, and the jar of water, and let us go.”',
+    dra: 'The Lord be merciful unto me, that I extend not my hand upon the Lord’s anointed. But now take the spear, which is at his head, and the cup of water, and let us go.',
+  },
+  '1SA 26:12': {
+    rsv: 'So David took the spear and the jar of water from Saul’s head; and they went away. No man saw it, or knew it, nor did any awake; for they were all asleep, because a deep sleep from the LORD had fallen upon them.',
+    dra: 'So David took the spear, and the cup of water which was at Saul’s head, and they went away: and no man saw it, or knew it, or awaked, but they were all asleep, for a deep sleep from the Lord was fallen upon them.',
+  },
+  '1SA 26:23': {
+    rsv: 'The LORD rewards every man for his righteousness and his faithfulness; for the LORD gave you into my hand today, and I would not put forth my hand against the LORD’s anointed.',
+    dra: 'And the Lord will reward every one according to his justice, and his faithfulness: for the Lord hath delivered thee this day into my hand, and I would not put forth my hand against the Lord’s anointed.',
+  },
+  '1SA 31:6': {
+    rsv: 'Thus Saul died, and his three sons, and his armor-bearer, and all his men, on the same day together.',
+    dra: 'So Saul died, and his three sons, and his armourbearer, and all his men that same day together.',
+  },
+  '2SA 1:19': {
+    rsv: '“Thy glory, O Israel, is slain upon thy high places! How are the mighty fallen!',
+    dra: 'The illustrious of Israel are slain upon thy mountains: how are the valiant fallen?',
+  },
+  '2SA 1:23': {
+    rsv: '“Saul and Jonathan, beloved and lovely! In life and in death they were not divided; they were swifter than eagles, they were stronger than lions.',
+    dra: 'Saul and Jonathan, lovely, and comely in their life, even in death they were not divided: they were swifter than eagles, stronger than lions.',
+  },
+  '2SA 2:4': {
+    rsv: 'And the men of Judah came, and there they anointed David king over the house of Judah. When they told David, “It was the men of Jabesh-gilead who buried Saul,”',
+    dra: 'And the men of Juda came, and anointed David there, to be king over the house of Juda. And it was told David, that the men of Jabes Galaad had buried Saul.',
+  },
+  '2SA 5:3': {
+    rsv: 'So all the elders of Israel came to the king at Hebron; and King David made a covenant with them at Hebron before the LORD, and they anointed David king over Israel.',
+    dra: 'The ancients also of Israel came to the king to Hebron, and king David made a league with them in Hebron before the Lord: and they anointed David to be king over Israel.',
+  },
+  '2SA 5:4': {
+    rsv: 'David was thirty years old when he began to reign, and he reigned forty years.',
+    dra: 'David was thirty years old when he began to reign, and he reigned forty years.',
+  },
+  '2SA 5:6': {
+    rsv: 'And the king and his men went to Jerusalem against the Jebusites, the inhabitants of the land, who said to David, “You will not come in here, but the blind and the lame will ward you off”—thinking, “David cannot come in here.”',
+    dra: 'And the king and all the men that were with him went to Jerusalem to the Jebusites the inhabitants of the land: and they said to David: Thou shalt not come in hither unless thou take away the blind and the lame that say: David shall not come in hither.',
+  },
+  '2SA 5:7': {
+    rsv: 'Nevertheless David took the stronghold of Zion, that is, the city of David.',
+    dra: 'But David took the castle of Sion, the same is the city of David.',
+  },
+  '2SA 5:10': {
+    rsv: 'And David became greater and greater, for the LORD, the God of hosts, was with him.',
+    dra: 'And he went on prospering and growing up, and the Lord God of hosts was with him.',
+  },
+  '2SA 6:2': {
+    rsv: 'And David arose and went with all the people who were with him from Baale-judah, to bring up from there the ark of God, which is called by the name of the LORD of hosts who sits enthroned on the cherubim.',
+    dra: 'And David arose and went, with all the people that were with him of the men of Juda to fetch the ark of God, upon which the name of the Lord of hosts is invoked, who sitteth over it upon the cherubims.',
+  },
+  '2SA 6:5': {
+    rsv: 'And David and all the house of Israel were making merry before the LORD with all their might, with songs and lyres and harps and tambourines and castanets and cymbals.',
+    dra: 'But David and all Israel played before the Lord on all manner of instruments made of wood, on harps and lutes and timbrels and cornets and cymbals.',
+  },
+  '2SA 6:9': {
+    rsv: 'And David was afraid of the LORD that day; and he said, “How can the ark of the LORD come to me?”',
+    dra: 'And David was afraid of the Lord that day, saying: How shall the ark of the Lord come to me?',
+  },
+  '2SA 6:11': {
+    rsv: 'And the ark of the LORD remained in the house of Obed-edom the Gittite three months; and the LORD blessed Obed-edom and all his household.',
+    dra: 'And the ark of the Lord abode in the house of Obededom the Gethite three months: and the Lord blessed Obededom, and all his household.',
+  },
+  '2SA 6:12': {
+    rsv: 'And it was told King David, “The LORD has blessed the household of Obed-edom and all that belongs to him, because of the ark of God.” So David went and brought up the ark of God from the house of Obed-edom to the city of David with rejoicing;',
+    dra: 'And it was told king David, that the Lord had blessed Obededom, and all that he had, because of the ark of God. So David went, and brought away the ark of God out of the house of Obededom into the city of David with joy. And there were with David seven choirs, and calves for victims.',
+  },
+  '2SA 6:14': {
+    rsv: 'And David danced before the LORD with all his might; and David was girded with a linen ephod.',
+    dra: 'And David danced with all his might before the Lord: and David was girded with a linen ephod.',
+  },
+  '2SA 6:15': {
+    rsv: 'So David and all the house of Israel brought up the ark of the LORD with shouting, and with the sound of the horn.',
+    dra: 'And David and all the house of Israel brought the ark of the covenant of the Lord with joyful shouting, and with sound of trumpet.',
+  },
+  '2SA 6:16': {
+    rsv: 'As the ark of the LORD came into the city of David, Michal the daughter of Saul looked out of the window, and saw King David leaping and dancing before the LORD; and she despised him in her heart.',
+    dra: 'And when the ark of the Lord was come into the city of David, Michol the daughter of Saul, looking out through a window, saw king David leaping and dancing before the Lord: and she despised him in her heart.',
+  },
+  '2SA 6:21': {
+    rsv: 'And David said to Michal, “It was before the LORD, who chose me above your father, and above all his house, to appoint me as prince over Israel, the people of the LORD—and I will make merry before the LORD.',
+    dra: 'And David said to Michol: Before the Lord, who chose me rather than thy father, and than all his house, and commanded me to be ruler over the people of the Lord in Israel,',
+  },
+  '2SA 7:1': {
+    rsv: 'Now when the king dwelt in his house, and the LORD had given him rest from all his enemies round about,',
+    dra: 'And it came to pass when the king sat in his house, and the Lord had given him rest on every side from all his enemies,',
+  },
+  '2SA 7:2': {
+    rsv: 'the king said to Nathan the prophet, “See now, I dwell in a house of cedar, but the ark of God dwells in a tent.”',
+    dra: 'He said to Nathan the prophet: Dost thou see that I dwell in a house of cedar, and the ark of God is lodged within skins?',
+  },
+  '2SA 7:5': {
+    rsv: '“Go and tell my servant David, ‘Thus says the LORD: Would you build me a house to dwell in?',
+    dra: 'Go, and say to my servant David: Thus saith the Lord: Shalt thou build me a house to dwell in?',
+  },
+  '2SA 7:8': {
+    rsv: 'Now therefore thus you shall say to my servant David, ‘Thus says the LORD of hosts, I took you from the pasture, from following the sheep, that you should be prince over my people Israel;',
+    dra: 'And now thus shalt thou speak to my servant David: Thus saith the Lord of hosts: a I took thee out of the pastures from following the sheep to be ruler over my people Israel:',
+  },
+  '2SA 7:11': {
+    rsv: 'from the time that I appointed judges over my people Israel; and I will give you rest from all your enemies. Moreover the LORD declares to you that the LORD will make you a house.',
+    dra: 'From the day that I appointed judges over my people Israel: and I will give thee rest from all thy enemies. And the Lord foretelleth to thee, that the Lord will make thee a house.',
+  },
+  '2SA 7:12': {
+    rsv: 'When your days are fulfilled and you lie down with your fathers, I will raise up your offspring after you, who shall come forth from your body, and I will establish his kingdom.',
+    dra: 'And when thy days shall be fulfilled, and thou shalt sleep with thy fathers, I will raise up thy seed after thee, which shall proceed out of thy bowels, and I will establish his kingdom.',
+  },
+  '2SA 7:13': {
+    rsv: 'He shall build a house for my name, and I will establish the throne of his kingdom for ever.',
+    dra: 'He shall build a house to my name, and I will establish the throne of his kingdom for ever.',
+  },
+  '2SA 7:16': {
+    rsv: 'And your house and your kingdom shall be made sure for ever before me; your throne shall be established for ever.’”',
+    dra: 'And thy house shall be faithful, and thy kingdom for ever before thy face, and thy throne shall be firm for ever.',
+  },
+  '2SA 7:18': {
+    rsv: 'Then King David went in and sat before the LORD, and said, “Who am I, O Lord GOD, and what is my house, that thou hast brought me thus far?',
+    dra: 'And David went in, and sat before the Lord, and said: Who am I, O Lord God, and what is my house, that thou hast brought me thus far?',
+  },
+  'MAT 1:1': {
+    rsv: 'The book of the genealogy of Jesus Christ, the son of David, the son of Abraham.',
+    dra: 'The book of the generation of Jesus Christ, the son of David, the son of Abraham:',
+  },
+  'MAT 5:44': {
+    rsv: 'But I say to you, Love your enemies and pray for those who persecute you,',
+    dra: 'But I say to you, Love your enemies: do good to them that hate you: and pray for them that persecute and calumniate you:',
+  },
+  'MAT 12:3': {
+    rsv: 'He said to them, “Have you not read what David did, when he was hungry, and those who were with him:',
+    dra: 'But he said to them: Have you not read what David did when he was hungry, and they that were with him:',
+  },
+  'MAT 12:4': {
+    rsv: 'how he entered the house of God and ate the bread of the Presence, which it was not lawful for him to eat nor for those who were with him, but only for the priests?',
+    dra: 'How he entered into the house of God, and did eat the loaves of proposition, which it was not lawful for him to eat, nor for them that were with him, but for the priests only?',
+  },
+  'MAT 21:9': {
+    rsv: 'And the crowds that went before him and that followed him shouted, “Hosanna to the Son of David! Blessed is he who comes in the name of the Lord! Hosanna in the highest!”',
+    dra: 'And the multitudes that went before and that followed, cried, saying: Hosanna to the son of David: Blessed is he that cometh in the name of the Lord: Hosanna in the highest.',
+  },
+  'LUK 1:41': {
+    rsv: 'And when Elizabeth heard the greeting of Mary, the babe leaped in her womb; and Elizabeth was filled with the Holy Spirit',
+    dra: 'And it came to pass, that when Elizabeth heard the salutation of Mary, the infant leaped in her womb. And Elizabeth was filled with the Holy Ghost:',
+  },
+  'LUK 1:43': {
+    rsv: 'And why is this granted me, that the mother of my Lord should come to me?',
+    dra: 'And whence is this to me, that the mother of my Lord should come to me?',
+  },
+  'LUK 1:44': {
+    rsv: 'For behold, when the voice of your greeting came to my ears, the babe in my womb leaped for joy.',
+    dra: 'For behold as soon as the voice of thy salutation sounded in my ears, the infant in my womb leaped for joy.',
+  },
+  'LUK 1:56': {
+    rsv: 'And Mary remained with her about three months, and returned to her home.',
+    dra: 'And Mary abode with her about three months; and she returned to her own house.',
+  },
+  'JHN 3:30': {
+    rsv: 'He must increase, but I must decrease.”',
+    dra: 'He must increase, but I must decrease.',
+  },
+  'JHN 10:11': {
+    rsv: 'I am the good shepherd. The good shepherd lays down his life for the sheep.',
+    dra: 'I am the good shepherd. The good shepherd giveth his life for his sheep.',
+  },
+  'JHN 10:14': {
+    rsv: 'I am the good shepherd; I know my own and my own know me,',
+    dra: 'I am the good shepherd; and I know mine, and mine know me.',
+  },
+  '1CO 15:57': {
+    rsv: 'But thanks be to God, who gives us the victory through our Lord Jesus Christ.',
+    dra: 'But thanks be to God, who hath given us the victory through our Lord Jesus Christ.',
+  },
+  'HEB 12:22': {
+    rsv: 'But you have come to Mount Zion and to the city of the living God, the heavenly Jerusalem, and to innumerable angels in festal gathering,',
+    dra: 'But you are come to mount Sion, and to the city of the living God, the heavenly Jerusalem, and to the company of many thousands of angels,',
+  },
 }
 
 /** A verse's words in the active translation. Throws for a verse that isn't in the list (a content check catches these first). */
