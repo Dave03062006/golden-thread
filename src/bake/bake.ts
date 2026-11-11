@@ -38,9 +38,10 @@ export interface ArtManifest {
   backdrop: { paper: string; pixel: string }
 }
 
-async function encode(canvas: HTMLCanvasElement, type: 'image/webp' | 'image/png'): Promise<string> {
+/** WebP for everything: lossy at 0.9 for painted paper art, lossless (quality 1) for pixel art, which keeps every pixel exact. */
+async function encode(canvas: HTMLCanvasElement, quality: 0.9 | 1 = 0.9): Promise<string> {
   const blob = await new Promise<Blob>((resolve, reject) =>
-    canvas.toBlob((b) => (b ? resolve(b) : reject(new Error('could not encode'))), type, 0.9),
+    canvas.toBlob((b) => (b ? resolve(b) : reject(new Error('could not encode'))), 'image/webp', quality),
   )
   const bytes = new Uint8Array(await blob.arrayBuffer())
   let binary = ''
@@ -65,7 +66,7 @@ async function bake(): Promise<{ files: BakedFile[]; manifest: ArtManifest }> {
           ...size,
           shadowPx: paper.shadow ? Math.max(2, frameHeight * 0.006) * resolution : 0,
         })
-        files.push({ path: paperLayerFile(id, frameWidth), base64: await encode(canvas, 'image/webp') })
+        files.push({ path: paperLayerFile(id, frameWidth), base64: await encode(canvas) })
       }
       manifest.paperLayers[id] = { hash: paperLayerHash(paper) }
     }
@@ -74,7 +75,7 @@ async function bake(): Promise<{ files: BakedFile[]; manifest: ArtManifest }> {
     if (pixel) {
       const buf = new PixelBuffer(LAYER_W, LAYER_H)
       pixel.draw(buf)
-      files.push({ path: pixelLayerFile(id), base64: await encode(buf.toCanvas(), 'image/png') })
+      files.push({ path: pixelLayerFile(id), base64: await encode(buf.toCanvas(), 1) })
       manifest.pixelLayers[id] = { hash: pixelLayerHash(pixel) }
     }
   }
@@ -86,7 +87,7 @@ async function bake(): Promise<{ files: BakedFile[]; manifest: ArtManifest }> {
       const height = Math.round(width * (art.box.h / art.box.w))
       for (const part of art.parts) {
         const canvas = await rasterize(part.svg, art.box, { widthPx: width, heightPx: height, shadowPx: partShadow(art, width) })
-        files.push({ path: paperPartFile(prop, part.id, width), base64: await encode(canvas, 'image/webp') })
+        files.push({ path: paperPartFile(prop, part.id, width), base64: await encode(canvas) })
       }
     }
     manifest.paperProps[prop] = { hash: paperPropHash(art) }
@@ -96,10 +97,10 @@ async function bake(): Promise<{ files: BakedFile[]; manifest: ArtManifest }> {
   const svg = heavenAndEarthSvg()
   for (const width of BACKDROP_WIDTHS) {
     const canvas = await rasterize(svg, { x: 0, y: 0, w: BACKDROP_W, h: BACKDROP_H }, { widthPx: width, heightPx: Math.round((width * BACKDROP_H) / BACKDROP_W), shadowPx: 0 })
-    files.push({ path: paperBackdropFile(width), base64: await encode(canvas, 'image/webp') })
+    files.push({ path: paperBackdropFile(width), base64: await encode(canvas) })
   }
   const pixels = drawHeavenAndEarth()
-  files.push({ path: pixelBackdropFile, base64: await encode(pixels.toCanvas(), 'image/png') })
+  files.push({ path: pixelBackdropFile, base64: await encode(pixels.toCanvas(), 1) })
   manifest.backdrop = { paper: fnv1a(svg), pixel: pixelsHash(pixels) }
 
   return { files, manifest }
