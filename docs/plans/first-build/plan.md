@@ -712,6 +712,25 @@ The same way again: script, art, build, checks, play-test. Level 16 is the last 
   - `check`, `test` (3,736 tests), `a11y`, `keyboard` and `saves` pass.
   - `perf` was not run again: the browser here still runs at 30 frames a second (see Task 21). Run it on an unthrottled machine.
   - New `shots` baselines cover the Level 16 scenes and the screens Level 16 changes. Dave still needs to look them over.
+### Task 23: Level 17, *Samuel and Saul* (M23)
+
+The same way again: script, art, build, checks, play-test. Level 17 is the first level of Age VI, *The Kingdom*.
+
+**Status (November 2026):** steps 1–4 are done; step 5 is Dave's.
+- **Script:** `docs/scripts/level-17-samuel-and-saul.md`, approved by Dave on 2026-11-11. It has 6 episodes and 18 scenes, 92 passages quoted word for word, and a 42-question quiz, written with retrieval practice in mind (more finishing verses and putting events in order, wrong answers that catch common mix-ups).
+- **Build:** all six episodes are built in both styles, each with its own play:
+  - pouring out her soul (press and hold while Hannah prays in silence);
+  - here I am (choosing what Samuel does at each call, until he answers the LORD);
+  - the road to Beth-shemesh (leading the cows and the cart with the ark home);
+  - what the king will take (Samuel's warning, item by item, in order);
+  - hidden among the baggage (searching the piles for Saul);
+  - the bleating of the sheep (checking Saul's excuses against what happened).
+  Four reuse shared rules: the route rules of Levels 14–16 and Level 11's ordering rules, which can offer their own answers.
+- **Changes from the script:** the cart and the ark don't move with the cows on the road home (the cows alone are led), and Dagon, fallen, is a toppled standing stone. The ark is Level 11's ark of the covenant; the lamp of God is Level 11's lampstand.
+- **Hard passages:** Episodes 3 and 6 open with a content note. The lost battle, Eli's death and the war against Amalek are told in a sentence each; Agag's death is left out.
+- **New art:** no new backdrops; the level reuses earlier scenery (including Level 15's house of Dagon and Level 11's holy place). New: four people (Hannah, Samuel as a boy and as a man, Saul) and a vial of oil, in both styles.
+- **Cathedral and map:** six new medallions open the Age VI bay. Ramah, Mizpah, Ashdod and Beth-shemesh are new places in `geography.ts`. On the zoomed-out map, Ramah and Mizpah (about 5 km apart) and Beth-shemesh and Zorah (about 3 km apart) sit very close.
+- **Music:** no new recordings. Handel's *Saul* has no recording on Wikimedia Commons; one 78 of its "Dead March" (Coldstream Guards, HMV C. 118) is on the Internet Archive with no date or license. Dave to decide whether to add it, perhaps for Saul's death in Level 18.
 ## Parallelization
 
 - **Code tasks run in order.** Each one builds on the last, and running them in order keeps the code consistent for the code tour.

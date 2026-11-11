@@ -314,6 +314,11 @@ export const familyOfNoah: Record<string, PaperPropArt> = {
   ruth: person({ robe: '#b8643a', fold: '#8a4626', hair: '#2a1a14', veil: '#e8c870', sash: '#6a8a3a' }),
   orpah: person({ robe: '#5a7a8a', fold: '#3e5a66', hair: '#241a16', veil: '#c8b8a0' }),
   boaz: person({ robe: '#6a4a7a', fold: '#4a3058', hair: '#bab4a8', beard: '#bab4a8', sash: '#d8b048' }),
+  // Level 17: Hannah; Samuel as a boy and as a man; Saul, the first king.
+  hannah: person({ robe: '#3a6a8a', fold: '#264a66', hair: '#2a1e1a', veil: '#d8c8e8', sash: '#c8a040' }),
+  'samuel-boy': person({ robe: '#f0ece0', fold: '#c8c0ac', hair: '#3a2618', sash: '#8a6a3a' }),
+  samuel: person({ robe: '#5a5a7a', fold: '#3e3e5a', hair: '#d8d4cc', beard: '#d8d4cc', sash: '#e8e0c8' }),
+  saul: person({ robe: '#8a2a3a', fold: '#641a26', hair: '#1a1416', beard: '#1a1416', sash: '#d8b040' }),
   amalekites: band([
     { robe: '#5a3a3a', fold: '#3e2626', hair: '#1a1210', beard: '#1a1210', veil: '#3a2a2a' },
     { robe: '#6a4a3a', fold: '#4c3226', hair: '#1a1210', beard: '#1a1210', veil: '#4a3a2a' },

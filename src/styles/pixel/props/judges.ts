@@ -72,4 +72,16 @@ const sandal: PixelDrawnArt = {
   },
 }
 
-export const judgesProps: Record<string, PixelDrawnArt> = { 'palm-tree': palmTree, fleece, honeycomb, millstone, sandal }
+/** Level 17: the little vial of oil Samuel poured on Saul's head. */
+const oilVial: PixelDrawnArt = {
+  kind: 'drawn',
+  poses: ['idle'],
+  anchor: 'base',
+  draw(paint) {
+    paint.rect(-1, -4, 2, 4, C.sand)
+    paint.rect(-1, -2, 2, 2, C.gold)
+    paint.rect(0, -5, 1, 1, C.wood2)
+  },
+}
+
+export const judgesProps: Record<string, PixelDrawnArt> = { 'palm-tree': palmTree, fleece, honeycomb, millstone, sandal, 'oil-vial': oilVial }

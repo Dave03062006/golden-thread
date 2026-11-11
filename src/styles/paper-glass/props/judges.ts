@@ -76,4 +76,13 @@ const sandal: PaperPropArt = {
   parts: [{ id: 'sandal', svg: `<path d="M4 24Q2 14 14 12L48 10Q60 12 58 24Z" fill="#8a5a32"/><path d="M18 12Q24 0 34 2Q40 4 38 12" stroke="#6a4020" stroke-width="4" fill="none"/>` }],
 }
 
-export const judgesProps: Record<string, PaperPropArt> = { 'palm-tree': palmTree, fleece, honeycomb, millstone, sandal }
+/** Level 17: the little vial of oil Samuel poured on Saul's head. */
+const oilVial: PaperPropArt = {
+  box: { x: 0, y: 0, w: 20, h: 40 },
+  facing: 1,
+  poses: ['idle'],
+  anchor: 'base',
+  parts: [{ id: 'vial', svg: `<path d="M6 40Q0 24 8 16L8 6L12 6L12 16Q20 24 14 40Z" fill="#c8b070"/><rect x="7" y="2" width="6" height="5" fill="#8a5a32"/><path d="M6 30Q10 26 14 30L14 38L6 38Z" fill="#e8c850"/>` }],
+}
+
+export const judgesProps: Record<string, PaperPropArt> = { 'palm-tree': palmTree, fleece, honeycomb, millstone, sandal, 'oil-vial': oilVial }

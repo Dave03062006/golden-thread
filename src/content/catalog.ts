@@ -14,10 +14,11 @@ import { level13 } from './levels/13-moses-last-words/level'
 import { level14 } from './levels/14-joshua/level'
 import { level15 } from './levels/15-the-judges/level'
 import { level16 } from './levels/16-ruth/level'
+import { level17 } from './levels/17-samuel-and-saul/level'
 import type { Episode, Level } from './types'
 
 /** Every level built so far, in order. */
-export const LEVELS: Level[] = [level1, level2, level3, level4, level5, level6, level7, level8, level9, level10, level11, level12, level13, level14, level15, level16]
+export const LEVELS: Level[] = [level1, level2, level3, level4, level5, level6, level7, level8, level9, level10, level11, level12, level13, level14, level15, level16, level17]
 
 /** Finds an episode and its level by the episode's id, like "l01-e1". */
 export function findEpisode(episodeId: string): { level: Level; episode: Episode } | undefined {

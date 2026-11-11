@@ -186,6 +186,11 @@ export const PLACES: Place[] = [
   { id: 'mizpah-of-gilead', name: 'Mizpah of Gilead', kind: 'city', at: { lat: 32.3, lon: 35.8 }, note: 'Jephthah’s home in the hills east of the Jordan. Its name means “watchtower”; its exact place is not known.' },
   { id: 'zorah', name: 'Zorah', kind: 'city', at: { lat: 31.77, lon: 34.98 }, note: 'Samson’s home village, on a hill of the tribe of Dan looking down on the land of the Philistines.' },
   { id: 'gaza', name: 'Gaza', kind: 'city', at: { lat: 31.5, lon: 34.46 }, note: 'The southernmost city of the Philistines, by the sea. Samson died there, when the house of Dagon fell.' },
+  // Level 17 · Samuel and Saul
+  { id: 'ramah', name: 'Ramah', kind: 'city', at: { lat: 31.85, lon: 35.23 }, note: 'Samuel’s home town, in the hills of Benjamin north of Jerusalem, where the elders came to ask for a king.' },
+  { id: 'mizpah', name: 'Mizpah', kind: 'city', at: { lat: 31.89, lon: 35.21 }, note: 'A town in Benjamin where Israel gathered to pray, where Samuel set up the stone Ebenezer nearby, and where Saul was chosen by lot.' },
+  { id: 'ashdod', name: 'Ashdod', kind: 'city', at: { lat: 31.75, lon: 34.65 }, note: 'A Philistine city near the coast, where the ark was set in the house of Dagon, and Dagon fell before it.' },
+  { id: 'beth-shemesh', name: 'Beth-shemesh', kind: 'city', at: { lat: 31.73, lon: 34.99 }, note: '“House of the sun,” a town of Israel on the edge of the hills, where the ark came home on a cart.' },
 ]
 
 const BY_ID = new Map(PLACES.map((place) => [place.id, place]))

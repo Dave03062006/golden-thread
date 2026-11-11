@@ -3,7 +3,7 @@
 **Bible:** 1 Samuel 1–10; 13; 15
 **Age:** VI · The Kingdom
 **Length:** about 50 minutes (6 episodes, then the quiz, then reflection and prayer)
-**Status:** draft for Dave's approval.
+**Status:** approved by Dave on 2026-11-11 ("Approved, build it").
 
 ## How to read this script
 

@@ -161,6 +161,13 @@ export const EMBLEMS: Record<string, { rows: string[]; colors: Record<string, st
   'sheaf-of-barley': { rows: ['y.y.y.y.y', '.y.y.y.y.', '..yyyyy..', '...yyy...', '..wwwww..', '...yyy...', '..yyyyy..', '.yy.y.yy.', 'ggggggggg'], colors: { y: C.gold, w: C.wood2, g: C.wood3 } },
   'six-measures': { rows: ['.........', '.yy.yy.yy', '.yy.yy.yy', '.........', 'ooooooooo', '.ooooooo.', '..ooooo..', '...ooo...', '.........'], colors: { y: C.gold, o: C.orange } },
   'sandal-at-the-gate': { rows: ['pp.....pp', 'pp.....pp', 'pp.....pp', 'pp.....pp', 'pp..w..pp', 'pp.www.pp', 'pwwwwwwwp', 'pp.....pp', 'ggggggggg'], colors: { p: C.sand2, w: C.wood2, g: C.wood3 } },
+  // Level 17 · Samuel and Saul
+  'hannahs-prayer': { rows: ['...www...', 'b.wpw.b..', '.b.p.b...', '..bbb....', '..bbb....', '..bbb....', '.bbbbb...', '.bbbbb...', 'ggggggggg'], colors: { w: C.white, p: C.pale, b: C.blue, g: C.wood3 } },
+  'lamp-of-god': { rows: ['....w....', '...wyw...', '...yoy...', '....y....', '....g....', '....g....', '....g....', '..ggggg..', '.........'], colors: { w: C.white, y: C.gold, o: C.orange, g: C.wood3 } },
+  'ark-on-the-cart': { rows: ['.........', '.y.....y.', '.yyyyyyy.', '.yyyyyyy.', '.yyyyyyy.', 'wwwwwwwww', '.o.....o.', 'ooo...ooo', '.o.....o.'], colors: { y: C.gold, w: C.wood2, o: C.wood1 } },
+  'stone-of-help': { rows: ['.........', '....s....', '...sss...', '...sws...', '...sss...', '...sss...', '...sss...', 'ggggggggg', 'ggggggggg'], colors: { s: C.pale, w: C.white, g: C.green } },
+  'vial-of-oil': { rows: ['......yy.', '.....yy..', '...ww....', '...ss....', '..ssss...', '..syys...', '..syys...', '..ssss...', '.........'], colors: { y: C.gold, w: C.wood2, s: C.sand } },
+  'torn-robe': { rows: ['.sssssss.', '.sssssss.', '.sssssss.', '.ssss.ss.', '.sss..ss.', '.ssss..s.', 'sssss..ss', 'ssssss.ss', '.........'], colors: { s: C.slate } },
 }
 
 /** The pointed outline of a window, inside which the glass is: whether a pixel is in it. */

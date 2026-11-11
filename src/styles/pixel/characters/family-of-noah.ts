@@ -280,6 +280,11 @@ export const familyOfNoah: Record<string, PixelSpriteArt> = {
   ruth: person({ robe: C.orange, hair: C.wood0, veil: C.gold, sash: C.green }),
   orpah: person({ robe: C.teal, hair: C.ink, veil: C.sand }),
   boaz: person({ robe: C.purple, hair: C.pale, beard: C.pale, sash: C.gold }),
+  // Level 17: Hannah; Samuel as a boy and as a man; Saul, the first king.
+  hannah: person({ robe: C.blue, hair: C.wood0, veil: C.pale, sash: C.gold }),
+  'samuel-boy': person({ robe: C.white, hair: C.wood1, sash: C.wood3 }),
+  samuel: person({ robe: C.slate, hair: C.pale, beard: C.pale, sash: C.white }),
+  saul: person({ robe: C.rose, hair: C.ink, beard: C.ink, sash: C.gold }),
   amalekites: band([
     { robe: C.wood1, hair: C.ink, beard: C.ink, veil: C.dslate },
     { robe: C.purple, hair: C.ink, beard: C.ink, veil: C.wood0 },

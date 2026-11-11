@@ -925,6 +925,48 @@ export const EMBLEMS: Record<string, () => Piece[]> = {
     { d: P([[-10, 10], [10, 8], [12, 12], [-10, 14]]), color: '#8a5a32' },
     { d: P([[-2, 8], [0, 2], [4, 2], [4, 8]]), color: '#6a4020' },
   ],
+  // Level 17 · Samuel and Saul
+  // Hannah, her hands lifted, singing.
+  'hannahs-prayer': () => [
+    { d: circ(0, -2, 13, 20), color: '#fff4c0' },
+    { d: P([[-6, 16], [-5, -2], [5, -2], [6, 16]]), color: '#3a6a8a' },
+    { d: circ(0, -6, 4, 12), color: '#d8c8e8' },
+    { d: P([[-5, -1], [-12, -12], [-10, -13], [-3, -3]]), color: '#3a6a8a' },
+    { d: P([[5, -1], [12, -12], [10, -13], [3, -3]]), color: '#3a6a8a' },
+  ],
+  // The lamp of God, burning low in the night.
+  'lamp-of-god': () => [
+    { d: circ(0, -6, 9, 16), color: '#f8d878' },
+    { d: P([[-1, 0], [1, 0], [1, 14], [-1, 14]]), color: '#c89a3a' },
+    { d: P([[-8, 14], [8, 14], [8, 16], [-8, 16]]), color: '#c89a3a' },
+    { d: P([[-1, -4], [1, -4], [2, -9], [0, -13], [-2, -9]]), color: '#fff0a0' },
+  ],
+  // The ark on the cart, coming home.
+  'ark-on-the-cart': () => [
+    { d: P([[-12, -4], [12, -4], [12, 6], [-12, 6]]), color: '#d8a838' },
+    { d: P([[-8, -9], [-3, -4], [-8, -4]]), color: '#f4d070' },
+    { d: P([[8, -9], [3, -4], [8, -4]]), color: '#f4d070' },
+    { d: P([[-16, 6], [16, 6], [16, 9], [-16, 9]]), color: '#8a5a32' },
+    { d: circ(-9, 12, 4, 10), color: '#6a4020' },
+    { d: circ(9, 12, 4, 10), color: '#6a4020' },
+  ],
+  // The stone Ebenezer: hitherto the LORD has helped us.
+  'stone-of-help': () => [
+    { d: P([[-16, 16], [-16, 10], [16, 8], [16, 16]]), color: '#5a8a4a' },
+    { d: P([[-5, 12], [-6, -8], [0, -14], [6, -8], [5, 12]]), color: '#9a94a4' },
+    { d: circ(0, -2, 2.5, 8), color: '#fff4c0' },
+  ],
+  // The vial of oil, poured out.
+  'vial-of-oil': () => [
+    { d: P([[-4, 4], [-6, 14], [6, 14], [4, 4], [2, -4], [-2, -4]]), color: '#c8b070' },
+    { d: P([[-2, -8], [2, -8], [2, -4], [-2, -4]]), color: '#8a5a32' },
+    { d: P([[3, -6], [10, -14], [12, -12], [5, -4]]), color: '#e8c850' },
+  ],
+  // Samuel's robe, torn.
+  'torn-robe': () => [
+    { d: P([[-12, -14], [12, -14], [14, 16], [-14, 16]]), color: '#5a5a7a' },
+    { d: P([[2, 4], [8, 6], [6, 16], [0, 16], [4, 10]]), color: '#2a2a4a' },
+  ],
 }
 
 /** The medallions' backgrounds: deep blue, with one ruby for the darkest story. */

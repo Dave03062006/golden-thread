@@ -5426,6 +5426,375 @@ export const VERSES: Record<string, Verse> = {
     rsv: 'but with the precious blood of Christ, like that of a lamb without blemish or spot.',
     dra: 'But with the precious blood of Christ, as of a lamb unspotted and undefiled,',
   },
+  // Level 17 · Samuel and Saul (the Douay-Rheims calls 1 Samuel "1 Kings" but numbers these verses as the RSV does).
+  '1SA 1:2': {
+    rsv: 'He had two wives; the name of the one was Hannah, and the name of the other Peninnah. And Peninnah had children, but Hannah had no children.',
+    dra: 'And he had two wives, the name of one was Anna, and the name of the other Phenenna. Phenenna had children: but Anna had no children.',
+  },
+  '1SA 1:6': {
+    rsv: 'And her rival used to provoke her sorely, to irritate her, because the LORD had closed her womb.',
+    dra: 'Her rival also afflicted her, and troubled her exceedingly, insomuch that she upbraided her, that the Lord had shut up her womb:',
+  },
+  '1SA 1:10': {
+    rsv: 'She was deeply distressed and prayed to the LORD, and wept bitterly.',
+    dra: 'As Anna had her heart full of grief, she prayed to the Lord, shedding many tears,',
+  },
+  '1SA 1:11': {
+    rsv: 'And she vowed a vow and said, “O LORD of hosts, if thou wilt indeed look on the affliction of thy maidservant, and remember me, and not forget thy maidservant, but wilt give to thy maidservant a son, then I will give him to the LORD all the days of his life, and no razor shall touch his head.”',
+    dra: 'And she made a vow, saying: O Lord, of hosts, if thou wilt look down on the affliction of thy servant, and wilt be mindful of me, and not forget thy handmaid, and wilt give to thy servant a man child: I will give him to the Lord all the days of his life, and no razor shall come upon his head.',
+  },
+  '1SA 1:13': {
+    rsv: 'Hannah was speaking in her heart; only her lips moved, and her voice was not heard; therefore Eli took her to be a drunken woman.',
+    dra: 'Now Anna spoke in her heart, and only her lips moved, but her voice was not heard at all. Heli therefore thought her to be drunk,',
+  },
+  '1SA 1:15': {
+    rsv: 'But Hannah answered, “No, my lord, I am a woman sorely troubled; I have drunk neither wine nor strong drink, but I have been pouring out my soul before the LORD.',
+    dra: 'Anna answering, said: Not so, my lord: for I am an exceeding unhappy woman, and have drunk neither wine nor any strong drink, but I have poured out my soul before the Lord.',
+  },
+  '1SA 1:17': {
+    rsv: 'Then Eli answered, “Go in peace, and the God of Israel grant your petition which you have made to him.”',
+    dra: 'Then Heli said to her: Go in peace: and the God of Israel grant thee thy petition, which thou hast asked of him.',
+  },
+  '1SA 1:20': {
+    rsv: 'and in due time Hannah conceived and bore a son, and she called his name Samuel, for she said, “I have asked him of the LORD.”',
+    dra: 'And it came to pass when the time was come about, Anna conceived and bore a son, and called his name Samuel: because she had asked him of the Lord.',
+  },
+  '1SA 1:24': {
+    rsv: 'And when she had weaned him, she took him up with her, along with a three-year-old bull, an ephah of flour, and a skin of wine; and she brought him to the house of the LORD at Shiloh; and the child was young.',
+    dra: 'And after she had weaned him, she carried him with her, with three calves, and three bushels of flour, and a bottle of wine, and she brought him to the house of the Lord in Silo. Now the child was as yet very young:',
+  },
+  '1SA 1:27': {
+    rsv: 'For this child I prayed; and the LORD has granted me my petition which I made to him.',
+    dra: 'For this child did I pray, and the Lord hath granted me my petition, which I asked of him.',
+  },
+  '1SA 1:28': {
+    rsv: 'Therefore I have lent him to the LORD; as long as he lives, he is lent to the LORD.” And they worshiped the LORD there.',
+    dra: 'Therefore I also have lent him to the Lord all the days of his life, he shall be lent to the Lord. And they adored the Lord there. And Anna prayed, and said:',
+  },
+  '1SA 2:1': {
+    rsv: 'Hannah also prayed and said, “My heart exults in the LORD; my strength is exalted in the LORD. My mouth derides my enemies, because I rejoice in thy salvation.',
+    dra: 'My heart hath rejoiced in the Lord, and my horn is exalted in my God: my mouth is enlarged over my enemies: because I have joyed in thy salvation.',
+  },
+  '1SA 2:2': {
+    rsv: '“There is none holy like the LORD, there is none besides thee; there is no rock like our God.',
+    dra: 'There is none holy as the Lord is: for there is no other beside thee, and there is none strong like our God.',
+  },
+  '1SA 2:8': {
+    rsv: 'He raises up the poor from the dust; he lifts the needy from the ash heap, to make them sit with princes and inherit a seat of honor. For the pillars of the earth are the LORD’s, and on them he has set the world.',
+    dra: 'He raiseth up the needy from the dust, and lifteth up the poor from the dunghill: that he may sit with princes, and hold the throne of glory. For the poles of the earth are the Lord’s, and upon them he hath set the world.',
+  },
+  '1SA 2:10': {
+    rsv: 'The adversaries of the LORD shall be broken to pieces; against them he will thunder in heaven. The LORD will judge the ends of the earth; he will give strength to his king, and exalt the power of his anointed.”',
+    dra: 'The adversaries of the Lord shall fear him: and upon them shall he thunder in the heavens. The Lord shall judge the ends of the earth, and he shall give empire to his king, and shall exalt the horn of his Christ.',
+  },
+  '1SA 2:19': {
+    rsv: 'And his mother used to make for him a little robe and take it to him each year, when she went up with her husband to offer the yearly sacrifice.',
+    dra: 'And his mother made him a little coat, which she brought to him on the appointed days, when she went up with her husband, to offer the solemn sacrifice.',
+  },
+  '1SA 2:26': {
+    rsv: 'Now the boy Samuel continued to grow both in stature and in favor with the LORD and with men.',
+    dra: 'But the child Samuel advanced, and grew on, and pleased both the Lord and men.',
+  },
+  '1SA 3:1': {
+    rsv: 'Now the boy Samuel was ministering to the LORD under Eli. And the word of the LORD was rare in those days; there was no frequent vision.',
+    dra: 'Now the child Samuel ministered to the Lord before Heli, and the word of the Lord was precious in those days, there was no manifest vision.',
+  },
+  '1SA 3:2': {
+    rsv: 'At that time Eli, whose eyesight had begun to grow dim, so that he could not see, was lying down in his own place;',
+    dra: 'And it came to pass one day when Heli lay in his place, and his eyes were grown dim, that he could not see:',
+  },
+  '1SA 3:3': {
+    rsv: 'the lamp of God had not yet gone out, and Samuel was lying down within the temple of the LORD, where the ark of God was.',
+    dra: 'Before the lamp of God went out, Samuel slept in the temple of the Lord, where the ark of God was.',
+  },
+  '1SA 3:4': {
+    rsv: 'Then the LORD called, “Samuel! Samuel!” and he said, “Here I am!”',
+    dra: 'And the Lord called Samuel. And he answered: Here am I.',
+  },
+  '1SA 3:7': {
+    rsv: 'Now Samuel did not yet know the LORD, and the word of the LORD had not yet been revealed to him.',
+    dra: 'Now Samuel did not yet know the Lord, neither had the word of the Lord been revealed to him.',
+  },
+  '1SA 3:10': {
+    rsv: 'And the LORD came and stood forth, calling as at other times, “Samuel! Samuel!” And Samuel said, “Speak, for thy servant hears.”',
+    dra: 'And the Lord came and stood: and he called, as he had called the other times: Samuel, Samuel. And Samuel said: Speak, Lord, for thy servant heareth.',
+  },
+  '1SA 3:19': {
+    rsv: 'And Samuel grew, and the LORD was with him and let none of his words fall to the ground.',
+    dra: 'And Samuel grew, and the Lord was with him, and not one of his words fell to the ground.',
+  },
+  '1SA 3:20': {
+    rsv: 'And all Israel from Dan to Beer-sheba knew that Samuel was established as a prophet of the LORD.',
+    dra: 'And all Israel from Dan to Bersabee, knew that Samuel was a faithful prophet of the Lord.',
+  },
+  '1SA 4:3': {
+    rsv: 'And when the troops came to the camp, the elders of Israel said, “Why has the LORD put us to rout today before the Philistines? Let us bring the ark of the covenant of the LORD here from Shiloh, that he may come among us and save us from the power of our enemies.”',
+    dra: 'And the people returned to the camp: and the ancients of Israel said: Why hath the Lord defeated us to day before the Philistines? Let us fetch unto us the ark of the covenant of the Lord from Silo, and let it come in the midst of us, that it may save us from the hand of our enemies.',
+  },
+  '1SA 4:10': {
+    rsv: 'So the Philistines fought, and Israel was defeated, and they fled, every man to his home; and there was a very great slaughter, for there fell of Israel thirty thousand foot soldiers.',
+    dra: 'So the Philistines fought, and Israel was overthrown, and every man fled to his own dwelling: and there was an exceeding great slaughter; for there fell of Israel thirty thousand footmen.',
+  },
+  '1SA 4:11': {
+    rsv: 'And the ark of God was captured; and the two sons of Eli, Hophni and Phinehas, were slain.',
+    dra: 'And the ark of God was taken: and the two sons of Heli, Ophni and Phinees, were slain.',
+  },
+  '1SA 4:17': {
+    rsv: 'He who brought the tidings answered and said, “Israel has fled before the Philistines, and there has also been a great slaughter among the people; your two sons also, Hophni and Phinehas, are dead, and the ark of God has been captured.”',
+    dra: 'And he that brought the news answered, and said: Israel has fled before the Philistines, and there has been a great slaughter of the people: moreover thy two sons, Ophni and Phinees, are dead: and the ark of God is taken.',
+  },
+  '1SA 4:18': {
+    rsv: 'When he mentioned the ark of God, Eli fell over backward from his seat by the side of the gate; and his neck was broken and he died, for he was an old man, and heavy. He had judged Israel forty years.',
+    dra: 'And when he had named the ark of God, he fell from his stool backwards by the door, and broke his neck, and died. For he was an old man, and far advanced in years: and he judged Israel forty years.',
+  },
+  '1SA 4:21': {
+    rsv: 'And she named the child Ichabod, saying, “The glory has departed from Israel!” because the ark of God had been captured and because of her father-in-law and her husband.',
+    dra: 'And she called the child Ichabod, saying: The glory is gone from Israel, because the ark of God was taken, and for her father in law, and her husband:',
+  },
+  '1SA 5:2': {
+    rsv: 'then the Philistines took the ark of God and brought it into the house of Dagon and set it up beside Dagon.',
+    dra: 'And the Philistines took the ark of God, and brought it into the temple of Dagon, and set it by Dagon.',
+  },
+  '1SA 5:3': {
+    rsv: 'And when the people of Ashdod rose early the next day, behold, Dagon had fallen face downward on the ground before the ark of the LORD. So they took Dagon and put him back in his place.',
+    dra: 'And when the Azotians arose early the next day, behold Dagon lay upon his face on the ground before the ark of the Lord: and they took Dagon, and set him again in his place.',
+  },
+  '1SA 5:4': {
+    rsv: 'But when they rose early on the next morning, behold, Dagon had fallen face downward on the ground before the ark of the LORD, and the head of Dagon and both his hands were lying cut off upon the threshold; only the trunk of Dagon was left to him.',
+    dra: 'And the next day again, when they rose in the morning, they found Dagon lying upon his face on the earth before the ark of the Lord: and the head of Dagon, and both the palms of his hands were cut off upon the threshold:',
+  },
+  '1SA 5:6': {
+    rsv: 'The hand of the LORD was heavy upon the people of Ashdod, and he terrified and afflicted them with tumors, both Ashdod and its territory.',
+    dra: 'And the hand of the Lord was heavy upon the Azotians, and he destroyed them, and afflicted Azotus and the coasts thereof with emerods. And in the villages and fields in the midst of that country, there came forth a multitude of mice, and there was the confusion of a great mortality in the city.',
+  },
+  '1SA 6:7': {
+    rsv: 'Now then, take and prepare a new cart and two milch cows upon which there has never come a yoke, and yoke the cows to the cart, but take their calves home, away from them.',
+    dra: 'Now therefore take and make a new cart: and two kine that have calved, on which there hath come no yoke, tie to the cart, and shut up their calves at home.',
+  },
+  '1SA 6:12': {
+    rsv: 'And the cows went straight in the direction of Beth-shemesh along one highway, lowing as they went; they turned neither to the right nor to the left, and the lords of the Philistines went after them as far as the border of Beth-shemesh.',
+    dra: 'And the kine took the straight way that leadeth to Bethsames, and they went along the way, lowing as they went: and turned not aside neither to the right hand nor to the left: and the lords of the Philistines followed them as far as the borders of Bethsames.',
+  },
+  '1SA 6:13': {
+    rsv: 'Now the people of Beth-shemesh were reaping their wheat harvest in the valley; and when they lifted up their eyes and saw the ark, they rejoiced to see it.',
+    dra: 'Now the Bethsamites were reaping wheat in the valley: and lifting up their eyes they saw the ark, and rejoiced to see it.',
+  },
+  '1SA 7:3': {
+    rsv: 'Then Samuel said to all the house of Israel, “If you are returning to the LORD with all your heart, then put away the foreign gods and the Ashtaroth from among you, and direct your heart to the LORD, and serve him only, and he will deliver you out of the hand of the Philistines.”',
+    dra: 'And Samuel spoke to all the house of Israel, saying: If you turn to the Lord with all your heart, put away the strange gods from among you, Baalim and Astaroth: and prepare your hearts unto the Lord, and serve him only, and he will deliver you out of the hand of the Philistines.',
+  },
+  '1SA 7:12': {
+    rsv: 'Then Samuel took a stone and set it up between Mizpah and Jeshanah, and called its name Ebenezer; for he said, “Hitherto the LORD has helped us.”',
+    dra: 'And Samuel took a stone, and laid it between Masphath and Sen: and he called the place, the Stone of help. And he said: Thus far the Lord hath helped us.',
+  },
+  '1SA 7:15': {
+    rsv: 'Samuel judged Israel all the days of his life.',
+    dra: 'And Samuel judged Israel all the days of his life:',
+  },
+  '1SA 8:1': {
+    rsv: 'When Samuel became old, he made his sons judges over Israel.',
+    dra: 'And it came to pass when Samuel was old, that he appointed his sons to be judges over Israel.',
+  },
+  '1SA 8:3': {
+    rsv: 'Yet his sons did not walk in his ways, but turned aside after gain; they took bribes and perverted justice.',
+    dra: 'And his sons walked not in his ways: but they turned aside after lucre, and took bribes, and perverted judgment.',
+  },
+  '1SA 8:5': {
+    rsv: 'and said to him, “Behold, you are old and your sons do not walk in your ways; now appoint for us a king to govern us like all the nations.”',
+    dra: 'And they said to him: Behold thou art old, and thy sons walk not in thy ways: make us a king, to judge us, as all nations have.',
+  },
+  '1SA 8:6': {
+    rsv: 'But the thing displeased Samuel when they said, “Give us a king to govern us.” And Samuel prayed to the LORD.',
+    dra: 'And the word was displeasing in the eyes of Samuel, that they should say: Give us a king, to judge us. And Samuel prayed to the Lord.',
+  },
+  '1SA 8:7': {
+    rsv: 'And the LORD said to Samuel, “Hearken to the voice of the people in all that they say to you; for they have not rejected you, but they have rejected me from being king over them.',
+    dra: 'And the Lord said to Samuel: Hearken to the voice of the people in all that they say to thee. For they have not rejected thee, but me, that I should not reign over them.',
+  },
+  '1SA 8:11': {
+    rsv: 'He said, “These will be the ways of the king who will reign over you: he will take your sons and appoint them to his chariots and to be his horsemen, and to run before his chariots;',
+    dra: 'And said: This will be the right of the king, that shall reign over you: He will take your sons, and put them in his chariots, and will make them his horsemen, and his running footmen to run before his chariots,',
+  },
+  '1SA 8:18': {
+    rsv: 'And in that day you will cry out because of your king, whom you have chosen for yourselves; but the LORD will not answer you in that day.”',
+    dra: 'And you shall cry out in that day from the face of the king, whom you have chosen to yourselves. and the Lord will not hear you in that day, because you desired unto yourselves a king.',
+  },
+  '1SA 8:19': {
+    rsv: 'But the people refused to listen to the voice of Samuel; and they said, “No! but we will have a king over us,',
+    dra: 'But the people would not hear the voice of Samuel, and they said: Nay: but there shall be a king over us.',
+  },
+  '1SA 8:20': {
+    rsv: 'that we also may be like all the nations, and that our king may govern us and go out before us and fight our battles.”',
+    dra: 'And we also will be like all nations: and our king shall judge us, and go out before us, and fight our battles for us.',
+  },
+  '1SA 8:22': {
+    rsv: 'And the LORD said to Samuel, “Hearken to their voice, and make them a king.” Samuel then said to the men of Israel, “Go every man to his city.”',
+    dra: 'And the Lord said to Samuel: Hearken to their voice, and make them a king. And Samuel said to the men of Israel: Let every man go to his city.',
+  },
+  '1SA 9:2': {
+    rsv: 'and he had a son whose name was Saul, a handsome young man. There was not a man among the people of Israel more handsome than he; from his shoulders upward he was taller than any of the people.',
+    dra: 'And he had a son whose name was Saul, a choice and goodly man, and there was not among the children of Israel a goodlier person than he: from his shoulders and upward he appeared above all the people.',
+  },
+  '1SA 9:3': {
+    rsv: 'Now the asses of Kish, Saul’s father, were lost. So Kish said to Saul his son, “Take one of the servants with you, and arise, go and look for the asses.”',
+    dra: 'And the asses of Cis, Sauls father, were lost: and Cis said to his son Saul: Take one of the servants with thee, and arise, go, and seek the asses. And when they had passed through mount Ephraim,',
+  },
+  '1SA 9:16': {
+    rsv: '“Tomorrow about this time I will send to you a man from the land of Benjamin, and you shall anoint him to be prince over my people Israel. He shall save my people from the hand of Philistines; for I have seen the affliction of my people, because their cry has come to me.”',
+    dra: 'To morrow about this same hour I will send thee a man of the land of Benjamin, and thou shalt anoint him to be ruler over my people Israel: and he shall save my people out of the hand of the Philistines: for I have looked down upon my people, because their cry is come to me.',
+  },
+  '1SA 9:17': {
+    rsv: 'When Samuel saw Saul, the LORD told him, “Here is the man of whom I spoke to you! He it is who shall rule over my people.”',
+    dra: 'And when Samuel saw Saul, the Lord said to him: Behold the man, of whom I spoke to thee, this man shall reign over my people.',
+  },
+  '1SA 9:20': {
+    rsv: 'As for your asses that were lost three days ago, do not set your mind on them, for they have been found. And for whom is all that is desirable in Israel? Is it not for you and for all your father’s house?”',
+    dra: 'And as for the asses, which were lost three days ago, be not solicitous, because they are found. And for whom shall be all the best things of Israel? Shall they not be for thee and for all thy father’s house?',
+  },
+  '1SA 10:1': {
+    rsv: 'Then Samuel took a vial of oil and poured it on his head, and kissed him and said, “Has not the LORD anointed you to be prince over his people Israel? And you shall reign over the people of the LORD and you will save them from the hand of their enemies round about. And this shall be the sign to you that the LORD has anointed you to be prince over his heritage.',
+    dra: 'And Samuel took a little vial of oil and poured it upon his head, and kissed him, and said: Behold, the Lord hath anointed thee to be prince over his inheritance, and thou shalt deliver his people out of the hands of their enemies, that are round about them. And this shall be a sign unto thee, that God hath anointed thee to be prince.',
+  },
+  '1SA 10:6': {
+    rsv: 'Then the spirit of the LORD will come mightily upon you, and you shall prophesy with them and be turned into another man.',
+    dra: 'And the spirit of the Lord shall come upon thee, and thou shalt prophesy with them, and shalt be changed into another man.',
+  },
+  '1SA 10:9': {
+    rsv: 'When he turned his back to leave Samuel, God gave him another heart; and all these signs came to pass that day.',
+    dra: 'So when he had turned his back to go from Samuel, God gave unto him another heart, and all these things came to pass that day.',
+  },
+  '1SA 10:20': {
+    rsv: 'Then Samuel brought all the tribes of Israel near, and the tribe of Benjamin was taken by lot.',
+    dra: 'And Samuel brought to him all the tribes of Israel, and the lot fell on the tribe of Benjamin.',
+  },
+  '1SA 10:21': {
+    rsv: 'He brought the tribe of Benjamin near by its families, and the family of the Matrites was taken by lot; finally he brought the family of the Matrites near man by man, and Saul the son of Kish was taken by lot. But when they sought him, he could not be found.',
+    dra: 'And he brought the tribe of Benjamin and the kindreds thereof, and the lot fell Upon the kindred of Metri, and it came to Saul the son of Cis. They sought him therefore and he was not found.',
+  },
+  '1SA 10:22': {
+    rsv: 'So they inquired again of the LORD, “Did the man come hither?” and the LORD said, “Behold, he has hidden himself among the baggage.”',
+    dra: 'And after this they consulted the Lord whether he would come thither. And the Lord answered: Behold he is hidden at home.',
+  },
+  '1SA 10:23': {
+    rsv: 'Then they ran and fetched him from there; and when he stood among the people, he was taller than any of the people from his shoulders upward.',
+    dra: 'And they ran and fetched him thence: and he stood in the midst of the people, and he was higher than any of the people from the shoulders and upward.',
+  },
+  '1SA 10:24': {
+    rsv: 'And Samuel said to all the people, “Do you see him whom the LORD has chosen? There is none like him among all the people.” And all the people shouted, “Long live the king!”',
+    dra: 'And Samuel said to all the people: Surely you see him whom the Lord hath chosen, that there is none like him among all the people. And all the people cried and said: God save the king.',
+  },
+  '1SA 13:8': {
+    rsv: 'He waited seven days, the time appointed by Samuel; but Samuel did not come to Gilgal, and the people were scattering from him.',
+    dra: 'And he waited seven days according to the appointment of Samuel, I and Samuel came not to Galgal, and the people slipt away from him.',
+  },
+  '1SA 13:9': {
+    rsv: 'So Saul said, “Bring the burnt offering here to me, and the peace offerings.” And he offered the burnt offering.',
+    dra: 'Then Saul said: Bring me the holocaust, and the peace offerings. And he offered the holocaust.',
+  },
+  '1SA 13:10': {
+    rsv: 'As soon as he had finished offering the burnt offering, behold, Samuel came; and Saul went out to meet him and salute him.',
+    dra: 'And when he had made an end of offering the holocaust, behold Samuel came: and Saul went forth to meet him and salute him.',
+  },
+  '1SA 13:11': {
+    rsv: 'Samuel said, “What have you done?” And Saul said, “When I saw that the people were scattering from me, and that you did not come within the days appointed, and that the Philistines had mustered at Michmash,',
+    dra: 'And Samuel said to him: What hast thou done? Saul answered: Because I saw that the people slipt from me, and thou wast not come according to the days appointed, and the Philistines were gathered together in Machmas,',
+  },
+  '1SA 13:13': {
+    rsv: 'And Samuel said to Saul, “You have done foolishly; you have not kept the commandment of the LORD your God, which he commanded you; for now the LORD would have established your kingdom over Israel for ever.',
+    dra: 'And Samuel said to Saul: Thou hast done foolishly, and hast not kept the commandments of the Lord thy God, which he commanded thee. And if thou hadst not done thus, the Lord would now have established thy kingdom over Israel for ever.',
+  },
+  '1SA 13:14': {
+    rsv: 'But now your kingdom shall not continue; the LORD has sought out a man after his own heart; and the LORD has appointed him to be prince over his people, because you have not kept what the LORD commanded you.”',
+    dra: 'But thy kingdom shall not continue. The Lord hath sought him a man according to his own heart: and him hath the Lord commanded to be prince over his people, because thou hast not observed that which the Lord commanded.',
+  },
+  '1SA 15:1': {
+    rsv: 'And Samuel said to Saul, “The LORD sent me to anoint you king over his people Israel; now therefore hearken to the words of the LORD.',
+    dra: 'And Samuel said to Saul: The Lord sent me to anoint thee king over his People Israel: now therefore hearken thou unto the voice of the Lord:',
+  },
+  '1SA 15:9': {
+    rsv: 'But Saul and the people spared Agag, and the best of the sheep and of the oxen and of the fatlings, and the lambs, and all that was good, and would not utterly destroy them; all that was despised and worthless they utterly destroyed.',
+    dra: 'And Saul and the people spared Agag and the best of the flocks of sheep and of the herds, and the garments and the rams, and all that was beautiful, and would not destroy them: but every thing that was vile and good for nothing, that they destroyed.',
+  },
+  '1SA 15:11': {
+    rsv: '“I repent that I have made Saul king; for he has turned back from following me, and has not performed my commandments.” And Samuel was angry; and he cried to the LORD all night.',
+    dra: 'It repenteth me that I have made Saul king: for he hath forsaken me, and hath not executed my commandments. And Samuel was grieved, and he cried unto the Lord all night.',
+  },
+  '1SA 15:13': {
+    rsv: 'And Samuel came to Saul, and Saul said to him, “Blessed be you to the LORD; I have performed the commandment of the LORD.”',
+    dra: 'And when Samuel was come to Saul, Saul said to him: Blessed be thou of the Lord, I have fulfilled the word of the Lord.',
+  },
+  '1SA 15:14': {
+    rsv: 'And Samuel said, “What then is this bleating of the sheep in my ears, and the lowing of the oxen which I hear?”',
+    dra: 'And Samuel said: What meaneth then this bleating of the flocks, which soundeth in my ears, and the lowing of the herds, which I hear?',
+  },
+  '1SA 15:15': {
+    rsv: 'Saul said, “They have brought them from the Amalekites; for the people spared the best of the sheep and of the oxen, to sacrifice to the LORD your God; and the rest we have utterly destroyed.”',
+    dra: 'And Saul said: They have brought them from Amalec: for the people spared the best of the sheep and of the herds that they might be sacrificed to the Lord thy God, but the rest we have slain.',
+  },
+  '1SA 15:22': {
+    rsv: 'And Samuel said, “Has the LORD as great delight in burnt offerings and sacrifices, as in obeying the voice of the LORD? Behold, to obey is better than sacrifice, and to hearken than the fat of rams.',
+    dra: 'And Samuel said: Doth the Lord desire holocausts and victims, and not rather that the voice of the Lord should be obeyed? For obedience is better than sacrifices: and to hearken rather than to offer the fat of rams.',
+  },
+  '1SA 15:23': {
+    rsv: 'For rebellion is as the sin of divination, and stubbornness is as iniquity and idolatry. Because you have rejected the word of the LORD, he has also rejected you from being king.”',
+    dra: 'Because it is like the sin of witchcraft, to rebel: and like the crime of idolatry, to refuse to obey. Forasmuch therefore as thou hast rejected the word of the Lord, the Lord hath also rejected thee from being king.',
+  },
+  '1SA 15:27': {
+    rsv: 'As Samuel turned to go away, Saul laid hold upon the skirt of his robe, and it tore.',
+    dra: 'And Samuel turned about to go away: but he laid hold upon the skirt of his mantle, and it rent.',
+  },
+  '1SA 15:28': {
+    rsv: 'And Samuel said to him, “The LORD has torn the kingdom of Israel from you this day, and has given it to a neighbor of yours, who is better than you.',
+    dra: 'And Samuel said to him: The Lord hath rent the kingdom of Israel from thee this day, and hath given it to thy neighbour who is better than thee.',
+  },
+  '1SA 15:35': {
+    rsv: 'And Samuel did not see Saul again until the day of his death, but Samuel grieved over Saul. And the LORD repented that he had made Saul king over Israel.',
+    dra: 'And Samuel saw Saul no more till the day of his death: nevertheless Samuel mourned for Saul, because the Lord repented that he had made him king over Israel.',
+  },
+  'LUK 1:46': {
+    rsv: 'And Mary said, “My soul magnifies the Lord,',
+    dra: 'And Mary said: My soul doth magnify the Lord.',
+  },
+  'LUK 1:47': {
+    rsv: 'and my spirit rejoices in God my Savior,',
+    dra: 'And my spirit hath rejoiced in God my Saviour.',
+  },
+  'LUK 1:52': {
+    rsv: 'he has put down the mighty from their thrones, and exalted those of low degree;',
+    dra: 'He hath put down the mighty from their seat, and hath exalted the humble.',
+  },
+  'LUK 1:53': {
+    rsv: 'he has filled the hungry with good things, and the rich he has sent empty away.',
+    dra: 'He hath filled the hungry with good things; and the rich he hath sent empty away.',
+  },
+  'LUK 4:18': {
+    rsv: '“The Spirit of the Lord is upon me, because he has anointed me to preach good news to the poor. He has sent me to proclaim release to the captives and recovering of sight to the blind, to set at liberty those who are oppressed,',
+    dra: 'The Spirit of the Lord is upon me. Wherefore he hath anointed me to preach the gospel to the poor, he hath sent me to heal the contrite of heart,',
+  },
+  'JHN 10:27': {
+    rsv: 'My sheep hear my voice, and I know them, and they follow me;',
+    dra: 'My sheep hear my voice: and I know them, and they follow me.',
+  },
+  'PHP 2:9': {
+    rsv: 'Therefore God has highly exalted him and bestowed on him the name which is above every name,',
+    dra: 'For which cause God also hath exalted him, and hath given him a name which is above all names:',
+  },
+  'PHP 2:10': {
+    rsv: 'that at the name of Jesus every knee should bow, in heaven and on earth and under the earth,',
+    dra: 'That in the name of Jesus every knee should bow, of those that are in heaven, on earth, and under the earth:',
+  },
+  'HEB 10:7': {
+    rsv: 'Then I said, ‘Lo, I have come to do thy will, O God,’ as it is written of me in the roll of the book.”',
+    dra: 'Then said I: Behold I come: in the head of the book it is written of me: that I should do thy will, O God.',
+  },
+  'HEB 13:5': {
+    rsv: 'Keep your life free from love of money, and be content with what you have; for he has said, “I will never fail you nor forsake you.”',
+    dra: 'Let your manners be without covetousness, contented with such things as you have; for he hath said: I will not leave thee, neither will I forsake thee.',
+  },
+  'HEB 13:6': {
+    rsv: 'Hence we can confidently say, “The Lord is my helper, I will not be afraid; what can man do to me?”',
+    dra: 'So that we may confidently say: The Lord is my helper: I will not fear what man shall do to me.',
+  },
 }
 
 /** A verse's words in the active translation. Throws for a verse that isn't in the list (a content check catches these first). */

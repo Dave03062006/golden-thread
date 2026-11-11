@@ -1178,6 +1178,73 @@ export const THREADS: GoldenThread[] = [
     sources: ['1 Peter 1:18–19', 'Job 19:25', 'Isaiah 54:5', 'Ephesians 5:25', 'Catechism 517, 601, 1612'],
     fulfilled: { age: 'XII', place: 'jerusalem' },
   },
+  // Level 17 · Samuel and Saul
+  {
+    id: 'hannahs-song',
+    episode: 'l17-e1',
+    title: 'Hannah’s song: “He raises up the poor from the dust” → Mary’s Magnificat: “he has put down the mighty from their thrones, and exalted those of low degree”',
+    from: ['1SA 2:1', '1SA 2:8'],
+    to: ['LUK 1:46', 'LUK 1:47', 'LUK 1:52', 'LUK 1:53'],
+    explanation:
+      'Hannah, who had been mocked for having no child, sang that God lifts up the lowly and brings down the proud, and she ended her song with the “anointed” king, the Messiah. A thousand years later, Mary, a young woman of Nazareth, sang almost the same song when she was carrying Jesus, the Anointed One himself. The Church sings Mary’s song, the Magnificat, every evening.',
+    sources: ['Luke 1:46–55', 'Catechism 489, 2619, 2675'],
+    fulfilled: { age: 'XI', place: 'nazareth' },
+  },
+  {
+    id: 'my-sheep-hear-my-voice',
+    episode: 'l17-e2',
+    title: '“Speak, for thy servant hears” → Jesus: “My sheep hear my voice, and I know them, and they follow me”',
+    from: ['1SA 3:10'],
+    to: ['JHN 10:27'],
+    explanation:
+      'In Samuel’s time “the word of the LORD was rare,” and the lamp of God was burning low. But God called a boy by name, and the boy listened. Jesus says that he still calls each of his sheep by name, and that they know his voice. We learn to hear it in prayer, in Scripture and in the Church, and, like Samuel, we often need someone like Eli to help us recognize it.',
+    sources: ['John 10:1–16, 27', 'Catechism 2578, 2653–2654, 2716'],
+    fulfilled: { age: 'XI', place: 'jerusalem' },
+  },
+  {
+    id: 'every-knee-should-bow',
+    episode: 'l17-e3',
+    title: 'Dagon falls on his face before the ark of the LORD → “at the name of Jesus every knee should bow”',
+    from: ['1SA 5:3', '1SA 5:4'],
+    to: ['PHP 2:9', 'PHP 2:10'],
+    explanation:
+      'The Philistines thought they had captured the God of Israel. But in the night their own god fell on his face before the ark, as if bowing down. No idol can stand before the true God. Saint Paul says that one day every knee will bow at the name of Jesus, “in heaven and on earth and under the earth.”',
+    sources: ['Philippians 2:5–11', 'Isaiah 45:23', 'Catechism 449, 2112–2114'],
+    fulfilled: { age: 'XIII' },
+  },
+  {
+    id: 'the-lord-is-my-helper',
+    episode: 'l17-e4',
+    title: 'Samuel’s stone, Ebenezer: “Hitherto the LORD has helped us” → “The Lord is my helper, I will not be afraid”',
+    from: ['1SA 7:12'],
+    to: ['HEB 13:5', 'HEB 13:6'],
+    explanation:
+      'After the people turned back to God, he helped them, and Samuel set up a stone so they would remember: “Hitherto,” up to here, “the LORD has helped us.” The people soon forgot, and asked for a king to fight their battles. The letter to the Hebrews reminds Christians of the same promise: “I will never fail you nor forsake you.” Every Ebenezer in our own lives, every time God has helped us, is a reason to trust him for what is still to come.',
+    sources: ['Hebrews 13:5–6', 'Psalm 118:6', 'Catechism 301, 2828–2830'],
+    fulfilled: { age: 'XIII' },
+  },
+  {
+    id: 'the-lords-anointed',
+    episode: 'l17-e5',
+    title: 'Samuel anoints Saul with oil: the LORD’s “anointed” → Jesus: “The Spirit of the Lord is upon me, because he has anointed me”',
+    from: ['1SA 10:1'],
+    to: ['LUK 4:18'],
+    explanation:
+      'Kings of Israel were anointed with oil as a sign that God had chosen them and given them his Spirit. In Hebrew, “anointed one” is Messiah; in Greek, Christos. Saul was the first of Israel’s anointed kings, and he failed. Jesus is the Anointed One who never fails: at Nazareth he read Isaiah’s words and said they were about him. At Confirmation, Christians too are anointed with holy oil, to share in his Spirit.',
+    sources: ['Luke 4:16–21', 'Isaiah 61:1', 'Catechism 436, 695, 1289'],
+    fulfilled: { age: 'XI', place: 'nazareth' },
+  },
+  {
+    id: 'to-do-thy-will',
+    episode: 'l17-e6',
+    title: '“To obey is better than sacrifice” → Jesus: “Lo, I have come to do thy will, O God”',
+    from: ['1SA 15:22'],
+    to: ['HEB 10:7'],
+    explanation:
+      'Saul thought he could make up for disobeying God by offering him sacrifices. But God doesn’t want our gifts instead of our hearts. The letter to the Hebrews says that Jesus came into the world saying, “I have come to do thy will”: his whole life, and his death on the cross, were one great act of obedience and love, the one sacrifice that truly pleased God.',
+    sources: ['Hebrews 10:5–10', 'Psalm 40:6–8', 'Psalm 51:16–17', 'Catechism 614, 2100'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
 ]
 
 const BY_ID = new Map(THREADS.map((thread) => [thread.id, thread]))
