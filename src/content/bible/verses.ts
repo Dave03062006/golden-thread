@@ -5137,6 +5137,295 @@ export const VERSES: Record<string, Verse> = {
     rsv: 'quenched raging fire, escaped the edge of the sword, won strength out of weakness, became mighty in war, put foreign armies to flight.',
     dra: 'Quenched the violence of fire, escaped the edge of the sword, recovered strength from weakness, became valiant in battle, put to flight the armies of foreigners:',
   },
+  // Level 16 · Ruth (the Douay-Rheims numbers these chapters as the RSV does).
+  'RUT 1:1': {
+    rsv: 'In the days when the judges ruled there was a famine in the land, and a certain man of Bethlehem in Judah went to sojourn in the country of Moab, he and his wife and his two sons.',
+    dra: 'In the days of one of the judges, when the judges ruled, there came a famine in the land. And a certain man of Bethlehem Juda, went to sojourn in the land of Moab with his wife and his two sons.',
+  },
+  'RUT 1:2': {
+    rsv: 'The name of the man was Elimelech and the name of his wife Naomi, and the names of his two sons were Mahlon and Chilion; they were Ephrathites from Bethlehem in Judah. They went into the country of Moab and remained there.',
+    dra: 'He was named Elimelech, and his wife, Noemi: and his two sons, the one Mahalon, and the other Chelion, Ephrathites of Bethlehem Juda. And entering into the country of Moab, they abode there.',
+  },
+  'RUT 1:3': {
+    rsv: 'But Elimelech, the husband of Naomi, died, and she was left with her two sons.',
+    dra: 'And Elimelech the husband of Noemi died: and she remained with her sons.',
+  },
+  'RUT 1:4': {
+    rsv: 'These took Moabite wives; the name of the one was Orpah and the name of the other Ruth. They lived there about ten years;',
+    dra: 'And they took wives of the women of Moab, of which one was called Orpha, and the other Ruth. And they dwelt there ten years.',
+  },
+  'RUT 1:5': {
+    rsv: 'and both Mahlon and Chilion died, so that the woman was bereft of her two sons and her husband.',
+    dra: 'And they both died, to wit, Mahalon and Chelion: and the woman was left alone, having lost both her sons and her husband.',
+  },
+  'RUT 1:6': {
+    rsv: 'Then she started with her daughters-in-law to return from the country of Moab, for she had heard in the country of Moab that the LORD had visited his people and given them food.',
+    dra: 'And she arose to go from the land of Moab to her own country with both her daughters in law: for she had heard that the Lord had looked upon his people, and had given them food.',
+  },
+  'RUT 1:7': {
+    rsv: 'So she set out from the place where she was, with her two daughters-in-law, and they went on the way to return to the land of Judah.',
+    dra: 'Wherefore she went forth out of the place of her sojournment, with both her daughters in law: and being now in the way to return into the land of Juda,',
+  },
+  'RUT 1:8': {
+    rsv: 'But Naomi said to her two daughters-in-law, “Go, return each of you to her mother’s house. May the LORD deal kindly with you, as you have dealt with the dead and with me.',
+    dra: 'She said to them: Go ye home to your mothers: the Lord deal mercifully with you, as you have dealt with the dead and with me.',
+  },
+  'RUT 1:9': {
+    rsv: 'The LORD grant that you may find a home, each of you in the house of her husband!” Then she kissed them, and they lifted up their voices and wept.',
+    dra: 'May he grant you to find rest in the houses of the husbands which you shall take. And she kissed them. And they lifted up their voice and began to weep,',
+  },
+  'RUT 1:10': {
+    rsv: 'And they said to her, “No, we will return with you to your people.”',
+    dra: 'And to say: We will go on with thee to thy people.',
+  },
+  'RUT 1:13': {
+    rsv: 'would you therefore wait till they were grown? Would you therefore refrain from marrying? No, my daughters, for it is exceedingly bitter to me for your sake that the hand of the LORD has gone forth against me.”',
+    dra: 'If you would wait till they were grown up, and come to man’s estate, you would be old women before you marry. Do not so, my daughters, I beseech you: for I am grieved the more for your distress, and the hand of the Lord is gone out against me.',
+  },
+  'RUT 1:14': {
+    rsv: 'Then they lifted up their voices and wept again; and Orpah kissed her mother-in-law, but Ruth clung to her.',
+    dra: 'And they lifted up their voice, and began to weep again: Orpha kissed her mother in law and returned: Ruth stuck close to her mother in law.',
+  },
+  'RUT 1:15': {
+    rsv: 'And she said, “See, your sister-in-law has gone back to her people and to her gods; return after your sister-in-law.”',
+    dra: 'And Noemi said to her: Behold thy kinswoman is returned to her people, and to her gods, go thou with her.',
+  },
+  'RUT 1:16': {
+    rsv: 'But Ruth said, “Entreat me not to leave you or to return from following you; for where you go I will go, and where you lodge I will lodge; your people shall be my people, and your God my God;',
+    dra: 'She answered: Be not against me, to desire that I should leave thee and depart: for whithersoever thou shalt go, I will go: and where thou shalt dwell, I also will dwell. Thy people shall be my people, and thy God my God.',
+  },
+  'RUT 1:17': {
+    rsv: 'where you die I will die, and there will I be buried. May the LORD do so to me and more also if even death parts me from you.”',
+    dra: 'The land that shall receive thee dying, in the same will I die: and there will I be buried. The Lord do so and so to me, and add more also, if aught but death part me and thee.',
+  },
+  'RUT 1:18': {
+    rsv: 'And when Naomi saw that she was determined to go with her, she said no more.',
+    dra: 'Then Noemi, seeing that Ruth was steadfastly determined to go with her, would not be against it, nor persuade her any more to return to her friends:',
+  },
+  'RUT 1:19': {
+    rsv: 'So the two of them went on until they came to Bethlehem. And when they came to Bethlehem, the whole town was stirred because of them; and the women said, “Is this Naomi?”',
+    dra: 'So they went together and came to Bethlehem. And when they were come into the city, the report was quickly spread among all: and the women said: This is that Noemi.',
+  },
+  'RUT 1:20': {
+    rsv: 'She said to them, “Do not call me Naomi, call me Mara, for the Almighty has dealt very bitterly with me.',
+    dra: 'But she said to them: Call me not Noemi, (that is, beautiful,) but call me Mara, (that is, bitter,) for the Almighty hath quite filled me with bitterness.',
+  },
+  'RUT 1:21': {
+    rsv: 'I went away full, and the LORD has brought me back empty. Why call me Naomi, when the LORD has afflicted me and the Almighty has brought calamity upon me?”',
+    dra: 'I went out full, and the Lord hath brought me back empty. Why then do you call me Noemi, whom the Lord hath humbled and the Almighty hath afflicted?',
+  },
+  'RUT 1:22': {
+    rsv: 'So Naomi returned, and Ruth the Moabitess her daughter-in-law with her, who returned from the country of Moab. And they came to Bethlehem at the beginning of barley harvest.',
+    dra: 'So Noemi came with Ruth the Moabitess her daughter in law, from the land of her sojournment: and returned into Bethlehem, in the beginning of the barley harvest.',
+  },
+  'RUT 2:1': {
+    rsv: 'Now Naomi had a kinsman of her husband’s, a man of wealth, of the family of Elimelech, whose name was Boaz.',
+    dra: 'Now her husband Elimelech had a kinsman, a powerful man, and very rich, whose name was Booz.',
+  },
+  'RUT 2:2': {
+    rsv: 'And Ruth the Moabitess said to Naomi, “Let me go to the field, and glean among the ears of grain after him in whose sight I shall find favor.” And she said to her, “Go, my daughter.”',
+    dra: 'And Ruth the Moabitess said to her mother in law: If thou wilt, I will go into the field, and glean the ears of corn that escape the hands of the reapers, wheresoever I shall find grace with a householder that will be favourable to me. And she answered her: Go, my daughter.',
+  },
+  'RUT 2:3': {
+    rsv: 'So she set forth and went and gleaned in the field after the reapers; and she happened to come to the part of the field belonging to Boaz, who was of the family of Elimelech.',
+    dra: 'She went therefore and gleaned the ears of corn after the reapers. And it happened that the owner of that field was Booz, who was of the kindred of Elimelech.',
+  },
+  'RUT 2:4': {
+    rsv: 'And behold, Boaz came from Bethlehem; and he said to the reapers, “The LORD be with you!” And they answered, “The LORD bless you.”',
+    dra: 'And behold, he came out of Bethlehem, and said to the reapers: The Lord be with you. And they answered him: The Lord bless thee.',
+  },
+  'RUT 2:5': {
+    rsv: 'Then Boaz said to his servant who was in charge of the reapers, “Whose maiden is this?”',
+    dra: 'And Booz said to the young man that was set over the reapers: Whose maid is this?',
+  },
+  'RUT 2:8': {
+    rsv: 'Then Boaz said to Ruth, “Now, listen, my daughter, do not go to glean in another field or leave this one, but keep close to my maidens.',
+    dra: 'And Booz said to Ruth: Hear me, daughter, do not go to glean in any other field, and do not depart from this place: but keep with my maids,',
+  },
+  'RUT 2:10': {
+    rsv: 'Then she fell on her face, bowing to the ground, and said to him, “Why have I found favor in your eyes, that you should take notice of me, when I am a foreigner?”',
+    dra: 'She fell on her face and worshipping upon the ground, said to him: Whence cometh this to me, that I should find grace before thy eyes, and that thou shouldst vouchsafe to take notice of me a woman of another country?',
+  },
+  'RUT 2:11': {
+    rsv: 'But Boaz answered her, “All that you have done for your mother-in-law since the death of your husband has been fully told me, and how you left your father and mother and your native land and came to a people that you did not know before.',
+    dra: 'And he answered her: All hath been told me, that thou hast done to thy mother in law after the death of thy husband: and how thou hast left thy parents, and the land wherein thou wast born, and art come to a people which thou knewest not heretofore.',
+  },
+  'RUT 2:12': {
+    rsv: 'The LORD recompense you for what you have done, and a full reward be given you by the LORD, the God of Israel, under whose wings you have come to take refuge!”',
+    dra: 'The Lord render unto thee for thy work, and mayest thou receive a full reward of the Lord the God of Israel, to whom thou art come, and under whose wings thou art fled.',
+  },
+  'RUT 2:14': {
+    rsv: 'And at mealtime Boaz said to her, “Come here, and eat some bread, and dip your morsel in the wine.” So she sat beside the reapers, and he passed to her parched grain; and she ate until she was satisfied, and she had some left over.',
+    dra: 'And Booz said to her: At mealtime come thou hither, and eat of the bread, and dip thy morsel in the vinegar. So she sat at the side of the reapers, and she heaped to herself frumenty, and ate and was filled, and took the leavings.',
+  },
+  'RUT 2:15': {
+    rsv: 'When she rose to glean, Boaz instructed his young men, saying, “Let her glean even among the sheaves, and do not reproach her.',
+    dra: 'And she arose from thence, to glean the ears of corn as before. And Booz commanded his servants, saying: If she would even reap with you, hinder her not:',
+  },
+  'RUT 2:16': {
+    rsv: 'And also pull out some from the bundles for her, and leave it for her to glean, and do not rebuke her.”',
+    dra: 'And let fall some of your handfuls of purpose, and leave them, that she may gather them without shame, and let no man rebuke her when she gathereth them.',
+  },
+  'RUT 2:17': {
+    rsv: 'So she gleaned in the field until evening; then she beat out what she had gleaned, and it was about an ephah of barley.',
+    dra: 'She gleaned therefore in the field till evening: and beating out with a rod and threshing what she had gleaned, she found about the measure of an ephi of barley, that is, three bushels:',
+  },
+  'RUT 2:20': {
+    rsv: 'And Naomi said to her daughter-in-law, “Blessed be he by the LORD, whose kindness has not forsaken the living or the dead!” Naomi also said to her, “The man is a relative of ours, one of our nearest kin.”',
+    dra: 'And Noemi answered her: Blessed be he of the Lord: because the same kindness which he shewed to the living, he hath kept also to the dead. And again she said: The man is our kinsman.',
+  },
+  'RUT 3:1': {
+    rsv: 'Then Naomi her mother-in-law said to her, “My daughter, should I not seek a home for you, that it may be well with you?',
+    dra: 'After she was returned to her mother in law, Noemi said to her: My daughter, I will seek rest for thee, and will provide that it may be well with thee.',
+  },
+  'RUT 3:2': {
+    rsv: 'Now is not Boaz our kinsman, with whose maidens you were? See, he is winnowing barley tonight at the threshing floor.',
+    dra: 'This Booz, with whose maids thou wast joined in the field, is our near kinsman, and behold this night he winnoweth barley in the threshingfloor.',
+  },
+  'RUT 3:5': {
+    rsv: 'And she replied, “All that you say I will do.”',
+    dra: 'She answered: Whatsoever thou shalt command, I will do.',
+  },
+  'RUT 3:6': {
+    rsv: 'So she went down to the threshing floor and did just as her mother-in-law had told her.',
+    dra: 'And she went down to the barnfloor, and did all that her mother in law had bid her.',
+  },
+  'RUT 3:8': {
+    rsv: 'At midnight the man was startled, and turned over, and behold, a woman lay at his feet!',
+    dra: 'And behold, when it was now midnight the man was afraid, and troubled: and he saw a woman lying at his feet,',
+  },
+  'RUT 3:9': {
+    rsv: 'He said, “Who are you?” And she answered, “I am Ruth, your maidservant; spread your skirt over your maidservant, for you are next of kin.”',
+    dra: 'And he said to her: Who art thou? And she answered: I am Ruth thy handmaid: spread thy coverlet over thy servant, for thou art a near kinsman.',
+  },
+  'RUT 3:10': {
+    rsv: 'And he said, “May you be blessed by the LORD, my daughter; you have made this last kindness greater than the first, in that you have not gone after young men, whether poor or rich.',
+    dra: 'And he said: Blessed art thou of the Lord, my daughter, and thy latter kindness has surpassed the former: because thou hast not followed young men either poor or rich.',
+  },
+  'RUT 3:11': {
+    rsv: 'And now, my daughter, do not fear, I will do for you all that you ask, for all my fellow townsmen know that you are a woman of worth.',
+    dra: 'Fear not therefore, but whatsoever thou shalt say to me I will do to thee. For all the people that dwell within the gates of my city, know that thou art a virtuous woman.',
+  },
+  'RUT 3:12': {
+    rsv: 'And now it is true that I am a near kinsman, yet there is a kinsman nearer than I.',
+    dra: 'Neither do I deny myself to be near of kin, but there is another nearer than I.',
+  },
+  'RUT 3:13': {
+    rsv: 'Remain this night, and in the morning, if he will do the part of the next of kin for you, well; let him do it; but if he is not willing to do the part of the next of kin for you, then, as the LORD lives, I will do the part of the next of kin for you. Lie down until the morning.”',
+    dra: 'Rest thou this night: and when morning is come, if he will take thee by the right of kindred, all is well: but if he will not, I will undoubtedly take thee, as the Lord liveth: sleep till the morning.',
+  },
+  'RUT 3:15': {
+    rsv: 'And he said, “Bring the mantle you are wearing and hold it out.” So she held it, and he measured out six measures of barley, and laid it upon her; then she went into the city.',
+    dra: 'And again he said: Spread thy mantle, wherewith thou art covered, and hold it with both hands. And when she spread it and held it, he measured six measures of barley, and laid it upon her. And she carried it and went into the city,',
+  },
+  'RUT 3:16': {
+    rsv: 'And when she came to her mother-in-law, she said, “How did you fare, my daughter?” Then she told her all that the man had done for her,',
+    dra: 'And came to her mother in law; who said to her: What hast thou done, daughter? And she told her all that the man had done to her.',
+  },
+  'RUT 3:17': {
+    rsv: 'saying, “These six measures of barley he gave to me, for he said, ‘You must not go back empty-handed to your mother-in-law.’”',
+    dra: 'And she said: Behold he hath given me six measures of barley: for he said: I will not have thee return empty to thy mother in law.',
+  },
+  'RUT 3:18': {
+    rsv: 'She replied, “Wait, my daughter, until you learn how the matter turns out, for the man will not rest, but will settle the matter today.”',
+    dra: 'And Noemi said: Wait my daughter, till we see what end the thing will have. For the man will not rest until he have accomplished what he hath said.',
+  },
+  'RUT 4:1': {
+    rsv: 'And Boaz went up to the gate and sat down there; and behold, the next of kin, of whom Boaz had spoken, came by. So Boaz said, “Turn aside, friend; sit down here”; and he turned aside and sat down.',
+    dra: 'Then Booz went up to the gate, and sat there. And when he had seen the kinsman going by, of whom he had spoken before, he said to him, calling him by his name: Turn aside for a little while, and sit down here. He turned aside, and sat down.',
+  },
+  'RUT 4:2': {
+    rsv: 'And he took ten men of the elders of the city, and said, “Sit down here”; so they sat down.',
+    dra: 'And Booz taking ten men of the ancients of the city, said to them: Sit ye down here.',
+  },
+  'RUT 4:3': {
+    rsv: 'Then he said to the next of kin, “Naomi, who has come back from the country of Moab, is selling the parcel of land which belonged to our kinsman Elimelech.',
+    dra: 'They sat down, and he spoke to the kinsman: Noemi, who is returned from the country of Moab, will sell a parcel of land that belonged to our brother Elimelech.',
+  },
+  'RUT 4:5': {
+    rsv: 'Then Boaz said, “The day you buy the field from the hand of Naomi, you are also buying Ruth the Moabitess, the widow of the dead, in order to restore the name of the dead to his inheritance.”',
+    dra: 'And Booz said to him: When thou shalt buy the field at the woman’s hand, thou must take also Ruth the Moabitess, who was the wife of the deceased: to raise up the name of thy kinsman in his inheritance.',
+  },
+  'RUT 4:6': {
+    rsv: 'Then the next of kin said, “I cannot redeem it for myself, lest I impair my own inheritance. Take my right of redemption yourself, for I cannot redeem it.”',
+    dra: 'He answered: I yield up my right of next akin: for I must not cut off the posterity of my own family. Do thou make use of my privilege, which I profess I do willingly forego.',
+  },
+  'RUT 4:7': {
+    rsv: 'Now this was the custom in former times in Israel concerning redeeming and exchanging: to confirm a transaction, the one drew off his sandal and gave it to the other, and this was the manner of attesting in Israel.',
+    dra: 'Now this in former times was the manner in Israel between kinsmen, that if at any time one yielded his right to another: that the grant might be sure, the man put off his shoe, and gave it to his neighhour; this was a testimony of cession of right in Israel.',
+  },
+  'RUT 4:9': {
+    rsv: 'Then Boaz said to the elders and all the people, “You are witnesses this day that I have bought from the hand of Naomi all that belonged to Elimelech and all that belonged to Chilion and to Mahlon.',
+    dra: 'And he said to the ancients and to all the people: You are witnesses this day, that I have bought all that was Elimelech’s, and Chelion’s, and Mahalon’s, of the hand of Noemi:',
+  },
+  'RUT 4:10': {
+    rsv: 'Also Ruth the Moabitess, the widow of Mahlon, I have bought to be my wife, to perpetuate the name of the dead in his inheritance, that the name of the dead may not be cut off from among his brethren and from the gate of his native place; you are witnesses this day.”',
+    dra: 'And have taken to wife Ruth the Moabitess, the wife of Mahalon, to raise up the name of the deceased in his inheritance lest his name be cut off, from among his family and his brethren and his people. You, I say, are witnesses of this thing.',
+  },
+  'RUT 4:11': {
+    rsv: 'Then all the people who were at the gate, and the elders, said, “We are witnesses. May the LORD make the woman, who is coming into your house, like Rachel and Leah, who together built up the house of Israel. May you prosper in Ephrathah and be renowned in Bethlehem;',
+    dra: 'Then all the people that were in the gate, and the ancients answered: We are witnesses: The Lord make this woman who cometh into thy house, like Rachel, and Lia, who built up the house of Israel: that she may be an example of virtue in Ephrata, and may have a famous name in Bethlehem:',
+  },
+  'RUT 4:14': {
+    rsv: 'Then the women said to Naomi, “Blessed be the LORD, who has not left you this day without next of kin; and may his name be renowned in Israel!',
+    dra: 'And the women said to Noemi: Blessed be the Lord, who hath not suffered thy family to want a successor, that his name should be preserved in Israel.',
+  },
+  'RUT 4:15': {
+    rsv: 'He shall be to you a restorer of life and a nourisher of your old age; for your daughter-in-law who loves you, who is more to you than seven sons, has borne him.”',
+    dra: 'And thou shouldst have one to comfort thy soul, and cherish thy old age. For he is born of thy daughter in law: who loveth thee: and is much better to thee, than if thou hadst seven sons.',
+  },
+  'RUT 4:16': {
+    rsv: 'Then Naomi took the child and laid him in her bosom, and became his nurse.',
+    dra: 'And Noemi taking the child laid it in her bosom, and she carried it, and was a nurse unto it.',
+  },
+  'RUT 4:17': {
+    rsv: 'And the women of the neighborhood gave him a name, saying, “A son has been born to Naomi.” They named him Obed; he was the father of Jesse, the father of David.',
+    dra: 'And the women her neighbours, congratulating with her and saying: There is a son born to Noemi: called his name Obed: he is the father of Isai, the father of David.',
+  },
+  'RUT 4:18': {
+    rsv: 'Now these are the descendants of Perez: Perez was the father of Hezron,',
+    dra: 'These are the generations of Phares: Phares begot Esron,',
+  },
+  'RUT 4:21': {
+    rsv: 'Salmon of Boaz, Boaz of Obed,',
+    dra: 'Salmon begot Booz, Booz begot Obed,',
+  },
+  'RUT 4:22': {
+    rsv: 'Obed of Jesse, and Jesse of David.',
+    dra: 'Obed begot Isai, Isai begot David.',
+  },
+  'MAT 1:6': {
+    rsv: 'and Jesse the father of David the king. And David was the father of Solomon by the wife of Uriah,',
+    dra: 'And Jesse begot David the king. And David the king begot Solomon, of her that had been the wife of Urias.',
+  },
+  'MAT 23:37': {
+    rsv: '“O Jerusalem, Jerusalem, killing the prophets and stoning those who are sent to you! How often would I have gathered your children together as a hen gathers her brood under her wings, and you would not!',
+    dra: 'Jerusalem, Jerusalem, thou that killest the prophets, and stonest them that are sent unto thee, how often would I have gathered together thy children, as the hen doth gather her chickens under her wings, and thou wouldest not?',
+  },
+  'JHN 1:16': {
+    rsv: 'And from his fulness have we all received, grace upon grace.',
+    dra: 'And of his fulness we all have received, and grace for grace.',
+  },
+  'JHN 16:20': {
+    rsv: 'Truly, truly, I say to you, you will weep and lament, but the world will rejoice; you will be sorrowful, but your sorrow will turn into joy.',
+    dra: 'Amen, amen I say to you, that you shall lament and weep, but the world shall rejoice; and you shall be made sorrowful, but your sorrow shall be turned into joy.',
+  },
+  'JHN 16:22': {
+    rsv: 'So you have sorrow now, but I will see you again and your hearts will rejoice, and no one will take your joy from you.',
+    dra: 'So also you now indeed have sorrow; but I will see you again, and your heart shall rejoice; and your joy no man shall take from you.',
+  },
+  'EPH 2:19': {
+    rsv: 'So then you are no longer strangers and sojourners, but you are fellow citizens with the saints and members of the household of God,',
+    dra: 'Now therefore you are no more strangers and foreigners; but you are fellow citizens with the saints, and the domestics of God,',
+  },
+  '1PE 1:18': {
+    rsv: 'You know that you were ransomed from the futile ways inherited from your fathers, not with perishable things such as silver or gold,',
+    dra: 'Knowing that you were not redeemed with corruptible things as gold or silver, from your vain conversation of the tradition of your fathers:',
+  },
+  '1PE 1:19': {
+    rsv: 'but with the precious blood of Christ, like that of a lamb without blemish or spot.',
+    dra: 'But with the precious blood of Christ, as of a lamb unspotted and undefiled,',
+  },
 }
 
 /** A verse's words in the active translation. Throws for a verse that isn't in the list (a content check catches these first). */

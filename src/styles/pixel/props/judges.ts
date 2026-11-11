@@ -60,4 +60,16 @@ const millstone: PixelDrawnArt = {
   },
 }
 
-export const judgesProps: Record<string, PixelDrawnArt> = { 'palm-tree': palmTree, fleece, honeycomb, millstone }
+/** Level 16: the sandal handed over at the gate of Bethlehem. */
+const sandal: PixelDrawnArt = {
+  kind: 'drawn',
+  poses: ['idle'],
+  anchor: 'base',
+  draw(paint, { width }) {
+    const w = Math.max(4, Math.round(width))
+    paint.rect(-Math.floor(w / 2), -1, w, 1, C.wood2)
+    paint.rect(-1, -2, 2, 1, C.wood1)
+  },
+}
+
+export const judgesProps: Record<string, PixelDrawnArt> = { 'palm-tree': palmTree, fleece, honeycomb, millstone, sandal }

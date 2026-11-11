@@ -275,6 +275,11 @@ export const familyOfNoah: Record<string, PixelSpriteArt> = {
   delilah: person({ robe: C.purple, hair: C.ink, veil: C.gold, sash: C.gold }),
   micah: person({ robe: C.green, hair: C.wood1, beard: C.wood1, sash: C.pale }),
   levite: person({ robe: C.white, hair: C.wood0, sash: C.blue }),
+  // Level 16: Naomi; Ruth and Orpah, her daughters-in-law from Moab; Boaz.
+  naomi: person({ robe: C.dslate, hair: C.pale, veil: C.slate }),
+  ruth: person({ robe: C.orange, hair: C.wood0, veil: C.gold, sash: C.green }),
+  orpah: person({ robe: C.teal, hair: C.ink, veil: C.sand }),
+  boaz: person({ robe: C.purple, hair: C.pale, beard: C.pale, sash: C.gold }),
   amalekites: band([
     { robe: C.wood1, hair: C.ink, beard: C.ink, veil: C.dslate },
     { robe: C.purple, hair: C.ink, beard: C.ink, veil: C.wood0 },

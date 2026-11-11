@@ -895,6 +895,36 @@ export const EMBLEMS: Record<string, () => Piece[]> = {
     { d: circ(4, -4, 1.6, 6), color: '#f8c040' },
     { d: circ(4, -12, 3, 10), color: '#fff4c0' },
   ],
+  // Level 16 · Ruth
+  // The road from Moab, winding west toward the light over Bethlehem.
+  'road-from-moab': () => [
+    { d: P([[-16, 16], [-16, 6], [16, 2], [16, 16]]), color: '#a8844a' },
+    { d: P([[12, 16], [6, 8], [-2, 6], [-8, 2], [-6, 2], [0, 4], [8, 6], [16, 16]]), color: '#e8d4a0' },
+    { d: circ(-10, -8, 6, 14), color: '#fff4c0' },
+  ],
+  // Two hands holding on: Ruth will not let Naomi go.
+  'where-you-go': () => [
+    { d: P([[-16, 2], [-4, -2], [-2, 4], [-16, 8]]), color: '#d8a878' },
+    { d: P([[16, 2], [4, -4], [0, 2], [16, 8]]), color: '#a8744a' },
+    { d: circ(-1, 1, 4, 10), color: '#f4d070' },
+  ],
+  // A sheaf of barley, gleaned in the field of Boaz.
+  'sheaf-of-barley': () => [
+    ...[-8, -4, 0, 4, 8].map((dx) => ({ d: P([[dx - 1, 16], [dx * 0.4 - 1, 0], [dx * 1.4, -12], [dx * 0.4 + 1, 0], [dx + 1, 16]]), color: '#e0b850' })),
+    { d: P([[-6, 4], [6, 4], [6, 7], [-6, 7]]), color: '#8a5a32' },
+  ],
+  // Six measures of barley in Ruth's shawl.
+  'six-measures': () => [
+    { d: P([[-14, -2], [14, -2], [10, 14], [-10, 14]]), color: '#b8643a' },
+    ...Array.from({ length: 6 }, (_, i) => ({ d: circ(-8 + (i % 3) * 8, -4 + Math.floor(i / 3) * 6, 3.5, 8), color: '#f0d070' })),
+  ],
+  // The sandal handed over at the gate of Bethlehem.
+  'sandal-at-the-gate': () => [
+    { d: P([[-16, -16], [-6, -16], [-6, 16], [-16, 16]]), color: '#c8b890' },
+    { d: P([[6, -16], [16, -16], [16, 16], [6, 16]]), color: '#c8b890' },
+    { d: P([[-10, 10], [10, 8], [12, 12], [-10, 14]]), color: '#8a5a32' },
+    { d: P([[-2, 8], [0, 2], [4, 2], [4, 8]]), color: '#6a4020' },
+  ],
 }
 
 /** The medallions' backgrounds: deep blue, with one ruby for the darkest story. */

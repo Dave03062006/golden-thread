@@ -689,6 +689,29 @@ The same way again: script, art, build, checks, play-test. Level 15 is the secon
   - `perf` could not be judged this time: the browser ran at 30 frames a second, so every frame counted as late, for Level 14's scenes too, which passed on 2026-11-09. Level 15's scenes average 1–3 ms of work a frame, well within the 8 ms budget. Run it again on an unthrottled machine.
   - New `shots` baselines cover the Level 15 scenes and the screens Level 15 changes. Dave still needs to look them over.
 
+### Task 22: Level 16, *Ruth* (M22)
+
+The same way again: script, art, build, checks, play-test. Level 16 is the last level of Age V, *The Promised Land*.
+
+**Status (November 2026):** steps 1–4 are done; step 5 is Dave's.
+- **Script:** `docs/scripts/level-16-ruth.md`, approved by Dave on 2026-11-11. It has 5 episodes and 15 scenes, 73 passages quoted word for word, and a 40-question quiz.
+- **Build:** all five episodes are built in both styles, each with its own play:
+  - the long road home (walking the three widows west from Moab, a memory at each stop);
+  - where you go (putting Ruth's promise back together in order);
+  - gleaning (gathering the stalks left behind the reapers, some dropped on purpose);
+  - winnowing (tossing the barley while the evening wind blows);
+  - Perez to David (setting the family line in order).
+  The road home uses the route rules of Levels 14 and 15; the promise and the family line use Level 11's ordering rules.
+- **Changes from the script:** in the road home, the light over Bethlehem shines steadily rather than growing brighter at each stop. In "Perez to David", the names of Salmon and Boaz don't glow as they are set; their notes say who they married.
+- **The threshing floor** is told in one sentence, as the script asks: Ruth lies at Boaz's feet as a humble way of asking him to marry her.
+- **New art:** no new backdrops; the level reuses the hills, the crossroads, the barley field, the threshing floor, the town street and the house from earlier levels. New: four people (Naomi, Ruth, Orpah, Boaz) and a sandal, in both styles.
+- **Cathedral and map:** five new medallions complete the Age V bay. The map's route runs from the plains of Moab to Bethlehem; there are no new places.
+- **Music:** no new recordings. Franck's *Ruth* has no allowed recording, so his "Panis angelicus" and other pieces from earlier levels stand in, as the script says.
+- **Checks:**
+  - The playthrough runs Level 16 from start to finish in both styles, through its quiz, reflection and window ceremony (52 checks).
+  - `check`, `test` (3,736 tests), `a11y`, `keyboard` and `saves` pass.
+  - `perf` was not run again: the browser here still runs at 30 frames a second (see Task 21). Run it on an unthrottled machine.
+  - New `shots` baselines cover the Level 16 scenes and the screens Level 16 changes. Dave still needs to look them over.
 ## Parallelization
 
 - **Code tasks run in order.** Each one builds on the last, and running them in order keeps the code consistent for the code tour.

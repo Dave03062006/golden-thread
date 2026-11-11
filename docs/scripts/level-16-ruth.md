@@ -3,7 +3,7 @@
 **Bible:** Ruth 1–4
 **Age:** V · The Promised Land
 **Length:** about 35 minutes (5 episodes, then the quiz, then reflection and prayer)
-**Status:** draft for Dave's approval.
+**Status:** approved by Dave on 2026-11-11 ("Approved, build it").
 
 ## How to read this script
 

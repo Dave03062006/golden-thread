@@ -1122,6 +1122,62 @@ export const THREADS: GoldenThread[] = [
     sources: ['Matthew 2:1–6', 'Micah 5:2', 'Ruth 1:1', 'Ruth 4:17', 'John 18:36–37', 'Catechism 436, 528, 2816–2818'],
     fulfilled: { age: 'XI', place: 'bethlehem' },
   },
+  // Level 16 · Ruth
+  {
+    id: 'sorrow-into-joy',
+    episode: 'l16-e1',
+    title: 'Naomi’s sorrow, and the news that God has visited his people → Jesus: “your sorrow will turn into joy”',
+    from: ['RUT 1:5', 'RUT 1:6'],
+    to: ['JHN 16:20', 'JHN 16:22'],
+    explanation:
+      'Naomi lost her husband and both her sons, and thought God had turned against her. But the story doesn’t end there: by the end of the book, her arms are full again. Jesus promised his friends the same on the night before he died: their sorrow would not just go away, it would turn into joy, a joy no one could take from them. God does not waste our tears.',
+    sources: ['John 16:20–22', 'Psalm 30:11', 'Revelation 21:4', 'Catechism 1820, 2090'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'no-longer-strangers',
+    episode: 'l16-e2',
+    title: 'Ruth, a foreigner, chooses the people and the God of Israel → “You are no longer strangers and sojourners… but members of the household of God”',
+    from: ['RUT 1:16', 'RUT 1:17'],
+    to: ['EPH 2:19'],
+    explanation:
+      'Ruth was a Moabite, an outsider, from a people Israel’s law kept at a distance. But she chose the God of Israel, and he welcomed her completely: she became the great-grandmother of King David. Saint Paul says that in Jesus everyone, from every nation, can belong to God’s family in the same way. No one is a stranger to him. The Church has always loved Ruth as a sign that God’s promises are for all the nations.',
+    sources: ['Ephesians 2:11–22', 'Isaiah 56:6–7', 'Matthew 28:19', 'Catechism 543, 831'],
+    fulfilled: { age: 'XIII' },
+  },
+  {
+    id: 'under-his-wings',
+    episode: 'l16-e3',
+    title: '“Under whose wings you have come to take refuge” → Jesus: “as a hen gathers her brood under her wings”',
+    from: ['RUT 2:12'],
+    to: ['MAT 23:37'],
+    explanation:
+      'Boaz blessed Ruth for coming to shelter under the wings of the God of Israel. The Psalms often speak of God’s wings, like a mother bird’s, sheltering those who trust him. Jesus used the same picture of himself, longing to gather his people under his wings as a hen gathers her chicks. Ruth found that shelter in God, and Boaz’s kindness was how God gave it to her.',
+    sources: ['Matthew 23:37', 'Psalm 91:4', 'Psalm 36:7', 'Catechism 2563'],
+    fulfilled: { age: 'XI', place: 'jerusalem' },
+  },
+  {
+    id: 'grace-upon-grace',
+    episode: 'l16-e4',
+    title: 'Ruth comes home not empty, but with her arms full of barley → “from his fulness have we all received, grace upon grace”',
+    from: ['RUT 3:15', 'RUT 3:17'],
+    to: ['JHN 1:16'],
+    explanation:
+      '“I went away full, and the LORD has brought me back empty,” Naomi had said. But Boaz would not let Ruth go back “empty-handed”: he filled her shawl with barley from Bethlehem, the house of bread. Saint John says that God has done the same for us in Jesus, born in that same Bethlehem: “from his fulness have we all received, grace upon grace.” Jesus is the true bread from Bethlehem, and no one who comes to him goes home empty.',
+    sources: ['John 1:14–16', 'John 6:35', 'Luke 1:53', 'Catechism 1406, 2837'],
+    fulfilled: { age: 'XI', place: 'bethlehem' },
+  },
+  {
+    id: 'our-redeemer',
+    episode: 'l16-e5',
+    title: 'Boaz the kinsman-redeemer buys back what was lost, at his own cost → “You were ransomed… with the precious blood of Christ”',
+    from: ['RUT 4:9', 'RUT 4:10'],
+    to: ['1PE 1:18', '1PE 1:19'],
+    explanation:
+      'The nearer kinsman would not risk his own inheritance to save Naomi’s family. Boaz did: he paid the price to buy back the land, and took Ruth as his wife, so that the dead would not be forgotten. Christians have always seen in Boaz, the go’el, a picture of Jesus, our Redeemer. He became our kinsman by becoming man, and he bought us back, not with silver or gold, but with his own life, to make us his own.',
+    sources: ['1 Peter 1:18–19', 'Job 19:25', 'Isaiah 54:5', 'Ephesians 5:25', 'Catechism 517, 601, 1612'],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
 ]
 
 const BY_ID = new Map(THREADS.map((thread) => [thread.id, thread]))

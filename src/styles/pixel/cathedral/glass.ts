@@ -155,6 +155,12 @@ export const EMBLEMS: Record<string, { rows: string[]; colors: Record<string, st
   'timbrel-of-mizpah': { rows: ['.........', '..ywwwy..', '.wppppppw', '.wppppppw', '.yppppppy', '.wppppppw', '..ywwwy..', '.........', 'rrrrrrrrr'], colors: { y: C.gold, w: C.wood3, p: C.sand, r: C.rose } },
   'two-pillars': { rows: ['sssssssss', '.pp...pp.', '.pp...pp.', '.pp.w.pp.', '.pp...pp.', '.pp...pp.', '.pp...pp.', '.pp...pp.', 'ggggggggg'], colors: { s: C.wood3, p: C.sand, w: C.white, g: C.wood2 } },
   'lamp-in-bethlehem': { rows: ['....w....', '...wyw...', '....w....', '.........', '.hh.hhh..', '.hh.hyh..', 'ggggggggg', 'ggggggggg', 'ggggggggg'], colors: { w: C.white, y: C.gold, h: C.sand, g: C.green } },
+  // Level 16 · Ruth
+  'road-from-moab': { rows: ['.ww......', 'wyyw.....', '.ww......', '.........', '.....ss..', '..ssss...', 'ssggggggg', 'gggggssgg', 'gggggggss'], colors: { w: C.white, y: C.gold, s: C.sand, g: C.wood3 } },
+  'where-you-go': { rows: ['.........', '.........', 'aaa...bbb', 'aaaa.bbbb', 'aaaayybbb', '....yy...', '.........', '.........', '.........'], colors: { a: C.sand, b: C.wood3, y: C.gold } },
+  'sheaf-of-barley': { rows: ['y.y.y.y.y', '.y.y.y.y.', '..yyyyy..', '...yyy...', '..wwwww..', '...yyy...', '..yyyyy..', '.yy.y.yy.', 'ggggggggg'], colors: { y: C.gold, w: C.wood2, g: C.wood3 } },
+  'six-measures': { rows: ['.........', '.yy.yy.yy', '.yy.yy.yy', '.........', 'ooooooooo', '.ooooooo.', '..ooooo..', '...ooo...', '.........'], colors: { y: C.gold, o: C.orange } },
+  'sandal-at-the-gate': { rows: ['pp.....pp', 'pp.....pp', 'pp.....pp', 'pp.....pp', 'pp..w..pp', 'pp.www.pp', 'pwwwwwwwp', 'pp.....pp', 'ggggggggg'], colors: { p: C.sand2, w: C.wood2, g: C.wood3 } },
 }
 
 /** The pointed outline of a window, inside which the glass is: whether a pixel is in it. */

@@ -67,4 +67,13 @@ const millstone: PaperPropArt = {
   ],
 }
 
-export const judgesProps: Record<string, PaperPropArt> = { 'palm-tree': palmTree, fleece, honeycomb, millstone }
+/** Level 16: the sandal handed over at the gate of Bethlehem, to seal the redemption. */
+const sandal: PaperPropArt = {
+  box: { x: 0, y: 0, w: 60, h: 24 },
+  facing: 1,
+  poses: ['idle'],
+  anchor: 'base',
+  parts: [{ id: 'sandal', svg: `<path d="M4 24Q2 14 14 12L48 10Q60 12 58 24Z" fill="#8a5a32"/><path d="M18 12Q24 0 34 2Q40 4 38 12" stroke="#6a4020" stroke-width="4" fill="none"/>` }],
+}
+
+export const judgesProps: Record<string, PaperPropArt> = { 'palm-tree': palmTree, fleece, honeycomb, millstone, sandal }

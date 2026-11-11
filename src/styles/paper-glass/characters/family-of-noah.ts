@@ -309,6 +309,11 @@ export const familyOfNoah: Record<string, PaperPropArt> = {
   delilah: person({ robe: '#8a2a5a', fold: '#641a40', hair: '#1a1416', veil: '#e0b040', sash: '#e0b040' }),
   micah: person({ robe: '#6a6a3a', fold: '#4a4a24', hair: '#3a2a1e', beard: '#3a2a1e', sash: '#b8b8c8' }),
   levite: person({ robe: '#d8d0c0', fold: '#b0a690', hair: '#2a1e1a', sash: '#3a5a8a' }),
+  // Level 16: Naomi; Ruth and Orpah, her daughters-in-law from Moab; Boaz.
+  naomi: person({ robe: '#4a4a6a', fold: '#32324a', hair: '#cfc8bc', veil: '#7a6a8a' }),
+  ruth: person({ robe: '#b8643a', fold: '#8a4626', hair: '#2a1a14', veil: '#e8c870', sash: '#6a8a3a' }),
+  orpah: person({ robe: '#5a7a8a', fold: '#3e5a66', hair: '#241a16', veil: '#c8b8a0' }),
+  boaz: person({ robe: '#6a4a7a', fold: '#4a3058', hair: '#bab4a8', beard: '#bab4a8', sash: '#d8b048' }),
   amalekites: band([
     { robe: '#5a3a3a', fold: '#3e2626', hair: '#1a1210', beard: '#1a1210', veil: '#3a2a2a' },
     { robe: '#6a4a3a', fold: '#4c3226', hair: '#1a1210', beard: '#1a1210', veil: '#4a3a2a' },
