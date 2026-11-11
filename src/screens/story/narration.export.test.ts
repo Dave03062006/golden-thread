@@ -1,7 +1,11 @@
 import { mkdirSync, writeFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
 import { LEVELS } from '../../content/catalog'
+import { loadStory } from '../../content/story-loading'
 import { narrationId, spokenText } from './speech'
+
+// Each level's story loads on demand (content/story-loading.ts); these checks need them all.
+await Promise.all(LEVELS.map(loadStory))
 
 /**
  * Lists every line the story reads aloud, by its recording's name, for scripts/narrate.py

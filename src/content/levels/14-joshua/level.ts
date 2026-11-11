@@ -1,11 +1,5 @@
+import { notLoaded } from '../../story-loading'
 import type { Episode, Level, WhereWhen } from '../../types'
-import { episode1 } from './episode-1'
-import { episode2 } from './episode-2'
-import { episode3 } from './episode-3'
-import { episode4 } from './episode-4'
-import { episode5 } from './episode-5'
-import { episode6 } from './episode-6'
-import { episode7 } from './episode-7'
 import { level14Music } from './music'
 import { level14Quiz } from './quiz'
 
@@ -14,9 +8,9 @@ import { level14Quiz } from './quiz'
  * (docs/scripts/level-14-joshua.md). It opens Age V, the Promised Land.
  */
 
-/** An episode that's built: its written details, with its set and scenes. */
-function built(story: Pick<Episode, 'set' | 'scenes'>, fields: Omit<Episode, 'set' | 'scenes'>): Episode {
-  return { ...fields, ...story }
+/** An episode's written details. Its set and scenes come with the level's story (./story.ts), loaded when the level is played. */
+function built(fields: Omit<Episode, 'set' | 'scenes'>): Episode {
+  return { ...fields, ...notLoaded() }
 }
 
 const where = (places: string[], notes: [string, string][]): WhereWhen => ({
@@ -33,6 +27,7 @@ export const level14: Level = {
   passage: 'JOS 1:1-24:33',
   music: level14Music,
   quiz: level14Quiz,
+  story: () => import('./story'),
   // Jericho, across the Jordan; then the road on to Shiloh and Shechem.
   map: {
     at: { lat: 31.87, lon: 35.44 },
@@ -62,7 +57,7 @@ export const level14: Level = {
     },
   },
   episodes: [
-    built(episode1, {
+    built({
       id: 'l14-e1',
       number: 1,
       emblem: 'scarlet-cord',
@@ -77,7 +72,7 @@ export const level14: Level = {
       ]),
       read: ['JOS 1:1-9', 'JOS 2:1-24'],
     }),
-    built(episode2, {
+    built({
       id: 'l14-e2',
       number: 2,
       emblem: 'stones-from-the-jordan',
@@ -93,7 +88,7 @@ export const level14: Level = {
       ]),
       read: ['JOS 3:1-4:24', 'JOS 5:10-15'],
     }),
-    built(episode3, {
+    built({
       id: 'l14-e3',
       number: 3,
       emblem: 'walls-of-jericho',
@@ -108,7 +103,7 @@ export const level14: Level = {
       ]),
       read: ['JOS 6:1-27'],
     }),
-    built(episode4, {
+    built({
       id: 'l14-e4',
       number: 4,
       emblem: 'lamp-in-the-tent',
@@ -123,7 +118,7 @@ export const level14: Level = {
       ]),
       read: ['JOS 7:1-26', 'JOS 8:30-35'],
     }),
-    built(episode5, {
+    built({
       id: 'l14-e5',
       number: 5,
       emblem: 'sun-stands-still',
@@ -138,7 +133,7 @@ export const level14: Level = {
       ]),
       read: ['JOS 10:6-14'],
     }),
-    built(episode6, {
+    built({
       id: 'l14-e6',
       number: 6,
       emblem: 'twelve-portions',
@@ -154,7 +149,7 @@ export const level14: Level = {
       ]),
       read: ['JOS 14:6-14', 'JOS 18:1-10', 'JOS 21:43-45'],
     }),
-    built(episode7, {
+    built({
       id: 'l14-e7',
       number: 7,
       emblem: 'stone-under-the-oak',

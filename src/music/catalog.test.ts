@@ -1,6 +1,10 @@
 import { describe, expect, it } from 'vitest'
 import { LEVELS } from '../content/catalog'
+import { loadStory } from '../content/story-loading'
 import { ALLOWED_LICENSES, TRACKS, trackById } from './catalog'
+
+// Each level's story loads on demand (content/story-loading.ts); these checks need them all.
+await Promise.all(LEVELS.map(loadStory))
 
 // Every free track must carry an allowed license and a credit (spec §12.3), and every
 // piece the levels ask for must be in the catalog.

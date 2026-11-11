@@ -1,10 +1,14 @@
 import { writeFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
 import { LEVELS } from '../content/catalog'
+import { loadStory } from '../content/story-loading'
 import { paperProps } from '../styles/paper-glass/art'
 import { inDepthOrder } from './depth'
 import { Director } from './director'
 import type { ActorState } from './evaluate'
+
+// Each level's story loads on demand (content/story-loading.ts); these checks need them all.
+await Promise.all(LEVELS.map(loadStory))
 
 /**
  * A look at how the art sits together (run on demand: QA=1 npx vitest run src/scene/overlaps.qa.test.ts).

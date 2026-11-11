@@ -1,10 +1,5 @@
+import { notLoaded } from '../../story-loading'
 import type { Episode, Level, WhereWhen } from '../../types'
-import { episode1 } from './episode-1'
-import { episode2 } from './episode-2'
-import { episode3 } from './episode-3'
-import { episode4 } from './episode-4'
-import { episode5 } from './episode-5'
-import { episode6 } from './episode-6'
 import { level6Music } from './music'
 import { level6Quiz } from './quiz'
 
@@ -13,9 +8,9 @@ import { level6Quiz } from './quiz'
  * (docs/scripts/level-06-job.md).
  */
 
-/** An episode that's built: its written details, with its set and scenes. */
-function built(story: Pick<Episode, 'set' | 'scenes'>, fields: Omit<Episode, 'set' | 'scenes'>): Episode {
-  return { ...fields, ...story }
+/** An episode's written details. Its set and scenes come with the level's story (./story.ts), loaded when the level is played. */
+function built(fields: Omit<Episode, 'set' | 'scenes'>): Episode {
+  return { ...fields, ...notLoaded() }
 }
 
 const where = (notes: [string, string][], places: string[] = ['uz']): WhereWhen => ({
@@ -32,6 +27,7 @@ export const level6: Level = {
   passage: 'JOB 1:1-42:17',
   music: level6Music,
   quiz: level6Quiz,
+  story: () => import('./story'),
   // The land of Uz: no one knows exactly where it was, so the map marks it with a question.
   map: {
     at: { lat: 30.4, lon: 36.4 },
@@ -59,7 +55,7 @@ export const level6: Level = {
     },
   },
   episodes: [
-    built(episode1, {
+    built({
       id: 'l06-e1',
       number: 1,
       emblem: 'open-hand',
@@ -78,7 +74,7 @@ export const level6: Level = {
       ),
       read: ['JOB 1:1-2:10'],
     }),
-    built(episode2, {
+    built({
       id: 'l06-e2',
       number: 2,
       emblem: 'seven-marks',
@@ -96,7 +92,7 @@ export const level6: Level = {
       ),
       read: ['JOB 2:11-3:26'],
     }),
-    built(episode3, {
+    built({
       id: 'l06-e3',
       number: 3,
       emblem: 'refined-gold',
@@ -111,7 +107,7 @@ export const level6: Level = {
       ]),
       read: ['JOB 4:1-21', 'JOB 23:1-17'],
     }),
-    built(episode4, {
+    built({
       id: 'l06-e4',
       number: 4,
       emblem: 'carved-rock',
@@ -126,7 +122,7 @@ export const level6: Level = {
       ]),
       read: ['JOB 19:1-29'],
     }),
-    built(episode5, {
+    built({
       id: 'l06-e5',
       number: 5,
       emblem: 'whirlwind',
@@ -141,7 +137,7 @@ export const level6: Level = {
       ]),
       read: ['JOB 38:1-41', 'JOB 42:1-6'],
     }),
-    built(episode6, {
+    built({
       id: 'l06-e6',
       number: 6,
       emblem: 'twofold',

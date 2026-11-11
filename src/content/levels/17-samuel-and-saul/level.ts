@@ -1,10 +1,5 @@
+import { notLoaded } from '../../story-loading'
 import type { Episode, Level, WhereWhen } from '../../types'
-import { episode1 } from './episode-1'
-import { episode2 } from './episode-2'
-import { episode3 } from './episode-3'
-import { episode4 } from './episode-4'
-import { episode5 } from './episode-5'
-import { episode6 } from './episode-6'
 import { level17Music } from './music'
 import { level17Quiz } from './quiz'
 
@@ -13,9 +8,9 @@ import { level17Quiz } from './quiz'
  * (docs/scripts/level-17-samuel-and-saul.md). It opens Age VI, the Kingdom.
  */
 
-/** An episode that's built: its written details, with its set and scenes. */
-function built(story: Pick<Episode, 'set' | 'scenes'>, fields: Omit<Episode, 'set' | 'scenes'>): Episode {
-  return { ...fields, ...story }
+/** An episode's written details. Its set and scenes come with the level's story (./story.ts), loaded when the level is played. */
+function built(fields: Omit<Episode, 'set' | 'scenes'>): Episode {
+  return { ...fields, ...notLoaded() }
 }
 
 const where = (places: string[], notes: [string, string][]): WhereWhen => ({
@@ -32,6 +27,7 @@ export const level17: Level = {
   passage: '1SA 1:1-15:35',
   music: level17Music,
   quiz: level17Quiz,
+  story: () => import('./story'),
   // Shiloh, then Samuel's Ramah and Mizpah; and the ark's road from Ashdod to Beth-shemesh.
   map: {
     at: { lat: 32.06, lon: 35.29 },
@@ -63,7 +59,7 @@ export const level17: Level = {
     },
   },
   episodes: [
-    built(episode1, {
+    built({
       id: 'l17-e1',
       number: 1,
       emblem: 'hannahs-prayer',
@@ -80,7 +76,7 @@ export const level17: Level = {
       ]),
       read: ['1SA 1:1-2:11', '1SA 2:18-26'],
     }),
-    built(episode2, {
+    built({
       id: 'l17-e2',
       number: 2,
       emblem: 'lamp-of-god',
@@ -95,7 +91,7 @@ export const level17: Level = {
       ]),
       read: ['1SA 3:1-21'],
     }),
-    built(episode3, {
+    built({
       id: 'l17-e3',
       number: 3,
       emblem: 'ark-on-the-cart',
@@ -112,7 +108,7 @@ export const level17: Level = {
       ]),
       read: ['1SA 4:1-6:16'],
     }),
-    built(episode4, {
+    built({
       id: 'l17-e4',
       number: 4,
       emblem: 'stone-of-help',
@@ -127,7 +123,7 @@ export const level17: Level = {
       ]),
       read: ['1SA 7:2-17', '1SA 8:1-22'],
     }),
-    built(episode5, {
+    built({
       id: 'l17-e5',
       number: 5,
       emblem: 'vial-of-oil',
@@ -142,7 +138,7 @@ export const level17: Level = {
       ]),
       read: ['1SA 9:1-10:27'],
     }),
-    built(episode6, {
+    built({
       id: 'l17-e6',
       number: 6,
       emblem: 'torn-robe',

@@ -1,9 +1,5 @@
+import { notLoaded } from '../../story-loading'
 import type { Episode, Level, WhereWhen } from '../../types'
-import { episode1 } from './episode-1'
-import { episode2 } from './episode-2'
-import { episode3 } from './episode-3'
-import { episode4 } from './episode-4'
-import { episode5 } from './episode-5'
 import { level7Music } from './music'
 import { level7Quiz } from './quiz'
 
@@ -12,9 +8,9 @@ import { level7Quiz } from './quiz'
  * (docs/scripts/level-07-moses-is-called.md).
  */
 
-/** An episode that's built: its written details, with its set and scenes. */
-function built(story: Pick<Episode, 'set' | 'scenes'>, fields: Omit<Episode, 'set' | 'scenes'>): Episode {
-  return { ...fields, ...story }
+/** An episode's written details. Its set and scenes come with the level's story (./story.ts), loaded when the level is played. */
+function built(fields: Omit<Episode, 'set' | 'scenes'>): Episode {
+  return { ...fields, ...notLoaded() }
 }
 
 const where = (notes: [string, string][], places: string[]): WhereWhen => ({
@@ -31,6 +27,7 @@ export const level7: Level = {
   passage: 'EXO 1:1-4:31',
   music: level7Music,
   quiz: level7Quiz,
+  story: () => import('./story'),
   // Egypt, where Moses was born; his flight to Midian; Horeb, the mountain of God; and back to Goshen.
   map: {
     at: { lat: 30.9, lon: 31.5 },
@@ -63,7 +60,7 @@ export const level7: Level = {
     },
   },
   episodes: [
-    built(episode1, {
+    built({
       id: 'l07-e1',
       number: 1,
       emblem: 'window-lamp',
@@ -82,7 +79,7 @@ export const level7: Level = {
       ),
       read: ['EXO 1:1-22'],
     }),
-    built(episode2, {
+    built({
       id: 'l07-e2',
       number: 2,
       emblem: 'reed-basket',
@@ -101,7 +98,7 @@ export const level7: Level = {
       ),
       read: ['EXO 2:1-10'],
     }),
-    built(episode3, {
+    built({
       id: 'l07-e3',
       number: 3,
       emblem: 'water-trough',
@@ -121,7 +118,7 @@ export const level7: Level = {
       ),
       read: ['EXO 2:11-25'],
     }),
-    built(episode4, {
+    built({
       id: 'l07-e4',
       number: 4,
       emblem: 'burning-bush',
@@ -140,7 +137,7 @@ export const level7: Level = {
       ),
       read: ['EXO 3:1-4:17'],
     }),
-    built(episode5, {
+    built({
       id: 'l07-e5',
       number: 5,
       emblem: 'rod-serpent',

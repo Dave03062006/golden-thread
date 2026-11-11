@@ -1,11 +1,5 @@
+import { notLoaded } from '../../story-loading'
 import type { Episode, Level, WhereWhen } from '../../types'
-import { episode1 } from './episode-1'
-import { episode2 } from './episode-2'
-import { episode3 } from './episode-3'
-import { episode4 } from './episode-4'
-import { episode5 } from './episode-5'
-import { episode6 } from './episode-6'
-import { episode7 } from './episode-7'
 import { level4Music } from './music'
 import { level4Quiz } from './quiz'
 
@@ -14,9 +8,9 @@ import { level4Quiz } from './quiz'
  * (docs/scripts/level-04-isaac-and-jacob.md).
  */
 
-/** An episode that's built: its written details, with its set and scenes. */
-function built(story: Pick<Episode, 'set' | 'scenes'>, fields: Omit<Episode, 'set' | 'scenes'>): Episode {
-  return { ...fields, ...story }
+/** An episode's written details. Its set and scenes come with the level's story (./story.ts), loaded when the level is played. */
+function built(fields: Omit<Episode, 'set' | 'scenes'>): Episode {
+  return { ...fields, ...notLoaded() }
 }
 
 const where = (notes: [string, string][], places: string[] = []): WhereWhen => ({
@@ -33,6 +27,7 @@ export const level4: Level = {
   passage: 'GEN 24:1-35:29',
   music: level4Music,
   quiz: level4Quiz,
+  story: () => import('./story'),
   // Beer-sheba, where Isaac's family lived; then Jacob's journeys: north past Bethel to
   // Haran, and twenty years later home again, by the Jabbok to Shechem, Bethel and
   // Bethlehem, to Mamre at Hebron.
@@ -71,7 +66,7 @@ export const level4: Level = {
     },
   },
   episodes: [
-    built(episode1, {
+    built({
       id: 'l04-e1',
       number: 1,
       emblem: 'jar',
@@ -88,7 +83,7 @@ export const level4: Level = {
       ),
       read: ['GEN 24:1-67'],
     }),
-    built(episode2, {
+    built({
       id: 'l04-e2',
       number: 2,
       emblem: 'stew',
@@ -106,7 +101,7 @@ export const level4: Level = {
       ),
       read: ['GEN 25:19-34'],
     }),
-    built(episode3, {
+    built({
       id: 'l04-e3',
       number: 3,
       emblem: 'blessing',
@@ -124,7 +119,7 @@ export const level4: Level = {
       ),
       read: ['GEN 27:1-46'],
     }),
-    built(episode4, {
+    built({
       id: 'l04-e4',
       number: 4,
       emblem: 'ladder',
@@ -142,7 +137,7 @@ export const level4: Level = {
       ),
       read: ['GEN 28:10-22'],
     }),
-    built(episode5, {
+    built({
       id: 'l04-e5',
       number: 5,
       emblem: 'lion',
@@ -160,7 +155,7 @@ export const level4: Level = {
       ),
       read: ['GEN 29:1-30:24'],
     }),
-    built(episode6, {
+    built({
       id: 'l04-e6',
       number: 6,
       emblem: 'dawn',
@@ -178,7 +173,7 @@ export const level4: Level = {
       ),
       read: ['GEN 32:1-32'],
     }),
-    built(episode7, {
+    built({
       id: 'l04-e7',
       number: 7,
       emblem: 'embrace',

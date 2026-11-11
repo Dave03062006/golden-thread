@@ -1,11 +1,5 @@
+import { notLoaded } from '../../story-loading'
 import type { Episode, Level, WhereWhen } from '../../types'
-import { episode1 } from './episode-1'
-import { episode2 } from './episode-2'
-import { episode3 } from './episode-3'
-import { episode4 } from './episode-4'
-import { episode5 } from './episode-5'
-import { episode6 } from './episode-6'
-import { episode7 } from './episode-7'
 import { level11Music } from './music'
 import { level11Quiz } from './quiz'
 
@@ -15,9 +9,9 @@ import { level11Quiz } from './quiz'
  * (docs/scripts/level-11-the-tabernacle-and-the-holy-life.md).
  */
 
-/** An episode that's built: its written details, with its set and scenes. */
-function built(story: Pick<Episode, 'set' | 'scenes'>, fields: Omit<Episode, 'set' | 'scenes'>): Episode {
-  return { ...fields, ...story }
+/** An episode's written details. Its set and scenes come with the level's story (./story.ts), loaded when the level is played. */
+function built(fields: Omit<Episode, 'set' | 'scenes'>): Episode {
+  return { ...fields, ...notLoaded() }
 }
 
 const where = (notes: [string, string][]): WhereWhen => ({
@@ -34,6 +28,7 @@ export const level11: Level = {
   passage: 'EXO 25:1-40:38',
   music: level11Music,
   quiz: level11Quiz,
+  story: () => import('./story'),
   // The tabernacle was made and set up at Mount Sinai, where Level 10 already stands. Its marker
   // sits just to the south-east of Level 10's, in the camp below the mountain, so the two don't cover each other.
   map: { at: { lat: 28.2, lon: 34.35 }, label: 'The tabernacle at Sinai' },
@@ -58,7 +53,7 @@ export const level11: Level = {
     },
   },
   episodes: [
-    built(episode1, {
+    built({
       id: 'l11-e1',
       number: 1,
       emblem: 'tabernacle-plan',
@@ -73,7 +68,7 @@ export const level11: Level = {
       ]),
       read: ['EXO 25:1-9', 'EXO 35:20-36:7', 'EXO 39:32-43'],
     }),
-    built(episode2, {
+    built({
       id: 'l11-e2',
       number: 2,
       emblem: 'mercy-seat',
@@ -89,7 +84,7 @@ export const level11: Level = {
       ]),
       read: ['EXO 25:10-40', 'EXO 40:1-38'],
     }),
-    built(episode3, {
+    built({
       id: 'l11-e3',
       number: 3,
       emblem: 'twelve-stones',
@@ -105,7 +100,7 @@ export const level11: Level = {
       ]),
       read: ['EXO 28:1-38', 'LEV 8:1-13', 'LEV 9:22-23'],
     }),
-    built(episode4, {
+    built({
       id: 'l11-e4',
       number: 4,
       emblem: 'altar-fire',
@@ -121,7 +116,7 @@ export const level11: Level = {
       ]),
       read: ['LEV 1:1-9', 'LEV 2:1-3', 'LEV 6:8-13', 'LEV 9:22-24'],
     }),
-    built(episode5, {
+    built({
       id: 'l11-e5',
       number: 5,
       emblem: 'the-veil',
@@ -136,7 +131,7 @@ export const level11: Level = {
       ]),
       read: ['LEV 16:1-34'],
     }),
-    built(episode6, {
+    built({
       id: 'l11-e6',
       number: 6,
       emblem: 'first-sheaf',
@@ -151,7 +146,7 @@ export const level11: Level = {
       ]),
       read: ['LEV 23:1-44'],
     }),
-    built(episode7, {
+    built({
       id: 'l11-e7',
       number: 7,
       emblem: 'edges-of-the-field',

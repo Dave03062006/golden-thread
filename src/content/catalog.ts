@@ -30,26 +30,25 @@ export function findEpisode(episodeId: string): { level: Level; episode: Episode
   return undefined
 }
 
-/** Finds the episode a scene belongs to, and the scene's number in it. */
+/**
+ * Finds the episode a scene belongs to, and the scene's number in it, from the scene's id
+ * alone ("l14-e3-s2" is scene 2 of episode l14-e3), so it works before the story is loaded.
+ */
 export function findScene(sceneId: string): { level: Level; episode: Episode; index: number } | undefined {
-  for (const level of LEVELS) {
-    for (const episode of level.episodes) {
-      const index = episode.scenes.findIndex((s) => s.id === sceneId)
-      if (index >= 0) return { level, episode, index }
-    }
-  }
-  return undefined
+  const match = /^(l\d+-e\d+)-s(\d+)$/.exec(sceneId)
+  const found = match ? findEpisode(match[1]!) : undefined
+  return found && { ...found, index: Number(match![2]) - 1 }
 }
 
-/** Whether a level still has episodes being made (they have no scenes yet). */
+/** Whether a level is still being made: it has no story to play yet. */
 export function stillBeingMade(level: Level): boolean {
-  return level.episodes.some((e) => e.scenes.length === 0)
+  return !level.story
 }
 
 /** The level after this one, if it has a first episode to play. */
 export function nextLevel(levelId: string): Level | undefined {
   const next = LEVELS[LEVELS.findIndex((l) => l.id === levelId) + 1]
-  return next && next.episodes[0]!.scenes.length > 0 ? next : undefined
+  return next && !stillBeingMade(next) ? next : undefined
 }
 
 /** The episode after this one, if it's built. */
@@ -58,5 +57,5 @@ export function nextEpisode(episodeId: string): Episode | undefined {
   if (!found) return undefined
   const { level, episode } = found
   const next = level.episodes[level.episodes.indexOf(episode) + 1]
-  return next && next.scenes.length > 0 ? next : undefined
+  return next
 }

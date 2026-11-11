@@ -1,3 +1,4 @@
+import type { AnyGameRules } from '../minigames/framework'
 import type { Question } from '../quiz/types'
 import type { SceneDescription, StoryScene } from '../scene/types'
 
@@ -101,6 +102,8 @@ export interface Level {
   music: LevelMusic
   /** The quiz bank: at least 40 questions, every episode with some (spec §5). */
   quiz: Question[]
+  /** Loads the sets and scenes of its episodes, by episode id, and the plays they use (content/story-loading.ts). */
+  story?: () => Promise<{ story: Record<string, Pick<Episode, 'set' | 'scenes'>>; games: Record<string, AnyGameRules> }>
   /** The end of the level's reflection and prayer (spec §3.3). */
   reflection: Reflection
   /**

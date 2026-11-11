@@ -1,12 +1,5 @@
+import { notLoaded } from '../../story-loading'
 import type { Episode, Level, WhereWhen } from '../../types'
-import { episode1 } from './episode-1'
-import { episode2 } from './episode-2'
-import { episode3 } from './episode-3'
-import { episode4 } from './episode-4'
-import { episode5 } from './episode-5'
-import { episode6 } from './episode-6'
-import { episode7 } from './episode-7'
-import { episode8 } from './episode-8'
 import { level12Music } from './music'
 import { level12Quiz } from './quiz'
 
@@ -15,9 +8,9 @@ import { level12Quiz } from './quiz'
  * the approved Level 12 script (docs/scripts/level-12-forty-years-in-the-wilderness.md).
  */
 
-/** An episode that's built: its written details, with its set and scenes. */
-function built(story: Pick<Episode, 'set' | 'scenes'>, fields: Omit<Episode, 'set' | 'scenes'>): Episode {
-  return { ...fields, ...story }
+/** An episode's written details. Its set and scenes come with the level's story (./story.ts), loaded when the level is played. */
+function built(fields: Omit<Episode, 'set' | 'scenes'>): Episode {
+  return { ...fields, ...notLoaded() }
 }
 
 const where = (when: string, places: string[], notes: [string, string][]): WhereWhen => ({
@@ -34,6 +27,7 @@ export const level12: Level = {
   passage: 'NUM 1:1-24:25',
   music: level12Music,
   quiz: level12Quiz,
+  story: () => import('./story'),
   // Kadesh, where the people camped for many years, then the road on, around Edom by Mount Hor
   // to the plains of Moab, across the Jordan from Jericho (Level 13 begins there).
   map: {
@@ -65,7 +59,7 @@ export const level12: Level = {
     },
   },
   episodes: [
-    built(episode1, {
+    built({
       id: 'l12-e1',
       number: 1,
       emblem: 'priestly-blessing',
@@ -80,7 +74,7 @@ export const level12: Level = {
       ]),
       read: ['NUM 6:22-27', 'NUM 9:15-23', 'NUM 10:11-36'],
     }),
-    built(episode2, {
+    built({
       id: 'l12-e2',
       number: 2,
       emblem: 'seventy-elders',
@@ -95,7 +89,7 @@ export const level12: Level = {
       ]),
       read: ['NUM 11:1-35'],
     }),
-    built(episode3, {
+    built({
       id: 'l12-e3',
       number: 3,
       emblem: 'cluster-of-grapes',
@@ -111,7 +105,7 @@ export const level12: Level = {
       ]),
       read: ['NUM 13:1-14:45'],
     }),
-    built(episode4, {
+    built({
       id: 'l12-e4',
       number: 4,
       emblem: 'rod-that-budded',
@@ -126,7 +120,7 @@ export const level12: Level = {
       ]),
       read: ['NUM 16:1-35', 'NUM 16:41-17:13'],
     }),
-    built(episode5, {
+    built({
       id: 'l12-e5',
       number: 5,
       emblem: 'water-from-the-rock',
@@ -142,7 +136,7 @@ export const level12: Level = {
       ]),
       read: ['NUM 20:1-29'],
     }),
-    built(episode6, {
+    built({
       id: 'l12-e6',
       number: 6,
       emblem: 'bronze-serpent',
@@ -157,7 +151,7 @@ export const level12: Level = {
       ]),
       read: ['NUM 21:4-9', 'JHN 3:14-16'],
     }),
-    built(episode7, {
+    built({
       id: 'l12-e7',
       number: 7,
       emblem: 'balaams-donkey',
@@ -172,7 +166,7 @@ export const level12: Level = {
       ]),
       read: ['NUM 22:1-41'],
     }),
-    built(episode8, {
+    built({
       id: 'l12-e8',
       number: 8,
       emblem: 'star-out-of-jacob',

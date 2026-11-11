@@ -1,11 +1,5 @@
+import { notLoaded } from '../../story-loading'
 import type { Episode, Level, WhereWhen } from '../../types'
-import { episode1 } from './episode-1'
-import { episode2 } from './episode-2'
-import { episode3 } from './episode-3'
-import { episode4 } from './episode-4'
-import { episode5 } from './episode-5'
-import { episode6 } from './episode-6'
-import { episode7 } from './episode-7'
 import { level2Music } from './music'
 import { level2Quiz } from './quiz'
 
@@ -14,9 +8,9 @@ import { level2Quiz } from './quiz'
  * (docs/scripts/level-02-noah-and-the-nations.md).
  */
 
-/** An episode that's built: its written details, with its set and scenes. */
-function built(story: Pick<Episode, 'set' | 'scenes'>, fields: Omit<Episode, 'set' | 'scenes'>): Episode {
-  return { ...fields, ...story }
+/** An episode's written details. Its set and scenes come with the level's story (./story.ts), loaded when the level is played. */
+function built(fields: Omit<Episode, 'set' | 'scenes'>): Episode {
+  return { ...fields, ...notLoaded() }
 }
 
 const where = (when: string, notes: [string, string][], places: string[] = []): WhereWhen => ({
@@ -35,6 +29,7 @@ export const level2: Level = {
   passage: 'GEN 6:1-11:32',
   music: level2Music,
   quiz: level2Quiz,
+  story: () => import('./story'),
   // The mountains of Ararat, where the ark came to rest.
   // Then the route of the nations and of Abram's family: Babel, then Ur (Level 3 begins in Haran).
   map: {
@@ -67,7 +62,7 @@ export const level2: Level = {
     },
   },
   episodes: [
-    built(episode1, {
+    built({
       id: 'l02-e1',
       number: 1,
       emblem: 'walk',
@@ -87,7 +82,7 @@ export const level2: Level = {
       ]),
       read: ['GEN 6:1-13'],
     }),
-    built(episode2, {
+    built({
       id: 'l02-e2',
       number: 2,
       emblem: 'ark',
@@ -102,7 +97,7 @@ export const level2: Level = {
       ]),
       read: ['GEN 6:14-7:5'],
     }),
-    built(episode3, {
+    built({
       id: 'l02-e3',
       number: 3,
       emblem: 'storm',
@@ -118,7 +113,7 @@ export const level2: Level = {
       ]),
       read: ['GEN 7:6-24'],
     }),
-    built(episode4, {
+    built({
       id: 'l02-e4',
       number: 4,
       emblem: 'olive-dove',
@@ -137,7 +132,7 @@ export const level2: Level = {
       ),
       read: ['GEN 8:1-19'],
     }),
-    built(episode5, {
+    built({
       id: 'l02-e5',
       number: 5,
       emblem: 'rainbow',
@@ -159,7 +154,7 @@ export const level2: Level = {
       ),
       read: ['GEN 8:20-9:29'],
     }),
-    built(episode6, {
+    built({
       id: 'l02-e6',
       number: 6,
       emblem: 'tower',
@@ -178,7 +173,7 @@ export const level2: Level = {
       ),
       read: ['GEN 10:1-11:9'],
     }),
-    built(episode7, {
+    built({
       id: 'l02-e7',
       number: 7,
       emblem: 'star',

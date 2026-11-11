@@ -1,6 +1,6 @@
 import { existsSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
-import { ALL_SCENES } from '../scene/registry'
+import { allScenes } from '../scene/registry'
 import manifest from './art-manifest.json'
 import { paperLayerHash, paperPropHash, pixelLayerHash } from './art-hashes'
 import { fnv1a } from '../engine/save/checksum'
@@ -10,6 +10,8 @@ import { heavenAndEarthSvg } from './paper-glass/backdrop/heaven-and-earth'
 import { drawHeavenAndEarth } from './pixel/backdrop/heaven-and-earth'
 import { paperLayers, paperProps } from './paper-glass/art'
 import { pixelLayers } from './pixel/art'
+
+const ALL_SCENES = await allScenes()
 
 // The finished game loads baked art. If art changes without `npm run bake`, these fail.
 const layerIds = [...new Set(ALL_SCENES.flatMap((s) => s.layers.map((l) => l.id)))]

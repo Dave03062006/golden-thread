@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import type { Position } from '../engine/save/types'
 import { demoScene } from '../scene/demo'
 
+import { loadStory, storyLoaded } from '../content/story-loading'
+
 type Catalog = typeof import('../content/catalog')
 
 /**
@@ -18,14 +20,22 @@ function describePosition(position: Position | null, content: Catalog | null = c
   if (!content) return 'In the story'
   const found = content.findScene(position.scene)
   if (!found) return 'Somewhere in the story'
-  return `Level ${found.level.number} · ${found.episode.title} · ${found.episode.scenes[found.index]!.title}`
+  // The scene's own title only once its level's story has been loaded.
+  const scene = found.episode.scenes[found.index]
+  return `Level ${found.level.number} · ${found.episode.title}${scene ? ` · ${scene.title}` : ''}`
 }
 
 /** Where a save is, filled in with the episode and scene names once the content has loaded. */
 export function Whereabouts({ position }: { position: Position | null }) {
   const [content, setContent] = useState(catalog)
+  const [, setLoaded] = useState(0)
   useEffect(() => {
     if (!content) void loading.then(setContent)
   }, [content])
+  // The scene's title comes with its level's story: load it (the level the player will most likely resume).
+  const level = content && position ? content.findScene(position.scene)?.level : undefined
+  useEffect(() => {
+    if (level && !storyLoaded(level)) void loadStory(level).then(() => setLoaded((n) => n + 1))
+  }, [level])
   return <>{describePosition(position, content)}</>
 }

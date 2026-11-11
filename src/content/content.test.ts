@@ -3,9 +3,13 @@ import { paperArtIndex } from '../styles/paper-glass/art'
 import { pixelArtIndex } from '../styles/pixel/art'
 import { parseReference } from './bible/books'
 import { VERSES } from './bible/verses'
-import { LEVELS } from './catalog'
+import { findScene, LEVELS } from './catalog'
+import { loadStory } from './story-loading'
 import { PLACES } from './geography'
 import { THREADS } from './threads'
+
+// Each level's story loads on demand (content/story-loading.ts); these checks need them all.
+await Promise.all(LEVELS.map(loadStory))
 
 // Content checks (spec §14): everything the story refers to must exist, in both
 // translations and in both art styles.
@@ -83,5 +87,31 @@ describe.each(built.map((e) => [e.id, e] as const))('episode %s', (_id, episode)
     const spot = episode.thread.spot
     const heights = [actors.get(spot)!.y, ...cues.filter((c) => c.target === `actor:${spot}` && c.to.y !== undefined).map((c) => c.to.y!)]
     expect(heights.filter((y) => y > 0.74)).toEqual([])
+  })
+})
+
+describe('scene ids', () => {
+  it('follow the pattern "<episode>-s<number>", which lets a scene be found before its story loads', () => {
+    const odd = LEVELS.flatMap((level) => level.episodes.flatMap((episode) => episode.scenes.filter((scene, i) => scene.id !== `${episode.id}-s${i + 1}`).map((scene) => scene.id)))
+    expect(odd).toEqual([])
+  })
+})
+
+describe('plays', () => {
+  it('come with the level that uses them, so a level plays once its own story is loaded', async () => {
+    const missing: string[] = []
+    for (const level of LEVELS) {
+      const { games } = await level.story!()
+      for (const episode of level.episodes) for (const scene of episode.scenes) for (const beat of scene.beats) if (beat.kind === 'play' && !games[beat.game]) missing.push(`${level.id}: ${beat.game}`)
+    }
+    expect(missing).toEqual([])
+  })
+})
+
+describe('findScene', () => {
+  it('finds a scene from its id alone', () => {
+    const found = findScene('l14-e3-s2')
+    expect([found?.level.id, found?.episode.id, found?.index]).toEqual(['l14', 'l14-e3', 1])
+    expect(findScene('nonsense')).toBeUndefined()
   })
 })

@@ -1,10 +1,6 @@
+import { notLoaded } from '../../story-loading'
 import type { Episode, Level, WhereWhen } from '../../types'
 import { episode1 } from './episode-1'
-import { episode2 } from './episode-2'
-import { episode3 } from './episode-3'
-import { episode4 } from './episode-4'
-import { episode5 } from './episode-5'
-import { episode6 } from './episode-6'
 import { level1Music } from './music'
 import { level1Quiz } from './quiz'
 
@@ -13,9 +9,9 @@ import { level1Quiz } from './quiz'
  * (docs/scripts/level-01-creation-and-fall.md). All six episodes are built.
  */
 
-/** An episode that's built: its written details, with its set and scenes. */
-function built(story: Pick<Episode, 'set' | 'scenes'>, fields: Omit<Episode, 'set' | 'scenes'>): Episode {
-  return { ...fields, ...story }
+/** An episode's written details. Its set and scenes come with the level's story (./story.ts), loaded when the level is played. */
+function built(fields: Omit<Episode, 'set' | 'scenes'>): Episode {
+  return { ...fields, ...notLoaded() }
 }
 
 const where = (when: string, notes: [string, string][], places: string[] = []): WhereWhen => ({
@@ -32,6 +28,7 @@ export const level1: Level = {
   passage: 'GEN 1:1-5:32',
   music: level1Music,
   quiz: level1Quiz,
+  story: () => import('./story'),
   // The region around Eden, at the head of the Persian Gulf, where tradition looks for it.
   map: { at: { lat: 31.2, lon: 47.0 }, label: 'Eden' },
   // From the approved script's "Reflection and prayer".
@@ -56,7 +53,7 @@ export const level1: Level = {
   },
   episodes: [
     episode1,
-    built(episode2, {
+    built({
       id: 'l01-e2',
       number: 2,
       emblem: 'garden',
@@ -78,7 +75,7 @@ export const level1: Level = {
       ),
       read: ['GEN 2:4-25'],
     }),
-    built(episode3, {
+    built({
       id: 'l01-e3',
       number: 3,
       emblem: 'fruit',
@@ -95,7 +92,7 @@ export const level1: Level = {
       ]),
       read: ['GEN 3:1-13'],
     }),
-    built(episode4, {
+    built({
       id: 'l01-e4',
       number: 4,
       emblem: 'promise',
@@ -112,7 +109,7 @@ export const level1: Level = {
       ]),
       read: ['GEN 3:14-24'],
     }),
-    built(episode5, {
+    built({
       id: 'l01-e5',
       number: 5,
       emblem: 'lamb',
@@ -131,7 +128,7 @@ export const level1: Level = {
       ),
       read: ['GEN 4:1-16'],
     }),
-    built(episode6, {
+    built({
       id: 'l01-e6',
       number: 6,
       emblem: 'family-tree',

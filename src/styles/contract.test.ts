@@ -1,8 +1,10 @@
 import { describe, expect, it } from 'vitest'
 import { artIdsOf } from '../scene/evaluate'
-import { ALL_SCENES } from '../scene/registry'
+import { allScenes } from '../scene/registry'
 import { paperArtIndex, paperLayerSets, paperPropSets } from './paper-glass/art'
 import { pixelArtIndex, pixelLayerSets, pixelPropSets } from './pixel/art'
+
+const ALL_SCENES = await allScenes()
 
 // Every scene may only use art that BOTH styles provide (spec §13.4).
 describe.each(ALL_SCENES.map((scene) => [scene.id, scene] as const))('scene %s', (_id, scene) => {

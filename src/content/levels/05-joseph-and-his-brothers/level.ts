@@ -1,11 +1,5 @@
+import { notLoaded } from '../../story-loading'
 import type { Episode, Level, WhereWhen } from '../../types'
-import { episode1 } from './episode-1'
-import { episode2 } from './episode-2'
-import { episode3 } from './episode-3'
-import { episode4 } from './episode-4'
-import { episode5 } from './episode-5'
-import { episode6 } from './episode-6'
-import { episode7 } from './episode-7'
 import { level5Music } from './music'
 import { level5Quiz } from './quiz'
 
@@ -14,9 +8,9 @@ import { level5Quiz } from './quiz'
  * (docs/scripts/level-05-joseph-and-his-brothers.md).
  */
 
-/** An episode that's built: its written details, with its set and scenes. */
-function built(story: Pick<Episode, 'set' | 'scenes'>, fields: Omit<Episode, 'set' | 'scenes'>): Episode {
-  return { ...fields, ...story }
+/** An episode's written details. Its set and scenes come with the level's story (./story.ts), loaded when the level is played. */
+function built(fields: Omit<Episode, 'set' | 'scenes'>): Episode {
+  return { ...fields, ...notLoaded() }
 }
 
 const where = (notes: [string, string][], places: string[] = []): WhereWhen => ({
@@ -33,6 +27,7 @@ export const level5: Level = {
   passage: 'GEN 37:1-50:26',
   music: level5Music,
   quiz: level5Quiz,
+  story: () => import('./story'),
   // Hebron, where Jacob sent Joseph from; then Joseph's road north to Shechem and Dothan,
   // down into Egypt, and his family's road to Goshen.
   map: {
@@ -68,7 +63,7 @@ export const level5: Level = {
     },
   },
   episodes: [
-    built(episode1, {
+    built({
       id: 'l05-e1',
       number: 1,
       emblem: 'silver',
@@ -86,7 +81,7 @@ export const level5: Level = {
       ),
       read: ['GEN 37:1-36'],
     }),
-    built(episode2, {
+    built({
       id: 'l05-e2',
       number: 2,
       emblem: 'prison-window',
@@ -105,7 +100,7 @@ export const level5: Level = {
       ),
       read: ['GEN 39:1-40:23'],
     }),
-    built(episode3, {
+    built({
       id: 'l05-e3',
       number: 3,
       emblem: 'grain-ears',
@@ -123,7 +118,7 @@ export const level5: Level = {
       ),
       read: ['GEN 41:1-57'],
     }),
-    built(episode4, {
+    built({
       id: 'l05-e4',
       number: 4,
       emblem: 'grain-sack',
@@ -141,7 +136,7 @@ export const level5: Level = {
       ),
       read: ['GEN 42:1-43:34'],
     }),
-    built(episode5, {
+    built({
       id: 'l05-e5',
       number: 5,
       emblem: 'silver-cup',
@@ -158,7 +153,7 @@ export const level5: Level = {
       ),
       read: ['GEN 44:1-34'],
     }),
-    built(episode6, {
+    built({
       id: 'l05-e6',
       number: 6,
       emblem: 'open-arms',
@@ -176,7 +171,7 @@ export const level5: Level = {
       ),
       read: ['GEN 45:1-46:7', 'GEN 46:28-30'],
     }),
-    built(episode7, {
+    built({
       id: 'l05-e7',
       number: 7,
       emblem: 'scepter',

@@ -37,7 +37,7 @@ export function CeremonyScreen() {
   useEffect(() => {
     if (!next) return
     const episode = next.episodes[0]!
-    void checkpoint({ level: next.id, episode: episode.id, scene: episode.scenes[0]!.id })
+    void checkpoint({ level: next.id, episode: episode.id, scene: `${episode.id}-s1` })
   }, [next, checkpoint])
   // Once the window is complete, the way on takes the focus (and comes into view on small screens).
   useEffect(() => {

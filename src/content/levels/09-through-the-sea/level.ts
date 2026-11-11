@@ -1,11 +1,5 @@
+import { notLoaded } from '../../story-loading'
 import type { Episode, Level, WhereWhen } from '../../types'
-import { episode1 } from './episode-1'
-import { episode2 } from './episode-2'
-import { episode3 } from './episode-3'
-import { episode4 } from './episode-4'
-import { episode5 } from './episode-5'
-import { episode6 } from './episode-6'
-import { episode7 } from './episode-7'
 import { level9Music } from './music'
 import { level9Quiz } from './quiz'
 
@@ -14,9 +8,9 @@ import { level9Quiz } from './quiz'
  * (docs/scripts/level-09-through-the-sea.md).
  */
 
-/** An episode that's built: its written details, with its set and scenes. */
-function built(story: Pick<Episode, 'set' | 'scenes'>, fields: Omit<Episode, 'set' | 'scenes'>): Episode {
-  return { ...fields, ...story }
+/** An episode's written details. Its set and scenes come with the level's story (./story.ts), loaded when the level is played. */
+function built(fields: Omit<Episode, 'set' | 'scenes'>): Episode {
+  return { ...fields, ...notLoaded() }
 }
 
 const where = (notes: [string, string][], places: string[]): WhereWhen => ({
@@ -33,6 +27,7 @@ export const level9: Level = {
   passage: 'EXO 14:1-18:27',
   music: level9Music,
   quiz: level9Quiz,
+  story: () => import('./story'),
   // The sea where the people crossed, and their road through the wilderness to the mountain of God.
   map: {
     at: { lat: 29.95, lon: 32.55 },
@@ -72,7 +67,7 @@ export const level9: Level = {
     },
   },
   episodes: [
-    built(episode1, {
+    built({
       id: 'l09-e1',
       number: 1,
       emblem: 'stand-firm',
@@ -90,7 +85,7 @@ export const level9: Level = {
       ),
       read: ['EXO 14:1-14', 'EXO 14:19-20'],
     }),
-    built(episode2, {
+    built({
       id: 'l09-e2',
       number: 2,
       emblem: 'parted-sea',
@@ -109,7 +104,7 @@ export const level9: Level = {
       ),
       read: ['EXO 14:15-31'],
     }),
-    built(episode3, {
+    built({
       id: 'l09-e3',
       number: 3,
       emblem: 'timbrel',
@@ -127,7 +122,7 @@ export const level9: Level = {
       ),
       read: ['EXO 15:1-21'],
     }),
-    built(episode4, {
+    built({
       id: 'l09-e4',
       number: 4,
       emblem: 'manna-jar',
@@ -146,7 +141,7 @@ export const level9: Level = {
       ),
       read: ['EXO 15:22-27', 'EXO 16:1-35'],
     }),
-    built(episode5, {
+    built({
       id: 'l09-e5',
       number: 5,
       emblem: 'struck-rock',
@@ -164,7 +159,7 @@ export const level9: Level = {
       ),
       read: ['EXO 17:1-7'],
     }),
-    built(episode6, {
+    built({
       id: 'l09-e6',
       number: 6,
       emblem: 'raised-hands',
@@ -183,7 +178,7 @@ export const level9: Level = {
       ),
       read: ['EXO 17:8-16'],
     }),
-    built(episode7, {
+    built({
       id: 'l09-e7',
       number: 7,
       emblem: 'shared-load',

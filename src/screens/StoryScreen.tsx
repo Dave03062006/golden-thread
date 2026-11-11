@@ -4,13 +4,14 @@ import { launch } from '../app/params'
 import { useApp } from '../app/store'
 import { formatReference } from '../content/bible/books'
 import { LEVELS, findEpisode, findScene, nextEpisode, nextLevel, stillBeingMade } from '../content/catalog'
+import { loadStory, storyLoaded } from '../content/story-loading'
 import type { Episode, Level } from '../content/types'
 import { gameClock } from '../engine/clock'
 import { createInput } from '../engine/input'
 import type { Position } from '../engine/save/types'
 import { useSettings } from '../engine/settings'
 import { READING, deviceVoices, pickVoice } from '../engine/voice'
-import { GAMES } from '../minigames/registry'
+import { GAMES } from '../minigames/live'
 import { GameRunner } from '../minigames/runner'
 import { Director, historyUpTo, type StoryPosition } from '../scene/director'
 import type { SceneFrame } from '../scene/evaluate'
@@ -87,6 +88,24 @@ type Panel = 'pause' | 'history' | 'where' | 'thread' | 'end' | null
  * art style can be switched at any moment without losing the place.
  */
 export function StoryScreen() {
+  const [ready, setReady] = useState(() => levelsToPlay().every(storyLoaded))
+  useEffect(() => {
+    if (!ready) void Promise.all(levelsToPlay().map(loadStory)).then(() => setReady(true))
+  }, [ready])
+  return ready ? <StoryPlayer /> : <main className="story-loading" aria-busy="true" aria-label="The story" />
+}
+
+/** The level about to be played, and the one after it (the story may go straight on to it). Their stories load first. */
+function levelsToPlay(): Level[] {
+  const { replay, save } = useApp.getState()
+  const sceneId = launchScene ?? save?.position?.scene
+  const found = replay ? findEpisode(replay.episode) : sceneId ? findScene(sceneId) : undefined
+  const level = found?.level ?? LEVELS[0]!
+  const next = nextLevel(level.id)
+  return next ? [level, next] : [level]
+}
+
+function StoryPlayer() {
   const save = useApp((s) => s.save)
   const checkpoint = useApp((s) => s.checkpoint)
   const changeSave = useApp((s) => s.changeSave)

@@ -1,9 +1,5 @@
+import { notLoaded } from '../../story-loading'
 import type { Episode, Level, WhereWhen } from '../../types'
-import { episode1 } from './episode-1'
-import { episode2 } from './episode-2'
-import { episode3 } from './episode-3'
-import { episode4 } from './episode-4'
-import { episode5 } from './episode-5'
 import { level16Music } from './music'
 import { level16Quiz } from './quiz'
 
@@ -12,9 +8,9 @@ import { level16Quiz } from './quiz'
  * The third and last level of Age V, the Promised Land.
  */
 
-/** An episode that's built: its written details, with its set and scenes. */
-function built(story: Pick<Episode, 'set' | 'scenes'>, fields: Omit<Episode, 'set' | 'scenes'>): Episode {
-  return { ...fields, ...story }
+/** An episode's written details. Its set and scenes come with the level's story (./story.ts), loaded when the level is played. */
+function built(fields: Omit<Episode, 'set' | 'scenes'>): Episode {
+  return { ...fields, ...notLoaded() }
 }
 
 const where = (places: string[], notes: [string, string][]): WhereWhen => ({
@@ -31,6 +27,7 @@ export const level16: Level = {
   passage: 'RUT 1:1-4:22',
   music: level16Music,
   quiz: level16Quiz,
+  story: () => import('./story'),
   // From the plains of Moab, across the Jordan, home to Bethlehem.
   map: {
     at: { lat: 31.85, lon: 35.6 },
@@ -59,7 +56,7 @@ export const level16: Level = {
     },
   },
   episodes: [
-    built(episode1, {
+    built({
       id: 'l16-e1',
       number: 1,
       emblem: 'road-from-moab',
@@ -75,7 +72,7 @@ export const level16: Level = {
       ]),
       read: ['RUT 1:1-7'],
     }),
-    built(episode2, {
+    built({
       id: 'l16-e2',
       number: 2,
       emblem: 'where-you-go',
@@ -90,7 +87,7 @@ export const level16: Level = {
       ]),
       read: ['RUT 1:8-22'],
     }),
-    built(episode3, {
+    built({
       id: 'l16-e3',
       number: 3,
       emblem: 'sheaf-of-barley',
@@ -106,7 +103,7 @@ export const level16: Level = {
       ]),
       read: ['RUT 2:1-23'],
     }),
-    built(episode4, {
+    built({
       id: 'l16-e4',
       number: 4,
       emblem: 'six-measures',
@@ -122,7 +119,7 @@ export const level16: Level = {
       ]),
       read: ['RUT 3:1-18'],
     }),
-    built(episode5, {
+    built({
       id: 'l16-e5',
       number: 5,
       emblem: 'sandal-at-the-gate',

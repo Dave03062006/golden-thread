@@ -1,12 +1,5 @@
+import { notLoaded } from '../../story-loading'
 import type { Episode, Level, WhereWhen } from '../../types'
-import { episode1 } from './episode-1'
-import { episode2 } from './episode-2'
-import { episode3 } from './episode-3'
-import { episode4 } from './episode-4'
-import { episode5 } from './episode-5'
-import { episode6 } from './episode-6'
-import { episode7 } from './episode-7'
-import { episode8 } from './episode-8'
 import { level18Music } from './music'
 import { level18Quiz } from './quiz'
 
@@ -15,9 +8,9 @@ import { level18Quiz } from './quiz'
  * script (docs/scripts/level-18-david-the-shepherd-king.md). The second level of Age VI.
  */
 
-/** An episode that's built: its written details, with its set and scenes. */
-function built(story: Pick<Episode, 'set' | 'scenes'>, fields: Omit<Episode, 'set' | 'scenes'>): Episode {
-  return { ...fields, ...story }
+/** An episode's written details. Its set and scenes come with the level's story (./story.ts), loaded when the level is played. */
+function built(fields: Omit<Episode, 'set' | 'scenes'>): Episode {
+  return { ...fields, ...notLoaded() }
 }
 
 const where = (places: string[], notes: [string, string][]): WhereWhen => ({
@@ -34,6 +27,7 @@ export const level18: Level = {
   passage: '1SA 16:1-2SA 7:29',
   music: level18Music,
   quiz: level18Quiz,
+  story: () => import('./story'),
   // From Bethlehem to the valley of Elah, the caves of Adullam and En-gedi, Hebron, and Jerusalem.
   map: {
     at: { lat: 31.7, lon: 35.2 },
@@ -65,7 +59,7 @@ export const level18: Level = {
     },
   },
   episodes: [
-    built(episode1, {
+    built({
       id: 'l18-e1',
       number: 1,
       emblem: 'horn-of-oil',
@@ -81,7 +75,7 @@ export const level18: Level = {
       ]),
       read: ['1SA 16:1-23'],
     }),
-    built(episode2, {
+    built({
       id: 'l18-e2',
       number: 2,
       emblem: 'sling-and-stones',
@@ -98,7 +92,7 @@ export const level18: Level = {
       ]),
       read: ['1SA 17:1-51'],
     }),
-    built(episode3, {
+    built({
       id: 'l18-e3',
       number: 3,
       emblem: 'robe-and-bow',
@@ -113,7 +107,7 @@ export const level18: Level = {
       ]),
       read: ['1SA 18:1-16', '1SA 20:1-42'],
     }),
-    built(episode4, {
+    built({
       id: 'l18-e4',
       number: 4,
       emblem: 'bread-of-the-presence',
@@ -129,7 +123,7 @@ export const level18: Level = {
       ]),
       read: ['1SA 21:1-6', '1SA 22:1-2', '1SA 23:14-18'],
     }),
-    built(episode5, {
+    built({
       id: 'l18-e5',
       number: 5,
       emblem: 'corner-of-the-robe',
@@ -144,7 +138,7 @@ export const level18: Level = {
       ]),
       read: ['1SA 24:1-22', '1SA 26:1-25'],
     }),
-    built(episode6, {
+    built({
       id: 'l18-e6',
       number: 6,
       emblem: 'banner-over-zion',
@@ -161,7 +155,7 @@ export const level18: Level = {
       ]),
       read: ['1SA 31:1-13', '2SA 1:17-27', '2SA 5:1-10'],
     }),
-    built(episode7, {
+    built({
       id: 'l18-e7',
       number: 7,
       emblem: 'david-dancing',
@@ -178,7 +172,7 @@ export const level18: Level = {
       ]),
       read: ['2SA 6:1-23'],
     }),
-    built(episode8, {
+    built({
       id: 'l18-e8',
       number: 8,
       emblem: 'house-for-ever',

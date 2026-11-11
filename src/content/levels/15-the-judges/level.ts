@@ -1,10 +1,5 @@
+import { notLoaded } from '../../story-loading'
 import type { Episode, Level, WhereWhen } from '../../types'
-import { episode1 } from './episode-1'
-import { episode2 } from './episode-2'
-import { episode3 } from './episode-3'
-import { episode4 } from './episode-4'
-import { episode5 } from './episode-5'
-import { episode6 } from './episode-6'
 import { level15Music } from './music'
 import { level15Quiz } from './quiz'
 
@@ -13,9 +8,9 @@ import { level15Quiz } from './quiz'
  * script (docs/scripts/level-15-the-judges.md). The second level of Age V, the Promised Land.
  */
 
-/** An episode that's built: its written details, with its set and scenes. */
-function built(story: Pick<Episode, 'set' | 'scenes'>, fields: Omit<Episode, 'set' | 'scenes'>): Episode {
-  return { ...fields, ...story }
+/** An episode's written details. Its set and scenes come with the level's story (./story.ts), loaded when the level is played. */
+function built(fields: Omit<Episode, 'set' | 'scenes'>): Episode {
+  return { ...fields, ...notLoaded() }
 }
 
 const where = (places: string[], notes: [string, string][]): WhereWhen => ({
@@ -32,6 +27,7 @@ export const level15: Level = {
   passage: 'JDG 2:6-21:25',
   music: level15Music,
   quiz: level15Quiz,
+  story: () => import('./story'),
   // The places of the judges across the land, from Mount Tabor in the north to Gaza on the coast.
   map: {
     at: { lat: 32.69, lon: 35.39 },
@@ -65,7 +61,7 @@ export const level15: Level = {
     },
   },
   episodes: [
-    built(episode1, {
+    built({
       id: 'l15-e1',
       number: 1,
       emblem: 'circle-of-the-judges',
@@ -81,7 +77,7 @@ export const level15: Level = {
       ]),
       read: ['JDG 2:6-3:11'],
     }),
-    built(episode2, {
+    built({
       id: 'l15-e2',
       number: 2,
       emblem: 'palm-of-deborah',
@@ -98,7 +94,7 @@ export const level15: Level = {
       ]),
       read: ['JDG 4:1-24', 'JDG 5:1-31'],
     }),
-    built(episode3, {
+    built({
       id: 'l15-e3',
       number: 3,
       emblem: 'torches-and-jars',
@@ -116,7 +112,7 @@ export const level15: Level = {
       ]),
       read: ['JDG 6:1-8:28'],
     }),
-    built(episode4, {
+    built({
       id: 'l15-e4',
       number: 4,
       emblem: 'timbrel-of-mizpah',
@@ -134,7 +130,7 @@ export const level15: Level = {
       ]),
       read: ['JDG 10:6-11:40'],
     }),
-    built(episode5, {
+    built({
       id: 'l15-e5',
       number: 5,
       emblem: 'two-pillars',
@@ -152,7 +148,7 @@ export const level15: Level = {
       ]),
       read: ['JDG 13:1-25', 'JDG 14:1-18', 'JDG 16:4-31'],
     }),
-    built(episode6, {
+    built({
       id: 'l15-e6',
       number: 6,
       emblem: 'lamp-in-bethlehem',

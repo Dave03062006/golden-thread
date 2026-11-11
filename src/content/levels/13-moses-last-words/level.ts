@@ -1,9 +1,5 @@
+import { notLoaded } from '../../story-loading'
 import type { Episode, Level, WhereWhen } from '../../types'
-import { episode1 } from './episode-1'
-import { episode2 } from './episode-2'
-import { episode3 } from './episode-3'
-import { episode4 } from './episode-4'
-import { episode5 } from './episode-5'
 import { level13Music } from './music'
 import { level13Quiz } from './quiz'
 
@@ -12,9 +8,9 @@ import { level13Quiz } from './quiz'
  * script (docs/scripts/level-13-moses-last-words.md). It completes Age IV.
  */
 
-/** An episode that's built: its written details, with its set and scenes. */
-function built(story: Pick<Episode, 'set' | 'scenes'>, fields: Omit<Episode, 'set' | 'scenes'>): Episode {
-  return { ...fields, ...story }
+/** An episode's written details. Its set and scenes come with the level's story (./story.ts), loaded when the level is played. */
+function built(fields: Omit<Episode, 'set' | 'scenes'>): Episode {
+  return { ...fields, ...notLoaded() }
 }
 
 const where = (places: string[], notes: [string, string][]): WhereWhen => ({
@@ -31,6 +27,7 @@ export const level13: Level = {
   passage: 'DEU 1:1-34:12',
   music: level13Music,
   quiz: level13Quiz,
+  story: () => import('./story'),
   // Mount Nebo, above the plains of Moab, where Moses saw the land and died.
   map: { at: { lat: 31.77, lon: 35.73 }, label: 'Mount Nebo' },
   // From the approved script's "Reflection and prayer".
@@ -55,7 +52,7 @@ export const level13: Level = {
     },
   },
   episodes: [
-    built(episode1, {
+    built({
       id: 'l13-e1',
       number: 1,
       emblem: 'remember-the-way',
@@ -70,7 +67,7 @@ export const level13: Level = {
       ]),
       read: ['DEU 8:1-18'],
     }),
-    built(episode2, {
+    built({
       id: 'l13-e2',
       number: 2,
       emblem: 'shema',
@@ -85,7 +82,7 @@ export const level13: Level = {
       ]),
       read: ['DEU 6:1-25'],
     }),
-    built(episode3, {
+    built({
       id: 'l13-e3',
       number: 3,
       emblem: 'hands-on-joshua',
@@ -100,7 +97,7 @@ export const level13: Level = {
       ]),
       read: ['DEU 18:15-19', 'DEU 31:1-8', 'DEU 31:23-29'],
     }),
-    built(episode4, {
+    built({
       id: 'l13-e4',
       number: 4,
       emblem: 'two-roads',
@@ -115,7 +112,7 @@ export const level13: Level = {
       ]),
       read: ['DEU 30:11-20'],
     }),
-    built(episode5, {
+    built({
       id: 'l13-e5',
       number: 5,
       emblem: 'mount-nebo',

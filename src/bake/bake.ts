@@ -1,4 +1,4 @@
-import { ALL_SCENES } from '../scene/registry'
+import { allScenes } from '../scene/registry'
 import { paperLayerHash, paperPropHash, pixelLayerHash, pixelsHash } from '../styles/art-hashes'
 import {
   BACKDROP_WIDTHS,
@@ -52,6 +52,7 @@ async function encode(canvas: HTMLCanvasElement, quality: 0.9 | 1 = 0.9): Promis
 async function bake(): Promise<{ files: BakedFile[]; manifest: ArtManifest }> {
   const files: BakedFile[] = []
   const manifest: ArtManifest = { paperLayers: {}, paperProps: {}, pixelLayers: {}, backdrop: { paper: '', pixel: '' } }
+  const ALL_SCENES = await allScenes()
   const layerIds = new Set(ALL_SCENES.flatMap((scene) => scene.layers.map((l) => l.id)))
   const propIds = new Set(ALL_SCENES.flatMap((scene) => scene.actors.map((a) => a.prop)))
 
