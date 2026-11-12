@@ -6149,6 +6149,191 @@ export const VERSES: Record<string, Verse> = {
     rsv: 'But you have come to Mount Zion and to the city of the living God, the heavenly Jerusalem, and to innumerable angels in festal gathering,',
     dra: 'But you are come to mount Sion, and to the city of the living God, the heavenly Jerusalem, and to the company of many thousands of angels,',
   },
+  // Level 19 · David's Sin and Repentance
+  '2SA 11:1': {
+    rsv: 'In the spring of the year, the time when kings go forth to battle, David sent Joab, and his servants with him, and all Israel; and they ravaged the Ammonites, and besieged Rabbah. But David remained at Jerusalem.',
+    dra: 'And it came to pass at the return of the year, at the time when kings go forth to war, that David sent Joab and his servants with him, and all Israel, and they spoiled the children of Ammon, and besieged Rabba: but David remained in Jerusalem.',
+  },
+  '2SA 11:3': {
+    rsv: 'And David sent and inquired about the woman. And one said, “Is not this Bathsheba, the daughter of Eliam, the wife of Uriah the Hittite?”',
+    dra: 'And the king sent, and inquired who the woman was. And it was told him, that she was Bethsabee the daughter of Eliam, the wife of Urias the Hethite.',
+  },
+  '2SA 11:9': {
+    rsv: 'But Uriah slept at the door of the king’s house with all the servants of his lord, and did not go down to his house.',
+    dra: 'But Urias slept before the gate of the king’s house, with the other servants of his lord, and went not down to his own house.',
+  },
+  '2SA 11:14': {
+    rsv: 'In the morning David wrote a letter to Joab, and sent it by the hand of Uriah.',
+    dra: 'And when the morning was come, David wrote a letter to Joab: and sent it by the hand of Urias,',
+  },
+  '2SA 11:27': {
+    rsv: 'And when the mourning was over, David sent and brought her to his house, and she became his wife, and bore him a son. But the thing that David had done displeased the LORD.',
+    dra: 'And the mourning being over, David sent and brought her into his house, and she became his wife, and she bore him a son: and this thing which David had done, was displeasing to the Lord.',
+  },
+  '2SA 12:1': {
+    rsv: 'And the LORD sent Nathan to David. He came to him, and said to him, “There were two men in a certain city, the one rich and the other poor.',
+    dra: 'And the Lord sent Nathan to David: and when he was come to him, he said to him: There were two men in one city, the one rich, and the other poor.',
+  },
+  '2SA 12:2': {
+    rsv: 'The rich man had very many flocks and herds;',
+    dra: 'The rich man had exceeding many sheep and oxen.',
+  },
+  '2SA 12:3': {
+    rsv: 'but the poor man had nothing but one little ewe lamb, which he had bought. And he brought it up, and it grew up with him and with his children; it used to eat of his morsel, and drink from his cup, and lie in his bosom, and it was like a daughter to him.',
+    dra: 'But the poor man had nothing at all but one little ewe lamb, which he had bought and nourished up, and which had grown up in his house together with his children, eating of his bread, and drinking of his cup, and sleeping in his bosom: and it was unto him as a daughter.',
+  },
+  '2SA 12:4': {
+    rsv: 'Now there came a traveler to the rich man, and he was unwilling to take one of his own flock or herd to prepare for the wayfarer who had come to him, but he took the poor man’s lamb, and prepared it for the man who had come to him.”',
+    dra: 'And when a certain stranger was come to the rich man, he spared to take of his own sheep and oxen, to make a feast for that stranger, who was come to him, but took the poor man’s ewe, and dressed it for the man that was come to him.',
+  },
+  '2SA 12:5': {
+    rsv: 'Then David’s anger was greatly kindled against the man; and he said to Nathan, “As the LORD lives, the man who has done this deserves to die;',
+    dra: 'And David’s anger being exceedingly kindled against that man, he said to Nathan: As the Lord liveth, the man that hath done this is a child of death.',
+  },
+  '2SA 12:7': {
+    rsv: 'Nathan said to David, “You are the man. Thus says the LORD, the God of Israel, ‘I anointed you king over Israel, and I delivered you out of the hand of Saul;',
+    dra: 'And Nathan said to David: Thou art the man. Thus saith the Lord the God of Israel: I anointed thee king over Israel, and I delivered thee from the hand of Saul,',
+  },
+  '2SA 12:13': {
+    rsv: 'David said to Nathan, “I have sinned against the LORD.” And Nathan said to David, “The LORD also has put away your sin; you shall not die.',
+    dra: 'And David said to Nathan: I have sinned against the Lord. And Nathan said to David: The Lord also hath taken away thy sin: thou shalt not die.',
+  },
+  '2SA 12:16': {
+    rsv: 'David therefore besought God for the child; and David fasted, and went in and lay all night upon the ground.',
+    dra: 'And David besought the Lord for the child: and David kept a fast, and going in by himself lay upon the ground.',
+  },
+  '2SA 15:6': {
+    rsv: 'Thus Absalom did to all of Israel who came to the king for judgment; so Absalom stole the hearts of the men of Israel.',
+    dra: 'And this he did to all Israel that came for judgment, to be heard by the king, and he enticed the hearts of the men of Israel.',
+  },
+  '2SA 15:13': {
+    rsv: 'And a messenger came to David, saying, “The hearts of the men of Israel have gone after Absalom.”',
+    dra: 'And there came a messenger to David, saying: All Israel with their whole heart followeth Absalom.',
+  },
+  '2SA 15:23': {
+    rsv: 'And all the country wept aloud as all the people passed by, and the king crossed the brook Kidron, and all the people passed on toward the wilderness.',
+    dra: 'And they all wept with a loud voice, and all the people passed over: the king also himself went over the brook Cedron, and all the people marched towards the way that looketh to the desert.',
+  },
+  '2SA 15:25': {
+    rsv: 'Then the king said to Zadok, “Carry the ark of God back into the city. If I find favor in the eyes of the LORD, he will bring me back and let me see both it and his habitation;',
+    dra: 'And the king said to Sadoc: Carry back the ark of God into the city: if I shall find grace in the sight of the Lord, he will bring me again, and he will shew me it, and his tabernacle.',
+  },
+  '2SA 15:26': {
+    rsv: 'but if he says, ‘I have no pleasure in you,’ behold, here I am, let him do to me what seems good to him.”',
+    dra: 'But if he shall say to me: Thou pleasest me not: I am ready, let him do that which is good before him.',
+  },
+  '2SA 15:30': {
+    rsv: 'But David went up the ascent of the Mount of Olives, weeping as he went, barefoot and with his head covered; and all the people who were with him covered their heads, and they went up, weeping as they went.',
+    dra: 'But David went up by the ascent of mount Olivet, going up and weeping, walking barefoot, and with his head covered, and all the people that were with them, went up with their heads covered weeping.',
+  },
+  '2SA 18:5': {
+    rsv: 'And the king ordered Joab and Abishai and Ittai, “Deal gently for my sake with the young man Absalom.” And all the people heard when the king gave orders to all the commanders about Absalom.',
+    dra: 'And the king commanded Joab, and Abisai, and Ethai, saying: Save me the boy Absalom. And all the people heard the king giving charge to all the princes concerning Absalom.',
+  },
+  '2SA 18:33': {
+    rsv: 'And the king was deeply moved, and went up to the chamber over the gate, and wept; and as he went, he said, “O my son Absalom, my son, my son Absalom! Would I had died instead of you, O Absalom, my son, my son!”',
+    dra: 'The king therefore being much moved, went up to the high chamber over the gate, and wept. And as he went he spoke in this manner: My son Absalom, Absalom my son: would to God that I might die for thee, Absalom my son, my son Absalom.',
+  },
+  '2SA 22:1': {
+    rsv: 'And David spoke to the LORD the words of this song on the day when the LORD delivered him from the hand of all his enemies, and from the hand of Saul.',
+    dra: 'And David spoke to the Lord the words of this canticle, in the day that the Lord delivered him out of the hand of all his enemies, and out of the hand of Saul,',
+  },
+  '2SA 22:2': {
+    rsv: 'He said, “The LORD is my rock, and my fortress, and my deliverer,',
+    dra: 'And he said: The Lord is my rock, and my strength, and my saviour.',
+  },
+  '2SA 22:20': {
+    rsv: 'He brought me forth into a broad place; he delivered me, because he delighted in me.',
+    dra: 'And he brought me forth into a large place, he delivered me, because I pleased him.',
+  },
+  '2SA 22:29': {
+    rsv: 'Yea, thou art my lamp, O LORD, and my God lightens my darkness.',
+    dra: 'For thou art my lamp, O Lord: and thou, O Lord, wilt enlighten my darkness.',
+  },
+  '2SA 23:1': {
+    rsv: 'Now these are the last words of David: The oracle of David, the son of Jesse, the oracle of the man who was raised on high, the anointed of the God of Jacob, the sweet psalmist of Israel:',
+    dra: 'Now these are David’s last words. David the son of Isai said: The man to whom it was appointed concerning the Christ of the God of Jacob, the excellent psalmist of Israel said:',
+  },
+  '2SA 23:3': {
+    rsv: 'The God of Israel has spoken, the Rock of Israel has said to me: When one rules justly over men, ruling in the fear of God,',
+    dra: 'The God of Israel said to me, the strong one of Israel spoke, the ruler of men, the just ruler in the fear of God.',
+  },
+  '2SA 23:4': {
+    rsv: 'he dawns on them like the morning light, like the sun shining forth upon a cloudless morning, like rain that makes grass to sprout from the earth.',
+    dra: 'As the light of the morning, when the sun riseth, shineth in the morning without clouds, and as the grass springeth out of the earth by rain.',
+  },
+  '2SA 23:5': {
+    rsv: 'Yea, does not my house stand so with God? For he has made with me an everlasting covenant, ordered in all things and secure. For will he not cause to prosper all my help and my desire?',
+    dra: 'Neither is my house so great with God, that he should make with me an eternal covenant, firm in all things and assured. For he is all my salvation, and all my will: neither is there ought thereof that springeth not up.',
+  },
+  '2SA 24:10': {
+    rsv: 'But David’s heart smote him after he had numbered the people. And David said to the LORD, “I have sinned greatly in what I have done. But now, O LORD, I pray thee, take away the iniquity of thy servant; for I have done very foolishly.”',
+    dra: 'But David’s heart struck him, after the people were numbered: and David said to the Lord: I have sinned very much in what I have done: but I pray thee, O Lord, to take away the iniquity of thy servant, because I have done exceeding foolishly.',
+  },
+  '2SA 24:17': {
+    rsv: 'Then David spoke to the LORD when he saw the angel who was smiting the people, and said, “Lo, I have sinned, and I have done wickedly; but these sheep, what have they done? Let thy hand, I pray thee, be against me and against my father’s house.”',
+    dra: 'And David said to the Lord, when he saw the angel striking the people: It is I; I am he that have sinned, I have done wickedly: these that are the sheep, what have they done? let thy hand, I beseech thee, be turned against me, and against my father’s house.',
+  },
+  '2SA 24:24': {
+    rsv: 'But the king said to Araunah, “No, but I will buy it of you for a price; I will not offer burnt offerings to the LORD my God which cost me nothing.” So David bought the threshing floor and the oxen for fifty shekels of silver.',
+    dra: 'And the king answered him, and said: Nay, but I will buy it of thee at a price, and I will not offer to the Lord my God holocausts free cost. So David bought the floor, and the oxen, for fifty sicles of silver:',
+  },
+  '2SA 24:25': {
+    rsv: 'And David built there an altar to the LORD, and offered burnt offerings and peace offerings. So the LORD heeded supplications for the land, and the plague was averted from Israel.',
+    dra: 'And David built there an altar to the Lord, and offered holocausts and peace offerings: and the Lord became merciful to the land, and the plague was stayed from Israel.',
+  },
+  '2CH 3:1': {
+    rsv: 'Then Solomon began to build the house of the LORD in Jerusalem on Mount Moriah, where the LORD had appeared to David his father, at the place that David had appointed, on the threshing floor of Ornan the Jebusite.',
+    dra: 'And Solomon began to build the house of the Lord in Jerusalem, in mount Moria, which had been shewn to David his father, in the place which David had prepared in the thrashingfloor of Ornan the Jebusite.',
+  },
+  'PSA 51:1': {
+    rsv: 'Have mercy on me, O God, according to thy steadfast love; according to thy abundant mercy blot out my transgressions.',
+    dra: 'Have mercy on me, O God, according to thy great mercy. And according to the multitude of thy tender mercies blot out my iniquity.',
+  },
+  'PSA 51:2': {
+    rsv: 'Wash me thoroughly from my iniquity, and cleanse me from my sin!',
+    dra: 'Wash me yet more from my iniquity, and cleanse me from my sin.',
+  },
+  'PSA 51:7': {
+    rsv: 'Purge me with hyssop, and I shall be clean; wash me, and I shall be whiter than snow.',
+    dra: 'Thou shalt sprinkle me with hyssop, and I shall be cleansed: thou shalt wash me, and I shall be made whiter than snow.',
+  },
+  'PSA 51:10': {
+    rsv: 'Create in me a clean heart, O God, and put a new and right spirit within me.',
+    dra: 'Create a clean heart in me, O God: and renew a right spirit within my bowels.',
+  },
+  'PSA 51:13': {
+    rsv: 'Then I will teach transgressors thy ways, and sinners will return to thee.',
+    dra: 'I will teach the unjust thy ways: and the wicked shall be converted to thee.',
+  },
+  'PSA 51:17': {
+    rsv: 'The sacrifice acceptable to God is a broken spirit; a broken and contrite heart, O God, thou wilt not despise.',
+    dra: 'A sacrifice to God is an afflicted spirit: a contrite and humbled heart, O God, thou wilt not despise.',
+  },
+  'JHN 3:20': {
+    rsv: 'For every one who does evil hates the light, and does not come to the light, lest his deeds should be exposed.',
+    dra: 'For every one that doth evil hateth the light, and cometh not to the light, that his works may not be reproved.',
+  },
+  'JHN 3:21': {
+    rsv: 'But he who does what is true comes to the light, that it may be clearly seen that his deeds have been wrought in God.',
+    dra: 'But he that doth truth, cometh to the light, that his works may be made manifest, because they are done in God.',
+  },
+  'JHN 20:22': {
+    rsv: 'And when he had said this, he breathed on them, and said to them, “Receive the Holy Spirit.',
+    dra: 'When he had said this, he breathed on them; and he said to them: Receive ye the Holy Ghost.',
+  },
+  'JHN 20:23': {
+    rsv: 'If you forgive the sins of any, they are forgiven; if you retain the sins of any, they are retained.”',
+    dra: 'Whose sins you shall forgive, they are forgiven them; and whose sins you shall retain, they are retained.',
+  },
+  'ROM 5:8': {
+    rsv: 'But God shows his love for us in that while we were yet sinners Christ died for us.',
+    dra: 'But God commendeth his charity towards us; because when as yet we were sinners, according to the time,',
+  },
+  '2CO 5:17': {
+    rsv: 'Therefore, if any one is in Christ, he is a new creation; the old has passed away, behold, the new has come.',
+    dra: 'If then any be in Christ a new creature, the old things are passed away, behold all things are made new.',
+  },
 }
 
 /** A verse's words in the active translation. Throws for a verse that isn't in the list (a content check catches these first). */

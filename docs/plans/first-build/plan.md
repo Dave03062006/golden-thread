@@ -752,6 +752,25 @@ The same way again: script, art, build, checks, play-test. Level 18 is the secon
 - **Cathedral and map:** eight new medallions in the Age VI bay. The valley of Elah, Adullam and En-gedi are new places in `geography.ts`; Elah and Adullam (about 4 km apart) sit close on the zoomed-out map.
 - **Music:** no new recordings. The spec's "Sheep May Safely Graze" was already in the game; Schubert's Psalm 23 has no allowed recording.
 - **Fixed in passing:** Level 18's thread for Episode 7 was first named like Level 11's thread (`the-ark-of-the-covenant`); it is `ark-of-the-new-covenant`.
+
+### Task 25: Level 19, *David's Sin and Repentance* (M25)
+
+The same way again: script, art, build, checks, play-test. Level 19 is the third level of Age VI, *The Kingdom*.
+
+**Status (November 2026):** steps 1–4 are done; step 5 is Dave's.
+- **Script:** `docs/scripts/level-19-davids-sin-and-repentance.md`, approved by Dave on 2026-11-12. It has 5 episodes and 15 scenes, 50 passages quoted word for word, and a 42-question quiz.
+- **Build:** all five episodes are built in both styles, each with its own play:
+  - nothing is hidden (carrying a lamp through the dark palace to what David tried to hide);
+  - you are the man (matching Nathan's story to the real people, until the rich man shows David's face);
+  - whiter than snow (sprinkling David's robe with hyssop, a line of Psalm 51 for each stain, until snow falls);
+  - up the Mount of Olives (leading the weeping king across the Kidron, meeting Ittai, Zadok and Hushai);
+  - what costs me nothing (paying for the threshing floor and building the altar).
+  No new shared rules: the route rules, Level 11's ordering rules and Level 18's signal rules.
+- **Load as played:** each level's story and plays load only when it's played (`content/story-loading.ts`, `minigames/live.ts`); Level 19 is the first level built that way from the start.
+- **Hard passages:** Episodes 1, 3, 4 and 5 open with a content note. David's sin is told with restraint; Uriah's death, the baby's, Absalom's and the plague are each told in a sentence. 2 Samuel 11:2, 11:4, 11:11, 11:15, 12:24 and 18:9–15 are told in our own words, not quoted.
+- **New art:** two backdrops (the rooftops of Jerusalem at dusk; the Kidron valley below the Mount of Olives), six people (Bathsheba, Uriah, Absalom, David grown old, Ittai, Araunah) and four props (David's linen robe, a stain, hyssop, falling snow), in both styles. The threshing floor reuses Level 3's Moriah: it is the same hill.
+- **Cathedral and map:** five new medallions in the Age VI bay. Rabbah, the Mount of Olives and Mahanaim are new places in `geography.ts`; Mahanaim is new on the quiz map.
+- **Music:** no new recordings. The spec's Allegri *Miserere* was already in the game.
 ## Parallelization
 
 - **Code tasks run in order.** Each one builds on the last, and running them in order keeps the code consistent for the code tour.

@@ -14,6 +14,25 @@ const at = (p: { x: number; y: number }) => `${p.x * 1600} ${p.y * 900}`
 /** The river's winding course across the plain, left to right. */
 const KISHON = `M${LEFT} 760Q300 700 560 750Q820 800 1080 740Q1340 690 ${RIGHT} 750`
 
+/** Level 19: David's road out of Jerusalem, as heights across the scene (x, y as fractions). */
+const KIDRON_GROUND: [number, number][] = [[0, 0.56], [0.14, 0.6], [0.3, 0.78], [0.44, 0.86], [0.58, 0.76], [0.72, 0.6], [0.84, 0.44], [1, 0.5]]
+const kidronPath = `M${LEFT} 504${KIDRON_GROUND.map(([x, y]) => `L${x * 1600} ${y * 900 + 8}`).join('')}L${RIGHT} 458L${RIGHT} ${BOTTOM}L${LEFT} ${BOTTOM}Z`
+/** The ground's height (in frame pixels) at a fraction across the scene. */
+function kidronGround(fx: number): number {
+  const k = Math.max(1, KIDRON_GROUND.findIndex(([px]) => px >= fx))
+  const [x1, y1] = KIDRON_GROUND[k - 1]!
+  const [x2, y2] = KIDRON_GROUND[k]!
+  return (y1 + ((fx - x1) / (x2 - x1)) * (y2 - y1)) * 900 + 8
+}
+/** The olive trees on the slope: a trunk standing on the ground, and a gray-green crown. */
+const OLIVES = [0.62, 0.66, 0.7, 0.75, 0.79, 0.88, 0.93, 0.97]
+  .map((fx, i) => {
+    const x = fx * 1600
+    const g = kidronGround(fx) + (i % 2) * 14
+    return `<rect x="${x - 4}" y="${g - 46}" width="8" height="48" fill="#6a4a2a"/><ellipse cx="${x}" cy="${g - 58}" rx="30" ry="22" fill="${i % 3 ? '#7a8a6a' : '#6a7a5a'}"/>`
+  })
+  .join('')
+
 export const judgesLayers: Record<string, PaperLayerArt> = {
   'tabor-plain': {
     bounds: bandFrom(200),
@@ -103,6 +122,33 @@ export const judgesLayers: Record<string, PaperLayerArt> = {
       ${[100, 360, 1240, 1500].map((x) => `<rect x="${x - 40}" y="240" width="80" height="500" fill="#b8925e"/>`).join('')}
       ${[700, 900].map((x) => `<rect x="${x - 50}" y="240" width="100" height="500" fill="#d8b47e"/><rect x="${x - 60}" y="230" width="120" height="20" fill="#a88458"/>`).join('')}
       <rect x="${LEFT}" y="740" width="${RIGHT - LEFT}" height="${BOTTOM - 740}" fill="#9a7a52"/>`,
+  },
+  // Level 19: the flat roofs of Jerusalem at dusk, lamps in the windows, and the palace roof in front.
+  'jerusalem-roofs': {
+    bounds: bandFrom(260),
+    shadow: true,
+    resolution: 0.5,
+    svg: `
+      ${Array.from({ length: 16 }, (_, i) => {
+        const x = LEFT + i * 130
+        const top = 300 + ((i * 37) % 5) * 34
+        const lit = i % 3 === 1 ? `<rect x="${x + 40}" y="${top + 40}" width="16" height="22" fill="#f4d070"/>` : ''
+        return `<rect x="${x}" y="${top}" width="124" height="${700 - top}" fill="${i % 2 ? '#b89870' : '#c8a87e'}"/><rect x="${x}" y="${top - 8}" width="124" height="10" fill="#9a7a58"/>${lit}`
+      }).join('')}
+      <rect x="${LEFT}" y="630" width="${RIGHT - LEFT}" height="${BOTTOM - 630}" fill="#d8bc8c"/>
+      <rect x="${LEFT}" y="618" width="${RIGHT - LEFT}" height="14" fill="#a8885e"/>`,
+  },
+  // Level 19: the city wall above, the brook Kidron in the valley, and the Mount of Olives rising to the right.
+  'kidron-olives': {
+    bounds: bandFrom(320),
+    shadow: true,
+    resolution: 0.5,
+    svg: `
+      <rect x="${LEFT}" y="400" width="560" height="140" fill="#c8a87e"/>
+      ${Array.from({ length: 10 }, (_, i) => `<rect x="${LEFT + i * 56}" y="384" width="34" height="18" fill="#c8a87e"/>`).join('')}
+      <path d="${kidronPath}" fill="#9a8a5a"/>
+      <path d="M560 790Q700 760 840 792" stroke="#5a8ab8" stroke-width="12" fill="none" stroke-linecap="round"/>
+      ${OLIVES}`,
   },
   'dagon-fallen': {
     bounds: bandFrom(300),

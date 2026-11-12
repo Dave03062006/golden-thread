@@ -326,6 +326,13 @@ export const familyOfNoah: Record<string, PaperPropArt> = {
   goliath: person({ robe: '#a8843a', fold: '#7a5e24', hair: '#1a1210', beard: '#1a1210', sash: '#6a5a4a' }),
   michal: person({ robe: '#8a3a6a', fold: '#64264a', hair: '#1a1416', veil: '#e0c070' }),
   nathan: person({ robe: '#6a6a5a', fold: '#4a4a3e', hair: '#bab4a8', beard: '#bab4a8', sash: '#3a5a8a' }),
+  // Level 19: Bathsheba; Uriah the soldier; Absalom; David grown old; Ittai of Gath; Araunah the Jebusite.
+  bathsheba: person({ robe: '#3a5a8a', fold: '#2a4266', hair: '#1a1210', veil: '#d8d0c0', sash: '#c8a040' }),
+  uriah: person({ robe: '#7a5a3a', fold: '#5a3e26', hair: '#2a1a14', beard: '#2a1a14', sash: '#9a9aa8' }),
+  absalom: person({ robe: '#a83a3a', fold: '#7a2626', hair: '#3a2414', sash: '#e0b040' }),
+  'david-old': person({ robe: '#4a3a8a', fold: '#322666', hair: '#d8d4cc', beard: '#d8d4cc', sash: '#e0b040' }),
+  ittai: person({ robe: '#5a6a3a', fold: '#3e4a26', hair: '#1a1416', beard: '#1a1416', sash: '#8a5a32' }),
+  araunah: person({ robe: '#b89a6a', fold: '#8a7048', hair: '#3a2a1a', beard: '#3a2a1a', sash: '#6a4a2a' }),
   amalekites: band([
     { robe: '#5a3a3a', fold: '#3e2626', hair: '#1a1210', beard: '#1a1210', veil: '#3a2a2a' },
     { robe: '#6a4a3a', fold: '#4c3226', hair: '#1a1210', beard: '#1a1210', veil: '#4a3a2a' },

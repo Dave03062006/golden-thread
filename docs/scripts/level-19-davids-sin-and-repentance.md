@@ -3,7 +3,7 @@
 **Bible:** 2 Samuel 11–24; Psalm 51
 **Age:** VI · The Kingdom
 **Length:** about 41 minutes (5 episodes, then the quiz, then reflection and prayer)
-**Status:** draft for Dave's approval.
+**Status:** approved by Dave on 2026-11-12 ("Approved, build it").
 
 ## How to read this script
 

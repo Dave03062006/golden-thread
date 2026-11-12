@@ -1020,6 +1020,41 @@ export const EMBLEMS: Record<string, () => Piece[]> = {
     { d: P([[-4, 16], [-4, 6], [4, 6], [4, 16]]), color: '#d8a838' },
     { d: P([[-2, -16], [2, -16], [2, -13], [-2, -13]]), color: '#f4d070' },
   ],
+  // Level 19 · David's Sin and Repentance
+  // The lamp in the palace window: nothing is hidden.
+  'palace-lamp': () => [
+    { d: P([[-14, 16], [-14, -10], [14, -10], [14, 16]]), color: '#2a2a4a' },
+    { d: P([[-8, 8], [8, 8], [4, 12], [-4, 12]]), color: '#c8a050' },
+    { d: P([[6, 8], [12, 4], [8, 9]]), color: '#c8a050' },
+    { d: P([[-2, 8], [0, -2], [2, 8]]), color: '#fff0a0' },
+  ],
+  // The poor man's little ewe lamb.
+  'ewe-lamb': () => [
+    { d: circ(0, 2, 9, 12), color: '#f4f0e8' },
+    { d: circ(-10, -4, 4.5, 10), color: '#f4f0e8' },
+    { d: P([[-6, 10], [-4, 10], [-4, 16], [-6, 16]]), color: '#3a3030' },
+    { d: P([[4, 10], [6, 10], [6, 16], [4, 16]]), color: '#3a3030' },
+  ],
+  // The hyssop branch, and the snow: "whiter than snow."
+  'hyssop-and-snow': () => [
+    { d: P([[-1, 16], [1, 16], [3, -12], [1, -12]]), color: '#5a7a3a' },
+    ...[-8, -2, 4, 10].map((y, i) => ({ d: circ(i % 2 ? 6 : -4, y, 3, 8), color: '#7a9a4a' })),
+    ...[[-12, -12], [10, -14], [-10, 6], [12, 2], [-4, -15]].map(([x, y]) => ({ d: circ(x!, y!, 1.6, 6), color: '#ffffff' })),
+  ],
+  // The Mount of Olives, its olive tree, and the brook Kidron below.
+  'olive-ascent': () => [
+    { d: P([[-16, 16], [-16, 10], [16, -8], [16, 16]]), color: '#9a8a5a' },
+    { d: P([[-16, 12], [-4, 14], [-4, 16], [-16, 16]]), color: '#5a8ab8' },
+    { d: P([[7, -4], [9, -4], [9, 4], [7, 4]]), color: '#6a4a2a' },
+    { d: circ(8, -8, 6, 10), color: '#7a8a6a' },
+  ],
+  // The altar on the threshing floor, with fire on it.
+  'threshing-altar': () => [
+    { d: P([[-12, 16], [-12, 2], [12, 2], [12, 16]]), color: '#a89a88' },
+    { d: P([[-12, 8], [12, 8], [12, 9], [-12, 9]]), color: '#7a6e60' },
+    { d: P([[-8, 2], [-4, -10], [0, -2], [4, -14], [8, 2]]), color: '#f4a040' },
+    { d: P([[-3, 2], [0, -6], [3, 2]]), color: '#fff0a0' },
+  ],
 }
 
 /** The medallions' backgrounds: deep blue, with one ruby for the darkest story. */

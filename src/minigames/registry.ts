@@ -17,6 +17,7 @@ import { games as l15 } from '../content/levels/15-the-judges/story'
 import { games as l16 } from '../content/levels/16-ruth/story'
 import { games as l17 } from '../content/levels/17-samuel-and-saul/story'
 import { games as l18 } from '../content/levels/18-david-the-shepherd-king/story'
+import { games as l19 } from '../content/levels/19-davids-sin-and-repentance/story'
 
 /** Every play in the game, for tests and the playthrough (the game itself loads each level's plays with its story: ./live.ts). */
-export const GAMES: Record<string, AnyGameRules> = { ...l01, ...l02, ...l03, ...l04, ...l05, ...l06, ...l07, ...l08, ...l09, ...l10, ...l11, ...l12, ...l13, ...l14, ...l15, ...l16, ...l17, ...l18 }
+export const GAMES: Record<string, AnyGameRules> = { ...l01, ...l02, ...l03, ...l04, ...l05, ...l06, ...l07, ...l08, ...l09, ...l10, ...l11, ...l12, ...l13, ...l14, ...l15, ...l16, ...l17, ...l18, ...l19 }

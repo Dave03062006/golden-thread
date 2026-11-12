@@ -94,4 +94,56 @@ const spear: PaperPropArt = {
   parts: [{ id: 'spear', svg: `<path d="M5 120L5 20L7 20L7 120Z" fill="#8a5a32"/><path d="M6 0L10 20L2 20Z" fill="#9a94a4"/>` }],
 }
 
-export const judgesProps: Record<string, PaperPropArt> = { 'palm-tree': palmTree, fleece, honeycomb, millstone, sandal, 'oil-vial': oilVial, spear }
+/** Level 19: David's linen robe, spread over the basin to be washed. */
+const linenRobe: PaperPropArt = {
+  box: { x: -60, y: -90, w: 120, h: 90 },
+  facing: 1,
+  poses: ['idle'],
+  anchor: 'base',
+  parts: [
+    {
+      id: 'robe',
+      svg: `<path d="M-22 -86L22 -86L30 -70L56 -54L50 -40L30 -50L36 0L-36 0L-30 -50L-50 -40L-56 -54L-30 -70Z" fill="#f4f0e8"/><path d="M-12 -80L-18 -4M0 -78L0 -2M12 -80L18 -4" stroke="#d8d0c4" stroke-width="2" fill="none"/><path d="M-10 -86Q0 -78 10 -86" stroke="#c8c0b4" stroke-width="3" fill="none"/>`,
+    },
+  ],
+}
+
+/** Level 19: a dark stain on David's robe, washed away one by one. */
+const stain: PaperPropArt = {
+  box: { x: -20, y: -20, w: 40, h: 40 },
+  facing: 1,
+  poses: ['idle'],
+  shadow: false,
+  parts: [{ id: 'stain', svg: `<path d="M-14 -4C-16 -14 -2 -18 6 -12C16 -10 18 2 10 8C4 16 -10 14 -12 6Z" fill="#3a2630" opacity=".85"/><circle cx="12" cy="-14" r="3" fill="#3a2630" opacity=".7"/>` }],
+}
+
+/** Level 19: a branch of hyssop, for sprinkling. */
+const hyssop: PaperPropArt = {
+  box: { x: -20, y: -80, w: 40, h: 80 },
+  facing: 1,
+  poses: ['idle'],
+  anchor: 'base',
+  parts: [
+    {
+      id: 'branch',
+      svg: `<path d="M0 0L2 -60" stroke="#5a7a3a" stroke-width="3" fill="none"/>${Array.from({ length: 7 }, (_, i) => `<ellipse cx="${i % 2 ? 7 : -5}" cy="${-14 - i * 8}" rx="6" ry="3" fill="${i % 3 ? '#7a9a4a' : '#9ab86a'}" transform="rotate(${i % 2 ? -30 : 30} ${i % 2 ? 7 : -5} ${-14 - i * 8})"/>`).join('')}<circle cx="2" cy="-66" r="5" fill="#e8e0f0"/>`,
+    },
+  ],
+}
+
+/** Level 19: snow falling over Jerusalem, the width of the scene. */
+const snowfall: PaperPropArt = {
+  box: { x: -200, y: -112, w: 400, h: 225 },
+  facing: 1,
+  poses: ['idle'],
+  shadow: false,
+  resolution: 0.5,
+  parts: [
+    {
+      id: 'flakes',
+      svg: Array.from({ length: 90 }, (_, i) => `<circle cx="${-196 + ((i * 97) % 392)}" cy="${-108 + ((i * 53) % 216)}" r="${1 + (i % 3) * 0.6}" fill="#ffffff" opacity="${0.6 + (i % 4) * 0.1}"/>`).join(''),
+    },
+  ],
+}
+
+export const judgesProps: Record<string, PaperPropArt> = { 'palm-tree': palmTree, fleece, honeycomb, millstone, sandal, 'oil-vial': oilVial, spear, 'linen-robe': linenRobe, stain, hyssop, snowfall }

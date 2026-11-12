@@ -1334,6 +1334,62 @@ export const THREADS: GoldenThread[] = [
     sources: ['Matthew 1:1','Matthew 21:9','Luke 1:32–33','Psalm 89:3–4','Catechism 439, 709'],
     fulfilled: { age: 'XII', place: 'jerusalem' },
   },
+  // Level 19 · David’s Sin and Repentance
+  {
+    id: 'come-to-the-light',
+    episode: 'l19-e1',
+    title: "“The thing that David had done displeased the LORD” → “He who does what is true comes to the light”",
+    from: ['2SA 11:27'],
+    to: ['JHN 3:20', 'JHN 3:21', '1JN 1:9'],
+    explanation:
+      "David hid in the dark, and his sin grew from one wrong to a worse one. Jesus said that those who do evil hate the light, but the light is not there to shame us: it is there to heal us. “If we confess our sins, he is faithful and just, and will forgive our sins.” The name “Uriah” means “the LORD is my light.”",
+    sources: ["John 3:19–21","1 John 1:5–10","Proverbs 28:13","Catechism 1455, 1847"],
+    fulfilled: { age: 'XI' },
+  },
+  {
+    id: 'your-sins-are-forgiven',
+    episode: 'l19-e2',
+    title: "Nathan’s word, “The LORD also has put away your sin” → “If you forgive the sins of any, they are forgiven”",
+    from: ['2SA 12:13'],
+    to: ['JHN 20:22', 'JHN 20:23'],
+    explanation:
+      "God sent a prophet to bring David to repentance, and to tell him that he was forgiven. On the evening of the first Easter, the risen Jesus breathed on his apostles and gave them the power to forgive sins in his name. In the Sacrament of Confession, we tell our sins to a priest, as David told his to Nathan, and hear the words David heard: your sin is put away.",
+    sources: ["John 20:19–23","2 Corinthians 5:18–20","Catechism 1441–1442, 1461, 1468"],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'a-new-creation',
+    episode: 'l19-e3',
+    title: "“Create in me a clean heart, O God” → “If any one is in Christ, he is a new creation”",
+    from: ['PSA 51:7', 'PSA 51:10'],
+    to: ['2CO 5:17'],
+    explanation:
+      "David didn’t only ask God to forgive him; he asked for a new heart. God answers that prayer in Jesus. In Baptism, the soul is washed clean and made new, and the newly baptized are dressed in a white garment. And whenever we sin again, Confession makes us clean and new once more.",
+    sources: ["Psalm 51","Ezekiel 36:25–26","Revelation 7:14","Catechism 1243, 1265, 1428, 1431"],
+    fulfilled: { age: 'XIII' },
+  },
+  {
+    id: 'across-the-kidron',
+    episode: 'l19-e4',
+    title: "David, betrayed, crosses the brook Kidron and goes up the Mount of Olives weeping → Jesus, on the night he was betrayed, crosses the Kidron to the garden",
+    from: ['2SA 15:23', '2SA 15:30'],
+    to: ['JHN 18:1', 'ROM 5:8'],
+    explanation:
+      "A thousand years later, the Son of David walked the same road, across the Kidron to the Mount of Olives, on the night he was betrayed by a friend. David went up weeping for his own sins; Jesus went to pray in agony for ours. And when David cried, “Would I had died instead of you,” he wished for something he couldn’t do. Jesus could, and did: he died in our place, so that his rebellious children could come home.",
+    sources: ["John 18:1–2","Luke 22:39–44","Psalm 3","Catechism 612, 2606"],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'the-precious-blood',
+    episode: 'l19-e5',
+    title: "“I will not offer burnt offerings to the LORD my God which cost me nothing” → “You were ransomed… with the precious blood of Christ”",
+    from: ['2SA 24:24'],
+    to: ['2CH 3:1', '1PE 1:18', '1PE 1:19'],
+    explanation:
+      "David’s threshing floor was on Mount Moriah, where Abraham had once been ready to offer his son Isaac (Level 3), and where Solomon would build the Temple. There, for a thousand years, sacrifices were offered for sin. But the sacrifice that takes away the sins of the world was offered near the same hill, on Calvary, and it cost God everything: his only Son. We were bought “not with perishable things such as silver or gold,” but with the blood of the Lamb.",
+    sources: ["Genesis 22:2","1 Chronicles 21:18–22:1","1 Corinthians 6:20","Hebrews 9:11–14","Catechism 517, 613–614"],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
 ]
 
 const BY_ID = new Map(THREADS.map((thread) => [thread.id, thread]))

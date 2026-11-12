@@ -33,6 +33,17 @@ function nearPath(points: readonly { x: number; y: number }[], x: number, y: num
 
 const inBox = (x: number, y: number, x1: number, y1: number, x2: number, y2: number) => x >= x1 * W && x < x2 * W && y >= y1 * H && y < y2 * H
 
+/** Level 19: David's road out of Jerusalem: the ground's height at x, through the points of his way. */
+const KIDRON_GROUND = [[0, 0.56], [0.14, 0.6], [0.3, 0.78], [0.44, 0.86], [0.58, 0.76], [0.72, 0.6], [0.84, 0.44], [1, 0.5]] as const
+function kidronGround(x: number): number {
+  const fx = Math.max(0, Math.min(1, x / W))
+  const k = KIDRON_GROUND.findIndex(([px]) => px >= fx)
+  if (k <= 0) return KIDRON_GROUND[0]![1] * H + 2
+  const [x1, y1] = KIDRON_GROUND[k - 1]!
+  const [x2, y2] = KIDRON_GROUND[k]!
+  return (y1 + ((fx - x1) / (x2 - x1)) * (y2 - y1)) * H + 2
+}
+
 export const judgesLayers: Record<string, PixelLayerArt> = {
   'tabor-plain': {
     draw: (buf) =>
@@ -105,6 +116,41 @@ export const judgesLayers: Record<string, PixelLayerArt> = {
         for (const px of [0.06, 0.22, 0.78, 0.94]) if (Math.abs(x - px * W) < 8) return C.sand2
         for (const px of [0.44, 0.56]) if (Math.abs(x - px * W) < 10) return y < 0.28 * H ? C.wood3 : C.sand
         return dither(x, y) < 0.15 ? C.sand2 : C.sand
+      }),
+  },
+  // Level 19: the flat roofs of Jerusalem at dusk, lamps in the windows, and the palace roof in front.
+  'jerusalem-roofs': {
+    draw: (buf) =>
+      fill(buf, (x, y) => {
+        if (y >= 0.7 * H) return y < 0.71 * H ? C.wood3 : dither(x, y) < 0.2 ? C.sand2 : C.sand
+        const block = Math.floor((x + 64) / 26)
+        const top = 0.33 * H + ((block * 37) % 5) * 7
+        if (y < top) return null
+        if (y < top + 2) return C.wood2
+        const lx = (x + 64) % 26
+        if (block % 3 === 1 && lx >= 8 && lx < 11 && y >= top + 8 && y < top + 12) return C.gold
+        return block % 2 ? C.sand2 : C.wood3
+      }),
+  },
+  // Level 19: the city wall above, the brook Kidron in the valley, and the Mount of Olives rising to the right.
+  'kidron-olives': {
+    draw: (buf) =>
+      fill(buf, (x, y) => {
+        const ground = kidronGround(x)
+        if (y >= ground) {
+          if (x > 0.35 * W && x < 0.53 * W && y < ground + 2) return C.sky
+          return dither(x, y) < 0.25 ? C.wood3 : C.sand2
+        }
+        if (x < 0.2 * W && y >= 0.44 * H && y < 0.6 * H) return C.sand2
+        if (x < 0.2 * W && y >= 0.42 * H && y < 0.44 * H && (x + 64) % 11 < 7) return C.sand2
+        // The olive trees on the slope: a trunk on the ground, and a crown.
+        for (const [i, fx] of [0.62, 0.66, 0.7, 0.75, 0.79, 0.88, 0.93, 0.97].entries()) {
+          const cx = fx * W
+          const foot = kidronGround(cx) + (i % 2) * 3
+          if (Math.abs(x - cx) < 1 && y >= foot - 9 && y < foot) return C.wood1
+          if (Math.hypot((x - cx) / 1.4, y - (foot - 12)) < 4.5) return i % 3 ? C.teal : C.green
+        }
+        return null
       }),
   },
   'dagon-fallen': {

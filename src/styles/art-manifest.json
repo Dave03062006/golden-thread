@@ -413,6 +413,12 @@
     },
     "dagon-fallen": {
       "hash": "f4204f6a"
+    },
+    "jerusalem-roofs": {
+      "hash": "4e2717cb"
+    },
+    "kidron-olives": {
+      "hash": "350845c0"
     }
   },
   "paperProps": {
@@ -1381,6 +1387,36 @@
     },
     "nathan": {
       "hash": "56bf9cdb"
+    },
+    "uriah": {
+      "hash": "89568215"
+    },
+    "bathsheba": {
+      "hash": "eabc039b"
+    },
+    "linen-robe": {
+      "hash": "33551ce0"
+    },
+    "stain": {
+      "hash": "50d80b63"
+    },
+    "hyssop": {
+      "hash": "f0b0ecc3"
+    },
+    "snowfall": {
+      "hash": "507e298b"
+    },
+    "absalom": {
+      "hash": "6be6dcb9"
+    },
+    "ittai": {
+      "hash": "adc03c72"
+    },
+    "david-old": {
+      "hash": "a65abe98"
+    },
+    "araunah": {
+      "hash": "e4e3bae4"
     }
   },
   "pixelLayers": {
@@ -1797,6 +1833,12 @@
     },
     "dagon-fallen": {
       "hash": "3eab283f"
+    },
+    "jerusalem-roofs": {
+      "hash": "7ec93801"
+    },
+    "kidron-olives": {
+      "hash": "f6eafef4"
     }
   },
   "backdrop": {

@@ -96,4 +96,64 @@ const spear: PixelDrawnArt = {
   },
 }
 
-export const judgesProps: Record<string, PixelDrawnArt> = { 'palm-tree': palmTree, fleece, honeycomb, millstone, sandal, 'oil-vial': oilVial, spear }
+/** Level 19: David's linen robe, spread over the basin to be washed. */
+const linenRobe: PixelDrawnArt = {
+  kind: 'drawn',
+  poses: ['idle'],
+  anchor: 'base',
+  draw(paint, { width }) {
+    const w = Math.max(12, Math.round(width))
+    const h = Math.round(w * 0.75)
+    const half = Math.round(w / 2)
+    // Body, sleeves spread out, and the neck.
+    paint.rect(-Math.round(w * 0.3), -h, Math.round(w * 0.6), h, C.white)
+    paint.rect(-half, -Math.round(h * 0.8), w, Math.round(h * 0.25), C.white)
+    paint.rect(-2, -h, 4, 1, C.pale)
+    for (const fx of [-0.15, 0, 0.15]) paint.rect(Math.round(w * fx), -h + 3, 1, h - 4, C.pale)
+  },
+}
+
+/** Level 19: a dark stain on David's robe, washed away one by one. */
+const stain: PixelDrawnArt = {
+  kind: 'drawn',
+  poses: ['idle'],
+  anchor: 'center',
+  draw(paint, { width }) {
+    const r = Math.max(2, Math.round(width / 3))
+    paint.rect(-r, -r + 1, r * 2, r * 2 - 2, C.wood0)
+    paint.rect(-r + 1, -r, r * 2 - 2, r * 2, C.wood0)
+  },
+}
+
+/** Level 19: a branch of hyssop, for sprinkling. */
+const hyssop: PixelDrawnArt = {
+  kind: 'drawn',
+  poses: ['idle'],
+  anchor: 'base',
+  draw(paint, { width }) {
+    const h = Math.max(8, Math.round(width * 3))
+    paint.rect(0, -h, 1, h, C.green)
+    for (let y = -h + 2; y < -1; y += 2) paint.rect(y % 4 ? 1 : -1, y, 1, 1, C.lime)
+    paint.rect(0, -h - 1, 1, 1, C.white)
+  },
+}
+
+/** Level 19: snow falling over Jerusalem, the width of the scene. */
+const snowfall: PixelDrawnArt = {
+  kind: 'drawn',
+  poses: ['idle'],
+  anchor: 'center',
+  fps: 6,
+  loop: 6,
+  draw(paint, { width, time }) {
+    const w = Math.round(width)
+    const h = Math.round(width * 0.5625)
+    for (let i = 0; i < 70; i++) {
+      const x = ((i * 97) % w) - Math.round(w / 2)
+      const y = ((((i * 53) % h) + Math.floor(time * 6) * (1 + (i % 2))) % h) - Math.round(h / 2)
+      paint.rect(x, y, 1, 1, i % 5 ? C.white : C.pale)
+    }
+  },
+}
+
+export const judgesProps: Record<string, PixelDrawnArt> = { 'palm-tree': palmTree, fleece, honeycomb, millstone, sandal, 'oil-vial': oilVial, spear, 'linen-robe': linenRobe, stain, hyssop, snowfall }

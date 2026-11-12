@@ -120,6 +120,8 @@ const AREAS: MapRegion[] = [
     ['jerusalem', 'Jerusalem (Mount Moriah)', 31.78, 35.23],
     ['hebron', 'Hebron (Mamre)', 31.53, 35.1],
     ['beersheba', 'Beer-sheba', 31.25, 34.79],
+    // Level 19: where David took refuge from Absalom, east of the Jordan.
+    ['mahanaim', 'Mahanaim', 32.18, 35.62],
   ].map(([id, name, lat, lon]) => city(id as string, name as string, { lat: lat as number, lon: lon as number }, 0.12)),
   // Bethel, Bethlehem and Dothan stand closer still to their neighbors: smaller again.
   ...[

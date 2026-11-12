@@ -195,6 +195,10 @@ export const PLACES: Place[] = [
   { id: 'valley-of-elah', name: 'The valley of Elah', kind: 'region', at: { lat: 31.69, lon: 34.96 }, note: 'A wide valley between the hills of Judah and Philistine country, where David faced Goliath.' },
   { id: 'adullam', name: 'Adullam', kind: 'city', at: { lat: 31.65, lon: 34.98 }, note: 'A cave-riddled hill near the valley of Elah, where David hid from Saul and four hundred men gathered to him.' },
   { id: 'en-gedi', name: 'En-gedi', kind: 'city', at: { lat: 31.46, lon: 35.39 }, note: 'A spring and waterfall in the cliffs above the Dead Sea, where David spared Saul in a cave.' },
+  // Level 19 · David’s Sin and Repentance
+  { id: 'rabbah', name: 'Rabbah', kind: 'city', at: { lat: 31.95, lon: 35.93 }, note: 'The capital of the Ammonites, east of the Jordan, where Uriah fell. Today it is Amman, the capital of Jordan.' },
+  { id: 'mount-of-olives', name: 'The Mount of Olives', kind: 'mountain', at: { lat: 31.78, lon: 35.245 }, note: 'The hill east of Jerusalem, across the brook Kidron, where David went up weeping, and where Jesus prayed on the night he was betrayed.' },
+  { id: 'mahanaim', name: 'Mahanaim', kind: 'city', at: { lat: 32.18, lon: 35.62 }, note: 'A town east of the Jordan, where Jacob saw the angels of God, and where David took refuge from Absalom.' },
 ]
 
 const BY_ID = new Map(PLACES.map((place) => [place.id, place]))

@@ -176,6 +176,12 @@ export const EMBLEMS: Record<string, { rows: string[]; colors: Record<string, st
   'corner-of-the-robe': { rows: ['rrrrrrr..', 'rrrrrrr..', 'rrrrrrr..', 'rrrrrr.ww', 'rrrrr..ww', 'rrrrr....', 'rrrrrr...', 'rrrrrrr..', '.........'], colors: { r: C.rose, w: C.sand } },
   'banner-over-zion': { rows: ['....wpp..', '....wppp.', '....w....', '...sss...', '..sssss..', '.sssssss.', 'sssssssss', 'sssssssss', '.........'], colors: { w: C.wood1, p: C.navy, s: C.sand } },
   'david-dancing': { rows: ['w...p...w', '.w.www.w.', '..wwwww..', '...www...', '...www...', '..w...w..', '.w.....w.', '.........', 'ggggggggg'], colors: { w: C.white, p: C.sand, g: C.gold } },
+  // Level 19 · David's Sin and Repentance
+  'palace-lamp': { rows: ['nnnnnnnnn', 'nnnnynnnn', 'nnnnynnnn', 'nnnywynnn', 'nnggggggn', 'nnnggggnn', 'nnnnnnnnn', 'nnnnnnnnn', 'nnnnnnnnn'], colors: { n: C.navy, y: C.gold, w: C.white, g: C.wood3 } },
+  'ewe-lamb': { rows: ['.........', '.........', 'ww.......', 'wwwwwww..', '.wwwwwww.', '..wwwwww.', '..k...k..', '..k...k..', 'ggggggggg'], colors: { w: C.white, k: C.wood0, g: C.green } },
+  'hyssop-and-snow': { rows: ['w...g...w', '...lg....', '....gl..w', 'w..lg....', '....gl...', '...lg..w.', '....g....', 'w...g....', '....g....'], colors: { w: C.white, g: C.green, l: C.lime } },
+  'olive-ascent': { rows: ['......tt.', '.....tttt', '......w..', '.....sss.', '...sssss.', '.sssssss.', 'bbbsssss.', 'bbsssssss', 'sssssssss'], colors: { t: C.teal, w: C.wood2, s: C.sand2, b: C.sky } },
+  'threshing-altar': { rows: ['...o.....', '..ooo.o..', '..oyooo..', '.ooyyoo..', 'ppppppppp', 'p.p.p.p.p', 'ppppppppp', 'ppppppppp', '.........'], colors: { o: C.orange, y: C.gold, p: C.pale } },
   'house-for-ever': { rows: ['....y....', '...www...', '..wwwww..', '.wwwwwww.', '.wwwwwww.', '.www.www.', '.ww...ww.', '.ww.y.ww.', 'ggggggggg'], colors: { y: C.gold, w: C.white, g: C.wood3 } },
 }
 

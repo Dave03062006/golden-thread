@@ -19,7 +19,7 @@ await Promise.all(LEVELS.map(loadStory))
  */
 
 /** Soft or see-through art, which may sit over or under anything. */
-const SOFT = new Set(['halo', 'rain', 'smoke', 'smoke-column', 'dust-cloud', 'storm-cloud', 'light-rays', 'swarm', 'counted-star', 'constellation', 'ground-glow', 'whirlwind', 'flaming-sword', 'light-flood', 'first-light', 'glory', 'breath', 'tree-root', 'name-leaf', 'family-tree', 'tree-branch', 'map-token', 'sapphire-pavement', 'lightning', 'wave', 'cherub'])
+const SOFT = new Set(['halo', 'rain', 'smoke', 'smoke-column', 'dust-cloud', 'storm-cloud', 'light-rays', 'swarm', 'counted-star', 'constellation', 'ground-glow', 'whirlwind', 'flaming-sword', 'light-flood', 'first-light', 'glory', 'breath', 'tree-root', 'name-leaf', 'family-tree', 'tree-branch', 'map-token', 'sapphire-pavement', 'lightning', 'wave', 'cherub', 'snowfall'])
 /** How much of something must be hidden to list it; settling time per beat. */
 const HIDDEN = 0.5
 const SETTLE = 8
