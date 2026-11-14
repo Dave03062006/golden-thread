@@ -790,6 +790,26 @@ The same way again: script, art, build, checks, play-test. Level 20 is the fourt
 - **New art:** one backdrop (the Temple courts, with its stairway, for Level 21 too), Solomon, and four props (the shofar, cymbals, the unfinished arch, the cornerstone), in both styles.
 - **Cathedral and map:** six new medallions in the Age VI bay. No new places.
 - **Music:** no new recordings. Mendelssohn's "Hear My Prayer" (Ernest Lough, 1927) stays protected in the US until 2028, and the only free psalm chant is 17 seconds; the level uses psalm settings already in the game.
+
+### Task 27: Level 21, *Solomon and the Temple* (M27)
+
+The same way again: script, art, build, checks, play-test. Level 21 is the fifth level of Age VI, *The Kingdom*.
+
+**Status (November 2026):** steps 1–4 are done; step 5 is Dave's.
+- **Script:** `docs/scripts/level-21-solomon-and-the-temple.md`, approved by Dave on 2026-11-15. It has 6 episodes and 18 scenes, 63 passages quoted word for word, and a 48-question quiz.
+- **Build:** all six episodes are built in both styles, each with its own play:
+  - an understanding mind (Solomon's prayer at Gibeon, in order);
+  - the living child (helping Solomon find the true mother);
+  - without a sound (lowering each Temple stone when it hangs still);
+  - into the Most Holy Place (leading the priests and the ark into the house);
+  - hard questions (the Queen of Sheba's riddles of creation);
+  - a heart wholly true (choosing God at each crossroads of Solomon's life).
+  No new shared rules.
+- **Hard passages:** Episode 6 opens with a content note. 1 Kings 3:16–21 and 11:1–3, 5–8 are told in our own words, not quoted.
+- **New art:** no new backdrops (Level 19's Kidron valley serves for Gihon and the Mount of Olives, Level 20's Temple courts for the dedication). New: four people (the Queen of Sheba, Solomon grown old, Ahijah, Jeroboam) and two props (a cedar, a course of Temple stones), in both styles.
+- **Cathedral and map:** six new medallions in the Age VI bay. Tyre and Sheba are new places in `geography.ts`; Sheba lies beyond the map's southern edge and has no coordinates.
+- **Music:** no new recordings. "Zadok the Priest" was already in the game; Handel's "Arrival of the Queen of Sheba" has no allowed recording (CC BY-SA on Commons), so La Réjouissance stands in.
+- **Douay-Rheims:** two more Bible Gateway slips corrected: "having; heard" (1 Kings 10:1) and "came to paste" (1 Kings 11:29).
 ## Parallelization
 
 - **Code tasks run in order.** Each one builds on the last, and running them in order keeps the code consistent for the code tour.

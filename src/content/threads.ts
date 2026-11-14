@@ -1457,6 +1457,73 @@ export const THREADS: GoldenThread[] = [
     sources: ["Luke 2:41–51","Psalm 84","Hebrews 12:22–24","Catechism 534, 2179"],
     fulfilled: { age: 'XI', place: 'jerusalem' },
   },
+  // Level 21 · Solomon and the Temple
+  {
+    id: 'ask-for-wisdom',
+    episode: 'l21-e1',
+    title: "Solomon asks for “an understanding mind” → “If any of you lacks wisdom, let him ask God”",
+    from: ['1KI 3:9'],
+    to: ['JAS 1:5'],
+    explanation:
+      "God was pleased that Solomon asked for wisdom rather than riches. Wisdom isn’t only for kings: James promises that anyone who asks God for wisdom will receive it, “generously and without reproaching.” Wisdom is one of the seven gifts of the Holy Spirit, given to every Christian at Confirmation.",
+    sources: ["James 1:5–8","Wisdom 9:1–11","Catechism 1831, 2633"],
+    fulfilled: { age: 'XIII' },
+  },
+  {
+    id: 'the-wisdom-of-god',
+    episode: 'l21-e2',
+    title: "“The wisdom of God was in him, to render justice” → “Christ the power of God and the wisdom of God”",
+    from: ['1KI 3:28'],
+    to: ['1CO 1:24'],
+    explanation:
+      "God gave Solomon wisdom to judge justly, and the people saw it. Saint Paul says that Jesus himself is God’s wisdom, made man. The wisdom that saw the true mother’s love is the same wisdom that will judge the whole world with justice and mercy.",
+    sources: ["1 Corinthians 1:18–30","Colossians 2:3","Catechism 216, 1040"],
+    fulfilled: { age: 'XIII' },
+  },
+  {
+    id: 'living-stones',
+    episode: 'l21-e3',
+    title: "Stones prepared at the quarry, built into the house of the LORD → “Like living stones be yourselves built into a spiritual house”",
+    from: ['1KI 6:7'],
+    to: ['1PE 2:5'],
+    explanation:
+      "Solomon’s Temple was built of stones made ready far away, each cut to fit its place. Saint Peter says that Christians are living stones, built by God into a spiritual house on Jesus, the cornerstone (Level 20). God shapes each of us, often quietly and patiently, for the place he has prepared for us in his Church.",
+    sources: ["1 Peter 2:4–10","Ephesians 2:19–22","Catechism 756, 1141"],
+    fulfilled: { age: 'XIII' },
+  },
+  {
+    id: 'the-dwelling-of-god',
+    episode: 'l21-e4',
+    title: "“Heaven and the highest heaven cannot contain thee; how much less this house” → “Behold, the dwelling of God is with men”",
+    from: ['1KI 8:27'],
+    to: ['REV 21:3', 'REV 21:22'],
+    explanation:
+      "Solomon knew that no building could hold God. Yet God chose to dwell among his people. At the end of the Bible, Saint John sees the heavenly city, where there is no temple at all, “for its temple is the Lord God the Almighty and the Lamb.” There, God will live with his people for ever, face to face.",
+    sources: ["Revelation 21:1–4, 21:22–27","Catechism 1045, 2794"],
+    fulfilled: { age: 'XIV' },
+  },
+  {
+    id: 'greater-than-solomon',
+    episode: 'l21-e5',
+    title: "The Queen of Sheba comes from the ends of the earth to hear Solomon’s wisdom → Jesus: “something greater than Solomon is here”",
+    from: ['1KI 10:1'],
+    to: ['MAT 12:42', 'MAT 2:11'],
+    explanation:
+      "The queen traveled from the ends of the earth to hear a wise man. Jesus said that something greater than Solomon had come: God’s own wisdom in person. And at his birth, wise men came from the east, as the queen had, bringing gold and spices, to worship not a king of Israel but the King of kings.",
+    sources: ["Matthew 12:42","Matthew 2:1–11","Isaiah 60:6","Psalm 72:10–11","Catechism 528"],
+    fulfilled: { age: 'XI', place: 'bethlehem' },
+  },
+  {
+    id: 'two-masters',
+    episode: 'l21-e6',
+    title: "Solomon’s “heart was not wholly true to the LORD his God” → Jesus: “No one can serve two masters”",
+    from: ['1KI 11:4'],
+    to: ['MAT 6:24', 'MAT 6:29'],
+    explanation:
+      "Solomon had everything: wisdom, riches, glory. But his heart was divided, and a divided heart can’t hold together; neither could his kingdom. Jesus said that even “Solomon in all his glory” wasn’t dressed as beautifully as a lily that trusts God. He asks for our whole heart, because only he can make it whole.",
+    sources: ["Matthew 6:19–33","Deuteronomy 6:5","Catechism 2113, 2544"],
+    fulfilled: { age: 'XI' },
+  },
 ]
 
 const BY_ID = new Map(THREADS.map((thread) => [thread.id, thread]))

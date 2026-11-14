@@ -6603,6 +6603,259 @@ export const VERSES: Record<string, Verse> = {
     rsv: 'This is the stone which was rejected by you builders, but which has become the head of the corner.',
     dra: 'This is the stone which was rejected by you the builders, which is become the head of the corner.',
   },
+  // Level 21 · Solomon and the Temple
+  '1KI 1:39': {
+    rsv: 'There Zadok the priest took the horn of oil from the tent, and anointed Solomon. Then they blew the trumpet; and all the people said, “Long live King Solomon!”',
+    dra: 'And Sadoc the priest took a horn of oil out of the tabernacle, and anointed Solomon: and they sounded the trumpet, and all the people said: God save king Solomon.',
+  },
+  '1KI 1:40': {
+    rsv: 'And all the people went up after him, playing on pipes, and rejoicing with great joy, so that the earth was split by their noise.',
+    dra: 'And all the multitude went up after him, and the people played with pipes, and rejoiced with a great joy, and the earth rang with the noise of their cry.',
+  },
+  '1KI 2:2': {
+    rsv: '“I am about to go the way of all the earth. Be strong, and show yourself a man,',
+    dra: 'I am going the way of all flesh: take thou courage, and shew thyself a man.',
+  },
+  '1KI 2:3': {
+    rsv: 'and keep the charge of the LORD your God, walking in his ways and keeping his statutes, his commandments, his ordinances, and his testimonies, as it is written in the law of Moses, that you may prosper in all that you do and wherever you turn;',
+    dra: 'And keep the charge of the Lord thy God, to walk in his ways, and observe his ceremonies, and his precepts, and judgments, and testimonies, as it is written in the law of Moses: that thou mayest understand all thou dost, and whithersoever thou shalt turn thyself:',
+  },
+  '1KI 3:5': {
+    rsv: 'At Gibeon the LORD appeared to Solomon in a dream by night; and God said, “Ask what I shall give you.”',
+    dra: 'And the Lord appeared to Solomon in a dream by night, saying: Ask what thou wilt that I should give thee.',
+  },
+  '1KI 3:7': {
+    rsv: 'And now, O LORD my God, thou hast made thy servant king in place of David my father, although I am but a little child; I do not know how to go out or come in.',
+    dra: 'And now, O Lord God, thou hast made thy servant king instead of David my father: and I am but a child, and know not how to go out and come in.',
+  },
+  '1KI 3:9': {
+    rsv: 'Give thy servant therefore an understanding mind to govern thy people, that I may discern between good and evil; for who is able to govern this thy great people?”',
+    dra: 'Give therefore to thy servant an understanding heart, to judge thy people, and discern between good and evil. For who shall be able to judge this people, thy people which is so numerous?',
+  },
+  '1KI 3:11': {
+    rsv: 'And God said to him, “Because you have asked this, and have not asked for yourself long life or riches or the life of your enemies, but have asked for yourself understanding to discern what is right,',
+    dra: 'And the Lord said to Solomon: Because thou hast asked this thing, and hast not asked for thyself long life or riches, nor the lives of thy enemies, but hast asked for thyself wisdom to discern judgment,',
+  },
+  '1KI 3:12': {
+    rsv: 'behold, I now do according to your word. Behold, I give you a wise and discerning mind, so that none like you has been before you and none like you shall arise after you.',
+    dra: 'Behold I have done for thee according to thy words, and have given thee a wise and understanding heart, insomuch that there hath been no one like thee before thee, nor shall arise after thee.',
+  },
+  '1KI 3:13': {
+    rsv: 'I give you also what you have not asked, both riches and honor, so that no other king shall compare with you, all your days.',
+    dra: 'Yea and the things also which thou didst not ask, I have given thee: to wit riches and glory, as that no one hath been like thee among the kings in all days heretofore.',
+  },
+  '1KI 3:22': {
+    rsv: 'But the other woman said, “No, the living child is mine, and the dead child is yours.” The first said, “No, the dead child is yours, and the living child is mine.” Thus they spoke before the king.',
+    dra: 'And the other woman answered: It is not so as thou sayest, but thy child is dead, and mine is alive. On the contrary she said: Thou liest: for my child liveth, and thy child is dead. And in this manner they strove before the king.',
+  },
+  '1KI 3:24': {
+    rsv: 'And the king said, “Bring me a sword.” So a sword was brought before the king.',
+    dra: 'The king therefore said: Bring me a sword. And when they had brought a sword before the king,',
+  },
+  '1KI 3:25': {
+    rsv: 'And the king said, “Divide the living child in two, and give half to the one, and half to the other.”',
+    dra: 'Divide, said he, the living child in two, and give half to the one, and half to the other.',
+  },
+  '1KI 3:26': {
+    rsv: 'Then the woman whose son was alive said to the king, because her heart yearned for her son, “Oh, my lord, give her the living child, and by no means slay it.” But the other said, “It shall be neither mine nor yours; divide it.”',
+    dra: 'But the woman whose child was alive, said to the king, (for her bowels were moved upon her child,) I beseech thee, my lord, give her the child alive, and do not kill it. But the other said: Let it be neither mine nor thine, but divide it.',
+  },
+  '1KI 3:27': {
+    rsv: 'Then the king answered and said, “Give the living child to the first woman, and by no means slay it; she is its mother.”',
+    dra: 'The king answered, and said: Give the living child to this woman, and let it not be killed, for she is the mother thereof.',
+  },
+  '1KI 3:28': {
+    rsv: 'And all Israel heard of the judgment which the king had rendered; and they stood in awe of the king, because they perceived that the wisdom of God was in him, to render justice.',
+    dra: 'And all Israel heard the judgment which the king had judged, and they feared the king, seeing that the wisdom of God was in him to do judgment.',
+  },
+  '1KI 4:29': {
+    rsv: 'And God gave Solomon wisdom and understanding beyond measure, and largeness of mind like the sand on the seashore,',
+    dra: 'And God gave to Solomon wisdom and understanding exceeding much, and largeness of heart as the sand that is on the sea shore.',
+  },
+  '1KI 4:32': {
+    rsv: 'He also uttered three thousand proverbs; and his songs were a thousand and five.',
+    dra: 'Solomon also spoke three thousand parables: and his poems were a thousand and five.',
+  },
+  '1KI 4:34': {
+    rsv: 'And men came from all peoples to hear the wisdom of Solomon, and from all the kings of the earth, who had heard of his wisdom.',
+    dra: 'And they came from all nations to hear the wisdom of Solomon, and from all the kings of the earth, who heard of his wisdom.',
+  },
+  '1KI 5:5': {
+    rsv: 'And so I purpose to build a house for the name of the LORD my God, as the LORD said to David my father, ‘Your son, whom I will set upon your throne in your place, shall build the house for my name.’',
+    dra: 'Wherefore I purpose to build a temple to the name of the Lord my God, as the Lord spoke to David my father, saying: my son, whom I will set upon the throne in thy piece, he shall build a house to my name.',
+  },
+  '1KI 6:1': {
+    rsv: 'In the four hundred and eightieth year after the people of Israel came out of the land of Egypt, in the fourth year of Solomon’s reign over Israel, in the month of Ziv, which is the second month, he began to build the house of the LORD.',
+    dra: 'And it came to pass in the four hundred and eightieth year after the children of Israel came out of the land of Egypt, in the fourth year of the reign of Solomon over Israel, in the month Zio (the same is the second month), he began to build a house to the Lord.',
+  },
+  '1KI 6:7': {
+    rsv: 'When the house was built, it was with stone prepared at the quarry; so that neither hammer nor axe nor any tool of iron was heard in the temple, while it was being built.',
+    dra: 'And the house, when it was in building, was built of stones hewed and made ready: so that there was neither hammer nor axe nor any tool of iron heard in the house when it was in building.',
+  },
+  '1KI 6:12': {
+    rsv: '“Concerning this house which you are building, if you will walk in my statutes and obey my ordinances and keep all my commandments and walk in them, then I will establish my word with you, which I spoke to David your father.',
+    dra: 'This house, which thou buildest, if thou wilt walk in my statutes, and execute my judgments, and keep all my commandments, walking in them, I will fulfill my word to thee which I spoke to David thy father.',
+  },
+  '1KI 6:13': {
+    rsv: 'And I will dwell among the children of Israel, and will not forsake my people Israel.”',
+    dra: 'And I will dwell in the midst of the children of Israel, and will not forsake my people Israel.',
+  },
+  '1KI 6:19': {
+    rsv: 'The inner sanctuary he prepared in the innermost part of the house, to set there the ark of the covenant of the LORD.',
+    dra: 'And he made the oracle in the midst of the house, in the inner part, to set there the ark of the covenant of the Lord.',
+  },
+  '1KI 6:22': {
+    rsv: 'And he overlaid the whole house with gold, until all the house was finished. Also the whole altar that belonged to the inner sanctuary he overlaid with gold.',
+    dra: 'And there was nothing in the temple that was not covered with gold: the whole altar of the oracle he covered also with gold.',
+  },
+  '1KI 6:38': {
+    rsv: 'And in the eleventh year, in the month of Bul, which is the eighth month, the house was finished in all its parts, and according to all its specifications. He was seven years in building it.',
+    dra: 'And in the eleventh year in the month Bul (which is the eighth month) the house was finished in all the works thereof, and in all the appurtenances thereof: and he was seven years in building it.',
+  },
+  '1KI 8:6': {
+    rsv: 'Then the priests brought the ark of the covenant of the LORD to its place, in the inner sanctuary of the house, in the most holy place, underneath the wings of the cherubim.',
+    dra: 'And the priests brought in the ark of the covenant of the Lord into its place, into the oracle of the temple, into the holy of holies under the wings of the cherubims.',
+  },
+  '1KI 8:9': {
+    rsv: 'There was nothing in the ark except the two tables of stone which Moses put there at Horeb, where the LORD made a covenant with the people of Israel, when they came out of the land of Egypt.',
+    dra: 'Now in the ark there was nothing else but the two tables of stone, which Moses put there at Horeb, when the Lord made a covenant with the children of Israel, when they came out of the land of Egypt.',
+  },
+  '1KI 8:10': {
+    rsv: 'And when the priests came out of the holy place, a cloud filled the house of the LORD,',
+    dra: 'And it came to pass, when the priests were come out of the sanctuary, that a cloud filled the house of the Lord,',
+  },
+  '1KI 8:11': {
+    rsv: 'so that the priests could not stand to minister because of the cloud; for the glory of the LORD filled the house of the LORD.',
+    dra: 'And the priests could not stand to minister because of the cloud: for the glory of the Lord had filled the house of the Lord.',
+  },
+  '1KI 8:22': {
+    rsv: 'Then Solomon stood before the altar of the LORD in the presence of all the assembly of Israel, and spread forth his hands toward heaven;',
+    dra: 'And Solomon stood before the altar of the Lord in the sight of the assembly of Israel, and spread forth his hands towards heaven;',
+  },
+  '1KI 8:23': {
+    rsv: 'and said, “O LORD, God of Israel, there is no God like thee, in heaven above or on earth beneath, keeping covenant and showing steadfast love to thy servants who walk before thee with all their heart;',
+    dra: 'And said: Lord God of Israel, there is no God like thee in heaven above, or on earth beneath: who keepest covenant and mercy with thy servants that have walked before thee with all their heart.',
+  },
+  '1KI 8:27': {
+    rsv: '“But will God indeed dwell on the earth? Behold, heaven and the highest heaven cannot contain thee; how much less this house which I have built!',
+    dra: 'Is it then to be thought that God should indeed dwell upon earth? for if heaven, and the heavens of heavens cannot contain thee, how much less this house which I have built?',
+  },
+  '1KI 8:30': {
+    rsv: 'And hearken thou to the supplication of thy servant and of thy people Israel, when they pray toward this place; yea, hear thou in heaven thy dwelling place; and when thou hearest, forgive.',
+    dra: 'That thou mayest hearken to the supplication of thy servant and of thy people Israel, whatsoever they shall pray for in this place, and hear them in the place of thy dwelling in heaven; and when thou hearest, shew them mercy.',
+  },
+  '1KI 10:1': {
+    rsv: 'Now when the queen of Sheba heard of the fame of Solomon concerning the name of the LORD, she came to test him with hard questions.',
+    dra: 'And the queen of Saba, having heard of the fame of Solomon in the name of the Lord, came to try him with hard questions.',
+  },
+  '1KI 10:2': {
+    rsv: 'She came to Jerusalem with a very great retinue, with camels bearing spices, and very much gold, and precious stones; and when she came to Solomon, she told him all that was on her mind.',
+    dra: 'And entering into Jerusalem with a great train, and riches, and camels that carried spices, and an immense quantity of gold, and precious stones, she came to king Solomon, and spoke to him all that she had in her heart.',
+  },
+  '1KI 10:3': {
+    rsv: 'And Solomon answered all her questions; there was nothing hidden from the king which he could not explain to her.',
+    dra: 'And Solomon informed her of all the things she proposed to him: there was not any word the king was ignorant of, and which he could not answer her.',
+  },
+  '1KI 10:6': {
+    rsv: 'And she said to the king, “The report was true which I heard in my own land of your affairs and of your wisdom,',
+    dra: 'And she said to the king: The report is true, which I heard in my own country,',
+  },
+  '1KI 10:7': {
+    rsv: 'but I did not believe the reports until I came and my own eyes had seen it; and behold, the half was not told me; your wisdom and prosperity surpass the report which I heard.',
+    dra: 'Concerning thy words, and concerning thy wisdom. And I did not believe them that told me, till I came myself, and saw with my own eyes, and have found that the half hath not been told me: thy wisdom and thy works, exceed the fame which I heard.',
+  },
+  '1KI 10:9': {
+    rsv: 'Blessed be the LORD your God, who has delighted in you and set you on the throne of Israel! Because the LORD loved Israel for ever, he has made you king, that you may execute justice and righteousness.”',
+    dra: 'Blessed be the Lord thy God, whom thou hast pleased, and who hath set thee upon the throne of Israel, because the Lord hath loved Israel for ever, and hath appointed thee king, to do judgment and justice.',
+  },
+  '1KI 10:10': {
+    rsv: 'Then she gave the king a hundred and twenty talents of gold, and a very great quantity of spices, and precious stones; never again came such an abundance of spices as these which the queen of Sheba gave to King Solomon.',
+    dra: 'And she gave the king a hundred and twenty talents of gold, and of spices a very great store, and precious stones: there was brought no more such abundance of spices as these which the queen of Saba gave to king Solomon.',
+  },
+  '1KI 10:23': {
+    rsv: 'Thus King Solomon excelled all the kings of the earth in riches and in wisdom.',
+    dra: 'And king Solomon exceeded all the kings of the earth in riches, and wisdom.',
+  },
+  '1KI 10:24': {
+    rsv: 'And the whole earth sought the presence of Solomon to hear his wisdom, which God had put into his mind.',
+    dra: 'And all the earth desired to see Solomon’s face, to hear his wisdom, which God had given in his heart.',
+  },
+  '1KI 11:4': {
+    rsv: 'For when Solomon was old his wives turned away his heart after other gods; and his heart was not wholly true to the LORD his God, as was the heart of David his father.',
+    dra: 'And when he was now old, his heart was turned away by women to follow strange gods: and his heart was not perfect with the Lord his God, as was the heart of David his father.',
+  },
+  '1KI 11:9': {
+    rsv: 'And the LORD was angry with Solomon, because his heart had turned away from the LORD, the God of Israel, who had appeared to him twice,',
+    dra: 'And the Lord was angry with Solomon, because his mind was turned away from the Lord the God of Israel, who had appeared to him twice,',
+  },
+  '1KI 11:11': {
+    rsv: 'Therefore the LORD said to Solomon, “Since this has been your mind and you have not kept my covenant and my statutes which I have commanded you, I will surely tear the kingdom from you and will give it to your servant.',
+    dra: 'The Lord therefore said to Solomon: Because thou hast done this, and hast not kept my covenant, and my precepts, which I have commanded thee, I will divide and rend thy kingdom, and will give it to thy servant.',
+  },
+  '1KI 11:12': {
+    rsv: 'Yet for the sake of David your father I will not do it in your days, but I will tear it out of the hand of your son.',
+    dra: 'Nevertheless in thy days I will not do it, for David thy father’s sake: but I will rend it out of the hand of thy son.',
+  },
+  '1KI 11:13': {
+    rsv: 'However I will not tear away all the kingdom; but I will give one tribe to your son, for the sake of David my servant and for the sake of Jerusalem which I have chosen.”',
+    dra: 'Neither will I take away the whole kingdom, but I will give one tribe to thy son for the sake of David my servant, and Jerusalem which I have chosen.',
+  },
+  '1KI 11:29': {
+    rsv: 'And at that time, when Jeroboam went out of Jerusalem, the prophet Ahijah the Shilonite found him on the road. Now Ahijah had clad himself with a new garment; and the two of them were alone in the open country.',
+    dra: 'So it came to pass at that time, that Jeroboam went out of Jerusalem, and the prophet Ahias the Silonite, clad with a new garment, found him in the way: and they two were alone in the held.',
+  },
+  '1KI 11:30': {
+    rsv: 'Then Ahijah laid hold of the new garment that was on him, and tore it into twelve pieces.',
+    dra: 'And Ahias taking his new garment, wherewith he was clad, divided it into twelve parts:',
+  },
+  '1KI 11:31': {
+    rsv: 'And he said to Jeroboam, “Take for yourself ten pieces; for thus says the LORD, the God of Israel, ‘Behold, I am about to tear the kingdom from the hand of Solomon, and will give you ten tribes',
+    dra: 'And he said to Jeroboam: Take to thee ten pieces: for thus saith the Lord the God of Israel: Behold I will rend the kingdom out of the hand of Solomon, and will give thee ten tribes.',
+  },
+  '2CH 7:1': {
+    rsv: 'When Solomon had ended his prayer, fire came down from heaven and consumed the burnt offering and the sacrifices, and the glory of the LORD filled the temple.',
+    dra: 'And when Solomon had made an end of his prayer, fire came down from heaven, and consumed the holocausts and the victims: and the majesty of the Lord filled the house.',
+  },
+  '2CH 7:3': {
+    rsv: 'When all the children of Israel saw the fire come down and the glory of the LORD upon the temple, they bowed down with their faces to the earth on the pavement, and worshiped and gave thanks to the LORD, saying, “For he is good, for his steadfast love endures for ever.”',
+    dra: 'Moreover all the children of Israel saw the fire coming down, and the glory of the Lord upon the house: and falling down with their faces to the ground, upon the stone pavement, they adored and praised the Lord: because he is good, because his mercy endureth for ever.',
+  },
+  'MAT 2:11': {
+    rsv: 'and going into the house they saw the child with Mary his mother, and they fell down and worshiped him. Then, opening their treasures, they offered him gifts, gold and frankincense and myrrh.',
+    dra: 'And entering into the house, they found the child with Mary his mother, and falling down they adored him; and opening their treasures, they offered him gifts; gold, frankincense, and myrrh.',
+  },
+  'MAT 6:24': {
+    rsv: '“No one can serve two masters; for either he will hate the one and love the other, or he will be devoted to the one and despise the other. You cannot serve God and mammon.',
+    dra: 'No man can serve two masters. For either he will hate the one, and love the other: or he will sustain the one, and despise the other. You cannot serve God and mammon.',
+  },
+  'MAT 6:29': {
+    rsv: 'yet I tell you, even Solomon in all his glory was not arrayed like one of these.',
+    dra: 'But I say to you, that not even Solomon in all his glory was arrayed as one of these.',
+  },
+  'MAT 12:42': {
+    rsv: 'The queen of the South will arise at the judgment with this generation and condemn it; for she came from the ends of the earth to hear the wisdom of Solomon, and behold, something greater than Solomon is here.',
+    dra: 'The queen of the south shall rise in judgment with this generation, and shall condemn it: because she came from the ends of the earth to hear the wisdom of Solomon, and behold a greater than Solomon here.',
+  },
+  '1CO 1:24': {
+    rsv: 'but to those who are called, both Jews and Greeks, Christ the power of God and the wisdom of God.',
+    dra: 'But unto them that are called, both Jews and Greeks, Christ the power of God, and the wisdom of God.',
+  },
+  'JAS 1:5': {
+    rsv: 'If any of you lacks wisdom, let him ask God, who gives to all men generously and without reproaching, and it will be given him.',
+    dra: 'But if any of you want wisdom, let him ask of God, who giveth to all men abundantly, and upbraideth not; and it shall be given him.',
+  },
+  '1PE 2:5': {
+    rsv: 'and like living stones be yourselves built into a spiritual house, to be a holy priesthood, to offer spiritual sacrifices acceptable to God through Jesus Christ.',
+    dra: 'Be you also as living stones built up, a spiritual house, a holy priesthood, to offer up spiritual sacrifices, acceptable to God by Jesus Christ.',
+  },
+  'REV 21:3': {
+    rsv: 'and I heard a great voice from the throne saying, “Behold, the dwelling of God is with men. He will dwell with them, and they shall be his people, and God himself will be with them;',
+    dra: 'And I heard a great voice from the throne, saying: Behold the tabernacle of God with men, and he will dwell with them. And they shall be his people; and God himself with them shall be their God.',
+  },
+  'REV 21:22': {
+    rsv: 'And I saw no temple in the city, for its temple is the Lord God the Almighty and the Lamb.',
+    dra: 'And I saw no temple therein. For the Lord God Almighty is the temple thereof, and the Lamb.',
+  },
 }
 
 /** A verse's words in the active translation. Throws for a verse that isn't in the list (a content check catches these first). */

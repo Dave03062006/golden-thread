@@ -184,4 +184,27 @@ const cornerstone: PaperPropArt = {
   parts: [{ id: 'stone', svg: '<path d="M-18 -13L18 -13L13 13L-13 13Z" fill="#e0d6c2"/><path d="M-18 -13L18 -13L16 -9L-16 -9Z" fill="#d8a838"/>' }],
 }
 
-export const judgesProps: Record<string, PaperPropArt> = { 'palm-tree': palmTree, fleece, honeycomb, millstone, sandal, 'oil-vial': oilVial, spear, 'linen-robe': linenRobe, stain, hyssop, snowfall, shofar, cymbals, 'gate-arch': gateArch, cornerstone }
+/** Level 21: a cedar of Lebanon, with its broad flat tiers of branches. */
+const cedar: PaperPropArt = {
+  box: { x: -60, y: -160, w: 120, h: 160 },
+  facing: 1,
+  poses: ['idle'],
+  anchor: 'base',
+  parts: [
+    {
+      id: 'tree',
+      svg: `<rect x="-5" y="-90" width="10" height="90" fill="#6a4a2a"/>${[0, 1, 2, 3].map((i) => `<path d="M${-56 + i * 10} ${-40 - i * 32}Q0 ${-62 - i * 32} ${56 - i * 10} ${-40 - i * 32}L${44 - i * 10} ${-30 - i * 32}L${-44 + i * 10} ${-30 - i * 32}Z" fill="${i % 2 ? '#3a5a3a' : '#4a6a44'}"/>`).join('')}`,
+    },
+  ],
+}
+
+/** Level 21: one course of finished Temple stones, lowered into place. */
+const stoneCourse: PaperPropArt = {
+  box: { x: -100, y: -24, w: 200, h: 24 },
+  facing: 1,
+  poses: ['idle'],
+  anchor: 'base',
+  parts: [{ id: 'stones', svg: `<rect x="-100" y="-24" width="200" height="24" fill="#d8ccb0"/>${[-60, -20, 20, 60].map((x) => `<rect x="${x - 1}" y="-24" width="2" height="24" fill="#b8ac90"/>`).join('')}<rect x="-100" y="-3" width="200" height="3" fill="#b8ac90"/>` }],
+}
+
+export const judgesProps: Record<string, PaperPropArt> = { 'palm-tree': palmTree, fleece, honeycomb, millstone, sandal, 'oil-vial': oilVial, spear, 'linen-robe': linenRobe, stain, hyssop, snowfall, shofar, cymbals, 'gate-arch': gateArch, cornerstone, cedar, 'stone-course': stoneCourse }

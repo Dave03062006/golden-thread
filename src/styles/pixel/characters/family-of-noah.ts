@@ -301,6 +301,11 @@ export const familyOfNoah: Record<string, PixelSpriteArt> = {
   araunah: person({ robe: C.sand2, hair: C.wood1, beard: C.wood1, sash: C.wood2 }),
   // Level 20: Solomon, a young king of David's family (and the hero of Level 21).
   solomon: person({ robe: C.sand, hair: C.wood1, sash: C.navy }),
+  // Level 21: the Queen of Sheba; Solomon grown old; the prophet Ahijah; Jeroboam.
+  'queen-of-sheba': person({ robe: C.purple, hair: C.ink, veil: C.gold, sash: C.gold }),
+  'solomon-old': person({ robe: C.sand, hair: C.white, beard: C.white, sash: C.navy }),
+  ahijah: person({ robe: C.slate, hair: C.pale, beard: C.pale, sash: C.wood2 }),
+  jeroboam: person({ robe: C.dslate, hair: C.wood0, beard: C.wood0, sash: C.gold }),
   amalekites: band([
     { robe: C.wood1, hair: C.ink, beard: C.ink, veil: C.dslate },
     { robe: C.purple, hair: C.ink, beard: C.ink, veil: C.wood0 },

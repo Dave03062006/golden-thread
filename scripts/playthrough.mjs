@@ -292,6 +292,18 @@ const LEVELS = [
       { number: 6, lines: 12, plays: 1 }, // episode-6.ts
     ],
   },
+  {
+    number: 21,
+    complete: true,
+    episodes: [
+      { number: 1, lines: 13, plays: 1 }, // src/content/levels/21-solomon-and-the-temple/episode-1.ts
+      { number: 2, lines: 12, plays: 1 }, // episode-2.ts
+      { number: 3, lines: 10, plays: 1 }, // episode-3.ts
+      { number: 4, lines: 12, plays: 1 }, // episode-4.ts
+      { number: 5, lines: 9, plays: 1 }, // episode-5.ts
+      { number: 6, lines: 11, plays: 1 }, // episode-6.ts
+    ],
+  },
 ]
 
 const value = (name) => process.argv.find((a) => a.startsWith(`--${name}=`))?.split('=')[1]
@@ -421,7 +433,7 @@ async function playEpisode(page, style, { number, lines: expected, plays: expect
 }
 
 /** What the player writes in each level's reflection, different each time so the journal can tell them apart. */
-const REFLECTIONS = { 1: 'I want to stop hiding, and walk with God.', 2: 'Help me trust you when I cannot see, like Noah.', 3: 'Lord, help me go where you call me, even when I cannot see the way.', 4: 'Help me make peace with my brother, and hold on to you in prayer.', 5: 'Help me forgive, and trust that you can bring good out of what is hard.', 6: 'Lord, help me tell you the truth when I am sad, and keep holding on to you.', 7: 'Here am I, Lord. Be with me when I feel too small.', 8: 'Thank you, Lord, for setting your people free. Help me remember all you have done for me.', 9: 'Lord, make a way for me, and give me what I need for today.', 10: 'Lord, help me love you with all my heart, and my neighbor as myself.', 11: 'Lord, make my heart a place where you are glad to dwell.', 12: 'Thank you for leading me, Lord. Help me trust you instead of complaining.', 13: 'Help me remember all you have done, and choose life every day.', 14: 'As for me and my house, we will serve the Lord.', 15: 'Lord, be my King, and help me remember you when life is easy.', 16: 'Where you go I will go, Lord. Fill my empty hands.', 17: 'Speak, Lord, for your servant is listening.', 18: 'Lord, look at my heart, and be my shepherd and my king.', 19: 'Create in me a clean heart, O God.', 20: 'The Lord is my shepherd; teach me to pray the Psalms.' }
+const REFLECTIONS = { 1: 'I want to stop hiding, and walk with God.', 2: 'Help me trust you when I cannot see, like Noah.', 3: 'Lord, help me go where you call me, even when I cannot see the way.', 4: 'Help me make peace with my brother, and hold on to you in prayer.', 5: 'Help me forgive, and trust that you can bring good out of what is hard.', 6: 'Lord, help me tell you the truth when I am sad, and keep holding on to you.', 7: 'Here am I, Lord. Be with me when I feel too small.', 8: 'Thank you, Lord, for setting your people free. Help me remember all you have done for me.', 9: 'Lord, make a way for me, and give me what I need for today.', 10: 'Lord, help me love you with all my heart, and my neighbor as myself.', 11: 'Lord, make my heart a place where you are glad to dwell.', 12: 'Thank you for leading me, Lord. Help me trust you instead of complaining.', 13: 'Help me remember all you have done, and choose life every day.', 14: 'As for me and my house, we will serve the Lord.', 15: 'Lord, be my King, and help me remember you when life is easy.', 16: 'Where you go I will go, Lord. Fill my empty hands.', 17: 'Speak, Lord, for your servant is listening.', 18: 'Lord, look at my heart, and be my shepherd and my king.', 19: 'Create in me a clean heart, O God.', 20: 'The Lord is my shepherd; teach me to pray the Psalms.', 21: 'Give me an understanding heart, and keep it wholly true to you.' }
 
 /**
  * The end of a finished level (spec §3.3): the quiz (each question answered as it comes,

@@ -1100,6 +1100,49 @@ export const EMBLEMS: Record<string, () => Piece[]> = {
     { d: P([[-14, 8], [14, 8], [14, 12], [-14, 12]]), color: '#e4d8bc' },
     { d: P([[-16, 12], [16, 12], [16, 16], [-16, 16]]), color: '#d8ccb0' },
   ],
+  // Level 21 · Solomon and the Temple
+  // A crown, and the lamp of wisdom beneath it.
+  'gift-of-wisdom': () => [
+    { d: P([[-10, -6], [-10, -14], [-5, -9], [0, -16], [5, -9], [10, -14], [10, -6]]), color: '#e0b040' },
+    { d: P([[-8, 8], [8, 8], [5, 12], [-5, 12]]), color: '#c8a050' },
+    { d: P([[-2, 8], [0, -1], [2, 8]]), color: '#fff0a0' },
+  ],
+  // A mother holding her baby.
+  'living-child': () => [
+    { d: circ(-4, -10, 4, 10), color: '#e8d8c8' },
+    { d: P([[-10, -6], [4, -6], [6, 16], [-12, 16]]), color: '#3a5a8a' },
+    { d: P([[-4, 0], [8, -4], [10, 2], [-2, 6]]), color: '#f4f0e8' },
+    { d: circ(9, -3, 2.5, 8), color: '#e8d8c8' },
+  ],
+  // The courses of finished stones.
+  'temple-stones': () => [
+    { d: P([[-14, 16], [-14, 10], [14, 10], [14, 16]]), color: '#d8ccb0' },
+    { d: P([[-12, 9], [-12, 3], [12, 3], [12, 9]]), color: '#e4d8bc' },
+    { d: P([[-10, 2], [-10, -4], [10, -4], [10, 2]]), color: '#d8ccb0' },
+    { d: P([[-6, -6], [-6, -14], [6, -14], [6, -6]]), color: '#f4e8c0' },
+  ],
+  // The house of the LORD, and the cloud of glory over it.
+  'cloud-of-glory': () => [
+    { d: P([[-10, 16], [-10, 0], [10, 0], [10, 16]]), color: '#ece2c8' },
+    { d: P([[-3, 16], [-3, 6], [3, 6], [3, 16]]), color: '#3a2a20' },
+    { d: circ(-6, -6, 6, 10), color: '#fff4d0' },
+    { d: circ(4, -9, 7, 10), color: '#fff4d0' },
+    { d: circ(10, -3, 4, 10), color: '#fff4d0' },
+  ],
+  // The queen's gifts: gold, and a jar of spices.
+  'queens-gifts': () => [
+    { d: P([[-14, 16], [-14, 6], [0, 6], [0, 16]]), color: '#8a5a32' },
+    { d: P([[-13, 6], [-13, 2], [-1, 2], [-1, 6]]), color: '#e0b040' },
+    { d: P([[4, 16], [2, 4], [6, -2], [10, -2], [14, 4], [12, 16]]), color: '#c87a40' },
+    { d: P([[6, -2], [6, -6], [10, -6], [10, -2]]), color: '#a85a30' },
+  ],
+  // Ahijah's new cloak, torn in pieces.
+  'twelve-pieces': () =>
+    Array.from({ length: 12 }, (_, i) => {
+      const x = -13 + (i % 4) * 7
+      const y = -11 + Math.floor(i / 4) * 8
+      return { d: P([[x, y], [x + 5, y], [x + 6, y + 6], [x - 1, y + 6]]), color: i < 10 ? '#4a6a9a' : '#8a7a5a' }
+    }),
 }
 
 /** The medallions' backgrounds: deep blue, with one ruby for the darkest story. */

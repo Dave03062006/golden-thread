@@ -199,6 +199,9 @@ export const PLACES: Place[] = [
   { id: 'rabbah', name: 'Rabbah', kind: 'city', at: { lat: 31.95, lon: 35.93 }, note: 'The capital of the Ammonites, east of the Jordan, where Uriah fell. Today it is Amman, the capital of Jordan.' },
   { id: 'mount-of-olives', name: 'The Mount of Olives', kind: 'mountain', at: { lat: 31.78, lon: 35.245 }, note: 'The hill east of Jerusalem, across the brook Kidron, where David went up weeping, and where Jesus prayed on the night he was betrayed.' },
   { id: 'mahanaim', name: 'Mahanaim', kind: 'city', at: { lat: 32.18, lon: 35.62 }, note: 'A town east of the Jordan, where Jacob saw the angels of God, and where David took refuge from Absalom.' },
+  // Level 21 · Solomon and the Temple
+  { id: 'tyre', name: 'Tyre', kind: 'city', at: { lat: 33.27, lon: 35.2 }, note: 'A rich port of the Phoenicians on the coast north of Israel, whose king, Hiram, sent cedar from Lebanon for the Temple.' },
+  { id: 'sheba', name: 'Sheba', kind: 'region', note: 'A rich kingdom in the far south of Arabia, in today’s Yemen, beyond the southern edge of this map. Its queen came to Jerusalem to test Solomon’s wisdom.' },
 ]
 
 const BY_ID = new Map(PLACES.map((place) => [place.id, place]))

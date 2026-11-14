@@ -189,6 +189,13 @@ export const EMBLEMS: Record<string, { rows: string[]; colors: Record<string, st
   'watchman-at-dawn': { rows: ['......yy.', '.n...yyyy', '.n...yyyy', 'nnn...yy.', '.n.......', '.n.......', 'sssssssss', 'sssssssss', 'sssssssss'], colors: { y: C.gold, n: C.navy, s: C.sand2 } },
   'head-of-the-corner': { rows: ['...www...', '...www...', 'sss...sss', 'ss.....ss', 'ss.....ss', 'ss.....ss', 'ss.....ss', 'ss.....ss', 'ss.....ss'], colors: { w: C.white, s: C.sand2 } },
   'temple-stairs': { rows: ['yyyyyyyyy', '.wwwwwww.', '.www.www.', '.ww...ww.', '.ww...ww.', 'sssssssss', 'aaaaaaaaa', 'sssssssss', 'aaaaaaaaa'], colors: { y: C.gold, w: C.white, s: C.sand, a: C.sand2 } },
+  // Level 21 · Solomon and the Temple
+  'gift-of-wisdom': { rows: ['y.y.y.y.y', 'yyyyyyyyy', 'yyyyyyyyy', '.........', '....w....', '...www...', '..ggggg..', '...ggg...', '.........'], colors: { y: C.gold, w: C.white, g: C.wood3 } },
+  'living-child': { rows: ['..pp.....', '..pp.....', '.bbbb....', '.bbwwww..', '.bbwwwwp.', '.bbbb....', '.bbbbb...', 'bbbbbbb..', '.........'], colors: { p: C.sand, b: C.blue, w: C.white } },
+  'temple-stones': { rows: ['.........', '...www...', '...www...', '.sssssss.', '.sssssss.', 'aaaaaaaaa', 'aaaaaaaaa', 'sssssssss', 'sssssssss'], colors: { w: C.gold, s: C.white, a: C.pale } },
+  'cloud-of-glory': { rows: ['.ww.www..', 'wwwwwwww.', '.wwwwww..', '.........', '..sssss..', '..sssss..', '..ss.ss..', '..ss.ss..', 'ggggggggg'], colors: { w: C.white, s: C.sand, g: C.wood3 } },
+  'queens-gifts': { rows: ['......o..', '.....ooo.', '.....ooo.', 'yyyy.ooo.', 'yyyy.ooo.', 'wwww.ooo.', 'wwww.ooo.', 'wwww.....', '.........'], colors: { y: C.gold, w: C.wood2, o: C.orange } },
+  'twelve-pieces': { rows: ['bb.bb.bb.', 'bb.bb.bb.', '.........', 'bb.bb.bb.', 'bb.bb.bb.', '.........', 'bb.bb.ss.', 'bb.bb.ss.', '.........'], colors: { b: C.blue, s: C.sand2 } },
   'house-for-ever': { rows: ['....y....', '...www...', '..wwwww..', '.wwwwwww.', '.wwwwwww.', '.www.www.', '.ww...ww.', '.ww.y.ww.', 'ggggggggg'], colors: { y: C.gold, w: C.white, g: C.wood3 } },
 }
 

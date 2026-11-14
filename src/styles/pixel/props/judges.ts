@@ -217,4 +217,35 @@ const cornerstone: PixelDrawnArt = {
   },
 }
 
-export const judgesProps: Record<string, PixelDrawnArt> = { 'palm-tree': palmTree, fleece, honeycomb, millstone, sandal, 'oil-vial': oilVial, spear, 'linen-robe': linenRobe, stain, hyssop, snowfall, shofar, cymbals, 'gate-arch': gateArch, cornerstone }
+/** Level 21: a cedar of Lebanon, with its broad flat tiers of branches. */
+const cedar: PixelDrawnArt = {
+  kind: 'drawn',
+  poses: ['idle'],
+  anchor: 'base',
+  draw(paint, { width }) {
+    const w = Math.max(12, Math.round(width))
+    const h = Math.round(w * 1.3)
+    paint.rect(-1, -Math.round(h * 0.6), 2, Math.round(h * 0.6), C.wood1)
+    for (let i = 0; i < 4; i++) {
+      const half = Math.round((w / 2) * (1 - i * 0.18))
+      paint.rect(-half, -Math.round(h * (0.3 + i * 0.2)), half * 2, 3, i % 2 ? C.teal : C.green)
+    }
+  },
+}
+
+/** Level 21: one course of finished Temple stones, lowered into place. */
+const stoneCourse: PixelDrawnArt = {
+  kind: 'drawn',
+  poses: ['idle'],
+  anchor: 'base',
+  draw(paint, { width }) {
+    const w = Math.max(12, Math.round(width))
+    const half = Math.round(w / 2)
+    const h = Math.max(3, Math.round(w * 0.12))
+    paint.rect(-half, -h, w, h, C.white)
+    for (const k of [-0.3, -0.1, 0.1, 0.3]) paint.rect(Math.round(w * k), -h, 1, h, C.pale)
+    paint.rect(-half, -1, w, 1, C.pale)
+  },
+}
+
+export const judgesProps: Record<string, PixelDrawnArt> = { 'palm-tree': palmTree, fleece, honeycomb, millstone, sandal, 'oil-vial': oilVial, spear, 'linen-robe': linenRobe, stain, hyssop, snowfall, shofar, cymbals, 'gate-arch': gateArch, cornerstone, cedar, 'stone-course': stoneCourse }

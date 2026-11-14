@@ -3,7 +3,7 @@
 **Bible:** 1 Kings 1–11; 2 Chronicles 1–9
 **Age:** VI · The Kingdom
 **Length:** about 46 minutes (6 episodes, then the quiz, then reflection and prayer)
-**Status:** draft for Dave's approval.
+**Status:** approved by Dave on 2026-11-15 ("Approved, build it").
 
 ## How to read this script
 

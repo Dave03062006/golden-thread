@@ -1435,6 +1435,24 @@
     },
     "cornerstone": {
       "hash": "804cd698"
+    },
+    "cedar": {
+      "hash": "38416206"
+    },
+    "stone-course": {
+      "hash": "6daf6e50"
+    },
+    "queen-of-sheba": {
+      "hash": "cc4fe137"
+    },
+    "solomon-old": {
+      "hash": "3fd36b4f"
+    },
+    "ahijah": {
+      "hash": "42dfeae7"
+    },
+    "jeroboam": {
+      "hash": "f3a04fae"
     }
   },
   "pixelLayers": {
