@@ -6334,6 +6334,275 @@ export const VERSES: Record<string, Verse> = {
     rsv: 'Therefore, if any one is in Christ, he is a new creation; the old has passed away, behold, the new has come.',
     dra: 'If then any be in Christ a new creature, the old things are passed away, behold all things are made new.',
   },
+  // Level 20 · The Psalms
+  'PSA 2:7': {
+    rsv: 'I will tell of the decree of the LORD: He said to me, “You are my son, today I have begotten you.',
+    dra: 'The Lord hath said to me: Thou art my son, this day have I begotten thee.',
+  },
+  'PSA 8:1': {
+    rsv: 'O LORD, our Lord, how majestic is thy name in all the earth! Thou whose glory above the heavens is chanted',
+    dra: 'O Lord our Lord, how admirable is thy name in the whole earth! For thy magnificence is elevated above the heavens.',
+  },
+  'PSA 8:2': {
+    rsv: 'by the mouth of babes and infants, thou hast founded a bulwark because of thy foes, to still the enemy and the avenger.',
+    dra: 'Out of the mouth of infants and of sucklings thou hast perfected praise, because of thy enemies, that thou mayst destroy the enemy and the avenger.',
+  },
+  'PSA 8:3': {
+    rsv: 'When I look at thy heavens, the work of thy fingers, the moon and the stars which thou hast established;',
+    dra: 'For I will behold thy heavens, the works of thy fingers: the moon and the stars which thou hast founded.',
+  },
+  'PSA 8:4': {
+    rsv: 'what is man that thou art mindful of him, and the son of man that thou dost care for him?',
+    dra: 'What is man that thou art mindful of him? or the son of man that thou visitest him?',
+  },
+  'PSA 13:1': {
+    rsv: 'How long, O LORD? Wilt thou forget me for ever? How long wilt thou hide thy face from me?',
+    dra: 'How long, O Lord, wilt thou forget me unto the end? how long dost thou turn away thy face from me?',
+  },
+  'PSA 13:5': {
+    rsv: 'But I have trusted in thy steadfast love; my heart shall rejoice in thy salvation.',
+    dra: 'But I have trusted in thy mercy. My heart shall rejoice in thy salvation: I will sing to the Lord, who giveth me good things: yea I will sing to the name of the Lord the most high.',
+  },
+  'PSA 16:10': {
+    rsv: 'For thou dost not give me up to Sheol, or let thy godly one see the Pit.',
+    dra: 'Because thou wilt not leave my soul in hell; nor wilt then give thy holy one to see corruption.',
+  },
+  'PSA 16:11': {
+    rsv: 'Thou dost show me the path of life; in thy presence there is fulness of joy, in thy right hand are pleasures for evermore.',
+    dra: 'Thou hast made known to me the ways of life, thou shalt fill me with joy with thy countenance: at thy right hand are delights even to the end.',
+  },
+  'PSA 19:1': {
+    rsv: 'The heavens are telling the glory of God; and the firmament proclaims his handiwork.',
+    dra: 'The heavens shew forth the glory of God, and the firmament declareth the work of his hands.',
+  },
+  'PSA 22:1': {
+    rsv: 'My God, my God, why hast thou forsaken me? Why art thou so far from helping me, from the words of my groaning?',
+    dra: 'O God my God, look upon me: why hast thou forsaken me? Far from my salvation are the words of my sins.',
+  },
+  'PSA 22:27': {
+    rsv: 'All the ends of the earth shall remember and turn to the LORD; and all the families of the nations shall worship before him.',
+    dra: 'All the ends of the earth shall remember, and shall be converted to the Lord: And all the kindreds of the Gentiles shall adore in his sight.',
+  },
+  'PSA 23:1': {
+    rsv: 'The LORD is my shepherd, I shall not want;',
+    dra: 'The Lord ruleth me: and I shall want nothing.',
+  },
+  'PSA 23:2': {
+    rsv: 'he makes me lie down in green pastures. He leads me beside still waters;',
+    dra: 'He hath set me in a place of pasture. He hath brought me up, on the water of refreshment:',
+  },
+  'PSA 23:3': {
+    rsv: 'he restores my soul. He leads me in paths of righteousness for his name’s sake.',
+    dra: 'He hath converted my soul. He hath led me on the paths of justice, for his own name’s sake.',
+  },
+  'PSA 23:4': {
+    rsv: 'Even though I walk through the valley of the shadow of death, I fear no evil; for thou art with me; thy rod and thy staff, they comfort me.',
+    dra: 'For though I should walk in the midst of the shadow of death, I will fear no evils, for thou art with me. Thy rod and thy staff, they have comforted me.',
+  },
+  'PSA 23:5': {
+    rsv: 'Thou preparest a table before me in the presence of my enemies; thou anointest my head with oil, my cup overflows.',
+    dra: 'Thou hast prepared a table before me against them that afflict me. Thou hast anointed my head with oil; and my chalice which inebriateth me, how goodly is it!',
+  },
+  'PSA 23:6': {
+    rsv: 'Surely goodness and mercy shall follow me all the days of my life; and I shall dwell in the house of the Lord for ever.',
+    dra: 'And thy mercy will follow me all the days of my life. And that I may dwell in the house of the Lord unto length of days.',
+  },
+  'PSA 32:1': {
+    rsv: 'Blessed is he whose transgression is forgiven, whose sin is covered.',
+    dra: 'Blessed are they whose iniquities are forgiven, and whose sins are covered.',
+  },
+  'PSA 42:1': {
+    rsv: 'As a hart longs for flowing streams, so longs my soul for thee, O God.',
+    dra: 'As the hart panteth after the fountains of water; so my soul panteth after thee, O God.',
+  },
+  'PSA 42:2': {
+    rsv: 'My soul thirsts for God, for the living God. When shall I come and behold the face of God?',
+    dra: 'My soul hath thirsted after the strong living God; when shall I come and appear before the face of God?',
+  },
+  'PSA 42:5': {
+    rsv: 'Why are you cast down, O my soul, and why are you disquieted within me? Hope in God; for I shall again praise him, my help',
+    dra: 'Why art thou sad, O my soul? and why dost thou trouble me? Hope in God, for I will still give praise to him: the salvation of my countenance,',
+  },
+  'PSA 51:15': {
+    rsv: 'O Lord, open thou my lips, and my mouth shall show forth thy praise.',
+    dra: 'O Lord, thou wilt open my lips: and my mouth shall declare thy praise.',
+  },
+  'PSA 100:1': {
+    rsv: 'Make a joyful noise to the LORD, all the lands!',
+    dra: 'Sing joyfully to God, all the earth: serve ye the Lord with gladness. Come in before his presence with exceeding great joy.',
+  },
+  'PSA 100:3': {
+    rsv: 'Know that the LORD is God! It is he that made us, and we are his; we are his people, and the sheep of his pasture.',
+    dra: 'Know ye that the Lord he is God: he made us, and not we ourselves. We are his people and the sheep of his pasture.',
+  },
+  'PSA 100:4': {
+    rsv: 'Enter his gates with thanksgiving, and his courts with praise! Give thanks to him, bless his name!',
+    dra: 'Go ye into his gates with praise, into his courts with hymns: and give glory to him. Praise ye his name:',
+  },
+  'PSA 103:8': {
+    rsv: 'The LORD is merciful and gracious, slow to anger and abounding in steadfast love.',
+    dra: 'The Lord is compassionate and merciful: longsuffering and plenteous in mercy.',
+  },
+  'PSA 103:10': {
+    rsv: 'He does not deal with us according to our sins, nor requite us according to our iniquities.',
+    dra: 'He hath not dealt with us according to our sins: nor rewarded us according to our iniquities.',
+  },
+  'PSA 103:12': {
+    rsv: 'as far as the east is from the west, so far does he remove our transgressions from us.',
+    dra: 'As far as the east is from the west, so far hath he removed our iniquities from us.',
+  },
+  'PSA 103:13': {
+    rsv: 'As a father pities his children, so the LORD pities those who fear him.',
+    dra: 'As a father hath compassion on his children, so hath the Lord compassion on them that fear him:',
+  },
+  'PSA 110:1': {
+    rsv: 'The LORD says to my lord: “Sit at my right hand, till I make your enemies your footstool.”',
+    dra: 'The Lord said to my Lord: Sit thou at my right hand: Until I make thy enemies thy footstool.',
+  },
+  'PSA 118:22': {
+    rsv: 'The stone which the builders rejected has become the head of the corner.',
+    dra: 'The stone which the builders rejected; the same is become the head of the corner.',
+  },
+  'PSA 118:23': {
+    rsv: 'This is the LORD’s doing; it is marvelous in our eyes.',
+    dra: 'This is the Lord’s doing: and it is wonderful in our eyes.',
+  },
+  'PSA 118:24': {
+    rsv: 'This is the day which the LORD has made; let us rejoice and be glad in it.',
+    dra: 'This is the day which the Lord hath made: let us be glad and rejoice therein.',
+  },
+  'PSA 118:26': {
+    rsv: 'Blessed be he who enters in the name of the LORD! We bless you from the house of the LORD.',
+    dra: 'Blessed be he that cometh in the name Lord. We have blessed you out of the house of the Lord.',
+  },
+  'PSA 121:1': {
+    rsv: 'I lift up my eyes to the hills. From whence does my help come?',
+    dra: 'I have lifted up my eyes to the mountains, from whence help shall come to me.',
+  },
+  'PSA 121:2': {
+    rsv: 'My help comes from the LORD, who made heaven and earth.',
+    dra: 'My help is from the Lord, who made heaven and earth.',
+  },
+  'PSA 121:3': {
+    rsv: 'He will not let your foot be moved, he who keeps you will not slumber.',
+    dra: 'May he not suffer thy foot to be moved: neither let him slumber that keepeth thee.',
+  },
+  'PSA 121:8': {
+    rsv: 'The LORD will keep your going out and your coming in from this time forth and for evermore.',
+    dra: 'May the Lord keep thy coming in and thy going out; from henceforth now and for ever.',
+  },
+  'PSA 122:1': {
+    rsv: 'I was glad when they said to me, “Let us go to the house of the LORD!”',
+    dra: 'I rejoiced at the things that were said to me: We shall go into the house of the Lord.',
+  },
+  'PSA 122:2': {
+    rsv: 'Our feet have been standing within your gates, O Jerusalem!',
+    dra: 'Our feet were standing in thy courts, O Jerusalem.',
+  },
+  'PSA 122:6': {
+    rsv: 'Pray for the peace of Jerusalem! “May they prosper who love you!',
+    dra: 'Pray ye for the things that are for the peace of Jerusalem: and abundance for them that love thee.',
+  },
+  'PSA 130:1': {
+    rsv: 'Out of the depths I cry to thee, O LORD!',
+    dra: 'Out of the depths I have cried to thee, O Lord:',
+  },
+  'PSA 130:3': {
+    rsv: 'If thou, O LORD, shouldst mark iniquities, Lord, who could stand?',
+    dra: 'If thou, O Lord, wilt mark iniquities: Lord, who shall stand it.',
+  },
+  'PSA 130:4': {
+    rsv: 'But there is forgiveness with thee, that thou mayest be feared.',
+    dra: 'For with thee there is merciful forgiveness: and by reason of thy law, I have waited for thee, O Lord. My soul hath relied on his word:',
+  },
+  'PSA 130:5': {
+    rsv: 'I wait for the LORD, my soul waits, and in his word I hope;',
+    dra: 'My soul hath hoped in the Lord.',
+  },
+  'PSA 130:6': {
+    rsv: 'my soul waits for the Lord more than watchmen for the morning, more than watchmen for the morning.',
+    dra: 'From the morning watch even until night, let Israel hope in the Lord.',
+  },
+  'PSA 130:7': {
+    rsv: 'O Israel, hope in the LORD! For with the LORD there is steadfast love, and with him is plenteous redemption.',
+    dra: 'Because with the Lord there is mercy: and with him plentiful redemption.',
+  },
+  'PSA 130:8': {
+    rsv: 'And he will redeem Israel from all his iniquities.',
+    dra: 'And he shall redeem Israel from all his iniquities.',
+  },
+  'PSA 133:1': {
+    rsv: 'Behold, how good and pleasant it is when brothers dwell in unity!',
+    dra: 'Behold how good and how pleasant it is for brethren to dwell in unity.',
+  },
+  'PSA 134:1': {
+    rsv: 'Come, bless the LORD, all you servants of the LORD, who stand by night in the house of the LORD!',
+    dra: 'Behold now bless ye the Lord, all ye servants of the Lord: Who stand in the house of the Lord, in the courts of the house of our God.',
+  },
+  'PSA 134:2': {
+    rsv: 'Lift up your hands to the holy place, and bless the LORD!',
+    dra: 'In the nights lift up your hands to the holy places, and bless ye the Lord.',
+  },
+  'PSA 134:3': {
+    rsv: 'May the LORD bless you from Zion, he who made heaven and earth!',
+    dra: 'May the Lord out of Sion bless thee, he that made heaven and earth.',
+  },
+  'PSA 150:1': {
+    rsv: 'Praise the LORD! Praise God in his sanctuary; praise him in his mighty firmament!',
+    dra: 'Praise ye the Lord in his holy places: praise ye him in the firmament of his power.',
+  },
+  'PSA 150:3': {
+    rsv: 'Praise him with trumpet sound; praise him with lute and harp!',
+    dra: 'Praise him with sound of trumpet: praise him with psaltery and harp.',
+  },
+  'PSA 150:4': {
+    rsv: 'Praise him with timbrel and dance; praise him with strings and pipe!',
+    dra: 'Praise him with timbrel and choir: praise him with strings and organs.',
+  },
+  'PSA 150:5': {
+    rsv: 'Praise him with sounding cymbals; praise him with loud clashing cymbals!',
+    dra: 'Praise him on high sounding cymbals: praise him on cymbals of joy: let every spirit praise the Lord. Alleluia.',
+  },
+  'PSA 150:6': {
+    rsv: 'Let everything that breathes praise the LORD! Praise the LORD!',
+    dra: 'Let every spirit praise the Lord. Alleluia.',
+  },
+  'MAT 1:21': {
+    rsv: 'she will bear a son, and you shall call his name Jesus, for he will save his people from their sins.”',
+    dra: 'And she shall bring forth a son: and thou shalt call his name JESUS. For he shall save his people from their sins.',
+  },
+  'MAT 21:15': {
+    rsv: 'But when the chief priests and the scribes saw the wonderful things that he did, and the children crying out in the temple, “Hosanna to the Son of David!” they were indignant;',
+    dra: 'And the chief priests and scribes, seeing the wonderful things that he did, and the children crying in the temple, and saying: Hosanna to the son of David; were moved with indignation.',
+  },
+  'MAT 21:16': {
+    rsv: 'and they said to him, “Do you hear what these are saying?” And Jesus said to them, “Yes; have you never read, ‘Out of the mouth of babes and sucklings thou hast brought perfect praise’?”',
+    dra: 'And said to him: Hearest thou what these say? And Jesus said to them: Yea, have you never read: Out of the mouth of infants and of sucklings thou hast perfected praise?',
+  },
+  'MAT 21:42': {
+    rsv: 'Jesus said to them, “Have you never read in the scriptures: ‘The very stone which the builders rejected has become the head of the corner; this was the Lord’s doing, and it is marvelous in our eyes’?',
+    dra: 'Jesus saith to them: Have you never read in the Scriptures: The stone which the builders rejected, the same is become the head of the corner? By the Lord this has been done; and it is wonderful in our eyes.',
+  },
+  'LUK 2:41': {
+    rsv: 'Now his parents went to Jerusalem every year at the feast of the Passover.',
+    dra: 'And his parents went every year to Jerusalem, at the solemn day of the pasch,',
+  },
+  'LUK 2:42': {
+    rsv: 'And when he was twelve years old, they went up according to custom;',
+    dra: 'And when he was twelve years old, they going up into Jerusalem, according to the custom of the feast,',
+  },
+  'JHN 14:2': {
+    rsv: 'In my Father’s house are many rooms; if it were not so, would I have told you that I go to prepare a place for you?',
+    dra: 'In my Father’s house there are many mansions. If not, I would have told you: because I go to prepare a place for you.',
+  },
+  'JHN 14:3': {
+    rsv: 'And when I go and prepare a place for you, I will come again and will take you to myself, that where I am you may be also.',
+    dra: 'And if I shall go, and prepare a place for you, I will come again, and will take you to myself; that where I am, you also may be.',
+  },
+  'ACT 4:11': {
+    rsv: 'This is the stone which was rejected by you builders, but which has become the head of the corner.',
+    dra: 'This is the stone which was rejected by you the builders, which is become the head of the corner.',
+  },
 }
 
 /** A verse's words in the active translation. Throws for a verse that isn't in the list (a content check catches these first). */

@@ -419,6 +419,9 @@
     },
     "kidron-olives": {
       "hash": "350845c0"
+    },
+    "temple-courts": {
+      "hash": "cd53ce0c"
     }
   },
   "paperProps": {
@@ -1417,6 +1420,21 @@
     },
     "araunah": {
       "hash": "e4e3bae4"
+    },
+    "shofar": {
+      "hash": "7201a6e5"
+    },
+    "cymbals": {
+      "hash": "d3185f18"
+    },
+    "solomon": {
+      "hash": "47c14eba"
+    },
+    "gate-arch": {
+      "hash": "79760adb"
+    },
+    "cornerstone": {
+      "hash": "804cd698"
     }
   },
   "pixelLayers": {
@@ -1839,6 +1857,9 @@
     },
     "kidron-olives": {
       "hash": "f6eafef4"
+    },
+    "temple-courts": {
+      "hash": "56820800"
     }
   },
   "backdrop": {

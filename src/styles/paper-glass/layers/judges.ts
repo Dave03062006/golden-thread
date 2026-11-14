@@ -150,6 +150,22 @@ export const judgesLayers: Record<string, PaperLayerArt> = {
       <path d="M560 790Q700 760 840 792" stroke="#5a8ab8" stroke-width="12" fill="none" stroke-linecap="round"/>
       ${OLIVES}`,
   },
+  // Level 20: the Temple courts: colonnades, the Temple's gilded front, and the great stairway up to its door.
+  'temple-courts': {
+    bounds: bandFrom(120),
+    shadow: true,
+    resolution: 0.5,
+    svg: `
+      <rect x="${LEFT}" y="360" width="${RIGHT - LEFT}" height="22" fill="#c8b898"/>
+      ${Array.from({ length: 22 }, (_, i) => LEFT + 30 + i * 96).filter((x) => x < 540 || x > 1060).map((x) => `<rect x="${x}" y="380" width="26" height="300" fill="#e0d4b8"/>`).join('')}
+      <rect x="560" y="140" width="480" height="420" fill="#ece2c8"/>
+      <rect x="540" y="128" width="520" height="22" fill="#d8a838"/>
+      <rect x="730" y="300" width="140" height="260" fill="#3a2a20"/>
+      <rect x="742" y="312" width="116" height="248" fill="#7a3a2a" opacity=".7"/>
+      ${Array.from({ length: 8 }, (_, i) => { const y = 560 + i * 26; const half = 200 + i * 26; return `<rect x="${800 - half}" y="${y}" width="${half * 2}" height="26" fill="${i % 2 ? '#d8ccb0' : '#e4d8bc'}"/>` }).join('')}
+      <rect x="${LEFT}" y="768" width="${RIGHT - LEFT}" height="${BOTTOM - 768}" fill="#d8c8a8"/>
+      <rect x="${LEFT}" y="680" width="${RIGHT - LEFT}" height="90" fill="#cfc0a0" opacity=".6"/>`,
+  },
   'dagon-fallen': {
     bounds: bandFrom(300),
     shadow: true,

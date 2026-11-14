@@ -146,4 +146,42 @@ const snowfall: PaperPropArt = {
   ],
 }
 
-export const judgesProps: Record<string, PaperPropArt> = { 'palm-tree': palmTree, fleece, honeycomb, millstone, sandal, 'oil-vial': oilVial, spear, 'linen-robe': linenRobe, stain, hyssop, snowfall }
+/** Level 20: the shofar, a ram's-horn trumpet. */
+const shofar: PaperPropArt = {
+  box: { x: -40, y: -20, w: 80, h: 40 },
+  facing: 1,
+  poses: ['idle'],
+  parts: [{ id: 'horn', svg: '<path d="M-36 12Q-30 -16 6 -12Q30 -10 36 -16L38 -6Q30 0 8 -2Q-22 -4 -28 16Z" fill="#e8d8b0"/><path d="M30 -14L38 -16L38 -4L30 -2Z" fill="#c8b48a"/>' }],
+}
+
+/** Level 20: a pair of bronze cymbals. */
+const cymbals: PaperPropArt = {
+  box: { x: -40, y: -25, w: 80, h: 50 },
+  facing: 1,
+  poses: ['idle'],
+  parts: [{ id: 'cymbals', svg: '<ellipse cx="-14" cy="0" rx="20" ry="8" fill="#c8a040" transform="rotate(-25 -14 0)"/><ellipse cx="14" cy="0" rx="20" ry="8" fill="#d8b050" transform="rotate(25 14 0)"/><circle cx="-14" cy="0" r="3" fill="#8a6a2a"/><circle cx="14" cy="0" r="3" fill="#8a6a2a"/>' }],
+}
+
+/** Level 20: a stone gateway arch, unfinished, with a gap at the head of the corner. */
+const gateArch: PaperPropArt = {
+  box: { x: -100, y: -150, w: 200, h: 150 },
+  facing: 1,
+  poses: ['idle'],
+  anchor: 'base',
+  parts: [
+    {
+      id: 'arch',
+      svg: `<path d="M-90 0L-90 -96Q-88 -138 -20 -142L-20 -104Q-50 -100 -52 -72L-52 0Z" fill="#c8b898"/><path d="M90 0L90 -96Q88 -138 20 -142L20 -104Q50 -100 52 -72L52 0Z" fill="#c8b898"/>${[-80, -64, -48, -32, -16].map((y) => `<path d="M-90 ${y}L-52 ${y}M52 ${y}L90 ${y}" stroke="#a89878" stroke-width="2"/>`).join('')}<path d="M-56 -112L-34 -128M56 -112L34 -128" stroke="#a89878" stroke-width="2"/>`,
+    },
+  ],
+}
+
+/** Level 20: the cornerstone, the stone the builders rejected. */
+const cornerstone: PaperPropArt = {
+  box: { x: -20, y: -15, w: 40, h: 30 },
+  facing: 1,
+  poses: ['idle'],
+  parts: [{ id: 'stone', svg: '<path d="M-18 -13L18 -13L13 13L-13 13Z" fill="#e0d6c2"/><path d="M-18 -13L18 -13L16 -9L-16 -9Z" fill="#d8a838"/>' }],
+}
+
+export const judgesProps: Record<string, PaperPropArt> = { 'palm-tree': palmTree, fleece, honeycomb, millstone, sandal, 'oil-vial': oilVial, spear, 'linen-robe': linenRobe, stain, hyssop, snowfall, shofar, cymbals, 'gate-arch': gateArch, cornerstone }

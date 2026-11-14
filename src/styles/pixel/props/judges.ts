@@ -156,4 +156,65 @@ const snowfall: PixelDrawnArt = {
   },
 }
 
-export const judgesProps: Record<string, PixelDrawnArt> = { 'palm-tree': palmTree, fleece, honeycomb, millstone, sandal, 'oil-vial': oilVial, spear, 'linen-robe': linenRobe, stain, hyssop, snowfall }
+/** Level 20: the shofar, a ram's-horn trumpet. */
+const shofar: PixelDrawnArt = {
+  kind: 'drawn',
+  poses: ['idle'],
+  anchor: 'center',
+  draw(paint, { width }) {
+    const w = Math.max(6, Math.round(width))
+    const half = Math.round(w / 2)
+    for (let x = -half; x < half; x++) paint.rect(x, Math.round(((x + half) / w - 0.5) ** 2 * 4) - 1, 1, x > half - 3 ? 3 : 2, C.sand)
+  },
+}
+
+/** Level 20: a pair of bronze cymbals. */
+const cymbals: PixelDrawnArt = {
+  kind: 'drawn',
+  poses: ['idle'],
+  anchor: 'center',
+  draw(paint, { width }) {
+    const r = Math.max(2, Math.round(width / 4))
+    paint.rect(-r * 2, -1, r * 2 - 1, 2, C.gold)
+    paint.rect(1, -1, r * 2 - 1, 2, C.gold)
+    paint.rect(-r - 1, -2, 1, 1, C.wood3)
+    paint.rect(r, -2, 1, 1, C.wood3)
+  },
+}
+
+/** Level 20: a stone gateway arch, unfinished, with a gap at the head of the corner. */
+const gateArch: PixelDrawnArt = {
+  kind: 'drawn',
+  poses: ['idle'],
+  anchor: 'base',
+  draw(paint, { width }) {
+    const w = Math.max(20, Math.round(width))
+    const k = w / 200
+    const px = (v: number) => Math.round(v * k)
+    // Two pillars, and the arch springing from them, with the gap at the top.
+    paint.rect(px(-90), px(-96), px(38), px(96), C.pale)
+    paint.rect(px(52), px(-96), px(38), px(96), C.pale)
+    paint.rect(px(-86), px(-128), px(66), px(32), C.pale)
+    paint.rect(px(20), px(-128), px(66), px(32), C.pale)
+    paint.rect(px(-52), px(-100), px(32), px(28), C.pale)
+    paint.rect(px(20), px(-100), px(32), px(28), C.pale)
+    for (const y of [-80, -48, -16]) {
+      paint.rect(px(-90), px(y), px(38), 1, C.slate)
+      paint.rect(px(52), px(y), px(38), 1, C.slate)
+    }
+  },
+}
+
+/** Level 20: the cornerstone, the stone the builders rejected. */
+const cornerstone: PixelDrawnArt = {
+  kind: 'drawn',
+  poses: ['idle'],
+  anchor: 'center',
+  draw(paint, { width }) {
+    const half = Math.max(2, Math.round(width / 2))
+    paint.rect(-half, -half + 1, half * 2, half * 2 - 1, C.white)
+    paint.rect(-half, -half, half * 2, 1, C.gold)
+  },
+}
+
+export const judgesProps: Record<string, PixelDrawnArt> = { 'palm-tree': palmTree, fleece, honeycomb, millstone, sandal, 'oil-vial': oilVial, spear, 'linen-robe': linenRobe, stain, hyssop, snowfall, shofar, cymbals, 'gate-arch': gateArch, cornerstone }

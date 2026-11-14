@@ -333,6 +333,8 @@ export const familyOfNoah: Record<string, PaperPropArt> = {
   'david-old': person({ robe: '#4a3a8a', fold: '#322666', hair: '#d8d4cc', beard: '#d8d4cc', sash: '#e0b040' }),
   ittai: person({ robe: '#5a6a3a', fold: '#3e4a26', hair: '#1a1416', beard: '#1a1416', sash: '#8a5a32' }),
   araunah: person({ robe: '#b89a6a', fold: '#8a7048', hair: '#3a2a1a', beard: '#3a2a1a', sash: '#6a4a2a' }),
+  // Level 20: Solomon, a young king of David's family (and the hero of Level 21).
+  solomon: person({ robe: '#e8d8b0', fold: '#c8b890', hair: '#3a2414', sash: '#4a3a8a' }),
   amalekites: band([
     { robe: '#5a3a3a', fold: '#3e2626', hair: '#1a1210', beard: '#1a1210', veil: '#3a2a2a' },
     { robe: '#6a4a3a', fold: '#4c3226', hair: '#1a1210', beard: '#1a1210', veil: '#4a3a2a' },

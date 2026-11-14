@@ -3,7 +3,7 @@
 **Bible:** the Psalms (8, 13, 16, 19, 2, 22, 23, 32, 42, 100, 103, 110, 118, 121, 122, 130, 133, 134, 150)
 **Age:** VI · The Kingdom
 **Length:** about 45 minutes (6 episodes, then the quiz, then reflection and prayer)
-**Status:** draft for Dave's approval.
+**Status:** approved by Dave on 2026-11-14 ("Approved, build it").
 
 ## How to read this script
 

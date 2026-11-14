@@ -1055,6 +1055,51 @@ export const EMBLEMS: Record<string, () => Piece[]> = {
     { d: P([[-8, 2], [-4, -10], [0, -2], [4, -14], [8, 2]]), color: '#f4a040' },
     { d: P([[-3, 2], [0, -6], [3, 2]]), color: '#fff0a0' },
   ],
+  // Level 20 · The Psalms
+  // The trumpet and the harp of Psalm 150.
+  'trumpet-and-harp': () => [
+    { d: P([[-14, 14], [-14, -12], [-10, -14], [-2, 14]]), color: '#c8a040' },
+    { d: P([[-12, 10], [-11, -8], [-5, 10]]), color: '#efe8d8' },
+    { d: P([[0, 10], [4, -6], [14, -14], [16, -10], [8, -4], [4, 12]]), color: '#e8d8b0' },
+  ],
+  // The overflowing cup of Psalm 23.
+  'overflowing-cup': () => [
+    { d: P([[-10, -6], [10, -6], [6, 6], [-6, 6]]), color: '#d8a838' },
+    { d: P([[-2, 6], [2, 6], [2, 12], [-2, 12]]), color: '#d8a838' },
+    { d: P([[-6, 12], [6, 12], [6, 15], [-6, 15]]), color: '#d8a838' },
+    { d: P([[-10, -6], [10, -6], [8, -9], [-8, -9]]), color: '#8a2a3a' },
+    { d: P([[9, -6], [13, -2], [12, 4], [10, 0]]), color: '#8a2a3a' },
+  ],
+  // The deer at the flowing stream.
+  'deer-at-the-stream': () => [
+    { d: P([[-16, 14], [16, 10], [16, 16], [-16, 16]]), color: '#5a8ab8' },
+    { d: P([[-8, -2], [8, -2], [8, 4], [-8, 4]]), color: '#a87a4a' },
+    { d: P([[6, -2], [12, 6], [10, 8], [5, 2]]), color: '#a87a4a' },
+    { d: P([[-7, 4], [-5, 4], [-5, 12], [-7, 12]]), color: '#a87a4a' },
+    { d: P([[5, 4], [7, 4], [7, 12], [5, 12]]), color: '#a87a4a' },
+    { d: P([[-8, -2], [-10, -10], [-8, -10], [-6, -2]]), color: '#6a4a2a' },
+  ],
+  // The watchman on the wall, and the sun rising.
+  'watchman-at-dawn': () => [
+    { d: circ(8, -6, 7, 12), color: '#f4c050' },
+    { d: P([[-16, 16], [-16, 4], [16, 4], [16, 16]]), color: '#c8a87e' },
+    { d: P([[-8, 4], [-8, -6], [-4, -6], [-4, 4]]), color: '#3a3a5a' },
+    { d: circ(-6, -9, 2.5, 8), color: '#3a3a5a' },
+  ],
+  // The stone at the head of the corner.
+  'head-of-the-corner': () => [
+    { d: P([[-16, 16], [-16, -2], [-4, -12], [-4, -4], [-10, 2], [-10, 16]]), color: '#c8b898' },
+    { d: P([[16, 16], [16, -2], [4, -12], [4, -4], [10, 2], [10, 16]]), color: '#c8b898' },
+    { d: P([[-4, -14], [4, -14], [3, -4], [-3, -4]]), color: '#f4e8c0' },
+  ],
+  // The stairway up to the Temple door.
+  'temple-stairs': () => [
+    { d: P([[-10, -16], [10, -16], [10, 4], [-10, 4]]), color: '#ece2c8' },
+    { d: P([[-3, -6], [3, -6], [3, 4], [-3, 4]]), color: '#3a2a20' },
+    { d: P([[-12, 4], [12, 4], [12, 8], [-12, 8]]), color: '#d8ccb0' },
+    { d: P([[-14, 8], [14, 8], [14, 12], [-14, 12]]), color: '#e4d8bc' },
+    { d: P([[-16, 12], [16, 12], [16, 16], [-16, 16]]), color: '#d8ccb0' },
+  ],
 }
 
 /** The medallions' backgrounds: deep blue, with one ruby for the darkest story. */

@@ -1390,6 +1390,73 @@ export const THREADS: GoldenThread[] = [
     sources: ["Genesis 22:2","1 Chronicles 21:18–22:1","1 Corinthians 6:20","Hebrews 9:11–14","Catechism 517, 613–614"],
     fulfilled: { age: 'XII', place: 'jerusalem' },
   },
+  // Level 20 · The Psalms
+  {
+    id: 'out-of-the-mouth-of-babes',
+    episode: 'l20-e1',
+    title: "“Chanted by the mouth of babes and infants” → the children in the Temple cry “Hosanna to the Son of David!”",
+    from: ['PSA 8:2'],
+    to: ['MAT 21:15', 'MAT 21:16'],
+    explanation:
+      "When Jesus came into the Temple, the grown-ups argued, but the children understood and sang his praise. Jesus answered with Psalm 8: God’s praise is perfect on the lips of children. No one is too small to praise God.",
+    sources: ["Matthew 21:14–16","Psalm 8","Catechism 2589, 2639"],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'my-fathers-house',
+    episode: 'l20-e2',
+    title: "“I shall dwell in the house of the Lord for ever” → “In my Father’s house are many rooms… I go to prepare a place for you”",
+    from: ['PSA 23:6'],
+    to: ['JHN 14:2', 'JHN 14:3'],
+    explanation:
+      "The psalm ends at home, in God’s house, for ever. Jesus, the Good Shepherd, promised that he would go ahead of us and prepare that home himself, and come back to bring us there. The table set in the psalm, and the overflowing cup, have long been read by the Church as signs of the Eucharist, the meal Jesus prepares for us on the way.",
+    sources: ["John 10:11–16","John 14:1–3","Revelation 7:17","Catechism 754, 1335, 2794"],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'why-hast-thou-forsaken-me',
+    episode: 'l20-e3',
+    title: "“My God, my God, why hast thou forsaken me?” → Jesus, on the cross, prays the first words of Psalm 22",
+    from: ['PSA 22:1'],
+    to: ['MAT 27:46'],
+    explanation:
+      "On the cross, Jesus prayed the first line of this psalm aloud. He made our cry of loneliness his own, so that no one who prays it is ever alone. And everyone who knew the psalm knew how it ends: in victory, with “all the families of the nations” worshiping God. The cross was not the end.",
+    sources: ["Matthew 27:35–46","John 19:23–24","Psalm 22","Catechism 603, 2605"],
+    fulfilled: { age: 'XII', place: 'jerusalem' },
+  },
+  {
+    id: 'he-will-save-his-people',
+    episode: 'l20-e4',
+    title: "“He will redeem Israel from all his iniquities” → “You shall call his name Jesus, for he will save his people from their sins”",
+    from: ['PSA 130:8'],
+    to: ['MAT 1:21'],
+    explanation:
+      "Psalm 130 waits in the dark for the one who will redeem Israel from all its sins. The angel told Joseph the name of that Redeemer: Jesus, which means “the LORD saves.” He is the morning the watchmen waited for: “the dayspring from on high” (Luke 1:78).",
+    sources: ["Matthew 1:20–21","Luke 1:68–79","Catechism 430, 1846"],
+    fulfilled: { age: 'XI' },
+  },
+  {
+    id: 'the-head-of-the-corner',
+    episode: 'l20-e5',
+    title: "“The stone which the builders rejected has become the head of the corner” → Jesus: “Have you never read in the scriptures…?”",
+    from: ['PSA 118:22'],
+    to: ['MAT 21:42', 'ACT 4:11'],
+    explanation:
+      "Jesus quoted this psalm about himself, a few days before he was rejected and crucified. After the Resurrection, Peter told the same leaders: you rejected him, but God has made him the head of the corner. Everything the Church is, is built on him.",
+    sources: ["Matthew 21:42","Acts 4:10–12","1 Peter 2:4–7","Ephesians 2:20","Catechism 756"],
+    fulfilled: { age: 'XIII', place: 'jerusalem' },
+  },
+  {
+    id: 'going-up-to-jerusalem',
+    episode: 'l20-e6',
+    title: "“I was glad when they said to me, ‘Let us go to the house of the LORD!’” → “His parents went to Jerusalem every year at the feast of the Passover”",
+    from: ['PSA 122:1'],
+    to: ['LUK 2:41', 'LUK 2:42'],
+    explanation:
+      "Mary and Joseph made this journey every year, and when Jesus was twelve, he went up with them, singing these same songs on the road. In the Temple, he called it “my Father’s house.” Every Sunday, Christians make the same journey on a small scale: “Let us go to the house of the LORD!”",
+    sources: ["Luke 2:41–51","Psalm 84","Hebrews 12:22–24","Catechism 534, 2179"],
+    fulfilled: { age: 'XI', place: 'jerusalem' },
+  },
 ]
 
 const BY_ID = new Map(THREADS.map((thread) => [thread.id, thread]))

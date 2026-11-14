@@ -153,6 +153,30 @@ export const judgesLayers: Record<string, PixelLayerArt> = {
         return null
       }),
   },
+  // Level 20: the Temple courts: colonnades, the Temple's gilded front, and the great stairway up to its door.
+  'temple-courts': {
+    draw: (buf) =>
+      fill(buf, (x, y) => {
+        if (y >= 0.853 * H) return dither(x, y) < 0.2 ? C.sand2 : C.sand
+        // The stairway, widening as it comes down.
+        if (y >= 0.622 * H) {
+          const step = Math.floor((y - 0.622 * H) / 5.2)
+          const half = 40 + step * 5
+          if (Math.abs(x - W / 2) < half) return step % 2 ? C.sand : C.white
+        }
+        // The Temple's front, its gilded top and its door.
+        if (x >= 0.35 * W && x < 0.65 * W && y >= 0.156 * H && y < 0.622 * H) {
+          if (y < 0.178 * H) return C.gold
+          if (x >= 0.456 * W && x < 0.544 * W && y >= 0.333 * H) return C.wood1
+          return C.white
+        }
+        // The colonnades on either side.
+        if (y >= 0.4 * H && y < 0.42 * H) return C.sand2
+        if (y >= 0.42 * H && y < 0.76 * H && (x + 64) % 19 < 5 && (x < 0.33 * W || x > 0.67 * W)) return C.white
+        if (y >= 0.76 * H) return dither(x, y) < 0.3 ? C.sand2 : C.sand
+        return null
+      }),
+  },
   'dagon-fallen': {
     draw: (buf) =>
       fill(buf, (x, y) => {

@@ -771,6 +771,25 @@ The same way again: script, art, build, checks, play-test. Level 19 is the third
 - **New art:** two backdrops (the rooftops of Jerusalem at dusk; the Kidron valley below the Mount of Olives), six people (Bathsheba, Uriah, Absalom, David grown old, Ittai, Araunah) and four props (David's linen robe, a stain, hyssop, falling snow), in both styles. The threshing floor reuses Level 3's Moriah: it is the same hill.
 - **Cathedral and map:** five new medallions in the Age VI bay. Rabbah, the Mount of Olives and Mahanaim are new places in `geography.ts`; Mahanaim is new on the quiz map.
 - **Music:** no new recordings. The spec's Allegri *Miserere* was already in the game.
+
+### Task 26: Level 20, *The Psalms* (M26)
+
+The same way again: script, art, build, checks, play-test. Level 20 is the fourth level of Age VI, *The Kingdom*.
+
+**Status (November 2026):** steps 1–4 are done; step 5 is Dave's.
+- **Script:** `docs/scripts/level-20-the-psalms.md`, approved by Dave on 2026-11-14. It has 6 episodes and 18 scenes, 69 passages quoted word for word, and a 48-question quiz. The level isn't one story: each episode is one kind of psalm, in a place where it might first have been sung.
+- **Build:** all six episodes are built in both styles, each with its own play:
+  - praise him! (keeping the beat as the instruments of Psalm 150 join);
+  - paths of righteousness (leading the shepherd through Psalm 23);
+  - how long, O LORD? (the parts of a lament, in order);
+  - watchmen for the morning (waiting on the wall and calling out the dawn);
+  - the head of the corner (swinging the rejected stone into the arch);
+  - songs of ascents (climbing the Temple stairway, one song per step).
+  No new shared rules.
+- **Hard passages:** Episode 3 opens with a content note. Psalm 22:16–18 is told in our own words; nothing of the Passion is shown.
+- **New art:** one backdrop (the Temple courts, with its stairway, for Level 21 too), Solomon, and four props (the shofar, cymbals, the unfinished arch, the cornerstone), in both styles.
+- **Cathedral and map:** six new medallions in the Age VI bay. No new places.
+- **Music:** no new recordings. Mendelssohn's "Hear My Prayer" (Ernest Lough, 1927) stays protected in the US until 2028, and the only free psalm chant is 17 seconds; the level uses psalm settings already in the game.
 ## Parallelization
 
 - **Code tasks run in order.** Each one builds on the last, and running them in order keeps the code consistent for the code tour.

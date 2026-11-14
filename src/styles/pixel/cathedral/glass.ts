@@ -182,6 +182,13 @@ export const EMBLEMS: Record<string, { rows: string[]; colors: Record<string, st
   'hyssop-and-snow': { rows: ['w...g...w', '...lg....', '....gl..w', 'w..lg....', '....gl...', '...lg..w.', '....g....', 'w...g....', '....g....'], colors: { w: C.white, g: C.green, l: C.lime } },
   'olive-ascent': { rows: ['......tt.', '.....tttt', '......w..', '.....sss.', '...sssss.', '.sssssss.', 'bbbsssss.', 'bbsssssss', 'sssssssss'], colors: { t: C.teal, w: C.wood2, s: C.sand2, b: C.sky } },
   'threshing-altar': { rows: ['...o.....', '..ooo.o..', '..oyooo..', '.ooyyoo..', 'ppppppppp', 'p.p.p.p.p', 'ppppppppp', 'ppppppppp', '.........'], colors: { o: C.orange, y: C.gold, p: C.pale } },
+  // Level 20 · The Psalms
+  'trumpet-and-harp': { rows: ['y......ww', 'yy....ww.', 'ywy..ww..', 'yww.ww...', 'ywwww....', 'yww......', 'yy.......', 'y........', '.........'], colors: { y: C.gold, w: C.sand } },
+  'overflowing-cup': { rows: ['.........', '.rrrrrrr.', '.yrrrrryr', '.yyyyyyy.', '..yyyyy..', '...yyy...', '....y....', '...yyy...', '..yyyyy..'], colors: { y: C.gold, r: C.rose } },
+  'deer-at-the-stream': { rows: ['.w.......', '.w.......', '.bbbbbb..', '.bbbbbbb.', '.b....b..', '.b....b..', '.........', 'sssssssss', 'sssssssss'], colors: { w: C.wood1, b: C.wood3, s: C.sky } },
+  'watchman-at-dawn': { rows: ['......yy.', '.n...yyyy', '.n...yyyy', 'nnn...yy.', '.n.......', '.n.......', 'sssssssss', 'sssssssss', 'sssssssss'], colors: { y: C.gold, n: C.navy, s: C.sand2 } },
+  'head-of-the-corner': { rows: ['...www...', '...www...', 'sss...sss', 'ss.....ss', 'ss.....ss', 'ss.....ss', 'ss.....ss', 'ss.....ss', 'ss.....ss'], colors: { w: C.white, s: C.sand2 } },
+  'temple-stairs': { rows: ['yyyyyyyyy', '.wwwwwww.', '.www.www.', '.ww...ww.', '.ww...ww.', 'sssssssss', 'aaaaaaaaa', 'sssssssss', 'aaaaaaaaa'], colors: { y: C.gold, w: C.white, s: C.sand, a: C.sand2 } },
   'house-for-ever': { rows: ['....y....', '...www...', '..wwwww..', '.wwwwwww.', '.wwwwwww.', '.www.www.', '.ww...ww.', '.ww.y.ww.', 'ggggggggg'], colors: { y: C.gold, w: C.white, g: C.wood3 } },
 }
 
